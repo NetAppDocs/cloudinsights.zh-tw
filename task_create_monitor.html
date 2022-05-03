@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>使用監視器警示</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="使用監視器警示" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/cloudinsights/task_create_monitor.html" />
+	<meta property="og:description" content="建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/cloudinsights/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。">
+  <meta name="keywords" content=" monitors, alerts, log, metric, system-defined, system, metric,"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/cloudinsights/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/cloudinsights/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/cloudinsights/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/cloudinsights/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-tw/cloudinsights/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-tw/cloudinsights/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-tw/cloudinsights/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/cloudinsights/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/cloudinsights/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/cloudinsights/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-tw/cloudinsights/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/cloudinsights/js/na-search.js'></script><script src='/zh-tw/cloudinsights/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-tw/cloudinsights/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/cloudinsights/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-tw/cloudinsights/js/na-utility.js'></script>
+  <script src='/zh-tw/cloudinsights/js/clouddocs.js'></script>
+  <script src='/zh-tw/cloudinsights/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-tw/cloudinsights/js/toc.js'></script>
+  <script src='/zh-tw/cloudinsights/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-tw/cloudinsights/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/cloudinsights/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/cloudinsights/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/cloudinsights/js/jszip.min.js'></script>
+  <script src='/zh-tw/cloudinsights/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[使用監視器警示](https://docs.netapp.com/zh-tw/cloudinsights/task_create_monitor.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/cloudinsights/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_create_monitor.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/cloudinsights/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/cloudinsights/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此頁面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">產品與解決方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支援與訓練</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社群</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">部落格</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客戶成功案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-tw/cloudinsights/search.html"
+          data-type="widget" 
+          data-placeholder="搜尋文件" 
+          data-no-results-found="找不到符合 {query} 的相關結果。" 
+          data-did-you-mean="搜尋 {suggestion}。" 
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
+          data-results-found="找到 {hitCount} 筆結果"  
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">繁體中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_create_monitor.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_create_monitor.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/cloudinsights/task_create_monitor.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-tw/cloudinsights/pdfs/fullsite-sidebar/本文檔_Cloud_Insights.pdf" >
+          <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/安全性.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            安全性
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/快速入門.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            快速入門
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/收集資料.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            收集資料
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/自動裝置解析.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            自動裝置解析
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/建立儀表板.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            建立儀表板
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/範例儀表板.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            範例儀表板
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Kubernetes_Explorer.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Kubernetes Explorer
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/使用查詢.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            使用查詢
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/使用註釋.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            使用註釋
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/使用應用程式.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            使用應用程式
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/監控與警示.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            監控與警示
+          </a>
+          
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-tw/cloudinsights/pdfs/pages/task_create_monitor.pdf" >
+    <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/監控環境.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            監控環境
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/資產頁面資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            資產頁面資訊
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/報告.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            報告
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Cloud_Secure.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Cloud Secure
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/快速入門.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            快速入門
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/鑑識.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            鑑識
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/疑難排解.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            疑難排解
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/參考支援.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            參考支援
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/資料收集器參考資料_基礎架構.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            資料收集器參考資料-基礎架構
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Broadcom.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Broadcom
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Dell.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Dell
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Dell_EMC.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Dell EMC
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/HP企業.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            HP企業
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Hitachi_Data_Systems.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Hitachi Data Systems
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/IBM.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            IBM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Microsoft.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            Microsoft
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/NetApp.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            NetApp
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/資料收集器參考資料_服務.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf.png" width="16" height="16"/>
+            資料收集器參考資料-服務
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-tw/cloudinsights/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/index.html">
+        本文檔 Cloud Insights
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_whats_new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_cloud_insights_onboarding_1.html">
+        註冊Cloud Insights 以供使用
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安全性</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/security_overview.html">
+        安全實務做法
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/security_information_and_region.html">
+        我們儲存的內容和地點
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 快速入門</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_feature_tutorials.html">
+        功能教學課程
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 收集資料</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_getting_started_with_cloud_insights.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_acquisition_unit_requirements.html">
+        採購單位需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_configure_acquisition_unit.html">
+        設定擷取單位
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_agent.html">
+        設定代理程式（Linux/Mac）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html">
+        設定代理程式（Kubernetes）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_configure_data_collectors.html">
+        設定資料收集器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_determining_data_collector_acq_status.html">
+        判斷資料收集器擷取狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_view_configured_data_collectors.html">
+        管理已設定的資料收集器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_research_failed_collector.html">
+        研究資料收集器錯誤
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_import_from_dashboard_gallery.html">
+        匯入建議的儀表板
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_user_roles.html">
+        使用者帳戶與角色
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_other_cloud_products.html">
+        切換至其他Cloud Central產品
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/data_collector_list.html">
+        資料收集器清單
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_subscribing_to_cloud_insights.html">
+        訂閱Cloud Insights 此功能
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 自動裝置解析</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_device_resolution_overview.html">
+        裝置解析度總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_device_resolution_rules.html">
+        裝置解決規則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_device_resolution_fibre_channel.html">
+        Fibre Channel裝置解析度
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_device_resolution_ip.html">
+        IP裝置解析度
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_device_resolution_preferences.html">
+        設定裝置解析度偏好設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_device_resolution_regex_examples.html">
+        規則運算式範例
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 建立儀表板</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_dashboards_overview.html">
+        儀表板總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_dashboard_features.html">
+        儀表板功能
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 範例儀表板</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dashboard_example_VM_performance.html">
+        虛擬機器效能
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_dashboard_best_practices.html">
+        儀表板最佳實務做法
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Kubernetes Explorer</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/kubernetes_landing_page.html">
+        Kubernetes總覽頁面
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/kubernetes_cluster_detail.html">
+        Kubernetes叢集頁面
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用查詢</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_querying_assets.html">
+        查詢資產
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_create_query.html">
+        建立查詢
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_view_queries.html">
+        檢視可用的查詢
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_export_query_results.html">
+        將查詢結果匯出至.CSV
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_modify_delete_query.html">
+        修改或刪除查詢
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_query_assign_multiple_applicationss.html">
+        為物件指派多個應用程式/註釋
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_query_copy_table_values.html">
+        將表格值複製到剪貼簿
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_log_explorer.html">
+        查詢記錄
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用註釋</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_defining_annotations.html">
+        定義註釋
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_create_annotation.html">
+        使用註釋
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_create_annotation_rules.html">
+        使用註釋規則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_annotation_import.html">
+        使用API匯入附註
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用應用程式</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_about_applications.html">
+        應用程式概念
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_create_application.html">
+        設定應用程式
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 監控與警示</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_create_monitor.html">
+        建立監視器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_view_and_manage_alerts.html">
+        檢視及管理警示
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_notifications_email.html">
+        設定通知收件者
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_system_monitors.html">
+        系統定義的監視器
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/API_Overview.html">
+        使用API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_create_webhook.html">
+        Webhook通知
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 監控環境</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_audit.html">
+        稽核事件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_ttl_and_downsampling.html">
+        TTL和減取樣
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 資產頁面資訊</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_asset_page_overview.html">
+        資產頁面總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_in_context_filters.html">
+        物件的關聯中篩選
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_asset_summary_section.html">
+        摘要拓撲區段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_asset_expert_view_section.html">
+        專家檢視區段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_asset_user_data_section.html">
+        使用者資料區段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_asset_alerts_section.html">
+        相關警示區段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_searching_assets.html">
+        搜尋資產的提示與秘訣
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 報告</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_overview.html">
+        報告總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_user_roles.html">
+        報告使用者角色
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_predefined_reports.html">
+        使用預先定義的報告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_storage_manager_dashboard.html">
+        Storage Manager儀表板
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_create_example.html">
+        建立範例報告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_managing_reports.html">
+        管理報告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_creating_custom_reports.html">
+        自訂報告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_creating_custom_reports.html#reporting-data-models">
+        資料模型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_querying_database.html">
+        報告資料庫API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_data_retention.html">
+        資料保留
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reporting_schema_diagrams.html">
+        架構圖表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reference_schemas.html">
+        架構表格
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Cloud Secure</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/cs_intro.html">
+        關於Cloud Secure 本公司
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 快速入門</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_cs_getting_started.html">
+        功能入門Cloud Secure
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_cs_agent_requirements.html">
+        代理程式要求Cloud Secure
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_cs_add_agent.html">
+        設定Cloud Secure 一個功能不均的代理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_cs_delete_agent.html">
+        刪除Cloud Secure 一個功能不一的代理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_user_dir_connect.html">
+        設定AD目錄收集器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_user_dir_connect_ldap.html">
+        設定LDAP目錄收集器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_cs_amazon_fsx.html">
+        設定Amazon FSX for NetApp ONTAP 蒐集器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_add_collector_svm.html">
+        設定ONTAP SVM Data Collector
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_cs_incloud.html">
+        設定Cloud ONTAP Data Collector
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_cs_user_management.html">
+        使用者管理Cloud Secure
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_cs_event_rate_checker.html">
+        事件率檢查器
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/cs_alert_data.html">
+        警示
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 鑑識</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/forensic_activity_history.html">
+        活動鑑識：所有活動
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/forensic_entity_detail.html">
+        活動鑑識：實體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/forensic_user_overview.html">
+        使用者
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/cs_automated_response_policies.html">
+        自動化回應原則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/cs_restrict_user_access.html">
+        限制使用者存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_cs_attack_simulator.html">
+        模擬勒索軟體攻擊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/cs_notifications_email.html">
+        通知
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_cs_api.html">
+        部分API Cloud Secure
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_activeiq.html">
+        Active IQ
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 疑難排解</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_troubleshooting_general_problems.html">
+        一般疑難排解
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_troubleshooting_linux_acquisition_unit_problems.html">
+        疑難排解Linux擷取單元問題
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_troubleshooting_windows_acquisition_unit_problems.html">
+        疑難排解Windows接收單元問題
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_research_failed_collector.html">
+        研究資料收集器錯誤
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 參考支援</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_requesting_support.html">
+        正在申請支援
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reference_data_collector_support_matrix.html">
+        資料收集器支援對照表
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 資料收集器參考資料-基礎架構</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_data_collector_reference.html">
+        廠商參考總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_amazon_ec2.html">
+        AWS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ms_azure.html">
+        Azure
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Broadcom</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_brocade_bna.html">
+        Brocade網路顧問
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_brocade_fc_switch.html">
+        Fibre Channel交換器
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_cisco_fc_switch.html">
+        Cisco
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Dell</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_dell_xc_series.html">
+        XC系列
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Dell EMC</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_datadomain.html">
+        資料網域
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_ecs.html">
+        ECS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_isilon.html">
+        PowerScale
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_powerstore.html">
+        PowerStore
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_recoverpoint.html">
+        RecoverPoint
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_scaleio.html">
+        ScaleIO
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_unity.html">
+        Unity（VNXe）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_vmax_powermax.html">
+        Vmax /最大PowerMax
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_vnx_block.html">
+        VNX區塊（Clariion）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_vnx_file.html">
+        VNX檔案（Celerra）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_vnx_unified.html">
+        VNX統一化
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_vplex.html">
+        VPLEX
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_emc_xio.html">
+        XtremIO
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_fujitsu_eternus.html">
+        Fujitsu
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_google_cloud.html">
+        Google
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> HP企業</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_hp_3par.html">
+        HP Alletra 9000與Primera
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_hpe_commandview.html">
+        HP Command View AE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_hpe_nimble.html">
+        HPE Alletra 6000
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Hitachi Data Systems</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_hds_commandsuite.html">
+        HDS Command Suite
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_hds_nas.html">
+        HDS HNAS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_hds_ops_center.html">
+        HDS Ops Center
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_infinidat_infinibox.html">
+        Infinidat
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_huawei_oceanstor.html">
+        Huawei
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> IBM</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ibm_cleversafe.html">
+        無所不安全
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ibm_cs.html">
+        CS系列
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ibm_ds.html">
+        系統儲存設備DS8000系列
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ibm_powervm.html">
+        PowerVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ibm_svc.html">
+        SAN Volume控制器（SVC）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ibm_xiv.html">
+        XIV/A9000
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_lenovo.html">
+        聯想
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Microsoft</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ms_anf.html">
+        Azure NetApp Files
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_ms_hyperv.html">
+        Hyper-V
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> NetApp</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_astra_data_store.html">
+        Astra資料儲存區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_cloud_connection.html">
+        Cloud Connection for ONTAP 39
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_cloud_volumes_ontap.html">
+        Cloud Volumes ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_cloud_volumes.html">
+        適用於AWS的Cloud Volumes Services
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_ca.html">
+        Config Advisor
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_cdot.html">
+        資料管理軟體ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_7mode.html">
+        流程7模式Data ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_eseries.html">
+        E系列
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_hci.html">
+        解決方案管理伺服器的問題NetApp HCI
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_solidfire.html">
+        SolidFire
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_na_storagegrid.html">
+        StorageGRID
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_nutanix.html">
+        Nutanix
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_openstack.html">
+        OpenStack
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_oracle_zfs.html">
+        Oracle
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_pure_flasharray.html">
+        純
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_redhat_virtualization.html">
+        Red Hat
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_dc_vmware.html">
+        VMware
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 資料收集器參考資料-服務</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_node.html">
+        主機/節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_activemq.html">
+        ActiveMQ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_apache.html">
+        Apache
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_consul.html">
+        駐港總領事
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_couchbase.html">
+        Couchbase
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_couchdb.html">
+        CouchDB
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_docker.html">
+        Docker
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_elasticsearch.html">
+        彈性搜尋
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_flink.html">
+        Flink
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_hadoop.html">
+        Hadoop
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_haproxy.html">
+        HAProxy
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_jvm.html">
+        Java
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_kafka.html">
+        卡夫卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_kapacitor.html">
+        Kapacitor
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_kibana.html">
+        Kibana
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_agent.html#kubernetes">
+        Kubernetes
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_memcached.html">
+        memcached
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_mongodb.html">
+        MongoDB
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_mysql.html">
+        MySQL
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_netstat.html">
+        Netstat
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_nginx.html">
+        恩靈思
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_openzfs.html">
+        OpenZFS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_postgresql.html">
+        PostgreSQL
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_puppetagent.html">
+        Puppet
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_redis.html">
+        紅皮
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_rethinkdb.html">
+        RethinkDB
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/task_config_telegraf_zookeeper.html">
+        Zookkeeper
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reference_object_icons.html">
+        物件圖示參考
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/reference_legal_notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-tw/cloudinsights/">Cloud&nbsp;Insights</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">使用監視器警示</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-05-03 09:57:17 +0000">05/03/2022</time>
+    
+  
+
+
+</p>
+
+<div id="toc" class="toc">
+<div id="toctitle">目錄</div>
+<ul class="sectlevel1">
+<li><a href="#度量或記錄監控">度量或記錄監控？</a></li>
+<li><a href="#監控清單">監控清單</a></li>
+<li><a href="#監控群組">監控群組</a></li>
+<li><a href="#系統定義的監視器-2">系統定義的監視器</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>您可以建立監控器來設定觸發警示的臨界值、以通知您有關網路資源的問題。例如、您可以建立一個監控器、針對任何多種傳輸協定發出_節點寫入延遲_警示。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+顯示器和警示功能可在Cloud Insights 不更新版本的地方使用。
+</td>
+</tr>
+</table>
+</div>
+<!-- toc disabled -->
+<div class="paragraph">
+<p>監控功能可讓您針對儲存設備、VM、EC2和連接埠等「基礎架構」物件所產生的度量、以及針對Kubernetes、ONTAP 支援各種進階指標和Telegraf外掛程式所收集的「整合」資料、設定臨界值。當超過警告層級或臨界層級臨界值時、這些_metric _監控器會發出警示。</p>
+</div>
+<div class="paragraph">
+<p>您也可以建立監視器、在偵測到指定的_log events時觸發警告、嚴重或資訊層級的警示。</p>
+</div>
+<div class="paragraph">
+<p>提供多種功能Cloud Insights <a href="task_system_monitors.html">"系統定義的監視器"</a> 此外、也會根據您的環境而決定。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="度量或記錄監控">度量或記錄監控？</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>在「支援」功能表中、按一下Cloud Insights 「<strong>警示」&gt;「管理監視器</strong>」</p>
+<div class="paragraph">
+<p>隨即顯示「監視器」清單頁面、顯示目前設定的監視器。</p>
+</div>
+</li>
+<li>
+<p>若要修改現有的監視器、請按一下清單中的監視器名稱。</p>
+</li>
+<li>
+<p>若要新增監視器、請按一下*+ Monitor *。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_log_or_metric.png" alt="選擇系統或記錄監控"></span></p>
+</div>
+<div class="paragraph">
+<p>當您新增監視器時、系統會提示您建立度量監視器或記錄監視器。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>_Metric _監控基礎架構或效能相關觸發事件的警示</p>
+</li>
+<li>
+<p>_Log_監控記錄相關活動的警示</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>選擇監視器類型後、會顯示「監視器組態」對話方塊。組態會因您所建立的監視器類型而有所不同。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="度量監視器">度量監視器</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>在下拉式清單中、搜尋並選擇要監控的物件類型和度量。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>您可以設定篩選條件、以縮小要監控的物件屬性或度量。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/MonitorMetricFilter.png" alt="度量篩選"></span></p>
+</div>
+<div class="paragraph">
+<p>使用整合資料（Kubernetes、ONTAP 《支援進階資料》等）時、度量篩選會從繪圖資料系列中移除個別/不相符的資料點、這與基礎架構資料（儲存設備、VM、連接埠等）不同、因為篩選器會處理資料系列的集合值、並可能從圖表中移除整個物件。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+若要建立多重條件監視器（例如IOPS &gt; X和延遲&gt; Y）、請將第一個條件定義為臨界值、將第二個條件定義為篩選條件。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="定義監視器的條件">定義監視器的條件。</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>選擇要監控的物件和度量之後、請設定警告層級和（或）臨界層級臨界值。</p>
+</li>
+<li>
+<p>在_警告_層級、輸入200作為範例。此警告層級的虛線會顯示在範例圖表中。</p>
+</li>
+<li>
+<p>針對_critical_層級、輸入400。此臨界層級的虛線會顯示在範例圖表中。</p>
+<div class="paragraph">
+<p>圖表會顯示歷史資料。圖表上的「警告」和「嚴重」層級行是監視器的視覺呈現、因此您可以輕鬆查看監視器在每種情況下觸發警示的時間。</p>
+</div>
+</li>
+<li>
+<p>對於發生時間間隔、請選擇「<em>onstonal</em>」、持續時間為_15分鐘。</p>
+<div class="paragraph">
+<p>您可以選擇在違反臨界值時觸發警示、或等到臨界值持續發生一段時間後再觸發警示。在我們的範例中、我們不想在每次IOPS總尖峰高於「警告」或「嚴重」層級時發出警示、只有在監控的物件持續超過其中一個層級至少15分鐘時才發出警示。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_metric_conditions.png" alt="定義監視器的條件"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="記錄監視器">記錄監視器</h3>
+<div class="paragraph">
+<p>建立*記錄監視器*時、請先從可用的記錄清單中選擇要監控的記錄。然後您可以根據上述可用屬性進行篩選。</p>
+</div>
+<div class="paragraph">
+<p>例如、您可以選擇在logs.netapp.ems來源中篩選「object.store.unavailable」訊息類型：</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="附註">
+</td>
+<td class="content">
+記錄監視器篩選器不可為空白。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_log_monitor_filter.png" alt="選擇要監控的記錄、然後設定篩選條件"></span></p>
+</div>
+<div class="sect3">
+<h4 id="定義警示行為">定義警示行為</h4>
+<div class="paragraph">
+<p>選擇觸發記錄警示時要如何警示。您可以根據上述篩選條件、將監視器設定為警示_警告_、_嚴重_或_資訊_嚴重性。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_log_alert_behavior.png" alt="定義要監控的記錄行為"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="定義警示解決行為">定義警示解決行為</h4>
+<div class="paragraph">
+<p>您可以選擇如何解決記錄監控警示。您有三種選擇：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>立即解決</strong>：立即解決警示、無需採取進一步行動</p>
+</li>
+<li>
+<p><strong>根據時間解析</strong>：警示會在指定時間過後解決</p>
+</li>
+<li>
+<p><strong>根據記錄項目解析</strong>：當發生後續記錄活動時、警示便會解決。例如、當物件記錄為「可用」時。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_log_monitor_resolution.png" alt="警示解析度"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="選取通知類型和收件者">選取通知類型和收件者</h3>
+<div class="paragraph">
+<p>在「設定團隊通知」區段中、您可以選擇是透過電子郵件或Webhook警示團隊。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Webhook_Choose_Monitor_Notification.png" alt="選擇警示方法"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>透過電子郵件警示：</strong></p>
+</div>
+<div class="paragraph">
+<p>指定警示通知的電子郵件收件者。如果需要、您可以選擇不同的收件者來發出警告或嚴重警示。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/email_monitor_alerts.png" alt="電子郵件警示收件者"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>透過Webhook警示：</strong></p>
+</div>
+<div class="paragraph">
+<p>指定警示通知的Webhook。如果需要、您可以選擇不同的Webhooks來發出警告或發出重大警示。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Webhook_Monitor_Notifications.png" alt="Webhook警示"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="設定修正動作或其他資訊">設定修正動作或其他資訊</h3>
+<div class="paragraph">
+<p>您可以填寫*新增警示說明*區段、以新增選擇性的說明、以及其他深入見解和/或修正行動。說明最多可達1024個字元、並會隨警示一起傳送。Insights /修正行動欄位最多可包含67、000個字元、並會顯示在警示登陸頁的摘要區段中。</p>
+</div>
+<div class="paragraph">
+<p>在這些欄位中、您可以提供註解、連結或採取步驟來修正或以其他方式解決警示。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_Alert_Description.png" alt="警示修正行動與說明"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="儲存您的監視器">儲存您的監視器</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>如有需要、您可以新增監視器的說明。</p>
+</li>
+<li>
+<p>為「監視器」指定有意義的名稱、然後按一下「<strong>儲存</strong>」。</p>
+<div class="paragraph">
+<p>您的新監視器會新增至使用中監視器的清單中。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="監控清單">監控清單</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>「監控」頁面會列出目前設定的監控器、顯示下列項目：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>監控名稱</p>
+</li>
+<li>
+<p>狀態</p>
+</li>
+<li>
+<p>正在監控的物件/度量</p>
+</li>
+<li>
+<p>監控條件</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>您可以按一下監視器右側的功能表、然後選取*暫停*、以選擇暫時暫停物件類型的監視。當您準備好恢復監控時、請按一下*恢復*。</p>
+</div>
+<div class="paragraph">
+<p>您可以從功能表中選取* Duplicon*來複製監視器。然後您可以修改新的監控器、並變更物件/度量、篩選條件、電子郵件收件者等</p>
+</div>
+<div class="paragraph">
+<p>如果不再需要監視器、您可以從功能表中選取*刪除*來刪除監視器。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="監控群組">監控群組</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>群組可讓您檢視及管理相關的監視器。例如、您可以讓監控群組專用於環境中的儲存設備、或監控與特定收件者清單相關的項目。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_GroupList.png" alt="監控群組"></span></p>
+</div>
+<div class="paragraph">
+<p>畫面會顯示下列監視器群組。群組名稱旁會顯示群組中包含的監視器數量。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>*所有顯示器*會列出所有顯示器。</p>
+</li>
+<li>
+<p>*自訂監視器*會列出所有使用者建立的監視器。</p>
+</li>
+<li>
+<p>*暫停的監視器*會列出Cloud Insights 任何遭停止的系統監視器。</p>
+</li>
+<li>
+<p>此外、還會顯示許多*系統監視器群組*、其中會列出一或多個群組Cloud Insights <a href="task_system_monitors.html">"系統定義的監視器"</a>、包括ONTAP 功能不全的基礎架構和工作負載監控。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="附註">
+</td>
+<td class="content">
+自訂監視器可以暫停、恢復、刪除或移至其他群組。系統定義的監視器可以暫停和恢復、但無法刪除或移動。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="暫停的監視器">暫停的監視器</h3>
+<div class="paragraph">
+<p>只有在停止一台或多台監視器時、Cloud Insights 才會顯示此群組。如果監視器產生過多或持續的警示、則可能會暫停。如果監視器是自訂監視器、請修改條件以防止持續警示、然後恢復監視器。當導致暫停的問題解決時、監視器會從「暫停的監視器」群組中移除。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="系統定義的監視器">系統定義的監視器</h3>
+<div class="paragraph">
+<p>只Cloud Insights 要您的環境包含顯示器所需的裝置和/或記錄可用度、這些群組就會顯示由NetApp提供的監視器。</p>
+</div>
+<div class="paragraph">
+<p>無法修改、移至其他群組或刪除系統定義的監視器。不過、您可以複製系統監視器、並修改或移動複本。</p>
+</div>
+<div class="paragraph">
+<p>系統監控器可能包括ONTAP 顯示器、以監控基礎架構（儲存設備、Volume等）或工作負載（例如記錄監控器）或其他群組。NetApp持續評估客戶需求和產品功能、並視需要更新或新增至系統監控器和群組。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="自訂監控群組">自訂監控群組</h3>
+<div class="paragraph">
+<p>您可以根據自己的需求、建立自己的群組來包含監控器。例如、您可能需要所有儲存相關監視器的群組。</p>
+</div>
+<div class="paragraph">
+<p>若要建立新的自訂監視器群組、請按一下「<strong>」+「Create New Monitor Group</strong>」（建立新的監視器群組*）按鈕。輸入群組名稱、然後按一下*建立群組*。使用該名稱建立一個空群組。</p>
+</div>
+<div class="paragraph">
+<p>若要將監視器新增至群組、請移至「<em>All Monitors</em>」群組（建議）、然後執行下列其中一項：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>若要新增單一監視器、請按一下監視器右側的功能表、然後選取_新增至群組_。選擇要新增監視器的群組。</p>
+</li>
+<li>
+<p>按一下監視器名稱以開啟監視器的編輯檢視、然後在_關聯至監視器群組_區段中選取群組。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_AssociateToGroup.png" alt="與群組建立關聯"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>按一下群組、然後從功能表中選取「從群組移除」、即可移除監控器。您無法從「<em>All Monitors</em>」或「<em>Custom Monitors</em>」群組中移除監視器。若要從這些群組中刪除監視器、您必須刪除監視器本身。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="附註">
+</td>
+<td class="content">
+從群組中移除監視器並不會刪除Cloud Insights 顯示器。若要完全移除監視器、請選取監視器、然後按一下「刪除」。這也會將其從所屬群組中移除、不再提供給任何使用者。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>您也可以用相同的方式將監視器移至不同的群組、選取_移至群組_。</p>
+</div>
+<div class="paragraph">
+<p>若要一次暫停或恢復群組中的所有監視器、請選取群組的功能表、然後按一下「暫停」或「恢復」。</p>
+</div>
+<div class="paragraph">
+<p>使用相同的功能表重新命名或刪除群組。刪除群組並不會刪除Cloud Insights 顯示器的功能、但仍可在_All Monitors_中使用。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_PauseGroup.png" alt="暫停群組"></span></p>
+</div>
+<div class="paragraph">
+<p>預設會顯示兩個群組：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>*所有顯示器*會列出所有顯示器。</p>
+</li>
+<li>
+<p>*自訂監視器*僅列出使用者建立的監視器。</p>
+</li>
+<li>
+<p><strong>僅當系統暫停監視器時、才會顯示暫停監視器</strong>。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="系統定義的監視器-2">系統定義的監視器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>包含多個系統定義的監控器、可同時用於測量數據和記錄。Cloud Insights可用的系統監視器取決於環境中的資料收集器。因此Cloud Insights 、當資料收集器新增或其組態變更時、可在功能性更新中使用的監視器可能會有所變更。</p>
+</div>
+<div class="paragraph">
+<p>檢視 <a href="task_system_monitors.html">"系統定義的監視器"</a> 頁面、以取得Cloud Insights 有關顯示器的說明。</p>
+</div>
+<div class="sect2">
+<h3 id="更多資訊">更多資訊</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task_view_and_manage_alerts.html">"檢視及取消遺失警示"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">cookie-settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
+              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/cloudinsights/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/cloudinsights/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/cloudinsights/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/cloudinsights/js/www-ntap.js'></script>
+    <script src='/zh-tw/cloudinsights/js/tabbed-blocks.js'></script>
+  </body></html>
