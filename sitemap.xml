@@ -230,6 +230,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/cloudinsights/concept_preview_features.html</loc>
+      
+      <lastmod>2022-05-05T14:06:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/concept_querying_assets.html</loc>
       
       <lastmod>2022-05-03T09:57:17+00:00</lastmod>
@@ -547,7 +554,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights//search.html</loc>
       
-      <lastmod>2022-05-03T10:00:22+00:00</lastmod>
+      <lastmod>2022-05-05T14:07:11+00:00</lastmod>
       
     </url>
   
