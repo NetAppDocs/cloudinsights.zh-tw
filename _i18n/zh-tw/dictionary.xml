@@ -8811,4 +8811,13 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">Puppet</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
+  <block id="68f0f62deae94ea2573e440bd6203542" category="summary">預覽功能的容量有限、而且重點功能尚未準備好準備好迎接黃金時間。</block>
+  <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">預覽功能</block>
+  <block id="f06798e708a78e76d30364617ea53340" category="paragraph">以_Preview_的方式強調新功能。Cloud Insights預覽功能可在有限的環境或有限容量下使用。</block>
+  <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您有興趣預覽其中一項或多項功能、請聯絡您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">以下是目前預覽中的一些功能：</block>
+  <block id="6e1effcb952ada801a257429342ccd39" category="cell">在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。</block>
+  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制使用者存取自動回應動作</block>
+  <block id="f763810a8ec0d5862e0f288795932956" category="cell">偵測到攻擊時Cloud Secure 、利用限制使用者存取檔案系統（完整區塊或設為唯讀存取）、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">「受壓力影響的共享資源」洞見可讓您識別：-共享儲存資源因為一或多個個別工作負載的高需求而承受壓力、這是共享資源上要求嚴苛且受影響的工作負載<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
 </blocks>

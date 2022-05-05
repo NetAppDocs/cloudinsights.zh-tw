@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: concept_preview_features.html 
+summary: 預覽功能的容量有限、而且重點功能尚未準備好準備好迎接黃金時間。 
+keywords: coming soon, preview, 
+---
+= 預覽功能
+:allow-uri-read: 
+
+
+[role="lead"]
+以_Preview_的方式強調新功能。Cloud Insights預覽功能可在有限的環境或有限容量下使用。
+
+如果您有興趣預覽其中一項或多項功能、請聯絡您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售團隊"] 以取得更多資訊。
+
+以下是目前預覽中的一些功能：
+
+|===
+
+
+| *功能* | *說明* 
+
+
+| 內部Volume與Volume容量的完整時間預測 | 在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。 
+
+
+| 限制使用者存取自動回應動作 | 偵測到攻擊時Cloud Secure 、利用限制使用者存取檔案系統（完整區塊或設為唯讀存取）、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+
+
+| 共享資源正承受壓力 | 「受壓力影響的共享資源」洞見可讓您識別：-共享儲存資源因為一或多個個別工作負載的高需求而承受壓力、這是共享資源上要求嚴苛且受影響的工作負載link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
+|===
