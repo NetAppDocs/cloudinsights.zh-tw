@@ -119,7 +119,7 @@ VMware vSphere的資料收集器會收集ESX主機資訊、並要求虛擬中心
 | 通訊連接埠 | 預設值為443 
 
 
-| 篩選裝置清單... | 此清單必須包含確切的字串相符項目、如果您想要依ESX_host篩選、則必須建立一份以英文分隔的清單、列出Cloud Insights 在VMware和vSphere中報告的ESX主機確切「名稱」。這些「名稱」可以是IP位址、簡單主機名稱或完整網域名稱（FQDN）、這取決於這些主機在最初新增至vSphere時的命名方式。當依叢集篩選時、 在Hypervisor上使用CI所報告的Cloud Insights型叢集名稱- Cloud Insights 以vSphere資料中心名稱和反斜槓來預先輸入vSphere叢集名稱-「DC1/clusterA」是叢集名稱Cloud Insights 、而「VMware Data Center DC1」中叢集A中的Hypervisor則由叢集管理程式報告。 
+| 篩選裝置清單... | 此清單必須包含確切的字串相符項目、如果您想要依ESX_host篩選、則必須建立一份以英文分隔的清單、列出Cloud Insights 在VMware和vSphere中報告的ESX主機確切「名稱」。這些「名稱」可以是IP位址、簡單主機名稱或完整網域名稱（FQDN）、這取決於這些主機在最初新增至vSphere時的命名方式。當依叢集篩選時、 使用Hypervisor上CI所報告的Cloud Insights型叢集名稱- Cloud Insights 以vSphere資料中心名稱和正斜槓來預先輸入vSphere叢集名稱-「DC1/clusterA」是叢集名稱Cloud Insights 、而「VMware Data Center DC1」中叢集A中的Hypervisor則由叢集管理程式報告。 
 
 
 | 效能意見調查時間間隔（秒） | 預設值為300 
