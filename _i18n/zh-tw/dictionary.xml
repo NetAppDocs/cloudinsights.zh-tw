@@ -4369,7 +4369,6 @@
   <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows 2019伺服器（64位元）</block>
   <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux（RHEL）7.7及更新版本（64位元）</block>
   <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0%及更新版本</block>
-  <block id="ca205ac9d896fc87257c36e58f45e6f6" category="paragraph">如有Config Advisor 任何與解決有關的問題、Config Advisor 請按一下「Help（說明）」-&gt;「Open Support（開啟支援）」票證、從「The Short&gt;&gt; Tool（英文）」開啟票證。</block>
   <block id="8dc4e28c9ab949997514364957b2aa39" category="summary">鑑識活動歷程記錄資料</block>
   <block id="4bf5863c996526f74970c19dc17d7167" category="doc">鑑識-所有活動</block>
   <block id="dcb127253471d77a3599979de252b724" category="paragraph">「所有活動」頁面可協助您瞭解Cloud Secure 在整個環境中對實體所執行的行動。</block>
@@ -8820,4 +8819,10 @@
   <block id="f763810a8ec0d5862e0f288795932956" category="cell">偵測到攻擊時Cloud Secure 、利用限制使用者存取檔案系統（完整區塊或設為唯讀存取）、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">「受壓力影響的共享資源」洞見可讓您識別：-共享儲存資源因為一或多個個別工作負載的高需求而承受壓力、這是共享資源上要求嚴苛且受影響的工作負載<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="6e1238d84ff9d81dac586bf262a824f6" category="cell">此清單必須包含確切的字串相符項目、如果您想要依ESX_host篩選、則必須建立一份以英文分隔的清單、列出Cloud Insights 在VMware和vSphere中報告的ESX主機確切「名稱」。這些「名稱」可以是IP位址、簡單主機名稱或完整網域名稱（FQDN）、這取決於這些主機在最初新增至vSphere時的命名方式。當依叢集篩選時、 使用Hypervisor上CI所報告的Cloud Insights型叢集名稱- Cloud Insights 以vSphere資料中心名稱和正斜槓來預先輸入vSphere叢集名稱-「DC1/clusterA」是叢集名稱Cloud Insights 、而「VMware Data Center DC1」中叢集A中的Hypervisor則由叢集管理程式報告。</block>
+  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">支援與影片</block>
+  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">觀看以下影片、瞭解如何安裝資料收集器、以及如何使用儀表板來充分發揮Config Advisor 效益：Cloud Insights</block>
+  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">安裝及設定資料收集器：</block>
+  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">建立Config Advisor 一個功能豐富的儀表板：</block>
+  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支援</block>
+  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」-&gt;「開啟支援」票證、從「支援工具」開啟票證。</block>
 </blocks>

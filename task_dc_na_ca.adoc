@@ -168,8 +168,24 @@ NOTE: 此為_預覽_功能、因此可能有所變更。Config Advisor在預覽�
 
 
 
-== 支援
+== 支援與影片
 
-如有Config Advisor 任何與解決有關的問題、Config Advisor 請按一下「Help（說明）」->「Open Support（開啟支援）」票證、從「The Short>> Tool（英文）」開啟票證。
+觀看以下影片、瞭解如何安裝資料收集器、以及如何使用儀表板來充分發揮Config Advisor 效益：Cloud Insights
+
+
+
+==== 安裝及設定資料收集器：
+
+video::Config_Advisor_Collector_Part1.mp4[]
+
+
+==== 建立Config Advisor 一個功能豐富的儀表板：
+
+video::Config_Advisor_Collector_Part2.mp4[]
+
+
+==== 其他支援
+
+如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」->「開啟支援」票證、從「支援工具」開啟票證。
 
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
