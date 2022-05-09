@@ -8834,4 +8834,5 @@
   <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
+  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">檢查資料收集器或目標系統的組態。請注意、此監視器有時會傳送比其他監視器更多的警示、因此除非您正在疑難排解、否則建議在此監視器上設定「無警示」收件者。</block>
 </blocks>
