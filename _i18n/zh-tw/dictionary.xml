@@ -8825,4 +8825,13 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">建立Config Advisor 一個功能豐富的儀表板：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支援</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」-&gt;「開啟支援」票證、從「支援工具」開啟票證。</block>
+  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">收集器監視器</block>
+  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">擷取單位關機</block>
+  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</block>
+  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</block>
+  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">收集器失敗</block>
+  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">資料收集器輪詢遇到非預期的故障情況。</block>
+  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
+  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
+  <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
 </blocks>
