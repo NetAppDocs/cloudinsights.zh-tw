@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-09 15:41:39 +0000">05/09/2022</time>
+    <time datetime="2022-05-10 20:48:21 +0000">05/10/2022</time>
     
   
 
@@ -2042,7 +2042,6 @@
 <li><a href="#astra-data-store廣告監控器">Astra Data Store（廣告）監控器</a></li>
 <li><a href="#適用於netapp-ontap-的fsx顯示器">適用於NetApp ONTAP 的FSX顯示器</a></li>
 <li><a href="#k8s顯示器">K8s顯示器</a></li>
-<li><a href="#收集器監視器">收集器監視器</a></li>
 </ul>
 </li>
 <li><a href="#更多資訊">更多資訊</a></li>
@@ -2824,38 +2823,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pod掛載失敗</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">當Pod上的掛載失敗時、就會發出此警示。</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="收集器監視器">收集器監視器</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">監控名稱</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">說明</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">修正行動</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">擷取單位關機</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">收集器失敗</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">資料收集器輪詢遇到非預期的故障情況。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">收集器警告</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">檢查資料收集器或目標系統的組態。請注意、此監視器有時會傳送比其他監視器更多的警示、因此除非您正在疑難排解、否則建議在此監視器上設定「無警示」收件者。</p></td>
 </tr>
 </tbody>
 </table>
