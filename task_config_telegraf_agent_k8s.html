@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-10 17:58:53 +0000">05/10/2022</time>
+    <time datetime="2022-05-10 18:32:43 +0000">05/10/2022</time>
     
   
 
@@ -2514,8 +2514,11 @@ kubectl delete pod telegraf-rs-*</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="示範設定複本集以及停止啟動代理程式">示範設定、複本集、以及停止/啟動代理程式</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="示範設定複本集以及停止啟動代理程式">示範設定、複本集、以及停止/啟動代理程式</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>將在Kubernetes叢集上建立示範集和複製集、以執行所需的Telegraf代理程式/ Pod。根據預設、這些Telegraf代理程式/ Pod會排程在主要和非主要節點上。</p>
 </div>
@@ -2547,8 +2550,10 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="設定代理程式從kubernetes收集資料">設定代理程式從Kubernetes收集資料</h3>
+</div>
+<div class="sect1">
+<h2 id="設定代理程式從kubernetes收集資料">設定代理程式從Kubernetes收集資料</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>附註：指令碼型安裝的預設命名空間為_CI-監 控_。對於基於操作員的安裝、預設命名空間為_NetApp-監 控_。在涉及命名空間的命令中、請務必為安裝指定正確的命名空間。</p>
 </div>
@@ -2612,8 +2617,10 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="安裝kube狀態度量伺服器">安裝kube狀態度量伺服器</h3>
+</div>
+<div class="sect1">
+<h2 id="安裝kube狀態度量伺服器">安裝kube狀態度量伺服器</h2>
+<div class="sectionbody">
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2658,8 +2665,10 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="kube-state指標計數器">Kube-state指標計數器</h3>
+</div>
+<div class="sect1">
+<h2 id="kube-state指標計數器">Kube-state指標計數器</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>請使用下列連結來存取Kube狀態度量計數器的資訊：</p>
 </div>
@@ -2707,8 +2716,10 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="解除安裝代理程式">解除安裝代理程式</h3>
+</div>
+<div class="sect1">
+<h2 id="解除安裝代理程式">解除安裝代理程式</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>請注意、這些命令使用的是預設命名空間「CI監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</p>
 </div>
@@ -2750,8 +2761,10 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="升級代理程式">升級代理程式</h3>
+</div>
+<div class="sect1">
+<h2 id="升級代理程式">升級代理程式</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>請注意、這些命令使用的是預設命名空間「CI監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</p>
 </div>
@@ -2775,7 +2788,6 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 <p><a href="#kubernetes">"安裝新代理程式"</a>。</p>
 </li>
 </ol>
-</div>
 </div>
 </div>
 </div>
