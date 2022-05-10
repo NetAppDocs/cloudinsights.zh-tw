@@ -274,7 +274,7 @@ kubectl delete pod telegraf-rs-*
 ....
 
 
-=== 示範設定、複本集、以及停止/啟動代理程式
+== 示範設定、複本集、以及停止/啟動代理程式
 
 將在Kubernetes叢集上建立示範集和複製集、以執行所需的Telegraf代理程式/ Pod。根據預設、這些Telegraf代理程式/ Pod會排程在主要和非主要節點上。
 
@@ -298,7 +298,7 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 ....
 
 
-=== 設定代理程式從Kubernetes收集資料
+== 設定代理程式從Kubernetes收集資料
 
 附註：指令碼型安裝的預設命名空間為_CI-監 控_。對於基於操作員的安裝、預設命名空間為_NetApp-監 控_。在涉及命名空間的命令中、請務必為安裝指定正確的命名空間。
 
@@ -352,7 +352,7 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 ----
 
 
-=== 安裝kube狀態度量伺服器
+== 安裝kube狀態度量伺服器
 
 
 NOTE: 以營運者為基礎的安裝會處理kube狀態指標的安裝。如果您執行的是以操作員為基礎的安裝、請跳過本節。
@@ -371,7 +371,7 @@ NOTE: 強烈建議使用Kube-state度量2.0版或更新版本、以充分利用�
 
 
 
-=== Kube-state指標計數器
+== Kube-state指標計數器
 
 請使用下列連結來存取Kube狀態度量計數器的資訊：
 
@@ -392,7 +392,7 @@ NOTE: 強烈建議使用Kube-state度量2.0版或更新版本、以充分利用�
 
 
 
-=== 解除安裝代理程式
+== 解除安裝代理程式
 
 請注意、這些命令使用的是預設命名空間「CI監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。
 
@@ -420,7 +420,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
  kubectl delete scc telegraf-hostaccess
 
 
-=== 升級代理程式
+== 升級代理程式
 
 請注意、這些命令使用的是預設命名空間「CI監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。
 
