@@ -43,7 +43,7 @@ NOTE: 如果您使用的是Proxy、請先閱讀平台的Proxy指示、再安裝T
 
 
 
-=== 在Kubernetes上安裝代理程式
+== 在Kubernetes上安裝代理程式
 
 Kubernetes提供兩種收集資料的方法：
 
@@ -84,7 +84,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes安裝選項"]
 |===
 
 
-=== NetApp Kubernetes監控操作員安裝
+== NetApp Kubernetes監控操作員安裝
 
 image:Kubernetes_Operator_Agent_Instructions.png["以操作者為基礎的安裝"]
 
@@ -200,7 +200,7 @@ spec:
 ....
 
 
-=== 指令碼型安裝
+== 指令碼型安裝
 
 image:Kubernetes_Install_Agent_screen.png["指令碼型安裝"]
 
