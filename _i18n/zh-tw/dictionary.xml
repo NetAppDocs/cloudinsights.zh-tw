@@ -7725,7 +7725,6 @@
   <block id="905bf4f9d8189256f8247dcef263d5cb" category="cell">檢查Telegraf代理程式記錄、查看是否報告下列錯誤：e! 外掛程式[inports.dDocker中發生錯誤：嘗試連線至Docker精靈套接字時、取得權限遭拒（若有）、請採取必要步驟、提供Telegraf代理程式存取上述Docker Unix套接字。</block>
   <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">設定NetApp Astra資料儲存區</block>
   <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra Data Store資料收集器</block>
-  <block id="17d0980f445c2a05e39e2cbcbbb44f10" category="paragraph">此資料收集器會擷取單一Astra Data Store叢集的庫存和效能資料。除了資料收集器之外、監控操作員還會設定_Telegraf_以收集進階度量資料、以及設定_Fluent bit_以收集記錄。</block>
   <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">利用功能表監控指標Cloud Insights</block>
   <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra Data Store快速入門</block>
   <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">您也可以在Astra Data Store文件中找到這些安裝說明和其他資訊：<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
@@ -7752,7 +7751,6 @@
   <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">將&lt;Kubernetes _ip&gt;取代為Kubernetes API伺服器的IP位址。</block>
   <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">將&lt;Kubernetes toke&gt;取代為Kubernetes API權杖。</block>
   <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">按Enter。</block>
-  <block id="d29c6dec2ac17ff8872c354eb3f62aea" category="paragraph">安裝程式指令碼將：*確認監控操作員已安裝及設定。*設定Fluent位元。*設定Telegraf。*安裝擷取單元。*在擷取單元執行後、安裝Astra Data Store收集器。</block>
   <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">按一下「完成設定」。</block>
   <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">如果安裝程式指令碼因為錯誤而結束、您可以在錯誤解決後重新執行。如果您的環境未使用預設設定、安裝程式指令碼可支援其他參數、例如監控操作員命名空間和Kubernetes API伺服器連接埠。可用選項的完整清單如下所示。</block>
   <block id="b524f24588085b1e0adf31626117f231" category="section-title">安裝程式指令碼選項：</block>
@@ -8825,14 +8823,6 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">建立Config Advisor 一個功能豐富的儀表板：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支援</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」-&gt;「開啟支援」票證、從「支援工具」開啟票證。</block>
-  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">收集器監視器</block>
-  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">擷取單位關機</block>
-  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</block>
-  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</block>
-  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">收集器失敗</block>
-  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">資料收集器輪詢遇到非預期的故障情況。</block>
-  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
-  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
-  <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
-  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">檢查資料收集器或目標系統的組態。請注意、此監視器有時會傳送比其他監視器更多的警示、因此除非您正在疑難排解、否則建議在此監視器上設定「無警示」收件者。</block>
+  <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">此資料收集器會擷取單一Astra Data Store叢集的庫存和效能資料。除了資料收集器之外、監控操作員也會收集進階度量、並設定「_Fluent bit_」來收集記錄。</block>
+  <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">安裝程式指令碼將：*確認監控操作員已安裝及設定。*設定Fluent位元。*安裝擷取單元。*在擷取單元執行後、安裝Astra Data Store收集器。</block>
 </blocks>

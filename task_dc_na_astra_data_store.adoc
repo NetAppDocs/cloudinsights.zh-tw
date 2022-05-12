@@ -9,7 +9,7 @@ keywords: data collector, queries, create, astra, data, store,
 
 
 [role="lead"]
-此資料收集器會擷取單一Astra Data Store叢集的庫存和效能資料。除了資料收集器之外、監控操作員還會設定_Telegraf_以收集進階度量資料、以及設定_Fluent bit_以收集記錄。
+此資料收集器會擷取單一Astra Data Store叢集的庫存和效能資料。除了資料收集器之外、監控操作員也會收集進階度量、並設定「_Fluent bit_」來收集記錄。
 
 
 TIP: 您也可以在Astra Data Store文件中找到這些安裝說明和其他資訊：link:https://docs.netapp.com/us-en/astra-data-store/use/monitor-with-cloud-insights.html["利用功能表監控指標Cloud Insights"]
@@ -68,7 +68,7 @@ link:https://docs.netapp.com/us-en/astra-data-store/get-started/quick-start.html
 . 將<Kubernetes toke>取代為Kubernetes API權杖。
 . 按Enter。
 +
-安裝程式指令碼將：*確認監控操作員已安裝及設定。*設定Fluent位元。*設定Telegraf。*安裝擷取單元。*在擷取單元執行後、安裝Astra Data Store收集器。
+安裝程式指令碼將：*確認監控操作員已安裝及設定。*設定Fluent位元。*安裝擷取單元。*在擷取單元執行後、安裝Astra Data Store收集器。
 
 . 按一下「完成設定」。
 
