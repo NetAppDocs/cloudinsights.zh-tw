@@ -171,9 +171,6 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 
 
 | 設定ONTAP 「發送緩衝區大小」 | 設定ONTAP 不規則傳送緩衝區大小。如果ONTAP 使用9.8p7之前的版本且發現效能問題、ONTAP 則可變更此版本的更新緩衝區大小、以改善ONTAP 效能。如果您沒有看到此選項、並且想要探索、請聯絡NetApp支援部門。 
-
-
-| 設定ONTAP 「發送緩衝區大小」 | 設定ONTAP 不規則傳送緩衝區大小。如果ONTAP 使用9.8p7之前的版本且ONTAP 出現效能問題、ONTAP 則可以改變該版本的更新緩衝區大小、以改善ONTAP 效能。這是一項隱藏功能、可依客戶要求啟用。 
 |===
 .完成後
 * 在「安裝的資料收集器」頁面中、使用每個收集器右側的選項功能表來編輯資料收集器。您可以重新啟動資料收集器或編輯資料收集器組態屬性。
