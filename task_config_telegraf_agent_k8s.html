@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-10 18:32:43 +0000">05/10/2022</time>
+    <time datetime="2022-05-15 23:31:59 +0000">05/15/2022</time>
     
   
 
@@ -2033,10 +2033,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>使用Cloud Insights <a href="https://docs.influxdata.com/telegraf/v1.19/">"Telegraf"</a> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</p>
-</div>
-<div class="paragraph">
-<p>目前的Telegraf版本Cloud Insights 是* 1.19.3*。</p>
+<p>使用Cloud Insights <a href="https://docs.influxdata.com/telegraf/">"Telegraf"</a> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2062,6 +2059,22 @@
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="以營運者為基礎的安裝或以指令碼為基礎的安裝">以營運者為基礎的安裝或以指令碼為基礎的安裝？</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>支援營運者支援客戶的Kubernetes叢集監控。Cloud InsightsNetApp Kubernetes監控操作員（NKMO）比指令碼安裝的監控方法更為完善、因為它可讓您更靈活地設定監控Cloud Insights 功能、以利從不受客戶驅動的組態介入措施中進行控制、並可強化監控K8s叢集中其他軟體的機會。</p>
+</div>
+<div class="paragraph">
+<p>NKMO持續使用基礎的Telewraf軟體來收集、轉型及交付Cloud Insights 資料至自訂資源定義和自訂資源可強化此功能、針對每個K8s叢集進行自訂監控。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="安裝代理程式">安裝代理程式</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>如果您正在安裝服務資料收集器、但尚未設定代理程式、系統會提示您先安裝適當作業系統的代理程式。本主題提供在下列作業系統上安裝Telegraf代理程式的說明：</p>
 </div>
@@ -2160,7 +2173,7 @@
 <p>如果您是在OpenShift 4.6 - 4.8上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。</p>
 </li>
 <li>
-<p>下列命令必須可用：<em>curl</em>、<em>Sudo _、_openssl</em>、<em>shap256sum_和_kuvectl</em>。若要獲得最佳結果、請將這些命令新增至路徑。</p>
+<p>下列命令必須可用：<em>curle</em>、<em>Sudo（指令碼型安裝不需要）、_openssl</em>、<em>shap256sum_和_kuvectl</em>。若要獲得最佳結果、請將這些命令新增至路徑。</p>
 </li>
 <li>
 <p>必須安裝Kube-state指標。如需詳細資訊、請參閱下方。Kube-state指標會隨著以操作員為基礎的安裝而自動安裝。</p>
@@ -2335,9 +2348,9 @@ password: &lt;password from docker secret step above&gt;</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>docker.io/telegraf:1.19.3
-gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0</pre>
+<pre>docker.io/telegraf:1.21.4
+gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2345,7 +2358,7 @@ k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>docker.io/fluent-bit:1.7.8
+<pre>docker.io/fluent-bit:1.8.12
 docker.io/kubernetes-event-exporter:0.10</pre>
 </div>
 </div>
@@ -2379,11 +2392,81 @@ dockerRepoSecret: &lt;optional: name of the docker secret of enterprise/corp doc
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="從指令碼型k8s監控升級為以操作員為基礎的">從指令碼型K8s監控升級為以操作員為基礎的</h3>
+<div class="paragraph">
+<p>如果您已安裝以指令碼為基礎的Kubernetes監控、請依照下列步驟升級至以營運者為基礎的監控：</p>
+</div>
+<div class="paragraph">
+<p>升級步驟</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>從指令碼型監控安裝中保留ConfigMap：</p>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl --namespace ci-monitoring get cm -o yaml &gt; /tmp/telegraf-configs.yaml
+. 儲存K8s叢集名稱、以便在安裝K8s以操作者為基礎的監控解決方案時使用、以確保資料不中斷。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您不記得CI中K8s叢集的名稱、可以使用下列命令列從您儲存的組態中擷取：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> cat /tmp/telegraf-configs.yaml | grep kubernetes_cluster | head -2
+. 移除指令碼型監控</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>若要在Kubernetes上解除安裝以指令碼為基礎的代理程式、請執行下列步驟：</p>
+</div>
+<div class="paragraph">
+<p>如果監控命名空間僅用於Telegraf：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl delete ns ci-monitoring</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果監控命名空間用於Telegraf以外的其他用途：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="KubernetesOperatorTile.png" alt="Kubernetes營運者的Tile"></span></p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="指令碼型安裝">指令碼型安裝</h2>
 <div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="附註">
+</td>
+<td class="content">
+指令碼型安裝已過時。請使用Kubernetes以營運者為基礎的集合來監控Kubernetes叢集。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Install_Agent_screen.png" alt="指令碼型安裝"></span></p>
 </div>

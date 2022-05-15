@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-10 20:48:21 +0000">05/10/2022</time>
+    <time datetime="2022-05-15 23:31:59 +0000">05/15/2022</time>
     
   
 
@@ -2036,12 +2036,13 @@
 <li><a href="#監控說明">監控說明</a>
 <ul class="sectlevel2">
 <li><a href="#度量監控器">度量監控器</a></li>
-<li><a href="#記錄監視器未解決時間問題">記錄監視器（未解決時間問題）</a></li>
-<li><a href="#記錄監視器會依時間解析">記錄監視器會依時間解析</a></li>
+<li><a href="#記錄監視器">記錄監視器</a></li>
 <li><a href="#勒索軟體記錄監控">勒索軟體記錄監控</a></li>
 <li><a href="#astra-data-store廣告監控器">Astra Data Store（廣告）監控器</a></li>
 <li><a href="#適用於netapp-ontap-的fsx顯示器">適用於NetApp ONTAP 的FSX顯示器</a></li>
 <li><a href="#k8s顯示器">K8s顯示器</a></li>
+<li><a href="#變更記錄監視器">變更記錄監視器</a></li>
+<li><a href="#收集器監視器">收集器監視器</a></li>
 </ul>
 </li>
 <li><a href="#更多資訊">更多資訊</a></li>
@@ -2265,7 +2266,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="記錄監視器未解決時間問題">記錄監視器（未解決時間問題）</h3>
+<h3 id="記錄監視器">記錄監視器</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2375,25 +2376,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">系統有未指派的磁碟：容量被浪費、您的系統可能套用部分組態變更或組態變更。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">執行下列修正動作：…使用「disk show -n」命令判斷哪些磁碟尚未指派。…使用「disk assign」命令將磁碟指派給系統。</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="記錄監視器會依時間解析">記錄監視器會依時間解析</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">監控名稱</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">嚴重性</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">說明</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">修正行動</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">防毒伺服器忙碌中</p></td>
@@ -2592,6 +2574,30 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VScan伺服器已向儲存系統回報錯誤。這通常表示已發現病毒。不過、VScan伺服器上的其他錯誤可能會導致此事件。…拒絕用戶端存取檔案。視VScan伺服器的設定和組態而定、VScan伺服器可能會清理、隔離或刪除檔案。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">檢查「syslog」事件中報告的VScan伺服器記錄、查看是否能成功清除、隔離或刪除受感染的檔案。如果無法這麼做、系統管理員可能必須手動刪除檔案。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Volume離線</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此訊息表示磁碟區已離線。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">將磁碟區重新連線。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Volume受限</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此事件表示彈性磁碟區受到限制。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">將磁碟區重新連線。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">儲存VM停止成功</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">當「Vserver stop」作業成功時、就會出現此訊息。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用「vserver start」命令在儲存VM上啟動資料存取。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">節點緊急</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此事件是在發生緊急情況時發出的</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">請聯絡NetApp客戶支援部門。</p></td>
 </tr>
 </tbody>
 </table>
@@ -2823,6 +2829,90 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pod掛載失敗</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">當Pod上的掛載失敗時、就會發出此警示。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="變更記錄監視器">變更記錄監視器</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">監控名稱</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">嚴重性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">監控說明</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已探索到內部Volume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">當發現內部Volume時、就會出現此訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">內部Volume已修改</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">修改內部Volume時會出現此訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已探索儲存節點</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">當發現儲存節點時、就會出現此訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">儲存節點已移除</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">移除儲存節點時會出現此訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已探索儲存資源池</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">當發現儲存資源池時、就會出現此訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">發現儲存虛擬機器</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">當發現儲存虛擬機器時、就會出現此訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">儲存虛擬機器已修改</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資訊</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">修改儲存虛擬機器時會出現此訊息。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="收集器監視器">收集器監視器</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">監控名稱</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">說明</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">修正行動</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">擷取單位關機</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">收集器失敗</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">資料收集器輪詢遇到非預期的故障情況。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">收集器警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">檢查資料收集器或目標系統的組態。請注意、此監視器有時會傳送比其他監視器更多的警示、因此除非您正在疑難排解、否則建議在此監視器上設定「無警示」收件者。</p></td>
 </tr>
 </tbody>
 </table>
