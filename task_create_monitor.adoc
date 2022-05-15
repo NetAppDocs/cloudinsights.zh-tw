@@ -148,6 +148,9 @@ image:email_monitor_alerts.png["電子郵件警示收件者"]
 image:Webhook_Monitor_Notifications.png["Webhook警示"]
 
 
+NOTE: 「資料收集器」通知的優先順序高於任何與叢集/資料收集器相關的特定「監視器」通知。ONTAP您為資料收集器本身設定的收件者清單將會收到資料收集器警示。如果沒有作用中的資料收集器警示、則會將監控產生的警示傳送給特定的監控收件者。
+
+
 
 === 設定修正動作或其他資訊
 

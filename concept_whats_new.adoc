@@ -12,6 +12,84 @@ NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些�
 
 
 
+=== 2022年5月
+
+
+
+==== 與NetApp支援人員即時聊天
+
+您現在可以與NetApp支援人員即時聊天！在「說明」>「支援」頁面上、只要按一下「聊天」圖示、或按一下「與我們聯絡」區段中的「_Chat」、即可開始聊天工作階段。Standard和Premium Edition的使用者可在美國週末享有聊天支援。
+
+image:ChatIcon.png["聊天圖示會在笑容上方顯示藍色NetApp「N」"]
+
+
+
+==== Kubernetes營運者
+
+。 link:/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes監控操作員"] （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。
+
+
+
+==== 使用API管理使用者和邀請函
+
+您現在可以使用Cloud Insights 功能強大的API來管理使用者和邀請函。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html["API Swagger文件"]。
+
+
+
+==== 資料收集警示
+
+您現在可以接收資料收集的警示 link:/task_system_monitors.html#collector-monitors["活動"]：
+
+* 擷取單位關機
+* 收集器失敗
+* 收集器警告
+
+
+請注意、這些監視器預設為「暫停」、必須先啟用（恢復）、才能傳送警示。
+
+另外請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。
+
+
+
+==== 儲存變更記錄事件的警示
+
+當您為Cloud Insights 由NetApp產生的儲存變更記錄事件定義監控器（使用記錄來源_logs.cloud_insights.change_log.storage_）時、會收到資訊警示、並在每次收集後比較儲存系統的過去和新狀態。下列ONTAP 事件的預設監視器可供使用以供儲存：
+
+* 已探索到內部Volume
+* 內部Volume已修改
+* 已探索儲存節點
+* 儲存節點已移除
+* 已探索儲存資源池
+* 發現儲存虛擬機器
+* 儲存虛擬機器已修改
+
+
+
+
+==== 預覽功能
+
+經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能、請聯絡您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售團隊"] 以取得更多資訊。
+
+|===
+
+
+| *功能* | *說明* 
+
+
+| Kubernetes命名空間不足 | _Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["瞭解更多資訊"] 
+
+
+| 內部Volume與Volume容量的完整時間預測 | 在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。 
+
+
+| –限制使用者在遭受攻擊時存取Cloud Secure | 偵測到攻擊時、能夠限制使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+
+
+| 共享資源正承受壓力 | 「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
+|===
+'''
+
+
 === 2022年4月
 
 

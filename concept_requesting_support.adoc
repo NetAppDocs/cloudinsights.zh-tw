@@ -12,7 +12,7 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 toc::[]
 您可以按一下*「Help」（說明）>「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您是處於試用模式或訂閱模式。
 
-image:SupportPageExample-NA.png["支援頁面"]
+image:Support_with_Chat.png["支援頁面"]
 
 
 
@@ -109,6 +109,7 @@ NOTE: 您必須先註冊才能登錄 <<Activating support entitlement and access
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["*電話*"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*支援服務單*"]
+* *交談*：您將與NetApp支援人員聯絡以尋求協助（僅限平日）。按一下「*說明>支援*」頁面右下角的泡泡。
 
 
 您也可以按一下以申請銷售支援 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*聯絡銷售人員*"] 連結：

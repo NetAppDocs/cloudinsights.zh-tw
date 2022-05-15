@@ -24,6 +24,9 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 | 資料收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 
 
+| 使用者管理 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+
+
 | 警示 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 
 
@@ -31,6 +34,9 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 
 
 | 資料擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+
+
+| 記錄擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 |===
 此外Cloud Insights 、您的技術也很出色 link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 將決定您可以存取哪些API。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
 
@@ -48,7 +54,7 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 
 您可以登入Cloud Insights 到「介紹」並瀏覽至「*管理> API存取*」、以找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。
 
-image:API_Documentation.png["API文件"]
+image:APICategoriesApril2022.png["API類別"]
 
 API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。
 

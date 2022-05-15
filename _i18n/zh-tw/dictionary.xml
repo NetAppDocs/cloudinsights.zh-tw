@@ -2887,7 +2887,6 @@
   <block id="f1ab21f8622d029d35426bf088426872" category="cell">核取此選項時、會啟用資料夾存取監控的事件。請注意、即使未選取此選項、仍會監控資料夾的建立/重新命名與刪除。啟用此功能將會增加監控的事件數目。</block>
   <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">設定ONTAP 「發送緩衝區大小」</block>
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">設定ONTAP 不規則傳送緩衝區大小。如果ONTAP 使用9.8p7之前的版本且發現效能問題、ONTAP 則可變更此版本的更新緩衝區大小、以改善ONTAP 效能。如果您沒有看到此選項、並且想要探索、請聯絡NetApp支援部門。</block>
-  <block id="be41e26b92ad2d5eb39a134c12da9d18" category="cell">設定ONTAP 不規則傳送緩衝區大小。如果ONTAP 使用9.8p7之前的版本且ONTAP 出現效能問題、ONTAP 則可以改變該版本的更新緩衝區大小、以改善ONTAP 效能。這是一項隱藏功能、可依客戶要求啟用。</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成後</block>
   <block id="82d21a2ba2528e048a25848fe767072e" category="list-text">在「安裝的資料收集器」頁面中、使用每個收集器右側的選項功能表來編輯資料收集器。您可以重新啟動資料收集器或編輯資料收集器組態屬性。</block>
   <block id="4b3fbac9b531aa2660d41834f330998e" category="paragraph">發生錯誤時、請按一下「_Status」（狀態）欄中的「_Mor詳細 資料」、以取得錯誤的詳細資料。</block>
@@ -3287,7 +3286,6 @@
   <block id="6a330cc3d1dd1f4ba2997354a3f21845" category="cell">Volume Qtree配額過度使用</block>
   <block id="fb7354d1ae8b5435bfa69884ef47da15" category="cell">Volume Qtree配額過度認可指定qtree配額將磁碟區視為過度委派的百分比。已達到磁碟區qtree配額的設定臨界值。監控Volume qtree配額過度使用可確保使用者獲得不中斷的資料服務。</block>
   <block id="c7138a3f31fdad6a8a7bd85a7c38cf78" category="cell">如果違反臨界值、則應立即採取行動、將服務中斷降至最低：1.增加Volume 2的空間。刪除不需要的資料當超出警告臨界值時、請考慮增加磁碟區的空間。</block>
-  <block id="6fec8353819572eb45b4ed570fb15361" category="section-title">記錄監視器（未解決時間問題）</block>
   <block id="007cc9547ae8884ad597cd92ba505422" category="cell">嚴重性</block>
   <block id="b8de81d6f52d224f773817fe81217dad" category="cell">AWS認證資料未初始化</block>
   <block id="551b723eafd6a31d444fcb2f5920fbd3" category="cell">資訊</block>
@@ -3335,7 +3333,6 @@
   <block id="c3a767bd8fbb8085e22929b47fd36414" category="cell">未指派的磁碟</block>
   <block id="254fb8d955e04a3313ad5e5301e71f5b" category="cell">系統有未指派的磁碟：容量被浪費、您的系統可能套用部分組態變更或組態變更。</block>
   <block id="5e0ce0c8530028abf9cee2b2f669b26a" category="cell">執行下列修正動作：…使用「disk show -n」命令判斷哪些磁碟尚未指派。…使用「disk assign」命令將磁碟指派給系統。</block>
-  <block id="9d54715097050a7c75d5d072c9231c2c" category="section-title">記錄監視器會依時間解析</block>
   <block id="d4411ca6d33212a8fab721627ea4d2cd" category="cell">防毒伺服器忙碌中</block>
   <block id="126d1014fbd870e17193834ac299c745" category="cell">防毒伺服器太忙、無法接受任何新的掃描要求。</block>
   <block id="a57337ce0f147fe22e39d1fe02938402" category="cell">如果此訊息經常發生、請確定有足夠的防毒伺服器來處理SVM產生的病毒掃描負載。</block>
@@ -5720,7 +5717,6 @@
   <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">當系統提示您設定通知時、請選擇依電子郵件、Webhook或兩者發出警示、然後選擇要通知的警示類型（「嚴重」、「警告」、「資訊」及/或「已解決」）。您可以選擇通知全域監控收件者清單（在*管理&gt;通知*中設定）、或指定其他收件者。準備好繼續時、請按一下*完成設定*。</block>
   <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">收集器通知</block>
   <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">檢視資料收集器登陸頁面時、您可以按一下資料收集器摘要區段「通知」欄位中的鉛筆圖示來修改通知。</block>
   <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">編輯收集器通知</block>
   <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">按一下*進階組態*以新增其他組態欄位。（並非所有的資料收集器都需要進階組態。）</block>
@@ -5877,7 +5873,6 @@
   <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">若要在Windows、Linux或Mac上安裝代理程式、請遵循 <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
   <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">在Kubernetes上安裝代理程式</block>
   <block id="1f7b055a94f5e05d9c08683890d73b5e" category="list-text">傳統的指令碼型代理程式安裝（不建議）</block>
-  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">下列命令必須可用：_curl_、_Sudo _、_openssl_、_shap256sum_和_kuvectl_。若要獲得最佳結果、請將這些命令新增至路徑。</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
   <block id="737f024effb455f30b04c7091e2d8667" category="section-title">疑難排解Kubernetes代理程式安裝</block>
   <block id="69a528dde5c160691621956eda156089" category="cell">對於不是Kubernetes叢集資料存放區的叢集、您會在Telewraf RS pod中看到下列訊息：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /crp/etcd/server.key：OPEN /etc/Kubernetes /pi/kit/no file或pi/no這樣的檔案</block>
@@ -6037,7 +6032,6 @@
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">正在申請支援</block>
   <block id="fece24766a61b92f80fd8d572bb323d4" category="paragraph">您可以按一下*「Help」（說明）&gt;「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您是處於試用模式或訂閱模式。</block>
   <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">支援頁面</block>
-  <block id="7ad952bbe9e97c8916bd02849ca3327b" category="paragraph"><block ref="7ad952bbe9e97c8916bd02849ca3327b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">正在啟動支援權利</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">詳細資料</block>
   <block id="1b179bc63122b8c6c97a198ea6812e2a" category="paragraph">以試用模式執行時、可提供自助服務和電子郵件支援。Cloud Insights訂閱服務後、強烈建議您啟動支援服務權利。啟用支援權利可讓您透過線上聊天室、網路票證系統和電話存取技術支援。在完成註冊之前、預設的支援模式為自助服務。請參閱 <block ref="0ac112fddddbe1a53d74b73cbe92356e" category="inline-link-macro-rx"></block> 以下。</block>
@@ -8825,4 +8819,113 @@
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」-&gt;「開啟支援」票證、從「支援工具」開啟票證。</block>
   <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">此資料收集器會擷取單一Astra Data Store叢集的庫存和效能資料。除了資料收集器之外、監控操作員也會收集進階度量、並設定「_Fluent bit_」來收集記錄。</block>
   <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">安裝程式指令碼將：*確認監控操作員已安裝及設定。*設定Fluent位元。*安裝擷取單元。*在擷取單元執行後、安裝Astra Data Store收集器。</block>
+  <block id="d07e55df7f133c0213955a67c979d808" category="admonition">「資料收集器」通知的優先順序高於任何與叢集/資料收集器相關的特定「監視器」通知。ONTAP您為資料收集器本身設定的收件者清單將會收到資料收集器警示。如果沒有作用中的資料收集器警示、則會將監控產生的警示傳送給特定的監控收件者。</block>
+  <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">記錄監視器</block>
+  <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">Volume離線</block>
+  <block id="5609b8e3a5a7d588b5e383ca4cbc5c57" category="cell">此訊息表示磁碟區已離線。</block>
+  <block id="e7536040ed5bedd31b479262b47500e3" category="cell">將磁碟區重新連線。</block>
+  <block id="d1c6b663baf98044c99cc6d564598639" category="cell">Volume受限</block>
+  <block id="c8f1088c9457fdf2989240ba63ef79ec" category="cell">此事件表示彈性磁碟區受到限制。</block>
+  <block id="083dfc3e7cc398a4bc31ef7290a24654" category="cell">儲存VM停止成功</block>
+  <block id="2863895a71d5cb9e33a098ac259eb334" category="cell">當「Vserver stop」作業成功時、就會出現此訊息。</block>
+  <block id="b339435665ff601f5913edea4f10f768" category="cell">使用「vserver start」命令在儲存VM上啟動資料存取。</block>
+  <block id="4dfd7227c51557eca5ad760f17b1e3b2" category="cell">節點緊急</block>
+  <block id="60b3e4bcb8a36a9f858c72d83a5d4291" category="cell">此事件是在發生緊急情況時發出的</block>
+  <block id="7d8b9fd3afbc24d3726d797e23715603" category="cell">請聯絡NetApp客戶支援部門。</block>
+  <block id="cc3da35abc04bdb599096c76784750c9" category="section-title">變更記錄監視器</block>
+  <block id="8f0ea9dc7dd1704f6e4e6e709dc84ec2" category="cell">已探索到內部Volume</block>
+  <block id="f42080c83d185f44a2df17faa40886d5" category="cell">當發現內部Volume時、就會出現此訊息。</block>
+  <block id="2652a160c7449e6a9d9867ab77272655" category="cell">內部Volume已修改</block>
+  <block id="ff227a947c0e31eac1d84272a0a4148f" category="cell">修改內部Volume時會出現此訊息。</block>
+  <block id="27a24fe47191d9d8388895fa49370e30" category="cell">已探索儲存節點</block>
+  <block id="e93b9e33542d91144ab9a9642a3a26a9" category="cell">當發現儲存節點時、就會出現此訊息。</block>
+  <block id="cc6843bc6cd1e570e50f7263422a340b" category="cell">儲存節點已移除</block>
+  <block id="754ddad2e9ef53ebffdea523a3044181" category="cell">移除儲存節點時會出現此訊息。</block>
+  <block id="35dfb12aba09ddfaeaa55717279f3093" category="cell">已探索儲存資源池</block>
+  <block id="ab23bc42353ab4c690e0aedd260bcf22" category="cell">當發現儲存資源池時、就會出現此訊息。</block>
+  <block id="b3e73795809b6cff92d12effd798e721" category="cell">發現儲存虛擬機器</block>
+  <block id="bcf038f7a85e7cc87e8a178fbc2d0c53" category="cell">當發現儲存虛擬機器時、就會出現此訊息。</block>
+  <block id="cbe58c07baaa017f926c6594715fa74d" category="cell">儲存虛擬機器已修改</block>
+  <block id="7177a13bcf2c1f14bff3599bdff189af" category="cell">修改儲存虛擬機器時會出現此訊息。</block>
+  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">收集器監視器</block>
+  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">擷取單位關機</block>
+  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</block>
+  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</block>
+  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">收集器失敗</block>
+  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">資料收集器輪詢遇到非預期的故障情況。</block>
+  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
+  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
+  <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
+  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">檢查資料收集器或目標系統的組態。請注意、此監視器有時會傳送比其他監視器更多的警示、因此除非您正在疑難排解、否則建議在此監視器上設定「無警示」收件者。</block>
+  <block id="1879fc114cb19058a792b71aac95cb61" category="paragraph">使用Cloud Insights <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
+  <block id="938845c86bf6439f2bf6f4fc86fee5cf" category="section-title">以營運者為基礎的安裝或以指令碼為基礎的安裝？</block>
+  <block id="da90f5dd76c952cff43625f8bc75e982" category="paragraph">支援營運者支援客戶的Kubernetes叢集監控。Cloud InsightsNetApp Kubernetes監控操作員（NKMO）比指令碼安裝的監控方法更為完善、因為它可讓您更靈活地設定監控Cloud Insights 功能、以利從不受客戶驅動的組態介入措施中進行控制、並可強化監控K8s叢集中其他軟體的機會。</block>
+  <block id="8270372556d5c0c95f3132ca3526b498" category="paragraph">NKMO持續使用基礎的Telewraf軟體來收集、轉型及交付Cloud Insights 資料至自訂資源定義和自訂資源可強化此功能、針對每個K8s叢集進行自訂監控。</block>
+  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">安裝代理程式</block>
+  <block id="51192dad58dd7321468a8557d0452699" category="section-title">從指令碼型K8s監控升級為以操作員為基礎的</block>
+  <block id="0266610cf3fcbb5ba3b10477aecfe4e1" category="paragraph">如果您已安裝以指令碼為基礎的Kubernetes監控、請依照下列步驟升級至以營運者為基礎的監控：</block>
+  <block id="a24b05a1dbfc11d6e8c8bae6db339730" category="paragraph">升級步驟</block>
+  <block id="38c37951a474215e996d1e567cc4b4d5" category="list-text">從指令碼型監控安裝中保留ConfigMap：</block>
+  <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">儲存K8s叢集名稱、以便在安裝K8s以操作者為基礎的監控解決方案時使用、以確保資料不中斷。</block>
+  <block id="35c735048514e15b96558a336dddd484" category="paragraph">如果您不記得CI中K8s叢集的名稱、可以使用下列命令列從您儲存的組態中擷取：</block>
+  <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">移除指令碼型監控</block>
+  <block id="8f0f3f28d66cb57de112b327612b48d4" category="inline-image-macro">Kubernetes營運者的Tile</block>
+  <block id="099085e6f245bdfee8ce5ed73ba25890" category="paragraph"><block ref="099085e6f245bdfee8ce5ed73ba25890" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28fa7dedfef6e24a05f2efea53818499" category="admonition">指令碼型安裝已過時。請使用Kubernetes以營運者為基礎的集合來監控Kubernetes叢集。</block>
+  <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">Insights可讓您深入瞭解資源使用量和趨勢。</block>
+  <block id="f1c9e9af80bb533618f5bdefe333747d" category="doc">洞見</block>
+  <block id="4e97535a9ad440d2d327ab364bb7a0ec" category="paragraph">Insights可讓您深入瞭解資源使用量、以及資源使用量對其他資源的影響、或是完整分析的時間。</block>
+  <block id="93b6b2ecbe8e38118f0e38a7f128eb90" category="paragraph">我們提供多種見解。請瀏覽*儀表板&gt; Insights *、開始深入瞭解。您可以在主索引標籤上檢視使用中的Insights（目前正在進行的Insights）、或在_非使用中Insights _索引標籤上檢視非使用中的Insights。非使用中Insights是指先前已啟用但不再出現的Insights。</block>
+  <block id="fe9a216d65384f5afb0047e612bf386e" category="section-title">Insight類型</block>
+  <block id="9e9013279f80acdb151d7cad5bc3f7d8" category="section-title">共享的資源正承受壓力</block>
+  <block id="5f002a5fdb5afaacfc165c3a324751d5" category="paragraph">高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。支援各種工具、協助您調查環境中的資源飽和及影響。Cloud Insights <block ref="de4400096db30b5f709799778e050e2c" category="inline-link-macro-rx"></block></block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
+  <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">這是_預覽_功能、可能會隨著時間而改變、因為已進行改善。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 關於Cloud Insights 本產品的功能。</block>
+  <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetes命名空間不足</block>
+  <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">Kubernetes命名空間不足空間Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
+  <block id="5153ae996beb76439018cf032b394d21" category="paragraph"><block ref="5153ae996beb76439018cf032b394d21" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e7ded308e600f5c72a32aac82868158" category="list-text">*交談*：您將與NetApp支援人員聯絡以尋求協助（僅限平日）。按一下「*說明&gt;支援*」頁面右下角的泡泡。</block>
+  <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">檢視* ONTAP 《資料收集器*》登陸頁面時、您可以按一下資料收集器摘要區段「通知」欄位中的鉛筆圖示來修改通知。</block>
+  <block id="851540d32e033a0c14b63879881da871" category="summary">Insights可協助您預測Kubernetes空間何時會滿。</block>
+  <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">洞見：Kubernetes命名空間不足</block>
+  <block id="8754218641c0cb64c48e8a8cc68703c4" category="paragraph">在您的環境中、空間不足的情況絕不是好現象。協助您預測Kubernetes持續磁碟區已滿之前的時間。Cloud Insights</block>
+  <block id="8dc9b2ee1508011b53e7f0f04a3b46a8" category="paragraph">_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個持續磁碟區將滿之前的剩餘天數。</block>
+  <block id="f2c0221f294a823d827a375c35966fc9" category="paragraph">您可以瀏覽*儀表板&gt; Insights *來檢視此Insight。</block>
+  <block id="6f6740f128ff4e7b81b3e550f00f9705" category="inline-image-macro">K8s命名空間中有空間不足風險的工作負載清單</block>
+  <block id="9cd0fe5cef5af60f762c34beb874081a" category="paragraph"><block ref="9cd0fe5cef5af60f762c34beb874081a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b5d4ddc25dbf8207f2bee2e686857aa1" category="paragraph">按一下工作負載以開啟Insight的詳細資料頁面。在本頁面上、您會看到顯示工作負載容量趨勢的圖表、以及顯示下列項目的表格：</block>
+  <block id="531d617d072da086d2a88b4381d112d7" category="list-text">工作負載名稱</block>
+  <block id="5594ad451661776d3680f239ed48baa0" category="list-text">持續Volume受影響</block>
+  <block id="60883d911c538f3168c126825cfa1804" category="list-text">預測的完整時間（以天計）</block>
+  <block id="0e1f0238958c9e1538d02888144645f7" category="list-text">持續Volume容量</block>
+  <block id="95458ffe03f081fb38d0e5630d7836c6" category="list-text">受影響的後端儲存資源、目前的容量已用完總容量。按一下此連結即可開啟後端Volume的詳細登陸頁面。</block>
+  <block id="9b6de7d57253456e4f416bcef90b76e5" category="inline-image-macro">顯示詳細資料的工作負載表</block>
+  <block id="e589c155ffae6696761533f45ef69b7c" category="paragraph"><block ref="e589c155ffae6696761533f45ef69b7c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f8f8bf593c85a6ac1a3a0cc2103aa21" category="section-title">如果空間不足、該怎麼辦？</block>
+  <block id="d6fe83f2685cfec3bef24ac55c5aa793" category="paragraph">在Insight頁面上、按一下*+ Show建置建議*以檢視可能的解決方案。當空間不足時、最簡單的選擇是增加更多容量、Cloud Insights 而此功能可讓您增加最佳容量、以增加60天目標預測的完整時間。也會顯示其他建議。</block>
+  <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">可增加至60天TFF的容量</block>
+  <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="103ede5225263a5f8e396b6adb9b4898" category="paragraph">您也可以在此複製方便的Insight連結、將頁面加入書籤、或輕鬆與團隊分享。</block>
+  <block id="b56a5394775a9f077c12cb3e770d913c" category="section-title">2022年5月</block>
+  <block id="968babe350ca1e85b43c2bfecb5dd48a" category="section-title">與NetApp支援人員即時聊天</block>
+  <block id="37679084525740b7948c17a18a192fc9" category="paragraph">您現在可以與NetApp支援人員即時聊天！在「說明」&gt;「支援」頁面上、只要按一下「聊天」圖示、或按一下「與我們聯絡」區段中的「_Chat」、即可開始聊天工作階段。Standard和Premium Edition的使用者可在美國週末享有聊天支援。</block>
+  <block id="45e33bccc4ebc864f00a61301270a364" category="inline-image-macro">聊天圖示會在笑容上方顯示藍色NetApp「N」</block>
+  <block id="ed9854709bd41d275fb8660c2894a4fc" category="paragraph"><block ref="ed9854709bd41d275fb8660c2894a4fc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="541eba6bad0f6bb8c10bec2af8d0388d" category="section-title">Kubernetes營運者</block>
+  <block id="92631a8aee2d30caecb661301eccee48" category="inline-link-macro">NetApp Kubernetes監控操作員</block>
+  <block id="44e205d6b7f670b4484b5c59a0e047a1" category="paragraph">。 <block ref="7bfa97fa7d1d00f6d7f973b03d477760" category="inline-link-macro-rx"></block> （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。</block>
+  <block id="b309f54e4f5c6e536fce4de1d83c5553" category="section-title">使用API管理使用者和邀請函</block>
+  <block id="ed39f5bc3223c1b01ac77f72f296192a" category="inline-link-macro">API Swagger文件</block>
+  <block id="11ac41afd372e3478375bc4334741ded" category="paragraph">您現在可以使用Cloud Insights 功能強大的API來管理使用者和邀請函。如需詳細資訊、請參閱 <block ref="8b90a2a6f600732ad913a4dda50bc415" category="inline-link-macro-rx"></block>。</block>
+  <block id="8f586721df71efca42eda16d08885806" category="section-title">資料收集警示</block>
+  <block id="16908b0605f2645dfcb4c3a8d248cef3" category="inline-link-macro">活動</block>
+  <block id="b3a98c480e653bcb96e30bd853fa73d8" category="paragraph">您現在可以接收資料收集的警示 <block ref="cd5c9bc76fe8dcbf686501201e710bd1" category="inline-link-macro-rx"></block>：</block>
+  <block id="090cf11f8e59f7e005270bc00a8af56b" category="paragraph">請注意、這些監視器預設為「暫停」、必須先啟用（恢復）、才能傳送警示。</block>
+  <block id="43bd31a2d107dc985aca1295fc25dfe1" category="paragraph">另外請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
+  <block id="81fb83219b34a7b8835cf9be74652d9b" category="section-title">儲存變更記錄事件的警示</block>
+  <block id="19d2e18338377f4123600e47841d8c9a" category="paragraph">當您為Cloud Insights 由NetApp產生的儲存變更記錄事件定義監控器（使用記錄來源_logs.cloud_insights.change_log.storage_）時、會收到資訊警示、並在每次收集後比較儲存系統的過去和新狀態。下列ONTAP 事件的預設監視器可供使用以供儲存：</block>
+  <block id="bbe116aac998e7707bfddff610136f34" category="cell">Kubernetes命名空間不足</block>
+  <block id="639cd114dad5880c94752e290d36353a" category="cell">_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。<block ref="91569d71925d0cb55a46b7a5e8a36cb5" category="inline-link-macro-rx"></block></block>
+  <block id="9bfa6f1e81e8e1a4af8a2057b85a0257" category="cell">「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
+  <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
