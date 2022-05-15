@@ -8913,13 +8913,11 @@
   <block id="ed9854709bd41d275fb8660c2894a4fc" category="paragraph"><block ref="ed9854709bd41d275fb8660c2894a4fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="541eba6bad0f6bb8c10bec2af8d0388d" category="section-title">Kubernetes營運者</block>
   <block id="92631a8aee2d30caecb661301eccee48" category="inline-link-macro">NetApp Kubernetes監控操作員</block>
-  <block id="44e205d6b7f670b4484b5c59a0e047a1" category="paragraph">。 <block ref="7bfa97fa7d1d00f6d7f973b03d477760" category="inline-link-macro-rx"></block> （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。</block>
   <block id="b309f54e4f5c6e536fce4de1d83c5553" category="section-title">使用API管理使用者和邀請函</block>
   <block id="ed39f5bc3223c1b01ac77f72f296192a" category="inline-link-macro">API Swagger文件</block>
   <block id="11ac41afd372e3478375bc4334741ded" category="paragraph">您現在可以使用Cloud Insights 功能強大的API來管理使用者和邀請函。如需詳細資訊、請參閱 <block ref="8b90a2a6f600732ad913a4dda50bc415" category="inline-link-macro-rx"></block>。</block>
   <block id="8f586721df71efca42eda16d08885806" category="section-title">資料收集警示</block>
   <block id="16908b0605f2645dfcb4c3a8d248cef3" category="inline-link-macro">活動</block>
-  <block id="b3a98c480e653bcb96e30bd853fa73d8" category="paragraph">您現在可以接收資料收集的警示 <block ref="cd5c9bc76fe8dcbf686501201e710bd1" category="inline-link-macro-rx"></block>：</block>
   <block id="090cf11f8e59f7e005270bc00a8af56b" category="paragraph">請注意、這些監視器預設為「暫停」、必須先啟用（恢復）、才能傳送警示。</block>
   <block id="43bd31a2d107dc985aca1295fc25dfe1" category="paragraph">另外請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
   <block id="81fb83219b34a7b8835cf9be74652d9b" category="section-title">儲存變更記錄事件的警示</block>
@@ -8928,4 +8926,6 @@
   <block id="639cd114dad5880c94752e290d36353a" category="cell">_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。<block ref="91569d71925d0cb55a46b7a5e8a36cb5" category="inline-link-macro-rx"></block></block>
   <block id="9bfa6f1e81e8e1a4af8a2057b85a0257" category="cell">「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b90e10e9945ca4933745606f75a304bb" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。</block>
+  <block id="a12dd41aedb5d3e2639e77030a5a0084" category="paragraph">您現在可以接收資料收集的警示 <block ref="ff2275d535241d8d394c16f909063489" category="inline-link-macro-rx"></block>：</block>
 </blocks>

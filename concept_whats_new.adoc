@@ -26,7 +26,7 @@ image:ChatIcon.png["聊天圖示會在笑容上方顯示藍色NetApp「N」"]
 
 ==== Kubernetes營運者
 
-。 link:/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes監控操作員"] （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。
+。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes監控操作員"] （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。
 
 
 
@@ -38,7 +38,7 @@ image:ChatIcon.png["聊天圖示會在笑容上方顯示藍色NetApp「N」"]
 
 ==== 資料收集警示
 
-您現在可以接收資料收集的警示 link:/task_system_monitors.html#collector-monitors["活動"]：
+您現在可以接收資料收集的警示 link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#collector-monitors["活動"]：
 
 * 擷取單位關機
 * 收集器失敗
