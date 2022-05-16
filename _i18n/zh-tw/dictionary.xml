@@ -8847,7 +8847,6 @@
   <block id="bcf038f7a85e7cc87e8a178fbc2d0c53" category="cell">當發現儲存虛擬機器時、就會出現此訊息。</block>
   <block id="cbe58c07baaa017f926c6594715fa74d" category="cell">儲存虛擬機器已修改</block>
   <block id="7177a13bcf2c1f14bff3599bdff189af" category="cell">修改儲存虛擬機器時會出現此訊息。</block>
-  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">收集器監視器</block>
   <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">擷取單位關機</block>
   <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</block>
   <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</block>
@@ -8856,7 +8855,6 @@
   <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
-  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">檢查資料收集器或目標系統的組態。請注意、此監視器有時會傳送比其他監視器更多的警示、因此除非您正在疑難排解、否則建議在此監視器上設定「無警示」收件者。</block>
   <block id="1879fc114cb19058a792b71aac95cb61" category="paragraph">使用Cloud Insights <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
   <block id="938845c86bf6439f2bf6f4fc86fee5cf" category="section-title">以營運者為基礎的安裝或以指令碼為基礎的安裝？</block>
   <block id="da90f5dd76c952cff43625f8bc75e982" category="paragraph">支援營運者支援客戶的Kubernetes叢集監控。Cloud InsightsNetApp Kubernetes監控操作員（NKMO）比指令碼安裝的監控方法更為完善、因為它可讓您更靈活地設定監控Cloud Insights 功能、以利從不受客戶驅動的組態介入措施中進行控制、並可強化監控K8s叢集中其他軟體的機會。</block>
@@ -8928,4 +8926,6 @@
   <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b90e10e9945ca4933745606f75a304bb" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。</block>
   <block id="a12dd41aedb5d3e2639e77030a5a0084" category="paragraph">您現在可以接收資料收集的警示 <block ref="ff2275d535241d8d394c16f909063489" category="inline-link-macro-rx"></block>：</block>
+  <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">資料收集監視器</block>
+  <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">檢查資料收集器或目標系統的組態。請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
 </blocks>
