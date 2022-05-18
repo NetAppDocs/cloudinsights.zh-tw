@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-16 00:01:17 +0000">05/16/2022</time>
+    <time datetime="2022-05-18 13:35:48 +0000">05/18/2022</time>
     
   
 
@@ -2053,7 +2053,13 @@
 <div class="sect3">
 <h4 id="kubernetes營運者">Kubernetes營運者</h4>
 <div class="paragraph">
-<p>。 <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install">"NetApp Kubernetes監控操作員"</a> （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。</p>
+<p>我們利用先進的Kubernetes監控和叢集資源管理器、讓您更容易上手。Cloud Insights</p>
+</div>
+<div class="paragraph">
+<p>。 <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install">"NetApp Kubernetes監控操作員"</a> （NKMO）是安裝Kubernetes for Cloud Insights the SesnInsights的首選方法、能以更少的步驟靈活設定監控功能、並增加監控K8s叢集中其他軟體的機會。</p>
+</div>
+<div class="paragraph">
+<p>按一下上方連結以取得更多資訊和先決條件</p>
 </div>
 </div>
 <div class="sect3">
@@ -2065,57 +2071,19 @@
 <div class="sect3">
 <h4 id="資料收集警示">資料收集警示</h4>
 <div class="paragraph">
-<p>您現在可以接收資料收集的警示 <a href="https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#collector-monitors">"活動"</a>：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>擷取單位關機</p>
-</li>
-<li>
-<p>收集器失敗</p>
-</li>
-<li>
-<p>收集器警告</p>
-</li>
-</ul>
+<p>請勿因為收集器故障而錯過關鍵指標！</p>
 </div>
 <div class="paragraph">
-<p>請注意、這些監視器預設為「暫停」、必須先啟用（恢復）、才能傳送警示。</p>
-</div>
-<div class="paragraph">
-<p>另外請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</p>
+<p>使用新的資料收集器來追蹤您的資料收集器、比以往更容易 <a href="https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors">"警示"</a> 用於資料收集器和擷取單元故障。請注意、這些監視器預設為「暫停」。若要啟用、請瀏覽至您的「監視器」頁面、找出並恢復「擷取裝置關機」和「收集器故障」</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="儲存變更記錄事件的警示">儲存變更記錄事件的警示</h4>
+<h4 id="關於更新的資訊ontap">關於更新的資訊ONTAP</h4>
 <div class="paragraph">
-<p>當您為Cloud Insights 由NetApp產生的儲存變更記錄事件定義監控器（使用記錄來源_logs.cloud_insights.change_log.storage_）時、會收到資訊警示、並在每次收集後比較儲存系統的過去和新狀態。下列ONTAP 事件的預設監視器可供使用以供儲存：</p>
+<p>不要讓非預期的儲存變更導致停機！</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>已探索到內部Volume</p>
-</li>
-<li>
-<p>內部Volume已修改</p>
-</li>
-<li>
-<p>已探索儲存節點</p>
-</li>
-<li>
-<p>儲存節點已移除</p>
-</li>
-<li>
-<p>已探索儲存資源池</p>
-</li>
-<li>
-<p>發現儲存虛擬機器</p>
-</li>
-<li>
-<p>儲存虛擬機器已修改</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>您現在可以設定Cloud Insights 當在ONTAP 支援系統上偵測到FlexVols、節點和SVM的修改或移除時發出警示。</p>
 </div>
 </div>
 <div class="sect3">
