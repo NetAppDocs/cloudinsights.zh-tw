@@ -8915,17 +8915,19 @@
   <block id="ed39f5bc3223c1b01ac77f72f296192a" category="inline-link-macro">API Swagger文件</block>
   <block id="11ac41afd372e3478375bc4334741ded" category="paragraph">您現在可以使用Cloud Insights 功能強大的API來管理使用者和邀請函。如需詳細資訊、請參閱 <block ref="8b90a2a6f600732ad913a4dda50bc415" category="inline-link-macro-rx"></block>。</block>
   <block id="8f586721df71efca42eda16d08885806" category="section-title">資料收集警示</block>
-  <block id="16908b0605f2645dfcb4c3a8d248cef3" category="inline-link-macro">活動</block>
-  <block id="090cf11f8e59f7e005270bc00a8af56b" category="paragraph">請注意、這些監視器預設為「暫停」、必須先啟用（恢復）、才能傳送警示。</block>
-  <block id="43bd31a2d107dc985aca1295fc25dfe1" category="paragraph">另外請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
-  <block id="81fb83219b34a7b8835cf9be74652d9b" category="section-title">儲存變更記錄事件的警示</block>
-  <block id="19d2e18338377f4123600e47841d8c9a" category="paragraph">當您為Cloud Insights 由NetApp產生的儲存變更記錄事件定義監控器（使用記錄來源_logs.cloud_insights.change_log.storage_）時、會收到資訊警示、並在每次收集後比較儲存系統的過去和新狀態。下列ONTAP 事件的預設監視器可供使用以供儲存：</block>
   <block id="bbe116aac998e7707bfddff610136f34" category="cell">Kubernetes命名空間不足</block>
   <block id="639cd114dad5880c94752e290d36353a" category="cell">_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。<block ref="91569d71925d0cb55a46b7a5e8a36cb5" category="inline-link-macro-rx"></block></block>
   <block id="9bfa6f1e81e8e1a4af8a2057b85a0257" category="cell">「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b90e10e9945ca4933745606f75a304bb" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> （NKMO）適用於執行Kubernetes 1.17或更新版本的所有環境、也是安裝Kubernetes for Cloud Insights the Fesis的首選方法。NKMO比指令碼安裝的監控方法更為完善、因為它能更靈活地設定監控功能、使監控功能可從Cloud Insights 功能上控制、減少客戶導向的組態介入、並可強化監控K8s叢集中執行的其他軟體的機會。</block>
-  <block id="a12dd41aedb5d3e2639e77030a5a0084" category="paragraph">您現在可以接收資料收集的警示 <block ref="ff2275d535241d8d394c16f909063489" category="inline-link-macro-rx"></block>：</block>
   <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">資料收集監視器</block>
   <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">檢查資料收集器或目標系統的組態。請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
+  <block id="3f2608784f855ab79eaabba7e20db8cd" category="paragraph">我們利用先進的Kubernetes監控和叢集資源管理器、讓您更容易上手。Cloud Insights</block>
+  <block id="c99dc7f44e492bb96fd08368b4a3ddbc" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> （NKMO）是安裝Kubernetes for Cloud Insights the SesnInsights的首選方法、能以更少的步驟靈活設定監控功能、並增加監控K8s叢集中其他軟體的機會。</block>
+  <block id="d957cd4e3ae2f67fec227c3e2c78ab16" category="paragraph">按一下上方連結以取得更多資訊和先決條件</block>
+  <block id="58943c1999eff55c3f818d8cd9208708" category="paragraph">請勿因為收集器故障而錯過關鍵指標！</block>
+  <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-link-macro">警示</block>
+  <block id="b07c25215a61dbc162c04ac4e8cf464f" category="paragraph">使用新的資料收集器來追蹤您的資料收集器、比以往更容易 <block ref="465d95cf415e2e3bb54b69142e1e3a2d" category="inline-link-macro-rx"></block> 用於資料收集器和擷取單元故障。請注意、這些監視器預設為「暫停」。若要啟用、請瀏覽至您的「監視器」頁面、找出並恢復「擷取裝置關機」和「收集器故障」</block>
+  <block id="d79ca0965e13425b418413735c2f77b4" category="section-title">關於更新的資訊ONTAP</block>
+  <block id="3093b62af2aca236846ea1b6c223c129" category="paragraph">不要讓非預期的儲存變更導致停機！</block>
+  <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">您現在可以設定Cloud Insights 當在ONTAP 支援系統上偵測到FlexVols、節點和SVM的修改或移除時發出警示。</block>
 </blocks>
