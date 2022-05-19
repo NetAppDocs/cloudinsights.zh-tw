@@ -189,7 +189,7 @@ summary: 資料收集器ONTAP
 ....
 security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
 security login role create -role ci_readonly -cmddirname security -access readonly
-security login role create -role ci_readonly -access all -cmddirname “cluster application-record create”
+security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
 ....
 . 使用下列命令建立唯讀使用者。執行create命令後、系統會提示您輸入此使用者的密碼。
 +
