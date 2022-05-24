@@ -2401,8 +2401,6 @@
   <block id="67714f40f76da8e998f34935a33be570" category="doc">疑難排解Linux上的擷取單元問題</block>
   <block id="799af4349bd49a845da3921295bd9dbe" category="paragraph">您可在此處找到Linux伺服器擷取單元疑難排解問題的建議。</block>
   <block id="a56fa9c38676d6ae98991340b46ca3ad" category="cell">按一下AU右側的功能表、然後選取*還原連線*。請依照指示還原您的擷取設備：1.停止擷取單元（AU）服務。您可以按一下「_複製停止命令_」按鈕、將命令快速複製到剪貼簿、然後將此命令貼到擷取單元機器上的命令提示字元中。2.在AU的_/var/lib/NetApp/cloudinss/acq/conf_資料夾中建立名為「token」的檔案。3.按一下「複製權杖」按鈕、然後將此權杖貼到您建立的檔案中。4.重新啟動AU服務。按一下「_複製重新啟動命令_」按鈕、然後將命令貼到AU的命令提示字元中。</block>
-  <block id="d97d849aedd1b3ccd65327253d0656d3" category="cell">在SELinux上安裝失敗</block>
-  <block id="cce922f56afc409366f4616547ab9813" category="cell">當AU安裝在SELinux上時、SE應停用或設為允許模式。安裝完成後、即可啟用強制模式。</block>
   <block id="1b30be776a2009c2060ad54316282f2f" category="cell">確保您的採購單位伺服器或VM符合要求 <block ref="e5b1973153b9956f66244f44dc226837" category="inline-link-macro-rx"></block></block>
   <block id="282980c29b61f103a10899efb2a22351" category="cell">Linux：找不到程式庫/檔案</block>
   <block id="64cba66bbfb823eae83faaffd35d3fe6" category="cell">確保您的Linux擷取單元伺服器/VM擁有所有必要的程式庫。例如、您必須在伺服器上安裝_unzip程式庫。若要安裝_unzip程式庫、請在執行擷取單元安裝指令碼之前、執行命令_* Sudo yum install unzip *</block>
@@ -8930,4 +8928,6 @@
   <block id="d79ca0965e13425b418413735c2f77b4" category="section-title">關於更新的資訊ONTAP</block>
   <block id="3093b62af2aca236846ea1b6c223c129" category="paragraph">不要讓非預期的儲存變更導致停機！</block>
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">您現在可以設定Cloud Insights 當在ONTAP 支援系統上偵測到FlexVols、節點和SVM的修改或移除時發出警示。</block>
+  <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">啟動擷取單元伺服器服務時、權限遭拒</block>
+  <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
 </blocks>
