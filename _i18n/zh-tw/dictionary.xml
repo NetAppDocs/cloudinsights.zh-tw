@@ -8928,5 +8928,5 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。代理程式最多可支援50個資料收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）使用此表格做為一般規模調整指南：</block>
-  <block id="bebdcbd60f7879de52fcd7bcd57c521c" category="admonition">Kubernetes指示已移至新頁面。麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得最新的Kubernetes代理程式說明。</block>
+  <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes代理程式指示已移至新頁面。麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得最新的Kubernetes代理程式說明。</block>
 </blocks>
