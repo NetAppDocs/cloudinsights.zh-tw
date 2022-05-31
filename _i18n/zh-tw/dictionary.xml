@@ -1811,10 +1811,8 @@
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">*到這裡*</block>
-  <block id="4f34579ac6d99e36b83ddd35d80ebb6d" category="admonition">此頁面上的Kubernetes指示將移至新頁面。麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得最新的Kubernetes代理程式說明。</block>
   <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes提供兩種收集資料的方法：</block>
   <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes監控操作員組態。這是Kubernetes的建議安裝方法。</block>
-  <block id="7b30b1516f4acc31dd26b0ee7b225209" category="list-text">傳統的指令碼型代理程式安裝</block>
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">安裝說明視您選擇的項目而有所不同。</block>
   <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes安裝選項</block>
   <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
@@ -8930,4 +8928,5 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。代理程式最多可支援50個資料收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）使用此表格做為一般規模調整指南：</block>
+  <block id="bebdcbd60f7879de52fcd7bcd57c521c" category="admonition">Kubernetes指示已移至新頁面。麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得最新的Kubernetes代理程式說明。</block>
 </blocks>
