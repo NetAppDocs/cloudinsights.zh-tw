@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloudinsights/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/concept_device_resolution_regex_examples.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_device_resolution_regex_examples.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/concept_device_resolution_regex_examples.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_device_resolution_regex_examples.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloudinsights/concept_device_resolution_regex_examples.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloudinsights/concept_device_resolution_regex_examples.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloudinsights/concept_device_resolution_regex_examples.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_device_resolution_regex_examples.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_device_resolution_regex_examples.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloudinsights/concept_device_resolution_regex_examples.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1502,7 +1494,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/index.html">
         本文檔 Cloud Insights
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloudinsights/concept_whats_new.html">
@@ -2023,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 09:57:17 +0000">05/03/2022</time>
+    <time datetime="2022-06-08 14:05:56 +0000">06/08/2022</time>
     
   
 
@@ -2037,8 +2029,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="格式化規則運算式">格式化規則運算式</h3>
+<div class="sect1">
+<h2 id="格式化規則運算式">格式化規則運算式</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>建立用於Cloud Insights 自動解析的規則運算式時、您可以在名為_format_的欄位中輸入值來設定輸出格式。</p>
 </div>
@@ -2093,6 +2086,10 @@ hostname4-Raleigh-solaris</pre>
 <p>變數之間的連字號可提供插入格式化輸出中的固定文字範例。</p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="範例">範例</h2>
+<div class="sectionbody">
 <div class="sect2">
 <h3 id="範例1顯示區域名稱">範例1顯示區域名稱</h3>
 <div class="paragraph">
@@ -2416,8 +2413,11 @@ hostname4-Raleigh-solaris</pre>
 <div class="paragraph">
 <p>regexp：（.<strong>？）_.</strong></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="範例9">範例9.</h3>
 <div class="paragraph">
-<p>範例9此範例會找出第1 <em>之後的所有項目、直到第二</em>。</p>
+<p>此範例會找出第1 <em>個之後的所有項目、直到第二個</em>。</p>
 </div>
 <div class="paragraph">
 <p><strong>區域：</strong> Z_MyComputerName_StorageName</p>
@@ -2551,6 +2551,8 @@ hostname4-Raleigh-solaris</pre>
 </div>
 <div class="paragraph">
 <p><strong>格式：</strong> US-BV-\1</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -2699,4 +2701,5 @@ hostname4-Raleigh-solaris</pre>
     </script>
     <script src='/zh-tw/cloudinsights/js/www-ntap.js'></script>
     <script src='/zh-tw/cloudinsights/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloudinsights/js/sidebar.js'></script>
   </body></html>
