@@ -42,7 +42,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-=== 其他建議
+== 其他建議
 
 * 強烈建議ONTAP 您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*、同步化支援系統和代理機器上的時間。
 

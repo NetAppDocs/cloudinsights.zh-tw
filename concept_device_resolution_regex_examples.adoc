@@ -13,7 +13,7 @@ summary:
 
 
 
-=== 格式化規則運算式
+== 格式化規則運算式
 
 建立用於Cloud Insights 自動解析的規則運算式時、您可以在名為_format_的欄位中輸入值來設定輸出格式。
 
@@ -48,6 +48,10 @@ hostname3-Boston-windows2K
 hostname4-Raleigh-solaris
 ....
 變數之間的連字號可提供插入格式化輸出中的固定文字範例。
+
+
+
+== 範例
 
 
 
@@ -218,7 +222,11 @@ MyComputerName123_HBA1_Symm1_FA1
 
 regexp：（.*？）_.*
 
-範例9此範例會找出第1 _之後的所有項目、直到第二_。
+
+
+=== 範例9.
+
+此範例會找出第1 _個之後的所有項目、直到第二個_。
 
 *區域：* Z_MyComputerName_StorageName
 

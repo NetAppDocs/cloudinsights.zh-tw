@@ -17,7 +17,7 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 
 
 
-=== 庫存資產
+== 庫存資產
 
 下列資產類型可用於查詢、儀表板小工具和自訂資產登陸頁面。篩選器、運算式和顯示可用的欄位和計數器會因資產類型而異。並非所有資產都可用於所有小工具類型。
 
@@ -50,7 +50,7 @@ keywords: query, queries, Application, Datastore, Disk, Fabric, Generic Device, 
 
 
 
-=== 整合指標
+== 整合指標
 
 除了查詢庫存資產及其相關的效能指標之外、您也可以查詢*整合資料*指標、例如Kubernetes或Docker產生的指標、或是隨ONTAP 附的「VMware進階指標」。
 

@@ -28,7 +28,7 @@ image:Support_with_Chat.png["支援頁面"]
 
 
 
-==== 選項1：使用預先存在的NetApp支援網站（NSS）SSO帳戶的使用者步驟
+=== 選項1：使用預先存在的NetApp支援網站（NSS）SSO帳戶的使用者步驟
 
 .步驟
 . 瀏覽至NetApp註冊網站 https://register.netapp.com[]
@@ -46,7 +46,7 @@ image:ExistingCustomerRegExample.png["現有客戶表單"]
 
 
 
-==== 選項2：新NetApp客戶的步驟、不含預先存在的NetApp支援網站（NSS）SSO帳戶
+=== 選項2：新NetApp客戶的步驟、不含預先存在的NetApp支援網站（NSS）SSO帳戶
 
 .步驟
 . 瀏覽至NetApp註冊網站 https://register.netapp.com[]

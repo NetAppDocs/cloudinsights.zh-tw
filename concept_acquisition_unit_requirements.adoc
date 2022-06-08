@@ -13,7 +13,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 
 
 
-=== 需求
+== 需求
 
 |===
 
@@ -43,14 +43,14 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 |===
 
 
-=== 其他建議
+== 其他建議
 
 * 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步擷取裝置機器上的時間。
 
 
 
 
-=== 關於規模調整
+== 關於規模調整
 
 您可以開始使用Cloud Insights 僅有8GB記憶體和50GB磁碟空間的支援中心、不過對於較大型的環境、您應該自問下列問題：
 

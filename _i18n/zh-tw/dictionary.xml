@@ -4869,7 +4869,6 @@
   <block id="9a1a396295b55e43a238268cd5378571" category="paragraph">MyComputerName123_HBA1_Symm1_FA1</block>
   <block id="c8d9735981badcae3909dff78f1d657f" category="paragraph">主機名稱：MyComputerName</block>
   <block id="97b24ca631392b0a444fb266ccf9e85a" category="paragraph">regexp：（.*？）_.*</block>
-  <block id="59c4da5f3e129e4540ab4ed0809c7648" category="paragraph">範例9此範例會找出第1 _之後的所有項目、直到第二_。</block>
   <block id="5fd386bb34f01c8fea9302b4944c3fc0" category="paragraph">*區域：* Z_MyComputerName_StorageName</block>
   <block id="f7cca9f0fcd660c02b10b4923524cf00" category="paragraph">*主機名稱：* MyComputerName</block>
   <block id="934b65d923d9218256bfdfb8a6204b2f" category="paragraph">* RegExp:*.*？_（.*？）_.*？</block>
@@ -8929,4 +8928,7 @@
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。代理程式最多可支援50個資料收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）使用此表格做為一般規模調整指南：</block>
   <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes代理程式指示已移至新頁面。麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得最新的Kubernetes代理程式說明。</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
+  <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">範例9.</block>
+  <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此範例會找出第1 _個之後的所有項目、直到第二個_。</block>
 </blocks>

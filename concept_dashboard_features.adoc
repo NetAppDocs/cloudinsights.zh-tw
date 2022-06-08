@@ -508,7 +508,7 @@ image::SecondaryAxisExplained.png[次要軸範例]
 
 
 
-==== 可變類型
+=== 可變類型
 
 變數可以是下列其中一種類型：
 

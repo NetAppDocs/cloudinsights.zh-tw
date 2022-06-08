@@ -72,7 +72,7 @@ B + C應小於A、否則值機員機器將無法監控。
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
 
 
-=== 範例
+== 範例
 
 假設我們有三種SVMS、每秒產生100、200和300個事件的事件率。
 
