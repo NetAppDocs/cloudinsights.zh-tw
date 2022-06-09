@@ -1710,7 +1710,6 @@
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">支援Telegraf作為收集整合資料的代理程式、可在Windows、Linux、MacOS和Kubernetes上設定。Cloud Insights</block>
   <block id="1da5ffd366c7914393abacbd5eddb42f" category="doc">設定代理程式以收集資料（Linux/Linux/Mac）</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
-  <block id="863fe9f23689919336be1a2467bf51a4" category="paragraph">使用Cloud Insights <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
   <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">目前的Telegraf版本Cloud Insights 是* 1.19.3*。</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果您想在安裝代理程式之前驗證安裝檔案、請參閱以下的一節 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
@@ -8931,4 +8930,5 @@
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">範例9.</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此範例會找出第1 _個之後的所有項目、直到第二個_。</block>
+  <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">使用Cloud Insights <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
 </blocks>

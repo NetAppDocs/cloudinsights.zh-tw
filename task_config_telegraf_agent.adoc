@@ -9,7 +9,7 @@ summary: 支援Telegraf作為收集整合資料的代理程式、可在Windows�
 
 
 [role="lead"]
-使用Cloud Insights link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights
+使用Cloud Insights link:https://docs.influxdata.com/telegraf["Telegraf"] 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights
 
 目前的Telegraf版本Cloud Insights 是* 1.19.3*。
 
