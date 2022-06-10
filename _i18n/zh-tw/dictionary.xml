@@ -7996,7 +7996,6 @@
   <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">從清單中選取可用的記錄。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">選擇您的記錄</block>
-  <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">可供查詢的記錄類型可能會因您的環境而異。隨時間推移、可能會新增其他記錄類型。</block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以設定篩選條件、進一步精簡查詢結果。例如、若要尋找所有顯示失敗的記錄訊息、請為包含「失敗」一詞的_Messages設定篩選器。</block>
   <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">您可以開始在篩選欄位中輸入所需的文字；Cloud Insights 當您輸入字串時、畫面會提示您建立包含字串的萬用字元搜尋。</block>
@@ -8931,4 +8930,5 @@
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">範例9.</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此範例會找出第1 _個之後的所有項目、直到第二個_。</block>
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">使用Cloud Insights <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
+  <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

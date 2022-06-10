@@ -17,7 +17,7 @@ image:LogExplorerMenu.png["記錄查詢功能表、480"]
 
 從清單中選取可用的記錄。
 
-image:LogExplorer_ChooseLog.png["選擇您的記錄"]
+image:LogExplorer_2022.png["選擇您的記錄"]
 
 
 NOTE: 可供查詢的記錄類型可能會因您的環境而異。隨時間推移、可能會新增其他記錄類型。
