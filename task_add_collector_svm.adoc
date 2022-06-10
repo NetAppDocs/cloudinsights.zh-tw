@@ -13,7 +13,7 @@ summary: 新增資料收集器
 
 
 
-=== 開始之前
+== 開始之前
 
 * 下列項目支援此資料收集器：
 +
@@ -68,11 +68,11 @@ summary: 新增資料收集器
 
 
 
-=== 權限相關注意事項
+== 權限相關注意事項
 
 
 
-==== 透過叢集管理IP新增權限：
+=== 透過叢集管理IP新增權限：
 
 如果您無法使用叢集管理管理員使用者來允許Cloud Secure Sfuse存取ONTAP SVM資料收集器、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。設定Cloud Secure 使用叢集管理IP的資料收集器時、請使用「CsUser」的使用者名稱和密碼。
 
@@ -97,7 +97,7 @@ security login role create -role csrole -cmddirname "vserver export-policy rule"
 ....
 
 
-==== 透過Vserver管理IP新增權限：
+=== 透過Vserver管理IP新增權限：
 
 如果您無法使用叢集管理管理員使用者來允許Cloud Secure Sfuse存取ONTAP SVM資料收集器、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將Cloud Secure 使用者名稱「CsUser」和密碼設定為使用Vserver Management IP時、請使用「CsUser」。
 
@@ -116,7 +116,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 ....
 
 
-=== 設定資料收集器
+== 設定資料收集器
 
 .組態步驟
 . 以系統管理員或帳戶擁有者身分登入Cloud Insights 您的支援環境。
@@ -178,7 +178,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 
 
 
-=== 疑難排解
+== 疑難排解
 
 下表說明已知問題及其解決方法。
 

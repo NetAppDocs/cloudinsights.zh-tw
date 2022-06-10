@@ -13,7 +13,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
-=== 潛在攻擊警示與警告
+== 潛在攻擊警示與警告
 
 若要傳送_潛在攻擊_警示通知、請在_傳送可能的攻擊警示_區段中輸入收件者的電子郵件地址。電子郵件通知會針對警示上的每個動作傳送至警示收件者清單。
 
@@ -21,7 +21,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
-=== 代理程式與資料收集器健全狀況監控
+== 代理程式與資料收集器健全狀況監控
 
 您可以透過通知來監控代理程式和資料來源的健全狀況。
 
