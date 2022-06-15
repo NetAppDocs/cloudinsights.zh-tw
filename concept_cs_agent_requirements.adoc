@@ -99,7 +99,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | TCP | 389（LDAP）636（LDAPS / start-TLS） | LDAP伺服器URL | 傳出 | 連線至LDAP 
 
 
-| TCP | 443.. | SVM管理IP位址 | 傳出 | API與ONTAP NetApp通訊 
+| TCP | 443.. | 叢集或SVM管理IP位址（視SVM收集器組態而定） | 傳出 | API與ONTAP NetApp通訊 
 
 
 | TCP | 35000 - 55000 | SVM資料LIF IP位址 | 傳入/傳出 | 與ONTAP 適用於Fpolicy活動的功能溝通 

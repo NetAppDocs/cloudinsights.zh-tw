@@ -8054,7 +8054,6 @@
   <block id="1b09a58921479be87f9dae639915150f" category="cell">389（LDAP）636（LDAPS / start-TLS）</block>
   <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP伺服器URL</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">連線至LDAP</block>
-  <block id="5b44c7f90aeca08b8030b7c60d1e78ed" category="cell">SVM管理IP位址</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API與ONTAP NetApp通訊</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM資料LIF IP位址</block>
@@ -8931,4 +8930,5 @@
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此範例會找出第1 _個之後的所有項目、直到第二個_。</block>
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">使用Cloud Insights <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c1f82bcb121a82434f4244621860e18e" category="cell">叢集或SVM管理IP位址（視SVM收集器組態而定）</block>
 </blocks>
