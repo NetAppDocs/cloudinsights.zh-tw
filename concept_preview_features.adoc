@@ -21,7 +21,7 @@ keywords: coming soon, preview,
 | *功能* | *說明* 
 
 
-| 內部Volume與Volume容量的完整時間預測 | 在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。 
+| 時間到完整預測 | 在下列物件的容量用盡之前、可以預測天數：內部Volume Storage Pool Volume這些預測值有助於大幅降低中斷風險。Cloud Insights在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。 
 
 
 | 限制使用者存取自動回應動作 | 偵測到攻擊時Cloud Secure 、利用限制使用者存取檔案系統（完整區塊或設為唯讀存取）、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 

@@ -1710,7 +1710,6 @@
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">支援Telegraf作為收集整合資料的代理程式、可在Windows、Linux、MacOS和Kubernetes上設定。Cloud Insights</block>
   <block id="1da5ffd366c7914393abacbd5eddb42f" category="doc">設定代理程式以收集資料（Linux/Linux/Mac）</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
-  <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">目前的Telegraf版本Cloud Insights 是* 1.19.3*。</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果您想在安裝代理程式之前驗證安裝檔案、請參閱以下的一節 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">安裝代理程式</block>
@@ -4194,10 +4193,6 @@
   <block id="93a8152ce7cb1841a4bf2c531cae0884" category="paragraph">顯示與基礎資產有高關聯性（百分比）的資產、以及一或多個效能指標。</block>
   <block id="52e73b46b8c614c95e2d0e115e5ee54c" category="list-text">頂尖貢獻者</block>
   <block id="9d5e6443d723a60535db4b6e588cd979" category="paragraph">顯示對基礎資產貢獻（百分比）的資產。</block>
-  <block id="bb6c5ecbef13e567544e5a0068237b25" category="list-text">貪婪</block>
-  <block id="6c3bac24c8ca8af7b4c02e9947ae939b" category="paragraph">顯示透過共用相同資源（例如主機、網路和儲存設備）而從資產中移走系統資源的資產。</block>
-  <block id="aa95669cd5732a57e8f6467705f06642" category="list-text">降級</block>
-  <block id="f67699c23f776601fce199281a6e1781" category="paragraph">顯示因此資產而耗盡系統資源的資產。</block>
   <block id="a7fd66167e9a4b5030676f8f2b2ad02f" category="section-title">「專家檢視」中的警示</block>
   <block id="ce5f9e14bbd4a967c3c432f4319e1a01" category="paragraph">警示也會顯示在資產登陸頁的「專家檢視」區段中、顯示警示的時間和持續時間、以及觸發警示的監控條件。</block>
   <block id="22d49532ff07c48997ea5c32826181db" category="paragraph"><block ref="22d49532ff07c48997ea5c32826181db" category="inline-image-macro-rx" type="image"></block></block>
@@ -5320,8 +5315,6 @@
   <block id="129f8880167531920bb3396830948e86" category="cell">Linux需求</block>
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Windows需求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">作業系統</block>
-  <block id="763e7c73a838930a9b9e74b5d349cbd6" category="cell">執行下列其中一項授權版本的電腦：* CentOS（64位元）：7.2至7.9、8.1至8.4 * DEBIAN64（64位元）：9及10 * Oracle Enterprise Linux（64位元）：7.5至7.9、8.1至8.4 * Red Hat Enterprise Linux（64位元）： 7.2到7.9、8.1到8.4 * Ubuntu伺服器：18.04和20.04 LTS此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
-  <block id="35d156c90b71a0fab57ae717b06aecd8" category="cell">執行下列其中一種授權版本的電腦：* Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2個CPU核心</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">相同</block>
   <block id="4789f23283b3a61f858b641a1bef19a3" category="cell">記憶體</block>
@@ -5477,18 +5470,6 @@
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f2b31bafb888e1e6aa37602d2dd9751" category="summary">Kubernetes詳細資料頁面提供相關資訊和詳細資料、可協助您進行疑難排解和規劃。</block>
   <block id="e3971bbebca9b2f849e520ba01a2f593" category="doc">Kubernetes叢集詳細資料頁面</block>
-  <block id="4269bb6c19a94f9018fc8b2391d389d6" category="paragraph">Kubernetes叢集詳細資料頁面會顯示Kubernetes叢集的詳細資訊。</block>
-  <block id="45839520c79817b3544ea7278498444f" category="paragraph">「詳細資料」頁面包含三個不同但連結的登陸頁面、其中顯示叢集、節點和pod資訊。「資源使用率」區段會變更、以顯示所選項目（叢集、節點或pod）的詳細資料。您可以在畫面頂端看到目前的頁面類型和名稱。目前頁面顯示於下列健全狀況：_站台名稱/ Kubernetes /叢集/節點/ Pod。您可以按一下此「階層連結」追蹤的任何部分、直接前往該特定頁面。</block>
-  <block id="826429035a8a9edc1a04760f1ec377e7" category="inline-image-macro">頁面階層連結</block>
-  <block id="4e853d77c8a0f1da8dabbad1a932d14f" category="paragraph"><block ref="4e853d77c8a0f1da8dabbad1a932d14f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="16719f4f1118dc7f0bc249c43c4df67c" category="section-title">叢集概觀</block>
-  <block id="14282b9f7f0312a2fa708795fe78363f" category="paragraph">叢集總覽頁面提供實用資訊一覽：</block>
-  <block id="99719263f96092fedfd6f2402532e320" category="inline-image-macro">附加註釋的叢集檢視</block>
-  <block id="8438aaf79bf17894116d917e847fe2ab" category="paragraph"><block ref="8438aaf79bf17894116d917e847fe2ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="313e6b13bbf296445e97ffbff720fc88" category="section-title">節點和Pod數</block>
-  <block id="973d0070d42f76d3bcc7400eac12db71" category="paragraph">頁面頂端的節點/ Pod數會顯示叢集中的節點和Pod總數、以及目前警示或擱置中的Pod數明細。</block>
-  <block id="7b2679f5857ae1f0cc402ba89c63ebfd" category="paragraph"><block ref="7b2679f5857ae1f0cc402ba89c63ebfd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="795ff789c4877d24d232de2509542198" category="admonition">三個Pod子計數（健全、警示、擱置）可能會超過顯示的Pod總數。這可能是因為_待發 計數包括_all_擱置的Pod、包括非排程和排程的（換句話說、是未附加和附加至節點）。</block>
   <block id="5817293ec6fb52e169e7a825ab42de81" category="section-title">叢集「輪式」</block>
   <block id="a7f1dfb8c02fbef30a0e54df62d243f8" category="inline-image-macro">叢集輪</block>
   <block id="b853a854b0614b4da3e776995dee109f" category="paragraph"><block ref="b853a854b0614b4da3e776995dee109f" category="inline-image-macro-rx" type="image"></block></block>
@@ -5506,19 +5487,7 @@
   <block id="0770df85581c38c14cc5a29c2ac0ee05" category="paragraph">您可以將游標移到Node元素上、以檢視Filesystem、Memory和CPU資訊。</block>
   <block id="aeba0ba92e92fa550526462ee7f15f49" category="inline-image-macro">節點容量與配置</block>
   <block id="505a160b62bc31c8ffa7c7dd25cbf213" category="paragraph"><block ref="505a160b62bc31c8ffa7c7dd25cbf213" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b62f28268f24460a0f4b9910b578af0a" category="section-title">詳細資料區段</block>
-  <block id="cde36533718db4476aa09a4e047344d6" category="paragraph">Kubernetes Explorer的每個頁面都會顯示一組使用圖、其中可能包含CPU、記憶體和儲存設備。這些圖表下方是每個類別中最重要物件的摘要和清單、並提供基礎詳細資料的連結。例如、_Nod_顯示Pod和容器、_Pod顯示PVCS和相關物件及容器等。下圖顯示_Nod_頁面上的詳細資訊範例：</block>
-  <block id="b3c17e50efb1c9edd02adcbdb514b3ca" category="inline-image-macro">資源使用範例</block>
-  <block id="ef00d34afdcf8b03d5a2e1e4d3af0d5a" category="paragraph"><block ref="ef00d34afdcf8b03d5a2e1e4d3af0d5a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="99320250e7bccded117faab7b4abbe23" category="paragraph">出現警示的資源會顯示在清單頂端。按一下受影響的資源、深入瞭解詳細資訊。</block>
   <block id="ed5c4f798b6d55f2a89cb97884f0d548" category="section-title">量表注意事項</block>
-  <block id="6f757fa99d4ba48eb37bf099f6ce0c94" category="paragraph">記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。儲存量測計只顯示兩種顏色、因為它們只顯示一對值：相對於_total_、使用_。</block>
-  <block id="421a44fa6eeb7e044d9e2dfc48ec3cbb" category="paragraph">閱讀儀表時、請謹記下列事項。</block>
-  <block id="e95563e1f436a54be789dca93730ae2c" category="paragraph">深藍色頻段會顯示使用量。</block>
-  <block id="e01e69dafe6eb339618289cc9c9bc266" category="list-text">對照_Light blue band_檢視時、深藍色顯示為可分配金額的%。這符合顯示的「% of allocatable」（可分配的%）值（以下範例為81）。</block>
-  <block id="1c72c592b8a1e5080b0f1ef0bf3ba3b1" category="list-text">在_白背景_檢視時、深藍色顯示為總容量的%。此值符合所示的「容量的%」值（本例中為63）。</block>
-  <block id="b7ca81e2bb67d9106d1a52bdbc5b9f05" category="inline-image-macro">量表編號說明</block>
-  <block id="f05f3d3deaa32d3eb9419009831a83e7" category="paragraph"><block ref="f05f3d3deaa32d3eb9419009831a83e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">報告架構圖表</block>
   <block id="6674395fa1826fa5008d38849347faea" category="doc">回報架構圖表Cloud Insights</block>
   <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">架構表格</block>
@@ -5660,33 +5629,8 @@
   <block id="5865d512ef44ce9af5c898e3838da358" category="summary">Kubernetes登陸頁面說明</block>
   <block id="e069a872dd6153588f1350dd2d1c2289" category="doc">Kubernetes叢集概觀</block>
   <block id="d9ade118c1e64b59921edda821b7e351" category="paragraph">功能強大的《支援資源管理程式》Cloud Insights 工具可顯示Kubernetes叢集的整體健全狀況和使用狀況、讓您輕鬆深入調查領域。</block>
-  <block id="0ea12a27609fed8542336693697baa24" category="paragraph">按一下*儀表板&gt; Kubernetes Explorer*即可開啟Kubernetes叢集概觀頁面。本總覽頁面包含各式各樣的一覽資訊。</block>
-  <block id="215baded9b6fa25efea9f80435bbd2c5" category="admonition">本頁及後續Kubernetes Explorer頁面各區段中以藍色顯示的數字（例如節點/ pod狀態、命名空間計數等）、是顯示這些數字背後詳細資料的相關查詢頁面連結。</block>
-  <block id="f45d7f4b198d8518dee2fc076b30504b" category="inline-image-macro">Kubernetes總覽</block>
-  <block id="8d6e8c083b564c8aa17abf5c3fa47c4e" category="paragraph"><block ref="8d6e8c083b564c8aa17abf5c3fa47c4e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="496c303b21014573b96d315479efd37c" category="section-title">叢集使用量總覽</block>
-  <block id="34ab9dcbffff4563653d7b920816a0b1" category="inline-image-macro">叢集清單總覽</block>
-  <block id="b86614ff44352dfd7c68b08040ccd30f" category="paragraph"><block ref="b86614ff44352dfd7c68b08040ccd30f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805da12f17bb46c8370f35e1ec563d4c" category="paragraph">叢集清單會顯示環境中每個叢集的下列使用資訊：</block>
-  <block id="07a57e9f5f30f1ff7e51e1e60c37ef3c" category="list-text">CPU：使用中的CPU總容量百分比</block>
-  <block id="e7accbf7e404528eb22dd30b6c7dd0eb" category="list-text">記憶體：使用的總記憶體百分比</block>
-  <block id="8edffe2b242a5dc12970506737375d6e" category="list-text">儲存設備：使用中儲存設備總數的百分比</block>
-  <block id="c111d3787dd9237c96846985db0fbaf5" category="paragraph">您可以依下列任一因素來排序叢集清單：</block>
-  <block id="715487e39938fd9522fbd2960e4e22e4" category="list-text">節點與Pod警示層級（預設）</block>
-  <block id="d6ed36bb2b00046e0edf3d24b526b7ad" category="list-text">叢集名稱</block>
-  <block id="68fa81b998d67f9c69a5d3c1b3d00cb2" category="list-text">節點數</block>
-  <block id="d9f8b756206a8b48892cbc933b59f7fd" category="list-text">運算使用率最高</block>
-  <block id="d7d604a3c988095c222ce26bd96c0bf1" category="list-text">運算使用率最低</block>
-  <block id="d1d54ae931174baedccda327f31b7de6" category="list-text">儲存設備使用率最高</block>
-  <block id="a24487b554578f150522f68d8802c1cb" category="list-text">儲存設備使用率最低</block>
   <block id="84a93a66c16a4163eea2b414b601e0ce" category="inline-link-macro">*詳細資料頁*</block>
-  <block id="ac61d4df22f68d8ea1cc552d5ee1ab60" category="paragraph">按一下「叢集名稱」將會開啟 <block ref="e6b61b13689c2840b60619df8bfe4051" category="inline-link-macro-rx"></block> 適用於該叢集</block>
-  <block id="20bb5856046b51fcd3f95a3130f443ac" category="section-title">節點和Pod狀態</block>
-  <block id="6e793abe2db0b3a1a45549355f350f2d" category="paragraph"><block ref="6e793abe2db0b3a1a45549355f350f2d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13d28e8dfc702e3456e0767dff9a128a" category="section-title">命名空間</block>
-  <block id="fffac5e3e2269fa69215f1167f0dcb2f" category="paragraph">畫面右側列出每個叢集使用的前三個命名空間。按一下「*全部*」連結以查看叢集的所有命名空間。</block>
-  <block id="3de80a4099f2865b8078177e221120f1" category="paragraph">按一下命名空間將會開啟「命名空間詳細資料」頁面。</block>
-  <block id="e0d38e0eb9e189bb1ccae25e8b344c8e" category="paragraph"><block ref="e0d38e0eb9e189bb1ccae25e8b344c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">精簡篩選條件</block>
   <block id="17296f4349896b7279e58a091c3a382d" category="paragraph">當您開始篩選時、您會看到根據目前文字建立*萬用字元篩選器*的選項。選取此選項會傳回符合萬用字元運算式的所有結果。您也可以使用Not或and建立* Expressions *、或是選取「無」選項來篩選欄位中的null值。</block>
   <block id="1d76e0ea81fa06876e48804ecf1f0d24" category="inline-image-macro">在K8S檔案總管中使用萬用字元進行篩選</block>
@@ -8796,7 +8740,6 @@
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">以_Preview_的方式強調新功能。Cloud Insights預覽功能可在有限的環境或有限容量下使用。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您有興趣預覽其中一項或多項功能、請聯絡您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">以下是目前預覽中的一些功能：</block>
-  <block id="6e1effcb952ada801a257429342ccd39" category="cell">在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。</block>
   <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制使用者存取自動回應動作</block>
   <block id="f763810a8ec0d5862e0f288795932956" category="cell">偵測到攻擊時Cloud Secure 、利用限制使用者存取檔案系統（完整區塊或設為唯讀存取）、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">「受壓力影響的共享資源」洞見可讓您識別：-共享儲存資源因為一或多個個別工作負載的高需求而承受壓力、這是共享資源上要求嚴苛且受影響的工作負載<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
@@ -8931,4 +8874,63 @@
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">使用Cloud Insights <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c1f82bcb121a82434f4244621860e18e" category="cell">叢集或SVM管理IP位址（視SVM收集器組態而定）</block>
+  <block id="a1801a3f5b06f28912e5d6d300bf2760" category="paragraph">按一下*儀表板&gt; Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本總覽頁面包含環境中Kubernetes叢集的表格。</block>
+  <block id="33e8a05c91ebabc5e5949786e43cd0d4" category="inline-image-macro">Kubernetes清單頁面</block>
+  <block id="c05ca31df34e47f888e486bfaeb3d6a2" category="paragraph"><block ref="c05ca31df34e47f888e486bfaeb3d6a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3bce0c8bf7435d97c12abc9e1e001859" category="section-title">叢集清單</block>
+  <block id="4057c9e17c94439b3336385760492522" category="paragraph">叢集清單會針對您環境中的每個叢集顯示下列資訊：</block>
+  <block id="df50bf9661097ebc97fcef0583f22715" category="list-text">叢集*名稱*。按一下叢集名稱將會開啟 <block ref="e6b61b13689c2840b60619df8bfe4051" category="inline-link-macro-rx"></block> 適用於該叢集。</block>
+  <block id="8c225c4c4401845b3bd94174e08f0e42" category="list-text">*飽和*百分比。整體飽和是CPU、記憶體或儲存飽和的最高值。</block>
+  <block id="d451db04e9e40d35803034e07a276657" category="list-text">叢集中*節點*的數目。按一下此編號將會開啟「節點」清單頁面。</block>
+  <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">叢集中的* pod *數。按一下此號碼將會開啟Pod清單頁面。</block>
+  <block id="bed3b3102569672060faa59f92fbb130" category="list-text">叢集中的*命名空間*數目。按一下此號碼將會開啟「命名空間」清單頁面。</block>
+  <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">叢集中*工作負載*的數目。按一下此數字將會開啟工作負載清單頁面。</block>
+  <block id="abd68946270bbe5e8dd65bc248dfb347" category="cell">時間到完整預測</block>
+  <block id="9b42a670fcbdc4d8fa72c247b7af5785" category="cell">在下列物件的容量用盡之前、可以預測天數：內部Volume Storage Pool Volume這些預測值有助於大幅降低中斷風險。Cloud Insights在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。</block>
+  <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">執行下列其中一項授權版本的電腦：* CentOS（64位元）：7.2至7.9、Stream 8、Stream 9 * Debian（64位元）：9及10 * Oracle Enterprise Linux（64位元）：7.5至7.9、8.1至8.4 * Red Hat Enterprise Linux（64位元）： 7.2到7.9、8.1到8.4 * Ubuntu伺服器：18.04和20.04 LTS此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
+  <block id="52fe0ed84edd736c538f6ab44e4a643f" category="cell">執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
+  <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">目前的Telegraf版本Cloud Insights 是* 1.22.3*。</block>
+  <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">工作負載爭用</block>
+  <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">顯示影響或受其他共用資源影響的資產、例如主機、網路和儲存設備。這些資源有時稱為「_gre地_」和「_degraded」資源。</block>
+  <block id="95eafe7994082a98ef565bc49b0bd0bc" category="section-title">2022年6月</block>
+  <block id="f1a19c84617286ffae10ff6a1d32f2bc" category="section-title">Kubernetes叢集飽和及其他詳細資料</block>
+  <block id="18c416489bffa32183ac9b677247149e" category="paragraph">利用改良的叢集詳細資料頁面、提供「配置」詳細資料、以及更清楚的命名空間和工作負載檢視、使探索Kubernetes環境變得比以往更輕鬆。Cloud Insights</block>
+  <block id="656b8508960318c503979ad7495d9568" category="inline-image-macro">叢集詳細資料頁面</block>
+  <block id="4ff7187de1db51fb0f4fde4076072ee1" category="paragraph"><block ref="4ff7187de1db51fb0f4fde4076072ee1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0765caa0af74f32ba608b509fa33a627" category="paragraph">除了節點、Pod、命名空間和工作負載數之外、叢集清單頁面也能快速檢視飽和程度：</block>
+  <block id="0348dea23766cd47c2feb3b0d9d034e0" category="inline-image-macro">叢集清單頁面顯示飽和數值</block>
+  <block id="6461362766d8aaa5c0248617322c4dd1" category="paragraph"><block ref="6461362766d8aaa5c0248617322c4dd1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f387a81f25d0852180214e3532cd69b7" category="section-title">您的Kubernetes叢集有多舊？</block>
+  <block id="457e2716710d35dcf5c797476aec4453" category="paragraph">您的叢集是從世界開始、還是經歷過漫長的數位生活？_age_已新增為Kubernetes節點收集的時間指標。</block>
+  <block id="6b7be3d731a7fe9ca970c889034e1dfb" category="inline-image-macro">Kubernetes節點表格顯示使用期限（以天為單位）</block>
+  <block id="d50b69722bf7ada9440fb1892ac9282e" category="paragraph"><block ref="d50b69722bf7ada9440fb1892ac9282e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f81641a704754589795fe3a4d4130ea9" category="section-title">容量時間到完整預測</block>
+  <block id="8e6160832d0b0d367dcc2b7cc6e3f821" category="paragraph">提供儀表板來預測監控的每個內部Volume容量用盡之前的天數。Cloud Insights這些值有助於大幅降低停機風險。</block>
+  <block id="5a1ff4999319d15d3b329a148ce830e2" category="inline-image-macro">內部Volume TFF預測儀表板</block>
+  <block id="2b8d5e66c38238b579c8a7f9a4f0deb8" category="paragraph"><block ref="2b8d5e66c38238b579c8a7f9a4f0deb8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d0288e56a716095eb8a98c5c3943c54" category="paragraph">TFF計數器也適用於儲存設備、儲存資源池和Volume。請持續觀察此空間、以取得這些物件的其他儀表板。</block>
+  <block id="70bda96e0227797cb8002e9bb8d9880d" category="paragraph">請注意、完整時間預測已從_Preview_移出、並將部署給所有客戶。</block>
+  <block id="c734c78a6282b21c743d2e94a2fbba82" category="section-title">我的環境有何改變？</block>
+  <block id="c126f3a900297855b1ec4bc88198f155" category="paragraph">您可以在記錄檔案總管中檢視變更記錄項目。ONTAP</block>
+  <block id="4c6ad175a17ca3e0294c095f93eefebe" category="inline-image-macro">顯示變更記錄項目範例的影像</block>
+  <block id="71f092ae4722c5826712794003f7d4b8" category="paragraph"><block ref="71f092ae4722c5826712794003f7d4b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47c2df3ac4f5eccb5b1440d704677b4d" category="inline-link-macro">已支援</block>
+  <block id="9d6192c5f44176e1b049c0d24bde96db" category="paragraph">下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 <block ref="e27610920cf83f6a88b088882e8c727e" category="inline-link-macro-rx"></block>：</block>
+  <block id="8ff4902cc9377035eb3a8dc9fc480e10" category="list-text">CentOS串流9.</block>
+  <block id="3ffd22c07b48a1c76b76f941ad1cad96" category="list-text">Windows 2022</block>
+  <block id="c41fe2272c9ff38bed21d6e67f9945cc" category="paragraph">擷取遠距網路整合資料的代理程式已更新至* 1.22.3*版、效能與安全性均有所提升。想要更新的使用者可參閱的適當升級部分 <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> 文件。先前版本的代理程式將繼續運作、不需要使用者採取任何行動。</block>
+  <block id="3398e3f6b2ecd1ae749962d864235c59" category="paragraph">Kubernetes叢集詳細資料頁面會顯示Kubernetes叢集的詳細總覽。</block>
+  <block id="91babced605f49db75040cb5feaa6082" category="section-title">命名空間、節點和Pod數</block>
+  <block id="91fa5656598f458704b9e697bf298dfd" category="paragraph">頁面頂端的計數會顯示叢集中的命名空間、節點和Pod總數、以及目前警示和擱置中的快顯數目。</block>
+  <block id="bbda26214d851fa5314ad7efb7b80f2f" category="section-title">共享資源與配置</block>
+  <block id="84bd7a2a103c477b4fe611cea9b09adf" category="paragraph">在詳細資料頁面右上角、您的叢集飽和程度為目前百分比、以及顯示一段時間內最近趨勢的圖表。叢集飽和是指每個時間點的CPU、記憶體或儲存設備飽和程度最高。</block>
+  <block id="ef3c2a7ac487c69bf023b0a642949390" category="paragraph">下方的頁面預設會顯示*共享資源*使用量、其中有CPU、記憶體和儲存設備的索引標籤。每個索引標籤都會顯示一段時間內的飽和百分比和趨勢、以及其他使用詳細資料。對於儲存設備而言、所顯示的值是後端和檔案系統飽和程度的較高值、而這是獨立計算出來的值。</block>
+  <block id="66a1f02be46b4ca30febbe3c115a1dc1" category="paragraph">使用率最高的裝置會顯示在底部的表格中。按一下任一連結即可瀏覽這些裝置。</block>
+  <block id="15cf649caaa7ee8626f6c90fd74178ac" category="paragraph">「命名空間」索引標籤會顯示Kubernetes環境中所有命名空間的清單、顯示CPU和記憶體使用量、以及每個命名空間中的工作負載計數。按一下「Name（名稱）」連結以瀏覽每個命名空間。</block>
+  <block id="4bbafa72b08fc9d20496406c7fa9ba65" category="inline-image-macro">K8s環境中目前命名空間的清單</block>
+  <block id="07d556c0f49399176a2bae14f135c098" category="paragraph"><block ref="07d556c0f49399176a2bae14f135c098" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作負載</block>
+  <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同樣地、「工作負載」索引標籤會顯示每個命名空間中的工作負載清單、再次顯示CPU和記憶體使用量。按一下「命名空間」連結、即可深入瞭解每個項目。</block>
+  <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。</block>
 </blocks>

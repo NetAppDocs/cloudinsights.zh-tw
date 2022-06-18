@@ -12,6 +12,87 @@ NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些�
 
 
 
+== 2022年6月
+
+
+
+=== Kubernetes叢集飽和及其他詳細資料
+
+利用改良的叢集詳細資料頁面、提供「配置」詳細資料、以及更清楚的命名空間和工作負載檢視、使探索Kubernetes環境變得比以往更輕鬆。Cloud Insights
+
+image:Kubernetes_Detail_Page_new.png["叢集詳細資料頁面"]
+
+除了節點、Pod、命名空間和工作負載數之外、叢集清單頁面也能快速檢視飽和程度：
+
+image:Kubernetes_List_Page_new.png["叢集清單頁面顯示飽和數值"]
+
+
+
+=== 您的Kubernetes叢集有多舊？
+
+您的叢集是從世界開始、還是經歷過漫長的數位生活？_age_已新增為Kubernetes節點收集的時間指標。
+
+image:Kubernetes_Table_Showing_Age.png["Kubernetes節點表格顯示使用期限（以天為單位）"]
+
+
+
+=== 容量時間到完整預測
+
+提供儀表板來預測監控的每個內部Volume容量用盡之前的天數。Cloud Insights這些值有助於大幅降低停機風險。
+
+image:Internal Volume - Time to Full dashboard example.png["內部Volume TFF預測儀表板"]
+
+TFF計數器也適用於儲存設備、儲存資源池和Volume。請持續觀察此空間、以取得這些物件的其他儀表板。
+
+請注意、完整時間預測已從_Preview_移出、並將部署給所有客戶。
+
+
+
+=== 我的環境有何改變？
+
+您可以在記錄檔案總管中檢視變更記錄項目。ONTAP
+
+image:ChangeLogEntries.png["顯示變更記錄項目範例的影像"]
+
+
+
+=== 作業系統支援
+
+下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
+
+* CentOS串流9.
+* Windows 2022
+
+
+
+
+=== 更新的Telegraf代理程式
+
+擷取遠距網路整合資料的代理程式已更新至* 1.22.3*版、效能與安全性均有所提升。想要更新的使用者可參閱的適當升級部分 link:task_config_telegraf_agent.html["代理程式安裝"] 文件。先前版本的代理程式將繼續運作、不需要使用者採取任何行動。
+
+
+
+=== 預覽功能
+
+經常強調許多令人興奮的全新預覽功能。Cloud Insights如果您有興趣預覽其中一項或多項功能、請聯絡您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售團隊"] 以取得更多資訊。
+
+|===
+
+
+| *功能* | *說明* 
+
+
+| Kubernetes命名空間不足 | _Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["瞭解更多資訊"] 
+
+
+| –限制使用者在遭受攻擊時存取Cloud Secure | 偵測到攻擊時、能夠限制使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+
+
+| 共享資源正承受壓力 | 「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
+|===
+'''
+
+
 == 2022年5月
 
 

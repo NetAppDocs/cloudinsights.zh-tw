@@ -11,54 +11,23 @@ summary: Kubernetes登陸頁面說明
 [role="lead"]
 功能強大的《支援資源管理程式》Cloud Insights 工具可顯示Kubernetes叢集的整體健全狀況和使用狀況、讓您輕鬆深入調查領域。
 
-按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集概觀頁面。本總覽頁面包含各式各樣的一覽資訊。
+按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本總覽頁面包含環境中Kubernetes叢集的表格。
 
-
-NOTE: 本頁及後續Kubernetes Explorer頁面各區段中以藍色顯示的數字（例如節點/ pod狀態、命名空間計數等）、是顯示這些數字背後詳細資料的相關查詢頁面連結。
-
-image:Kubernetes_Cluster_Overview_Page.png["Kubernetes總覽"]
+image:Kubernetes_List_Page_new.png["Kubernetes清單頁面"]
 
 
 
-== 叢集使用量總覽
+=== 叢集清單
 
-image:Kubernetes_Cluster_List.png["叢集清單總覽"]
+叢集清單會針對您環境中的每個叢集顯示下列資訊：
 
-叢集清單會顯示環境中每個叢集的下列使用資訊：
+* 叢集*名稱*。按一下叢集名稱將會開啟 link:kubernetes_cluster_detail.html["*詳細資料頁*"] 適用於該叢集。
+* *飽和*百分比。整體飽和是CPU、記憶體或儲存飽和的最高值。
+* 叢集中*節點*的數目。按一下此編號將會開啟「節點」清單頁面。
+* 叢集中的* pod *數。按一下此號碼將會開啟Pod清單頁面。
+* 叢集中的*命名空間*數目。按一下此號碼將會開啟「命名空間」清單頁面。
+* 叢集中*工作負載*的數目。按一下此數字將會開啟工作負載清單頁面。
 
-* CPU：使用中的CPU總容量百分比
-* 記憶體：使用的總記憶體百分比
-* 儲存設備：使用中儲存設備總數的百分比
-
-
-您可以依下列任一因素來排序叢集清單：
-
-* 節點與Pod警示層級（預設）
-* 叢集名稱
-* 節點數
-* 運算使用率最高
-* 運算使用率最低
-* 儲存設備使用率最高
-* 儲存設備使用率最低
-
-
-按一下「叢集名稱」將會開啟 link:kubernetes_cluster_detail.html["*詳細資料頁*"] 適用於該叢集
-
-
-
-== 節點和Pod狀態
-
-image:Kubernetes_Node_Pod_Status.png["節點和Pod狀態"]
-
-
-
-== 命名空間
-
-畫面右側列出每個叢集使用的前三個命名空間。按一下「*全部*」連結以查看叢集的所有命名空間。
-
-按一下命名空間將會開啟「命名空間詳細資料」頁面。
-
-image:Kubernetes_Namespaces.png["命名空間"]
 
 
 
