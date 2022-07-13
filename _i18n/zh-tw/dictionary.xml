@@ -8933,4 +8933,5 @@
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。</block>
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19版或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。</block>
+  <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">在執行Arm64架構的節點上、不支援NetApp Kubernetes監控操作員及其相依性（遠端連線、Kube-state度量、fluentbit等）。</block>
 </blocks>
