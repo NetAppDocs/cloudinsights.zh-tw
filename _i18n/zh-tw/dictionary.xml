@@ -7968,7 +7968,6 @@
   <block id="03b8f305db2c82bc6a850a57ec12d044" category="summary">您作為代理程式使用的伺服器或VM必須符合最低需求</block>
   <block id="b6818f4aea164eb8b94acf9d70d2e034" category="inline-link-macro">安裝代理程式</block>
   <block id="36bb58d4c9e71b2c4ea1af277d7e3a81" category="paragraph">您必須 <block ref="8c7f43ef892529523b024d4c41e5a1ca" category="inline-link-macro-rx"></block> 以便從資料收集器取得資訊。在安裝代理程式之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間的需求。</block>
-  <block id="9de07b55b73b4474c7f2f607db372035" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">命令</block>
   <block id="6068dbca35f237e6b23584f701dc4aa1" category="cell">安裝、執行指令碼及解除安裝時、必須使用「su–」命令。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4個CPU核心</block>
@@ -8933,4 +8932,5 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同樣地、「工作負載」索引標籤會顯示每個命名空間中的工作負載清單、再次顯示CPU和記憶體使用量。按一下「命名空間」連結、即可深入瞭解每個項目。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。</block>
+  <block id="5543c4e9358604e03ae0e327a62bb03f" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20 &amp; 22 64位元此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
 </blocks>
