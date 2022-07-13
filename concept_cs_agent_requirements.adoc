@@ -16,7 +16,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 元件 | Linux需求 
 
 
-| 作業系統 | 執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20 & 22 64位元此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+| 作業系統 | 執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
 
 
 | 命令 | 安裝、執行指令碼及解除安裝時、必須使用「su–」命令。 

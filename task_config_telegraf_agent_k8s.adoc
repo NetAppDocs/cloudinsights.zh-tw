@@ -68,7 +68,7 @@ Kubernetes提供兩種收集資料的方法：
 image:Kubernetes_Operator_Tile_Choices.png["Kubernetes安裝選項"]
 
 .先決條件：
-* Kubernetes 1.17或更新版本可支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。
+* Kubernetes 1.19版或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。
 
 
 * 如果您是在OpenShift 4.6 - 4.8上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。

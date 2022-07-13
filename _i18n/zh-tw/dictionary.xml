@@ -1814,7 +1814,6 @@
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">安裝說明視您選擇的項目而有所不同。</block>
   <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes安裝選項</block>
   <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88ae2467b83e5d292b18e19eaae1852d" category="list-text">Kubernetes 1.17或更新版本可支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。</block>
   <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">如果您是在OpenShift 4.6 - 4.8上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。</block>
   <block id="54a35beb58d95fcc8830c9195faeeb1d" category="list-text">下列命令必須可用：_curle_、_Sudo（指令碼型安裝不需要）、_openssl_、_shap256sum_和_kuvectl_。若要獲得最佳結果、請將這些命令新增至路徑。</block>
   <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">必須安裝Kube-state指標。如需詳細資訊、請參閱下方。Kube-state指標會隨著以操作員為基礎的安裝而自動安裝。</block>
@@ -8932,5 +8931,6 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同樣地、「工作負載」索引標籤會顯示每個命名空間中的工作負載清單、再次顯示CPU和記憶體使用量。按一下「命名空間」連結、即可深入瞭解每個項目。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。</block>
-  <block id="5543c4e9358604e03ae0e327a62bb03f" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20 &amp; 22 64位元此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
+  <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
+  <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19版或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。</block>
 </blocks>
