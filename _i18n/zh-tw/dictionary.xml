@@ -8936,19 +8936,14 @@
   <block id="fed2b89570c5c27f515afdba0f485a51" category="inline-link-macro">Co猶豫不決 的SmartFiles</block>
   <block id="114e1ad704707526c811f7952ae68dac" category="cell"><block ref="114e1ad704707526c811f7952ae68dac" category="inline-link-macro-rx"></block></block>
   <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">*協同內容SmartFiles*：此REST API型收集器將會取得「協同作業」叢集、探索「檢視」（做為CI內部磁碟區）、各種節點、以及收集效能指標。</block>
-  <block id="f4801fbbe359436f17e47ed8fb32d603" category="paragraph">側邊列：側邊列永久連結：task_dc_cohesity_smartfiles.html</block>
-  <block id="8616d2c04fe61253f00cfdb24f24a2ad" category="paragraph">關鍵字：資料收集器、可靠度</block>
-  <block id="14603cff16307cd8ca97c19ecdee7b3d" category="paragraph">摘要：設定「Colesity SmartFiles資料收集器」。-</block>
-  <block id="02e9f49555c20d5a8f3ca8fb679dc061" category="paragraph">=智慧檔案資料收集器的可靠度</block>
   <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">此REST API型收集器將會擷取「Co猶豫不決」叢集、探索「視圖」（如Cloud Insights 「內部磁碟區」）、各種節點、以及收集效能指標。</block>
-  <block id="408d476befad17be036c6ad223d61bf7" category="paragraph">=組態</block>
   <block id="b64d455dbfeeda0e192f63a2223b3cc0" category="cell">Co猶豫不決 叢集IP</block>
   <block id="20d32ea251aaa415b54e00ff841f25dc" category="cell">Co猶豫不決 叢集的IP位址</block>
   <block id="55e588d1f72745ccdd93d782b1efdea0" category="cell">Cohesity叢集的使用者名稱</block>
   <block id="28068b4914fd700011975ba0b1b872b8" category="cell">用於Co猶豫不決 叢集的密碼</block>
-  <block id="491c67c11aa49801e2c84f994169a0c0" category="paragraph">=進階組態</block>
   <block id="1d5447258f93b47e09976cc68c7f86d9" category="cell">連接埠用於與Co猶豫不決 叢集進行TCP通訊</block>
   <block id="0896c34e1c20bc67d7328f53f406276d" category="cell">效能輪詢之間的時間間隔。預設值為900秒。</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=疑難排解</block>
   <block id="dc9945292fe1d6a701729e7b128ed51c" category="sidebar">Cohesity SmartfFiles</block>
+  <block id="879c5e9016d012ef4ef799fcd3d67e77" category="summary">設定「Colesity SmartFiles資料收集器」。</block>
+  <block id="0bf422dd8c3b545a1629a88c7196ec4f" category="doc">Co猶豫不決 的SmartFiles資料收集器</block>
 </blocks>
