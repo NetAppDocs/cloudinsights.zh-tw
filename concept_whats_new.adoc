@@ -218,7 +218,7 @@ image:CountAggregationExample1.png["顯示計數的集合下拉式清單"]
 
 === 全新Data Collector
 
-* *智慧型檔案*：此REST API型收集器將會取得「協同」叢集、探索「視圖」（做為CI內部磁碟區）、各種節點、並收集效能指標。
+* *協同內容SmartFiles*：此REST API型收集器將會取得「協同作業」叢集、探索「檢視」（做為CI內部磁碟區）、各種節點、以及收集效能指標。
 
 
 

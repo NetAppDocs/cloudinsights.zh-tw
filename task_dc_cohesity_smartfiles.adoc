@@ -1,0 +1,51 @@
+= 
+:allow-uri-read: 
+
+
+--
+側邊列：側邊列永久連結：task_dc_cohesity_smartfiles.html
+
+關鍵字：資料收集器、可靠度
+
+摘要：設定「Colesity SmartFiles資料收集器」。-
+
+=智慧檔案資料收集器的可靠度
+
+[role="lead"]
+此REST API型收集器將會擷取「Co猶豫不決」叢集、探索「視圖」（如Cloud Insights 「內部磁碟區」）、各種節點、以及收集效能指標。
+
+=組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| Co猶豫不決 叢集IP | Co猶豫不決 叢集的IP位址 
+
+
+| 使用者名稱 | Cohesity叢集的使用者名稱 
+
+
+| 密碼 | 用於Co猶豫不決 叢集的密碼 
+|===
+=進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| TCP連接埠 | 連接埠用於與Co猶豫不決 叢集進行TCP通訊 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為60分鐘。 
+
+
+| 效能意見調查時間間隔（分鐘） | 效能輪詢之間的時間間隔。預設值為900秒。 
+|===
+=疑難排解
+
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+
+--

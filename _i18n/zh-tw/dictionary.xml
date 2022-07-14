@@ -6706,7 +6706,6 @@
   <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">共享資源正承受壓力</block>
   <block id="58114ec5d8ca1494b408777c1a724eef" category="cell">「受壓力影響的共享資源」使用AI/ML來自動識別資源爭用造成環境效能降級的位置、強調任何受其影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="9fc31ce4550c4f68c1ea81f5a37335aa" category="section-title">全新Data Collector</block>
-  <block id="d0112aff81f4571da224986557628445" category="list-text">*智慧型檔案*：此REST API型收集器將會取得「協同」叢集、探索「視圖」（做為CI內部磁碟區）、各種節點、並收集效能指標。</block>
   <block id="01ec768781d34379b5889a634c19e5cc" category="section-title">其他資料收集器更新</block>
   <block id="cd96347d3d125d14ec06afe0adbac82a" category="paragraph">下列資料收集器的效能資料收集與顯示功能已有所改善：</block>
   <block id="03a00cff615471538bae5d9ab8cc669e" category="list-text">Brocade CLI</block>
@@ -8934,4 +8933,22 @@
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19版或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">在執行Arm64架構的節點上、不支援NetApp Kubernetes監控操作員及其相依性（遠端連線、Kube-state度量、fluentbit等）。</block>
+  <block id="fed2b89570c5c27f515afdba0f485a51" category="inline-link-macro">Co猶豫不決 的SmartFiles</block>
+  <block id="114e1ad704707526c811f7952ae68dac" category="cell"><block ref="114e1ad704707526c811f7952ae68dac" category="inline-link-macro-rx"></block></block>
+  <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">*協同內容SmartFiles*：此REST API型收集器將會取得「協同作業」叢集、探索「檢視」（做為CI內部磁碟區）、各種節點、以及收集效能指標。</block>
+  <block id="f4801fbbe359436f17e47ed8fb32d603" category="paragraph">側邊列：側邊列永久連結：task_dc_cohesity_smartfiles.html</block>
+  <block id="8616d2c04fe61253f00cfdb24f24a2ad" category="paragraph">關鍵字：資料收集器、可靠度</block>
+  <block id="14603cff16307cd8ca97c19ecdee7b3d" category="paragraph">摘要：設定「Colesity SmartFiles資料收集器」。-</block>
+  <block id="02e9f49555c20d5a8f3ca8fb679dc061" category="paragraph">=智慧檔案資料收集器的可靠度</block>
+  <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">此REST API型收集器將會擷取「Co猶豫不決」叢集、探索「視圖」（如Cloud Insights 「內部磁碟區」）、各種節點、以及收集效能指標。</block>
+  <block id="408d476befad17be036c6ad223d61bf7" category="paragraph">=組態</block>
+  <block id="b64d455dbfeeda0e192f63a2223b3cc0" category="cell">Co猶豫不決 叢集IP</block>
+  <block id="20d32ea251aaa415b54e00ff841f25dc" category="cell">Co猶豫不決 叢集的IP位址</block>
+  <block id="55e588d1f72745ccdd93d782b1efdea0" category="cell">Cohesity叢集的使用者名稱</block>
+  <block id="28068b4914fd700011975ba0b1b872b8" category="cell">用於Co猶豫不決 叢集的密碼</block>
+  <block id="491c67c11aa49801e2c84f994169a0c0" category="paragraph">=進階組態</block>
+  <block id="1d5447258f93b47e09976cc68c7f86d9" category="cell">連接埠用於與Co猶豫不決 叢集進行TCP通訊</block>
+  <block id="0896c34e1c20bc67d7328f53f406276d" category="cell">效能輪詢之間的時間間隔。預設值為900秒。</block>
+  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=疑難排解</block>
+  <block id="dc9945292fe1d6a701729e7b128ed51c" category="sidebar">Cohesity SmartfFiles</block>
 </blocks>

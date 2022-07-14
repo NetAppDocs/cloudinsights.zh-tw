@@ -60,6 +60,9 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_config_telegraf_couchdb.html["CouchDB"] | 服務 
 
 
+| link:task_dc_cohesity_smartfiles.html["Co猶豫不決 的SmartFiles"] | 基礎架構 
+
+
 | link:task_dc_emc_datadomain.html["Dell EMC Data Domain"] | 基礎架構 
 
 
