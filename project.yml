@@ -224,7 +224,7 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自動化回應原則
       url: "/cs_automated_response_policies.html"
-    - title: 限制使用者存取
+    - title: 封鎖使用者存取
       url: "/cs_restrict_user_access.html"
     - title: 模擬勒索軟體攻擊
       url: "/concept_cs_attack_simulator.html"
