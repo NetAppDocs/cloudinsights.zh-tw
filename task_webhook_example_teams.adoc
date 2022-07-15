@@ -16,7 +16,7 @@ NOTE: 本頁是指可能會變更的第三方指示。請參閱 link:https://doc
 
 
 
-=== 團隊設定：
+== 團隊設定：
 
 . 在「團隊」中選取烤串、然後搜尋傳入的Webhook。
 +
@@ -28,7 +28,7 @@ image:Webhooks_Teams_Create_Webhook.png["團隊的傳入Webhook"]
 
 
 
-=== 建立Cloud Insights Webhook：
+== 建立Cloud Insights Webhook：
 
 . 在「還原」中、瀏覽至*管理>通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。
 . 為網路勾提供有意義的名稱、例如「團隊Webhook」。
@@ -42,7 +42,7 @@ image:Webhooks-Teams_example.png["團隊網路連結範本"]
 
 
 
-=== 透過Webhook通知
+== 透過Webhook通知
 
 若要透過Webhook通知事件、請Cloud Insights 瀏覽至*警示>監控器*、然後按一下*+監控*以建立新的 link:task_create_monitor.html["監控"]。
 

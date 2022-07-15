@@ -16,7 +16,7 @@ NOTE: 本頁是指可能會變更的第三方指示。請參閱 link:https://sup
 
 
 
-=== PagerDuty設定：
+== PagerDuty設定：
 
 . 在PagerDuty中、瀏覽至*服務>服務目錄*、然後按一下「*新服務*」按鈕
 . 輸入_Name_、然後選取_直接使用我們的API _。按一下「新增服務」。
@@ -34,7 +34,7 @@ image:Webhooks_PagerDutyScreen2.png["PagerDuty畫面"]
 
 
 
-=== 建立Cloud Insights Webhook：
+== 建立Cloud Insights Webhook：
 
 . 在「還原」中、瀏覽至*管理>通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。
 . 為網路勾提供有意義的名稱、例如「PagerDuty Trigger」。您將使用此Webhook進行重大和警告層級的事件。
@@ -51,7 +51,7 @@ image:Webhooks_Custom_Secret_Routing_Key.png["設定路由金鑰"]
 
 
 
-=== PagerDuty to Cloud Insights Fingfield Mapping
+== PagerDuty to Cloud Insights Fingfield Mapping
 
 下表和影像顯示PagerDuty和Cloud Insights Image2之間的欄位對應：
 
@@ -78,7 +78,7 @@ image:Webhooks-PagerDuty_Fields.png["CI中的PagerDuty欄位"]
 
 
 
-=== 透過Webhook通知
+== 透過Webhook通知
 
 若要透過Webhook通知事件、請Cloud Insights 瀏覽至*警示>監控器*、然後按一下*+監控*以建立新的 link:task_create_monitor.html["監控"]。
 

@@ -16,7 +16,7 @@ NOTE: 本頁是指可能會變更的第三方指示。請參閱 link:https://sla
 
 
 
-=== 寬限時間範例：
+== 寬限時間範例：
 
 * 前往 https://api.slack.com/apps[] 並建立新的應用程式命名有意義的名稱、然後選取Slack工作區。
 +
@@ -31,7 +31,7 @@ image:Webhook_Slack_Config.jpg["寬限時間Webhook URL"]
 
 
 
-=== 建立Cloud Insights Webhook：
+== 建立Cloud Insights Webhook：
 
 . 在「還原」中、瀏覽至*管理>通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。
 . 為網路勾提供有意義的名稱、例如「Slack Webhook」。
@@ -43,7 +43,7 @@ image:Webhooks-Slack_example.png["可寬延的網頁連結範本"]
 
 
 
-=== 透過Webhook通知
+== 透過Webhook通知
 
 若要透過Webhook通知事件、請Cloud Insights 瀏覽至*警示>監控器*、然後按一下*+監控*以建立新的 link:task_create_monitor.html["監控"]。
 
