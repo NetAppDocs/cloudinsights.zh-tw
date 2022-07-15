@@ -508,60 +508,24 @@
   <block id="bd69c8c7685e8cb8cbe42da9c5c9d5e0" category="list-text">按一下*刪除*以確認刪除。</block>
   <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">有了這個功能、您就能在疑似遭破壞的情況下限制使用者存取權限Cloud Secure</block>
   <block id="34f9ae45ea998f4feb8ed8b837da35ce" category="doc">限制使用者存取</block>
-  <block id="1ef240a15bef296ddbe95040048f5568" category="paragraph">一旦偵測到攻擊、Cloud Secure 透過限制使用者存取檔案系統、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。</block>
-  <block id="15db9edd838695d9e8dfe3cc4d26ce0e" category="paragraph">限制使用者存取時、您應該定義存取限制類型（區塊或唯讀）和時間段。在所選期間結束後、使用者存取權會自動還原。</block>
-  <block id="197e52f14728da939ea57554da72942d" category="paragraph">SMB和NFS傳輸協定均支援存取限制。</block>
-  <block id="c7f4e2255f2d3462f88ebfd46e1df900" category="paragraph">限制是透過主機機器的IP位址進行、這表示使用者已從其中存取儲存設備的機器。這些機器IP位址將會被封鎖、無法存取Cloud Secure 由VMware監控的任何儲存虛擬機器（SVM）。</block>
-  <block id="2bf4ce6e35bfc4c6f3801fbf4a98f9ca" category="paragraph">舉例Cloud Secure 來說、我們可以說、此功能可管理10個SVM、而自動回應原則則是針對其中四個SVM進行設定。如果攻擊源自四個SVM之一、則使用者的存取權限將會在所有10個SVM中受到限制。仍會在原始SVM上執行Snapshot。</block>
-  <block id="19e54e03824e649096b70d3644fd0e5f" category="paragraph">如果有四個SVM、其中一個SVM設定為CIFS、一個設定為NFS、其餘兩個設定為NFS和CIFS、則如果攻擊源自四個SVM中的任一VM、則所有SVM都會遭到封鎖。</block>
-  <block id="1c86226deccf9173a843b3d83a50b7e4" category="section-title">使用者存取限制的先決條件</block>
-  <block id="4625d3b7cfc602f8dda70ae516128ac1" category="paragraph">客戶必須設定SMB和NFS的匯出原則、才能使用此功能。如果在Data來源收集器中設定NFS和SMB、請遵循下列步驟。</block>
-  <block id="d2b60d6c86ebcc57140ad12f7fd12e7e" category="paragraph">對於NFS、預設會設定匯出原則。根據預設、在SVM中建立NFS服務時、會建立匯出原則。</block>
-  <block id="26d70199dca829297ed6a32343711ea8" category="paragraph">對於SMB、必須設定匯出原則。</block>
-  <block id="97b3d67371c3225085bdd60c4186b650" category="paragraph">如果您不是使用叢集/ SVM認證、而是使用CsUser、請先依照下列步驟操作、以便Cloud Secure 讓Sfa建立自訂匯出原則規則。</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">對於具有叢集認證的CsUser、請從ONTAP 下列功能執行：</block>
-  <block id="62e6cfdd88bd2f09782128a89fe25b0b" category="paragraph">若為具有SVM認證的CsUser、請從ONTAP 下列功能執行：從指令行插入正確的&lt;vservername&gt;：</block>
-  <block id="fa77163b4c273ad38c4b189f407a970b" category="paragraph">以下是設定預設匯出原則的命令。將命令複製到文字編輯器、並以Vserver的名稱取代&lt;vserver&gt;名稱。然後一次複製每一行、並在ONTAP 整個過程中執行。請注意、您必須先切換至進階模式、才能執行命令。</block>
-  <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">這對執行PoC特別有幫助。在您要測試的機器中、SMB可設定如下所示。在PoC期間、在資料來源收集器中、僅啟用SMB/CIFS傳輸協定並停用NFS傳輸協定。</block>
-  <block id="db386e038002cc8473226f0494cef95f" category="admonition">用戶端比對是特定位址或子網路（例如10.0.3.212或192.168.5.0/24）、主機名稱或網路群組、例如@netgroup。如果您想要將匯出原則套用至所有可能的IP4位址、請將clientmMATCH設為0.00.0.0/0。</block>
-  <block id="1e68e39ff63876126f3972751ed432bf" category="paragraph">若要檢查_exportpolicy_and _exportpolicy規則_是否已正確設定、請在執行上述命令後執行下列命令。</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何啟用此功能？</block>
-  <block id="87ec0cfaa84f34c3c1bd7e7a9573acd3" category="list-text">在「支援」中Cloud Secure 、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;存取限制*。</block>
-  <block id="ff3c40d658e508545278698eddf6f64f" category="list-text">將「啟用限制使用者存取」設為_enabled。</block>
-  <block id="1b8e039cca81e12d3c38dc0474f9b680" category="section-title">如何設定自動使用者存取限制？</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">建立新的攻擊原則或編輯現有的攻擊原則。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">選取應監控攻擊原則的SVM。</block>
-  <block id="a69b7d29acba1026740c17b1314742da" category="list-text">按一下「限制使用者IP檔案存取」核取方塊。此功能會在選取時啟用。</block>
   <block id="d08b030c0ac309193f01c8251798645c" category="list-text">在「限制使用者存取」下、選取應套用的限制模式。</block>
-  <block id="f46147cf742d90e9b60b59b73abd3cce" category="list-text">在「Time Period」（時間期間）下、選取應套用限制的時間。</block>
   <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">模擬指令碼</block>
-  <block id="25c2a3fab9090e127924dcd73f1ba277" category="list-text">若要測試自動限制、您可以透過模擬攻擊 <block ref="c144f5bb29c4478b376c3856feebe3da" category="inline-link-macro-rx"></block>。</block>
-  <block id="ecd9a1503c716dad0163cfa442205dc6" category="section-title">如何知道系統中是否有受限的使用者？</block>
-  <block id="58c5c3c3ae9ddc777df3471cb0d91f15" category="list-text">在警示清單頁面中、如果任何使用者受到限制、畫面頂端會顯示橫幅。</block>
-  <block id="f70812e312d2dcf5bb1030d22300b486" category="list-text">按一下橫幅即可前往「使用者」頁面。在這種情況下、您可以看到受限使用者的清單。</block>
-  <block id="467c6ea6fc7965c01f9c4a37b4097833" category="list-text">在「Users」（使用者）頁面中、有一欄名為「IP Access」（IP存取）。在該欄中、會顯示目前的使用者限制狀態。</block>
   <block id="40184bc9041969d58ad379b9b3e319cd" category="section-title">手動限制及管理使用者存取</block>
-  <block id="47a27e2a670aec2697933b5787c9b04c" category="list-text">您可以前往警示詳細資料或使用者詳細資料畫面、然後手動限制或取消限制使用者進入這些畫面。</block>
-  <block id="bc35f531afc4546d2f00d327e39a34bd" category="section-title">使用者限制存取歷程記錄</block>
-  <block id="fa2d13a7c1864e6553f454b50bb86fe3" category="paragraph">在警示詳細資料與使用者詳細資料頁面的使用者面板中、您可以檢視使用者的限制存取限制歷程記錄：時間、動作（區塊、唯讀、還原）、持續時間、 由、手動/自動及受影響的IP所採取的行動。</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">如何停用此功能？</block>
   <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">您可以隨時停用此功能。如果系統中有受限的使用者、您必須先還原他們的存取權限。</block>
-  <block id="093cb28dd5afe81970d566b9792edf3c" category="list-text">在「支援」中Cloud Secure 、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;存取限制*</block>
-  <block id="badb314ae874abf7996a87ed524a2a2a" category="list-text">取消選取「啟用限制使用者存取」以停用。</block>
   <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">所有頁面都會隱藏此功能。</block>
-  <block id="669c97c4b794abc0f280d4892a3a503d" category="section-title">手動還原IP</block>
   <block id="9a77156daa8e3ba32694334a614ff511" category="paragraph">如果您的VMware試用版過期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的IP Cloud Secure 。</block>
   <block id="6dbbd623c3a6977270c54a9833844b28" category="list-text">列出SVM上的所有匯出原則。</block>
-  <block id="23e8d668fcbe8c5dfe19d7e5be73ea0a" category="list-text">在SVM上所有以「cloudsecure_rRule」做為用戶端比對的原則中、透過指定其各自的規則索引來刪除所有規則。CloudSecure規則通常為1。</block>
-  <block id="6c1214115a59d3b11b800993d5bb40fb" category="list-text">確保雲端安全規則已刪除（可選的確認步驟）</block>
   <block id="df0f20d62dc4ba9c471fdeef6751ec5f" category="cell">問題</block>
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">試試看</block>
   <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">有些使用者並未受到限制、但仍有攻擊。</block>
   <block id="e90c2e3184d693395feccdf9a3d863a1" category="cell">1.確定SVM的資料收集器和代理程式處於_Running狀態。如果停止資料收集器和代理程式、則無法傳送命令。Cloud Secure2、這是因為使用者可能使用之前未使用過的新IP、從機器存取儲存設備。使用者透過其存取儲存設備的主機IP位址進行限制。請查看UI（警示詳細資料&gt;此使用者的存取限制歷程記錄&gt;受影響的IP）、以取得受限的IP位址清單。如果使用者從IP與受限IP不同的主機存取儲存設備、則使用者仍可透過不受限IP存取儲存設備。如果使用者嘗試從IP受限的主機存取、則儲存設備將無法存取。</block>
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">手動按一下「限制存取」會顯示「此使用者的IP位址已受到限制」。</block>
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的IP已受到其他使用者的限制。</block>
-  <block id="59b7bceceaf271dc23260e1c30098a18" category="cell">限制存取失敗、並顯示「已停用SVM的SMB傳輸協定匯出原則使用量」警告。允許使用匯出原則來限制使用者存取功能」</block>
-  <block id="637e226349512d2d7a553322411b83f0" category="cell">如「必要條件」所述、請確定Vserver的-is-exportpolice-enable-option為真。</block>
   <block id="a9bf92fda03d47c7754371c461a7b15c" category="summary">資產頁面的「使用者資料」區段可讓您將註釋或應用程式指派給目前資產。</block>
   <block id="c2bb4a41eb70c8ef98d0a34bf2c6b8a0" category="doc">使用者資料區段</block>
   <block id="5b85956dec7b32235b467a7425211daf" category="paragraph">資產頁面的「使用者資料」區段隨即顯示、並可讓您變更任何使用者定義的資料、例如應用程式和註釋。</block>
@@ -8946,4 +8910,34 @@
   <block id="dc9945292fe1d6a701729e7b128ed51c" category="sidebar">Cohesity SmartfFiles</block>
   <block id="879c5e9016d012ef4ef799fcd3d67e77" category="summary">設定「Colesity SmartFiles資料收集器」。</block>
   <block id="0bf422dd8c3b545a1629a88c7196ec4f" category="doc">Co猶豫不決 的SmartFiles資料收集器</block>
+  <block id="680aba4527b5f65899e6a3d8b5ef2457" category="doc">封鎖使用者存取</block>
+  <block id="309db5d77408f61da8eb2be2f90ace37" category="paragraph">一旦偵測到攻擊、Cloud Secure 利用阻止使用者存取檔案系統、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。</block>
+  <block id="7aedbe09972610c1d6a6d90587580682" category="paragraph">當封鎖使用者存取時、您應該定義封鎖時間段。在所選期間結束後、使用者存取權會自動還原。SMB和NFS傳輸協定均支援存取封鎖。</block>
+  <block id="75e34f78366a0711ad3da9bfc46eba71" category="paragraph">直接封鎖使用者的SMB位址、導致NFS封鎖攻擊的主機機器IP位址。這些機器IP位址將會被封鎖、無法存取Cloud Secure 由VMware監控的任何儲存虛擬機器（SVM）。</block>
+  <block id="cb955e8b752fc732ba5a7f0c6f8fd22b" category="paragraph">舉例Cloud Secure 來說、我們可以說、此功能可管理10個SVM、而其中4個SVM則設定了自動回應原則。如果攻擊源自四個SVM之一、則使用者的存取將會在所有10個SVM中遭到封鎖。仍會在原始SVM上執行Snapshot。</block>
+  <block id="7dd607950e587603a00a1a965723c7c1" category="paragraph">如果有四個SVM、其中一個SVM設定為SMB、一個設定為NFS、其餘兩個設定為NFS和SMB、則如果攻擊源自四個SVM中的任一VM、則所有SVM都會遭到封鎖。</block>
+  <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">使用者存取封鎖的先決條件</block>
+  <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">此功能需要叢集層級認證、才能正常運作。</block>
+  <block id="9a517e6700abab3e080100846703ab51" category="paragraph">如果您使用叢集管理認證、則不需要新的權限。</block>
+  <block id="4563a2ec099bb3f18ab52f261f6897e8" category="paragraph">如果您使用的是自訂使用者、例如具有權限給使用者的CsUser、請遵循下列步驟、將權限授予CloudSecure以封鎖使用者。</block>
+  <block id="075530afc57aa5ff8851fb139e2fbbae" category="list-text">在「支援」中Cloud Secure 、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;封鎖使用者存取*。</block>
+  <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">將「Enable Block User Access（啟用區塊使用者存取）」設為_enabled（啟用）。</block>
+  <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">如何設定自動使用者存取封鎖？</block>
+  <block id="83fce3228306e4223f72e5a98ed7923e" category="list-text">按一下「封鎖使用者檔案存取」核取方塊。此功能會在選取時啟用。</block>
+  <block id="982ff1f57d1f125e6f9bb1f94dcef71e" category="list-text">在「Time Period」（時間期間）下、選取應套用封鎖的時間。</block>
+  <block id="37ac66ca624ac1ac8ee1db2467276dc8" category="list-text">若要測試自動使用者封鎖、您可以透過模擬攻擊 <block ref="c144f5bb29c4478b376c3856feebe3da" category="inline-link-macro-rx"></block>。</block>
+  <block id="d1edba47e6c2396ee88015fa8c15727a" category="section-title">如何知道系統中是否有封鎖的使用者？</block>
+  <block id="0f9abe45676e842ff8c24e11953dc4d8" category="list-text">在警示清單頁面中、如果任何使用者遭到封鎖、畫面頂端會顯示橫幅。</block>
+  <block id="7b92d1897511be4fc726b733dbf15d1d" category="list-text">按一下橫幅將會帶您前往「使用者」頁面、您可以在頁面上看到封鎖的使用者清單。</block>
+  <block id="5ac48f975e0a3c60d0b5e5928de5ca49" category="list-text">在「Users」（使用者）頁面中、有一欄名為「User/IP Access」（使用者/IP存取）。在該欄中、會顯示使用者封鎖的目前狀態。</block>
+  <block id="f169ac98d63faf28e5387c7068cdc42d" category="list-text">您可以前往警示詳細資料或使用者詳細資料畫面、然後從這些畫面手動封鎖或還原使用者。</block>
+  <block id="f21a59e38c0c86324abe189f2666efd8" category="section-title">使用者存取限制歷程記錄</block>
+  <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">在警示詳細資料與使用者詳細資料頁面的使用者面板中、您可以檢視使用者存取限制歷程記錄的稽核：時間、動作（區塊、取消區塊）、持續時間、採取的行動、 NFS的手動/自動及受影響IP。</block>
+  <block id="80ecf7ab5a45356379b3eb7762ec7c38" category="list-text">在「支援」中Cloud Secure 、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;封鎖使用者存取*</block>
+  <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">取消選取「Enable Block User Access（啟用區塊使用者存取）」以停用。</block>
+  <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">手動還原NFS的IP</block>
+  <block id="d23f1b27ded70721476d7b5a6ff99f76" category="list-text">在SVM上、將「cloudsecure_rRule」做為用戶端比對的所有原則中刪除規則、方法是指定其各自的規則索引。通常情況下、這個規則是1。Cloud Secure</block>
+  <block id="3aba5c3b5ec94e17ca4afc1a38905dbe" category="list-text">確保Cloud Secure 刪除此規則（可選的確認步驟）。</block>
+  <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">無法修改原則。原因：未授權使用該命令。</block>
+  <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">請檢查是否使用CsUser、是否會如上所述授予使用者權限。</block>
 </blocks>
