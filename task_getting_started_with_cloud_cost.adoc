@@ -27,7 +27,7 @@ NOTE: 雲端成本Cloud Insights 僅適用於美國地區的整個環境、而�
 
 
 
-==== 設定雲端成本
+== 設定雲端成本
 
 當您第一次登入Cloud Insights 時按一下「*雲端成本*」功能表項目、系統會顯示歡迎畫面、並提示您開始設定雲端成本。
 
@@ -53,13 +53,13 @@ image:Cloud_Cost_Example_Dashboard.png["雲端成本範例儀表板"]
 
 
 
-=== 深入瞭解雲端成本
+== 深入瞭解雲端成本
 
 雲端成本可將Cloud Insights 您的不同步環境與Cloud Analyzer 的功能相連 link:https://docs.spot.io/cloud-analyzer/["NetApp專為您服務"]、提供Cloud Insights 最相關的雲端成本資料檢視功能。按一下雲端成本儀表板右上角的「Get Full Analysis_（取得完整分析_）」連結、Cloud Analyzer 即可現場開啟完整的「整套」功能表。完整的分析可能會提供額外的資料和探查、讓您更深入瞭解雲端支出。
 
 
 
-=== 疑難排解
+== 疑難排解
 
 如果遇到問題、請嘗試以下方法：
 

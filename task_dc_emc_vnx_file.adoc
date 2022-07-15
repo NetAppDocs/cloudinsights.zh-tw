@@ -88,7 +88,7 @@ summary: 設定Dell EMC Celerra資料收集器。
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===

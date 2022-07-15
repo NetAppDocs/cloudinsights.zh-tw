@@ -107,7 +107,7 @@ OpenStack（REST API / KVM）資料收集器會擷取所有OpenStack執行個體
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===

@@ -88,7 +88,7 @@ VMware使用Dell EMC PowerScale（先前稱為Isilon）SSH資料收集器、從P
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===

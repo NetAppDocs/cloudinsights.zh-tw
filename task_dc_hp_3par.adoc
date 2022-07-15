@@ -102,7 +102,7 @@ summary: 設定HP Enterprise Alletra 9000 / Primera（前身為3PAR）資料收�
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===
@@ -113,7 +113,7 @@ summary: 設定HP Enterprise Alletra 9000 / Primera（前身為3PAR）資料收�
 |===
 
 
-==== 效能
+=== 效能
 
 [cols="2*"]
 |===

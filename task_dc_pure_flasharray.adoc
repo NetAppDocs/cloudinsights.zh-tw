@@ -95,7 +95,7 @@ summary: 設定Pure Storage資料收集器。
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===

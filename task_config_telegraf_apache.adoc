@@ -40,13 +40,13 @@ Telegraf的Apache HTTP伺服器外掛程式仰賴要啟用的「mod_STATUS」模
 
 
 
-==== 相容性：
+=== 相容性：
 
 組態是根據Apache的HTTP伺服器2.4.38版而開發。
 
 
 
-==== 啟用mod_STATUS：
+=== 啟用mod_STATUS：
 
 啟用和展示「mod_STATUS」模組需要兩個步驟：
 
@@ -56,7 +56,7 @@ Telegraf的Apache HTTP伺服器外掛程式仰賴要啟用的「mod_STATUS」模
 
 
 
-==== 啟用模組：
+=== 啟用模組：
 
 模組的載入是由「/usr/local/apache/conf/httpd.conf」下的組態檔所控制。編輯組態檔並取消註釋下列行：
 
@@ -64,7 +64,7 @@ Telegraf的Apache HTTP伺服器外掛程式仰賴要啟用的「mod_STATUS」模
  Include conf/extra/httpd-info.conf
 
 
-==== 展示單元的統計資料：
+=== 展示單元的統計資料：
 
 「mod_STATUS」的曝光是由「usr/local/ap2/conf/Extra / httpd-info.conf」下的組態檔所控制。請確定該組態檔中有下列項目（至少會有其他指令）：
 

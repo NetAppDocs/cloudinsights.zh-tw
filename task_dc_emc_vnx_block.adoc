@@ -104,7 +104,7 @@ naviseccli.exe -h <IP位址>-user <user>-password <password>-scield <scoe.use 0 
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===

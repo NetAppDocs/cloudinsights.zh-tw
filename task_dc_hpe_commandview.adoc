@@ -157,7 +157,7 @@ HP Enterprise Command View Advanced Edition資料收集器支援透過Command Vi
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===
@@ -174,7 +174,7 @@ HP Enterprise Command View Advanced Edition資料收集器支援透過Command Vi
 |===
 
 
-==== 效能
+=== 效能
 
 [cols="2*"]
 |===

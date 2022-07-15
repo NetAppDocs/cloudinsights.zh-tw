@@ -100,7 +100,7 @@ summary: 適用於NetApp ONTAP 的Amazon FSX資料蒐集器
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===

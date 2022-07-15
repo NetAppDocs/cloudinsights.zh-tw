@@ -174,17 +174,17 @@ NOTE: 此為_預覽_功能、因此可能有所變更。Config Advisor在預覽�
 
 
 
-==== 安裝及設定資料收集器：
+=== 安裝及設定資料收集器：
 
 video::Config_Advisor_Collector_Part1.mp4[Installing and Configuring the Config Advisor data collector]
 
 
-==== 建立Config Advisor 一個功能豐富的儀表板：
+=== 建立Config Advisor 一個功能豐富的儀表板：
 
 video::Config_Advisor_Collector_Part2.mp4[Using dashboards to view Config Advisor data]
 
 
-==== 其他支援
+=== 其他支援
 
 如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」->「開啟支援」票證、從「支援工具」開啟票證。
 

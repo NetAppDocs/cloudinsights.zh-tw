@@ -105,7 +105,7 @@ OPTIONS:
 
 
 
-==== Astra Data Store資料收集器
+=== Astra Data Store資料收集器
 
 [cols="2*"]
 |===
@@ -119,7 +119,7 @@ OPTIONS:
 |===
 
 
-==== 安裝指令碼
+=== 安裝指令碼
 
 [cols="2*"]
 |===

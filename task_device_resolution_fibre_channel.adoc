@@ -26,7 +26,7 @@ summary:
 
 
 
-==== 手動新增Fibre Channel裝置
+== 手動新增Fibre Channel裝置
 
 您可以Cloud Insights 使用「裝置解析度Fibre Channel identify」（光纖通道識別）索引標籤中的「_Manual Add_」（手動新增_）功能、手動將光纖通道裝置新增至支援功能。此程序可用於預先識別預期未來會探索的裝置。
 
@@ -50,7 +50,7 @@ summary:
 
 
 
-==== 從.CSV檔案匯入Fibre Channel裝置識別
+== 從.CSV檔案匯入Fibre Channel裝置識別
 
 您可以使用Cloud Insights .CSV檔案中的裝置清單、將光纖通道裝置識別碼手動匯入到無法辨識的裝置解析度中。
 
@@ -89,7 +89,7 @@ NOTE: 最佳實務做法是先將Fibre Channel識別資訊匯出至.CSV檔案、
 
 
 
-==== 將Fibre Channel裝置識別碼匯出至.CSV檔案
+== 將Fibre Channel裝置識別碼匯出至.CSV檔案
 
 您可以從Cloud Insights 「無法分辨」功能、將現有的光纖通道裝置識別碼匯出至.CSV檔案。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Cloud Insights 到用來識別與原先匯出識別碼類似的裝置的地方。
 

@@ -224,7 +224,7 @@ ci_user     ontapi      password    ci_readonly   no
 
 
 
-==== 庫存
+=== 庫存
 
 [cols="2*"]
 |===
@@ -256,7 +256,7 @@ ci_user     ontapi      password    ci_readonly   no
 |===
 
 
-==== 效能
+=== 效能
 
 [cols="2*"]
 |===

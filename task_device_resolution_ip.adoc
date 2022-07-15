@@ -15,7 +15,7 @@ image:Device_Resolution_IP.png["IP裝置解析度"]
 
 
 
-==== 手動新增IP裝置
+== 手動新增IP裝置
 
 您可以Cloud Insights 使用IP識別畫面中的手動新增功能、將IP裝置手動新增至功能表。
 
@@ -34,7 +34,7 @@ image:Device_Resolution_IP.png["IP裝置解析度"]
 
 
 
-==== 從.CSV檔案匯入IP裝置識別
+== 從.CSV檔案匯入IP裝置識別
 
 您可以使用.CSV檔案中的裝置識別清單、將IP裝置識別碼手動匯入裝置解析功能。
 
@@ -61,7 +61,7 @@ NOTE: 最佳實務做法是先將IP位址識別資訊匯出至.CSV檔案、在�
 
 
 
-==== 將IP裝置識別碼匯出至.CSV檔案
+== 將IP裝置識別碼匯出至.CSV檔案
 
 您可以從Cloud Insights 「無法分辨」功能、將現有的IP裝置識別碼匯出至.CSV檔案。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Cloud Insights 到用來識別與原先匯出識別碼類似的裝置的地方。
 

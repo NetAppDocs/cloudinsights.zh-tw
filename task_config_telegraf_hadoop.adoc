@@ -45,17 +45,17 @@ Hadoop外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需�
 
 
 
-==== 相容性
+=== 相容性
 
 組態是根據Hadoop 2.2.9版開發而成。
 
 
 
-==== 設定
+=== 設定
 
 
 
-===== Jolokia代理程式Jar
+==== Jolokia代理程式Jar
 
 對於所有個別元件、必須下載Jolokia代理程式Jar檔案的版本。測試版本為 link:https://jolokia.org/download.html["約洛基亞代理商1.6.0"]。
 
@@ -63,7 +63,7 @@ Hadoop外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需�
 
 
 
-===== NameNode
+==== NameNode
 
 若要設定NameNode以公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
 
@@ -74,7 +74,7 @@ You can choose a different port for JMX (8000 above) and Jolokia (7800). If you 
 ----
 
 
-===== 次要NameNode
+==== 次要NameNode
 
 若要將次要NameNode設定為公開Jolokia API、您可以在<Hadoop主目錄>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
 
@@ -85,7 +85,7 @@ You can choose a different port for JMX (8002 above) and Jolokia (7802). If you 
 ----
 
 
-===== DataNode
+==== DataNode
 
 若要將DataNode設定為公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
 
@@ -96,7 +96,7 @@ You can choose a different port for JMX (8001 above) and Jolokia (7801). If you 
 ----
 
 
-===== 資源管理程式
+==== 資源管理程式
 
 若要設定資源管理程式以公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
 
@@ -107,7 +107,7 @@ You can choose a different port for JMX (8003 above) and Jolokia (7803). If you 
 ----
 
 
-===== NodeManager
+==== NodeManager
 
 若要設定NodeManager以公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
 
@@ -118,7 +118,7 @@ You can choose a different port for JMX (8004 above) and Jolokia (7804). If you 
 ----
 
 
-===== 作業歷史伺服器
+==== 作業歷史伺服器
 
 若要將JobHistoryServer設定為公開Jolokia API、您可以在<Hadoop主頁>/etc/Hadoop / Hadoop -env.sh中設定下列項目：
 

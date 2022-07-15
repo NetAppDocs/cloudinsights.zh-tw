@@ -5,17 +5,7 @@ keywords: monitors, alerts, log, metric, system-defined, system, metric,
 summary: 建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。 
 ---
 = 使用監視器警示
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -76,7 +66,7 @@ TIP: 若要建立多重條件監視器（例如IOPS > X和延遲> Y）、請將�
 
 
 
-===== 定義監視器的條件。
+==== 定義監視器的條件。
 
 . 選擇要監控的物件和度量之後、請設定警告層級和（或）臨界層級臨界值。
 . 在_警告_層級、輸入200作為範例。此警告層級的虛線會顯示在範例圖表中。
@@ -253,13 +243,6 @@ NOTE: 從群組中移除監視器並不會刪除Cloud Insights 顯示器。若�
 使用相同的功能表重新命名或刪除群組。刪除群組並不會刪除Cloud Insights 顯示器的功能、但仍可在_All Monitors_中使用。
 
 image:Monitors_PauseGroup.png["暫停群組"]
-
-預設會顯示兩個群組：
-
-* *所有顯示器*會列出所有顯示器。
-* *自訂監視器*僅列出使用者建立的監視器。
-* *僅當系統暫停監視器時、才會顯示暫停監視器*。
-
 
 
 

@@ -35,17 +35,17 @@ image:DockerDCConfigLinux.png["Docker組態"]
 
 
 
-==== 相容性
+=== 相容性
 
 組態是根據Docker 1.12.6版開發而成。
 
 
 
-==== 設定
+=== 設定
 
 
 
-===== 透過UNIX套接字存取Docker
+=== 透過UNIX套接字存取Docker
 
 如果Telegraf代理程式是在裸機上執行、請執行下列命令、將Telegraf Unix使用者新增至Docker Unix群組：
 
@@ -74,7 +74,7 @@ mountPath: /var/run/docker.sock
 
 
 
-===== 透過TCP端點存取Docker
+=== 透過TCP端點存取Docker
 
 根據預設、Docker會使用連接埠2375進行未加密存取、而連接埠2376則用於加密存取。
 
