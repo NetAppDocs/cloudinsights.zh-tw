@@ -1955,22 +1955,13 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-15 23:31:59 +0000">05/15/2022</time>
+    <time datetime="2022-07-15 16:54:30 +0000">07/15/2022</time>
     
   
 
 
 </p>
 
-<div id="toc" class="toc">
-<div id="toctitle">目錄</div>
-<ul class="sectlevel1">
-<li><a href="#度量或記錄監控">度量或記錄監控？</a></li>
-<li><a href="#監控清單">監控清單</a></li>
-<li><a href="#監控群組">監控群組</a></li>
-<li><a href="#系統定義的監視器-2">系統定義的監視器</a></li>
-</ul>
-</div>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
@@ -2017,7 +2008,7 @@
 <li>
 <p>若要新增監視器、請按一下*+ Monitor *。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_or_metric.png" alt="選擇系統或記錄監控"></span></p>
+<p><span class="image"><img src="Monitor_log_or_metric.png" alt="選擇系統或記錄監控"></span></p>
 </div>
 <div class="paragraph">
 <p>當您新增監視器時、系統會提示您建立度量監視器或記錄監視器。</p>
@@ -2051,7 +2042,7 @@
 <p>您可以設定篩選條件、以縮小要監控的物件屬性或度量。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/MonitorMetricFilter.png" alt="度量篩選"></span></p>
+<p><span class="image"><img src="MonitorMetricFilter.png" alt="度量篩選"></span></p>
 </div>
 <div class="paragraph">
 <p>使用整合資料（Kubernetes、ONTAP 《支援進階資料》等）時、度量篩選會從繪圖資料系列中移除個別/不相符的資料點、這與基礎架構資料（儲存設備、VM、連接埠等）不同、因為篩選器會處理資料系列的集合值、並可能從圖表中移除整個物件。</p>
@@ -2068,8 +2059,8 @@
 </tr>
 </table>
 </div>
-<div class="sect4">
-<h5 id="定義監視器的條件">定義監視器的條件。</h5>
+<div class="sect3">
+<h4 id="定義監視器的條件">定義監視器的條件。</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2090,7 +2081,7 @@
 <p>您可以選擇在違反臨界值時觸發警示、或等到臨界值持續發生一段時間後再觸發警示。在我們的範例中、我們不想在每次IOPS總尖峰高於「警告」或「嚴重」層級時發出警示、只有在監控的物件持續超過其中一個層級至少15分鐘時才發出警示。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_metric_conditions.png" alt="定義監視器的條件"></span></p>
+<p><span class="image"><img src="Monitor_metric_conditions.png" alt="定義監視器的條件"></span></p>
 </div>
 </li>
 </ol>
@@ -2118,7 +2109,7 @@
 </table>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_monitor_filter.png" alt="選擇要監控的記錄、然後設定篩選條件"></span></p>
+<p><span class="image"><img src="Monitor_log_monitor_filter.png" alt="選擇要監控的記錄、然後設定篩選條件"></span></p>
 </div>
 <div class="sect3">
 <h4 id="定義警示行為">定義警示行為</h4>
@@ -2126,7 +2117,7 @@
 <p>選擇觸發記錄警示時要如何警示。您可以根據上述篩選條件、將監視器設定為警示_警告_、_嚴重_或_資訊_嚴重性。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_alert_behavior.png" alt="定義要監控的記錄行為"></span></p>
+<p><span class="image"><img src="Monitor_log_alert_behavior.png" alt="定義要監控的記錄行為"></span></p>
 </div>
 </div>
 <div class="sect3">
@@ -2148,7 +2139,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitor_log_monitor_resolution.png" alt="警示解析度"></span></p>
+<p><span class="image"><img src="Monitor_log_monitor_resolution.png" alt="警示解析度"></span></p>
 </div>
 </div>
 </div>
@@ -2158,7 +2149,7 @@
 <p>在「設定團隊通知」區段中、您可以選擇是透過電子郵件或Webhook警示團隊。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Webhook_Choose_Monitor_Notification.png" alt="選擇警示方法"></span></p>
+<p><span class="image"><img src="Webhook_Choose_Monitor_Notification.png" alt="選擇警示方法"></span></p>
 </div>
 <div class="paragraph">
 <p><strong>透過電子郵件警示：</strong></p>
@@ -2167,7 +2158,7 @@
 <p>指定警示通知的電子郵件收件者。如果需要、您可以選擇不同的收件者來發出警告或嚴重警示。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/email_monitor_alerts.png" alt="電子郵件警示收件者"></span></p>
+<p><span class="image"><img src="email_monitor_alerts.png" alt="電子郵件警示收件者"></span></p>
 </div>
 <div class="paragraph">
 <p><strong>透過Webhook警示：</strong></p>
@@ -2176,7 +2167,7 @@
 <p>指定警示通知的Webhook。如果需要、您可以選擇不同的Webhooks來發出警告或發出重大警示。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Webhook_Monitor_Notifications.png" alt="Webhook警示"></span></p>
+<p><span class="image"><img src="Webhook_Monitor_Notifications.png" alt="Webhook警示"></span></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2200,7 +2191,7 @@
 <p>在這些欄位中、您可以提供註解、連結或採取步驟來修正或以其他方式解決警示。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_Alert_Description.png" alt="警示修正行動與說明"></span></p>
+<p><span class="image"><img src="Monitors_Alert_Description.png" alt="警示修正行動與說明"></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -2261,7 +2252,7 @@
 <p>群組可讓您檢視及管理相關的監視器。例如、您可以讓監控群組專用於環境中的儲存設備、或監控與特定收件者清單相關的項目。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_GroupList.png" alt="監控群組"></span></p>
+<p><span class="image"><img src="Monitors_GroupList.png" alt="監控群組"></span></p>
 </div>
 <div class="paragraph">
 <p>畫面會顯示下列監視器群組。群組名稱旁會顯示群組中包含的監視器數量。</p>
@@ -2331,7 +2322,7 @@
 <li>
 <p>按一下監視器名稱以開啟監視器的編輯檢視、然後在_關聯至監視器群組_區段中選取群組。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_AssociateToGroup.png" alt="與群組建立關聯"></span></p>
+<p><span class="image"><img src="Monitors_AssociateToGroup.png" alt="與群組建立關聯"></span></p>
 </div>
 </li>
 </ul>
@@ -2361,23 +2352,7 @@
 <p>使用相同的功能表重新命名或刪除群組。刪除群組並不會刪除Cloud Insights 顯示器的功能、但仍可在_All Monitors_中使用。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/Monitors_PauseGroup.png" alt="暫停群組"></span></p>
-</div>
-<div class="paragraph">
-<p>預設會顯示兩個群組：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>*所有顯示器*會列出所有顯示器。</p>
-</li>
-<li>
-<p>*自訂監視器*僅列出使用者建立的監視器。</p>
-</li>
-<li>
-<p><strong>僅當系統暫停監視器時、才會顯示暫停監視器</strong>。</p>
-</li>
-</ul>
+<p><span class="image"><img src="Monitors_PauseGroup.png" alt="暫停群組"></span></p>
 </div>
 </div>
 </div>

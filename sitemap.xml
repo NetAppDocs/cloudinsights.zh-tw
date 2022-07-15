@@ -568,7 +568,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights//search.html</loc>
       
-      <lastmod>2022-07-15T13:55:03+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:54+00:00</lastmod>
       
     </url>
   
@@ -652,14 +652,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html</loc>
       
-      <lastmod>2022-07-13T15:34:44+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_apache.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -694,7 +694,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_docker.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -708,21 +708,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_flink.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_hadoop.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_haproxy.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -736,7 +736,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_kafka.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -897,21 +897,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_create_monitor.html</loc>
       
-      <lastmod>2022-05-15T23:31:59+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_create_query.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_create_webhook.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -967,7 +967,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_brocade_bna.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -981,7 +981,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_brocade_fc_switch.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -995,7 +995,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_cisco_fc_switch.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1030,7 +1030,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_isilon.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1058,28 +1058,28 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_unity.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_vmax_powermax.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_vnx_block.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_vnx_file.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1093,14 +1093,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_vnxe.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_emc_vplex.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1114,7 +1114,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_fujitsu_eternus.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1128,7 +1128,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_hds_commandsuite.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1142,7 +1142,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_hds_nas.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1156,14 +1156,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_hp_3par.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_hpe_commandview.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1198,7 +1198,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_ibm_ds.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1275,35 +1275,35 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_na_7mode.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_na_amazon_fsx.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_na_astra_data_store.html</loc>
       
-      <lastmod>2022-05-12T18:41:36+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_na_ca.html</loc>
       
-      <lastmod>2022-06-08T14:05:56+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_na_cdot.html</loc>
       
-      <lastmod>2022-05-19T19:35:09+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1345,7 +1345,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_na_hci.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1373,21 +1373,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_openstack.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_oracle_zfs.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_pure_flasharray.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1401,7 +1401,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_dc_vmware.html</loc>
       
-      <lastmod>2022-05-06T15:17:34+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1415,21 +1415,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_device_resolution_fibre_channel.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_device_resolution_ip.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_device_resolution_preferences.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1457,7 +1457,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_getting_started_with_cloud_cost.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   
@@ -1527,7 +1527,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloudinsights/task_troubleshooting_general_problems.html</loc>
       
-      <lastmod>2022-05-03T09:57:17+00:00</lastmod>
+      <lastmod>2022-07-15T16:54:30+00:00</lastmod>
       
     </url>
   

@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 09:57:17 +0000">05/03/2022</time>
+    <time datetime="2022-07-15 16:54:30 +0000">07/15/2022</time>
     
   
 
@@ -2028,16 +2028,16 @@
 <div class="paragraph">
 <p>Hadoop外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需要從所有Hadoop元件收集資訊、需要在所有元件上透過Jolokia設定和公開的JMX。</p>
 </div>
-<div class="sect3">
-<h4 id="相容性">相容性</h4>
+<div class="sect2">
+<h3 id="相容性">相容性</h3>
 <div class="paragraph">
 <p>組態是根據Hadoop 2.2.9版開發而成。</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="設定-2">設定</h3>
 <div class="sect3">
-<h4 id="設定-2">設定</h4>
-<div class="sect4">
-<h5 id="jolokia代理程式jar">Jolokia代理程式Jar</h5>
+<h4 id="jolokia代理程式jar">Jolokia代理程式Jar</h4>
 <div class="paragraph">
 <p>對於所有個別元件、必須下載Jolokia代理程式Jar檔案的版本。測試版本為 <a href="https://jolokia.org/download.html">"約洛基亞代理商1.6.0"</a>。</p>
 </div>
@@ -2045,8 +2045,8 @@
 <p>以下說明假設下載的Jar檔案（jolokia -jvm-1.6.0-agent.jar）位於「/op/Hadoop /lib/」位置。</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="namenode">NameNode</h5>
+<div class="sect3">
+<h4 id="namenode">NameNode</h4>
 <div class="paragraph">
 <p>若要設定NameNode以公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</p>
 </div>
@@ -2057,8 +2057,8 @@ You can choose a different port for JMX (8000 above) and Jolokia (7800). If you 
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="次要namenode">次要NameNode</h5>
+<div class="sect3">
+<h4 id="次要namenode">次要NameNode</h4>
 <div class="paragraph">
 <p>若要將次要NameNode設定為公開Jolokia API、您可以在&lt;Hadoop主目錄&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</p>
 </div>
@@ -2069,8 +2069,8 @@ You can choose a different port for JMX (8002 above) and Jolokia (7802). If you 
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="datanode">DataNode</h5>
+<div class="sect3">
+<h4 id="datanode">DataNode</h4>
 <div class="paragraph">
 <p>若要將DataNode設定為公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</p>
 </div>
@@ -2081,8 +2081,8 @@ You can choose a different port for JMX (8001 above) and Jolokia (7801). If you 
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="資源管理程式">資源管理程式</h5>
+<div class="sect3">
+<h4 id="資源管理程式">資源管理程式</h4>
 <div class="paragraph">
 <p>若要設定資源管理程式以公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</p>
 </div>
@@ -2093,8 +2093,8 @@ You can choose a different port for JMX (8003 above) and Jolokia (7803). If you 
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="nodemanager">NodeManager</h5>
+<div class="sect3">
+<h4 id="nodemanager">NodeManager</h4>
 <div class="paragraph">
 <p>若要設定NodeManager以公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</p>
 </div>
@@ -2105,8 +2105,8 @@ You can choose a different port for JMX (8004 above) and Jolokia (7804). If you 
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="作業歷史伺服器">作業歷史伺服器</h5>
+<div class="sect3">
+<h4 id="作業歷史伺服器">作業歷史伺服器</h4>
 <div class="paragraph">
 <p>若要將JobHistoryServer設定為公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</p>
 </div>
