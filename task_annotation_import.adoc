@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_annotation_import.html 
 keywords: annotations, import, api 
-summary: 您可以使用Cloud Insights 此功能來匯入註釋和應用程式。 
+summary: 您可以使用Cloud Insights 物件開發API匯入註釋和應用程式。 
 ---
 = 匯入附註
 :allow-uri-read: 

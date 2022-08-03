@@ -228,7 +228,6 @@
   <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">返回Cloud Insights 到「瀏覽器」索引標籤、等待連線建立。一旦建立、就會顯示「完成」按鈕。</block>
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">按一下「完成」。</block>
   <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
-  <block id="e61f983bca84adaf2e9ee840ad6c3d52" category="summary">您可以使用Cloud Insights 此功能來匯入註釋和應用程式。</block>
   <block id="74e0a2e3755eeebe63a75f28fcd4310c" category="doc">匯入附註</block>
   <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">包含API、可從CSV檔案匯入註釋或應用程式、並將其指派給您指定的物件。Cloud Insights</block>
   <block id="6ea19b77fdbbe887a195870f5398f21f" category="admonition">此功能可在*《*》《*》《*》《*》《*》《*》《* Cloud Insights Cloud Insights</block>
@@ -507,7 +506,6 @@
   <block id="e08b25c0c2d46e96d0ac5d6faca80bbf" category="paragraph">系統將顯示「*刪除代理*」頁面。</block>
   <block id="bd69c8c7685e8cb8cbe42da9c5c9d5e0" category="list-text">按一下*刪除*以確認刪除。</block>
   <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">有了這個功能、您就能在疑似遭破壞的情況下限制使用者存取權限Cloud Secure</block>
-  <block id="34f9ae45ea998f4feb8ed8b837da35ce" category="doc">限制使用者存取</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">對於具有叢集認證的CsUser、請從ONTAP 下列功能執行：</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何啟用此功能？</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">建立新的攻擊原則或編輯現有的攻擊原則。</block>
@@ -2716,7 +2714,6 @@
   <block id="8f65024231687a39efcddb86a1e9debb" category="cell">在您的瀏覽器設定中、允許第三方接受來自_[*。] auth0.com的Cookie。例如、在Chrome的無痕式模式中、預設的瀏覽器設定會封鎖第三方Cookie。請嘗試下列方法：在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">我有Cloud Central帳戶、但無法登入Cloud Central。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp支援</block>
-  <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">請聯絡saas.support@netapp.com。這是專為Cloud Central問題或疑問所設計。如需Cloud Insights 瞭解決所有其他的問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀參加Cloud Insights 這個項目、但我收到「未經授權」的訊息。</block>
   <block id="199017f1d912993f091b6b969d3442ad" category="cell">確認您已註冊Cloud Central帳戶、或貴組織使用Cloud Central的SSO登入。驗證您的Cloud Central設定檔電子郵件地址是否與Cloud Insights 您的歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
   <block id="176f8c6fa466059df49f2717c021d306" category="cell">我從Cloud Central或Cloud Secure 是不知道資料的地方登出、並自動從Cloud Insights 這個地方登出。</block>
@@ -2877,7 +2874,6 @@
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「</block>
   <block id="db45b764838c9131ffbab7063103f890" category="cell">從只設定NFS服務的新SVM開始著手。在ONTAP 功能不均的情況下新增一個功能不整的SVM資料收集器Cloud Secure 。CIFS被設定為SVM允許的傳輸協定、同時將ONTAP SVM Data Collector加入Cloud Secure 到等到Cloud Secure 資訊收集器顯示錯誤為止。由於未在SVM上設定CIFS伺服器、Cloud Secure 所以如左側所示的錯誤會由SIRSH.顯示。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。</block>
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。</block>
-  <block id="f2e1c8f11a6d114e56889c093ddb4738" category="cell">在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">如果您仍遇到問題、請聯絡*「說明」&gt;「支援*」頁面中提及的支援連結。</block>
   <block id="48c61d7e308e180e1efe94445b39a2bf" category="summary">設定IBM Cleverafe資料收集器。</block>
   <block id="34dc32f8a9491ac2179b94f2e23199d6" category="doc">IBM Cleverafe資料收集器</block>
@@ -4392,9 +4388,6 @@
   <block id="0b15e5ecfcaabb3952c7992d37b94c97" category="cell">可能的原因可能是：1.尚未設定使用者目錄收集器。若要新增一個、請前往*管理&gt;資料收集器&gt;使用者目錄收集器*、然後按一下*+使用者目錄收集器*。選擇_Active Directory或_LDAP Directory Server_。2.已設定使用者目錄收集器、但它已停止或處於錯誤狀態。請移至*管理&gt;資料收集器&gt;使用者目錄收集器*、然後檢查狀態。請參閱 <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> 說明文件中的一節、以取得疑難排解秘訣。正確設定後、名稱將在24小時內自動解析。如果仍無法解決、請檢查是否已新增正確的使用者資料收集器。確定使用者確實是新增Active Directory / LDAP目錄伺服器的一部分。</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">UI中未顯示某些NFS事件。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">請檢查下列項目：1.具有POSIX屬性集的AD伺服器之使用者目錄收集器應以從UI啟用的unixid屬性執行。2.在UI 3的使用者頁面中搜尋時、應該會看到執行NFS存取的任何使用者。NFS不支援原始事件（尚未探索使用者的事件）4。不會監控匿名存取NFS匯出。5.確定NFS版本的使用版本低於NFS4.1。</block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用Cloud Insights NetApp ONTAP 的「資料流遙測」來設定功能</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 資料流遙測</block>
-  <block id="f1417ae8cdc394cf3e1b04ec57f52d55" category="paragraph">感謝您對Cloud Insights ONTAP 「資訊串流遙測」的關注。此功能目前處於私人預覽模式。請聯絡ng-ci-preview@netapp.com以索取更多資訊或存取。</block>
   <block id="e15fca67cd8338997729ad4099343915" category="summary">請使用此程序、使用預先定義Cloud Insights 的功能表建立報告。</block>
   <block id="8dff98a51b599d1388a5c2eaff15bfbd" category="doc">建立報告（範例）</block>
   <block id="d4bcce6f1018e3844c63df7e66d7890d" category="paragraph">請使用本範例中的步驟、針對多個資料中心的儲存設備和儲存資源池實體容量、產生簡單的報告。</block>
@@ -5094,62 +5087,10 @@
   <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">*擷取*：從Cloud Insights 資料來源擷取資料。</block>
   <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* Transform*：將商業邏輯規則或功能套用至從Cloud Insights 效益擷取的資料。</block>
   <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">*負載*：將轉換後的資料儲存至資料倉儲、以供報告使用。</block>
-  <block id="7d48a0a5ed3c85848832ea7422284955" category="summary">鑑識總覽</block>
-  <block id="3c9a5933dbcf52b832c3bc29602f533e" category="doc">鑑識資訊</block>
-  <block id="c6b06f9d94d6e3d9271189551e74cea0" category="paragraph">取證檢視可讓您存取使用者、實體、社群和使用者活動資訊。</block>
-  <block id="44a46c2660280d286db386102080a441" category="section-title">檢查使用者資訊</block>
-  <block id="28de16ab3be9929caaeaa80b9bcb8cae" category="paragraph">按一下*取證&gt;使用者*以存取使用者檢視。</block>
-  <block id="6ca7bae39d7693f1928b8ed958ec3031" category="paragraph">此檢視顯示一般使用者資訊：</block>
-  <block id="6b37c53b00de653309ddd77e14f6fcb2" category="list-text">使用者名稱、並提供使用者詳細資訊的連結。</block>
-  <block id="6c9726cf0882d3e1a7a7afe4783da264" category="list-text">使用者活動所引發的警示</block>
-  <block id="445522ee576a12cf827fa43589a58259" category="list-text">使用者所在的社群數量、以及社群頁面的連結</block>
   <block id="ccbd604baf2f1984132ebb1bbeb588fc" category="list-text">使用者位置</block>
-  <block id="195c405e622fd0e8a5261128ab24f646" category="list-text">使用者上次存取的實體</block>
-  <block id="b74597a63b1b4a0fcc6fc3dbf1e6c537" category="inline-link-macro">使用者總覽</block>
-  <block id="a7c9a128617298eaa5ad1cbc07b0fa95" category="paragraph">按一下使用者名稱、即可在中存取更多詳細資訊 <block ref="3d59fda9ee439a9c317c1e3620febd81" category="inline-link-macro-rx"></block></block>
-  <block id="6ac59d127729a2df605b8a529582fd94" category="paragraph">按一下「*鑑識」&gt;「實體*」以存取「實體」檢視。</block>
-  <block id="315b80eaca275df566989ef64b720983" category="paragraph">本頁顯示使用者存取實體的一般資訊：</block>
-  <block id="694d77664575fb0b446ef89342fbc71d" category="list-text">實體名稱</block>
-  <block id="51c3943e8749968c80b7744cc55309ca" category="list-text">實體類型</block>
-  <block id="1739f3571edb57fdab0fea8740bab304" category="list-text">與實體的社群關係</block>
-  <block id="95c38092c77409aa34ca740575e3d8a3" category="list-text">實體路徑</block>
-  <block id="85d5603a6e68c4c44680e10abf168fa3" category="list-text">上次存取時間</block>
-  <block id="93fa92f9e5767fd30bf1640775eaafb8" category="list-text">實體大小</block>
-  <block id="04cf453ee7a9d96ce1163b2e7eb391fb" category="inline-link-macro">實體總覽</block>
-  <block id="e5e48bf4aad9fe1b29f3d7debbfab46d" category="paragraph">按一下「實體名稱」以存取中的詳細資訊 <block ref="41d4646ac17a8d86637f2c102393f3d2" category="inline-link-macro-rx"></block></block>
-  <block id="0ba8a1b83ab5f740c25d1a34945740ec" category="paragraph">按一下「社群」數以顯示包含該實體的社群。</block>
-  <block id="0ac8ab4c4aa30fdb262dd2eba9a4cee9" category="section-title">檢查社群資訊</block>
-  <block id="60033bcd0fb7bbabdbf0102bddefef4b" category="paragraph">按一下「*取證&gt;社群*」以存取「社群」頁面。</block>
-  <block id="e83880b4a1aefd4a24ca942c518a3e31" category="paragraph">此檢視提供：</block>
-  <block id="1d4fe32a02507cbee05a22e2163b19ef" category="list-text">社群名稱</block>
-  <block id="20063e46ae559ca8c5317550e142db11" category="list-text">社群相關警示</block>
-  <block id="f7336e7753dc66e0f7a70cdc32419e67" category="list-text">社群的使用者數</block>
-  <block id="33b77eed26e588d09b61fad390717116" category="list-text">社群的實體數不清</block>
-  <block id="5526aa3f240fd8aa78b875a31bbd0240" category="paragraph">按一下或搜尋社群名稱、即可存取「社群詳細資料」頁面。</block>
-  <block id="213b4a1ab7b919c2b3dc7350a6e507d1" category="list-text">社群設定檔</block>
-  <block id="f81602367bd918e87be49cc7333aad9d" category="list-text">列出社群使用者所在位置和其他最近的社群。</block>
-  <block id="25ec77a3cb61c007c81903e91a83e827" category="list-text">社群行為</block>
-  <block id="37c16075756789b73bbb047b6ec3236e" category="list-text">顯示存取的實體數量、並顯示讀取、寫入和中繼資料存取作業。</block>
-  <block id="cc63aa0e41b641e62f5826480be1c9a9" category="list-text">使用者與實體</block>
-  <block id="2e9ec39a8903cee2b8bd7e4921a0da67" category="list-text">識別社群中的使用者總數和實體總數。</block>
-  <block id="54fff1a991ed8c2a8759bc6d55fd23c1" category="list-text">社群分析</block>
-  <block id="ddf0527a86cec7703cce5c33abbb5c34" category="list-text">社群使用者趨勢</block>
-  <block id="0c77da7f9ef578c73bcc2abfaa5e17d2" category="list-text">在實體上執行的作業</block>
-  <block id="d8e4fa79860720ab4de7678dd1551a7e" category="list-text">警示趨勢</block>
-  <block id="3ba0f712de472ad27e352eda11f7ca9c" category="inline-link-macro">社群詳細資料</block>
-  <block id="128b0e056d6e9e44e8d5619f67f41be1" category="paragraph">按一下社群名稱、即可在中存取更多詳細資訊 <block ref="35be0d791cd3b8bb67fe5dda3b8336a2" category="inline-link-macro-rx"></block></block>
-  <block id="51a06ae1e81a8fa844ac04e18fb5a8c2" category="section-title">檢查使用者活動資訊</block>
-  <block id="a59c3446cb001170a67fc660476e7122" category="paragraph">按一下「*鑑識」&gt;「使用者活動*」以存取「使用者活動」檢視。</block>
-  <block id="dbbd1a08e400cb6dbbb25944d19aeda7" category="paragraph">對於每個受監控的使用者、此檢視說明：</block>
-  <block id="4e29a3c62ae31255758baa02ac804d1a" category="list-text">實體存取時間</block>
-  <block id="dd146dad600a7b7548fafddb2f136c7b" category="list-text">使用者以使用者總覽連結存取實體</block>
-  <block id="bf3b9394ae4ebc8ad6fc34bb746e7ff7" category="list-text">執行活動：</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">讀取</block>
   <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">寫入</block>
   <block id="686e697538050e4664636337cc3b834f" category="list-text">建立</block>
-  <block id="904a8304056d77e4547744781b7ceb50" category="list-text">重新命名</block>
-  <block id="35f626d440dca3958f80815ba211e28f" category="inline-link-macro">實體詳細資料</block>
-  <block id="4f7a48a0c11b5b3ef72155cd3f928c11" category="list-text">存取位置按一下使用者名稱、即可在中存取更多詳細資訊 <block ref="43cf20fcbc1ba77da8a65316f0eebb78" category="inline-link-macro-rx"></block></block>
   <block id="2d511a0af71415c4b6b394d9a1964225" category="summary">大多數物件類型都能顯示資產頁面。</block>
   <block id="033cb70e428cff3c1584d7206da08f9c" category="doc">資產頁面總覽</block>
   <block id="ab24a36f89b07d59e5cf53d5754754b1" category="paragraph">資產頁面會摘要說明資產的目前狀態、並包含資產及其相關資產的其他資訊連結。</block>
@@ -5286,7 +5227,6 @@
   <block id="474b549bf76599f904f9c951a609a127" category="cell">對於Linux、應以下列方式分配磁碟空間：/opp/netapp 10 GB /var/log/netapp 40 GB /tmp,安裝期間至少有1 GB可用空間</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">網路</block>
-  <block id="47dc5acc8bdc974a72002ca9aa47f325" category="cell">100 Mbps / 1 Gbps乙太網路連線、靜態IP位址、所有FC裝置的IP連線、Cloud Insights 以及連接至該實例所需的連接埠（80或443）。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">權限</block>
   <block id="b121d11a2c041b51e1c63a940169fc95" category="cell">擷取單元伺服器上的Sudo權限。/tmp必須以執行功能掛載。</block>
   <block id="f2675114c7e961125e58746739ce868e" category="cell">取得單位伺服器的系統管理員權限</block>
@@ -5658,34 +5598,8 @@
   <block id="47fa8d76306d372c744e15ee8842dfe6" category="cell">選擇HCP_local或active_directory</block>
   <block id="8853a8367abce0e7b992076dc2ea96d7" category="cell">庫存輪詢之間的時間間隔。預設值為60。</block>
   <block id="7b838f138f86c4286a81ea5584878ef8" category="cell">效能輪詢之間的時間間隔。預設值為900。</block>
-  <block id="a3a8ab6593662bf5af921765f1941855" category="summary">鑑識使用者資料</block>
-  <block id="7ca293d65417ae9cf489be8751021320" category="doc">鑑識使用者資料</block>
-  <block id="408845a3dd634fb6974267e5a603424a" category="paragraph">「使用者」頁面可識別Cloud Secure 由功能不受監視的使用者。</block>
-  <block id="947ebb461659f7a73d27f2a7a8c4d6bb" category="paragraph">本頁提供的資料包括：</block>
   <block id="90b1f6651953fcf8b43ddc0da6760aaf" category="inline-link-macro">使用者設定檔</block>
-  <block id="96d09f2dc2b887e3b423d1b79cd62599" category="list-text">每個由Cloud Secure NetApp監控的使用者、都會有一個連結連結至 <block ref="55f5b6b5fddb3d46d73361cc24392e6f" category="inline-link-macro-rx"></block>。</block>
-  <block id="7eed1af6d5e60a7781d911d100ae52ca" category="list-text">使用者執行的使用者活動所引發的警示。警示嚴重性的識別方式如下：image：：critical.pnnnp[critical]+\ image：：warning.pnnpn[warning]+\ image：low .pnpnp[Low]+\</block>
-  <block id="aa442e207a8d7e963a0aa5d7442d8f47" category="list-text">使用者上次執行的活動。</block>
-  <block id="a6ba690d9231e6ecc5bd081b0e06dd20" category="list-text">使用者所在位置-國家/地區和州/省。</block>
-  <block id="c736c85a4c864cc9b572640abb256b92" category="list-text">使用者所屬的社群數量。</block>
-  <block id="64ffc8d19d49546980dfd40d46804fb9" category="section-title">篩選取證使用者資料</block>
-  <block id="6efc6ed7a55278a9b930ab341ab7a976" category="paragraph">您可以依下列項目篩選取證活動歷程記錄資料：</block>
-  <block id="28d0edd045e05cf5af64e35ae0c4c6ef" category="list-text">低</block>
-  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="list-text">警告</block>
-  <block id="278d01e5af56273bae1bb99a98b370cd" category="list-text">關鍵</block>
-  <block id="dc96f42b62a6e61a0f49a6f5ccdfbf8d" category="list-text">相關社群</block>
-  <block id="9bc012ef5084b7ef0b32dcf80fa43a9f" category="list-text">社群計數</block>
-  <block id="89c76c28a62b7c221f9bd4d820491faa" category="list-text">數值或範圍</block>
-  <block id="6307dd2f57d3f7f949eca03a2a54f6e0" category="list-text">上次活動</block>
-  <block id="e0669ff2bbd8b9e25b0b355beeb65fc0" category="list-text">時間或時間範圍</block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="list-text">位置</block>
-  <block id="db60443137b65a2f198625b3db4cfd04" category="list-text">執行活動的IP位址</block>
-  <block id="a790e175bcd4355b797477dbddb71196" category="list-text">執行活動的IP位址*</block>
-  <block id="1edcdad89b3a2245d759a169da1bf5a3" category="list-text">使用者ID</block>
-  <block id="a0f444d64169fdc0ad0a86c8e7e5ec6d" category="list-text">實體存取來源位置</block>
-  <block id="da77770aeded479ed467590ba6712188" category="list-text">實體路徑</block>
-  <block id="46c3b6b9a12fcd2685c9d6ab083d4074" category="list-text">活動發生時間</block>
-  <block id="8e1c0aa55e2a24015a4aa31b1525e7ed" category="list-text">執行活動的使用者</block>
   <block id="5f06573aae905166447bf8d646c6bf89" category="summary">查詢總覽</block>
   <block id="fadb076bccad39c075c50bfa7f81bc31" category="doc">用於查詢的資產</block>
   <block id="74e62ba1fb3e060a16a3310628a9de3e" category="paragraph">查詢可讓您根據使用者選取的條件（例如註釋）、在精細層級上搜尋環境中的資產和度量、藉此監控和疑難排解網路。</block>
@@ -5900,8 +5814,6 @@
   <block id="6af18ae8f301c79fa391e8e18308336c" category="inline-image-macro">暫停群組</block>
   <block id="da61284a90b4338613015a46e7ac0c53" category="paragraph"><block ref="da61284a90b4338613015a46e7ac0c53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b45ed04a71b5c6121028894bed24bfe0" category="paragraph">預設會顯示兩個群組：</block>
-  <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">*自訂監視器*僅列出使用者建立的監視器。</block>
-  <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">*僅當系統暫停監視器時、才會顯示暫停監視器*。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">檢視 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 頁面、以取得Cloud Insights 有關顯示器的說明。</block>
   <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy資料收集器組態</block>
   <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy資料收集器</block>
@@ -7934,7 +7846,6 @@
   <block id="6068dbca35f237e6b23584f701dc4aa1" category="cell">安裝、執行指令碼及解除安裝時、必須使用「su–」命令。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4個CPU核心</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
-  <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">磁碟空間應以下列方式分配：/opp/netapp 25-30 GB</block>
   <block id="a4c9f60f11d808285b05aa24c83f213b" category="cell">100 Mbps至1 Gbps乙太網路連線、靜態IP位址、所有裝置的IP連線、Cloud Secure 以及連接至該實例所需的連接埠（80或443）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">請注意Cloud Secure ：可以將此Same Agent安裝在Cloud Insights 同一部機器上、做為一個收購單元和/或代理程式。不過、最好將這些安裝在不同的機器上。如果這些安裝在同一部機器上、請如下所示分配磁碟空間：</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">對於Linux、應以下列方式配置磁碟空間：/opp/netapp 25-30 GB /var/log/netapp 25 GB</block>
@@ -8940,4 +8851,11 @@
   <block id="3aba5c3b5ec94e17ca4afc1a38905dbe" category="list-text">確保Cloud Secure 刪除此規則（可選的確認步驟）。</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">無法修改原則。原因：未授權使用該命令。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">請檢查是否使用CsUser、是否會如上所述授予使用者權限。</block>
+  <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選取「cloud.netapp.com &gt;帳戶/登入問題」或「cloud.netapp.com &gt;聯盟問題」類別。這是專為Cloud Central問題或疑問所設計。如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f0836a5cbb198e5071126d330de3a88" category="cell">磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小）</block>
+  <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">雙向</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
+  <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的規模調整指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">您可以使用Cloud Insights 物件開發API匯入註釋和應用程式。</block>
+  <block id="dc32103fc28ea11a068c096412ef6787" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 .c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。</block>
 </blocks>

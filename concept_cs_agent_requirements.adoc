@@ -28,7 +28,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 記憶體 | 16 GB RAM 
 
 
-| 可用磁碟空間 | 磁碟空間應以下列方式分配：/opp/netapp 25-30 GB 
+| 可用磁碟空間 | 磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小） 
 
 
 | 網路 | 100 Mbps至1 Gbps乙太網路連線、靜態IP位址、所有裝置的IP連線、Cloud Secure 以及連接至該實例所需的連接埠（80或443）。 
@@ -105,7 +105,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | TCP | 35000 - 55000 | SVM資料LIF IP位址 | 傳入/傳出 | 與ONTAP 適用於Fpolicy活動的功能溝通 
 
 
-| TCP | 7. | SVM資料LIF IP位址 | 傳出 | 在不同時使用的情況下進行雙向。ONTAP Cloud Secure代理程式Ping SVM LIF。 
+| TCP | 7. | SVM資料LIF IP位址 | 雙向 | 在不同時使用的情況下進行雙向。ONTAP Cloud Secure代理程式Ping SVM LIF。 
 |===
 
 

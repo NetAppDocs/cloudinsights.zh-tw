@@ -26,7 +26,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 | 每5分鐘登出一次Cloud Insights | 在您的瀏覽器設定中、允許第三方接受來自_[*。] auth0.com的Cookie。例如、在Chrome的無痕式模式中、預設的瀏覽器設定會封鎖第三方Cookie。請嘗試下列方法：在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。 
 
 
-| 我有Cloud Central帳戶、但無法登入Cloud Central。 | 請聯絡saas.support@netapp.com。這是專為Cloud Central問題或疑問所設計。如需Cloud Insights 瞭解決所有其他的問題、請聯絡 link:concept_requesting_support.html["NetApp支援"]。 
+| 我有Cloud Central帳戶、但無法登入Cloud Central。 | 從開啟問題單 https://mysupport.netapp.com/site/help[]。選取「cloud.netapp.com >帳戶/登入問題」或「cloud.netapp.com >聯盟問題」類別。這是專為Cloud Central問題或疑問所設計。如Cloud Insights 需所有其他的支援問題、請聯絡 link:concept_requesting_support.html["NetApp支援"]。 
 
 
 | 我受邀參加Cloud Insights 這個項目、但我收到「未經授權」的訊息。 | 確認您已註冊Cloud Central帳戶、或貴組織使用Cloud Central的SSO登入。驗證您的Cloud Central設定檔電子郵件地址是否與Cloud Insights 您的歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。 
