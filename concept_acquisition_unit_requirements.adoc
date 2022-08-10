@@ -33,7 +33,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | 可用磁碟空間 | 對於Linux、應以下列方式分配磁碟空間：/opp/netapp 10 GB /var/log/netapp 40 GB /tmp,安裝期間至少有1 GB可用空間 | 50 GB 
 
 
-| 網路 | 100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 .c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 link:data_collector_list.html["資料收集器"]。 | 相同 
+| 網路 | 100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://<environment_id>.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 link:data_collector_list.html["資料收集器"]。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["請按這裡"] 或 link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["請按這裡"]。 | 相同 
 
 
 | 權限 | 擷取單元伺服器上的Sudo權限。/tmp必須以執行功能掛載。 | 取得單位伺服器的系統管理員權限 

@@ -8857,5 +8857,11 @@
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
   <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的規模調整指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
   <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">您可以使用Cloud Insights 物件開發API匯入註釋和應用程式。</block>
-  <block id="dc32103fc28ea11a068c096412ef6787" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 .c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。</block>
+  <block id="0dc88092036f29d0c951123c9b9f932e" category="section-title">資料遺失時發出警示</block>
+  <block id="525a57ad5c1f150ce2c13c4797278523" category="paragraph">在像是靜止的即時系統中Cloud Insights 、為了觸發監視器的分析、以決定是否要產生警示、我們仰賴以下兩種方法之一：</block>
+  <block id="9f76cab36d38af05dce74499497c7b3b" category="list-text">下一次抵達日期</block>
+  <block id="7b007d3b8d88462a6ae312862d2e1a99" category="list-text">當沒有資料點且等待時間已足夠長時、定時器就會啟動</block>
+  <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">如同資料到達速度緩慢（或沒有資料到達）的情況、由於資料到達率不足以「即時」觸發警示、因此需要接管定時器機制。 因此問題通常會變成「我需要等多久才能關閉分析視窗、看看我的現況？」 如果等待時間過長、就表示您產生警示的速度不夠快、無法使用。</block>
+  <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的監視器有30分鐘的時間範圍、通知在長期資料遺失之前、某個條件已被最後一個資料點違反、 由於監控器未收到任何其他資訊、無法用來確認是否恢復了度量、或注意到該條件持續存在、因此將產生警示。</block>
+  <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
 </blocks>
