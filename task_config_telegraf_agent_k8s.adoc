@@ -180,7 +180,7 @@ password: <password from docker secret step above>
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。
 
-將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像：
+將所有開放原始碼相依性下載到您的Private Docker登錄。使用與公用儲存庫相同的目錄結構。需要下載下列開放原始碼映像：
 
 ....
 docker.io/telegraf:1.21.4
@@ -211,6 +211,9 @@ spec:
         - key: k8s.gcr.io
           value: <same as "docker-repo" field above>
 ....
+編輯監控操作員部署、以反映新的Docker repo位置：
+
+ kubectl -n netapp-monitoring edit deploy monitoring-operator
 
 
 === 從指令碼型K8s監控升級為以操作員為基礎的
@@ -591,5 +594,8 @@ Windows：
 
 
 | 在Kubernetes上、我的Telegraf ReplicaSet pod報告下列錯誤：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /pi/etcd/server.key：open /etc/Kubernetes /pi/etcd/server.crt目錄或這樣的檔案 | Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。 
+
+
+| 安裝NetApp Kubernetes監控操作員之後、我立即在記錄中看到下列內容：[inputs.prometheus]錯誤in plugin：向\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:提出HTTP要求時發生錯誤Get \http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics: dial TCP：LOOKUP Kube-態 指標。<namespace>.svc.cluster：local：沒有這類主機 | 此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。

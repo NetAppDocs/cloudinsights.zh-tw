@@ -1816,7 +1816,6 @@
   <block id="e5d1e0154409d9aa2d79f4ab1f1793c2" category="paragraph">從Cloud Insights 「畫面」中拉出「運算子」泊塢視窗影像：</block>
   <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">使用下列命令尋找&lt;版本&gt;欄位：</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像：</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果已啟用Fluent位元、請同時下載：</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">編輯代理程式CR以反映新的Docker repo位置、停用自動升級（若已啟用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在_spec__區段中、進行下列變更：</block>
@@ -8864,4 +8863,8 @@
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">如同資料到達速度緩慢（或沒有資料到達）的情況、由於資料到達率不足以「即時」觸發警示、因此需要接管定時器機制。 因此問題通常會變成「我需要等多久才能關閉分析視窗、看看我的現況？」 如果等待時間過長、就表示您產生警示的速度不夠快、無法使用。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的監視器有30分鐘的時間範圍、通知在長期資料遺失之前、某個條件已被最後一個資料點違反、 由於監控器未收到任何其他資訊、無法用來確認是否恢復了度量、或注意到該條件持續存在、因此將產生警示。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
+  <block id="47400a8b7ae7e165f8d5326d32ebcc02" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。使用與公用儲存庫相同的目錄結構。需要下載下列開放原始碼映像：</block>
+  <block id="b20c54eff3214bd1aab22457c1401f00" category="paragraph">編輯監控操作員部署、以反映新的Docker repo位置：</block>
+  <block id="99d5862cd7f8e60656b7d84aaaf12ce9" category="cell">安裝NetApp Kubernetes監控操作員之後、我立即在記錄中看到下列內容：[inputs.prometheus]錯誤in plugin：向\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:提出HTTP要求時發生錯誤Get \http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics: dial TCP：LOOKUP Kube-態 指標。&lt;namespace&gt;.svc.cluster：local：沒有這類主機</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
 </blocks>
