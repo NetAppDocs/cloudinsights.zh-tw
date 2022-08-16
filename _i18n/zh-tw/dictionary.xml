@@ -8870,7 +8870,7 @@
   <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">...搭配：</block>
   <block id="708a43ca283ea273fda53a8850915ef8" category="cell">我執行命令來安裝CI代理程式來收集Kubernetes資訊、但UI中卻沒有看到任何Kubernetes資訊。</block>
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">執行下列命令、收集輸出、並聯絡NetApp支援部門。請注意、這些命令使用的是預設命名空間。如果您已設定自己的命名空間、請在這些命令和所有後續命令中取代該命名空間。kutbecl -n NetApp監控說明部署、代理程式、RS、DS、pods kubecl -n NetApp監控說明部署kutbecl -n NetApp監控記錄&lt;監控-營運者pod &gt;-c manager kutbecl -n NetApp監控記錄&lt;遠端監控faf-RS po&gt; kutl -kun NetApp狀態監控記錄&gt;</block>
-  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
-  <block id="514faf5a71b4f0f67374c388f37aa0d7" category="cell">。</block>
-  <block id="54701d7c6ef5529abe15ceab8c8612cd" category="paragraph">&amp;#42;適用於500個託管單元及更大的環境、而且每次僅限5個作用中的自訂監控器、提供的API有限</block>
+  <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast；</block>
+  <block id="cfd5ebf75a4f06628eea1779798f08d5" category="cell">&amp;ast；&amp;ast；</block>
+  <block id="a093ee1a6db03c2791705cf10c177d07" category="paragraph">&amp;#42;適用於500個託管單元和更大的&amp;ast環境；一次僅限5個作用中的自訂監控器；&amp;ast；提供有限的API</block>
 </blocks>
