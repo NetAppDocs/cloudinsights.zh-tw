@@ -8238,7 +8238,6 @@
   <block id="48ddfbf9b74c53d0faaa56e85e7f4945" category="cell">雲端指標</block>
   <block id="c804187aad1ac0e05bfe9734492a853f" category="cell">服務指標</block>
   <block id="3e61ac3c29f7cbd9ed1cd4606d9a50e6" category="cell">監控和警示</block>
-  <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="cell">API存取</block>
   <block id="372735448eedd531647388e4231b11e5" category="cell">支援使用者資料存取稽核Cloud Secure</block>
   <block id="296767e345f23610f06a21d1f03e36c6" category="cell">利用AI / ML進行內部威脅偵測Cloud Secure</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
@@ -8870,7 +8869,7 @@
   <block id="708a43ca283ea273fda53a8850915ef8" category="cell">我執行命令來安裝CI代理程式來收集Kubernetes資訊、但UI中卻沒有看到任何Kubernetes資訊。</block>
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">執行下列命令、收集輸出、並聯絡NetApp支援部門。請注意、這些命令使用的是預設命名空間。如果您已設定自己的命名空間、請在這些命令和所有後續命令中取代該命名空間。kutbecl -n NetApp監控說明部署、代理程式、RS、DS、pods kubecl -n NetApp監控說明部署kutbecl -n NetApp監控記錄&lt;監控-營運者pod &gt;-c manager kutbecl -n NetApp監控記錄&lt;遠端監控faf-RS po&gt; kutl -kun NetApp狀態監控記錄&gt;</block>
   <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast；</block>
-  <block id="cfd5ebf75a4f06628eea1779798f08d5" category="cell">&amp;ast；&amp;ast；</block>
-  <block id="fbcbad09f25603c31425bdbe7347ab04" category="cell">商業情報與報告與快速；&amp;ast；&amp;ast；</block>
-  <block id="78899749f4f598d5c1c70ec3895887bd" category="paragraph">&amp;ast；一次僅限5個作用中的自訂監視器；&amp;ast；可用的有限API；&amp;ast；&amp;ast；適用於500個受管理單位以上的環境</block>
+  <block id="e056d3391fc09511bb4b998310f69c58" category="cell">API存取加號（&amp;plus）；</block>
+  <block id="d54591f265027d735d3be71d57199e4a" category="cell">商業情報與報告與快速；&amp;ast；</block>
+  <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">&amp;ast；一次僅限5個作用中的自訂監視器&amp;plus；API存取依版本&amp;ast而異；&amp;ast；適用於500個受管理單元以上的環境</block>
 </blocks>
