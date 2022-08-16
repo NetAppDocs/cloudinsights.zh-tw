@@ -25,9 +25,12 @@ summary: 有了這個功能、您就能在疑似遭破壞的情況下限制使�
 
 此功能需要叢集層級認證、才能正常運作。
 
+
+NOTE: 使用Amazon FSX資料收集器時、SMB的使用者封鎖功能無法終止目前的使用者工作階段。請參閱 <<troubleshooting,疑難排解>> 章節以取得更多資訊。
+
 如果您使用叢集管理認證、則不需要新的權限。
 
-如果您使用的是自訂使用者、例如具有權限給使用者的CsUser、請遵循下列步驟、將權限授予CloudSecure以封鎖使用者。
+如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便封鎖使用者。
 
 對於具有叢集認證的CsUser、請從ONTAP 下列功能執行：
 
@@ -106,17 +109,17 @@ contrail-qa-fas8020::> export-policy rule show -vserver <svm name>
              Policy          Rule    Access   Client                RO
 Vserver      Name            Index   Protocol Match                 Rule
 ------------ --------------- ------  -------- --------------------- ---------
-svm_s_____a default         1       nfs3,    cloudsecure_rule,     never
-                                     nfs4,    10.11.12.13
-                                     cifs
-svm_s_____a default         4       cifs,    0.0.0.0/0             any
-                                     nfs
-svm_s_____a test            1       nfs3,    cloudsecure_rule,     never
-                                     nfs4,    10.11.12.13
-                                     cifs
-svm_s_____a test            3       cifs,    0.0.0.0/0             any
-                                     nfs,
-                                     flexcache
+svm0        default         1       nfs3,    cloudsecure_rule,     never
+                                    nfs4,    10.11.12.13
+                                    cifs
+svm1        default         4       cifs,    0.0.0.0/0             any
+                                    nfs
+svm2        test            1       nfs3,    cloudsecure_rule,     never
+                                    nfs4,    10.11.12.13
+                                    cifs
+svm3        test            3       cifs,    0.0.0.0/0             any
+                                    nfs,
+                                    flexcache
 4 entries were displayed.
 ....
 . 在SVM上、將「cloudsecure_rRule」做為用戶端比對的所有原則中刪除規則、方法是指定其各自的規則索引。通常情況下、這個規則是1。Cloud Secure
@@ -129,14 +132,50 @@ contrail-qa-fas8020::*> export-policy rule show -vserver <svm name>
              Policy          Rule    Access   Client                RO
 Vserver      Name            Index   Protocol Match                 Rule
 ------------ --------------- ------  -------- --------------------- ---------
-svm_suchitra default         4       cifs,    0.0.0.0/0             any
-                                     nfs
-svm_suchitra test            3       cifs,    0.0.0.0/0             any
-                                     nfs,
-                                     flexcache
+svm0         default         4       cifs,    0.0.0.0/0             any
+                                    nfs
+svm2         test            3       cifs,    0.0.0.0/0             any
+                                    nfs,
+                                    flexcache
+2 entries were displayed.
+....
++
+ == Manually Restore Users for SMB
+
+
+如果您的VMware試用版過期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的使用者Cloud Secure 。
+
+您可以從Cloud Secure 使用者清單頁面取得遭封鎖的使用者清單。
+
+. 使用ONTAP 叢集_admin_認證登入到32個叢集（您想要解除封鎖使用者的位置）。（若為Amazon FSX、請使用FSX認證登入）。
+. 執行下列命令、列出Cloud Secure 所有SVM中所有被支援Sfor SMB的所有使用者：
++
+ vserver name-mapping show -direction win-unix -replacement " "
++
+....
+Vserver:   <vservername>
+Direction: win-unix
+Position Hostname         IP Address/Mask
+-------- ---------------- ----------------
+1       -                 -                   Pattern: CSLAB\\US040
+                                         Replacement:
+2       -                 -                   Pattern: CSLAB\\US030
+                                         Replacement:
 2 entries were displayed.
 ....
 
+
+在上述輸出中、有2位使用者被網域CSLAB封鎖（US030、US040）。
+
+. 當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：
++
+ vserver name-mapping delete -direction win-unix -position <position>
+. 執行下列命令、確認使用者已解除封鎖：
++
+ vserver name-mapping show -direction win-unix -replacement " "
+
+
+不應針對先前封鎖的使用者顯示任何項目。
 
 
 
@@ -153,4 +192,7 @@ svm_suchitra test            3       cifs,    0.0.0.0/0             any
 
 
 | 無法修改原則。原因：未授權使用該命令。 | 請檢查是否使用CsUser、是否會如上所述授予使用者權限。 
+
+
+| 我看到錯誤：svm1：使用者網域\user01的現有CIFS工作階段未關閉。此錯誤會顯示在警示詳細資料頁面的「採取行動」區段、以及警示與使用者清單頁面下方的「存取限制歷程記錄」。看到此錯誤時、使用者目前的工作階段不會關閉、但是在連結期間到期之前、使用者將會遭到任何新工作階段的封鎖。 | 這是Amazon FSX的已知問題。無法關閉現有的SMB工作階段。Cloud Secure目前沒有任何因應措施可封鎖Amazon FSX現有的SMB工作階段。如果收集器類型為CVO或ONTAP 不一致、請務必確認所述的權限正確無誤 <<prerequisites-for-user-access-blocking,先決條件>> 區段。 
 |===

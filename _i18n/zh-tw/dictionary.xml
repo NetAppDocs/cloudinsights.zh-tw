@@ -8826,7 +8826,6 @@
   <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">使用者存取封鎖的先決條件</block>
   <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">此功能需要叢集層級認證、才能正常運作。</block>
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">如果您使用叢集管理認證、則不需要新的權限。</block>
-  <block id="4563a2ec099bb3f18ab52f261f6897e8" category="paragraph">如果您使用的是自訂使用者、例如具有權限給使用者的CsUser、請遵循下列步驟、將權限授予CloudSecure以封鎖使用者。</block>
   <block id="075530afc57aa5ff8851fb139e2fbbae" category="list-text">在「支援」中Cloud Secure 、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;封鎖使用者存取*。</block>
   <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">將「Enable Block User Access（啟用區塊使用者存取）」設為_enabled（啟用）。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">如何設定自動使用者存取封鎖？</block>
@@ -8872,4 +8871,17 @@
   <block id="e056d3391fc09511bb4b998310f69c58" category="cell">API存取加號（&amp;plus）；</block>
   <block id="d54591f265027d735d3be71d57199e4a" category="cell">商業情報與報告與快速；&amp;ast；</block>
   <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">&amp;ast；一次僅限5個作用中的自訂監視器&amp;plus；API存取依版本&amp;ast而異；&amp;ast；適用於500個受管理單元以上的環境</block>
+  <block id="e8a2076095c01bcdd41cd90191e01972" category="admonition">使用Amazon FSX資料收集器時、SMB的使用者封鎖功能無法終止目前的使用者工作階段。請參閱 <block ref="330552a095a13e513ece685118db1083" category="inline-xref-macro-rx"></block> 章節以取得更多資訊。</block>
+  <block id="4c599f70e51d65668c4ce4bd1c33bb95" category="paragraph">如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便封鎖使用者。</block>
+  <block id="a8ebeed3ca8bbd5dcb31700e343f161c" category="paragraph">如果您的VMware試用版過期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的使用者Cloud Secure 。</block>
+  <block id="f95989b518510dd543fddfe641a0760e" category="paragraph">您可以從Cloud Secure 使用者清單頁面取得遭封鎖的使用者清單。</block>
+  <block id="d429655e140835b91db45b4324358975" category="list-text">使用ONTAP 叢集_admin_認證登入到32個叢集（您想要解除封鎖使用者的位置）。（若為Amazon FSX、請使用FSX認證登入）。</block>
+  <block id="a450d857f06b830531fe0de70552762d" category="list-text">執行下列命令、列出Cloud Secure 所有SVM中所有被支援Sfor SMB的所有使用者：</block>
+  <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述輸出中、有2位使用者被網域CSLAB封鎖（US030、US040）。</block>
+  <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：</block>
+  <block id="1f8fcb155f2b517c2c9ae95f65ae3623" category="list-text">執行下列命令、確認使用者已解除封鎖：</block>
+  <block id="a3b2696b55f3cdfe22afc4ee21f40ac8" category="paragraph">不應針對先前封鎖的使用者顯示任何項目。</block>
+  <block id="ccfcbf1e5d2c0e260b83b0caf47be9db" category="cell">我看到錯誤：svm1：使用者網域\user01的現有CIFS工作階段未關閉。此錯誤會顯示在警示詳細資料頁面的「採取行動」區段、以及警示與使用者清單頁面下方的「存取限制歷程記錄」。看到此錯誤時、使用者目前的工作階段不會關閉、但是在連結期間到期之前、使用者將會遭到任何新工作階段的封鎖。</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">先決條件</block>
+  <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">這是Amazon FSX的已知問題。無法關閉現有的SMB工作階段。Cloud Secure目前沒有任何因應措施可封鎖Amazon FSX現有的SMB工作階段。如果收集器類型為CVO或ONTAP 不一致、請務必確認所述的權限正確無誤 <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> 區段。</block>
 </blocks>
