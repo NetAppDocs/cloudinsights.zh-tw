@@ -139,9 +139,11 @@ svm2         test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 2 entries were displayed.
 ....
-+
- == Manually Restore Users for SMB
 
+
+
+
+== 手動還原SMB的使用者
 
 如果您的VMware試用版過期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的使用者Cloud Secure 。
 
