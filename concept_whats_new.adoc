@@ -12,6 +12,115 @@ NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些�
 
 
 
+== 2022年8月
+
+
+
+=== 更新外觀！Cloud Insights
+
+從本月開始、「監控與最佳化」已重新命名為*可服務性*。您可以在這裡找到您最喜愛的功能、例如儀表板、查詢、警示和報告。此外、請在Cloud Secure 全新的* Security *功能表下尋找請注意、只有功能表有所變更；功能功能維持不變。
+
+[role="thumb"]
+image:New_CI_Menu_2022.png["全新CI功能表"]
+
+正在尋找*說明*功能表？
+
+現在、請在螢幕右上角提供協助。
+
+image:New_Help_Menu_2022.png["說明功能表位於右上角"]
+
+
+
+=== 不確定從何處開始？瞭ONTAP 解此程式集！
+
+link:concept_ontap_essentials.html["*《程式集*》ONTAP"] 是一組儀表板和工作流程、可提供詳細的NetApp ONTAP 資訊庫、工作負載和資料保護檢視、包括儲存容量和效能的數天至全日預測。您甚至可以查看是否有任何控制器以高使用率執行。適用於NetApp的所有監控需求的最佳選擇！ONTAP ONTAP
+
+所有版本均可提供的《程式集：程式集」是專為現有的VMware操作員和管理員所設計、可讓您輕鬆從ActiveIQ Unified Manager移轉至服務型管理工具。ONTAP ONTAP
+
+image:ONTAP_Essentials_Menu_and_screen.png["適用於Essentials的概述儀表板ONTAP"]
+
+
+
+=== 儲存資料系列已合併
+
+您提出了要求、現在您已經做好了。儲存基礎2和基礎10資料單元現已合併成一個系列、從位元組、位元組、到元組和TB、讓您更輕鬆地在儀表板上顯示資料。資料傳輸率現在也是他們自己的一個龐大家族。
+
+image:DataFamilyMerged.png["顯示合併base 2和base 10資料系列的捨棄方式"]
+
+
+
+=== 我的儲存設備使用多少電力？
+
+使用ONTAP NetApp_ONTAP.storage機櫃、NetApp_ONTAP.system_node和NetApp_ONTAP.cluster（僅用電量）指標、顯示及監控您的不只是儲存櫃和節點的用電量、溫度和風扇速度。
+
+image:ONTAP_Power_Metrics_1.png["儲存用電量指標"]
+
+
+
+=== 功能會從預覽中畢業
+
+下列功能已從「預覽」移出、現在可供所有客戶使用：
+
+|===
+
+
+| *功能* | *說明* 
+
+
+| Kubernetes命名空間不足 | _Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["瞭解更多資訊"] 
+
+
+| 共享資源正承受壓力 | 「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
+
+
+| –封鎖攻擊時的使用者存取Cloud Secure | 偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+|===
+
+
+=== 我的資料收集狀態如何？
+
+提供兩個新的擷取單元活動訊號監視器、以及兩個監視器、可在資料收集器故障時向您發出警示。Cloud Insights這些功能可用於在資料收集問題上快速警示您。
+
+下列監視器現在可在_Data Collection_監控群組中使用：
+
+* 擷取單元的「關鍵訊號」
+* 擷取單位訊號警告
+* 收集器失敗
+* 收集器警告
+
+
+請注意、這些監視器預設為「暫停」狀態。啟動它們以收到有關資料收集問題的警示。
+
+
+
+=== 自動續訂API Token
+
+API存取權杖現在可設定為自動續約。啟用此功能後、系統會自動針對即將到期的權杖產生新的/重新整理的API存取權杖。使用過期權杖的支援代理程式會自動更新、以使用對應的新增/重新整理的API存取權杖、讓他們能繼續順暢運作。Cloud Insights只要在建立權杖時勾選「自動更新權杖」方塊即可。此功能目前支援Cloud Insights 在Kubernetes平台上執行的支援最新NetApp Kubernetes監控操作者的支援。
+
+
+
+=== Basic Edition帶給您的效能比以往更高
+
+您的試用即將結束、但您還不確定訂閱是否適合您？Basic Edition總是讓您有機會繼續使用Cloud Insights 目前ONTAP 的VMware資料收集器來搭配使用VMware、但現在您也可以繼續擷取VMware版本、拓撲和IOPS/ThroU/Latency資料。在其儲存系統上享有優質支援的NetApp客戶也有權獲得Cloud Insights 支援。
+
+
+
+=== 準備好瞭解更多資訊了嗎？
+
+請參閱「說明」>「支援」頁面的「*學習中心*」區段、以取得NetApp University Cloud Insights 支援課程的連結！
+
+
+
+=== 作業系統支援
+
+下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
+
+* Windows 11
+
+
+'''
+
+
 == 2022年6月
 
 
@@ -85,7 +194,7 @@ image:ChangeLogEntries.png["顯示變更記錄項目範例的影像"]
 | Kubernetes命名空間不足 | _Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["瞭解更多資訊"] 
 
 
-| –限制使用者在遭受攻擊時存取Cloud Secure | 偵測到攻擊時、能夠限制使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+| –封鎖攻擊時的使用者存取Cloud Secure | 偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
 
 
 | 共享資源正承受壓力 | 「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
@@ -153,7 +262,7 @@ image:ChatIcon.png["聊天圖示會在笑容上方顯示藍色NetApp「N」"]
 | 內部Volume與Volume容量的完整時間預測 | 在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。 
 
 
-| –限制使用者在遭受攻擊時存取Cloud Secure | 偵測到攻擊時、能夠限制使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+| –封鎖攻擊時的使用者存取Cloud Secure | 偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
 
 
 | 共享資源正承受壓力 | 「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
@@ -209,7 +318,7 @@ image:CountAggregationExample1.png["顯示計數的集合下拉式清單"]
 | 內部Volume與Volume容量的完整時間預測 | 在監控的每個內部Volume和Volume容量用盡之前、可預測天數。Cloud Insights此值有助於大幅降低停機風險。 
 
 
-| –限制使用者在遭受攻擊時存取Cloud Secure | 偵測到攻擊時、能夠限制使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
+| –封鎖攻擊時的使用者存取Cloud Secure | 偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
 
 
 | 共享資源正承受壓力 | 「受壓力影響的共享資源」使用AI/ML來自動識別資源爭用造成環境效能降級的位置、強調任何受其影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
@@ -351,10 +460,10 @@ image:LogQueryExplorer.png["記錄查詢"]
 | 系統管理員 | 可執行所有Cloud Secure 的功能、包括警示、鑑識、資料收集器、自動回應原則和API等Cloud Secure 功能。管理員也可以邀請其他使用者、但只能指派Cloud Secure 功能不二的角色。 
 
 
-| 使用者 | 可檢視及管理警示、以及檢視鑑識。使用者角色可以變更警示狀態、新增附註、手動擷取快照及限制使用者存取。 
+| 使用者 | 可檢視及管理警示、以及檢視鑑識。使用者角色可以變更警示狀態、新增附註、手動擷取快照、以及封鎖使用者存取。 
 
 
-| 訪客 | 可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或限制使用者存取。 
+| 訪客 | 可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或封鎖使用者存取。 
 |===
 
 
