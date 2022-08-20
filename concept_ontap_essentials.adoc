@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_essentials.html 
+summary: 「Essentials」是一組儀表板和工作流程、可提供您環境的詳細總覽。ONTAP 
+keywords: dashboard, widget, ontap, overview, insight 
+---
+= 精選資訊ONTAP
+:allow-uri-read: 
+
+
+[role="lead"]
+包含一組儀表板和工作流程、可提供有關您的各種庫存和工作負載的詳細總覽。ONTAP ONTAP您可能會看到ONTAP 下列使用於《不景點集：
+
+* 基礎架構/庫存：為使用者資料提供儲存/網路服務的物件清單檢視
+* 工作負載：提供使用者讀取/寫入資料介面的物件清單檢視。
+* 資料保護：使用NetApp資料保護技術可保護的各種物件清單檢視
+
+
+「支援基礎知識」需要至少一個運作中的「支援資料」收集器、並在上週收集資料。ONTAP ONTAP
+
+
+
+== 總覽
+
+若要開始探索、請從ONTAP 主功能表中選取*《SEssentials》* Cloud Insights 。
+
+image:ONTAP_Essentials_Menu_and_screen.png["適用於Essentials的概述儀表板ONTAP"]
+
+「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。如果您的基礎架構中有任何控制器在高溫度下執行、ONTAP 那麼將會顯示這些控制器。
+
+資訊圖表可讓您瞭解一段時間後的效能、以及容量使用量的細分。
+
+每個圖表或資料點都可作為探索或調查的起點。
+
+附註：「從天到完整」的「0」（零）數表示、「從天到完整」的預估天數大於90天。換句話說、您的系統不可能隨時耗盡空間。
+
+
+
+== 資料保護
+
+選取「*資料保護*」頁面以檢視SnapMirror關係。按一下「至」以取得來源或目的地Volume資訊、或按一下齒輪圖示以新增您要檢視之資料的欄。
+
+image:ONTAP_Essentials_data_protection.png["SnapMirror關係清單頁面"]
+
+
+
+== 基礎架構
+
+「VMware Infrastructure *基礎架構*」頁面提供叢集健全狀況與效能的檢視、您可以使用所有基本的物件上預先建置（但仍可進一步自訂）的查詢。ONTAP ONTAP選取您要探索的物件類型（叢集、儲存資源池等）、然後選擇是檢視健全狀況或效能資訊。設定篩選條件、深入瞭解個別系統。
+
+image:ONTAP_Essentials_Health_Performance.png["儲存資源池的基礎架構選擇"]
+
+基礎架構頁面顯示叢集健全狀況：image:ONTAP_Essentials_Infrastructure_A.png["需要探索的基礎架構物件"]
+
+
+
+== 工作負載
+
+檢視及探索環境中LUN/ Volume或qtree上的工作負載。
+
+image:ONTAP_Essentials_Workloads_Menu.png["工作負載功能表"]
+
+image:ONTAP_Essentials_Workloads_Page.png["工作負載清單頁面"]

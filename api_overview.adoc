@@ -38,7 +38,7 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 
 | 記錄擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 |===
-此外Cloud Insights 、您的技術也很出色 link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 將決定您可以存取哪些API。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
+此外Cloud Insights 、您的技術也很出色 link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 將決定您可以存取哪些API。使用者和來賓角色的權限比管理員角色少。例如、如果您在「可觀察性」中扮演「系統管理員」角色、但在「報告」中扮演「使用者」角色、則可以管理「資料倉儲」以外的所有API類型。
 
 
 
@@ -115,7 +115,7 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 隨時間推移、可能會有其他類別和/或API可供使用。您可以在中找到最新的API資訊 link:#api-documentation-swagger["API Swagger文件"]。
 
-請注意、使用者存取的API類別也取決於 link:concept_user_roles.html["使用者角色"] 每Cloud Insights 個功能集（監控、Cloud Secure 功能介紹、報告）都有。
+請注意、使用者存取的API類別也取決於 link:concept_user_roles.html["使用者角色"] 每Cloud Insights 個功能集（可觀察性、安全性、報告）都有這些功能集。
 
 
 

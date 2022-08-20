@@ -11,9 +11,6 @@ summary: Insights可協助您預測Kubernetes空間何時會滿。
 [role="lead"]
 在您的環境中、空間不足的情況絕不是好現象。協助您預測Kubernetes持續磁碟區已滿之前的時間。Cloud Insights
 
-
-NOTE: 這是_預覽_功能、可能會隨著時間而改變、因為已進行改善。 link:/concept_preview_features.html["深入瞭解"] 關於Cloud Insights 本產品的功能。
-
 _Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個持續磁碟區將滿之前的剩餘天數。
 
 您可以瀏覽*儀表板> Insights *來檢視此Insight。

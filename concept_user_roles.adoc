@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_user_roles.html 
-keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observabilityu 
 summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights 
 ---
 = 使用者帳戶與角色
@@ -9,7 +9,7 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 
 
 [role="lead"]
-支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。（請注意Cloud Secure 、「_User_」和「_Guest」角色無法在「介紹」功能中使用。）使用者也是 link:#creating-accounts-by-inviting-users["已邀請"] 提供特定角色、或是透過登入Cloud Insights link:#single-sign-on-sso-accounts["單一登入（SSO）授權"] 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。
+支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。（請注意、「安全性」功能集中沒有_User_和_Guest角色。）使用者也是 link:#creating-accounts-by-inviting-users["已邀請"] 提供特定角色、或是透過登入Cloud Insights link:#single-sign-on-sso-accounts["單一登入（SSO）授權"] 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。
 
 
 
@@ -18,13 +18,13 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 您使用具有管理員權限的帳戶來建立或修改使用者帳戶。每個使用者帳戶都會從Cloud Insights 下列權限層級指派每個功能的角色。
 
 |===
-| 角色 | 監控 | Cloud Secure | 報告 
+| 角色 | 觀察能力 | 安全性 | 報告 
 
 
-| 帳戶擁有者 3+| 可修改訂閱內容、檢視帳單與使用資訊、並執行監控與最佳化、Cloud Secure 功能更新與報告等所有系統管理員功能。擁有者也可以邀請和管理使用者、以及管理SSO驗證和身分識別聯盟設定。當您註冊Cloud Insights 以供使用時、會建立第一個帳戶擁有者。強烈建議每Cloud Insights 個環境至少有兩位帳戶擁有者。  
+| 帳戶擁有者 3+| 可修改訂閱、檢視帳單與使用資訊、並執行所有的系統管理員功能、以利觀察、安全性及報告。擁有者也可以邀請和管理使用者、以及管理SSO驗證和身分識別聯盟設定。當您註冊Cloud Insights 以供使用時、會建立第一個帳戶擁有者。強烈建議每Cloud Insights 個環境至少有兩位帳戶擁有者。  
 
 
-| 系統管理員 | 可執行所有監控與最佳化功能、所有使用者功能、以及資料收集器管理、監控與最佳化API權杖和通知。管理員也可以邀請其他使用者、但只能指派監控和最佳化角色。 | 可執行所有Cloud Secure 的功能、包括警示、鑑識、資料收集器、自動回應原則、以及Cloud Secure API Token for Rense等功能。管理員也可以邀請其他使用者、但只能指派Cloud Secure 功能不二的角色。 | 可執行所有的使用者/作者功能、包括管理報告API權杖、以及所有管理工作、例如報告組態、以及報告工作的關機和重新啟動。管理員也可以邀請其他使用者、但只能指派報告角色。 
+| 系統管理員 | 可執行所有的可觀察功能、所有使用者功能、以及資料收集器管理、可觀察API權杖和通知。管理員也可以邀請其他使用者、但只能指派可觀察角色。 | 可執行所有的安全功能、包括警示、鑑識、資料收集器、自動回應原則、以及安全性的API權杖。管理員也可以邀請其他使用者、但只能指派安全角色。 | 可執行所有的使用者/作者功能、包括管理報告API權杖、以及所有管理工作、例如報告組態、以及報告工作的關機和重新啟動。管理員也可以邀請其他使用者、但只能指派報告角色。 
 
 
 | 使用者 | 可檢視及修改儀表板、查詢、警示、註釋、註釋規則、 和應用程式、以及管理裝置解析度。 | 可檢視及管理警示、以及檢視鑑識。使用者角色可以變更警示狀態、新增附註、手動擷取快照、以及管理限制使用者存取。 | 可執行所有來賓/消費者功能、以及建立及管理報告和儀表板。 
@@ -79,7 +79,7 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 | 雲端成本 | 是 | n | n 
 
 
-| S1* Cloud Secure | 是 | n | n 
+| 安全性 | 是 | n | n 
 
 
 | 儀表板：建立/修改/刪除 | 是 | 是 | n 
@@ -147,7 +147,7 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 . 針對Cloud Insights 每項功能選擇使用者角色。
 +
 
-NOTE: 您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「監控」和「最佳化」或Cloud Secure 「非功能性」的角色。
+NOTE: 您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「可觀察性」或「安全性」的角色。
 
 +
 image:UserRoleChoices.png["使用者角色選項"]
@@ -174,7 +174,7 @@ image:UserRoleChoices.png["使用者角色選項"]
 
 === 指派次要帳戶擁有者
 
-您必須以監控及最佳化帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。
+您必須以帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。
 
 . 按一下*管理>使用者管理*。
 . 按一下您要變更的帳戶使用者名稱。

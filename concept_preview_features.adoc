@@ -13,19 +13,4 @@ keywords: coming soon, preview,
 
 如果您有興趣預覽其中一項或多項功能、請聯絡您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售團隊"] 以取得更多資訊。
 
-以下是目前預覽中的一些功能：
-
-|===
-
-
-| *功能* | *說明* 
-
-
-| 時間到完整預測 | 在下列物件的容量用盡之前、可以預測天數：內部Volume Storage Pool Volume這些預測值有助於大幅降低中斷風險。Cloud Insights在查詢、監視器或儀表板中使用_timeToFull.ality_和_timeToFull.eidenceInterval_計數器。 
-
-
-| 限制使用者存取自動回應動作 | 偵測到攻擊時Cloud Secure 、利用限制使用者存取檔案系統（完整區塊或設為唯讀存取）、即可停止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動限制存取。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["瞭解更多資訊"] 
-
-
-| 共享資源正承受壓力 | 「受壓力影響的共享資源」洞見可讓您識別：-共享儲存資源因為一或多個個別工作負載的高需求而承受壓力、這是共享資源上要求嚴苛且受影響的工作負載link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["瞭解更多資訊"] 
-|===
+所有目前Cloud Insights 的功能均可取得。請觀看此空間以瞭解未來的預覽。
