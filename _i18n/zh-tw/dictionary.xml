@@ -8937,4 +8937,6 @@
   <block id="4e28671aa760c1ba504510846bdf520c" category="cell">偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="a78d7cf3a7b4f6fe8edcca9384e823a8" category="cell">可檢視及管理警示、以及檢視鑑識。使用者角色可以變更警示狀態、新增附註、手動擷取快照、以及封鎖使用者存取。</block>
   <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或封鎖使用者存取。</block>
+  <block id="1262546f0be80170bbf2b78b6352533d" category="cell">使用useradd安裝代理程式失敗：無法建立目錄/home/cssys</block>
+  <block id="5e430377cda5012c485a4d981bce9d1e" category="cell">如果因為缺乏權限而無法在/home下建立使用者的登入目錄、就可能發生此錯誤。因應措施是建立cssys使用者、然後使用下列命令手動新增其登入目錄：_Sudo useradd usern_name -m -d home_DIR_-m：如果使用者的主目錄不存在、請建立該使用者的主目錄。d：使用home_DIR建立新使用者、做為使用者登入目錄的值。例如、_Sudo useradd cssys -m -d /cssys_會新增使用者_cssys_、並在root下建立其登入目錄。</block>
 </blocks>
