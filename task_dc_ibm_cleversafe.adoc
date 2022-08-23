@@ -12,6 +12,9 @@ summary: 設定IBM Cleverafe資料收集器。
 此資料收集器可用來探索IBM Cleversafe儲存系統的庫存與效能資料。Cloud Insights
 
 
+NOTE: IBM Cleverafe的計量單位為不同的原始TB至託管單位速率。每40 TB未格式化的IBM Cleverafe容量、收費為1 link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+
+
 
 == 術語
 

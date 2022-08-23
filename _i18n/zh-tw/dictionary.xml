@@ -8939,4 +8939,10 @@
   <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或封鎖使用者存取。</block>
   <block id="1262546f0be80170bbf2b78b6352533d" category="cell">使用useradd安裝代理程式失敗：無法建立目錄/home/cssys</block>
   <block id="5e430377cda5012c485a4d981bce9d1e" category="cell">如果因為缺乏權限而無法在/home下建立使用者的登入目錄、就可能發生此錯誤。因應措施是建立cssys使用者、然後使用下列命令手動新增其登入目錄：_Sudo useradd usern_name -m -d home_DIR_-m：如果使用者的主目錄不存在、請建立該使用者的主目錄。d：使用home_DIR建立新使用者、做為使用者登入目錄的值。例如、_Sudo useradd cssys -m -d /cssys_會新增使用者_cssys_、並在root下建立其登入目錄。</block>
+  <block id="2af0e245903886ddf353247e04d67d49" category="cell">cloudsecure-agent-symptom-collector.sh指令碼失敗、並出現下列錯誤。[root@machine tmp]#/opt/NetApp/cloudecure/agent/bin/cloudsecure-agent-symptom-collector.sh收集服務記錄收集應用程式記錄收集代理程式組態擷取服務狀態快照擷取代理程式目錄結構快照………………………………………………………………… 。……………………………… 。/opt/NetApp/cloudecure/agent/bin/cloudecure-agent-症狀 收集器.sh：第52行：郵遞區號：找不到命令錯誤：無法建立/tmp/cloudsecure-agent-symptoms.zip</block>
+  <block id="bdd09e38c2003d07eeb6a433d15b266a" category="cell">未安裝Zip工具...執行命令「yum install zip」來安裝壓縮工具。然後再次執行cloudsecure-agent-symptom-collector.sh。</block>
+  <block id="d157607d4f3b74d5627170cf0c710ee9" category="admonition">Dell EMC ECS會以不同的原始TB至託管單位速率進行計量。每40 TB未格式化的ECS容量會被收費為1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi Content Platform的原始TB與託管單位速率不同。每40 TB的未格式化的保健專業人員容量會被計為1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">從NetApp資料收集器取得下列庫存資訊。Cloud Insights StorageGRID對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
+  <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleverafe的計量單位為不同的原始TB至託管單位速率。每40 TB未格式化的IBM Cleverafe容量、收費為1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
 </blocks>

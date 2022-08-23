@@ -117,5 +117,8 @@ image::new-agent-detect.png[新代理程式偵測]
 | 如果代理程式仍無法連線至SaaS、請透過NetApp支援開啟案例。提供Cloud Insights 「不完整」序號以開啟案例、並將記錄附加到案例中、如前所述。 | 若要將記錄附加至案例：1.以root權限執行下列指令碼、並共用輸出檔案（cloudseced-agent-症狀。zip）。答/opp/NetApp/cloudsec/agent/bin/cloudsecure-agent-symptom-collector.sh 2.以root權限逐一執行下列命令、並共用輸出。答ID cssys b.群組cssys c.Cat /etc/os-release 
 
 
+| cloudsecure-agent-symptom-collector.sh指令碼失敗、並出現下列錯誤。[root@machine tmp]#/opt/NetApp/cloudecure/agent/bin/cloudsecure-agent-symptom-collector.sh收集服務記錄收集應用程式記錄收集代理程式組態擷取服務狀態快照擷取代理程式目錄結構快照………………………………………………………………… 。……………………………… 。/opt/NetApp/cloudecure/agent/bin/cloudecure-agent-症狀 收集器.sh：第52行：郵遞區號：找不到命令錯誤：無法建立/tmp/cloudsecure-agent-symptoms.zip | 未安裝Zip工具...執行命令「yum install zip」來安裝壓縮工具。然後再次執行cloudsecure-agent-symptom-collector.sh。 
+
+
 | 使用useradd安裝代理程式失敗：無法建立目錄/home/cssys | 如果因為缺乏權限而無法在/home下建立使用者的登入目錄、就可能發生此錯誤。因應措施是建立cssys使用者、然後使用下列命令手動新增其登入目錄：_Sudo useradd usern_name -m -d home_DIR_-m：如果使用者的主目錄不存在、請建立該使用者的主目錄。d：使用home_DIR建立新使用者、做為使用者登入目錄的值。例如、_Sudo useradd cssys -m -d /cssys_會新增使用者_cssys_、並在root下建立其登入目錄。 
 |===

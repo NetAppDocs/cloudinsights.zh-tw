@@ -12,6 +12,9 @@ summary: 設定ECS資料收集器。
 此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要ECS伺服器的IP位址和管理層級網域帳戶。
 
 
+NOTE: Dell EMC ECS會以不同的原始TB至託管單位速率進行計量。每40 TB未格式化的ECS容量會被收費為1 link:concept_subscribing_to_cloud_insights.html#pricing["託管單位（MU）"]。
+
+
 
 == 術語
 
