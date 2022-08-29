@@ -2742,7 +2742,6 @@
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">下列項目支援此資料收集器：</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此問題</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">更新版本。Data ONTAP若要獲得最佳效能、請在Data ONTAP 何處使用VMware版本 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修正。</block>
-  <block id="e0f5635cfc022e85fc412c023e2e7759" category="list-text">SMB傳輸協定3.1版及更早版本</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS傳輸協定4.0版及更早版本</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">支援從支援的更新版本為支援FlexGroup ONTAP</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">僅支援資料類型SVM。不支援具有無限磁碟區的SVM。</block>
@@ -8945,4 +8944,5 @@
   <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi Content Platform的原始TB與託管單位速率不同。每40 TB的未格式化的保健專業人員容量會被計為1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">從NetApp資料收集器取得下列庫存資訊。Cloud Insights StorageGRID對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleverafe的計量單位為不同的原始TB至託管單位速率。每40 TB未格式化的IBM Cleverafe容量、收費為1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMB傳輸協定3.1版及更早版本。請注意Cloud Secure 、不適用於FlexCache 使用支援功能的SMB組態。從ONTAP9.7開始、Fpolicy僅在NFS環境中受支援。</block>
 </blocks>
