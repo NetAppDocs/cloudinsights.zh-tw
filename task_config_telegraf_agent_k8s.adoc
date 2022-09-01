@@ -52,7 +52,7 @@ NOTE: 如果您使用的是Proxy、請先閱讀平台的Proxy指示、再安裝T
 提供適用於Kubernetes系列的* NetApp Kubernetes監控操作員*。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。
 
 .先決條件：
-* Kubernetes 1.19版或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <<upgrading-the-agent,升級>> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。
+* Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <<upgrading-the-agent,升級>> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。
 
 
 * 如果您是在OpenShift 4.6 - 4.8上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。
@@ -75,7 +75,7 @@ NOTE: 如果您使用的是Proxy、請先閱讀平台的Proxy指示、再安裝T
 | 平台 | 標籤 
 
 
-| Kubernetes v1.19及更新版本 | Kubernetes.IO/OS = Linux 
+| Kubernetes v1.20及更新版本 | Kubernetes.IO/OS = Linux 
 
 
 | Rancher + Catchs.IO做為協調/ Kubernetes平台 | Catin.IO/OS = Linux 
