@@ -135,6 +135,71 @@ image:CloudSecure_ActivitySelection.png["活動選擇器、寬=30%"]
 
 
 
+== Forensics頁面中篩選器的適用性
+
+|===
+
+
+| 篩選器 | 它的作用 | 範例 | 適用於哪些篩選條件？ | 不適用於哪些篩選器 | 結果 
+
+
+| *（星號） | 可讓您搜尋所有內容 | Auto* 03172022 | 使用者、路徑、實體類型、裝置類型、Volume、 原始路徑 |  | 傳回以「Auto（自動）」開頭並以「03172022」結尾的所有資源 
+
+
+| ？（問號） | 可讓您搜尋特定字元數 | AutoSabotageUser1_03172022？ | 使用者、實體類型、裝置、Volume |  | 傳回AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022AB、AutoSabotageUser1_031720225等 
+
+
+| 或 | 可讓您指定多個實體 | AutoSabotageUser1_03172022或AutoRansomUser4_03162022 | 使用者、網域、使用者名稱、路徑、實體類型、 裝置、原始路徑 |  | 傳回任何AutoSabotageUser1_03172022或AutoRansomUser4_03162022 
+
+
+| 不是 | 可讓您從搜尋結果中排除文字 | 非AutoRansomUser4_03162022 | 使用者、網域、使用者名稱、路徑、實體類型、 原始路徑、Volume | 裝置 | 傳回所有開頭為「AutoRansomUser4_03162022」的項目 
+
+
+| 無 | 在所有欄位中搜尋空值 | 無 | 網域 |  | 傳回目標欄位為空白的結果 
+|===
+
+
+== 路徑/原始路徑搜尋
+
+包含/不含/的搜尋結果會有所不同
+
+|===
+
+
+| /AutoDir1/AutoFile | 工作 
+
+
+| AutoDir1/AutoFile | 無法運作 
+
+
+| /AutoDir1/AutoFile（目錄1） | Dir1部分子字串無法運作 
+
+
+| "/AutoDir1/AutoFile03242022" | 完全正確的搜尋作業 
+
+
+| Auto* 03242022 | 無法運作 
+
+
+| AutoSabotageUser1_03172022？ | 無法運作 
+
+
+| /AutoDir1/AutoFile03242022或/AutoDir1/AutoFile03242022 | 工作 
+
+
+| 不是/AutoDir1/AutoFile03242022 | 工作 
+
+
+| 非/AutoDir1 | 工作 
+
+
+| 不是/AutoFile03242022 | 無法運作 
+
+
+| * | 顯示所有項目 
+|===
+
+
 == 疑難排解
 
 |===
