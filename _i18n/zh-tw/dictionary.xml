@@ -1695,7 +1695,6 @@
   <block id="dcdaa0ef05a3fb89ab74a979905c80d2" category="paragraph"><block ref="dcdaa0ef05a3fb89ab74a979905c80d2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">先決條件：</block>
   <block id="e881539baa442c22144c7ae555cac843" category="list-text">必須安裝PowerShell</block>
-  <block id="7c3507318179da83cb89a37272393a6b" category="list-text">如果您使用的是Proxy、請遵循*設定Proxy支援for Windows *一節中的指示。</block>
   <block id="5002498d543f683aae80ee22af4a4919" category="list-title">在Windows上安裝代理程式的步驟：</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">選擇代理程式存取金鑰。</block>
   <block id="210f49b0f42e5dd87eb3a71d8a25532e" category="list-text">從代理程式安裝對話方塊複製命令區塊。您可以按一下剪貼簿圖示、將命令快速複製到剪貼簿。</block>
@@ -1725,7 +1724,6 @@
   <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">安裝RHEL/CentOS代理程式</block>
   <block id="530723ab95ea5239b9c308f8890b5069" category="paragraph"><block ref="530723ab95ea5239b9c308f8890b5069" category="inline-image-macro-rx" type="image"></block></block>
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">下列命令必須可用：curl、Sudo、ping、shav256sum、openssl、 和dmidecode</block>
-  <block id="c05b6a8cffe30e13e26576fdbc5eaea7" category="list-text">如果您使用的是Proxy、請遵循*設定RHEL/CentOS* Proxy支援一節中的指示。</block>
   <block id="c9a13bf8b19a106ff517d02fffbce168" category="list-title">在RHEL/CentOS上安裝代理程式的步驟：</block>
   <block id="371155faf9e65eedebc467c42881ab64" category="list-text">開啟Bash視窗</block>
   <block id="cb672d725b5532024df625e16f4b2c0c" category="list-text">將命令貼到Bash視窗中、然後按Enter鍵。</block>
@@ -1745,7 +1743,6 @@
   <block id="7ae220dde836123a83ab52aa985caa47" category="section-title">Ubuntu與DEBIAN</block>
   <block id="3fcd2752c343d8536926bfb628eec3dc" category="inline-image-macro">安裝Ubuntu / Debian代理程式</block>
   <block id="49d620df1cdf6184275e83524131195e" category="paragraph"><block ref="49d620df1cdf6184275e83524131195e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c67ca839a2354a09852b2eedf2223a7" category="list-text">如果您使用的是Proxy、請依照*設定Ubuntu / DEBIAN*的Proxy支援一節中的指示操作。</block>
   <block id="2ccb8fda807f639572273dc350f43bbf" category="list-title">在Debian或Ubuntu上安裝代理程式的步驟：</block>
   <block id="6271d65c06a7a1fd244d963c100a1a1c" category="paragraph">如果您的作業系統使用systemd：</block>
   <block id="b5648f15565fb8185bfc83aaabee9577" category="paragraph">如果您的作業系統未使用systemd：</block>
@@ -1757,7 +1754,6 @@
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">安裝MacOS代理程式</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">下列命令必須可用：Curl、Sudo、openssl和shasum</block>
-  <block id="9081c1ab02feb1730d134201f823bf3c" category="list-text">如果您使用的是Proxy、請依照*設定MacOS的Proxy支援一節中的指示操作。</block>
   <block id="b23f4e2f2268beeee7ca70611f0a7a37" category="list-title">在MacOS上安裝代理程式的步驟：</block>
   <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">如果您先前使用homebw安裝Telegraf代理程式、系統會提示您解除安裝。一旦解除安裝先前安裝的Telegraf代理程式、請重新執行上述步驟5中的命令。</block>
   <block id="e747d1c9206ef290e765c44899e8276d" category="section-title">設定適用於MacOS的Proxy支援</block>
@@ -8192,7 +8188,6 @@
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">使用Cloud Insights 時、如果看到掛鎖圖示 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>、表示您目前的版本無法使用此功能、或是以有限形式提供。升級以完整存取此功能。</block>
   <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">試用版</block>
-  <block id="c8862bdb0661387c42aa051d597d2d45" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中探索所有的功能。</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">*產品支援*</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> 選項：</block>
   <block id="21d39705a699dccfee88543d413556c8" category="paragraph">當您的免費試用即將結束時、系統會顯示橫幅Cloud Insights在該橫幅內有一個_View訂購_連結、可開啟*管理&gt;訂閱*頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。</block>
@@ -8981,4 +8976,11 @@
   <block id="137812c306b0ede761fedbc1e1b88824" category="cell">不是/AutoFile03242022</block>
   <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
   <block id="8bc6542329adc040b119d4b8973c0d7f" category="cell">顯示所有項目</block>
+  <block id="2156565620990981867eac598ee8b32d" category="list-text">如果您使用的是Proxy、則必須遵循*設定Proxy支援for Windows *一節中的指示。</block>
+  <block id="f3dd6d7b854220a72089f42589f41cba" category="admonition">如果您的環境使用Proxy、請先閱讀本節再安裝。</block>
+  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">安裝代理程式</block>
+  <block id="d45fc0c2a28126623498664c1e032858" category="list-text">如果您使用Proxy、則必須遵循*設定RHEL/CentOS* Proxy支援一節中的指示。</block>
+  <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">如果您使用的是代理服務器，則必須按照*配置Ubuntu / DEBIAN*代理支持一節中的說明操作。</block>
+  <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">如果您使用的是Proxy、則必須遵循「*設定MacOS的Proxy支援」一節中的指示。</block>
+  <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。</block>
 </blocks>
