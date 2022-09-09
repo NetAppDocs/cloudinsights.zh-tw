@@ -8666,7 +8666,6 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。代理程式最多可支援50個資料收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）使用此表格做為一般規模調整指南：</block>
-  <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes代理程式指示已移至新頁面。麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得最新的Kubernetes代理程式說明。</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">範例9.</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此範例會找出第1 _個之後的所有項目、直到第二個_。</block>
@@ -8983,4 +8982,6 @@
   <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">如果您使用的是代理服務器，則必須按照*配置Ubuntu / DEBIAN*代理支持一節中的說明操作。</block>
   <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">如果您使用的是Proxy、則必須遵循「*設定MacOS的Proxy支援」一節中的指示。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。</block>
+  <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。</block>
+  <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。</block>
 </blocks>

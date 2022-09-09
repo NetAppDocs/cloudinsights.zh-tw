@@ -473,7 +473,9 @@ sudo /tmp/uninstall
 
 === Kubernetes
 
-Kubernetes代理程式指示已移至新頁面。麻煩了 link:task_config_telegraf_agent_k8s.html["*到這裡*"] 以取得最新的Kubernetes代理程式說明。
+NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。
+
+麻煩了 link:task_config_telegraf_agent_k8s.html["*到這裡*"] 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。
 
 
 
