@@ -469,6 +469,8 @@ sudo /tmp/uninstall
 . link:#macos["安裝新代理程式"]。
 
 
+｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝
+
 
 
 == Kubernetes
@@ -476,6 +478,8 @@ sudo /tmp/uninstall
 NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。
 
 麻煩了 link:task_config_telegraf_agent_k8s.html["*到這裡*"] 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。
+
+｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝
 
 
 
