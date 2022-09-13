@@ -30,12 +30,11 @@ summary: 新增Cloud Secure 功能代理程式
 +
 image::Add-agent-1.png[新增代理程式1]
 
-. 選取要安裝代理程式的作業系統。
 . 確認代理伺服器符合最低系統需求。
 . 若要驗證代理伺服器是否執行支援的Linux版本、請按一下_versions Supported（i）_。
 . 如果您的網路使用Proxy伺服器、請依照Proxy一節中的指示來設定Proxy伺服器詳細資料。
 +
-image:CloudSecureAgentWithProxy.png["代理程式安裝附有Proxy附註"]
+image:CloudSecureAgentWithProxy_Instructions.png["代理程式安裝附有Proxy附註"]
 
 . 按一下「複製到剪貼簿」圖示以複製安裝命令。
 . 在終端機視窗中執行安裝命令。
@@ -93,7 +92,7 @@ image::new-agent-detect.png[新代理程式偵測]
 | 代理程式安裝無法建立/opp/NetApp/cloudsec/agent/logs/agent.log資料夾、且install.log檔案未提供相關資訊。 | 此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。錯誤會重新導向至標準輸出、並使用「journalctl -u cloudsecure-agent.service`」命令顯示在服務記錄中。此命令可用於進一步疑難排解問題。 
 
 
-| 代理程式安裝失敗、無法使用「不支援此Linux套裝作業系統。結束安裝」。 | 支援的平台僅適用於RHEL 7.x / CentOS 7.x Cloud Secure請確定您未在RHEL 6.x或CentOS 6.x系統上安裝代理程式。 
+| 代理程式安裝失敗、無法使用「不支援此Linux套裝作業系統。結束安裝」。 | 當您嘗試在不受支援的系統上安裝代理程式時、就會出現此錯誤。請參閱 link:concept_cs_agent_requirements.html["代理程式需求"]。 
 
 
 | 代理程式安裝失敗、並顯示錯誤：「-bash: unZip：command not found" | 安裝unzip、然後再次執行安裝命令。如果機器上安裝了Yum、請嘗試「yum install unzip」來安裝unzip軟體。之後、從代理程式安裝UI重新複製命令、然後貼到CLI中、以再次執行安裝。 

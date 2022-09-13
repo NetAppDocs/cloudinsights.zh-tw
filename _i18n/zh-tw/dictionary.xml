@@ -1425,12 +1425,10 @@
   <block id="ba6a231cc4fc57afa76b3f2a42f71f11" category="list-text">按一下*管理&gt;資料收集器&gt;代理程式&gt;+agent*</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系統會顯示「新增代理程式」頁面：</block>
   <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">新增代理程式1</block>
-  <block id="fa851401541c7d95144ca33b604668b7" category="list-text">選取要安裝代理程式的作業系統。</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">確認代理伺服器符合最低系統需求。</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">若要驗證代理伺服器是否執行支援的Linux版本、請按一下_versions Supported（i）_。</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">如果您的網路使用Proxy伺服器、請依照Proxy一節中的指示來設定Proxy伺服器詳細資料。</block>
   <block id="f828f889a93c9ae560b6227f2cc5d7fb" category="inline-image-macro">代理程式安裝附有Proxy附註</block>
-  <block id="74cb98f58c3a23767424d0d09e83571e" category="paragraph"><block ref="74cb98f58c3a23767424d0d09e83571e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a10e2f227e4fcc6978cfba86486a764" category="list-text">按一下「複製到剪貼簿」圖示以複製安裝命令。</block>
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">在終端機視窗中執行安裝命令。</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">安裝成功完成時、系統會顯示下列訊息：</block>
@@ -1454,7 +1452,6 @@
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">代理程式安裝無法建立/opp/NetApp/cloudsec/agent/logs/agent.log資料夾、且install.log檔案未提供相關資訊。</block>
   <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。錯誤會重新導向至標準輸出、並使用「journalctl -u cloudsecure-agent.service`」命令顯示在服務記錄中。此命令可用於進一步疑難排解問題。</block>
   <block id="0a21e5a6656a19032e65faf86ec69c83" category="cell">代理程式安裝失敗、無法使用「不支援此Linux套裝作業系統。結束安裝」。</block>
-  <block id="6a4df434fb58ac1c6e9e4f8dd1694643" category="cell">支援的平台僅適用於RHEL 7.x / CentOS 7.x Cloud Secure請確定您未在RHEL 6.x或CentOS 6.x系統上安裝代理程式。</block>
   <block id="3a7e14f279ad4988e72d190c932c04e4" category="cell">代理程式安裝失敗、並顯示錯誤：「-bash: unZip：command not found"</block>
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">安裝unzip、然後再次執行安裝命令。如果機器上安裝了Yum、請嘗試「yum install unzip」來安裝unzip軟體。之後、從代理程式安裝UI重新複製命令、然後貼到CLI中、以再次執行安裝。</block>
   <block id="a387ff3584e009519afcccd4187aa537" category="cell">代理程式已安裝且正在執行。但代理程式突然停止。</block>
@@ -8773,7 +8770,6 @@
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">無法修改原則。原因：未授權使用該命令。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">請檢查是否使用CsUser、是否會如上所述授予使用者權限。</block>
   <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選取「cloud.netapp.com &gt;帳戶/登入問題」或「cloud.netapp.com &gt;聯盟問題」類別。這是專為Cloud Central問題或疑問所設計。如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
-  <block id="0f0836a5cbb198e5071126d330de3a88" category="cell">磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小）</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">雙向</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
   <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的規模調整指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
@@ -8985,4 +8981,9 @@
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。</block>
   <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝</block>
+  <block id="1b1cd01c54254af639999400741a0b75" category="list-text">支援的支援ONTAP Select</block>
+  <block id="a1667a4627338ab4bba192e79668af02" category="paragraph"><block ref="a1667a4627338ab4bba192e79668af02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">當您嘗試在不受支援的系統上安裝代理程式時、就會出現此錯誤。請參閱 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">疑難排解</block>
+  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小）如果/opt是NAS儲存設備的掛載資料夾、請確定本機使用者具有此資料夾的存取權。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
 </blocks>

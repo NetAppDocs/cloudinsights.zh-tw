@@ -21,6 +21,7 @@ summary: 新增資料收集器
 ** SMB傳輸協定3.1版及更早版本。請注意Cloud Secure 、不適用於FlexCache 使用支援功能的SMB組態。從ONTAP9.7開始、Fpolicy僅在NFS環境中受支援。
 ** NFS傳輸協定4.0版及更早版本
 ** 支援從支援的更新版本為支援FlexGroup ONTAP
+** 支援的支援ONTAP Select
 
 
 * 僅支援資料類型SVM。不支援具有無限磁碟區的SVM。
