@@ -4,7 +4,7 @@ permalink: task_config_cs_incloud.html
 keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet, 
 summary: 使用資料收集器從裝置收集檔案和使用者存取資料。Cloud Secure 
 ---
-= 設定Cloud Volumes ONTAP 《The Data Collector
+= 設定Cloud Volumes ONTAP 適用於NetApp ONTAP 的支援NetApp的支援功能、包括支援功能
 :allow-uri-read: 
 
 
@@ -21,7 +21,21 @@ summary: 使用資料收集器從裝置收集檔案和使用者存取資料。Cl
 
 
 
+== 支援的平台
+
+* 支援所有雲端服務供應商（無論有何種情況）Cloud Volumes ONTAP 。例如：Amazon、Azure、Google Cloud。
+* Amazon FSX ONTAP
+
+
+
+
 == 代理機器組態
+
+代理機器必須在雲端服務供應商各自的子網路中進行設定。如需網路存取的詳細資訊、請參閱[Agent Requirements（代理程式需求）]。
+
+以下是AWS中的代理程式安裝步驟。您可在Azure或Google Cloud中遵循適用於雲端服務供應商的同等步驟進行安裝。
+
+在AWS中、請使用下列步驟來設定要用作Cloud Secure 「物件代理程式」的機器：
 
 請使用下列步驟來設定機器以做Cloud Secure 為一個物件代理程式：
 
