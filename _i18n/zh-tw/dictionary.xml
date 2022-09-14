@@ -8725,7 +8725,6 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同樣地、「工作負載」索引標籤會顯示每個命名空間中的工作負載清單、再次顯示CPU和記憶體使用量。按一下「命名空間」連結、即可深入瞭解每個項目。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">記憶體和CPU量測計顯示三種顏色、因為它們顯示的是與_allocatable capportity_和_total capity_相關的_二 者。</block>
-  <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">在執行Arm64架構的節點上、不支援NetApp Kubernetes監控操作員及其相依性（遠端連線、Kube-state度量、fluentbit等）。</block>
   <block id="fed2b89570c5c27f515afdba0f485a51" category="inline-link-macro">Co猶豫不決 的SmartFiles</block>
   <block id="114e1ad704707526c811f7952ae68dac" category="cell"><block ref="114e1ad704707526c811f7952ae68dac" category="inline-link-macro-rx"></block></block>
@@ -8986,4 +8985,5 @@
   <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">當您嘗試在不受支援的系統上安裝代理程式時、就會出現此錯誤。請參閱 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
   <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">疑難排解</block>
   <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小）如果/opt是NAS儲存設備的掛載資料夾、請確定本機使用者具有此資料夾的存取權。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
+  <block id="2c766eee635ebf4112370c39ebd34dbf" category="cell">執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。不支援SE（增強安全性）Linux。</block>
 </blocks>
