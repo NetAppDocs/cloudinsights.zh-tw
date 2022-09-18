@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_requesting_support.html 
 summary: 您可以檢視知識庫文章、與NetApp社群連線、觀看影片、或開啟問題單以申請支援。 
-keywords: support, knowledgebase, documentation, community, chat, videos, help, contact 
+keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = 正在申請支援
 :allow-uri-read: 
@@ -101,7 +101,7 @@ NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無�
 除了上述的自我支援選項之外、如果您訂閱Cloud Insights 或付費支援受監控的NetApp產品或服務、您也可以與NetApp支援工程師合作解決您的問題。
 
 
-NOTE: 您必須先註冊才能登錄 <<Activating support entitlement and accessing support,啟動支援>> 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 link:https://register.netapp.com["雲端資料服務支援註冊"]。
+NOTE: 您必須先註冊才能登錄  support entitlement and accessing support,啟動支援 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 link:https://register.netapp.com["雲端資料服務支援註冊"]。
 
 強烈建議您勾選此方塊、以便NetApp支援工程師Cloud Insights 在您的支援工作階段期間存取您的支援環境。這可讓工程師疑難排解問題、並協助您迅速解決問題。當問題解決或支援工作階段結束時、您可以取消核取方塊。
 
@@ -109,7 +109,7 @@ NOTE: 您必須先註冊才能登錄 <<Activating support entitlement and access
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["*電話*"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*支援服務單*"]
-* *交談*：您將與NetApp支援人員聯絡以尋求協助（僅限平日）。按一下「*說明>支援*」頁面右下角的泡泡。
+* *交談*：您將與NetApp支援人員聯絡以尋求協助（僅限平日）。您可在任一Cloud Insights 個畫面右上角的*說明>即時聊天室*功能表選項中找到聊天室。
 
 
 您也可以按一下以申請銷售支援 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*聯絡銷售人員*"] 連結：

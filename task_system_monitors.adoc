@@ -465,6 +465,18 @@ toc::[]
 |===
 
 
+=== 安全監控器
+
+|===
+
+
+| 監控名稱 | 說明 | 修正行動 
+
+
+| FIPS模式已停用 | 啟用FIPS 140-2規範時、會停用TLSv1和SSLv3、而且只有TLSv1.1和TLSv1.2會維持啟用狀態。啟用FIPS 140-2規範時、無法啟用TLSv1和SSLv3。ONTAP | 若要在叢集上啟用FIPS 140-2規範、ONTAP 請在進階權限模式中執行下列指令：Security config modify -interface SSL -is -fIPS-enablD true 
+|===
+
+
 == 更多資訊
 
 * link:task_view_and_manage_alerts.html["檢視及取消遺失警示"]

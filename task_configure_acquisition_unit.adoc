@@ -21,7 +21,7 @@ NOTE: 為確保稽核與資料報告的準確性、強烈建議您使用*網路�
 == 新增Linux擷取單元
 
 .開始之前
-* 如果您的系統使用Proxy、則必須先設定Proxy環境變數、再安裝擷取單元。如需詳細資訊、請參閱 <<Setting proxy environment variables>>。
+* 如果您的系統使用Proxy、則必須先設定Proxy環境變數、再安裝擷取單元。如需詳細資訊、請參閱  proxy environment variables。
 
 
 .Linux擷取單元安裝步驟

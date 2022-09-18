@@ -184,6 +184,8 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: 架構表格
       url: "/reference_schemas.html"
+  - title: 精選資訊ONTAP
+    url: "/concept_ontap_essentials.html"
   - title: Cloud Secure
     entries:
     - title: 關於Cloud Secure 本公司

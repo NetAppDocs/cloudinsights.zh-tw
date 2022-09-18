@@ -139,7 +139,7 @@ image:SubscriptionCompareTable-2.png["訂購選項"]
 * NetApp StorageGRID
 
 
-如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <<how-do-i-subscribe,以下>> 以取得更多詳細資料。
+如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 ,以下 以取得更多詳細資料。
 
 
 
@@ -156,7 +156,7 @@ NOTE: 此計算機僅供預估。您的確切價格將在訂閱時設定。
 
 == 如何訂閱？
 
-如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 <<self-subscribe-via-aws-marketplace,自行訂閱>> 透過AWS Marketplace。
+如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 ,自行訂閱 透過AWS Marketplace。
 
 
 
