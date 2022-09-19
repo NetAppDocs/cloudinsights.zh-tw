@@ -18,12 +18,10 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 == 登入問題：
 
 |===
-
-
 | *問題：* | *試用：* 
 
 
-| 每5分鐘登出一次Cloud Insights | 在您的瀏覽器設定中、允許第三方接受來自_[*。] auth0.com的Cookie。例如、在Chrome的無痕式模式中、預設的瀏覽器設定會封鎖第三方Cookie。請嘗試下列方法：在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。 
+| 每5分鐘登出一次Cloud Insights | 讓第三方接受必要的NetApp和auth0 Cookie。範例：在Chrome中、在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。*或*選取「封鎖協力廠商Cookie」、並新增[*。] auth0.com和[*。] netapp.com的例外項目。附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。 
 
 
 | 我有Cloud Central帳戶、但無法登入Cloud Central。 | 從開啟問題單 https://mysupport.netapp.com/site/help[]。選取「cloud.netapp.com >帳戶/登入問題」或「cloud.netapp.com >聯盟問題」類別。這是專為Cloud Central問題或疑問所設計。如Cloud Insights 需所有其他的支援問題、請聯絡 link:concept_requesting_support.html["NetApp支援"]。 
