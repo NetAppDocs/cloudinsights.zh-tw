@@ -9016,4 +9016,20 @@
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">如果您的環境使用的是 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> 例如「受壓力的共享資源」或「空間不足的資源」、受影響資源的資產登陸頁面現在包含Insight本身的連結、可提供更快速的探索和疑難排解。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6.</block>
   <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
+  <block id="cda933c18fbb578a3f0d2e4907aaa572" category="summary">將AWS S3設定為儲存資料收集器。</block>
+  <block id="77420e0a789b610e7581918e246f925d" category="doc">將AWS S3設定為儲存資料收集器</block>
+  <block id="2401a330264ccc83db4e7dcb1d2a3800" category="paragraph">利用AWS S3作為儲存資料收集器、從AWS S3執行個體取得庫存和效能資料。Cloud Insights</block>
+  <block id="7e4af3fb09f891d46f65e6fe7eaf79b4" category="paragraph">若要將AWS S3的資料作為儲存裝置來收集、您必須具備下列資訊：</block>
+  <block id="1a0aac3e93287fcee8ae7a207036c825" category="list-text">使用IAM角色驗證時、AWS雲端帳戶的* IAM角色*。僅當您的擷取設備安裝在AWS執行個體上時、才適用IAM角色。</block>
+  <block id="51222d9334f8421be01a4c67bba211f0" category="list-text">如果使用IAM存取金鑰驗證、AWS雲端帳戶的* IAM存取金鑰* ID和秘密存取金鑰。</block>
+  <block id="059cecdb406ea318583165dbd87ae76a" category="list-text">AWS S3執行個體可報告為虛擬機器、或（較不自然）主機。EBS Volume可報告為VM使用的虛擬磁碟、以及提供虛擬磁碟容量的資料存放區。</block>
+  <block id="eabf633dc74f78f079f74efeb11ba4c2" category="paragraph">存取金鑰包含存取金鑰ID（例如：ASIIOSFODBNODNE7EXAMPLE）和秘密存取金鑰（例如：wJALrXUtnFEM/K7MDENG/bPxRfiCYEXAMPLEKEY）。如果您使用AWS SDK、REST或查詢API作業、您可以使用存取金鑰來簽署您對AWS所提出的程式設計要求。這些金鑰會隨您的Amazon合約一起提供。</block>
+  <block id="c556d79cf119c0275f5a7e5ffe17e25e" category="cell">僅在AWS的AU上取得時使用。如需詳細資訊、請參閱下方 <block ref="abcc3869ca9e9148fb25f0d23e298b7f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a9798702903d4f5ee46de22467eb3ccd" category="paragraph">例如、如果您建立名為_InstanceS3ReadOnly_的IAM角色、則必須設定原則、將此IAM角色的所有S3資源授予S3唯讀清單存取權限。此外、您必須授予STs（安全性權杖服務）存取權、以便允許此角色擔任跨帳戶的角色。</block>
+  <block id="56fbeb9e954ace68d534e66e58b364a1" category="paragraph">建立IAM角色之後、您可以在建立新的S3執行個體或任何現有的S3執行個體時附加該角色。</block>
+  <block id="ddaf3f263ed6f7d926e96caad7b5d807" category="paragraph">將IAM角色_InstanceS3ReadOnly_附加至S3執行個體之後、您將能夠透過IAM角色名稱的執行個體中繼資料擷取暫用認證資料、並使用它來存取此S3執行個體上執行的任何應用程式的AWS資源。</block>
+  <block id="182377d3b5aa85736490d0c1d8daae51" category="paragraph">AWS S3儲存資料收集器選項可讓您使用Cloud Insights S3上設定的標記來填入支援項目。註釋的名稱必須與AWS標籤完全相同。將一律填入相同名稱的文字類型註釋、並「最佳」嘗試填入其他類型（數字、布林等）的註釋。Cloud Insights如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。</block>
+  <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">請注意、AWS區分大小寫、Cloud Insights 而不區分大小寫。因此、如果您在Cloud Insights 不支援的情況下建立名為「Owner"的附註、並在S3上建立名為「Owner"、「Owner"和「Owner"的標籤、則「Owner"的所有S3版本都會對應至Cloud Insight的「擁有者」附註。</block>
+  <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必須將每個子帳戶設定為使用AWS角色、讓主帳戶ID從子帳戶存取S3詳細資料。</block>
+  <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳實務做法：強烈建議將AWS預先定義的_Amazon S3ReadOnlyAccess_原則指派給S3主要帳戶。此外、在資料來源中設定的使用者應至少指派預先定義的_AWSOrganizationsReadOnlyAccess_原則、以便查詢AWS。</block>
 </blocks>
