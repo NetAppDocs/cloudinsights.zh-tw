@@ -9014,7 +9014,6 @@
   <block id="9e1c9c294ec3f4b96a8a0cc0df13f98e" category="inline-link-macro">洞見</block>
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">如果您的環境使用的是 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> 例如「受壓力的共享資源」或「空間不足的資源」、受影響資源的資產登陸頁面現在包含Insight本身的連結、可提供更快速的探索和疑難排解。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6.</block>
-  <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
   <block id="cda933c18fbb578a3f0d2e4907aaa572" category="summary">將AWS S3設定為儲存資料收集器。</block>
   <block id="77420e0a789b610e7581918e246f925d" category="doc">將AWS S3設定為儲存資料收集器</block>
   <block id="2401a330264ccc83db4e7dcb1d2a3800" category="paragraph">利用AWS S3作為儲存資料收集器、從AWS S3執行個體取得庫存和效能資料。Cloud Insights</block>
@@ -9033,4 +9032,5 @@
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳實務做法：強烈建議將AWS預先定義的_Amazon S3ReadOnlyAccess_原則指派給S3主要帳戶。此外、在資料來源中設定的使用者應至少指派預先定義的_AWSOrganizationsReadOnlyAccess_原則、以便查詢AWS。</block>
   <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP 不支援NetApp</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。範例：在Chrome中、在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。*或*選取「封鎖協力廠商Cookie」、並新增[*。] auth0.com和[*。] netapp.com的例外項目。附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
+  <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
 </blocks>
