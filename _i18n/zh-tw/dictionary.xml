@@ -5430,7 +5430,6 @@
   <block id="2d78443087bc495d923e93521efb0c1d" category="doc">洞見：壓力所在的共享資源</block>
   <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。支援各種工具、協助您調查環境中的資源飽和及影響。Cloud Insights</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">談到工作負載或資源影響時、下列定義非常實用。</block>
-  <block id="cd038a3c036812737c2ee89b0152ce75" category="paragraph">「*高要求*」或「有影響力*」資源會對其他資源造成負面影響。例如、IOPS極高的磁碟區可能會導致其他磁碟區延遲增加（例如 _受影響_或_降級_資源）。要求嚴苛且受影響的資源是使用相同共用資源的「同儕」、例如儲存資源池或Volume。要求嚴苛的資源有時稱為「_gre地_」資源。</block>
   <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">*嚴苛的工作負載*是目前識別為影響共用儲存資源池中其他資源的工作負載。這些工作負載可提高IOPS（例如）、減少受影響工作負載的IOPS。嚴苛的工作負載有時稱為「_高消費工作負載_」。</block>
   <block id="7bddab02c6c096040f0edf52e1623868" category="paragraph">*受影響的工作負載*是受共享儲存資源池中高消耗工作負載影響的工作負載。這些工作負載因為嚴苛的工作負載而面臨IOPS降低和/或更高的延遲。</block>
   <block id="cb9530c6d6791a5adae9a607513f9fe2" category="paragraph">*共享資源飽和*是影響IOPS與_baselity_的比率。</block>
@@ -9015,10 +9014,6 @@
   <block id="4eecf9894a35e5b8b6c8f2cd8456dc16" category="section-title">更多可見洞見</block>
   <block id="9e1c9c294ec3f4b96a8a0cc0df13f98e" category="inline-link-macro">洞見</block>
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">如果您的環境使用的是 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> 例如「受壓力的共享資源」或「空間不足的資源」、受影響資源的資產登陸頁面現在包含Insight本身的連結、可提供更快速的探索和疑難排解。</block>
-  <block id="b3a4cb8b1cc794671c98b17aac5ba206" category="section-title">新的資料收集器</block>
-  <block id="b8cf9f003c21d314dc33ec400eddec24" category="list-text">Amazon S3（預覽版）</block>
-  <block id="337813588cd1360f633725a1a1d06b02" category="list-text">Brocade FOS 9.1.x</block>
-  <block id="5fcd1a145d1221f71e25605161e3258e" category="list-text">Dell/EMC PowerStore 3.0.00.0</block>
-  <block id="aa6bf00e4b89737b431c0d0ffdd1b855" category="paragraph">現在、所有資料來源都已經過最佳化、可在擷取單元更新及/或修補程式之後恢復效能輪詢。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6.</block>
+  <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
 </blocks>
