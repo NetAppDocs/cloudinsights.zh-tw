@@ -8996,4 +8996,29 @@
   <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">啟用FIPS 140-2規範時、會停用TLSv1和SSLv3、而且只有TLSv1.1和TLSv1.2會維持啟用狀態。啟用FIPS 140-2規範時、無法啟用TLSv1和SSLv3。ONTAP</block>
   <block id="f41a65442a444212a9242b353da02fa7" category="cell">若要在叢集上啟用FIPS 140-2規範、ONTAP 請在進階權限模式中執行下列指令：Security config modify -interface SSL -is -fIPS-enablD true</block>
   <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">所有Cloud Insights 的版本均提供監控器和警示功能、但Basic版本必須符合下列條件：*您一次最多只能啟用五個自訂監控器。超過五個的任何監視器都會建立或移至_暫停_狀態。*不支援VMDK、虛擬機器、主機和資料存放區度量監控。如果您已針對這些指標建立監控、則這些指標將會暫停、降級至Basic Edition時將無法恢復。</block>
+  <block id="1b70ac0a972fddf1e1a33e6ed9df49c7" category="section-title">2022年9月</block>
+  <block id="6e117bf7254c45b1f7fd76d22b07b5a8" category="section-title">基本版提供監視器</block>
+  <block id="e2104fe7ced7db178ee68ac6def4a787" category="inline-link-macro">預設監視器</block>
+  <block id="29bc72da395252ce3d1ca5e263d4491c" category="paragraph">ONTAP <block ref="8888e463ff0a48ee815942c388e27f5a" category="inline-link-macro-rx"></block> 現在可在Cloud Insights 《簡易版》中使用。其中包括70多台基礎架構監控器和30個工作負載範例。</block>
+  <block id="99cae5c3d8813d000c0f805b8aee4c80" category="section-title">強大功能與功能儀表板ONTAP StorageGRID</block>
+  <block id="2a2b55076e44d95d55758a834940f96f" category="paragraph">儀表板庫包含ONTAP 全新的儀表板、可用於顯示功能和溫度、StorageGRID 以及四個用於顯示功能的儀表板。如果您的環境正在收集ONTAP 功能強大的指標和/或StorageGRID 功能不整的資料、請選取「*+來源圖庫*」來匯入這些儀表板。</block>
+  <block id="d4fd7cd26df0303e04a2613f41cc1260" category="section-title">表格中的臨界值可見度一目瞭然</block>
+  <block id="84679b44186157278902037b722c7359" category="paragraph">設定格式化的條件可讓您在表格小工具中設定及強調警示層級和臨界層級的臨界值、讓外在資料點和特殊資料點立即可見。</block>
+  <block id="af857689eee998410c8a208e06da82aa" category="inline-image-macro">設定格式化的條件範例</block>
+  <block id="07ee1acb2c120e65f59c1e4f6f6c04e9" category="paragraph"><block ref="07ee1acb2c120e65f59c1e4f6f6c04e9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a81e50bf70fcff1882aa4802799e297" category="section-title">安全監控器</block>
+  <block id="ad9077486043c8c96ab080efdb42b124" category="paragraph">當系統偵測到FIPS模式已停用時、會發出警示。Cloud Insights ONTAP深入瞭解 <block ref="c7e21bfe17a50551be622c8940ed37c5" category="inline-link-macro-rx"></block>請觀看此空間、瞭解更多安全監視器、即將推出！</block>
+  <block id="5dd625dd3901422670a5f0a5c50c43ae" category="section-title">隨處聊天</block>
+  <block id="ec0592cbe0adf98f6b8b6f3682b80783" category="paragraph">從任何一個畫面、Cloud Insights 選擇新的*「說明」&gt;「即時聊天*」連結、與NetApp支援專家聊天。如需協助、請參閱「？」 畫面右上角的圖示。</block>
+  <block id="0308ff2faf3259518f15748d7e652260" category="inline-image-macro">「說明」功能表、並強調顯示「線上客服</block>
+  <block id="b873771142e1375b8c2448ef06d827c0" category="paragraph"><block ref="b873771142e1375b8c2448ef06d827c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4eecf9894a35e5b8b6c8f2cd8456dc16" category="section-title">更多可見洞見</block>
+  <block id="9e1c9c294ec3f4b96a8a0cc0df13f98e" category="inline-link-macro">洞見</block>
+  <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">如果您的環境使用的是 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> 例如「受壓力的共享資源」或「空間不足的資源」、受影響資源的資產登陸頁面現在包含Insight本身的連結、可提供更快速的探索和疑難排解。</block>
+  <block id="b3a4cb8b1cc794671c98b17aac5ba206" category="section-title">新的資料收集器</block>
+  <block id="b8cf9f003c21d314dc33ec400eddec24" category="list-text">Amazon S3（預覽版）</block>
+  <block id="337813588cd1360f633725a1a1d06b02" category="list-text">Brocade FOS 9.1.x</block>
+  <block id="5fcd1a145d1221f71e25605161e3258e" category="list-text">Dell/EMC PowerStore 3.0.00.0</block>
+  <block id="aa6bf00e4b89737b431c0d0ffdd1b855" category="paragraph">現在、所有資料來源都已經過最佳化、可在擷取單元更新及/或修補程式之後恢復效能輪詢。</block>
+  <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6.</block>
 </blocks>

@@ -12,6 +12,75 @@ NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些�
 
 
 
+== 2022年9月
+
+
+
+=== 基本版提供監視器
+
+ONTAP link:task_system_monitors.html["預設監視器"] 現在可在Cloud Insights 《簡易版》中使用。其中包括70多台基礎架構監控器和30個工作負載範例。
+
+
+
+=== 強大功能與功能儀表板ONTAP StorageGRID
+
+儀表板庫包含ONTAP 全新的儀表板、可用於顯示功能和溫度、StorageGRID 以及四個用於顯示功能的儀表板。如果您的環境正在收集ONTAP 功能強大的指標和/或StorageGRID 功能不整的資料、請選取「*+來源圖庫*」來匯入這些儀表板。
+
+
+
+=== 表格中的臨界值可見度一目瞭然
+
+設定格式化的條件可讓您在表格小工具中設定及強調警示層級和臨界層級的臨界值、讓外在資料點和特殊資料點立即可見。
+
+image:ConditionalFormattingExample.png["設定格式化的條件範例"]
+
+
+
+=== 安全監控器
+
+當系統偵測到FIPS模式已停用時、會發出警示。Cloud Insights ONTAP深入瞭解 link:task_system_monitors.html#security-monitors["系統監視器"]請觀看此空間、瞭解更多安全監視器、即將推出！
+
+
+
+=== 隨處聊天
+
+從任何一個畫面、Cloud Insights 選擇新的*「說明」>「即時聊天*」連結、與NetApp支援專家聊天。如需協助、請參閱「？」 畫面右上角的圖示。
+
+image:Help_LiveChat.png["「說明」功能表、並強調顯示「線上客服"]
+
+
+
+=== 更多可見洞見
+
+如果您的環境使用的是 link:insights_overview.html["洞見"] 例如「受壓力的共享資源」或「空間不足的資源」、受影響資源的資產登陸頁面現在包含Insight本身的連結、可提供更快速的探索和疑難排解。
+
+
+
+=== 新的資料收集器
+
+* Amazon S3（預覽版）
+* Brocade FOS 9.1.x
+* Dell/EMC PowerStore 3.0.00.0
+
+
+
+
+=== 其他資料收集器更新
+
+現在、所有資料來源都已經過最佳化、可在擷取單元更新及/或修補程式之後恢復效能輪詢。
+
+
+
+=== 作業系統支援
+
+下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
+
+* Red Hat Enterprise Linux 8.5、8.6.
+
+
+'''
+
+
 == 2022年8月
 
 
