@@ -2036,11 +2036,7 @@
   <block id="0749de0bb66e7b739d9bb3368f6c3de1" category="list-text">管理解決方案啟用伺服器的IP位址</block>
   <block id="b381cf1608514a7b06634cd7ead7dce2" category="list-text">Solutions Enabler（SE）伺服器的系統管理員權限</block>
   <block id="133702dafbca190738aab49522eb7344" category="list-text">SE軟體的唯讀使用者名稱和密碼</block>
-  <block id="8b8837e7c2e4835916adaca415ac7ea5" category="list-text">解決方案促成伺服器6.5x需求：</block>
-  <block id="4b07bc21a7224915423b6043ffd0f27f" category="list-text">安裝SMISS-S V1.2的Mi-S Provider 3.3.1</block>
-  <block id="7bb957acf5c9bb14a306ef82b79e96a7" category="list-text">安裝後、執行\Program Files\EMC\SYMCLI \BIN&gt;stordaemonstart storsrvd</block>
   <block id="cf3dc9a48663d5659883d6343aa48779" category="list-text">VMAX應用程式的Un版 型必須執行、並收集SMI-S Provider安裝所管理的EMC VMAX和PowerMax儲存陣列的統計資料</block>
-  <block id="3a6b139d8309d859f87248363cb1badd" category="list-text">存取驗證：確認SMI-S供應商正在執行：Telnet&lt;se_server&gt; 5988</block>
   <block id="e77420e037c75e1c5a9ef5611f13d0d1" category="paragraph">從EMC VMAX-PowerMax資料來源取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="1b5aa0d469fbc243656ad5838af455a7" category="cell">陣列儲存設備</block>
   <block id="7c5ba892645af8d7dba520e3978c726f" category="cell">總監</block>
@@ -9033,4 +9029,5 @@
   <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP 不支援NetApp</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。範例：在Chrome中、在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。*或*選取「封鎖協力廠商Cookie」、並新增[*。] auth0.com和[*。] netapp.com的例外項目。附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
+  <block id="d1abcb872114cdbdf06bbc991083bed3" category="list-text">效能的存取驗證：請在您購買單位的網頁瀏覽器中、前往<block ref="25b9476534a152fb44ed4e9f3aa05000" category="inline-link-rx"></block> 主機名稱或IP：5989/ecomconfig,其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
 </blocks>
