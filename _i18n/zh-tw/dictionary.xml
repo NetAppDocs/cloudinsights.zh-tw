@@ -9030,4 +9030,11 @@
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。範例：在Chrome中、在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。*或*選取「封鎖協力廠商Cookie」、並新增[*。] auth0.com和[*。] netapp.com的例外項目。附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
   <block id="d1abcb872114cdbdf06bbc991083bed3" category="list-text">效能的存取驗證：請在您購買單位的網頁瀏覽器中、前往<block ref="25b9476534a152fb44ed4e9f3aa05000" category="inline-link-rx"></block> 主機名稱或IP：5989/ecomconfig,其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
+  <block id="b6679962f8c42c1ba1776113605353b7" category="section-title">必要的效能指標</block>
+  <block id="024e28f9b56c22af28ebfa120fdb57f0" category="paragraph">Oracle ZFS設備可讓儲存管理員靈活擷取效能統計資料。此功能可讓您在高可用度配對中設定_each控制器、以擷取下列指標：Cloud Insights</block>
+  <block id="20d28687278d151933891014ac36ae04" category="list-text">SMB2.ops [共享]</block>
+  <block id="dadc05c753e1aa1130d425a298bf1e99" category="list-text">nfs3.ops[share]</block>
+  <block id="2ba1eaa3efea8566de516f83331d1ca0" category="list-text">nfs4.ops[share]</block>
+  <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">nfs4-1.ops[share]</block>
+  <block id="56df349714d6415bc904268245667da3" category="paragraph">如果控制器無法擷取任何或全部這些內容、可能導致Cloud Insights 「內部磁碟區」上的工作負載沒有或報告不足。</block>
 </blocks>
