@@ -2738,7 +2738,6 @@
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">請確定您已正確設定使用者目錄連接器、否則事件會在「活動鑑識」頁面中顯示編碼的使用者名稱、而非使用者的實際名稱（儲存在Active Directory中）。</block>
   <block id="1c0d6e11904414aa4c18ec80cc712c68" category="list-text">為獲得最佳效能、您應將FPolicy伺服器設定為與儲存系統位於同一子網路上。</block>
   <block id="94a83cc87aa6db24b6f7e05b3ab3031d" category="list-text">您必須使用下列兩種方法之一來新增SVM：</block>
-  <block id="6e04cacc7a600236021f263318871100" category="list-text">使用叢集IP、SVM名稱及叢集管理使用者名稱與密碼。_這是建議的方法。_</block>
   <block id="b0fa17525d310a01406e22a6a3792d8b" category="list-text">SVM名稱必須完全如ONTAP 圖所示、且區分大小寫。</block>
   <block id="988cfc885910cb57855c7d1e3055000a" category="list-text">使用SVM Vserver Management IP、使用者名稱和密碼</block>
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-link-macro">「權限注意事項」</block>
@@ -9036,4 +9035,7 @@
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">nfs4-1.ops[share]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">如果控制器無法擷取任何或全部這些內容、可能導致Cloud Insights 「內部磁碟區」上的工作負載沒有或報告不足。</block>
   <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">效能存取驗證：在擷取裝置的網頁瀏覽器中、前往\https://&lt;SMI-S主機名稱或IP：5989/ecomconfig,其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
+  <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">使用叢集IP、SVM名稱及叢集管理使用者名稱與密碼。*這是建議的方法。_*</block>
+  <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">代理程式一開始是透過Proxy伺服器連線、並在代理程式安裝期間設定代理。現在Proxy伺服器已經變更。如何變更代理程式的Proxy組態？</block>
+  <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">您可以編輯agent.properties以新增Proxy詳細資料。請遵循下列步驟：1.變更至內含內容檔案的資料夾：CD /opp/netapp/cloudsec/conf2。使用您最愛的文字編輯器、開啟_agent.properties_檔案進行編輯。3.新增或修改下列行：agent_proxy_host=scspa1950329001.vm.netapp.com agent_proxy_port=80 agent_proxy_user=pxuser agent_proxy_password=pass12344.儲存檔案。5.重新啟動代理程式：Sudo systemctl重新啟動cloudsecure-agent.service</block>
 </blocks>

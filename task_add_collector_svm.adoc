@@ -33,7 +33,7 @@ summary: 新增資料收集器
 
 * 您必須使用下列兩種方法之一來新增SVM：
 +
-** 使用叢集IP、SVM名稱及叢集管理使用者名稱與密碼。_這是建議的方法。_
+** 使用叢集IP、SVM名稱及叢集管理使用者名稱與密碼。*這是建議的方法。_*
 +
 *** SVM名稱必須完全如ONTAP 圖所示、且區分大小寫。
 
@@ -94,7 +94,6 @@ security login role create -role csrole -cmddirname "event notification" -access
 security login role create -role csrole -cmddirname "security certificate" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
-security login role create -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
 ....
 
 
@@ -113,7 +112,6 @@ security login role create -vserver <vservername> -role csrole -cmddirname vserv
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
 ....
 
 
