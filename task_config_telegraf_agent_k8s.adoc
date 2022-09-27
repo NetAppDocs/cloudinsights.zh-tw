@@ -500,7 +500,7 @@ Windows：
  .\cloudinsights-windows.ps1 -install
 
 
-== 疑難排解Kubernetes代理程式安裝
+== 疑難排解
 
 如果您在設定代理程式時遇到問題、請嘗試下列事項：
 
