@@ -8223,7 +8223,6 @@
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
   <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">您也Cloud Insights 可以直接從訂閱 <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。</block>
   <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">新增權益ID</block>
-  <block id="f61771ce04d790a82e1d9fadba23d65d" category="paragraph">如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您購買了NetApp Astra Cloud Insights 、而此產品隨附於Astra交易、則Astra授權序號可用於識別Cloud Insights 在該產品中的訂閱。此為_權利ID _。Cloud Insights</block>
   <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">若要新增權利ID至Cloud Insights 您的訂閱、請在*管理&gt;訂閱*頁面上、按一下_+權利ID _。</block>
   <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">新增權利ID至您的訂閱</block>
   <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
@@ -9044,5 +9043,5 @@
   <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基礎架置</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">設定Proxy支援</block>
-  <block id="b24ba42b8fcbdf9b49ead5a4fa365998" category="section-title">疑難排解Kubernetes安裝</block>
+  <block id="860cea525f63406af55925d01de59c97" category="paragraph">如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您已購買NetApp Astra Control Center、則Astra Control Center授權序號可用於識別Cloud Insights 在《》中的訂閱內容。此為_權利ID _。Cloud Insights</block>
 </blocks>

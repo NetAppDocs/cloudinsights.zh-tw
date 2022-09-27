@@ -243,7 +243,7 @@ NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略�
 
 == 新增權益ID
 
-如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您購買了NetApp Astra Cloud Insights 、而此產品隨附於Astra交易、則Astra授權序號可用於識別Cloud Insights 在該產品中的訂閱。此為_權利ID _。Cloud Insights
+如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您已購買NetApp Astra Control Center、則Astra Control Center授權序號可用於識別Cloud Insights 在《》中的訂閱內容。此為_權利ID _。Cloud Insights
 
 若要新增權利ID至Cloud Insights 您的訂閱、請在*管理>訂閱*頁面上、按一下_+權利ID _。
 
