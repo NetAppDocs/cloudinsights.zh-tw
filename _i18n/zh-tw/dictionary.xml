@@ -5608,7 +5608,6 @@
   <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">若要在Windows、Linux或Mac上安裝代理程式、請遵循 <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
   <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">在Kubernetes上安裝代理程式</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
-  <block id="737f024effb455f30b04c7091e2d8667" category="section-title">疑難排解Kubernetes代理程式安裝</block>
   <block id="69a528dde5c160691621956eda156089" category="cell">對於不是Kubernetes叢集資料存放區的叢集、您會在Telewraf RS pod中看到下列訊息：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /crp/etcd/server.key：OPEN /etc/Kubernetes /pi/kit/no file或pi/no這樣的檔案</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">僅支援監控以_etcd_作為K8s資料存放區。Cloud Insights您可以依照下列指示變更組態、以修改代理程式以避免收集etcd資料：kubecl -n netapp-監 控編輯代理程式監控-netapp,刪除下列區段：-名稱：Prometheus_etcd執行模式：- ReplicaSet</block>
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</block>
@@ -9045,4 +9044,5 @@
   <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基礎架置</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">設定Proxy支援</block>
+  <block id="b24ba42b8fcbdf9b49ead5a4fa365998" category="section-title">疑難排解Kubernetes安裝</block>
 </blocks>
