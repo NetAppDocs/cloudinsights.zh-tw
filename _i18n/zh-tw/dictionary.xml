@@ -2934,7 +2934,6 @@
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="doc">從儀表板圖庫匯入</block>
   <block id="75ff2ecca247e32bd11a679fc97fbdab" category="paragraph">提供多種建議的儀表板、讓您深入瞭解資料的商業見解。Cloud Insights每個儀表板都包含小工具、可協助您回答特定問題、或解決與環境中目前收集的資料相關的特定問題。</block>
   <block id="62a23650084673f5c844edf6588b4cbc" category="paragraph">若要從圖庫匯入儀表板、請執行下列步驟：</block>
-  <block id="ca57fe1968fa78c8b5b54613e08987a2" category="list-text">選擇*儀表板&gt;顯示所有儀表板*</block>
   <block id="bb6ec7619f5b7d24eeed488d054902d5" category="list-text">按一下「*+來源圖庫*」</block>
   <block id="58e1b019dfb18a656bddd772932b2be5" category="paragraph">畫面會顯示*建議的儀表板*清單。每個儀表板都會以儀表板可協助您解決的特定問題命名。儀表板可協助回答各種物件類型的問題、包括AWS、NetApp、Storage、VMware、 及其他</block>
   <block id="4915483ae3205b553b3e977503ffdcc5" category="list-text">從清單中選取一或多個儀表板、然後按一下「*新增儀表板*」。這些儀表板現在會顯示在儀表板清單中。</block>
@@ -9044,4 +9043,6 @@
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基礎架置</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">設定Proxy支援</block>
   <block id="860cea525f63406af55925d01de59c97" category="paragraph">如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您已購買NetApp Astra Control Center、則Astra Control Center授權序號可用於識別Cloud Insights 在《》中的訂閱內容。此為_權利ID _。Cloud Insights</block>
+  <block id="5c42bfffed923b7136ae5aee981826dd" category="list-text">選取*儀表板&gt;儀表板*</block>
+  <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有「系統管理員」或「帳戶擁有者」角色的使用者可以從儀表板庫匯入。</block>
 </blocks>
