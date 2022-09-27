@@ -30,6 +30,9 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_dc_amazon_ec2.html["Amazon EC2和EBS"] | 基礎架構 
 
 
+| link:task_dc_aws_s3.html["AWS S3為儲存設備"] | 基礎架置 
+
+
 | link:task_dc_na_amazon_fsx.html["Amazon FSX for NetApp ONTAP 產品"] | 基礎架構 
 
 

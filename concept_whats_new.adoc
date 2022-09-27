@@ -56,6 +56,21 @@ image:Help_LiveChat.png["「說明」功能表、並強調顯示「線上客服"
 
 
 
+=== 新的資料收集器
+
+* Amazon S3（預覽版）
+* Brocade FOS 9.1.x
+* Dell/EMC PowerStore 3.0.00.0
+
+
+
+
+=== 其他資料收集器更新
+
+現在、所有資料來源都已經過最佳化、可在擷取單元更新及/或修補程式之後恢復效能輪詢。
+
+
+
 === 作業系統支援
 
 下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：

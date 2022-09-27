@@ -105,7 +105,7 @@ image:Kubernetes_Operator_Agent_Instructions.png["以操作者為基礎的安裝
 
 
 
-=== 為NetApp Kubernetes監控操作員設定Proxy支援
+=== 設定Proxy支援
 
 若要為監控操作員設定Proxy、請執行下列步驟。
 

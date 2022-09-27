@@ -1784,7 +1784,6 @@
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift指示</block>
   <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">如果您是在OpenShift 4.6 - 4.8上執行、則必須變更「特殊權限模式」設定。執行下列命令以開啟代理程式進行編輯。如果您使用的命名空間不是「NetApp監控」、請在命令列中指定該命名空間：</block>
   <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">在檔案中、將_特權 模式：假_變更為_權限模式：真_</block>
-  <block id="41433653d03e1d9f51b22f2b34a34907" category="section-title">為NetApp Kubernetes監控操作員設定Proxy支援</block>
   <block id="d19324560c8bbab552153762aa6318fa" category="paragraph">若要為監控操作員設定Proxy、請執行下列步驟。</block>
   <block id="c0c113f7f05cafdbe990d465db2be0e5" category="paragraph">首先、開啟_agent-監 控-NetApp_檔案進行編輯：</block>
   <block id="0414c00192a7623b809e536f36865665" category="paragraph">在此檔案的_spec__區段中、新增下列程式碼區塊：</block>
@@ -8436,7 +8435,6 @@
   <block id="e5aec51ee52943fae3ccabf016387e6b" category="sidebar">設定Cloud Secure 一個功能不均的代理程式</block>
   <block id="c9163c5931581c0d00cc0540ed90e5c7" category="sidebar">設定AD目錄收集器</block>
   <block id="5394915bbb6bf88a0b09d49535e6f706" category="sidebar">設定LDAP目錄收集器</block>
-  <block id="87e8a04e229031e564067b38ae8a72c8" category="sidebar">設定Amazon FSX for NetApp ONTAP 蒐集器</block>
   <block id="237cff5be9a99f30dc9585e6e705dc2b" category="sidebar">設定Cloud ONTAP Data Collector</block>
   <block id="866ace7cbd74c56db66eff042dc08fd4" category="sidebar">使用者管理Cloud Secure</block>
   <block id="9759d20db6b94132676173d6d2302ff4" category="sidebar">鑑識</block>
@@ -9038,4 +9036,13 @@
   <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">使用叢集IP、SVM名稱及叢集管理使用者名稱與密碼。*這是建議的方法。_*</block>
   <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">代理程式一開始是透過Proxy伺服器連線、並在代理程式安裝期間設定代理。現在Proxy伺服器已經變更。如何變更代理程式的Proxy組態？</block>
   <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">您可以編輯agent.properties以新增Proxy詳細資料。請遵循下列步驟：1.變更至內含內容檔案的資料夾：CD /opp/netapp/cloudsec/conf2。使用您最愛的文字編輯器、開啟_agent.properties_檔案進行編輯。3.新增或修改下列行：agent_proxy_host=scspa1950329001.vm.netapp.com agent_proxy_port=80 agent_proxy_user=pxuser agent_proxy_password=pass12344.儲存檔案。5.重新啟動代理程式：Sudo systemctl重新啟動cloudsecure-agent.service</block>
+  <block id="b3a4cb8b1cc794671c98b17aac5ba206" category="section-title">新的資料收集器</block>
+  <block id="b8cf9f003c21d314dc33ec400eddec24" category="list-text">Amazon S3（預覽版）</block>
+  <block id="337813588cd1360f633725a1a1d06b02" category="list-text">Brocade FOS 9.1.x</block>
+  <block id="5fcd1a145d1221f71e25605161e3258e" category="list-text">Dell/EMC PowerStore 3.0.00.0</block>
+  <block id="aa6bf00e4b89737b431c0d0ffdd1b855" category="paragraph">現在、所有資料來源都已經過最佳化、可在擷取單元更新及/或修補程式之後恢復效能輪詢。</block>
+  <block id="8b78c6511ddbdc615cb6b5e3ee8d8488" category="inline-link-macro">AWS S3為儲存設備</block>
+  <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
+  <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基礎架置</block>
+  <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">設定Proxy支援</block>
 </blocks>
