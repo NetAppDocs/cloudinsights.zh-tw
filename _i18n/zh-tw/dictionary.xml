@@ -9031,4 +9031,5 @@
   <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有「系統管理員」或「帳戶擁有者」角色的使用者可以從儀表板庫匯入。</block>
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全性最佳實務做法</block>
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">利用支援功能、您可在環境中突顯資料點和趨勢、並可輸入任何有效的電子郵件地址作為警示收件者。Cloud Insights Cloud Insights如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
+  <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">簽署的Checksum檔案（結尾為sh256.signed或sh256.ps1）</block>
 </blocks>

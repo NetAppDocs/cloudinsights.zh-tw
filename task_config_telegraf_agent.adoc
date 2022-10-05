@@ -521,7 +521,7 @@ Windows：
 * 安裝指令碼
 * 環境檔案
 * Y反 洗錢檔案
-* 簽署的Checksum檔案（sh256.signed）
+* 簽署的Checksum檔案（結尾為sh256.signed或sh256.ps1）
 * 用於簽名驗證的一個PES檔案（NetApp_CERT.pem）
 
 
@@ -543,13 +543,13 @@ Windows：
 簽署的Checksum檔案可以使用PEM檔案進行驗證：
 
 * 非Windows：
-+
- openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+
+
+ openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any
 * Windows（透過上述匯入憑證安裝憑證之後）：
-+
- Get-AuthenticodeSignature -FilePath .\sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 
 
+ Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：
 
 非Windows：
