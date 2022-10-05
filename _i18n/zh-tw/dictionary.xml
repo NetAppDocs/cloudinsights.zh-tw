@@ -109,36 +109,26 @@
   <block id="cbc8f04159b7864cfdf1f3f9a0639b83" category="paragraph">您可以登入Cloud Insights 到「介紹」並瀏覽至「*管理&gt; API存取*」、以找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。</block>
   <block id="6ce2d3c8c549ab0fd691398bb443efb2" category="inline-image-macro">API文件</block>
   <block id="6b74edd5cf286c3a22a41e5e6740cb33" category="paragraph"><block ref="6b74edd5cf286c3a22a41e5e6740cb33" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47d7b551b40becb326c406f74238150a" category="paragraph">API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。</block>
   <block id="cbb70567b5f7ab27a565172b8e1bc114" category="inline-image-macro">API Swagger範例</block>
   <block id="fc7607d363ea08dec8a8340a1030dd17" category="paragraph"><block ref="fc7607d363ea08dec8a8340a1030dd17" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2dc554f3bbe39578deadcf21e6d30345" category="section-title">API存取權杖</block>
-  <block id="1281391af6f060d6074a70718d4fe3ea" category="paragraph">在使用Cloud Insights 此功能之前、您必須先建立一個或多個* API存取權杖*。存取權杖用於指定的API類別、並可授予讀取和/或寫入權限。您也可以設定每個存取權杖的到期日。指定類別下的所有API都對存取權杖有效。每個權杖的使用者名稱或密碼都無效。</block>
   <block id="6059fa099fb833766b1f8431a3926056" category="paragraph">若要建立存取權杖：</block>
   <block id="fecbf5d2c0c13cc8b95b8e609a0f7fe2" category="list-text">按一下「*管理&gt; API存取*」</block>
   <block id="2eddd89969bc8a926181a1791b09cfd0" category="list-text">按一下「*+ API存取權杖*」</block>
   <block id="bb0b4db3f730b0e00e3f2d490deb6dc0" category="list-text">輸入Token名稱</block>
-  <block id="360146f659bd725b350b271d6c503e19" category="list-text">選取「API類別」</block>
   <block id="7c6b7bcc37f76961d2189f2184466a34" category="list-text">指定授予此API存取的權限</block>
   <block id="36422fc03146f715dd2ebf157cb2b018" category="list-text">指定權杖過期時間</block>
   <block id="df7e1abab84c88ca59b75d8179052a13" category="admonition">您的權杖只能在建立程序期間複製到剪貼簿並儲存。建立權杖之後、就無法擷取這些權杖、因此強烈建議您複製權杖、並將其儲存在安全的位置。系統會提示您按一下「*複製API存取權杖*」按鈕、然後再關閉權杖建立畫面。</block>
   <block id="ec849ad53569138e8e2a53e16d6fe52a" category="paragraph">您可以停用、啟用及撤銷權杖。停用的權杖可以啟用。</block>
-  <block id="c702f9ec1de747488ae69091e4b44640" category="paragraph">權杖可從客戶的角度授予API一般用途存取權限、並管理其租戶範圍內的API存取權限。客戶管理員可在Cloud Insights 不直接涉及到背後的人員的情況下、授予及撤銷這些金鑰。</block>
   <block id="d0c8eeb04c89d77560166e2a296d3aef" category="paragraph">應用程式會在使用者成功驗證及授權存取後、收到存取權杖、然後在呼叫目標API時、將存取權杖作為認證。傳遞的權杖會通知API、該權杖的承載已獲授權存取API、並執行授權期間所授予範圍所指定的特定動作。</block>
   <block id="695278b2df4ef830f797b2b85728cd20" category="paragraph">傳遞存取權杖的HTTP標頭為* X-CloudInsights：Apikes*。</block>
   <block id="a3edb14694b58a006156d05e3c4b6d5b" category="paragraph">例如、使用下列項目來擷取儲存資產：</block>
   <block id="eceeec5380f54a75da4fa160c300d56b" category="paragraph">其中、_&lt;API_Access_Token &gt;&gt;是您在API存取金鑰建立期間所儲存的權杖。</block>
-  <block id="98fbc8e7d31cedd912f33ee6a89818dc" category="section-title">API類別</block>
-  <block id="c7fb26bb2d197a98dd4605353de8b5fd" category="paragraph">此功能是以類別為基礎、Cloud Insights 目前包含下列類別：</block>
-  <block id="2f90612b2de30393cb574a8125f3b83c" category="list-text">「資產」類別包含資產、查詢及搜尋API。</block>
   <block id="bf9403ca9242451b7ef055feae5711bb" category="list-text">資產：列舉頂層物件、並擷取特定物件或物件階層。</block>
   <block id="8a471bf409138f673b99273d8183156b" category="list-text">查詢：擷取Cloud Insights 及管理各種查詢。</block>
   <block id="c9de14b5a5af8684e29a00e86f5ea9f1" category="list-text">匯入：匯入註釋或應用程式、並將其指派給物件</block>
   <block id="cfce3085ae85f2087671061798f85476" category="list-text">搜尋：找出特定物件而不知道物件的唯一ID或完整名稱。</block>
-  <block id="19d579e8bdc0964ff6c1b98d9f4077d2" category="list-text">資料收集類別可用於擷取及管理資料收集器。</block>
-  <block id="2e3e1cf2be708126495ee0409de4ffdc" category="list-text">資料擷取類別可用來擷取及管理擷取資料和自訂指標、例如來自Telegraf代理程式</block>
   <block id="c99f25325f86d3f0c79c43f7e35c908e" category="inline-link-macro">API Swagger文件</block>
-  <block id="66f4e9202f5d9c4adb625559f7dd6e37" category="paragraph">隨時間推移、可能會有其他類別和/或API可供使用。您可以在中找到最新的API資訊 <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
   <block id="7bc31a95e4a1ee6f8948af20440df0c6" category="inline-link-macro">使用者角色</block>
   <block id="f62c375c71b04a523593c5019e4aa100" category="section-title">庫存遍歷</block>
   <block id="f4f1eb3a3565596e151b069fef518185" category="paragraph">本節說明如何橫越Cloud Insights 階層架構的各種物件。</block>
@@ -166,7 +156,6 @@
   <block id="2103fdff3f83cde5feb37c19095d5b93" category="list-text">StoragePoolPerformance</block>
   <block id="358c65aac4f24ec63cc1575e33da13c1" category="list-text">PortPerformance</block>
   <block id="30b8ec388c3a122cf003beb59b6a428b" category="list-text">磁碟效能</block>
-  <block id="d1d72189f00074c010ad5cdaa0e7efe1" category="paragraph">效能指標有說明和類別、並包含效能摘要的集合。例如、延遲、流量和速率。</block>
   <block id="14342261b2648dd695d327dadfdc7c9b" category="paragraph">「效能摘要」包含說明、單位、樣本開始時間、範例結束時間、以及從單一效能計數器在一段時間範圍內（1小時、24小時、3天等）計算出的彙總值（目前、最小、最大、平均等）集合。</block>
   <block id="b3e848961f638d04022e0d810ded842a" category="inline-image-macro">API效能範例</block>
   <block id="379ee6ecdf21cb4dc0ca4a4c6bd911a7" category="paragraph"><block ref="379ee6ecdf21cb4dc0ca4a4c6bd911a7" category="inline-image-macro-rx" type="image"></block></block>
@@ -174,7 +163,6 @@
   <block id="0412de4a6d9fc6ce32676395cdbe7041" category="list-text">「自我」是物件的唯一URL</block>
   <block id="424af895bc123ba13a95c03efd8c3169" category="list-text">「歷程記錄」是時間戳記配對清單及計數器值對應清單</block>
   <block id="592193e048fbca7e89bbb5d2002328f7" category="list-text">每個其他的字典金鑰（「磁碟處理量」等）都是效能指標的名稱。</block>
-  <block id="9291545b28f5f21e3694eb57db45da2c" category="paragraph">每種效能資料物件類型都有一組獨特的效能指標。例如、虛擬機器效能物件支援「磁碟處理量」作為效能指標。每個支援的效能指標都是指標字典中所顯示的特定「效能類別」。支援本文稍後列出的多種效能指標類別。Cloud Insights每個效能指標字典也會有「說明」欄位、此欄位是人類可讀取的效能指標說明、以及一組效能摘要計數器項目。</block>
   <block id="5dbe2140a5eccbbcda4fa6164a08c479" category="paragraph">「效能摘要」計數器是效能計數器的摘要。它會顯示典型的彙總值、例如計數器的最小值、最大值和平均值、以及最新觀察值、彙總資料的時間範圍、計數器的單位類型和資料臨界值。只有臨界值為選用項目、其餘屬性為必填項目。</block>
   <block id="502bc43530a89d32bddc256e33becd06" category="paragraph">這些類型的計數器均提供效能摘要：</block>
   <block id="274c3d5b2a32834eedd5b2684b3cc752" category="list-text">閱讀–讀取作業摘要</block>
@@ -203,7 +191,6 @@
   <block id="85aa7a55c03d4a7d205562096674066a" category="inline-image-macro">儲存資源池容量範例</block>
   <block id="6f0ac10b550f7a116f9d902d16213da3" category="paragraph"><block ref="6f0ac10b550f7a116f9d902d16213da3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109d056fe4a5bfafadc37d21bc6e5654" category="section-title">使用搜尋來查詢物件</block>
-  <block id="780b9434cb2ebb62e93b92701c3b13b0" category="paragraph">搜尋API是系統的簡單入口點。API的唯一輸入參數是自由格式字串、而產生的Json則包含分類結果清單。類別與庫存不同、例如儲存區、主機、資料存放區等。每個類別都會包含符合搜尋條件之類別類型的物件清單。</block>
   <block id="01ebbdd0a50dbc56d987ceb25032be7b" category="paragraph">支援可延伸（廣泛開放）的解決方案、可與協力廠商協調、業務管理、變更控制和票證系統、以及自訂的CMDB整合功能整合。Cloud Insights</block>
   <block id="b64fa7905e81fd64c5b00971051ce0f8" category="paragraph">Cloud Insight的RESTful API是整合的主要點、可讓使用者輕鬆有效地移動資料、並讓使用者無縫存取資料。</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">設定NetApp Cloud Connection以供ONTAP 採用NetApp 9.9以上資料收集器</block>
@@ -8619,7 +8606,6 @@
   <block id="bbe116aac998e7707bfddff610136f34" category="cell">Kubernetes命名空間不足</block>
   <block id="639cd114dad5880c94752e290d36353a" category="cell">_Kubernetes Namspaces Outout of space_ Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。<block ref="91569d71925d0cb55a46b7a5e8a36cb5" category="inline-link-macro-rx"></block></block>
   <block id="9bfa6f1e81e8e1a4af8a2057b85a0257" category="cell">「受壓力影響的共享資源」見解使用AI / ML自動識別資源爭用造成環境效能降級的位置、強調任何受影響的工作負載、並提供建議的補救行動、讓您更快解決效能問題。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
-  <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">資料收集監視器</block>
   <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">檢查資料收集器或目標系統的組態。請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
   <block id="3f2608784f855ab79eaabba7e20db8cd" category="paragraph">我們利用先進的Kubernetes監控和叢集資源管理器、讓您更容易上手。Cloud Insights</block>
@@ -8843,8 +8829,6 @@
   <block id="d11a7a694c023537b8fd43857dd651f7" category="cell">如果您的Kubernetes叢集正在執行Pod安全性原則（PSP）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前支援PSP的NKMO：1.解除安裝先前的監控操作員：kubecl刪除代理程式監控-netapp -監 控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理程式管理員角色2。部署最新版本的監控操作員。</block>
   <block id="2eb2fe69b25b42c01f1dd6ed820e4ef3" category="cell">我在嘗試部署NKMO時遇到問題、我使用的是PSP。</block>
   <block id="ffc85f5eab15bc118cab588bb4b4d3eb" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用POS安全性原則、並允許NKMO部署。請使用下列命令進行確認：kubectl Get PSP（應顯示Pod安全性原則已移除）kbecl Get all -n &lt;name-space&gt;</block>
-  <block id="641244a546c89759b8e5c60efd75767d" category="paragraph">此外Cloud Insights 、您的技術也很出色 <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 將決定您可以存取哪些API。使用者和來賓角色的權限比管理員角色少。例如、如果您在「可觀察性」中扮演「系統管理員」角色、但在「報告」中扮演「使用者」角色、則可以管理「資料倉儲」以外的所有API類型。</block>
-  <block id="0661e5cc01fe7da17bc8e2d8e2e34221" category="paragraph">請注意、使用者存取的API類別也取決於 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 每Cloud Insights 個功能集（可觀察性、安全性、報告）都有這些功能集。</block>
   <block id="98d8ebff3e8aa04aa14171f6564f1ec7" category="paragraph">所有目前Cloud Insights 的功能均可取得。請觀看此空間以瞭解未來的預覽。</block>
   <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
   <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">更新外觀！Cloud Insights</block>
@@ -9045,4 +9029,6 @@
   <block id="860cea525f63406af55925d01de59c97" category="paragraph">如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您已購買NetApp Astra Control Center、則Astra Control Center授權序號可用於識別Cloud Insights 在《》中的訂閱內容。此為_權利ID _。Cloud Insights</block>
   <block id="5c42bfffed923b7136ae5aee981826dd" category="list-text">選取*儀表板&gt;儀表板*</block>
   <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有「系統管理員」或「帳戶擁有者」角色的使用者可以從儀表板庫匯入。</block>
+  <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全性最佳實務做法</block>
+  <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">利用支援功能、您可在環境中突顯資料點和趨勢、並可輸入任何有效的電子郵件地址作為警示收件者。Cloud Insights Cloud Insights如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
 </blocks>
