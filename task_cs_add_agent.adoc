@@ -16,6 +16,7 @@ summary: 新增Cloud Secure 功能代理程式
 == 開始之前
 
 * 安裝、執行指令碼及解除安裝時、都需要使用Sudo權限。
+* 安裝代理程式時、會在機器上建立本機使用者_cssy__和本機群組_cssy__。如果權限設定不允許建立本機使用者、而需要Active Directory、則必須在Active Directory伺服器中建立使用者名稱為_cssy__的使用者。
 
 
 

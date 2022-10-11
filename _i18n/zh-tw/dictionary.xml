@@ -9032,4 +9032,5 @@
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全性最佳實務做法</block>
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">利用支援功能、您可在環境中突顯資料點和趨勢、並可輸入任何有效的電子郵件地址作為警示收件者。Cloud Insights Cloud Insights如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">簽署的Checksum檔案（結尾為sh256.signed或sh256.ps1）</block>
+  <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安裝代理程式時、會在機器上建立本機使用者_cssy__和本機群組_cssy__。如果權限設定不允許建立本機使用者、而需要Active Directory、則必須在Active Directory伺服器中建立使用者名稱為_cssy__的使用者。</block>
 </blocks>
