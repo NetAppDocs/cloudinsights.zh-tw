@@ -4297,15 +4297,11 @@
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">確切值應在引號內：範例：「searchtext」</block>
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">萬用字元字串不得包含引號：範例：searchtext、\*searchtext*會篩選任何包含「searchtext」的字串。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">字串加上字首、例如：searchtext*、會搜尋以「searchtext」開頭的任何字串。</block>
-  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">排序取證活動記錄資料</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">您可以依時間、使用者、來源IP、活動、路徑_和實體類型_來排序活動記錄資料。根據預設、表格會依遞減的_Timed_順序排序、表示最新的資料會先顯示。「_Device」和「_Protocol」欄位的排序功能已停用。</block>
-  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">匯出所有活動</block>
   <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">您可以按一下「活動記錄」表格上方的「_Export」（匯出）按鈕、將活動記錄匯出至.CSV檔案。請注意、只會匯出前10、000筆記錄。</block>
-  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">所有活動的欄選擇</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">「_All activity」（全部活動）表格預設會顯示選取欄。若要新增、移除或變更欄、請按一下表格右側的齒輪圖示、然後從可用欄清單中選取。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">活動選擇器、寬=30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">活動記錄保留</block>
   <block id="105063dce8eb13075f451e0ddc3ac046" category="paragraph">活動記錄保留13個月、以供動態Cloud Secure 的不活躍的地方使用。</block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">在「All Activities」（所有活動）表格的「User」（使用者）欄下、使用者名稱顯示為：「LDAP:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817”」或「LDAP:Default：80038003」。</block>
   <block id="0c4a0e9a569be65e94908f9222457694" category="inline-link-macro">使用者目錄收集器疑難排解</block>
@@ -8886,7 +8882,6 @@
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20及更新版本</block>
   <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">代理程式在安裝後未執行。_Systemctl狀態cloudsecure-agent.service_顯示下列項目：[root@demo ~]# systemctl狀態cloudsecure-agent.service agent.service–Cloud Secure 已載入支援的Agent DaemonService：Loaded（usr/lib/systemd/system/cloudsecure-agent.service;已啟用；Vendor preset：停用）Active：啟動（自動重新啟動）（結果：exit-code-Code）自Tue 2021：08：21：12：26；雙子程序：26；2s前：25 x ecbash/cloudbid=25 x 9=clouvid/clouecbid/bid/pin安全登入/登入程式碼/clouecbid/clam/pin（ 25889（code=eded、STATUS=126）、08月03日21：12：26展示系統d[1]：cloudsecure-agent.service:主要程序已結束、code=ed退出、STATUS=126/n/a 8月03日21：12：26展示系統d[1]：單位cloudsecure-agent.service進入失敗狀態。03年8月21日12：26示範系統d[1]：cloudsecure-agent.service失敗。</block>
   <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">這可能是因為_cssys_使用者可能沒有安裝權限而失敗。如果/opp/netapp是NFS掛載、而且_cssy__使用者無法存取此資料夾、安裝將會失敗。_cssy__是Cloud Secure 由該安裝程式所建立的本機使用者、可能沒有存取掛載共用的權限。您可以嘗試使用_cssys_使用者來存取/opp/NetApp/cloudsec/agent/in/cloudseced-Agent來檢查此問題。如果傳回「權限遭拒」、表示安裝權限不存在。安裝在機器本機的目錄上、而非掛載的資料夾。</block>
-  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensics頁面中篩選器的適用性</block>
   <block id="33b1e192582408583865dca3abd0c740" category="cell">適用於哪些篩選條件？</block>
   <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">不適用於哪些篩選器</block>
   <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">*（星號）</block>
@@ -8903,7 +8898,6 @@
   <block id="323be35d43a1b0a294bddc8533167538" category="cell">使用者、網域、使用者名稱、路徑、實體類型、 原始路徑、Volume</block>
   <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">傳回所有開頭為「AutoRansomUser4_03162022」的項目</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">網域</block>
-  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路徑/原始路徑搜尋</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">包含/不含/的搜尋結果會有所不同</block>
   <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
   <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">工作</block>
@@ -9033,4 +9027,16 @@
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">利用支援功能、您可在環境中突顯資料點和趨勢、並可輸入任何有效的電子郵件地址作為警示收件者。Cloud Insights Cloud Insights如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">簽署的Checksum檔案（結尾為sh256.signed或sh256.ps1）</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安裝代理程式時、會在機器上建立本機使用者_cssy__和本機群組_cssy__。如果權限設定不允許建立本機使用者、而需要Active Directory、則必須在Active Directory伺服器中建立使用者名稱為_cssy__的使用者。</block>
+  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用Cloud Insights NetApp ONTAP 的「資料流遙測」來設定功能</block>
+  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 資料流遙測</block>
+  <block id="458a37db2666885e234720ccdea58253" category="paragraph">如需最新資訊、請參閱 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 資料收集器頁面。</block>
+  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 標頭*雜訊抑制*可篩選使用者在過去2小時內建立的檔案。它也可用來篩選使用者存取的暫存檔（例如、.tmp檔案）。</block>
+  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fca2</block>
+  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">=排序取證活動歷程記錄資料</block>
+  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">=匯出所有活動</block>
+  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">=所有活動的欄選擇</block>
+  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">=活動記錄保留</block>
+  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensics頁面中篩選器的適用性</block>
+  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路徑/原始路徑搜尋</block>
+  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=疑難排解</block>
 </blocks>
