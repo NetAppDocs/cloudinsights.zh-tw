@@ -9007,7 +9007,6 @@
   <block id="2ba1eaa3efea8566de516f83331d1ca0" category="list-text">nfs4.ops[share]</block>
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">nfs4-1.ops[share]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">如果控制器無法擷取任何或全部這些內容、可能導致Cloud Insights 「內部磁碟區」上的工作負載沒有或報告不足。</block>
-  <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">效能存取驗證：在擷取裝置的網頁瀏覽器中、前往\https://&lt;SMI-S主機名稱或IP：5989/ecomconfig,其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
   <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">使用叢集IP、SVM名稱及叢集管理使用者名稱與密碼。*這是建議的方法。_*</block>
   <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">代理程式一開始是透過Proxy伺服器連線、並在代理程式安裝期間設定代理。現在Proxy伺服器已經變更。如何變更代理程式的Proxy組態？</block>
   <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">您可以編輯agent.properties以新增Proxy詳細資料。請遵循下列步驟：1.變更至內含內容檔案的資料夾：CD /opp/netapp/cloudsec/conf2。使用您最愛的文字編輯器、開啟_agent.properties_檔案進行編輯。3.新增或修改下列行：agent_proxy_host=scspa1950329001.vm.netapp.com agent_proxy_port=80 agent_proxy_user=pxuser agent_proxy_password=pass12344.儲存檔案。5.重新啟動代理程式：Sudo systemctl重新啟動cloudsecure-agent.service</block>
@@ -9039,4 +9038,5 @@
   <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensics頁面中篩選器的適用性</block>
   <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路徑/原始路徑搜尋</block>
   <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=疑難排解</block>
+  <block id="9472f5553652a76fc53e58f1b861b32e" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
 </blocks>
