@@ -43,3 +43,4 @@ link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["*影片*：A
 
 | 疑難排解 | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["*影片*：疑難排解"] 
 |===
+此外、還能與其他工具整合Cloud Secure 。例如、 link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["請參閱本指南"] 與Splunk整合。

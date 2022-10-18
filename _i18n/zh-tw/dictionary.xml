@@ -9038,5 +9038,7 @@
   <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensics頁面中篩選器的適用性</block>
   <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路徑/原始路徑搜尋</block>
   <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=疑難排解</block>
-  <block id="9472f5553652a76fc53e58f1b861b32e" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
+  <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">請參閱本指南</block>
+  <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">此外、還能與其他工具整合Cloud Secure 。例如、 <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 與Splunk整合。</block>
+  <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_\https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
 </blocks>
