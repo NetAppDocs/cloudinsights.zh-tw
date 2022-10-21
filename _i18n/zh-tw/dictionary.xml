@@ -1007,12 +1007,6 @@
   <block id="c8e05aea5e9d3735dfc4d0eb433a959e" category="paragraph">按一下清單中的實體、會開啟該實體的總覽頁面、顯示實體的設定檔、其中包含名稱、類型、裝置名稱、最常存取的位置IP和路徑、以及實體行為、例如使用者、IP、 以及上次存取實體的時間。</block>
   <block id="4e65544840cf1a76b8d7ff99e3d3c032" category="inline-image-macro">實體總覽頁面</block>
   <block id="b7919853e15168e340641df87996f534" category="paragraph"><block ref="b7919853e15168e340641df87996f534" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7d30769516b52d1445b1bf2d7d9557f4" category="summary">您可以輕鬆地從Cloud Insights NetApp內部切換至其他NetApp Cloud Central產品。</block>
-  <block id="24f46fe1d8ee8559ee63a33de2543943" category="doc">改用其他Cloud Central產品</block>
-  <block id="fccd52d76913d4b183b163d6e5172239" category="paragraph">您可以按一下* Cloud Centr*功能表、然後從列出的NetApp Cloud產品中選取、以切換至其他NetApp雲端產品。您也可以選擇前往Cloud Central入口網站本身。</block>
-  <block id="dcfb05bdbd07b63ad902c550de53ea03" category="inline-image-macro">其他雲端產品</block>
-  <block id="7d43cb32851afdb4974a9d3020552cb2" category="paragraph"><block ref="7d43cb32851afdb4974a9d3020552cb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dc4ab3739b0ab1192c8e357f6d629754" category="paragraph">系統會自動驗證並登入所選的雲端產品。</block>
   <block id="6d225eb97f4a253f028dffb578250de4" category="summary">查詢高I/O密度時、您想要排除根磁碟區。</block>
   <block id="1ab57582b962bd9a8bcc5c1ad73a3370" category="doc">確保IO密度報告僅說明內部資料磁碟區</block>
   <block id="7fd61f2044d1ea7e162156b49842f9b8" category="paragraph">NetApp根Volume包含用於管理儲存系統的目錄和組態檔案。查詢高I/O密度時、您想要排除這些根磁碟區。</block>
@@ -9041,4 +9035,28 @@
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">請參閱本指南</block>
   <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">此外、還能與其他工具整合Cloud Secure 。例如、 <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 與Splunk整合。</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_\https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
+  <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">整合ONTAP 了功能完善的勒索軟體保護功能</block>
+  <block id="d444ab62db0a690e837242dfd8b87acc" category="paragraph">此功能使用NAS（NFS和SMB）環境中的工作負載分析功能ONTAP 、主動偵測及警告可能表示勒索軟體攻擊的異常檔案內活動。</block>
+  <block id="383c3a61ab1ee0baf884d10441d965bd" category="paragraph">如需有關ARP的其他詳細資料和授權要求、請參閱 <block ref="aaf4977c10e4402f9516d11af3df8368" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a90b843204a7e572f3f003b57df0e34" category="paragraph">與NetApp整合以接收ARP事件、並提供額外的分析和自動回應層。Cloud Secure ONTAP</block>
+  <block id="7f296999dd5a19bdac141d3c5458bf09" category="paragraph">從資訊區接收到Arp事件、並採取下列行動：Cloud Secure ONTAP</block>
+  <block id="934b109c1d19ab46820aa2d388697f4e" category="list-text">將磁碟區加密事件與使用者活動建立關聯、以識別造成損害的原因。</block>
+  <block id="bb7256da73d87b6336cf1dc5342a8692" category="list-text">實作自動回應原則（若已定義）</block>
+  <block id="ac3108149bf9197801e00b41c3c7cb34" category="list-text">提供鑑識功能：</block>
+  <block id="c5c2c046e5a8aeae7862975fda61f862" category="list-text">允許客戶進行資料外洩調查。</block>
+  <block id="7355572f8cd61d6b84bd549a6b19d75b" category="list-text">找出哪些檔案受到影響、有助於更快恢復並進行資料外洩調查。</block>
+  <block id="3c6aa4f4d8c4e33eefaec63c43ad62bb" category="list-text">最低ONTAP 版本：9.11.1</block>
+  <block id="f97f5685fc902a89d150e9c654602c43" category="list-text">啟用了ARP的磁碟區。如需啟用ARP的詳細資訊、請參閱 <block ref="9e499af99dc8d0d5835de8f33e6a6797" category="inline-link-macro-rx"></block>。必須透過OnCommand 「支援系統管理程式」來啟用ARP。無法啟用ARP。Cloud Secure</block>
+  <block id="b33ce104a861da9844f5dfaeb51c79eb" category="list-text">應透過叢集IP新增此收集器。Cloud Secure</block>
+  <block id="77daf866423aa56487a2f9b637628664" category="list-text">此功能需要叢集層級認證、才能正常運作。換句話說、新增SVM時必須使用叢集層級認證。</block>
+  <block id="d3967f941a1672db445a1da6ef843e2e" category="section-title">需要使用者權限</block>
+  <block id="76b59b81477976d5b5bed701e6ff22b9" category="paragraph">如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便從ONTAP SURO收集與Arp相關的資訊。</block>
+  <block id="ba95389dce56e78ab6a308128620b033" category="paragraph">對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：</block>
+  <block id="20cdc94cc7059da994e4c0a98a544c8f" category="section-title">警示範例</block>
+  <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">下列為因ARP事件而產生的警示範例：</block>
+  <block id="ba022000977a1c06f95377443d9b2500" category="inline-image-macro">Arp範例畫面ONTAP</block>
+  <block id="d12fcb220971d8d0a7e1d474102c977e" category="paragraph"><block ref="d12fcb220971d8d0a7e1d474102c977e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高可信度橫幅表示攻擊顯示勒索軟體行為及檔案加密活動。加密檔案圖表會指出Arp解決方案偵測到磁碟區加密活動的時間戳記。</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
+  <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">如果SVM不是Cloud Secure 由SVM監控、但ONTAP 有由Sfis產生的ARP事件、Cloud Secure 則事件仍會由Sfin接收並顯示。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。</block>
 </blocks>

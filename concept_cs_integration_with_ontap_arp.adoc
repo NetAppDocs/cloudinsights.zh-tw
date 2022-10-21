@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_integration_with_ontap_arp.html 
+summary: 在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率 
+keywords: event, checker, rate, sizing 
+---
+= 整合ONTAP 了功能完善的勒索軟體保護功能
+:allow-uri-read: 
+
+
+[role="lead"]
+此功能使用NAS（NFS和SMB）環境中的工作負載分析功能ONTAP 、主動偵測及警告可能表示勒索軟體攻擊的異常檔案內活動。
+
+如需有關ARP的其他詳細資料和授權要求、請參閱 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["請按這裡"]。
+
+與NetApp整合以接收ARP事件、並提供額外的分析和自動回應層。Cloud Secure ONTAP
+
+從資訊區接收到Arp事件、並採取下列行動：Cloud Secure ONTAP
+
+. 將磁碟區加密事件與使用者活動建立關聯、以識別造成損害的原因。
+. 實作自動回應原則（若已定義）
+. 提供鑑識功能：
++
+** 允許客戶進行資料外洩調查。
+** 找出哪些檔案受到影響、有助於更快恢復並進行資料外洩調查。
+
+
+
+
+
+
+== 先決條件
+
+. 最低ONTAP 版本：9.11.1
+. 啟用了ARP的磁碟區。如需啟用ARP的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["請按這裡"]。必須透過OnCommand 「支援系統管理程式」來啟用ARP。無法啟用ARP。Cloud Secure
+. 應透過叢集IP新增此收集器。Cloud Secure
+. 此功能需要叢集層級認證、才能正常運作。換句話說、新增SVM時必須使用叢集層級認證。
+
+
+
+
+== 需要使用者權限
+
+如果您使用叢集管理認證、則不需要新的權限。
+
+如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便從ONTAP SURO收集與Arp相關的資訊。
+
+對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：
+
+....
+security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+....
+
+
+== 警示範例
+
+下列為因ARP事件而產生的警示範例：
+
+image:CS_ONTAP_ARP_EXAMPLE.png["Arp範例畫面ONTAP"]
+
+高可信度橫幅表示攻擊顯示勒索軟體行為及檔案加密活動。加密檔案圖表會指出Arp解決方案偵測到磁碟區加密活動的時間戳記。
+
+
+
+== 限制
+
+如果SVM不是Cloud Secure 由SVM監控、但ONTAP 有由Sfis產生的ARP事件、Cloud Secure 則事件仍會由Sfin接收並顯示。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。
