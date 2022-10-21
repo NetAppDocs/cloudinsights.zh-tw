@@ -9069,4 +9069,6 @@
   <block id="6ae223e6c671cefaa47a470a8e528da8" category="list-text">實作自動回應原則來封鎖攻擊、</block>
   <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">識別哪些檔案受到影響、有助於更快恢復並進行資料外洩調查。</block>
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">不受依賴的勒索軟體保護整合ONTAP</block>
+  <block id="0ed16a106cacc7c64648558f5ce3f2fc" category="section-title">測試Webhook</block>
+  <block id="0da0da408a0ca0569c73b8f7674069a4" category="paragraph">按一下「測試Webhook」按鈕以測試連線。請注意、這會根據選取的「方法」、將「訊息本文」（不含替代）傳送至定義的「URL」。另請注意、在「參數：它們是什麼、我該如何使用？」 部分：按一下「測試Webhook」按鈕時、會執行「非」替換。</block>
 </blocks>

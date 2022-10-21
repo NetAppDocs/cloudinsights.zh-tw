@@ -56,6 +56,12 @@ image:Webhook_Default_Parameters.png["預設Webhook參數Cloud Insights"]
 
 
 
+=== 測試Webhook
+
+按一下「測試Webhook」按鈕以測試連線。請注意、這會根據選取的「方法」、將「訊息本文」（不含替代）傳送至定義的「URL」。另請注意、在「參數：它們是什麼、我該如何使用？」 部分：按一下「測試Webhook」按鈕時、會執行「非」替換。
+
+
+
 === 參數：這些參數是什麼？我該如何使用？
 
 警示參數是根據警示填入的動態值。例如、-%%TrigeredOn%_參數將被觸發警示的物件取代。
