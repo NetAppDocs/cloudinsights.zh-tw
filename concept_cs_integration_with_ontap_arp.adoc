@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_integration_with_ontap_arp.html 
-summary: 在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率 
-keywords: event, checker, rate, sizing 
+summary: 搭配使用VMware的勒索軟體保護功能、可改善勒索軟體偵測功能。Cloud Secure ONTAP 
+keywords: ransomware, ARP, Protection, Security 
 ---
 = 整合ONTAP 了功能完善的勒索軟體保護功能
 :allow-uri-read: 

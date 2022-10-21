@@ -12,6 +12,24 @@ NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些�
 
 
 
+== 2022年10月
+
+
+
+=== 透過整合不含VMware的勒索軟體保護功能、提供更好、更準確的勒索軟體偵測功能ONTAP
+
+利用整合功能與VMware整合、改善勒索軟體偵測功能Cloud Secure ONTAP link:concept_cs_integration_with_ontap_arp.html["自主勒索軟體保護"] （Arp）。
+
+針對潛在的Volume檔案加密活動、接收到一些不實的Arp事件、Cloud Secure ONTAP 以及
+
+* 將磁碟區加密事件與使用者活動建立關聯、以識別造成損害的人員、
+* 實作自動回應原則來封鎖攻擊、
+* 識別哪些檔案受到影響、有助於更快恢復並進行資料外洩調查。
+
+
+'''
+
+
 == 2022年9月
 
 

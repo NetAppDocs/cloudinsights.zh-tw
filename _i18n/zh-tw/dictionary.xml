@@ -9059,4 +9059,14 @@
   <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高可信度橫幅表示攻擊顯示勒索軟體行為及檔案加密活動。加密檔案圖表會指出Arp解決方案偵測到磁碟區加密活動的時間戳記。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">如果SVM不是Cloud Secure 由SVM監控、但ONTAP 有由Sfis產生的ARP事件、Cloud Secure 則事件仍會由Sfin接收並顯示。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。</block>
+  <block id="500021752029d6f358d3f431decf2194" category="summary">搭配使用VMware的勒索軟體保護功能、可改善勒索軟體偵測功能。Cloud Secure ONTAP</block>
+  <block id="4c4518d4c20175eb4082a6b33eb4badb" category="section-title">2022年10月</block>
+  <block id="d9ed23066a8423b647abeae97c6e8d89" category="section-title">透過整合不含VMware的勒索軟體保護功能、提供更好、更準確的勒索軟體偵測功能ONTAP</block>
+  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link-macro">自主勒索軟體保護</block>
+  <block id="ed7f4a0571f6c21909209a2c991883eb" category="paragraph">利用整合功能與VMware整合、改善勒索軟體偵測功能Cloud Secure ONTAP <block ref="592611ec20f061ec3c5a97f7d83bfebc" category="inline-link-macro-rx"></block> （Arp）。</block>
+  <block id="be2a9c6be9b8c3dee7de8e445589e2ee" category="paragraph">針對潛在的Volume檔案加密活動、接收到一些不實的Arp事件、Cloud Secure ONTAP 以及</block>
+  <block id="abc85a341cbf25c2d9f1f3a47072b87d" category="list-text">將磁碟區加密事件與使用者活動建立關聯、以識別造成損害的人員、</block>
+  <block id="6ae223e6c671cefaa47a470a8e528da8" category="list-text">實作自動回應原則來封鎖攻擊、</block>
+  <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">識別哪些檔案受到影響、有助於更快恢復並進行資料外洩調查。</block>
+  <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">不受依賴的勒索軟體保護整合ONTAP</block>
 </blocks>
