@@ -50,15 +50,13 @@ Webhook通路執行個體由下列元素組成：
 
 image:Webhook_Example_Slack.png["Webhook範例"]
 
+為每個欄位輸入適當的資訊、並在完成時按一下「Save（儲存）」。
+
+您也可以按一下「測試Webhook」按鈕來測試連線。請注意、這會根據所選的方法、將「Message Body（訊息本文）」（不含替代）傳送至定義的URL。另請注意、在「參數：它們是什麼、我該如何使用？」 部分：按一下「Test Webhook」（測試Webhook）按鈕時、會執行「_not」（非）替換；此按鈕會傳送有效負載、顯示「%」替換、但不會以資料取代。
+
 由許多預設參數組成的Webhooks。Cloud Insights此外、您也可以建立自己的自訂參數或機密。
 
 image:Webhook_Default_Parameters.png["預設Webhook參數Cloud Insights"]
-
-
-
-=== 測試Webhook
-
-按一下「測試Webhook」按鈕以測試連線。請注意、這會根據選取的「方法」、將「訊息本文」（不含替代）傳送至定義的「URL」。另請注意、在「參數：它們是什麼、我該如何使用？」 部分：按一下「測試Webhook」按鈕時、會執行「非」替換。
 
 
 
