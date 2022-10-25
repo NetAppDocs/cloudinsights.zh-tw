@@ -88,6 +88,8 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Kubernetes叢集頁面
       url: "/kubernetes_cluster_detail.html"
+    - title: 精選資訊ONTAP
+      url: "/concept_ontap_essentials.html"
   - title: 使用查詢
     entries:
     - title: 查詢資產
