@@ -12,5 +12,3 @@ keywords: coming soon, preview,
 以_Preview_的方式強調新功能。Cloud Insights預覽功能可在有限的環境或有限容量下使用。
 
 如果您有興趣預覽其中一項或多項功能、請聯絡您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售團隊"] 以取得更多資訊。
-
-所有目前Cloud Insights 的功能均可取得。請觀看此空間以瞭解未來的預覽。
