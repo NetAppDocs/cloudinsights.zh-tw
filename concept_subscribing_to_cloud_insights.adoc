@@ -98,7 +98,7 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 
 == 試用版
 
-當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。
+當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。所有功能Cloud Insights ,標準版 可在此試用期間取得。
 
 您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*產品支援*"] 選項：
 
@@ -106,6 +106,16 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 
 
 NOTE: 如果您需要更多時間來評估Cloud Insights VMware、而且您的試用期設定為4天或更短、您可以將試用期延長30天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。
+
+
+
+== 透過AWS Marketplace試用
+
+您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace免費試用版可讓您存取Cloud Insights VMware ,Premium Edition 試用期為33天、最多可達499天 ,託管單位 （MU）。
+
+附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。
+
+AWS Marketplace免費試用版無法延長。在試用期間、Cloud Insights 您可以Cloud Insights 隨時前往*管理->訂閱*頁面、降級至VMware Basic Edition訂閱、或變更為付費版或Premium Edition訂閱。
 
 
 

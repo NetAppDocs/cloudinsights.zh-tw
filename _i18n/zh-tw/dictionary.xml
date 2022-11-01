@@ -8913,7 +8913,6 @@
   <block id="d45fc0c2a28126623498664c1e032858" category="list-text">如果您使用Proxy、則必須遵循*設定RHEL/CentOS* Proxy支援一節中的指示。</block>
   <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">如果您使用的是代理服務器，則必須按照*配置Ubuntu / DEBIAN*代理支持一節中的說明操作。</block>
   <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">如果您使用的是Proxy、則必須遵循「*設定MacOS的Proxy支援」一節中的指示。</block>
-  <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。</block>
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。</block>
   <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝</block>
@@ -9075,4 +9074,10 @@
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">編輯NetApp Kubernetes監控操作員。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。</block>
+  <block id="0a8446aea76ea046e4a350b7fcb33809" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。所有功能Cloud Insights <block ref="0238d81be08586a15b3db75855b659b7" category="inline-xref-macro-rx"></block> 可在此試用期間取得。</block>
+  <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">透過AWS Marketplace試用</block>
+  <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
+  <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace免費試用版可讓您存取Cloud Insights VMware <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> 試用期為33天、最多可達499天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
+  <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。</block>
+  <block id="9610f5475b4256230dbfd8bf12bacab1" category="paragraph">AWS Marketplace免費試用版無法延長。在試用期間、Cloud Insights 您可以Cloud Insights 隨時前往*管理-&gt;訂閱*頁面、降級至VMware Basic Edition訂閱、或變更為付費版或Premium Edition訂閱。</block>
 </blocks>
