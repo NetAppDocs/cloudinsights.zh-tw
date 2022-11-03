@@ -25,9 +25,6 @@ summary: 有了這個功能、您就能在疑似遭破壞的情況下限制使�
 
 此功能需要叢集層級認證、才能正常運作。
 
-
-NOTE: 使用Amazon FSX資料收集器時、SMB的使用者封鎖功能無法終止目前的使用者工作階段。請參閱 ,疑難排解 章節以取得更多資訊。
-
 如果您使用叢集管理認證、則不需要新的權限。
 
 如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便封鎖使用者。
@@ -40,7 +37,6 @@ security login role create -role csrole -cmddirname set -access all
 security login role create -role csrole -cmddirname "vserver cifs session" -access all
 security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
 security login role create -role csrole -cmddirname "vserver name-mapping" -access all
-security login role create -role csrole -cmddirname "cluster show" -access readonly
 ....
 
 
@@ -194,7 +190,4 @@ Position Hostname         IP Address/Mask
 
 
 | 無法修改原則。原因：未授權使用該命令。 | 請檢查是否使用CsUser、是否會如上所述授予使用者權限。 
-
-
-| 我看到錯誤：svm1：使用者網域\user01的現有CIFS工作階段未關閉。此錯誤會顯示在警示詳細資料頁面的「採取行動」區段、以及警示與使用者清單頁面下方的「存取限制歷程記錄」。看到此錯誤時、使用者目前的工作階段不會關閉、但是在連結期間到期之前、使用者將會遭到任何新工作階段的封鎖。 | 這是Amazon FSX的已知問題。無法關閉現有的SMB工作階段。Cloud Secure目前沒有任何因應措施可封鎖Amazon FSX現有的SMB工作階段。如果收集器類型為CVO或ONTAP 不一致、請務必確認所述的權限正確無誤 ,先決條件 區段。 
 |===
