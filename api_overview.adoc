@@ -283,27 +283,19 @@ API存取權杖有到期日。當API存取權杖過期時、使用者需要產�
 
 請注意、這些命令使用預設命名空間「NetApp-Monitoring」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。
 
-* 編輯Telegraf ConfigMap（CM）、並以新的API權杖取代舊API權杖的所有執行個體。
+附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。
+
+* 編輯NetApp Kubernetes監控操作員。
++
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+* 修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。
 +
 ....
-kubectl -n netapp-monitoring edit cm
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
+spec:
+…
+  output-sink:
+  - api-key: <NEW_API_TOKEN>
 ....
-* 編輯Telegraf demonSet（DS）和ReplicaSet（RS）、並以新的API權杖取代舊API權杖的所有執行個體。
-+
-....
-kubectl -n netapp-monitoring edit ds telegraf-ds
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
-kubectl -n netapp-monitoring edit rs telegraf-rs
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
-....
-* Kubernetes控制器會自動重新啟動Telegraf DS Pod。
-* 重新啟動Telegraf RS Pod
-+
- kubectl -n netapp-monitoring delete pod <telegraf-rs-pod>
 
 
 
