@@ -1743,8 +1743,6 @@
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">*到這裡*</block>
-  <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">如果您是在OpenShift 4.6 - 4.8上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。</block>
-  <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">如果您使用的是Proxy、請遵循*設定Kubernetes*的Proxy支援一節中的指示。</block>
   <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">您必須擁有建立Kubernetes叢集角色和角色繫結的權限。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">監控功能僅安裝在Linux節點上</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">支援監控執行Linux的Kubernetes節點、方法是指定Kubernetes節點選取器、在這些平台上尋找下列Kubernetes標籤：Cloud Insights</block>
@@ -1753,47 +1751,24 @@
   <block id="f1f45371fb9bb18dae05a3bbc8c3fbc0" category="cell">Kubernetes.IO/OS = Linux</block>
   <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + Catchs.IO做為協調/ Kubernetes平台</block>
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">Catin.IO/OS = Linux</block>
-  <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">NetApp Kubernetes監控操作員安裝</block>
   <block id="640dbe189d66fa73b9cedb44a9424843" category="inline-image-macro">以操作者為基礎的安裝</block>
-  <block id="4a64a7036f6051830b5665f656513166" category="paragraph"><block ref="4a64a7036f6051830b5665f656513166" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在Kubernetes上安裝NetApp Kubernetes監控操作員代理程式的步驟：</block>
-  <block id="bff23b25f3e125bae18792a45a51c015" category="list-text">輸入叢集名稱和命名空間。</block>
   <block id="5b82931325db3333d72e29bd0c4c7b88" category="list-text">一旦輸入這些程式碼、您就可以複製代理程式安裝程式程式片段</block>
   <block id="69fe7b86f073ff27417a8bb4f40bf251" category="list-text">按一下按鈕、將此片段複製到剪貼簿。</block>
-  <block id="60359575c1541888619045ed924fc983" category="list-text">將程式碼片段貼到_bash_視窗中並執行。</block>
   <block id="ecf5918b75414ec8e1874242a839d017" category="list-text">安裝會自動繼續進行。完成後、按一下「完成設定」按鈕。</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift指示</block>
-  <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">如果您是在OpenShift 4.6 - 4.8上執行、則必須變更「特殊權限模式」設定。執行下列命令以開啟代理程式進行編輯。如果您使用的命名空間不是「NetApp監控」、請在命令列中指定該命名空間：</block>
   <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">在檔案中、將_特權 模式：假_變更為_權限模式：真_</block>
-  <block id="d19324560c8bbab552153762aa6318fa" category="paragraph">若要為監控操作員設定Proxy、請執行下列步驟。</block>
   <block id="c0c113f7f05cafdbe990d465db2be0e5" category="paragraph">首先、開啟_agent-監 控-NetApp_檔案進行編輯：</block>
-  <block id="0414c00192a7623b809e536f36865665" category="paragraph">在此檔案的_spec__區段中、新增下列程式碼區塊：</block>
   <block id="8437ed95b9fd8dd8ea826c978bfd9d55" category="section-title">使用自訂/私有泊塢視窗儲存庫</block>
-  <block id="56e769191e8506a40a6cee699a3f9d05" category="paragraph">如果使用自訂泊塢視窗儲存庫、請執行下列動作：</block>
   <block id="76a29f4ebdb348450a0322a9c98cb4bf" category="paragraph">取得Docker密碼：</block>
   <block id="3910d1d80274049b67c375b0000311fb" category="paragraph">從上述命令的輸出中複製/貼上_.dockerconfigjson__的值。</block>
   <block id="683b8010d170fc689e256c2461d9ed7e" category="paragraph">解碼Docker機密：</block>
-  <block id="c492f17f4f9184181d9f26e7aa4f9b6b" category="paragraph">此輸出將採用下列json格式：</block>
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">登入Docker儲存庫：</block>
-  <block id="e5d1e0154409d9aa2d79f4ab1f1793c2" category="paragraph">從Cloud Insights 「畫面」中拉出「運算子」泊塢視窗影像：</block>
-  <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">使用下列命令尋找&lt;版本&gt;欄位：</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果已啟用Fluent位元、請同時下載：</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">編輯代理程式CR以反映新的Docker repo位置、停用自動升級（若已啟用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在_spec__區段中、進行下列變更：</block>
-  <block id="1a2ec26374f8d36de076929c5ff28aa8" category="section-title">設定代理程式從Kubernetes收集資料</block>
-  <block id="d101f99762aa933eab885ac5a54fb726" category="paragraph">執行代理程式的Pod需要存取下列項目：</block>
-  <block id="f1e81401ee0afe2275193298ef588120" category="list-text">主機路徑</block>
-  <block id="5eeadeea1e2bd82727f9a220408a5f2a" category="list-text">組態對應</block>
-  <block id="7de38f3c3d3baa7ca58a366f09577586" category="list-text">機密</block>
-  <block id="16fbf864377203e70ce04c9b7fbcef86" category="paragraph">這些Kubernetes物件會自動建立、做為Kubernetes代理程式安裝命令的一部分、此命令會在Cloud Insights 支援者介面中提供。Kubernetes的某些變種（例如OpenShift）會實作額外的安全層級、以封鎖對這些元件的存取。_SecurityContextConstraint_不是以Kubernetes代理程式安裝命令的一部分建立Cloud Insights 、此命令是以人工方式建立。建立後、重新啟動Telegraf Pod。</block>
-  <block id="708b7f7f18eb293652df29349e867172" category="section-title">安裝kube狀態度量伺服器</block>
-  <block id="e4f58bd0ebfcc73f188eead8e62fdd51" category="admonition">以營運者為基礎的安裝會處理kube狀態指標的安裝。如果您執行的是以操作員為基礎的安裝、請跳過本節。</block>
-  <block id="85d9e7fafd4cca5a1545c9cbf16d8e80" category="paragraph">請使用下列步驟安裝kube狀態度量伺服器（執行指令碼型安裝時需要）：</block>
-  <block id="ba86ea7c2dbdd3f6b9064aa53b496ca9" category="list-text">建立暫用資料夾（例如：//tmp/kube-n態-yaml-files/_）、然後從複製.yaml檔案<block ref="6c1d035244e82592cca4953c7743d814" category="inline-link-rx"></block> 至此資料夾。</block>
-  <block id="abcf7e32baf550db167b82496350d414" category="list-text">執行下列命令以套用安裝Kusbe-態 度量所需的.yaml檔案：</block>
   <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state指標計數器</block>
-  <block id="a92af84eb6994f4cb26eb8126bb58306" category="paragraph">請使用下列連結來存取Kube狀態度量計數器的資訊：</block>
   <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap指標</block>
   <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">示範設定指標</block>
@@ -1824,7 +1799,6 @@
   <block id="368e58ca73434aae8ab3a7bf3f6d2955" category="paragraph">若要在Kubernetes上解除安裝以指令碼為基礎的代理程式、請執行下列步驟：</block>
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">如果監控命名空間僅用於Telegraf：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">如果監控命名空間用於Telegraf以外的其他用途：</block>
-  <block id="aca5f422c992e53669a31d99958653bc" category="paragraph">針對以操作員為基礎的安裝、請執行下列命令：</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">如果先前已手動為指令碼型Telegraf安裝建立安全內容限制：</block>
   <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">備份現有組態：</block>
   <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">驗證Checksum</block>
@@ -1843,7 +1817,6 @@
   <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">安裝指令碼</block>
   <block id="b015398c226e1e3576258432ece31819" category="list-text">環境檔案</block>
   <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">Y反 洗錢檔案</block>
-  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
   <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">用於簽名驗證的一個PES檔案（NetApp_CERT.pem）</block>
   <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。</block>
   <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">您可以確認其指紋為下列項目、以驗證該PEM檔案：</block>
@@ -5575,23 +5548,10 @@
   <block id="48efe9ecb0bd1de1d09e3291068bd38a" category="inline-link-macro">規則運算式範例</block>
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">另請參閱： <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights</block>
-  <block id="f09825d109ed4681880410bb47684198" category="doc">在Kubernetes上設定代理程式</block>
-  <block id="664a8070ae98149df4b2438dabea2160" category="admonition">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">若要安裝代理程式、您必須先執行下列動作：</block>
-  <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">為您的主機選擇Kubernetes平台</block>
-  <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">請遵循其餘步驟。</block>
-  <block id="9ac0dd27d420b7b48ca72e463ae95e18" category="inline-link-macro">這些指示</block>
-  <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">若要在Windows、Linux或Mac上安裝代理程式、請遵循 <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
-  <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">在Kubernetes上安裝代理程式</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
-  <block id="69a528dde5c160691621956eda156089" category="cell">對於不是Kubernetes叢集資料存放區的叢集、您會在Telewraf RS pod中看到下列訊息：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /crp/etcd/server.key：OPEN /etc/Kubernetes /pi/kit/no file或pi/no這樣的檔案</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">僅支援監控以_etcd_作為K8s資料存放區。Cloud Insights您可以依照下列指示變更組態、以修改代理程式以避免收集etcd資料：kubecl -n netapp-監 控編輯代理程式監控-netapp,刪除下列區段：-名稱：Prometheus_etcd執行模式：- ReplicaSet</block>
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</block>
-  <block id="82de65b0bf7b606fd79ebba95608bb77" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本。</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在記錄中看到類似以下內容的訊息：E0901 15：21：39.962145 1反射器.go：178] k8s.io/kube狀態指標/內部/儲存區/建置者。Go：無法列出* v1.matingWebhookkConfiguration：伺服器找不到所要求的資源E0901 15：21：43.352/16ku.16178.16v1.資源搜尋失敗kuo.16178.</block>
-  <block id="ad946bd62c8170d1ad5c5d5250abeb85" category="cell">如果您執行Kubernetes 1.17版或更低版本的Kubernetes狀態指標2.0.0版或更高版本、就可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
-  <block id="bc593a7d4784d165423875d1c30b5ce3" category="cell">我在Kubernetes上安裝或升級Telegraf、但Telegraf Pod無法啟動。Telegraf ReplicaSet或demonSet報告類似下列的故障：建立錯誤：Pod「Telegraf-rs-」被禁止」：無法針對任何安全內容限制進行驗證：[spec.Volumes[2]：無效值：「hostPath」：不允許使用hostPath磁碟區]</block>
-  <block id="6dba20e9db8c662f2bd1d8bb1008108b" category="cell">如果安全內容限制尚未存在、請建立安全內容限制（請參閱上述「設定代理程式以從Kubernetes收集資料」一節）。確保安全內容限制所指定的命名空間和服務帳戶符合Telegraf ReplicaSet和示範Set的命名空間和服務帳戶。KVECTL說明SCC Telegraf-hostaccess | grep ServiceAccount kubecln CI-Monitoring -說明RS Telegraf-RS | grep -I "Namespace:" kbecln CI-Monitoring說明RS Telegraf-RS | grep -I "Service Accounts"" Kustreve-n CI-Monitoring：</block>
   <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到Telegraf發出的錯誤訊息類似於下列內容、但Telegraf確實會啟動並執行：10月11日14：23：41 IP：172-31：39 - 47系統d[1]：啟動外掛程式導向的伺服器代理程式、以便向影響者xDB報告指標。10月11日14：23：41 IP-172-31-39-47 Telewraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg="failed to create cache directory./etc/telegraf/.cache / snowflake、err：mkdir /etc/telegraf/.ca Che：權限遭拒。ignored\n" func="gosnowflake.（*預設Logger）.Errorf" file="log.go:120" OCT 11 14：23：41 IP：172-31：39：47 Telefraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg=「無法開啟。忽略。開啟/etc/telegraf/.cache / snowflake/occs_rapping_cache。json：沒有這樣的檔案或目錄。\n" func="gosunflake.（*預設Logger）.rf" file="log.go:120" 10月11日14：23：41 IP：172-31：39 - 47 Telefraf[1827]：10-1014：T1114：10！啟動Telegraf 1.19.3</block>
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">這篇GitHub文章</block>
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">這是已知的問題。請參閱 <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 以取得更多詳細資料。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。</block>
@@ -8543,14 +8503,9 @@
   <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
-  <block id="1879fc114cb19058a792b71aac95cb61" category="paragraph">使用Cloud Insights <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
-  <block id="a24b05a1dbfc11d6e8c8bae6db339730" category="paragraph">升級步驟</block>
-  <block id="38c37951a474215e996d1e567cc4b4d5" category="list-text">從指令碼型監控安裝中保留ConfigMap：</block>
   <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">儲存K8s叢集名稱、以便在安裝K8s以操作者為基礎的監控解決方案時使用、以確保資料不中斷。</block>
   <block id="35c735048514e15b96558a336dddd484" category="paragraph">如果您不記得CI中K8s叢集的名稱、可以使用下列命令列從您儲存的組態中擷取：</block>
   <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">移除指令碼型監控</block>
-  <block id="8f0f3f28d66cb57de112b327612b48d4" category="inline-image-macro">Kubernetes營運者的Tile</block>
-  <block id="099085e6f245bdfee8ce5ed73ba25890" category="paragraph"><block ref="099085e6f245bdfee8ce5ed73ba25890" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">Insights可讓您深入瞭解資源使用量和趨勢。</block>
   <block id="f1c9e9af80bb533618f5bdefe333747d" category="doc">洞見</block>
   <block id="4e97535a9ad440d2d327ab364bb7a0ec" category="paragraph">Insights可讓您深入瞭解資源使用量、以及資源使用量對其他資源的影響、或是完整分析的時間。</block>
@@ -8727,19 +8682,10 @@
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">如同資料到達速度緩慢（或沒有資料到達）的情況、由於資料到達率不足以「即時」觸發警示、因此需要接管定時器機制。 因此問題通常會變成「我需要等多久才能關閉分析視窗、看看我的現況？」 如果等待時間過長、就表示您產生警示的速度不夠快、無法使用。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的監視器有30分鐘的時間範圍、通知在長期資料遺失之前、某個條件已被最後一個資料點違反、 由於監控器未收到任何其他資訊、無法用來確認是否恢復了度量、或注意到該條件持續存在、因此將產生警示。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
-  <block id="47400a8b7ae7e165f8d5326d32ebcc02" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。使用與公用儲存庫相同的目錄結構。需要下載下列開放原始碼映像：</block>
-  <block id="b20c54eff3214bd1aab22457c1401f00" category="paragraph">編輯監控操作員部署、以反映新的Docker repo位置：</block>
-  <block id="99d5862cd7f8e60656b7d84aaaf12ce9" category="cell">安裝NetApp Kubernetes監控操作員之後、我立即在記錄中看到下列內容：[inputs.prometheus]錯誤in plugin：向\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:提出HTTP要求時發生錯誤Get \http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics: dial TCP：LOOKUP Kube-態 指標。&lt;namespace&gt;.svc.cluster：local：沒有這類主機</block>
-  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
-  <block id="911594325eba1fcc8e53e4e78b63f2e9" category="paragraph">請更換下列行...</block>
-  <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">...搭配：</block>
-  <block id="708a43ca283ea273fda53a8850915ef8" category="cell">我執行命令來安裝CI代理程式來收集Kubernetes資訊、但UI中卻沒有看到任何Kubernetes資訊。</block>
-  <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">執行下列命令、收集輸出、並聯絡NetApp支援部門。請注意、這些命令使用的是預設命名空間。如果您已設定自己的命名空間、請在這些命令和所有後續命令中取代該命名空間。kutbecl -n NetApp監控說明部署、代理程式、RS、DS、pods kubecl -n NetApp監控說明部署kutbecl -n NetApp監控記錄&lt;監控-營運者pod &gt;-c manager kutbecl -n NetApp監控記錄&lt;遠端監控faf-RS po&gt; kutl -kun NetApp狀態監控記錄&gt;</block>
   <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast；</block>
   <block id="e056d3391fc09511bb4b998310f69c58" category="cell">API存取加號（&amp;plus）；</block>
   <block id="d54591f265027d735d3be71d57199e4a" category="cell">商業情報與報告與快速；&amp;ast；</block>
   <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">&amp;ast；一次僅限5個作用中的自訂監視器&amp;plus；API存取依版本&amp;ast而異；&amp;ast；適用於500個受管理單元以上的環境</block>
-  <block id="e8a2076095c01bcdd41cd90191e01972" category="admonition">使用Amazon FSX資料收集器時、SMB的使用者封鎖功能無法終止目前的使用者工作階段。請參閱 <block ref="330552a095a13e513ece685118db1083" category="inline-xref-macro-rx"></block> 章節以取得更多資訊。</block>
   <block id="4c599f70e51d65668c4ce4bd1c33bb95" category="paragraph">如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便封鎖使用者。</block>
   <block id="a8ebeed3ca8bbd5dcb31700e343f161c" category="paragraph">如果您的VMware試用版過期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的使用者Cloud Secure 。</block>
   <block id="f95989b518510dd543fddfe641a0760e" category="paragraph">您可以從Cloud Secure 使用者清單頁面取得遭封鎖的使用者清單。</block>
@@ -8749,9 +8695,7 @@
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：</block>
   <block id="1f8fcb155f2b517c2c9ae95f65ae3623" category="list-text">執行下列命令、確認使用者已解除封鎖：</block>
   <block id="a3b2696b55f3cdfe22afc4ee21f40ac8" category="paragraph">不應針對先前封鎖的使用者顯示任何項目。</block>
-  <block id="ccfcbf1e5d2c0e260b83b0caf47be9db" category="cell">我看到錯誤：svm1：使用者網域\user01的現有CIFS工作階段未關閉。此錯誤會顯示在警示詳細資料頁面的「採取行動」區段、以及警示與使用者清單頁面下方的「存取限制歷程記錄」。看到此錯誤時、使用者目前的工作階段不會關閉、但是在連結期間到期之前、使用者將會遭到任何新工作階段的封鎖。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">先決條件</block>
-  <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">這是Amazon FSX的已知問題。無法關閉現有的SMB工作階段。Cloud Secure目前沒有任何因應措施可封鎖Amazon FSX現有的SMB工作階段。如果收集器類型為CVO或ONTAP 不一致、請務必確認所述的權限正確無誤 <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> 區段。</block>
   <block id="dfb65f9e847424acb7569e9d1d256de5" category="section-title">手動還原SMB的使用者</block>
   <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">學習中心</block>
@@ -8787,38 +8731,19 @@
   <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">可執行所有的安全功能、包括警示、鑑識、資料收集器、自動回應原則、以及安全性的API權杖。管理員也可以邀請其他使用者、但只能指派安全角色。</block>
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「可觀察性」或「安全性」的角色。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必須以帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。</block>
-  <block id="91d6346301930db6ac6ad38d593c51ac" category="section-title">安裝代理程式</block>
-  <block id="3ee07d3d3ada1695cfb57786400b0616" category="paragraph">提供適用於Kubernetes系列的* NetApp Kubernetes監控操作員*。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">升級</block>
   <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">下列命令必須可用：_curl_、_Sudo _、_openssl_、_shap256sum_和_kuvectl_。若要獲得最佳結果、請將這些命令新增至路徑。</block>
-  <block id="97ec45388dee131bfffb282394db6fd4" category="list-text">Kube-state指標非常重要、而且會隨NetApp Kubernetes監控營運者安裝一起自動安裝。</block>
-  <block id="ca32f00a9cb47dc2f19e4412ba43b7b9" category="section-title">從指令碼型K8s監控升級至NetApp Kubernetes監控操作員</block>
-  <block id="3fd1f3a27386367248e3113008da8829" category="paragraph">如果您要從先前安裝的指令碼型Kubernetes代理程式升級至NetApp Kubernetes監控操作員、請遵循下列步驟：</block>
   <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">停止並啟動NetApp Kubernetes監控操作員</block>
   <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">若要停止NetApp Kubernetes監控操作員：</block>
   <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">若要啟動NetApp Kubernetes監控操作員：</block>
-  <block id="3b28dd6c17fea6dd6467fc05ce0cfbd3" category="paragraph">附註：NetApp Kubernetes監控營運者型安裝的預設命名空間為_NetApp-監 控_。在涉及命名空間的命令中、請務必為安裝指定正確的命名空間。</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
-  <block id="3eec57a6a8de996cf634aac9735ace39" category="paragraph">NetApp Kubernetes監控操作員會自動安裝Kube-state指標；不需要使用者互動、也可略過文件的這一節。此處提供您所需的參考資訊：</block>
-  <block id="8afa6952ba928d1f4365c371ab8232bb" category="paragraph">如果您是在先前安裝的指令碼型Kubernetes代理程式上執行、則必須執行 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> NetApp Kubernetes監控營運者。</block>
-  <block id="981b5f5c29e0fd86523b31dc51c96b3e" category="section-title">移除以指令碼為基礎的代理程式</block>
   <block id="0b17bce222385cebd477477b188e6434" category="paragraph">若要在Kubernetes上解除安裝以指令碼為基礎的代理程式（例如、升級至NetApp Kubernetes監控操作員時）、請執行下列步驟：</block>
   <block id="98e7ede570d702984a8e51f5e4f2020c" category="section-title">移除NetApp Kubernetes監控操作員</block>
-  <block id="221999955f33800aac7697d68c8a2970" category="admonition">如果您先前已安裝指令碼型代理程式、則必須升級至NetApp Kubernetes監控操作員。</block>
   <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">從指令碼型代理程式升級至NetApp Kubernetes監控操作員</block>
-  <block id="05d624845433696752479b6389c8e408" category="list-text">記下您的叢集名稱。您可以執行下列其中一個collands來檢視叢集名稱：</block>
-  <block id="eadd7c5194983b4056ca7437aabe6ce5" category="paragraph">對於營運者：</block>
-  <block id="30abd2203b50ff6e095851497e7951fa" category="paragraph">針對指令碼型：</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">解除安裝</block>
-  <block id="4e62b8009bb6659f307f322060b87aca" category="list-text"><block ref="7dbbf8ef971711bc54bd144496bfdb76" category="inline-xref-macro-rx"></block> 現有代理程式</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安裝</block>
-  <block id="5d570b91fb793e6d7f0e8a1dc96abf37" category="list-text"><block ref="a2dc51b4aefd7c9119674679c63ec4a9" category="inline-xref-macro-rx"></block> 新代理]。</block>
-  <block id="1c57a8ea17dbb1aebe9f54fccc625688" category="section-title">升級NetApp Kubernetes監控操作員</block>
-  <block id="01824df579f6f3ad64522dc8298f0c41" category="cell">如果啟用並強制實施SELinux、可能會使Telegraf pod無法存取Kubernetes節點上的/proc/1/mountstats檔案。若要放寬此限制、請執行下列其中一項操作：•編輯代理程式（「kubeclt編輯代理程式監控-netapp」）、然後將「特權模式：假」變更為「特權模式：真」</block>
   <block id="d4f4168ee4529f65ee54ba8b223d6b1e" category="cell">我有一個PSP環境。這是否會影響我的監控操作員？</block>
-  <block id="d11a7a694c023537b8fd43857dd651f7" category="cell">如果您的Kubernetes叢集正在執行Pod安全性原則（PSP）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前支援PSP的NKMO：1.解除安裝先前的監控操作員：kubecl刪除代理程式監控-netapp -監 控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理程式管理員角色2。部署最新版本的監控操作員。</block>
   <block id="2eb2fe69b25b42c01f1dd6ed820e4ef3" category="cell">我在嘗試部署NKMO時遇到問題、我使用的是PSP。</block>
-  <block id="ffc85f5eab15bc118cab588bb4b4d3eb" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用POS安全性原則、並允許NKMO部署。請使用下列命令進行確認：kubectl Get PSP（應顯示Pod安全性原則已移除）kbecl Get all -n &lt;name-space&gt;</block>
   <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
   <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">更新外觀！Cloud Insights</block>
   <block id="d3d93d4a561aa9307d47023701a0c283" category="paragraph">從本月開始、「監控與最佳化」已重新命名為*可服務性*。您可以在這裡找到您最喜愛的功能、例如儀表板、查詢、警示和報告。此外、請在Cloud Secure 全新的* Security *功能表下尋找請注意、只有功能表有所變更；功能功能維持不變。</block>
@@ -8871,7 +8796,6 @@
   <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">從NetApp資料收集器取得下列庫存資訊。Cloud Insights StorageGRID對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleverafe的計量單位為不同的原始TB至託管單位速率。每40 TB未格式化的IBM Cleverafe容量、收費為1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMB傳輸協定3.1版及更早版本。請注意Cloud Secure 、不適用於FlexCache 使用支援功能的SMB組態。從ONTAP9.7開始、Fpolicy僅在NFS環境中受支援。</block>
-  <block id="08433787a666ff495df242ff3e1d3c5c" category="list-text">Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。搭配Docker Container執行時間使用Cloud Insights 時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。</block>
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20及更新版本</block>
   <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">代理程式在安裝後未執行。_Systemctl狀態cloudsecure-agent.service_顯示下列項目：[root@demo ~]# systemctl狀態cloudsecure-agent.service agent.service–Cloud Secure 已載入支援的Agent DaemonService：Loaded（usr/lib/systemd/system/cloudsecure-agent.service;已啟用；Vendor preset：停用）Active：啟動（自動重新啟動）（結果：exit-code-Code）自Tue 2021：08：21：12：26；雙子程序：26；2s前：25 x ecbash/cloudbid=25 x 9=clouvid/clouecbid/bid/pin安全登入/登入程式碼/clouecbid/clam/pin（ 25889（code=eded、STATUS=126）、08月03日21：12：26展示系統d[1]：cloudsecure-agent.service:主要程序已結束、code=ed退出、STATUS=126/n/a 8月03日21：12：26展示系統d[1]：單位cloudsecure-agent.service進入失敗狀態。03年8月21日12：26示範系統d[1]：cloudsecure-agent.service失敗。</block>
   <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">這可能是因為_cssys_使用者可能沒有安裝權限而失敗。如果/opp/netapp是NFS掛載、而且_cssy__使用者無法存取此資料夾、安裝將會失敗。_cssy__是Cloud Secure 由該安裝程式所建立的本機使用者、可能沒有存取掛載共用的權限。您可以嘗試使用_cssys_使用者來存取/opp/NetApp/cloudsec/agent/in/cloudseced-Agent來檢查此問題。如果傳回「權限遭拒」、表示安裝權限不存在。安裝在機器本機的目錄上、而非掛載的資料夾。</block>
@@ -9080,4 +9004,87 @@
   <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace免費試用版可讓您存取Cloud Insights VMware <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> 試用期為33天、最多可達499天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。</block>
   <block id="9610f5475b4256230dbfd8bf12bacab1" category="paragraph">AWS Marketplace免費試用版無法延長。在試用期間、Cloud Insights 您可以Cloud Insights 隨時前往*管理-&gt;訂閱*頁面、降級至VMware Basic Edition訂閱、或變更為付費版或Premium Edition訂閱。</block>
+  <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">設定NetApp Kubernetes監控操作員</block>
+  <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">Fluent位元</block>
+  <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">包含在內的許多元件Cloud Insights <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> 和 <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>（用於收集Kubernetes資料）。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
+  <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。</block>
+  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes資料收集器Tile</block>
+  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安裝NetApp Kubernetes監控操作員之前</block>
+  <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">請注意下列元件版本。以下是NetApp Kubernetes監控操作員所隨附的最新版本：</block>
+  <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
+  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">Kube-RBAC代理：v0.13.0</block>
+  <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state指標：v2.5.0</block>
+  <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent位元：1.9.8</block>
+  <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">Kubernetes-EV-出口者：0.10</block>
+  <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。</block>
+  <block id="f555190cc628f345214d8d00c587f506" category="list-text">當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。Cloud Insights Cloud Insights</block>
+  <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。</block>
+  <block id="ceb4fea071151ab6bb0ff80a20993744" category="list-text">如果您是在OpenShift 4.6或更高版本上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。</block>
+  <block id="82f6a763fe60e4e576dfec4afd406d65" category="list-text">您將用於NetApp Kubernetes監控操作員安裝的主機必須設定為與目標K8s叢集通訊、並將網際網路連線至Cloud Insights 您的Suse環境。如果此主機需要Proxy才能連絡Cloud Insights 到無法取得的支援、請依照中的指示進行 <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> 區段。</block>
+  <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="list-text">NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。</block>
+  <block id="abd3f7869ce900c36e8cd1dc95b25a52" category="list-text">如果您在安裝期間或在操作要監控的K8s叢集時、仍在使用Proxy、請依照中的指示進行 <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> 區段。</block>
+  <block id="4085e40ddd1e35991b92d689ee9b414a" category="section-title">請在開始之前先記下這些資訊</block>
+  <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">Proxy</block>
+  <block id="ef2fbd69b6e60cf6860a0466960c15a2" category="inline-xref">自訂儲存庫</block>
+  <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
+  <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用執行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、請提供 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>請仔細閱讀以下各節。</block>
+  <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">升級</block>
+  <block id="794e8cb207d48ed4b3325b391e777251" category="paragraph">如果您要從先前的安裝升級、請同時閱讀 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 資訊：</block>
+  <block id="023670044a04c30707541cd9ad44a499" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="2261a5ecaa517b1e6b1ea9c3c9c6c74a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</block>
+  <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境</block>
+  <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊</block>
+  <block id="7a9065c97476c0400d1ffaaa20c4bbe5" category="paragraph">如果您使用其中一種或兩種Proxy、為了安裝NetApp Kubernetes作業監視器、您必須先確定您的Proxy已設定為允許與Cloud Insights 您的點菜環境進行良好的通訊。如果您有Proxy、而且可以Cloud Insights 從要安裝該運算子的伺服器/ VM存取功能、則您的Proxy可能設定正確。</block>
+  <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</block>
+  <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：</block>
+  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。</block>
+  <block id="e070931bcf07d2c50211632028c7aa04" category="paragraph">若要完成組態設定、請在系統*安裝NetApp Kubernetes監控操作員之後*上執行下列步驟。</block>
+  <block id="5736221dbd17920aab4d48e61c7f1c4f" category="paragraph">找到此檔案的「*規格：*」區段、然後新增下列程式碼：</block>
+  <block id="ba5a4399ff89e39d6d73b55b320d32dc" category="section-title">使用自訂或私有泊塢視窗儲存庫</block>
+  <block id="9d270fc3981764bdd3e499e4f29c806e" category="paragraph">根據預設、NetApp Kubernetes監控操作員組態會從公開登錄擷取容器映像。如果您有Kubernetes叢集做為監控目標、 而且該叢集設定為僅從自訂或私有Docker儲存庫或Container登錄中提取容器映像、您必須設定NetApp Kubernetes監控操作員所需的容器存取權、以便執行必要的命令。</block>
+  <block id="278e14bf473bd997ecfb9729513ee3dc" category="paragraph">請依照下列指示、在登錄中預先定位容器映像、並變更NetApp Kubernetes Monitoring operator,以存取這些映像。如果所選的安裝命名空間與預設的「NetApp監控」命名空間不同、請使用下列命令來取代您所選的安裝命名空間。</block>
+  <block id="77cc6d4eb48f196cb4ec9933aeef1586" category="paragraph">此格式的輸出將採用下列Json格式：</block>
+  <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">從Cloud Insights 「畫面」中拉出「運算子」泊塢視窗影像。請確定_NetApp-監 控_版本編號為最新版本：</block>
+  <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">使用下列命令尋找_NetApp-監 控_&lt;版本&gt;欄位：</block>
+  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像：</block>
+  <block id="725add584c7b017b758ee4ca5893c90a" category="paragraph">如果您是在OpenShift 4.6或更高版本上執行、則必須變更「特殊權限模式」設定。執行下列命令以開啟代理程式進行編輯。如果您使用的命名空間不是「NetApp監控」、請在命令列中指定該命名空間：</block>
+  <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。</block>
+  <block id="dd9d67c4c74337838e56e1e3e14ceb18" category="admonition">如果您有先前安裝的指令碼型代理程式、您必須升級至NetApp Kubernetes監控操作員。</block>
+  <block id="ce980eb171cf0f52904feafd9843c0cf" category="list-text">請記下Cloud Insights 您的叢集名稱、此名稱已被辨識為由效益管理系統辨識。您可以執行下列命令來檢視叢集名稱。如果您的命名空間不是預設值（_CI-監 控_）、請替換適當的命名空間：</block>
+  <block id="fb990bfdcd5afe0e05c70ad5c62965f0" category="list-text"><block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 目前的運算子。請務必使用上述步驟1所述的相同叢集名稱。</block>
+  <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升級至最新的NetApp Kubernetes監控操作員</block>
+  <block id="0fcb89be13d6b554b3b15359f81a94da" category="paragraph">針對以操作員為基礎的安裝升級、請執行下列命令：</block>
+  <block id="34d201ca97c6d320bf1d9a8290e56e6d" category="list-text">請記下Cloud Insights 您的叢集名稱、此名稱已被辨識為由效益管理系統辨識。您可以執行下列命令來檢視叢集名稱。如果您的命名空間不是預設值（_NetApp-監 控_）、請替換適當的命名空間：</block>
+  <block id="1add7b4bfd24c3b007b38922bea24831" category="paragraph"><block ref="b2b381a5c8b3096e64c6b7ee9ba1f0b8" category="inline-xref-macro-rx"></block> 目前的運算子。</block>
+  <block id="61555de764999433d6f85da2969523dd" category="paragraph"><block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 最新的運算子。請使用相同的叢集名稱、如果您已設定自訂的repo、請務必擷取新的容器映像。</block>
+  <block id="143bc427903e01a7afe2d41b83643f5e" category="section-title">安裝NetApp Kubernetes監控操作員</block>
+  <block id="40dd3c1786c7903240a93eee2a772bf3" category="paragraph"><block ref="40dd3c1786c7903240a93eee2a772bf3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">升級</block>
+  <block id="8fd8f7aff1ee233a0c987ac476072bd4" category="list-text">輸入唯一的叢集名稱和命名空間。如果您是 <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> 從指令碼型代理程式或先前的Kubernetes運算子、使用相同的叢集名稱和命名空間。</block>
+  <block id="652fa40fdabd874246411d062f2d1615" category="list-text">將程式碼片段貼到_bash_視窗中並執行。請注意、程式碼片段具有獨特的金鑰、有效時間為24小時。</block>
+  <block id="11449bfdd549763452bc0c145675deb5" category="inline-xref">設定您的Proxy</block>
+  <block id="aadc028d0de86e5da522c42edd9e1336" category="admonition">直到您完成設定為止 <block ref="1ce92cd58445798f08d863dae8887e60" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a14c6d1b4b0dd061b28b6390917f22a1" category="admonition">如果您有自訂儲存庫、則必須遵循的指示 <block ref="0616425e3ac7c2aed5b607b66fe968cd" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">正在解除安裝</block>
+  <block id="f6df033900c8ae9dec99b302ab258469" category="admonition">如果您是在先前安裝的指令碼型Kubernetes代理程式上執行、則必須執行 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> NetApp Kubernetes監控營運者。</block>
+  <block id="cef7a1ce5721683d9793e2eee4d38e9c" category="section-title">移除已過時的指令碼型代理程式</block>
+  <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">請注意、NetApp Kubernetes監控操作員的預設命名空間為「NetApp監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
+  <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">可使用下列命令解除安裝較新版本的監控操作員：</block>
+  <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。</block>
+  <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
+  <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使用者互動。</block>
+  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">請使用下列連結來存取這些kube狀態度量計數器的資訊：</block>
+  <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</block>
+  <block id="3b3ca1220dd8c3e25db4764df1e68cbe" category="cell">對於不是Kubernetes叢集資料存放區的叢集、您會在Telewraf RS pod中看到下列訊息：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /crp/etcd/server.key：OPEN /etc/Kubernetes /pi/kit/no file或pi/no這樣的檔案</block>
+  <block id="31374f026fd34f38c1768e8bcae58183" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</block>
+  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
+  <block id="0b7a53ced1b85b8681621616e37366c7" category="cell">我在Kubernetes上安裝或升級Telegraf、但Telegraf Pod無法啟動。Telegraf ReplicaSet或demonSet回報的故障類似如下：建立錯誤：Pod「Telegraf-rs -」已遭禁止」：無法針對任何安全內容限制進行驗證：若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」[spec.Volumes[2]：無效值：「主機路徑」：不允許使用主機路徑磁碟區]</block>
+  <block id="c9688ff4a7ff9592f5611881298f6460" category="cell">如果安全性內容限制尚未存在、請建立該限制。確保安全內容限制所指定的命名空間和服務帳戶符合Telegraf ReplicaSet和示範Set的命名空間和服務帳戶。KVECTL說明SCC Telegraf-hostaccess | grep ServiceAccount kubecln CI-Monitoring -說明RS Telegraf-RS | grep -I "Namespace:" kbecln CI-Monitoring說明RS Telegraf-RS | grep -I "Service Accounts"" Kustreve-n CI-Monitoring：</block>
+  <block id="6b429c610cd6e569edf0723797324d8a" category="cell">如果啟用並強制實施SELinux、可能會使Telegraf pod無法存取Kubernetes節點上的/proc/1/mountstats檔案。若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」</block>
+  <block id="7e49233f5f6e064e0c44052e4d0c8886" category="cell">如果您的Kubernetes叢集正在執行Pod安全性原則（PSP）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前支援PSP的NKMO：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
+  <block id="33387459111b663b6a9840aad6070097" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用Pod安全性原則、並允許NKMO部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n &lt;命名空間&gt;| Grep -I pp（應顯示找不到任何項目）</block>
+  <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
+  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
+  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
 </blocks>
