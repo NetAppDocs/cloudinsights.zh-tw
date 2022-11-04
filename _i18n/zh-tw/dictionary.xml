@@ -3507,7 +3507,6 @@
   <block id="b994d75c0a79a39d9acb5a498320c41e" category="paragraph">第三方平台和廠商技術之間的標準化、通用性和命名方式各有不同。將容量與效能資訊標準化為一致的架構。Cloud Insights部分容量和效能指標是從裝置的計數器原生提供、例如IOPs、延遲和原始容量。若未提供計數器、Cloud Insights 則可能會嘗試彙總值（例如、將IOPs或底層Volume的容量總計）、Cloud Insights 若兩者皆不可用、則會嘗試透過各種運算演算法來衍生度量值。支援通用SNMP整合功能、可整合目前尚未收集到的其他指標。Cloud Insights Cloud Insights</block>
   <block id="e885abb4ab92f6610661428455d3f5e7" category="section-title">此功能是否支援Fibre Channel交換器？Cloud Insights</block>
   <block id="425ecea49bf7aad828d3bf87e9318ea2" category="paragraph">是的、Cloud Insights 除了從您的儲存資產收集資料外、還能從您環境中的Cisco、Brocade和QLogic交換器取得庫存和效能資料。</block>
-  <block id="f73369b2e30a54fde6f17bcd1578eff0" category="paragraph">==是否提供整個基礎架構的拓撲檢視？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
   <block id="82976cdea05b7eb7fbe896786a79f35b" category="paragraph">是的Cloud Insights 、此功能可動態探索及對應邏輯和實體架構、提供運算、架構、虛擬化程式和後端儲存設備的互動式端點對端點拓撲檢視。拓撲圖示可快速導覽受影響的資源、並協助識別共享儲存環境中的工作負載和違規情形。</block>
   <block id="7e59305c585ffd6c40dfc23da8c99b10" category="summary">企業實體附註可用於監控及報告企業階層中的資產</block>
   <block id="feeb52be3f50cf19c972dbe8bca2b5fd" category="doc">企業實體附註</block>
@@ -4365,10 +4364,6 @@
   <block id="c2a82bcbfe1a93fec106af67b6b26f3b" category="section-title">正在循環過期的API存取權杖</block>
   <block id="d981e94161c0ab533162bbea9f1d9e89" category="paragraph">API存取權杖有到期日。當API存取權杖過期時、使用者需要產生新的權杖（具有讀取/寫入權限的_Data擷取_類型）、然後重新設定Telegraf、以使用新產生的權杖、而非過期的權杖。以下步驟詳細說明如何執行此作業。</block>
   <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">請注意、這些命令使用預設命名空間「NetApp-Monitoring」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
-  <block id="85b9da5a8c5c1cce5881111010339cb4" category="list-text">編輯Telegraf ConfigMap（CM）、並以新的API權杖取代舊API權杖的所有執行個體。</block>
-  <block id="865b7c5a0ecd85e73193b19bcb780a4c" category="list-text">編輯Telegraf demonSet（DS）和ReplicaSet（RS）、並以新的API權杖取代舊API權杖的所有執行個體。</block>
-  <block id="b56a0b4a07e1bf181b703d8bdf115a4b" category="list-text">Kubernetes控制器會自動重新啟動Telegraf DS Pod。</block>
-  <block id="c12e3974927f7898f893ba8a9965a9a0" category="list-text">重新啟動Telegraf RS Pod</block>
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS和DEBIAN/Ubuntu</block>
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">編輯Telegraf組態檔、並以新的API權杖取代舊API權杖的所有執行個體。</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">重新啟動Telegraf。</block>
@@ -5549,7 +5544,6 @@
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">另請參閱： <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
-  <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">僅支援監控以_etcd_作為K8s資料存放區。Cloud Insights您可以依照下列指示變更組態、以修改代理程式以避免收集etcd資料：kubecl -n netapp-監 控編輯代理程式監控-netapp,刪除下列區段：-名稱：Prometheus_etcd執行模式：- ReplicaSet</block>
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在記錄中看到類似以下內容的訊息：E0901 15：21：39.962145 1反射器.go：178] k8s.io/kube狀態指標/內部/儲存區/建置者。Go：無法列出* v1.matingWebhookkConfiguration：伺服器找不到所要求的資源E0901 15：21：43.352/16ku.16178.16v1.資源搜尋失敗kuo.16178.</block>
   <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到Telegraf發出的錯誤訊息類似於下列內容、但Telegraf確實會啟動並執行：10月11日14：23：41 IP：172-31：39 - 47系統d[1]：啟動外掛程式導向的伺服器代理程式、以便向影響者xDB報告指標。10月11日14：23：41 IP-172-31-39-47 Telewraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg="failed to create cache directory./etc/telegraf/.cache / snowflake、err：mkdir /etc/telegraf/.ca Che：權限遭拒。ignored\n" func="gosnowflake.（*預設Logger）.Errorf" file="log.go:120" OCT 11 14：23：41 IP：172-31：39：47 Telefraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg=「無法開啟。忽略。開啟/etc/telegraf/.cache / snowflake/occs_rapping_cache。json：沒有這樣的檔案或目錄。\n" func="gosunflake.（*預設Logger）.rf" file="log.go:120" 10月11日14：23：41 IP：172-31：39 - 47 Telefraf[1827]：10-1014：T1114：10！啟動Telegraf 1.19.3</block>
@@ -9076,7 +9070,6 @@
   <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使用者互動。</block>
   <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">請使用下列連結來存取這些kube狀態度量計數器的資訊：</block>
   <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</block>
-  <block id="3b3ca1220dd8c3e25db4764df1e68cbe" category="cell">對於不是Kubernetes叢集資料存放區的叢集、您會在Telewraf RS pod中看到下列訊息：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /crp/etcd/server.key：OPEN /etc/Kubernetes /pi/kit/no file或pi/no這樣的檔案</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</block>
   <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
   <block id="0b7a53ced1b85b8681621616e37366c7" category="cell">我在Kubernetes上安裝或升級Telegraf、但Telegraf Pod無法啟動。Telegraf ReplicaSet或demonSet回報的故障類似如下：建立錯誤：Pod「Telegraf-rs -」已遭禁止」：無法針對任何安全內容限制進行驗證：若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」[spec.Volumes[2]：無效值：「主機路徑」：不允許使用主機路徑磁碟區]</block>
@@ -9087,4 +9080,6 @@
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
+  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。無需執行此處列出的Kubernetes API權杖更新手冊步驟。</block>
+  <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
 </blocks>
