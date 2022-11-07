@@ -37,7 +37,7 @@ image:AIQ_Summary_Example.png["儲存頁面摘要"]
 
 == 查詢風險
 
-在本功能中、您可以將*物件風險*欄新增至儲存或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、「物件風險」欄會顯示儲存系統或節點的風險數量。
+在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。
 
 
 

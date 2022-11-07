@@ -810,7 +810,6 @@
   <block id="85d55fc2c50a3ced7f7d81d3dc3040a6" category="list-text">在「更新摘要」小工具或風險表中、按一下「恢復」連結。Cloud Insights Active IQ</block>
   <block id="cd2403e73e741b8001cced6aa04fa472" category="list-text">登入您的NetApp支援帳戶。您將直接進入Active IQ 資訊區的儲存節點頁面。</block>
   <block id="62fcdd34f555d8c4a7cdda3b94732063" category="section-title">查詢風險</block>
-  <block id="718c22f1d8e4704419eff85fae04ebd2" category="paragraph">在本功能中、您可以將*物件風險*欄新增至儲存或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、「物件風險」欄會顯示儲存系統或節點的風險數量。</block>
   <block id="0ba8adc53c16a6ffe145978e834b02f8" category="section-title">儀表板</block>
   <block id="88773c59e894d8416f71b9658d5a03fc" category="paragraph">您可以建立小工具（例如圓形圖、表格小工具、長條圖、直條圖、散佈圖、 以及單一價值小工具）、以視覺化方式呈現Data ONTAP 由NetApp監控之NetApp叢集式視覺化系統的儲存和儲存節點物件風險Active IQ 。在這些小工具中、「物件風險」可選取為欄或度量、其中「儲存或儲存節點」是焦點物件。</block>
   <block id="e0ca94f4a4b2b9a6b7968e11a7757d03" category="inline-image-macro">小工具中的物件風險</block>
@@ -9071,8 +9070,6 @@
   <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</block>
   <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
-  <block id="0b7a53ced1b85b8681621616e37366c7" category="cell">我在Kubernetes上安裝或升級Telegraf、但Telegraf Pod無法啟動。Telegraf ReplicaSet或demonSet回報的故障類似如下：建立錯誤：Pod「Telegraf-rs -」已遭禁止」：無法針對任何安全內容限制進行驗證：若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」[spec.Volumes[2]：無效值：「主機路徑」：不允許使用主機路徑磁碟區]</block>
-  <block id="c9688ff4a7ff9592f5611881298f6460" category="cell">如果安全性內容限制尚未存在、請建立該限制。確保安全內容限制所指定的命名空間和服務帳戶符合Telegraf ReplicaSet和示範Set的命名空間和服務帳戶。KVECTL說明SCC Telegraf-hostaccess | grep ServiceAccount kubecln CI-Monitoring -說明RS Telegraf-RS | grep -I "Namespace:" kbecln CI-Monitoring說明RS Telegraf-RS | grep -I "Service Accounts"" Kustreve-n CI-Monitoring：</block>
   <block id="6b429c610cd6e569edf0723797324d8a" category="cell">如果啟用並強制實施SELinux、可能會使Telegraf pod無法存取Kubernetes節點上的/proc/1/mountstats檔案。若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」</block>
   <block id="7e49233f5f6e064e0c44052e4d0c8886" category="cell">如果您的Kubernetes叢集正在執行Pod安全性原則（PSP）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前支援PSP的NKMO：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
   <block id="33387459111b663b6a9840aad6070097" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用Pod安全性原則、並允許NKMO部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n &lt;命名空間&gt;| Grep -I pp（應顯示找不到任何項目）</block>
@@ -9082,4 +9079,5 @@
   <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。無需執行此處列出的Kubernetes API權杖更新手冊步驟。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
   <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。</block>
 </blocks>
