@@ -9025,7 +9025,6 @@
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用執行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、請提供 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>請仔細閱讀以下各節。</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">升級</block>
   <block id="794e8cb207d48ed4b3325b391e777251" category="paragraph">如果您要從先前的安裝升級、請同時閱讀 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 資訊：</block>
-  <block id="023670044a04c30707541cd9ad44a499" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="2261a5ecaa517b1e6b1ea9c3c9c6c74a" category="inline-xref-macro-rx"></block>。</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</block>
   <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境</block>
   <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊</block>
@@ -9082,4 +9081,5 @@
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
   <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。無需執行此處列出的Kubernetes API權杖更新手冊步驟。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
+  <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
