@@ -387,6 +387,53 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 
+== 正在驗證Kubernetes Checksum
+
+雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。
+
+請遵循下列步驟：
+
+. 依照指示複製代理程式安裝程式程式片段。
+. 不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。
+. 從命令中刪除後端"--install"。
+. 從文字編輯器複製整個命令。
+. 現在請將其貼到命令視窗（工作目錄）中、然後執行。
++
+** 下載並安裝（預設）：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+** 僅限下載：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+
+
+
+
+純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。這些成品包括但不限於：
+
+* 安裝指令碼
+* 環境檔案
+* Y反 洗錢檔案
+* 簽署的Checksum檔案（sh256.signed）
+* 用於簽名驗證的一個PES檔案（NetApp_CERT.pem）
+
+
+安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。
+
+您可以確認其指紋為下列項目、以驗證該PEM檔案：
+
+ E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+更具體地說、
+
+ openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
+簽署的Checksum檔案可以使用PEM檔案進行驗證：
+
+ openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：
+
+ sudo -E -H ./<installation_script_name> --install
+
+
 == 疑難排解
 
 如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：
