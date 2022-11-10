@@ -8575,7 +8575,6 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">叢集中的* pod *數。按一下此號碼將會開啟Pod清單頁面。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">叢集中的*命名空間*數目。按一下此號碼將會開啟「命名空間」清單頁面。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">叢集中*工作負載*的數目。按一下此數字將會開啟工作負載清單頁面。</block>
-  <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">目前的Telegraf版本Cloud Insights 是* 1.22.3*。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">工作負載爭用</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">顯示影響或受其他共用資源影響的資產、例如主機、網路和儲存設備。這些資源有時稱為「_gre地_」和「_degraded」資源。</block>
   <block id="95eafe7994082a98ef565bc49b0bd0bc" category="section-title">2022年6月</block>
@@ -9082,4 +9081,5 @@
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。</block>
+  <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">目前的Telegraf版本Cloud Insights 是* 1.24.0*。</block>
 </blocks>
