@@ -19,7 +19,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 作業系統 | 執行下列其中一種授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元本電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。不支援SE（增強安全性）Linux。 
 
 
-| 命令 | 安裝、執行指令碼及解除安裝時、必須使用「su–」命令。 
+| 命令 | 安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。 
 
 
 | CPU | 4個CPU核心 

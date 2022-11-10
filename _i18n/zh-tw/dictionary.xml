@@ -7689,7 +7689,6 @@
   <block id="b6818f4aea164eb8b94acf9d70d2e034" category="inline-link-macro">安裝代理程式</block>
   <block id="36bb58d4c9e71b2c4ea1af277d7e3a81" category="paragraph">您必須 <block ref="8c7f43ef892529523b024d4c41e5a1ca" category="inline-link-macro-rx"></block> 以便從資料收集器取得資訊。在安裝代理程式之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間的需求。</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">命令</block>
-  <block id="6068dbca35f237e6b23584f701dc4aa1" category="cell">安裝、執行指令碼及解除安裝時、必須使用「su–」命令。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4個CPU核心</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
   <block id="a4c9f60f11d808285b05aa24c83f213b" category="cell">100 Mbps至1 Gbps乙太網路連線、靜態IP位址、所有裝置的IP連線、Cloud Secure 以及連接至該實例所需的連接埠（80或443）。</block>
@@ -9082,4 +9081,5 @@
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
+  <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。</block>
 </blocks>
