@@ -3297,14 +3297,6 @@
   <block id="091ec35ab95f861018fde1a0588e00ab" category="cell">偵測到勒索軟體活動</block>
   <block id="6225aea9b43aee104d64ccb2870be625" category="cell">為了保護資料不受偵測到的勒索軟體的影響、我們已取得Snapshot複本、可用來還原原始資料。您的系統會產生AutoSupport 並傳輸一個「呼叫主頁」訊息給NetApp技術支援和任何已設定的目的地。利用此訊息改善問題的判斷與解決方法。AutoSupport</block>
   <block id="ad588b8a579bb8400cdcd8ad5b889cf7" category="cell">請參閱「最終文件名稱」、針對勒索軟體活動採取補救措施。</block>
-  <block id="c19f755bb5512c54622f3290818d4ac5" category="section-title">Astra Data Store（廣告）監控器</block>
-  <block id="8cd7f8db9d150a04184b8fd02d5f5a6d" category="cell">叢集容量已滿</block>
-  <block id="35e4b763e20006224c51c97d77f699fa" category="cell">警告@&gt; 85 %嚴重@&gt; 95 %</block>
-  <block id="a6796b1585daa4bf415caa7d1cfddcde" category="cell">ADS叢集的儲存容量是用來儲存應用程式和客戶資料。叢集中儲存的資料越多、未來資料的儲存可用度就越低。…當叢集內的儲存容量達到叢集總容量時、叢集將無法儲存更多資料。監控叢集實體容量可確保資料服務的連續性。</block>
-  <block id="23fa9d7af943ee0af2bb663410a00d19" category="cell">如果關鍵臨界值被違反、必須立即採取行動、以將服務中斷降至最低：…1.考慮增加分配給叢集的空間、以因應成長需求…2.請考慮刪除不再需要的資料來釋出空間…如果超過警告臨界值、請立即規劃採取下列行動：…1.請考慮增加分配給叢集的空間、以因應成長需求。</block>
-  <block id="751f6c789f3a22b17d94185a7d67ce2d" category="cell">警告@&lt; 15%嚴重@&lt; 5%</block>
-  <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">磁碟區的儲存容量是用來儲存應用程式和客戶資料。叢集磁碟區上儲存的資料越多、未來資料的儲存可用度就越低...當磁碟區內使用的資料儲存容量達到總儲存容量時、 由於缺乏可用的儲存容量、磁碟區將無法儲存更多資料。…監控使用的磁碟區儲存容量、可確保資料服務的連續性。</block>
-  <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">如果關鍵臨界值被違反、必須立即採取行動、以將服務中斷降至最低：…1.考慮增加磁碟區的空間、以因應成長需求…2.請考慮刪除不再需要的資料來釋出空間…如果超過警告臨界值、請立即規劃採取下列行動：…1.請考慮增加磁碟區的空間、以因應成長需求。</block>
   <block id="ed7c2467a1552d048a5f05c4026b80be" category="section-title">適用於NetApp ONTAP 的FSX顯示器</block>
   <block id="7b7fa7f57948350f939932b1915c8281" category="cell">FSX Volume容量已滿</block>
   <block id="c9fd60e1b379b2bc36333b6880568a84" category="cell">警告@&gt; 85 %…嚴重@&gt; 95 %</block>
@@ -8862,10 +8854,8 @@
   <block id="2a3cd3c9afd68e2531df6b8a3ad4536c" category="paragraph">檢視及探索環境中LUN/ Volume、NFS或SMB共用區或qtree上的工作負載。</block>
   <block id="9eaf347efd9d5225664dc4c414a82eb2" category="cell">執行下列其中一項授權版本的電腦：* CentOS（64位元）：7.2至7.9、Stream 8、Stream 9 * Debian（64位元）：9及10 * Oracle Enterprise Linux（64位元）：7.5至7.9、8.1至8.4 * Red Hat Enterprise Linux（64位元）： 7.2到7.9、8.1到8.6* Ubuntu伺服器：18.04和20.04 LTS此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="15a43b8a93156e727b3b81dc25fd6d32" category="section-title">安全監控器</block>
-  <block id="2db1857ce4841fcb4871ca570d9f1e9e" category="cell">監控名稱</block>
   <block id="38eb03d447ddc98ff3687aa8f4aeaa70" category="cell">FIPS模式已停用</block>
   <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">啟用FIPS 140-2規範時、會停用TLSv1和SSLv3、而且只有TLSv1.1和TLSv1.2會維持啟用狀態。啟用FIPS 140-2規範時、無法啟用TLSv1和SSLv3。ONTAP</block>
-  <block id="f41a65442a444212a9242b353da02fa7" category="cell">若要在叢集上啟用FIPS 140-2規範、ONTAP 請在進階權限模式中執行下列指令：Security config modify -interface SSL -is -fIPS-enablD true</block>
   <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">所有Cloud Insights 的版本均提供監控器和警示功能、但Basic版本必須符合下列條件：*您一次最多只能啟用五個自訂監控器。超過五個的任何監視器都會建立或移至_暫停_狀態。*不支援VMDK、虛擬機器、主機和資料存放區度量監控。如果您已針對這些指標建立監控、則這些指標將會暫停、降級至Basic Edition時將無法恢復。</block>
   <block id="1b70ac0a972fddf1e1a33e6ed9df49c7" category="section-title">2022年9月</block>
   <block id="6e117bf7254c45b1f7fd76d22b07b5a8" category="section-title">基本版提供監視器</block>
@@ -9082,4 +9072,104 @@
   <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前的NKMO、並支援PSP/PSA1：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
   <block id="6ae137903bc328659928ed818d9ee78a" category="cell">我在嘗試部署NKMO時遇到問題、我使用PP/PSA.</block>
   <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用Pod安全政策和Pod安全許可、並允許NKMO部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n &lt;命名空間&gt;| Grep -I pp（應顯示找不到任何項目）</block>
+  <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">返回頁首</block>
+  <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
+  <block id="0091efee7f9b5f0e27211eb7226d0a23" category="cell">臨界值</block>
+  <block id="2a63f555989152ba866b43a1faacd680" category="cell">臨界值</block>
+  <block id="37a1ca329a6f5e5dca35632e49074596" category="cell">已停用支援HTTPS傳輸AutoSupport</block>
+  <block id="40692fef6f4ef30aa3b500774debd8f7" category="cell">警告@&lt; 1</block>
+  <block id="5b4b99885d6c41f784d4353df3954f85" category="cell">支援HTTPS、HTTP和SMTP傳輸傳輸傳輸傳輸傳輸協定。AutoSupport由於資訊內容敏感、NetApp強烈建議使用HTTPS作為預設傳輸傳輸傳輸傳輸傳輸傳輸傳輸傳輸傳輸傳輸傳輸傳輸傳輸協定、以將資訊傳送給NetApp支援部門。AutoSupport AutoSupport</block>
+  <block id="56e9eb9c60fd63630926841f5a7a0cf3" category="cell">若要將HTTPS設定為AutoSupport 傳輸傳輸傳輸通訊協定、請執行下列ONTAP 支援功能的指令：…系統節點AutoSupport 更新傳輸https</block>
+  <block id="35b47f5a2f95200e4d62c83034deae58" category="cell">叢集不安全的SSH密碼</block>
+  <block id="52c2cd14f22482229a7521ff77cec6e8" category="cell">表示SSH使用不安全的密碼、例如以* CBC開頭的密碼。</block>
+  <block id="af4b3d60f3b2a1b2019c7e6584e05ac0" category="cell">若要移除CBC密碼、請執行下列ONTAP 指令：…安全性ssh移除-vserver &lt;admin vserver&gt;-ciphers AES256-CBC、aes192-CBC、AES120-CBC、3Des-CBC</block>
+  <block id="66d8d95ccf0f8192646a37bff4b648ab" category="cell">叢集登入橫幅已停用</block>
+  <block id="7e7108ba14d9f82f42515d305f9e4773" category="cell">表示使用ONTAP 者存取該系統時、登入橫幅已停用。顯示登入橫幅有助於建立對系統存取與使用的期望。</block>
+  <block id="9ef097ac170ba2d0a3dbaa80e948d24e" category="cell">若要設定叢集的登入橫幅、請執行下列ONTAP 指令：…安全性登入橫幅修改-vserver &lt;admin SVM&gt;-message「存取限制為授權使用者」</block>
+  <block id="a80b6077f36d29de0c7100f0e60cca35" category="cell">叢集對等通訊未加密</block>
+  <block id="eff504a7000baa17798b249c97b6a046" category="cell">當複寫資料以進行災難恢復、快取或備份時、您必須在從ONTAP 一個叢集傳輸到另一個叢集的過程中、透過線路來保護資料。必須在來源叢集和目的地叢集上設定加密。</block>
+  <block id="a8b0d51ab1676479b0a39c0ed8b9b9c6" category="cell">若要在ONTAP 叢集對等關係上啟用加密功能、而此關係是在使用32個版本9.6之前建立、則來源與目的地叢集必須升級至9.6個。然後使用「叢集對等端點修改」命令、將來源與目的地叢集對等端點變更為使用叢集對等加密。... ONTAP 如需詳細資訊、請參閱《NetApp安全性強化指南》（英文）中的《NetApp安全性強化指南》（英文）。</block>
+  <block id="f102a7c0ee6458e0d616666f2cf3d3c6" category="cell">預設的本機管理使用者已啟用</block>
+  <block id="144a851e30702c5c68b91e006bbc9af0" category="cell">警告@&gt; 0</block>
+  <block id="ab15923d336c9df71683a27a3b88f21b" category="cell">NetApp建議使用lock命令鎖定（停用）任何不需要的預設管理使用者（內建）帳戶。它們主要是密碼從未更新或變更的預設帳戶。</block>
+  <block id="83ded096d536b0a9f273f70c8d46ca18" category="cell">若要鎖定內建的「admin」帳戶、請執行下列ONTAP 指令：…安全登入鎖定-usernameadmin</block>
+  <block id="96e4a7f4d19cdbf4e4dc1487d9e2089f" category="cell">若要在叢集上啟用FIPS 140-2規範、ONTAP 請在進階權限模式中執行下列指令：…安全性組態修改介面SSL -is啟用FIPS的true</block>
+  <block id="0683249465dfceec900f14913e23294e" category="cell">記錄轉送未加密</block>
+  <block id="3c84fa81b2128d2870573dd56fceedc3" category="cell">若要將資料外洩的範圍或佔用空間限制在單一系統或解決方案、就必須卸載syslog資訊。因此、NetApp建議將系統記錄資訊安全地卸載到安全的儲存或保留位置。</block>
+  <block id="c7dc508bab528b876e8f8f56ed6c817f" category="cell">一旦建立記錄轉送目的地、就無法變更其傳輸協定。若要變更為加密的傳輸協定、請使用下列ONTAP 指令刪除並重新建立記錄轉送目的地：…叢集記錄轉送會建立目的地&lt;destination ip&gt;-protocol tcp加密</block>
+  <block id="557c2a2e5c2721f97358d14ed4a5fb5e" category="cell">md5雜湊密碼</block>
+  <block id="b72f6d4281e334d8f1816c4c7b48a190" category="cell">NetApp強烈建議使用更安全的SHA-512雜湊功能來處理ONTAP 使用者帳戶密碼。使用較不安全的MD5雜湊功能的帳戶應移轉至SHA-512雜湊功能。</block>
+  <block id="b830e03eaaefb2ec43a4918402144e73" category="cell">NetApp強烈建議使用者變更密碼、將使用者帳戶移轉至更安全的SHA-512解決方案。…若要使用使用MD5雜湊功能的密碼鎖定帳戶、請執行下列ONTAP SHALL命令：…安全登入鎖定-vserver *-USERNAME *-Hash-Function MD5</block>
+  <block id="a4acaf21eebc7bf33475d1bda0f71fb4" category="cell">未設定NTP伺服器</block>
+  <block id="22c5be3ade73c0bbb31961b09d74c93e" category="cell">表示叢集尚未設定NTP伺服器。為了提供備援和最佳服務、NetApp建議您將至少三部NTP伺服器與叢集建立關聯。</block>
+  <block id="a3a5af2134056138bdb5aa2d608242c8" category="cell">若要建立NTP伺服器與叢集的關聯、請執行下列ONTAP 支援功能指令：叢集時間服務NTP伺服器create -server &lt;NTP伺服器主機名稱或IP位址&gt;</block>
+  <block id="5edad07c8412daab278c10b18e62e6da" category="cell">NTP伺服器數量不足</block>
+  <block id="adbc4b7c4cd23e8493bc55219426062f" category="cell">警告@&lt; 3</block>
+  <block id="083193cf390aff889ab229381b57bb1b" category="cell">表示叢集已設定的NTP伺服器少於3個。為了提供備援和最佳服務、NetApp建議您將至少三部NTP伺服器與叢集建立關聯。</block>
+  <block id="7b5eac97a56d3de62a762976408f1604" category="cell">若要將NTP伺服器與叢集建立關聯、請執行下列ONTAP 指令：…叢集時間服務NTP伺服器create -server &lt;NTP伺服器主機名稱或IP位址&gt;</block>
+  <block id="02986d225b428f4872a041982195b036" category="cell">已啟用遠端Shell</block>
+  <block id="3f8b20f5d4c0ae31c0e785a64f88acf6" category="cell">遠端Shell不是建立指令行存取ONTAP 功能以存取解決方案的安全方法。應停用遠端Shell以進行安全遠端存取。</block>
+  <block id="66b960fff3a2001089c50a4b5cba5aed" category="cell">NetApp建議使用安全Shell（SSH）進行安全的遠端存取。…若要停用叢集上的遠端Shell、請ONTAP 在進階權限模式中執行下列支援下列功能的指令：…安全性傳輸協定修改-applicationrsh-啟用假</block>
+  <block id="1c34d9b674b94d3ea5834211d426626d" category="cell">儲存VM稽核記錄已停用</block>
+  <block id="48b5db589e58fb639e7ee3a50e8a1bda" category="cell">表示SVM的稽核記錄已停用。</block>
+  <block id="ff6cebe76939541117e856ec4b111c5c" category="cell">若要設定Vserver的稽核記錄、請執行下列ONTAP 指令：…vserver稽核啟用-vserver &lt;SVM&gt;</block>
+  <block id="56d352fb8f0c5c4ba480f8a82205e5d8" category="cell">適用於SSH的儲存VM不安全密碼</block>
+  <block id="caa40d84ac4615bac46decaa416d068f" category="cell">若要移除CBC密碼、請執行下列ONTAP 指令：…安全性ssh移除-vserver &lt;vserver&gt;-ciphers AES256-CBC、aes192-CBC、AES120-CBC、3Des-CBC</block>
+  <block id="fc133f2bd2b6166730e48945191a3f85" category="cell">儲存VM登入橫幅已停用</block>
+  <block id="0c5f0b019f859e20c9cbd4eaf4fc9ff8" category="cell">表示系統上存取SVM的使用者已停用登入橫幅。顯示登入橫幅有助於建立對系統存取與使用的期望。</block>
+  <block id="0b7726d8daf36aa49b06f7fdaf9721be" category="cell">若要設定叢集的登入橫幅、請執行下列ONTAP 指令：…安全性登入橫幅修改-vserver &lt;SVM&gt;-訊息「存取限制為授權使用者」</block>
+  <block id="833835bd672120225989385cebfa9000" category="cell">已啟用遠端登入傳輸協定</block>
+  <block id="44335166ddb91bd1291079f3852a7eaf" category="cell">遠端登入並非建立指令行存取ONTAP 功能以存取解決方案的安全方法。應停用遠端登入、以確保安全的遠端存取。</block>
+  <block id="afb248522e19d4d05da83ae5f5e6a479" category="cell">NetApp建議使用安全Shell（SSH）進行安全遠端存取。若要在叢集上停用Telnet, ONTAP 請在進階權限模式中執行下列self命令:…安全性傳輸協定修改-applicationnet-telnet-enablD fals</block>
+  <block id="a433675536fc11ef74a8e05a9afe38f9" category="section-title">資料保護監視器</block>
+  <block id="8067f9dd56568eda9da771d5126fd283" category="cell">Lun Snapshot複製空間不足</block>
+  <block id="c7e5b8e812dd23889ad718547a93510f" category="cell">（篩選器contains_LUNs = Yes）警告@&gt; 95 %…Critical @&gt; 100 %</block>
+  <block id="01784dee7427225ed6440a615548d3c8" category="cell">儲存應用程式與客戶資料時、必須具備磁碟區的儲存容量。其中一部分空間稱為快照保留空間、用於儲存快照、以便在本機保護資料。儲存在ONTAP 更新後的更新資料越多、使用的快照容量越多、未來新資料或更新資料的快照儲存容量也就越少。如果某個磁碟區內的快照資料容量達到快照保留空間總量、可能會導致客戶無法儲存新的快照資料、並降低磁碟區LUN中資料的保護層級。監控使用的磁碟區快照容量、可確保資料服務持續運作。</block>
+  <block id="df8c01d1eb9d6245c4bf409308a5a4c2" category="cell">*立即行動*如果關鍵臨界值遭到違反、請考慮立即採取行動、將服務中斷降至最低：1.設定快照、以便在快照保留區已滿時使用磁碟區中的資料空間。2.刪除一些舊的不想要的快照、以釋放空間。*即將採取的行動*如果違反警告臨界值、請計畫立即採取下列行動：1.增加磁碟區內的快照保留空間、以因應成長需求。2.設定快照、以便在快照保留區已滿時使用磁碟區中的資料空間。</block>
+  <block id="c4ecc793e303a550074c29b55d6b315f" category="cell">SnapMirror關係延遲</block>
+  <block id="a3a4051e09c6fe3f48efd4a2f74ba269" category="cell">警告@&gt; 150%…嚴重@&gt; 300%</block>
+  <block id="24fd2d3c5bd7f91010e5ae2c5d1dbb5f" category="cell">SnapMirror關係延遲是指快照時間戳記與目的地系統時間之間的差異。lag時間百分比是延遲時間與SnapMirror原則排程時間間隔的比率。如果延遲時間等於排程時間間隔、則lag時間百分比將為100%。如果SnapMirror原則沒有排程、則不會計算LID_Time_%。</block>
+  <block id="49e95a6639b0e553bda17a9e3c021cef" category="cell">使用「SnapMirror show」命令監控SnapMirror狀態。使用「SnapMirror show-history」命令檢查SnapMirror傳輸記錄</block>
+  <block id="76902715d9d568bf8af72c0649cdd8e5" category="section-title">雲端Volume（CVO）監控器</block>
+  <block id="28968af316b23628eea079287dc3b616" category="cell">CVO磁碟服務外</block>
+  <block id="b55224db2efbd4c41d8a5fb92b425323" category="cell">儲存資源池的CVO恢復失敗</block>
+  <block id="2e71245153fd1ba1df5494a26ec96e03" category="cell">執行下列修正動作：使用「network interface show」命令確認叢集間LIF已上線且正常運作。透過目的地節點叢集間LIF上的「ping」命令、檢查與物件存放區伺服器的網路連線。使用「Aggregate object-store config show」命令、確認物件存放區的組態未變更、而且登入和連線資訊仍正確無誤。或者、您也可以為「必要-合作夥伴等待」參數指定「假」、以覆寫錯誤。如需詳細資訊或協助、請聯絡NetApp技術支援。</block>
+  <block id="cd60234fe32d474c4ff3513a1ad3957e" category="cell">CVO HA互連中斷</block>
+  <block id="c68a4c81f996fdbd4e72d72cf1d66267" category="cell">修正行動取決於平台支援的HA互連連結數量和類型、以及互連中斷的原因。如果連結中斷：請確認HA配對中的兩個控制器都正常運作。對於外部連接的連結、請確定互連纜線已正確連接、且小型可插拔（SFP）（若適用）已正確安裝在兩個控制器上。對於內部連線的連結、請使用「IC link Off（IC連結關閉）」和「IC link on（IC連結開啟）」命令逐一停用和重新啟用連結。如果連結已停用、請使用「IC link on」命令來啟用連結。如果對等端點未連線、請使用「IC link Off（IC連結關閉）」和「IC link on（IC連結開啟）」命令逐一停用及重新啟用連結。如果問題持續發生、請聯絡NetApp技術支援部門。</block>
+  <block id="3417d907d7ea86d210c4bfcc43a24aab" category="cell">超過每位使用者的CVO工作階段上限</block>
+  <block id="692226afd760c4be1a4f564e2be9d79d" category="cell">您已超過每位使用者透過TCP連線所允許的工作階段數上限。任何建立工作階段的要求都會被拒絕、直到釋出部分工作階段為止。</block>
+  <block id="cc4528d944e9b048751f24169667812f" category="cell">執行下列修正動作：檢查所有在用戶端上執行的應用程式、並終止任何無法正常運作的應用程式。重新啟動用戶端。檢查問題是否是由新的或現有的應用程式所造成：如果應用程式是新的、請使用「CIFS選項modify -max-file-se-per tree」命令、為用戶端設定較高的臨界值。在某些情況下、用戶端會如預期運作、但需要較高的臨界值。您應該擁有進階權限、為用戶端設定較高的臨界值。如果問題是由現有的應用程式所造成、則用戶端可能會發生問題。如需詳細資訊或協助、請聯絡NetApp技術支援。</block>
+  <block id="64aa3e406bf6fdfe25f69b5bd281a6a9" category="cell">CVO NetBios名稱衝突</block>
+  <block id="6469db1dd765d74339c7fc94948f95aa" category="cell">執行下列任何一項修正動作：如果在NetBios名稱或別名中發生衝突、請執行下列其中一項：使用「vserver CIFS刪除別名-vserver vserver」命令刪除重複的NetBios別名。使用「vserver CIFS create -alias -vserver vserver」命令、刪除重複名稱並新增新名稱的別名、以重新命名NetBios別名。如果未設定別名、而且在NetBios名稱中有衝突、請使用「vserver CIFS刪除-vserver vserver」和「vserver CIFS create -CIFS- server netbiosname」命令重新命名CIFS伺服器。附註：刪除CIFS伺服器可能會使資料無法存取。移除遠端機器上的NetBios名稱或重新命名。</block>
+  <block id="644d9098bcc3a31bdacc976500b4eb66" category="cell">CVO NFSv4儲存區資源池耗盡</block>
+  <block id="c51529ae13ecbf2fbbfab4cebaef41bd" category="cell">CVO節點緊急</block>
+  <block id="2ae27baf1313de0831c184ee223aca44" category="cell">CVO節點根磁碟區空間不足</block>
+  <block id="5e5d1c16c43f05d0485ca792cbe28b39" category="cell">執行下列修正動作：刪除舊的Snapshot複本、刪除不再需要的/mroot目錄檔案、或擴充根Volume容量、以清除根磁碟區上的空間。重新啟動控制器。如需詳細資訊或協助、請聯絡NetApp技術支援。</block>
+  <block id="61aa5f210dffed5ac7cf5d1d081d6845" category="cell">不存在CVO的管理共用</block>
+  <block id="4c9d1c26e38129c49566c5decc4ba3f8" category="cell">CVO物件存放區主機無法解析</block>
+  <block id="f4034c42cc745d268b71223c805f6d06" category="cell">CVO物件存放區叢集間LIF關閉</block>
+  <block id="e05c6d7df230fbf518b3c46b6e3323e9" category="cell">執行下列修正動作：使用「network interface show -role intercluster」命令檢查叢集間LIF狀態。確認叢集間LIF設定正確且正常運作。如果未設定叢集間LIF、請使用「network interface create -role intercluster」命令新增。</block>
+  <block id="bd700b5e6f285c5b0b7fb9e26decbf22" category="cell">CVO物件存放區簽名不符</block>
+  <block id="0bcb24e494a0d49d9daf70b0ce73eae1" category="cell">CVO QoS監控記憶體已用盡</block>
+  <block id="f3ee7c32a9c1d087f309bd490e0d7a2d" category="cell">QoS子系統的動態記憶體已達到目前平台硬體的限制。某些QoS功能可能會以有限的容量運作。</block>
+  <block id="ab10fcc620e856f31d30a90d9261915c" category="cell">刪除部分作用中的工作負載或串流、以釋放記憶體。使用「Statistics show -object Workload -counter ops」命令來判斷哪些工作負載處於作用中狀態。作用中工作負載顯示非零作業。然後多次使用「Workload Delete &lt;Workload name&gt;」命令來移除特定的工作負載。或者、也可以使用「stream DELETE -Workload &lt;Workload name&gt;*」命令、從作用中工作負載刪除相關的串流。</block>
+  <block id="1b00b12402523bf20a176bdc416a8d80" category="cell">CVO ReadDIR逾時</block>
+  <block id="b4a9340b6b1c386ffbb813dd194cd4f1" category="cell">請執行下列修正動作：使用下列「diag」權限nocleselle CLI命令、尋找最近執行的readDIR檔案作業過期目錄的特定資訊：WAFL fireddir notes show。檢查目錄是否顯示為「稀疏」：如果目錄顯示為「稀疏」、建議您將目錄內容複製到新目錄、以移除目錄檔案的零件。如果目錄未標示為「稀疏」且目錄很大、建議您減少目錄中的檔案項目數量、以減少目錄檔案的大小。</block>
+  <block id="c0c9b27bfb47df34482359e0681b8625" category="cell">CVO重新配置儲存資源池失敗</block>
+  <block id="e27cdb180c7ac453d55cc5376d484e30" category="cell">執行下列修正動作：使用「network interface show」命令確認叢集間LIF已上線且正常運作。透過目的地節點叢集間LIF上的「ping」命令、檢查與物件存放區伺服器的網路連線。使用「Aggregate object-store config show」命令、確認物件存放區的組態未變更、而且登入和連線資訊仍正確無誤。或者、您也可以使用重新定位命令的「overre-destination-checks"參數來覆寫錯誤。如需詳細資訊或協助、請聯絡NetApp技術支援。</block>
+  <block id="ba14a826a3059fa0dbf98ba39cdd538f" category="cell">CVO陰影複製失敗</block>
+  <block id="5793b85483d6f4727031f8cd27c2a2f8" category="cell">使用事件訊息中提供的資訊檢查下列項目：陰影複製組態是否已啟用？是否已安裝適當的授權？執行陰影複製作業的共用區為何？共享區名稱是否正確？共享路徑是否存在？陰影複製集及其陰影複製的狀態為何？</block>
+  <block id="15e4f602af2b3fd276e8c1abb3e1d24c" category="cell">CVO儲存VM停止成功</block>
+  <block id="4df327f108f33e6c2500a7f538a648ad" category="cell">CVO太多CIFS驗證</block>
+  <block id="6da8b96955c7e59e295e11c0f211341a" category="cell">CVO未指派的磁碟</block>
+  <block id="0e932fe140878dddad130030e4c54088" category="cell">執行下列修正動作：使用「disk show -n」命令來判斷哪些磁碟尚未指派。使用「disk assign」命令將磁碟指派給系統。</block>
+  <block id="f168200fd2bd1ef2e681b67cd561efa4" category="cell">CVO未獲授權的使用者存取管理共用區</block>
+  <block id="daf241abd3ddf3fdcfcac4e97128f387" category="cell">請執行下列修正動作：確定所述的使用者名稱和IP位址已設定在其中一個作用中的VScan掃描器資源池中。使用「vserver vscan掃描器資源池show-active」命令檢查目前作用中的掃描器資源池組態。</block>
+  <block id="e57596d14b25baac52672fc309c8a58d" category="cell">偵測到CVO病毒</block>
+  <block id="5431a7feb1f4bd20d2eb82e67431449e" category="cell">VScan伺服器已向儲存系統回報錯誤。這通常表示已發現病毒。不過、VScan伺服器上的其他錯誤可能會導致此事件。拒絕用戶端存取檔案。視VScan伺服器的設定和組態而定、VScan伺服器可能會清理、隔離或刪除檔案。</block>
+  <block id="4263cc2b53ae23f9cc6cf513a43b5e97" category="cell">CVO Volume離線</block>
+  <block id="28b914f56ac8ad6ac5c0eb77527d0023" category="cell">CVO Volume受限</block>
+  <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">2022年11月</block>
+  <block id="1213554c7911deac461074eac67a0744" category="section-title">超過40台全新的安全、資料收集和CVO監控器！</block>
+  <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">我們新增數十部系統定義的新監控器、以警示您有關Cloud Volumes、Security和Data Protection的潛在問題。深入瞭解這些監視器 <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
 </blocks>
