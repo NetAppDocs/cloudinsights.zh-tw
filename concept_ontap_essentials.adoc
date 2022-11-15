@@ -16,7 +16,7 @@ keywords: dashboard, widget, ontap, overview, insight
 * 資料保護：可以使用NetApp資料保護技術來保護的物件
 
 
-您可以在上找到更多定義 link:task_dc_na_cdot.html#ontap-data-management-terminology["資料收集器ONTAP"] 頁面。
+如需ONTAP 更多關於功能性的詞彙和定義、請參閱 link:task_dc_na_cdot.html["資料收集器ONTAP"] 文件。
 
 不需要使用過去七天內收集的資料來收集至少一部運作中的資料、即可獲得支援。ONTAP ONTAP
 

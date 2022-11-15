@@ -8973,7 +8973,6 @@
   <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">為每個欄位輸入適當的資訊、並在完成時按一下「Save（儲存）」。</block>
   <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">您也可以按一下「測試Webhook」按鈕來測試連線。請注意、這會根據所選的方法、將「Message Body（訊息本文）」（不含替代）傳送至定義的URL。</block>
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">請注意、在本節中、按一下「Test Webhook」（測試Webhook）按鈕時、會執行「_not」（非）替換；此按鈕會傳送有效負載、顯示「%」替換、但不會以資料取代。</block>
-  <block id="cf2146b9e920671969e606b44d0743f6" category="paragraph">您可以在上找到更多定義 <block ref="b7f404f6b2e5258b20a8d7e7801ccdd1" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">編輯NetApp Kubernetes監控操作員。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。</block>
@@ -9172,4 +9171,5 @@
   <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">2022年11月</block>
   <block id="1213554c7911deac461074eac67a0744" category="section-title">超過40台全新的安全、資料收集和CVO監控器！</block>
   <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">我們新增數十部系統定義的新監控器、以警示您有關Cloud Volumes、Security和Data Protection的潛在問題。深入瞭解這些監視器 <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="94bf1c9b14123c3874cb9d8257cedc3c" category="paragraph">如需ONTAP 更多關於功能性的詞彙和定義、請參閱 <block ref="59db06bd3283cfbb592d6ec7e170773c" category="inline-link-macro-rx"></block> 文件。</block>
 </blocks>
