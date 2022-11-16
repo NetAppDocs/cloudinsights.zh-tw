@@ -56,8 +56,8 @@ summary: 設定HDS Ops Center資料收集器。
 
 您必須具備下列條件才能收集庫存資料：
 
-* Ops Center伺服器的IP位址
-* Ops Center軟體和對等權限的唯讀使用者名稱和密碼
+* 裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱
+* 裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未實作LDAP / SSO使用者使用的REST API支援
 
 
 

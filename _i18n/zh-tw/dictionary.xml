@@ -4910,8 +4910,6 @@
   <block id="a18b5712dface3f20bce7750886350d3" category="cell">主機群組</block>
   <block id="5b52c3da7acdc6837b619fa0e7beb98b" category="cell">Volume對應與遮罩</block>
   <block id="b4a20e3a6be7e6cd6f8e3dcdd45cb2a8" category="cell">Volume配對</block>
-  <block id="3d9fdded41d1c4003ba59b29e1faef21" category="list-text">Ops Center伺服器的IP位址</block>
-  <block id="2d9bdba47e7ef41afea9893477c6c1b1" category="list-text">Ops Center軟體和對等權限的唯讀使用者名稱和密碼</block>
   <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center IP位址</block>
   <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">裝載「Common Services」元件之Ops Center伺服器的IP位址或完整網域名稱</block>
   <block id="8db0f231405345684c1dab98cc049f52" category="cell">Ops Center伺服器的使用者名稱。</block>
@@ -9183,4 +9181,6 @@
   <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">請務必加密超過50個檔案。少數檔案將會被忽略。</block>
   <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">請勿多次使用相同的使用者執行攻擊。幾次之後、CS將會學習此使用者行為、並假設這是使用者的正常行為。</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">請勿加密剛建立相同使用者的檔案。變更使用者剛建立的檔案並不視為風險活動。而是使用其他使用者所建立的檔案、或是在建立檔案並加密檔案之間等待數小時。</block>
+  <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱</block>
+  <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未實作LDAP / SSO使用者使用的REST API支援</block>
 </blocks>
