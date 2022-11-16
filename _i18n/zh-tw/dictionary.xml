@@ -9183,4 +9183,5 @@
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">請勿加密剛建立相同使用者的檔案。變更使用者剛建立的檔案並不視為風險活動。而是使用其他使用者所建立的檔案、或是在建立檔案並加密檔案之間等待數小時。</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未實作LDAP / SSO使用者使用的REST API支援</block>
+  <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">請注意、當在資產上執行多個更新相同評註的規則時、第一個規則（從上而下執行）會套用評註並更新資產、然後套用第二個規則、但不會變更先前規則所設定的任何評註。</block>
 </blocks>
