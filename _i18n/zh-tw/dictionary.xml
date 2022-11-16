@@ -9172,4 +9172,15 @@
   <block id="1213554c7911deac461074eac67a0744" category="section-title">超過40台全新的安全、資料收集和CVO監控器！</block>
   <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">我們新增數十部系統定義的新監控器、以警示您有關Cloud Volumes、Security和Data Protection的潛在問題。深入瞭解這些監視器 <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
   <block id="94bf1c9b14123c3874cb9d8257cedc3c" category="paragraph">如需ONTAP 更多關於功能性的詞彙和定義、請參閱 <block ref="59db06bd3283cfbb592d6ec7e170773c" category="inline-link-macro-rx"></block> 文件。</block>
+  <block id="1d9d1091c95c8c6a906de486d03c6a5a" category="cell">在設定使用者目錄收集器之前、請先停用AD伺服器加密。擷取使用者詳細資料後、將會保留13個月。如果擷取使用者詳細資料後AD伺服器中斷連線、則不會擷取AD中新增的使用者。若要再次擷取、使用者目錄收集器必須連線至AD。</block>
+  <block id="ddae1da9e7e7b7bc5250e69e20396758" category="cell">CloudInsights Security中有來自Active Directory的資料。想要刪除CloudInsights中的所有使用者資訊。</block>
+  <block id="cda875edf30beb4d722b276eaf998869" category="cell">不可能只從CloudInsights Security刪除Active Directory使用者資訊。若要刪除使用者、必須刪除完整的租戶。</block>
+  <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解決方案</block>
+  <block id="f261294412af441f0164f608fbed7960" category="cell">Data Collector會顯示「Cloud Secure 無法判斷ONTAP Amazon FxSN資料收集器的支援類型」錯誤。客戶無法將新的Amazon FSxN資料收集器新增Cloud Secure 至支援中心。從代理程式連接埠443連線至FSxN叢集的連線逾時。防火牆和AWS安全性群組已啟用必要的規則、以允許通訊。代理程式已經部署、而且也位於相同的AWS帳戶中。此相同的代理程式可用來連接及監控其餘的NetApp裝置（且所有裝置均正常運作）。</block>
+  <block id="b4006ae0366e7ed3c70d23f64ed418c8" category="cell">將fsxadmin LIF網路區段新增至代理程式的安全性規則、即可解決此問題。如果您不確定連接埠、則允許所有連接埠。</block>
+  <block id="2855135907eef979db329ca6aebe0464" category="section-title">執行模擬器之前的準則：</block>
+  <block id="d786b68b9cf5f686784afa64b69b3bce" category="list-text">請確定加密的檔案不是空白的。</block>
+  <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">請務必加密超過50個檔案。少數檔案將會被忽略。</block>
+  <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">請勿多次使用相同的使用者執行攻擊。幾次之後、CS將會學習此使用者行為、並假設這是使用者的正常行為。</block>
+  <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">請勿加密剛建立相同使用者的檔案。變更使用者剛建立的檔案並不視為風險活動。而是使用其他使用者所建立的檔案、或是在建立檔案並加密檔案之間等待數小時。</block>
 </blocks>

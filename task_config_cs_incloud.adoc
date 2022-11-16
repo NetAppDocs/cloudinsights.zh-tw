@@ -67,3 +67,18 @@ summary: 使用資料收集器從裝置收集檔案和使用者存取資料。Cl
 
 
 如需詳細步驟、請參閱此連結：https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent
+
+
+
+== 疑難排解
+
+下表說明已知問題及其解決方法。
+
+|===
+
+
+| 問題 | 解決方案 
+
+
+| Data Collector會顯示「Cloud Secure 無法判斷ONTAP Amazon FxSN資料收集器的支援類型」錯誤。客戶無法將新的Amazon FSxN資料收集器新增Cloud Secure 至支援中心。從代理程式連接埠443連線至FSxN叢集的連線逾時。防火牆和AWS安全性群組已啟用必要的規則、以允許通訊。代理程式已經部署、而且也位於相同的AWS帳戶中。此相同的代理程式可用來連接及監控其餘的NetApp裝置（且所有裝置均正常運作）。 | 將fsxadmin LIF網路區段新增至代理程式的安全性規則、即可解決此問題。如果您不確定連接埠、則允許所有連接埠。 
+|===

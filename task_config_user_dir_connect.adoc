@@ -179,4 +179,7 @@ image:cs_ADExample.png["AD連線"]
 
 
 | 如果Active Directory（AD）伺服器上已啟用加密憑證（SSL）、Cloud Secure 則無法連接到AD伺服器。 | 在設定使用者目錄收集器之前、請先停用AD伺服器加密。擷取使用者詳細資料後、將會保留13個月。如果擷取使用者詳細資料後AD伺服器中斷連線、則不會擷取AD中新增的使用者。若要再次擷取、使用者目錄收集器必須連線至AD。 
+
+
+| CloudInsights Security中有來自Active Directory的資料。想要刪除CloudInsights中的所有使用者資訊。 | 不可能只從CloudInsights Security刪除Active Directory使用者資訊。若要刪除使用者、必須刪除完整的租戶。 
 |===
