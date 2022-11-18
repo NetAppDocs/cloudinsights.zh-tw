@@ -9172,7 +9172,6 @@
   <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">請勿多次使用相同的使用者執行攻擊。幾次之後、CS將會學習此使用者行為、並假設這是使用者的正常行為。</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">請勿加密剛建立相同使用者的檔案。變更使用者剛建立的檔案並不視為風險活動。而是使用其他使用者所建立的檔案、或是在建立檔案並加密檔案之間等待數小時。</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱</block>
-  <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未實作LDAP / SSO使用者使用的REST API支援</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">請注意、當在資產上執行多個更新相同評註的規則時、第一個規則（從上而下執行）會套用評註並更新資產、然後套用第二個規則、但不會變更先前規則所設定的任何評註。</block>
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">*雜訊抑制*可篩選使用者在過去2小時內建立的檔案。它也可用來篩選使用者存取的暫存檔（例如、.tmp檔案）。</block>
   <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">排序取證活動記錄資料</block>
@@ -9181,4 +9180,5 @@
   <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">活動記錄保留</block>
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensics頁面中篩選器的適用性</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路徑/原始路徑搜尋</block>
+  <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未針對LDAP/SSO使用者實作REST API支援</block>
 </blocks>

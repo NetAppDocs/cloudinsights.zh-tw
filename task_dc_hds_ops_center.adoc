@@ -57,7 +57,7 @@ summary: 設定HDS Ops Center資料收集器。
 您必須具備下列條件才能收集庫存資料：
 
 * 裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱
-* 裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未實作LDAP / SSO使用者使用的REST API支援
+* 裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未針對LDAP/SSO使用者實作REST API支援
 
 
 
@@ -99,7 +99,7 @@ summary: 設定HDS Ops Center資料收集器。
 | 選擇「排除」或「包含」以指定清單 | 指定在收集資料時是否要納入或排除下列陣列清單。 
 
 
-| 篩選裝置清單 | 要包含或排除的裝置ID或陣列名稱清單、以逗號分隔 
+| 篩選裝置清單 | 要包含或排除的裝置序號以逗號分隔的清單 
 
 
 | 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為300。 
