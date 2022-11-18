@@ -9181,4 +9181,5 @@
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensics頁面中篩選器的適用性</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路徑/原始路徑搜尋</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未針對LDAP/SSO使用者實作REST API支援</block>
+  <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">必須安裝HDS Ops Center「分析器」模組、儲存陣列必須提供Ops Center「分析器」模組</block>
 </blocks>

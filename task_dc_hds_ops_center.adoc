@@ -62,6 +62,14 @@ summary: 設定HDS Ops Center資料收集器。
 
 
 
+== 效能要求
+
+若要收集效能資料、必須符合下列要求：
+
+必須安裝HDS Ops Center「分析器」模組、儲存陣列必須提供Ops Center「分析器」模組
+
+
+
 == 組態
 
 [cols="2*"]
