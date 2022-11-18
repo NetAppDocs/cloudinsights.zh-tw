@@ -4242,7 +4242,6 @@
   <block id="1dc677ce29033ce9855fe2699237c9a1" category="list-text">*存取實體的來源IP*。您必須以雙引號提供有效的來源IP位址、例如「10.1.1.1」。不完整的IP（例如"10.1.1.*"、"10.1.*.*"等）將無法運作。</block>
   <block id="993bee13d79883a291c5bf94757d27d8" category="list-text">*傳輸協定*以擷取特定傳輸協定的活動。</block>
   <block id="c3d430182436845185c1ac182ba51c05" category="list-text">*執行活動的使用者名稱*。您需要提供確切的使用者名稱以進行篩選。無法使用部分使用者名稱進行搜尋、或是以「*」為前置或後置的部分使用者名稱進行搜尋。</block>
-  <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">*雜訊抑制*可篩選使用者所建立的新檔案（即過去2小時內）。它也可用來篩選使用者存取的暫存檔（例如、.tmp檔案）。</block>
   <block id="5e5226f8443d6c79a977ffd6e71a8d9d" category="paragraph">下列欄位必須遵守特殊篩選規則：</block>
   <block id="3d96016f7628ba3b55f9ed124fe9a321" category="list-text">*實體類型*、使用實體（檔案）副檔名</block>
   <block id="5c50b1e65ca02ceaca4a85e8cc5af6bf" category="list-text">*實體路徑*</block>
@@ -8922,15 +8921,6 @@
   <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用Cloud Insights NetApp ONTAP 的「資料流遙測」來設定功能</block>
   <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 資料流遙測</block>
   <block id="458a37db2666885e234720ccdea58253" category="paragraph">如需最新資訊、請參閱 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 資料收集器頁面。</block>
-  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 標頭*雜訊抑制*可篩選使用者在過去2小時內建立的檔案。它也可用來篩選使用者存取的暫存檔（例如、.tmp檔案）。</block>
-  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fca2</block>
-  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">=排序取證活動歷程記錄資料</block>
-  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">=匯出所有活動</block>
-  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">=所有活動的欄選擇</block>
-  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">=活動記錄保留</block>
-  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">= Forensics頁面中篩選器的適用性</block>
-  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路徑/原始路徑搜尋</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=疑難排解</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">請參閱本指南</block>
   <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">此外、還能與其他工具整合Cloud Secure 。例如、 <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 與Splunk整合。</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_\https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
@@ -9184,4 +9174,11 @@
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未實作LDAP / SSO使用者使用的REST API支援</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">請注意、當在資產上執行多個更新相同評註的規則時、第一個規則（從上而下執行）會套用評註並更新資產、然後套用第二個規則、但不會變更先前規則所設定的任何評註。</block>
+  <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">*雜訊抑制*可篩選使用者在過去2小時內建立的檔案。它也可用來篩選使用者存取的暫存檔（例如、.tmp檔案）。</block>
+  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">排序取證活動記錄資料</block>
+  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">匯出所有活動</block>
+  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">所有活動的欄選擇</block>
+  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">活動記錄保留</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Forensics頁面中篩選器的適用性</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路徑/原始路徑搜尋</block>
 </blocks>
