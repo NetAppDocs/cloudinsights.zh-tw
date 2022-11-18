@@ -339,8 +339,8 @@ NOTE: 如果您是在先前安裝的指令碼型Kubernetes代理程式上執行�
 可使用下列命令解除安裝較新版本的監控操作員：
 
 ....
-kubectl delete agent <name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd <name-space>
+kubectl delete agent -A -l installed-by=nkmo-<name-space>
+kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
 ....
 如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。
 
