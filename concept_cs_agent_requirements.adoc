@@ -109,6 +109,6 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-==== 相關：
+== 系統規模調整
 
 請參閱 link:concept_cs_event_rate_checker.html["事件率檢查器"] 規模調整的相關資訊文件。

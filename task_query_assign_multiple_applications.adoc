@@ -14,6 +14,7 @@ keywords: query, queries, application, annotation, multiple
 
 NOTE: 您可以使用這些步驟來新增或移除 link:task_defining_annotations.html["註釋"] 也一樣。
 
+.開始之前
 您必須已建立查詢、以尋找所有要編輯的資產。
 
 .步驟

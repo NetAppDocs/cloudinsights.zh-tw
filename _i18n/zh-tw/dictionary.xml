@@ -389,8 +389,6 @@
   <block id="56577342da99ae2000bb389a5006c3f7" category="cell"><block ref="56577342da99ae2000bb389a5006c3f7" category="inline-link-macro-rx"></block></block>
   <block id="270085566d6200c501fde2aada153de2" category="inline-link-macro">MySQL</block>
   <block id="4d9746bceefe2b6bd2586d1c3e4d2733" category="cell"><block ref="4d9746bceefe2b6bd2586d1c3e4d2733" category="inline-link-macro-rx"></block></block>
-  <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">NetApp Astra資料儲存區</block>
-  <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
   <block id="b988e43525055930d8d214d3116d4c04" category="inline-link-macro">NetApp Cloud Volumes ONTAP</block>
   <block id="ecf8390ebf4bfbf85b7308b7ca58aaa1" category="cell"><block ref="ecf8390ebf4bfbf85b7308b7ca58aaa1" category="inline-link-macro-rx"></block></block>
   <block id="91cd47436c04c106182959241ee93b9d" category="inline-link-macro">適用於AWS的NetApp Cloud Volumes服務</block>
@@ -643,7 +641,6 @@
   <block id="7cbf4ba3df1c84539924c37da16db19b" category="paragraph">警示頁面（此範例顯示潛在的勒索軟體攻擊）：<block ref="5ff4dcf9689ef64057d8e82508557b5f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf7a8875f9ed11e1707cd50fdfc361f6" category="inline-image-macro">勒索軟體詳細資料頁面範例</block>
   <block id="6c9d686a827f50aa2feb7087b665c481" category="paragraph">詳細資料頁面（此範例顯示潛在的勒索軟體攻擊）：<block ref="9d19bd7639e249113839e28d2fea9963" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3187f3dcb05b639d87ff0ef7bcdc3e02" category="section-title">執行Snapshot動作</block>
   <block id="19b247a947fc686391faebd949689a52" category="paragraph">當偵測到惡意活動時、利用自動擷取快照功能來保護資料、確保資料安全備份。Cloud Secure</block>
   <block id="7683f342a6f18a36645f19f6332de56e" category="inline-link-macro">自動化回應原則</block>
   <block id="d27b2fb629cc2c24086da7257eb32814" category="paragraph">您可以定義 <block ref="5def0187ac3a4d928905bc1e2b8dece3" category="inline-link-macro-rx"></block> 當偵測到勒索軟體攻擊或其他異常使用者活動時、就會擷取快照。您也可以從警示頁面手動擷取快照。</block>
@@ -1083,7 +1080,6 @@
   <block id="e767946157d182cf237f259a3b6478c4" category="paragraph">在Kubernetes Explorer中、您可以按一下「節點」圖示、開啟該節點的詳細資訊頁面。在此頁面上、您可以檢視節點的相關資訊、以及瀏覽VM、Pod和Container資訊。</block>
   <block id="4f29fd9657915b51e00ee112dd495873" category="inline-image-macro">Kubernetes節點詳細資料頁面顯示篩選</block>
   <block id="ff9dcb7868c4ad1ee30492b12c57b9d3" category="paragraph"><block ref="ff9dcb7868c4ad1ee30492b12c57b9d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="088972153fa4b405527a2376c07113eb" category="section-title">探索節點的Pod和持續磁碟區</block>
   <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">支援VMware View、可讓您清楚掌握Kubernetes環境的後端儲存設備、深入瞭解Kubernetes Pod和持續磁碟區（PV）Cloud Insights 。您可以追蹤PV計數器、例如IOPS、延遲和處理量、從單一Pod的使用量、透過PV計數器、直到PV、再到後端儲存設備。</block>
   <block id="4f199152407556f59fa94af499f084e0" category="paragraph">在PV層級、Cloud Insights 由NetApp收集後端（內部磁碟區或磁碟區、視PV類型而定）容量資訊（總計、使用量、使用百分比）、以及內部磁碟區快照數。從Pod到儲存層級、它會收集後端容量和內部Volume Snapshot數。</block>
   <block id="aae3edef1483f0838d4754d553d09e68" category="paragraph">在Volume或內部Volume登陸頁面上、會顯示兩個表格：</block>
@@ -1486,7 +1482,6 @@
   <block id="ef484ddf1fa70f0f7e6e12c5ec398fd0" category="paragraph">視您選擇要設定的初始資料收集器類型（儲存設備、交換器等）而定、將會匯入一或多個相關儀表板。例如、如果您設定儲存資料收集器、將會匯入一組儲存相關儀表板、其中一組儀表板將設為Cloud Insights 您的「首頁」。您可以從*儀表板&gt;顯示所有儀表板*清單變更首頁。</block>
   <block id="884c68aa76be99399251cf49057f5089" category="inline-link-macro">建立您自己的</block>
   <block id="30ac9f66beb1edda1ef095e871e96e65" category="paragraph">您可以稍後匯入其他儀表板、或 <block ref="d9f1bed19a893c2599f38f8ee38e7f25" category="inline-link-macro-rx"></block>。</block>
-  <block id="d26ece7a14868ffcc86bc3dfce18345c" category="section-title">這就是一切</block>
   <block id="dced233464479bab905d4f3c73af377e" category="paragraph">完成初始設定程序之後、您的環境將開始收集資料。</block>
   <block id="53bc5b0eaf13535f4b602a5830ef8ad6" category="paragraph">如果初始設定程序中斷（例如、關閉瀏覽器視窗）、您必須手動執行下列步驟：</block>
   <block id="3109cfeae79b76c71475be9bfd3c2938" category="list-text">選擇資料收集器</block>
@@ -2708,10 +2703,8 @@
   <block id="d47350de0cb738713602fc081af217e9" category="paragraph">請參閱 <block ref="66b24601b32ea1e28a736b303c9dda16" category="inline-link-macro-rx"></block> 以取得組態資訊。這適用於安裝在雲端的內部部署代理程式和代理程式。</block>
   <block id="0deb145e97d2a45a78872c8c8eb51e12" category="list-text">當代理程式安裝在AWS EC2執行個體中以監控Cloud ONTAP SVM時、代理程式和儲存設備必須位於同一個VPC中。如果它們位於獨立的VPC中、則VPC之間必須有有效的路由。</block>
   <block id="0cd400e3d93cd7ed179f95d57d744891" category="section-title">權限相關注意事項</block>
-  <block id="d6dbed5bc250d74498fd43915882d37c" category="section-title">透過叢集管理IP新增權限：</block>
   <block id="bf3bb5d17ba89dbbd6cbc400e1c6e125" category="paragraph">如果您無法使用叢集管理管理員使用者來允許Cloud Secure Sfuse存取ONTAP SVM資料收集器、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。設定Cloud Secure 使用叢集管理IP的資料收集器時、請使用「CsUser」的使用者名稱和密碼。</block>
   <block id="10414897d078dba7d0d6c5111c2af072" category="paragraph">若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到功能表、然後在ONTAP 功能表伺服器上執行下列命令：</block>
-  <block id="8891dc1e6e4e5ac8add48653bb6e58e7" category="section-title">透過Vserver管理IP新增權限：</block>
   <block id="cb5fee403d15816a05d17c1eb2ba3cb4" category="paragraph">如果您無法使用叢集管理管理員使用者來允許Cloud Secure Sfuse存取ONTAP SVM資料收集器、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將Cloud Secure 使用者名稱「CsUser」和密碼設定為使用Vserver Management IP時、請使用「CsUser」。</block>
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到位、然後在ONTAP 伺服器上執行下列命令。為了方便起見、請先將這些命令複製到文字編輯器、並在ONTAP 執行下列命令之前、以Vserver名稱取代&lt;vservername&gt;：</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">設定資料收集器</block>
@@ -3488,7 +3481,6 @@
   <block id="b74af5a9ece7cdf67ec6e4e272d7c116" category="paragraph">在大多數情況下、只讀存取是裝置所需的全部功能。有些解決方案不允許唯讀存取、因此需要適當的提高權限。</block>
   <block id="b6e4757a4fed24ae14490ad102cfc2d8" category="section-title">此功能多久收集一次資訊？Cloud Insights</block>
   <block id="ff6f4b330e92d1228f84fcb98d25274c" category="paragraph">通常每隔5分鐘收集一次效能資料、每隔0.5小時就會發現邏輯和實體架構。Cloud Insights根據建議的最佳實務做法和擴充性來設定預設輪詢時間間隔、但確實允許使用者完全控制這些時間間隔。Cloud Insights</block>
-  <block id="33b5ea3829d10119391340b99e723dca" category="section-title">Cloud Insights對我的環境有何影響？</block>
   <block id="c21b8a2a80e57ca923413b1aa8daa2d0" category="paragraph">Cloud Insights的無代理程式、頻外和被動IP通訊、有助於將資料中心生態系統的設定、維護和影響降至最低。Cloud Insights的效能開發團隊會採取重大措施、將監控效能本身活動對資料中心效能的任何影響降至最低。在正常的作業環境中、影響可視為微不足道、而且在高使用率或效能不佳的技術平台中、也可予以緩和或加強。如Cloud Insights 需詳細資訊、請參閱《更新安裝指南》。</block>
   <block id="cf1e9c3fd6c6dda4ce691bf7e1cfbaef" category="section-title">我該如何列出Cloud Insights 所有的主機/虛擬機器在不完整版中？</block>
   <block id="c63925f7ddebcf8bf216776c93dc34ab" category="paragraph">Cloud Insights的小工具和查詢清單功能、可用來提供資料中心資產的庫存樣式清單。可將虛擬機器清單放入磁碟中、並在其中建立許多架構、以便查詢、小工具、儀表板和資料倉儲報告、並可透過RESTful API存取。</block>
@@ -3622,7 +3614,6 @@
   <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b44544b9d947c143a9cfcb45be1aeff" category="list-text">按一下*邀請*</block>
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">邀請即會傳送給使用者。使用者將有14天的時間接受邀請。一旦使用者接受邀請、他們將被帶到NetApp Cloud Portal、並使用邀請函中的電子郵件地址註冊。如果他們有該電子郵件地址的現有帳戶、他們只要登入、就能存取Cloud Insights 自己的「不知道」環境。</block>
-  <block id="aa4fab3c3fde779a8dc99f5269961218" category="section-title">修改現有使用者的角色</block>
   <block id="9b207ebd40869bfc10be14cb4279b22c" category="paragraph">若要修改現有使用者的角色、包括將其新增為*次要帳戶擁有者*、請遵循下列步驟。</block>
   <block id="bb10192e5b1a488b6e0bf0a436918863" category="list-text">按一下*管理&gt;使用者管理*。畫面會顯示系統上所有帳戶的清單。</block>
   <block id="27821658abae724fdd49cbd24489bb01" category="list-text">按一下您要變更的帳戶使用者名稱。</block>
@@ -4557,7 +4548,6 @@
   <block id="96cfad9bf45103ee0ef58fa25c0cfa6b" category="summary">自訂報告輸出與交付、將報告複製到剪貼簿、開啟報告（XML）。</block>
   <block id="e1039935b082dfd38ef43eb7fef4b452" category="doc">管理報告</block>
   <block id="ce2ce538c48e429c8dc98553649f3bbd" category="paragraph">您可以自訂報告的輸出格式與交付、設定報告內容或排程、以及電子郵件報告。</block>
-  <block id="5df8ec67e66b1b70f4dd477eeabe20c2" category="section-title">自訂報告的輸出格式與交付</block>
   <block id="8bee38bef7beb0158135e68890b6cc17" category="paragraph">您可以自訂報告的格式和交付方法。</block>
   <block id="c64e7d8f225e7e8875d2446a3b30bd34" category="list-text">在「更新報告入口網站」Cloud Insights 中、將滑鼠游標移到您要自訂的報告上、然後按一下*[...]*。</block>
   <block id="58cae8bb2701afa19011bf0042646c9d" category="inline-image-macro">報告自訂功能表</block>
@@ -6126,7 +6116,6 @@
   <block id="a33e4b0669b0dcd6c6727f25e8e1c46b" category="list-text">*日期*：日期值。視Widget的組態而定、可作為「來源」或「目標」值使用。</block>
   <block id="53cc3f1a4b0d0e434a93a7372b931ac6" category="inline-image-macro">可變類型</block>
   <block id="916ee1d24159df2a85679ef0774f9828" category="paragraph"><block ref="916ee1d24159df2a85679ef0774f9828" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="75514bc8f4a0fcfa4d6e233cf6293d4f" category="section-title">屬性變數</block>
   <block id="cdd0539c5f9ee15c61a20d8600fe7ca5" category="paragraph">選取「屬性類型」變數可讓您篩選包含指定屬性值的Widget資料。以下範例顯示行小工具、顯示值機員節點的可用記憶體趨勢。我們已為代理節點IP建立變數、目前設定為顯示所有IP：</block>
   <block id="e3f9b576b0f66601c43decf70ddc3a40" category="inline-image-macro">變數篩選之前的代理節點</block>
   <block id="8e1962312d6932465c5534f5b70114c0" category="paragraph"><block ref="8e1962312d6932465c5534f5b70114c0" category="inline-image-macro-rx" type="image"></block></block>
@@ -6792,7 +6781,6 @@
   <block id="dd97078b1fded41ab7f0a8081708a7b4" category="inline-image-macro">監控狀況</block>
   <block id="927629cba26acb892b3c2398129ca22e" category="paragraph"><block ref="927629cba26acb892b3c2398129ca22e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca82c7bf0a12e1bd7623c916688916ff" category="section-title">2020年7月</block>
-  <block id="6891d5aadc78ac62ff88e77318810010" category="section-title">執行Snapshot動作Cloud Secure</block>
   <block id="a4749fac6233635e6370a9c15d3b1bf4" category="paragraph">您可以定義自動回應原則、以便在偵測到勒索軟體攻擊或其他異常使用者活動時、擷取快照。您也可以從警示頁面手動擷取快照。</block>
   <block id="951c353976f888d39a5d73b6b9bfe6a5" category="section-title">衡量標準/計數器更新</block>
   <block id="bd7d085d6bd1c45996212198e43ff93d" category="paragraph">下列容量計數器可用於Cloud Insights 靜態UI和REST API。以前這些計數器只能用於資料倉儲/報告。</block>
@@ -7362,52 +7350,6 @@
   <block id="01515237e5a51a70ac5f1a57ab2c74a5" category="cell">節流期間節流節流期間節流節流核心模式使用中的節流時間使用量使用量使用量百分比系統使用量總計</block>
   <block id="be43542983d169babaee275ec60ecb75" category="cell">依照組態頁面上的指示、我看不到Cloud Insights Docker指標。</block>
   <block id="905bf4f9d8189256f8247dcef263d5cb" category="cell">檢查Telegraf代理程式記錄、查看是否報告下列錯誤：e! 外掛程式[inports.dDocker中發生錯誤：嘗試連線至Docker精靈套接字時、取得權限遭拒（若有）、請採取必要步驟、提供Telegraf代理程式存取上述Docker Unix套接字。</block>
-  <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">設定NetApp Astra資料儲存區</block>
-  <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra Data Store資料收集器</block>
-  <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">利用功能表監控指標Cloud Insights</block>
-  <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra Data Store快速入門</block>
-  <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">您也可以在Astra Data Store文件中找到這些安裝說明和其他資訊：<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
-<block ref="9e8952bf2d49abc5b376cb6c4ac1dd52" category="inline-link-macro-rx"></block></block>
-  <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">從這個資料收集器取得庫存與效能資料。Cloud Insights對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
-  <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">適用的</block>
-  <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">適用的DSNodeInfo.STATUS.drives</block>
-  <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">適用的</block>
-  <block id="d1f334283c677818d712ba42cb98bff0" category="cell">適用的數據匯出原則</block>
-  <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共用/共用啟動器</block>
-  <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">適用</block>
-  <block id="c5ecce90295639a685470629720aeea5" category="list-text">NetApp監控操作員必須安裝在Kubernetes叢集上、並使用Astra Data Store。如果在Astra Data Store安裝期間未安裝、請依照Astra Data Store安裝說明安裝監控操作員。</block>
-  <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">必須安裝_kubecl-astrads_ kubecl外掛程式。如果未安裝、請依照Astra Data Store安裝說明安裝_kubecl-astrads_二進位檔。</block>
-  <block id="55cf41c81d8f2fa848c3a33fd73120b5" category="list-text">下列命令必須可用：_awk、curl、grep和jq_。</block>
-  <block id="af27e8481fc7ef90e7ed57735aa486a7" category="paragraph">安裝指令碼會引導您完成Astra Data Store資料收集器的安裝。請依照畫面上的指示操作。完成安裝需要幾分鐘的時間。完成後、可能需要多花幾分鐘時間才能在Cloud Insights 畫面上顯示資料。</block>
-  <block id="d679078549b407f8255ce4a95eb4ccad" category="paragraph">指令碼會引導您完成下列步驟：</block>
-  <block id="73abd6a4d58ac58a260c391fe56f1a57" category="list-text">選擇API存取權杖。</block>
-  <block id="d81b7ed35f0d2bef601ad8d74fdeb35c" category="list-text">從安裝對話方塊複製安裝程式指令碼、並將其另存為名為_cloudinsing-adsing-監 控.sh_的檔案。您可以按一下剪貼簿圖示、快速將指令碼複製到剪貼簿。</block>
-  <block id="e62192a6aee08bda18b9aa476e12ac7c" category="list-text">開啟Bash視窗、將目錄變更為_cloudinsas-adsing-監 控.sh_指令碼的位置。</block>
-  <block id="fa36e0d10ffde2aefefc27bd0369f2f1" category="list-text">從安裝對話方塊複製權限命令區塊。您可以按一下剪貼簿圖示、將命令快速複製到剪貼簿。</block>
-  <block id="0df60a234fa438383cbe9b557bc6ac86" category="list-text">將權限命令貼到Bash視窗中、然後按Enter鍵。</block>
-  <block id="37ed094e95b1aafa9f96e9189d257a88" category="list-text">從安裝對話方塊複製安裝命令。您可以按一下剪貼簿圖示、將命令快速複製到剪貼簿。</block>
-  <block id="8c8c329f90a58cb7d77dde8ca933b56d" category="list-text">將install命令貼到Bash視窗。</block>
-  <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">將&lt;Kubernetes _ip&gt;取代為Kubernetes API伺服器的IP位址。</block>
-  <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">將&lt;Kubernetes toke&gt;取代為Kubernetes API權杖。</block>
-  <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">按Enter。</block>
-  <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">按一下「完成設定」。</block>
-  <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">如果安裝程式指令碼因為錯誤而結束、您可以在錯誤解決後重新執行。如果您的環境未使用預設設定、安裝程式指令碼可支援其他參數、例如監控操作員命名空間和Kubernetes API伺服器連接埠。可用選項的完整清單如下所示。</block>
-  <block id="b524f24588085b1e0adf31626117f231" category="section-title">安裝程式指令碼選項：</block>
-  <block id="df5b5c690ed2b1756bcbac0e24081d89" category="paragraph">請注意Cloud Insights 、下載時、將會在安裝程式指令碼中內嵌此域名和所選的API存取金鑰。</block>
-  <block id="5b3edf747d66543d15b01f48fb0a354e" category="section-title">Astra Data Store資料收集器</block>
-  <block id="711f972f5e82f211f310ac06c2f8e036" category="cell">您會看到「未獲授權」的訊息</block>
-  <block id="90b86e404196295299e2aa0d840dad62" category="cell">檢查Kubernetes API Token是否有權在_astrads.netapp.io_ apiGroup中呼叫API</block>
-  <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">「未知主機：astrads-計量 單位-service.astrads-system.svc.cluster：不知道名稱或服務」</block>
-  <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">驗證收集器是否安裝在執行於ads Kubernetes叢集內的擷取裝置Pod中。驗證astrads指標服務是否執行astrads系統命名空間。</block>
-  <block id="81e081c4fe35feb390583edb77bf277e" category="section-title">安裝指令碼</block>
-  <block id="5afe69e2069028149a518ef6de1e10c5" category="cell">監控運算子未在&lt;namespace&gt;命名空間中執行。</block>
-  <block id="6f062aede7e681e4af5f68add3fd7fd7" category="cell">請依照Astra Data Store安裝說明進行安裝</block>
-  <block id="4c43e40f1d743a69fcdef8d2b47d0b14" category="cell">300秒後、擷取單元Pod並未成功啟動。</block>
-  <block id="9434c645e8cc0f2a0d4f6cce62e5542d" category="cell">取得併購單元pod的名稱：kubecl Get pod -命名空間netapp-Monitoring | grep "au-pode"檢查pod事件是否有錯誤：kubecl描述pod -命名空間netapp-監 控&lt;po_name&gt;</block>
-  <block id="900774bd5956acd411393b65417a827b" category="cell">900秒後、擷取設備安裝尚未完成</block>
-  <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">取得併購單元pod的名稱：kubecl Get pod -命名空間netapp監控| grep "au-pode"檢查pod記錄是否有錯誤：kubecl記錄- 命名空間NetApp監控&lt;po_daming&gt;如果沒有錯誤、記錄檔會以「主要-擷取已啟動且正在執行！」訊息結尾、表示安裝成功、但時間過長。重新執行安裝指令碼。</block>
-  <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">無法從Cloud Insights 無法擷取擷取擷取裝置ID</block>
-  <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">驗證影像Cloud Insights 接收單元是否出現在畫面上。前往「管理」&gt;「資料收集器」、然後按一下「接收單位」索引標籤。驗證Cloud Insights 「驗證」功能表上的「驗證API金鑰是否具有「擷取裝置」</block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">設定ECS資料收集器。</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">設定EMC ECS資料收集器</block>
   <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要ECS伺服器的IP位址和管理層級網域帳戶。</block>
@@ -7711,7 +7653,6 @@
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">與ONTAP 適用於Fpolicy活動的功能溝通</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
   <block id="7d8046677a1b263499357d1834d49ee6" category="cell">在不同時使用的情況下進行雙向。ONTAP Cloud Secure代理程式Ping SVM LIF。</block>
-  <block id="8adc06985cc11866dd25119eb70226ab" category="section-title">相關：</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件率檢查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">請參閱 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 規模調整的相關資訊文件。</block>
   <block id="55d1aacd9076657a9c3f2551a759f3f7" category="summary">資源頁相關警示區段概述Cloud Insights 。</block>
@@ -8446,8 +8387,6 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">建立Config Advisor 一個功能豐富的儀表板：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支援</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」-&gt;「開啟支援」票證、從「支援工具」開啟票證。</block>
-  <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">此資料收集器會擷取單一Astra Data Store叢集的庫存和效能資料。除了資料收集器之外、監控操作員也會收集進階度量、並設定「_Fluent bit_」來收集記錄。</block>
-  <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">安裝程式指令碼將：*確認監控操作員已安裝及設定。*設定Fluent位元。*安裝擷取單元。*在擷取單元執行後、安裝Astra Data Store收集器。</block>
   <block id="d07e55df7f133c0213955a67c979d808" category="admonition">「資料收集器」通知的優先順序高於任何與叢集/資料收集器相關的特定「監視器」通知。ONTAP您為資料收集器本身設定的收件者清單將會收到資料收集器警示。如果沒有作用中的資料收集器警示、則會將監控產生的警示傳送給特定的監控收件者。</block>
   <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">記錄監視器</block>
   <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">Volume離線</block>
@@ -8513,7 +8452,6 @@
   <block id="95458ffe03f081fb38d0e5630d7836c6" category="list-text">受影響的後端儲存資源、目前的容量已用完總容量。按一下此連結即可開啟後端Volume的詳細登陸頁面。</block>
   <block id="9b6de7d57253456e4f416bcef90b76e5" category="inline-image-macro">顯示詳細資料的工作負載表</block>
   <block id="e589c155ffae6696761533f45ef69b7c" category="paragraph"><block ref="e589c155ffae6696761533f45ef69b7c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f8f8bf593c85a6ac1a3a0cc2103aa21" category="section-title">如果空間不足、該怎麼辦？</block>
   <block id="d6fe83f2685cfec3bef24ac55c5aa793" category="paragraph">在Insight頁面上、按一下*+ Show建置建議*以檢視可能的解決方案。當空間不足時、最簡單的選擇是增加更多容量、Cloud Insights 而此功能可讓您增加最佳容量、以增加60天目標預測的完整時間。也會顯示其他建議。</block>
   <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">可增加至60天TFF的容量</block>
   <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
@@ -8584,7 +8522,6 @@
   <block id="2b8d5e66c38238b579c8a7f9a4f0deb8" category="paragraph"><block ref="2b8d5e66c38238b579c8a7f9a4f0deb8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d0288e56a716095eb8a98c5c3943c54" category="paragraph">TFF計數器也適用於儲存設備、儲存資源池和Volume。請持續觀察此空間、以取得這些物件的其他儀表板。</block>
   <block id="70bda96e0227797cb8002e9bb8d9880d" category="paragraph">請注意、完整時間預測已從_Preview_移出、並將部署給所有客戶。</block>
-  <block id="c734c78a6282b21c743d2e94a2fbba82" category="section-title">我的環境有何改變？</block>
   <block id="c126f3a900297855b1ec4bc88198f155" category="paragraph">您可以在記錄檔案總管中檢視變更記錄項目。ONTAP</block>
   <block id="4c6ad175a17ca3e0294c095f93eefebe" category="inline-image-macro">顯示變更記錄項目範例的影像</block>
   <block id="71f092ae4722c5826712794003f7d4b8" category="paragraph"><block ref="71f092ae4722c5826712794003f7d4b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -8747,7 +8684,6 @@
   <block id="b15e043f2e8db0aa222ae7311e987712" category="paragraph">下列功能已從「預覽」移出、現在可供所有客戶使用：</block>
   <block id="64f0171311f2657dbd0578fca9fb2fa5" category="cell">–封鎖攻擊時的使用者存取Cloud Secure</block>
   <block id="6ad1deaea422210384bf8c46adb4027a" category="cell">偵測到攻擊時、能夠封鎖使用者存取、為您的業務關鍵資料提供更好的保護。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
-  <block id="2d6bee64b9e0e23f822f86b9ef8e0060" category="section-title">我的資料收集狀態如何？</block>
   <block id="62eb208f255de6653342ec37c0ec229b" category="paragraph">提供兩個新的擷取單元活動訊號監視器、以及兩個監視器、可在資料收集器故障時向您發出警示。Cloud Insights這些功能可用於在資料收集問題上快速警示您。</block>
   <block id="b355ccf4f7e6c9eb6dbdec86e748dbf6" category="paragraph">下列監視器現在可在_Data Collection_監控群組中使用：</block>
   <block id="f080c7e2db3c941a50244332dcd5aa78" category="list-text">擷取單元的「關鍵訊號」</block>
@@ -9182,4 +9118,22 @@
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路徑/原始路徑搜尋</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未針對LDAP/SSO使用者實作REST API支援</block>
   <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">必須安裝HDS Ops Center「分析器」模組、儲存陣列必須提供Ops Center「分析器」模組</block>
+  <block id="5c658c709f3241ce7e2e2db76e849621" category="paragraph">請參閱 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 頁面以瞭解其他先決條件和要求。</block>
+  <block id="b4c2efa32144f8c7f6fa5513ac1c7e55" category="section-title">自訂報告的輸出格式和交付</block>
+  <block id="7f3fae8bcffd39410a8caca4210f5f21" category="section-title">Cloud Insights對我的環境有何影響？</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
+  <block id="c4902856573b47497259fa66ba244535" category="section-title">屬性變數</block>
+  <block id="2c8315992b66ae0480f26fe69cea1579" category="section-title">這就是一切</block>
+  <block id="d1e4cf4e509b74019a6ec3d98c6300da" category="section-title">我的資料收集健全狀況如何？</block>
+  <block id="53e92bcfb6eee482c86ea61784ea9a60" category="section-title">我的環境有何改變？</block>
+  <block id="0990561b323eccdee60c16a1ced0a306" category="section-title">執行Snapshot動作Cloud Secure</block>
+  <block id="e80e3d8646e24f6d7661808de9274648" category="paragraph-title">捲動清單：</block>
+  <block id="b39c055166e1e8cfc2de8f74b7b76640" category="paragraph-title">類型搜尋：</block>
+  <block id="be62e4fb0ce75ae1c87237e1a5947368" category="section-title">修改現有使用者的角色</block>
+  <block id="04f239d51d6f6978df84a2372f6abdb2" category="section-title">透過*叢集管理IP*新增權限：</block>
+  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">透過* vserver管理IP*新增權限：</block>
+  <block id="cc327506f222e6ab4e0ec6a024dcbe7b" category="section-title">如果空間不足、該怎麼辦？</block>
+  <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">_執行Snapshot動作</block>
+  <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">系統規模調整</block>
+  <block id="e9a8035e121122e74ece696f921ab7d6" category="section-title">探索節點的Pod和持續磁碟區</block>
 </blocks>

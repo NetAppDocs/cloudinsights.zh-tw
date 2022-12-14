@@ -11,7 +11,9 @@ keywords: event, checker, rate, sizing
 [role="lead"]
 「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。代理程式最多可支援50個資料收集器。
 
-所學專業：電子
+
+
+== 所學專業：電子
 
 * 叢集IP
 * 叢集管理使用者名稱和密碼
@@ -70,6 +72,8 @@ B + C應小於A、否則值機員機器將無法監控。
 換句話說、可新增至單一代理機器的資料收集器數量應符合下列公式：
 
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
+請參閱 link:concept_cs_agent_requirements.html["代理程式需求"] 頁面以瞭解其他先決條件和要求。
+
 
 
 == 範例
