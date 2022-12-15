@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: API_Overview.html 
+permalink: api_verview.html 
 keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
 summary: 利用此解決方法、即可與監控和報告系統等其他應用程式整合。Cloud Insights 
 ---
