@@ -617,6 +617,50 @@ toc::[]
 
 
 
+=== SnapMirror for Business Continuity（SMBC）Medator記錄監控器
+
+|===
+
+
+| 監控名稱 | 嚴重性 | 監控說明 | 修正行動 
+
+
+| 加入了此功能ONTAP | 資訊 | 當叢集上成功新增了「支援程式」時、就會出現此訊息ONTAP 。 | 無 
+
+
+| 無法存取此資訊器ONTAP | 關鍵 | 當重新調整用途的時候、或是不再將「中保」套件安裝在「中保」伺服器上時、就會出現此訊息ONTAP 。因此無法進行SnapMirror容錯移轉。 | 使用「SnapMirror中介工具移除」命令移除目前ONTAP 的資訊中心組態。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| 已移除此資訊器ONTAP | 資訊 | 當從叢集成功移除此資訊時、就會出現此訊息ONTAP 。 | 無 
+
+
+| 無法連線到媒體資訊器ONTAP | 警告 | 當叢集上無法連線到The現象調解器時、就會出現此訊息ONTAP 。因此無法進行SnapMirror容錯移轉。 | 使用「network ping」和「network traceroute」命令、檢查連接ONTAP 到NetApp資訊管理器的網路連線能力。如果問題持續發生、ONTAP 請使用「SnapMirror中介移除」命令移除目前的「SnapMirror中介工具」組態。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| SMBC CA憑證已過期 | 關鍵 | 此訊息發生於ONTAP The現象：The現象：The現象在於The現象：The現象：The現象：The Efired Medator Certificate Authority（CA因此、我們ONTAP 無法進一步與該位駐點協調員溝通。 | 使用「SnapMirror中介工具移除」命令移除目前ONTAP 的資訊中心組態。更新ONTAP 更新資訊不整伺服器上的新CA認證。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| SMBC CA憑證即將到期 | 警告 | 此訊息會在ONTAP 下列情況發生：The現象：The現象：The現象正在發生：The現象：The現象、The Ef2 Medator Certificate Authority（CA）Certificate即將於未來30天內到期。 | 在此憑證過期之前、ONTAP 請使用「SnapMirror中介移除」命令移除目前的「SnapMirror中介工具」組態。更新ONTAP 更新資訊不整伺服器上的新CA認證。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| SMBC用戶端憑證已過期 | 關鍵 | 此訊息會在ONTAP 「The現象資訊」用戶端憑證過期時出現。因此、我們ONTAP 無法進一步與該位駐點協調員溝通。 | 使用「SnapMirror中介工具移除」命令移除目前ONTAP 的資訊中心組態。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| SMBC用戶端憑證即將到期 | 警告 | 此訊息會在ONTAP 下列情況發生：The現象：The現象正在發生：The現象的資訊中心用戶端憑證即將於30天內到期。 | 在此憑證過期之前、ONTAP 請使用「SnapMirror中介移除」命令移除目前的「SnapMirror中介工具」組態。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| SMBC關係不同步附註：UM沒有這項功能 | 關鍵 | 當SnapMirror for Business Continuity（SMBC）關係狀態從「同步中」變更為「不同步」時、就會出現此訊息。由於此RPO =0、資料保護將會中斷。 | 檢查來源與目的地磁碟區之間的網路連線。在目的地上使用「SnapMirror show」命令、並在來源上使用「SnapMirror list-destinations」命令、以監控SMBC關係狀態。自動重新同步會嘗試將關係恢復為「同步中」狀態。如果重新同步失敗、請確認叢集中的所有節點都處於仲裁狀態且狀況良好。 
+
+
+| SMBC伺服器憑證已過期 | 關鍵 | 此訊息會在ONTAP 「The現象資訊」伺服器憑證過期時出現。因此、我們ONTAP 無法進一步與該位駐點協調員溝通。 | 使用「SnapMirror中介工具移除」命令移除目前ONTAP 的資訊中心組態。在ONTAP 更新伺服器驗證器上的新伺服器憑證。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+
+
+| SMBC伺服器憑證即將到期 | 警告 | 此訊息會在ONTAP 下列情況發生：The現象：The現象正在發生：The現象的原因是：The現象正在發生、而該伺服器憑證將於未來30天內 | 在此憑證過期之前、ONTAP 請使用「SnapMirror中介移除」命令移除目前的「SnapMirror中介工具」組態。在ONTAP 更新伺服器驗證器上的新伺服器憑證。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。 
+|===
+<<top,返回頁首>>
+
+
+
 == 更多資訊
 
 * link:task_view_and_manage_alerts.html["檢視及取消遺失警示"]

@@ -12,6 +12,61 @@ NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些�
 
 
 
+== 2022年12月
+
+
+
+=== 探索勒索軟體保護功能及Cloud Insights 其他安全功能、並在VMware試用版中提供
+
+從今天起、註冊全新的Cloud Insights VMware試用版、即可探索勒索軟體偵測和自動化使用者封鎖回應原則等安全功能。如果您尚未註冊試用版、請立即試用！
+
+
+
+=== Kubernetes工作負載有自己的登陸頁面
+
+工作負載是Kubernetes環境的重要一環、Cloud Insights 因此現在提供這些工作負載的登陸頁面。您可以在此檢視、探索及疑難排解影響Kubernetes工作負載的問題。
+
+image:Kubernetes_Workload_LP.png["Kubernetes工作負載登陸頁面範例"]
+
+
+
+=== 檢查您的校驗和
+
+您要求我們在安裝適用於Windows、Linux和MacOS的代理程式時、為您提供總和檢查值、我們認為這是一個很好的想法。以下是：
+
+image:Agent_Checksum_Instructions.png["安裝期間顯示的代理程式Checksum值"]
+
+
+
+=== 記錄警示功能改善
+
+
+
+==== 分組依據
+
+建立或編輯記錄監視器時、您現在可以設定「分組依據」屬性、以便發出更專注的警示。在您的監視器定義中、尋找「篩選」設定下方的「分組依據」屬性。
+
+image:Monitor_Group_By_Example.png["依監控定義範例分組"]
+
+此變更可將監控定義的「分組依據」層面正規化、使度量監視器和記錄監視器達到功能同位元。此同位元檢查可讓客戶複製/複製*純*系統定義的預設監視器、以供進一步自訂。
+
+
+
+==== 複製
+
+您現在可以複製（複製）變更記錄、Kubernetes記錄和資料收集器記錄監視器。這會建立新的自訂記錄監視器、您可以修改其特定定義。
+
+image:Log_Monitor_Duplicate.png["複製記錄監視器"]
+
+
+
+=== 11 ONTAP 全新預設的支援SnapMirror的顯示器、可確保營運不中斷
+
+我們新增了將近十幾個新的SnapMirror for Business Continuity（SMBC）系統監控器、以警示SMBC憑證和ONTAP 協調器的變更。
+
+'''
+
+
 == 2022年11月
 
 
