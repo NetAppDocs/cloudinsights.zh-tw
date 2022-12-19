@@ -62,7 +62,7 @@ image:Log_Monitor_Duplicate.png["複製記錄監視器"]
 
 === 11 ONTAP 全新預設的支援SnapMirror的顯示器、可確保營運不中斷
 
-我們新增了將近十幾個新的SnapMirror for Business Continuity（SMBC）系統監控器、以警示SMBC憑證和ONTAP 協調器的變更。
+我們新增了將近十幾項新功能 link:task_system_monitors.html#snapmirror-for-business-continuity-smbc-mediator-log-monitors["系統監視器"] 適用於SnapMirror for Business Continuity（SMBC）、可警示SMBC憑證和ONTAP Synchopi的變更。
 
 '''
 

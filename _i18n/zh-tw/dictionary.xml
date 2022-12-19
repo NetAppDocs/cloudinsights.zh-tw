@@ -9157,7 +9157,6 @@
   <block id="68bcc67f734c4d92ccfcbf87c7520280" category="inline-image-macro">複製記錄監視器</block>
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 ONTAP 全新預設的支援SnapMirror的顯示器、可確保營運不中斷</block>
-  <block id="58884a5363d19bcb025a7a0fd15d3801" category="paragraph">我們新增了將近十幾個新的SnapMirror for Business Continuity（SMBC）系統監控器、以警示SMBC憑證和ONTAP 協調器的變更。</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">調校操作員</block>
   <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。請參閱下表以瞭解您可以設定的變數。</block>
   <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">資源相關變數</block>
@@ -9240,4 +9239,6 @@
   <block id="66a60fbd4168a1ac76bf8fa7d2650519" category="cell">SMBC伺服器憑證即將到期</block>
   <block id="13d0e81b911774edf84b28bd0b95b58f" category="cell">此訊息會在ONTAP 下列情況發生：The現象：The現象正在發生：The現象的原因是：The現象正在發生、而該伺服器憑證將於未來30天內</block>
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">在此憑證過期之前、ONTAP 請使用「SnapMirror中介移除」命令移除目前的「SnapMirror中介工具」組態。在ONTAP 更新伺服器驗證器上的新伺服器憑證。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。</block>
+  <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">系統監視器</block>
+  <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">我們新增了將近十幾項新功能 <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> 適用於SnapMirror for Business Continuity（SMBC）、可警示SMBC憑證和ONTAP Synchopi的變更。</block>
 </blocks>
