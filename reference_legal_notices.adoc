@@ -50,5 +50,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
-* link:media/Notice_Cloud_Insights-2021.05.18.pdf["關於本產品的注意事項Cloud Insights"]
-
+link:media/Notice_Cloud_Insights-2022-12-14.pdf["關於本產品的注意事項Cloud Insights"]
+link:media/Notice_Cloud_Secure-2022-12-14.pdf["關於本產品的注意事項Cloud Secure"]
