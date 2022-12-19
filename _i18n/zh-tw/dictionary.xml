@@ -9240,4 +9240,8 @@
   <block id="b229f086c89bfd44fd734a5299e9f059" category="paragraph">建立*記錄監視器*時、請先從可用的記錄清單中選擇要監控的記錄。然後您可以根據上述可用屬性進行篩選。您也可以選擇一或多個「分組依據」屬性。</block>
   <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">如果需要、請選擇記錄以監控、設定篩選條件、然後依方法選取群組</block>
   <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e49c7b347b6e9d379c33509b8c27ec5b" category="list-text">權限必須在Solutions Enabler伺服器的精靈組態檔中聲明、通常可在這裡找到：_/var/symapi/config/daema_users_</block>
+  <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">以下是具有適當cisys權限的範例檔案。</block>
+  <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">我看到「不明程式碼」訊息出現資料收集錯誤</block>
+  <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。</block>
 </blocks>

@@ -25,6 +25,23 @@ summary: 設定Dell EMC VMAX和PowerMax系列裝置資料收集器。
 * SE軟體的唯讀使用者名稱和密碼
 * VMAX應用程式的Un版 型必須執行、並收集SMI-S Provider安裝所管理的EMC VMAX和PowerMax儲存陣列的統計資料
 * 效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_\https：//fors5989/ecomconfig_<SMI-S Hostname or IP> 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。
+* 權限必須在Solutions Enabler伺服器的精靈組態檔中聲明、通常可在這裡找到：_/var/symapi/config/daema_users_
++
+以下是具有適當cisys權限的範例檔案。
+
++
+....
+root@cernciaukc101:/root
+14:11:25 # tail /var/symapi/config/daemon_users
+###
+###     Refer to the storrdfd(3) man page for additional details.
+###
+###     As noted above, only authorized users can perform stordaemon control
+###     operations (e.g., shutdown).
+################################################################################
+# smith         storrdfd
+cisys storapid <all>
+....
 
 
 
@@ -123,10 +140,6 @@ summary: 設定Dell EMC VMAX和PowerMax系列裝置資料收集器。
 
 如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
 
-
-
-=== 庫存
-
 [cols="2*"]
 |===
 | 問題： | 試用： 
@@ -154,5 +167,8 @@ summary: 設定Dell EMC VMAX和PowerMax系列裝置資料收集器。
 
 
 | 錯誤：•使用Solutions Enabler Server 8.x收集的Solutions Enabler 7.x時、「symcfg list -tdev" CLI命令可能會傳回不正確的資料使用Solutions Enabler 8.1.0或更早版本從Solutions Enabler Server 8.3或更新版本收集到的「symcfg list -SRP」CLI命令可能會傳回不正確的資料。 | 請務必使用相同的Solutions Enabler主要版本 
+
+
+| 我看到「不明程式碼」訊息出現資料收集錯誤 | 如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <<需求,需求>> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
