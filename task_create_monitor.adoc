@@ -93,14 +93,12 @@ image:Monitor_metric_conditions.png["定義監視器的條件"]
 
 === 記錄監視器
 
-建立*記錄監視器*時、請先從可用的記錄清單中選擇要監控的記錄。然後您可以根據上述可用屬性進行篩選。
-
-例如、您可以選擇在logs.netapp.ems來源中篩選「object.store.unavailable」訊息類型：
+建立*記錄監視器*時、請先從可用的記錄清單中選擇要監控的記錄。然後您可以根據上述可用屬性進行篩選。您也可以選擇一或多個「分組依據」屬性。
 
 
 NOTE: 記錄監視器篩選器不可為空白。
 
-image:Monitor_log_monitor_filter.png["選擇要監控的記錄、然後設定篩選條件"]
+image:Monitor_Group_By_Example.png["如果需要、請選擇記錄以監控、設定篩選條件、然後依方法選取群組"]
 
 
 

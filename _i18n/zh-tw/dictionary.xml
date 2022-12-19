@@ -5564,11 +5564,7 @@
   <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">定義監視器的條件</block>
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">記錄監視器</block>
-  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">建立*記錄監視器*時、請先從可用的記錄清單中選擇要監控的記錄。然後您可以根據上述可用屬性進行篩選。</block>
-  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">例如、您可以選擇在logs.netapp.ems來源中篩選「object.store.unavailable」訊息類型：</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">記錄監視器篩選器不可為空白。</block>
-  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">選擇要監控的記錄、然後設定篩選條件</block>
-  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="454176c970e70022beb38f8813bea495" category="section-title">定義警示行為</block>
   <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">選擇觸發記錄警示時要如何警示。您可以根據上述篩選條件、將監視器設定為警示_警告_、_嚴重_或_資訊_嚴重性。</block>
   <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">定義要監控的記錄行為</block>
@@ -9241,4 +9237,7 @@
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">在此憑證過期之前、ONTAP 請使用「SnapMirror中介移除」命令移除目前的「SnapMirror中介工具」組態。在ONTAP 更新伺服器驗證器上的新伺服器憑證。使用「SnapMirror中介工具add」命令重新設定ONTAP 對此資訊中心的存取權限。</block>
   <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">系統監視器</block>
   <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">我們新增了將近十幾項新功能 <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> 適用於SnapMirror for Business Continuity（SMBC）、可警示SMBC憑證和ONTAP Synchopi的變更。</block>
+  <block id="b229f086c89bfd44fd734a5299e9f059" category="paragraph">建立*記錄監視器*時、請先從可用的記錄清單中選擇要監控的記錄。然後您可以根據上述可用屬性進行篩選。您也可以選擇一或多個「分組依據」屬性。</block>
+  <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">如果需要、請選擇記錄以監控、設定篩選條件、然後依方法選取群組</block>
+  <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
