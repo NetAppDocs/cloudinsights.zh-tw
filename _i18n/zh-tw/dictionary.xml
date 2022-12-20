@@ -9257,4 +9257,8 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">若要修改這些值、請使用下列命令編輯代理程式CR（以&lt;namespace&gt; 支援功能取代功能變數來取代命名空間）：</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR規格的格式如下：</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">值機員CR中已有標示為「yes」的「included in Default CR」項目、可在其各自的外掛程式下找到。標示為「否」的項目必須依照隨附的預設替代所提供的範例手動新增。</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">變數名稱</block>
 </blocks>

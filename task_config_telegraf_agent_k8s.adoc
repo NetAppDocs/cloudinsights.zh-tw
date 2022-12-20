@@ -438,6 +438,22 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。請參閱下表以瞭解您可以設定的變數。
 
+若要修改這些值、請使用下列命令編輯代理程式CR（以<namespace> 支援功能取代功能變數來取代命名空間）：
+
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+CR規格的格式如下：
+
+[listing]
+----
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
+----
+值機員CR中已有標示為「yes」的「included in Default CR」項目、可在其各自的外掛程式下找到。標示為「否」的項目必須依照隨附的預設替代所提供的範例手動新增。
+
 
 
 === 資源相關變數
@@ -447,7 +463,7 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 |===
 
 
-| 預留位置 | 外掛程式名稱 | 包含在預設的CR中 | 說明 
+| 變數名稱 | 外掛程式名稱 | 包含在預設的CR中 | 說明 
 
 
 | ds_cpo_limits預留位置 | 代理程式 | 是的 | Kubernetes適用於Telewraf-DS的CPU限制 
