@@ -8976,7 +8976,6 @@
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
-  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。無需執行此處列出的Kubernetes API權杖更新手冊步驟。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
   <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。</block>
@@ -9257,4 +9256,5 @@
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">服務原則</block>
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。</block>
+  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
 </blocks>
