@@ -25,7 +25,7 @@ summary: 新增資料收集器
 
 
 * 僅支援資料類型SVM。不支援具有無限磁碟區的SVM。
-* SVM有多種子類型。其中只支援_default_和_sync來源_。
+* SVM有多種子類型。其中僅支援_default_、_sync來源_和_sync目的地_。
 * 代理程式 link:task_cs_add_agent.html["必須設定"] 然後再設定資料收集器。
 * 請確定您已正確設定使用者目錄連接器、否則事件會在「活動鑑識」頁面中顯示編碼的使用者名稱、而非使用者的實際名稱（儲存在Active Directory中）。
 * 為獲得最佳效能、您應將FPolicy伺服器設定為與儲存系統位於同一子網路上。
@@ -174,6 +174,37 @@ security login create -user-or-group-name csuser -application ontapi -authmethod
 .完成後
 * 在「安裝的資料收集器」頁面中、使用每個收集器右側的選項功能表來編輯資料收集器。您可以重新啟動資料收集器或編輯資料收集器組態屬性。
 
+
+
+
+== Metro叢集的建議組態
+
+以下是Metro叢集的建議：
+
+. 將兩個資料收集器連接至來源SVM、另一個連接至目的地SVM。
+. 資料收集器應由_叢集IP_連線。
+. 在任何時候、一個資料收集器都應該在執行中、另一個則會發生錯誤。
++
+目前「執行中」的SVM資料收集器會顯示為_Running。目前的「最新」SVM資料收集器會顯示為_Error_。
+
+. 每當有切換時、資料收集器的狀態會從「執行中」變更為「錯誤」、反之亦然。
+. 資料收集器從「錯誤」狀態移至「執行中」狀態最多需要兩分鐘的時間。
+
+
+
+
+== 服務原則
+
+如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。
+
+範例：
+
+....
+Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
+-services data-cifs,data-nfs,data,-core,data-fpolicy-client
+(network interface service-policy create)
+....
+在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。
 
 
 

@@ -2678,7 +2678,6 @@
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS傳輸協定4.0版及更早版本</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">支援從支援的更新版本為支援FlexGroup ONTAP</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">僅支援資料類型SVM。不支援具有無限磁碟區的SVM。</block>
-  <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM有多種子類型。其中只支援_default_和_sync來源_。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">必須設定</block>
   <block id="6c1006735c24c4966ad5668af1361000" category="list-text">代理程式 <block ref="a64dfb2e19772579ec5e757e77e2d502" category="inline-link-macro-rx"></block> 然後再設定資料收集器。</block>
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">請確定您已正確設定使用者目錄連接器、否則事件會在「活動鑑識」頁面中顯示編碼的使用者名稱、而非使用者的實際名稱（儲存在Active Directory中）。</block>
@@ -9246,4 +9245,16 @@
   <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">關於本產品的注意事項Cloud Secure</block>
   <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
 <block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
+  <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM有多種子類型。其中僅支援_default_、_sync來源_和_sync目的地_。</block>
+  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Metro叢集的建議組態</block>
+  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">以下是Metro叢集的建議：</block>
+  <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">將兩個資料收集器連接至來源SVM、另一個連接至目的地SVM。</block>
+  <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">資料收集器應由_叢集IP_連線。</block>
+  <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">在任何時候、一個資料收集器都應該在執行中、另一個則會發生錯誤。</block>
+  <block id="edf525ae0ad794e4070641e785a1a628" category="paragraph">目前「執行中」的SVM資料收集器會顯示為_Running。目前的「最新」SVM資料收集器會顯示為_Error_。</block>
+  <block id="6d1fbd196541e759b0a79fdf2b671bcd" category="list-text">每當有切換時、資料收集器的狀態會從「執行中」變更為「錯誤」、反之亦然。</block>
+  <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">資料收集器從「錯誤」狀態移至「執行中」狀態最多需要兩分鐘的時間。</block>
+  <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">服務原則</block>
+  <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。</block>
+  <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。</block>
 </blocks>
