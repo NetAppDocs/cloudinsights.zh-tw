@@ -91,6 +91,8 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 == 網路內規則
 
+請注意、如果您新增_<</task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip,CsUser>>_、該使用者需要SSH存取ONTAP 功能才能存取功能。
+
 [cols="5*"]
 |===
 | 傳輸協定 | 連接埠 | 目的地 | 方向 | 說明 
