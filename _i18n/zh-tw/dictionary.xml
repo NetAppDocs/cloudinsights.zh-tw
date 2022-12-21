@@ -9262,5 +9262,5 @@
   <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">值機員CR中已有標示為「yes」的「included in Default CR」項目、可在其各自的外掛程式下找到。標示為「否」的項目必須依照隨附的預設替代所提供的範例手動新增。</block>
   <block id="3f60b096843929b02e1a070f57e27584" category="cell">變數名稱</block>
   <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">CsUser</block>
-  <block id="76ce4e2b9af0d8561c4d9aba287c2dfd" category="paragraph">請注意、如果您新增_<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_、該使用者需要SSH存取ONTAP 功能才能存取功能。</block>
+  <block id="9a4d2e5dc3e76c3437292c8797a2f443" category="paragraph">請注意、如果您新增_<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_、該使用者需要SSH存取ONTAP 才能存取《The SF-Management LIF》。</block>
 </blocks>
