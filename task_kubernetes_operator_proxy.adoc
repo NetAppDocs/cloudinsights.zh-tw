@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: task_kubernetes_operator_proxy.html 
+keywords: telegraf, installation, install, agent, telegraf agent 
+summary: '支援Cloud Insights link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 做為收集整合資料的代理程式、可在Windows、Linux、MacOS和Kubernetes上設定。' 
+---
+= 設定代理程式以收集資料
+:allow-uri-read: 
+
+
+[role="lead"]
+使用自訂/私有泊塢視窗儲存庫設定代理伺服器、可從2021年12月10日21日12月10日21開始、為CR中的監控操作員設定Proxy
+
+kubecl -n NetApp監控編輯代理代理代理監控-NetApp
+
+在此檔案的「規格：」區段中、新增下列程式碼區塊
+
+規格：Proxy：isAoProxyEnabled:<true or false> 支援的驗證網速ProxyEnabled:<true or false> 支援的驗證位元Proxy:<true or false> 驗證密碼:<password for proxy, optional> 更新驗證埠:<port for proxy> 不驗證伺服器:<server for proxy> 不驗證使用者名稱:<username for proxy, optional> 不驗證代理伺服器:使用自訂/私有泊塢視窗儲存庫取得泊塢視窗秘密<comma separated list of IPs or resolvable hostnames that should bypass a proxy>
+
+kubecl -n NetApp-Monitoring Get secret Docker -o yaml
+
+（複製貼上.dockerconfigjson的值：從上述命令的輸出中）解碼Docker密碼
+
+ECHO <paste from step #1 above> EASE| base64 -d輸出格式如下：｛"auths"：｛"dodee.f2 <cluster>.cloudinsights.netapp.com"：｛"username"：<tenant id> "flex"、"password"：<password which is the CI API key> "wse"、"auth"：<encoded username:password basic auth key. "fas這是Docker的內部功能>"｝｝｝登入Docker儲存庫
+
+Docker登入泊塢視窗。<cluster>.cloudinsights.netapp.com（從步驟2開始）-u <username from step #2> 密碼<password from step #2> ：從Cloud Insights 效益資料中提取操作員泊塢視窗影像
+
+Docker Pull Docker。<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+
+使用下列命令尋找<版本>欄位：
+
+KVECEVECLT -n NetApp-Monitoring：取得部署監控操作員|綠色「image：」（映像：）將「operator」泊塢視窗映像推送到您的「Private / Enterprise」泊塢視窗登錄
+
+根據您的企業原則、將程式碼推送到您的「私有/本機/企業」泊塢視窗儲存庫。將所有開放原始碼相依性下載到您的「私有」泊塢視窗登錄
+
+需要下載下列開放原始碼映像：Docker。IO/Telewraf:1.19.3 GCR.IO/kubebbuilder/kube-RBAC代理伺服器：v0.5 k8s.gcr.io/kube-state指標/kube-state指標：v2.1.0
+
+如果啟用Fluent位元：Docker。IO/Fluent-bit:1.7.8 Docker。IO/Kubernetes：EVENT–Exporter：0.10編輯代理程式CR以反映新的Docker repo位置、請停用自動升級（若已啟用）。
+
+kubecl -n NetApp監控編輯代理代理代理監控-NetApp
+
+enableAutoUpgrade：錯誤dock-repo：<docker repo of the enterprise/corp docker repo> RefeskerRepoSecret：<選用：企業/公司泊塢視窗repo的Docker秘密名稱、此秘密應已在相同命名空間的k8s叢集上建立>
+
+在「規格：」區段中、進行下列變更：
+
+規格：Telegraf：-名稱：ksm替換：-金鑰：k8s.gcr.IO值：<same as "docker-repo" field above> fel

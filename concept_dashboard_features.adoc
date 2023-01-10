@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
 summary: 儀表板功能與概念。 
-keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
 ---
 = 儀表板功能
 :toc: macro
@@ -628,6 +628,24 @@ image:Gauge-Bullet.png["項目符號表、寬=374."]
 image:Single-Value Widgets.png["單值Widget、含格式設定和不含格式設定"]
 
 按一下單一值小工具或儀表板小工具中的連結、會顯示對應於小工具中第一個查詢的查詢頁面。
+
+
+
+== 格式化表格小工具
+
+如同單一值和量表小工具、您可以在表格小工具中設定設定格式化的條件、讓您以色彩和/或特殊圖示來強調顯示資料。
+
+設定格式化的條件可讓您在表格小工具中設定及強調警示層級和臨界層級的臨界值、讓外在資料點和特殊資料點立即可見。
+
+image:ConditionalFormattingExample.png["設定格式化的條件範例"]
+
+設定格式化的條件會針對表格中的每一欄分別設定。例如、您可以為容量欄選擇一組臨界值、為處理量欄選擇另一組臨界值。
+
+如果您變更欄的單位顯示、設定格式化的條件仍會保留並反映值的變更。下圖顯示相同的設定格式化條件、即使顯示單位不同。
+
+image:ConditionalFormatting_GiB.png["設定格式化的條件- GiB"] image:ConditionalFormatting_TiB.png["設定格式化的條件- TiB"]
+
+您可以選擇將條件格式顯示為色彩、圖示或兩者。
 
 
 

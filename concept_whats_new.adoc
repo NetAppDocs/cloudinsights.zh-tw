@@ -75,6 +75,7 @@ image:Log_Monitor_Duplicate.png["複製記錄監視器"]
 
 我們新增數十部系統定義的新監控器、以警示您有關Cloud Volumes、Security和Data Protection的潛在問題。深入瞭解這些監視器 link:task_system_monitors.html#security-monitors["請按這裡"]。
 
+'''
 
 
 == 2022年10月

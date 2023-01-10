@@ -485,7 +485,13 @@ NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights
 
 == 驗證Checksum
 
-雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。
+雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。
+
+
+
+=== 無需安裝即可下載安裝程式套件
+
+若要執行純下載作業（而非預設的下載與安裝）、使用者可以編輯從UI取得的代理程式安裝命令、並移除後置「install」選項。
 
 請遵循下列步驟：
 
@@ -540,6 +546,27 @@ Windows：
  Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
 
 
+
+
+=== 產生Checksum值
+
+若要產生Checksum值、請針對您的適當平台執行下列命令：
+
+* RHEL/Ubuntu：
++
+ sha256sum <package_name>
+* MacOS：
++
+ shasum -a 256 telegraf.pkg
+* Windows：
++
+ Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List
+
+
+
+
+=== 使用PEM檔案驗證Checksum
+
 簽署的Checksum檔案可以使用PEM檔案進行驗證：
 
 * 非Windows：
@@ -556,6 +583,10 @@ $signer = $result.SignerCertificate
 Add-Type -Assembly System.Security
 [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 ....
+
+
+=== 安裝下載的套件
+
 一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：
 
 非Windows：

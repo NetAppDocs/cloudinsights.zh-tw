@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: bluexp_overview.html 
+summary: 從單一控制面板建置、保護及管理混合式多雲端資料基礎架構。 
+keywords: bluexp, cloud manager, cm, storage, data, services, integrated 
+---
+= 支援支援的範圍包括Cloud Insights
+:allow-uri-read: 
+
+
+[role="lead"]
+BlueXP可讓您從單一介面管理所有NetApp儲存設備和資料資產。在BlueXP中、您會發現許多新的儲存服務、以及先前只能以獨立服務的形式提供、並有獨立的UI。其中包括下列其中一項服務Cloud Insights 。
+
+
+NOTE: 藍圖XP導覽功能表整合被視為 link:concept_preview_features.html["_預覽_"] 功能、因此可能有所變更。
+
+在BlueXP的導覽功能表中、直覺式的新功能表會依類別來組織資料服務、並根據其功能來命名。例如Cloud Insights 、「支援」功能集可在「可觀察性」功能表中找到。探索Cloud Insights 時、導覽功能表頂端會出現「可觀察性」區段。您探索時、每項BlueXP服務都是如此。
+
+image:BlueXP_Nav_Menu.png["BlueXP nav功能表、顯示可在頂端看到的能力、以及下列其他NetApp服務"]
+
+
+NOTE: 在本文件中、術語Cloud Insights 「不穩定」和「可觀察性」可互換使用。
+
+暫留工具提示提供更多資訊。
+
+您可以在BlueXP網站上深入瞭解BlueXP。

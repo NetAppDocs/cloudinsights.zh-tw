@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere_rest.html 
+keywords: data collector, Unisphere, EMC 
+summary: 設定Dell EMC UnREST資料收集器。 
+---
+= 設定Dell EMC Unisphere資料收集器
+:allow-uri-read: 
+
+
+[role="lead"]
+此資料收集器可從Dell EMC Un推出 的RESTRIS儲存系統取得庫存和效能資料。對於組態、資料收集器需要Un禁 用伺服器的IP位址和管理層級網域帳戶。
+
+
+
+== 需求
+
+* Unan伺服器的IP位址
+* Un推出 伺服器的管理層級網域帳戶
+* 連接埠8443.
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| Un禁 用伺服器的IP位址 | Un禁 用伺服器的IP位址或完整網域名稱 
+
+
+| Un禁 用環境連接埠 | 預設值為843 
+
+
+| 使用者名稱 | Un禁 用伺服器的使用者名稱 
+
+
+| 密碼 | 用於Un禁 用伺服器的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設值為40分鐘。 
+
+
+| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為600秒。 
+
+
+| 選擇「排除」或「包含」以指定清單 | 指定是否要包含或排除VM 
+
+
+| 庫存篩選器裝置清單 | 要篩選的VM清單（以英文分隔、如果值中使用以英文分隔、則以分號分隔）以供篩選 
+
+
+| Un推出 效能意見調查時間間隔（秒） | 預設值為300秒 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| 錯誤：使用者驗證失敗。 | 請確定您的此裝置認證資料正確無誤。 
+|===
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。

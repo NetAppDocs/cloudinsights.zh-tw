@@ -352,8 +352,6 @@ sidebar:
           url: "/task_dc_ms_hyperv.html"
       - title: NetApp
         entries:
-        - title: Astra資料儲存區
-          url: "/task_dc_na_astra_data_store.html"
         - title: Cloud Connection for ONTAP 39
           url: "/task_dc_na_cloud_connection.html"
         - title: Cloud Volumes ONTAP
