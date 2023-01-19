@@ -12,6 +12,9 @@ keywords: data collector, NetApp, Cloud agent, ONTAP
 此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS
 
 
+NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.html#useful-definitions["已過時"] 截至2023年1月1日。
+
+
 
 == 組態
 

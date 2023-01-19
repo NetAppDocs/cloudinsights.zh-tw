@@ -1444,12 +1444,8 @@
   <block id="5f519de4ae11d5d3a6674c85a3029a81" category="doc">開始收集資料</block>
   <block id="059cc7c7dfcad8104bd312a68d9e0c4d" category="paragraph">在您首次註冊Cloud Insights 使用VMware技術並登入您的環境之後、系統會引導您完成下列步驟、以便開始收集及管理資料。</block>
   <block id="b6070479612983d59fa5a6e72f7051b4" category="paragraph">資料收集器會從您的資料來源探索資訊、例如儲存裝置、網路交換器和虛擬機器。收集到的資訊用於分析、驗證、監控及疑難排解。</block>
-  <block id="b5f2fea2d793f913cb7c4b9dfa513a70" category="paragraph">利用三種資料收集器：Cloud Insights</block>
-  <block id="aab338915e32b60e92c8de3a23aa5c5d" category="list-text">作業系統</block>
-  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="list-text">服務</block>
   <block id="06795a6787cf0dba942c7227d6c27d2d" category="paragraph">從支援的廠商和機型中選取您的第一個資料收集器。您可以稍後輕鬆新增其他資料收集器。</block>
   <block id="5774c882dad1ebd6e046b3a9fdfae618" category="section-title">安裝擷取單元</block>
-  <block id="3d20927f7c908a7a2ee90f44904645f5" category="paragraph">如果您選擇_Infrastructure_資料收集器、則需要擷取單元才能將資料注入Cloud Insights 到SURO。您需要在伺服器或VM上下載並安裝擷取單元軟體、以收集Cloud Insights 資料以供使用。單一擷取單元可用於多個資料收集器。</block>
   <block id="53940e3b856f2e1c626138e2f7682793" category="inline-image-macro">Linux AU說明</block>
   <block id="38501232d98de5e611cc0c9ca2418a61" category="paragraph"><block ref="38501232d98de5e611cc0c9ca2418a61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link-macro">說明</block>
@@ -1460,9 +1456,7 @@
   <block id="baee16e4b3a1b3fe47528552911a7c7e" category="section-title">設定資料收集器-基礎架構</block>
   <block id="6918922f4abf98b7477512994ea4e792" category="paragraph">對於_Infrastructure_資料收集器、系統會要求您填寫顯示的資料收集器欄位：</block>
   <block id="dc2e196543e7339d5e7c4357419d8138" category="list-text">為資料收集器指定獨特且有意義的名稱。</block>
-  <block id="770f54be00afd49ebd86f74c98ee2ea8" category="list-text">視需要輸入使用者名稱和密碼以連線至裝置。</block>
   <block id="3d0887c0ea1d0002152545df86215116" category="list-text">在「_Configuration」和「_Advanced Configuration」區段中填寫任何其他必填欄位。</block>
-  <block id="e9faa52e66f1c8ec7a8e8aec128121b7" category="list-text">按一下*測試連線*以測試與裝置的連線。</block>
   <block id="61bc4386328384706c437ee0e6b35182" category="list-text">按一下「*新增收集器*」以儲存資料收集器。</block>
   <block id="c8d85f57956f127cf15ceb0dd0f01a67" category="paragraph">您稍後將能設定其他資料收集器。</block>
   <block id="38842479851f6bd610129b076a042485" category="section-title">設定資料收集器-作業系統與服務</block>
@@ -10657,34 +10651,33 @@
   <block id="3cda1acec37e60b5404717c83d727453" category="paragraph"><block ref="3cda1acec37e60b5404717c83d727453" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5913820121a0441bda6301d54adb6f18" category="paragraph">以下兩張圖表顯示嚴苛的工作負載、以及受嚴苛工作負載影響的工作負載。</block>
   <block id="89ddd7746bd74dd5bc0f8ecebb9b8a48" category="paragraph">您可以採取許多步驟來降低或消除環境中的飽和機率。以下是您可以嘗試的幾項功能。</block>
-  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;標題</block>
-  <block id="2f1849f354bd885985a93d6cf27ee8d9" category="paragraph">&gt;&gt;&gt;3df6fa94316c710c5e3709e6c4bd493fa37256 *您必須擁有建立Kubernetes叢集角色和角色繫結的權限。</block>
-  <block id="9e4fb2ef5621365f46fa761bca3c3c0d" category="paragraph">=請在開始之前先記下這些資訊</block>
-  <block id="d8062f131e6e21d98f0dcbd730d97da2" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;標題如果您要在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="2261a5ecaa517b1e6b1ea9c3c9c6c74a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="350cb6766e9cc201c650eebdcbf20452" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="8e2f209c9677ffce93617d034847a1ef" category="paragraph">== OpenShift指示</block>
-  <block id="9cfac3ad63eed0aba89d6c20a2e61165" category="paragraph">Kubernetes的某些變種（例如OpenShift）會實作額外的安全層級、以封鎖對某些元件的存取。_SecurityContextConstraint_不是以Kubernetes代理程式安裝命令的一部分建立Cloud Insights 、此命令是以人工方式建立。建立後、重新啟動Telegraf Pod。</block>
-  <block id="3b28dd6c17fea6dd6467fc05ce0cfbd3" category="paragraph">附註：NetApp Kubernetes監控營運者型安裝的預設命名空間為_NetApp-監 控_。在涉及命名空間的命令中、請務必為安裝指定正確的命名空間。</block>
-  <block id="162a5f25c49e6dee9a66f2fc5d4636d2" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;請注意、NetApp Kubernetes監控操作員的預設命名空間是「NetApp監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
-  <block id="7dcec1af3ecb95784ca17f4a044b8c88" category="paragraph">&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="9886929535d65e142e7bf877b58893c2" category="paragraph">=停止並啟動NetApp Kubernetes監控操作員</block>
-  <block id="8fd41fff3045d2de83ac5c3041dd1e76" category="paragraph">=關於Kube-態 指標</block>
-  <block id="7bdf10c9c2fa5b91dfdb227b8713d996" category="paragraph">== kube狀態度量計數器</block>
-  <block id="e931dabc8aa2ab0c0a8a74b9123b3dbf" category="paragraph">== Telegraf相關變數請參閱<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> 以取得遠端作業環境變數的相關資訊。&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="2436ff40a4f48a0560ad2f0a34597848" category="cell">（設定Telewraf Flush、bidit、類型時間間隔）：每個輸出將在排程寫入時間與寫入時間之間隨機等待一段時間+ Flush、ditrit、然後再寫入輸出&lt;&lt;&lt;&lt;如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試以下事項：</block>
-  <block id="322fcef7dd00a16a650cddfd49691823" category="cell">=雜項變數&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="832c553a00dd9da763a10234abd62660" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;前往|若叢集的_etcd_不是Kubernetes叢集資料存放區、您會在Telewraf RS Pod中看到下列訊息：</block>
-  <block id="379dd7456c77b696cfa664be4bb5fcef" category="paragraph">|預留位置|外掛程式名稱|包含在預設的CR |說明&gt;&gt;&gt;中3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="ba9bf16b23ed4f923bf4f67f12f257f6" category="paragraph">| Curle_CMD_placeholder |代理| yes |用於下載各種資源的Curl命令。例如：「Curl」（捲曲）或「Curl -k」（捲曲-k）</block>
-  <block id="013a8ed6c543e90618d6b222fdafba79" category="cell">請嘗試以下方法：&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="222a2ca115387f3f20aab0665f587209" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態：resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、驗證Webhookconfigurations、volume附件"&lt;&lt;&lt;&lt;標題</block>
-  <block id="0b7a53ced1b85b8681621616e37366c7" category="cell">我在Kubernetes上安裝或升級Telegraf、但Telegraf Pod無法啟動。Telegraf ReplicaSet或demonSet回報的故障類似如下：建立錯誤：Pod「Telegraf-rs -」已遭禁止」：無法針對任何安全內容限制進行驗證：若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」[spec.Volumes[2]：無效值：「主機路徑」：不允許使用主機路徑磁碟區]</block>
-  <block id="a214e61bbe7a36174812381c0827009c" category="cell">如果安全性內容限制尚未存在、請建立該限制。確保安全內容限制所指定的命名空間和服務帳戶符合Telegraf ReplicaSet和示範Set的命名空間和服務帳戶。Kucbef導 入SCC Telegraf-hostaccess | grep ServiceAccount kubecln CI-Monitoring -描述RS Telegraf-RS | grep -I "Namespace:" kucbecln CI-Monitoring說明RS Telegraf-RS | grep -I "Service Namespace= ds-grep&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="4e2ab4eb8d580ea02a89f11cb73ed394" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;標題</block>
-  <block id="d4f4168ee4529f65ee54ba8b223d6b1e" category="cell">我有一個PSP環境。這是否會影響我的監控操作員？</block>
-  <block id="d73d9844f6460d906b1560fb215cda64" category="cell">如果您的Kubernetes叢集正在執行Pod安全性原則（PSP）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前的NKMO、並支援PSP:====</block>
-  <block id="61228f96a306f9861ffb47caa48190a1" category="cell">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前的NKMO、並支援PP/PSA:&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256 1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
-  <block id="24b9d8ba3ac9389d8f4a72d27707e6df" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt; 支援程式&lt;&lt;&lt;&lt;&lt;&lt;標題2：將「已啟用安全性原則」標示為「假」。這會停用Pod安全性原則、並允許NKMO部署。請使用下列命令確認：kubecl Get PSP（應顯示Pod安全性原則已移除）kbecl Get all -n &lt;namespace&gt;</block>
-  <block id="92e1a63940cff8448da6b16df73f8839" category="cell">Grep -I PSP（應顯示找不到任何項目）====2.將「已啟用安全性原則」標示為「假」。這會停用Pod安全政策和Pod安全許可、並允許NKMO部署。請使用下列命令確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kvbecl Get all -n &lt;namespace&gt; f2 | grep -i pp（應顯示找不到任何內容）&gt;&gt;&gt;3df6fas94316c710c5e3709e6c4bd493fa37256</block>
-  <block id="1bdab929b5a195b946c68d496ce65060" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;標題</block>
+  <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">您必須擁有建立Kubernetes叢集角色和角色繫結的權限。</block>
+  <block id="4085e40ddd1e35991b92d689ee9b414a" category="section-title">請在開始之前先記下這些資訊</block>
+  <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果您想在安裝代理程式之前驗證安裝檔案、請閱讀「關於」 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
+  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">停止並啟動NetApp Kubernetes監控操作員</block>
+  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。</block>
+  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
+  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。這些成品包括但不限於：</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">若要修改這些值、請使用下列命令編輯代理程式CR（以&lt;namespace&gt; 支援功能取代功能變數來取代命名空間）：</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR規格的格式如下：</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">值機員CR中已有標示為「yes」的「included in Default CR」項目、可在其各自的外掛程式下找到。標示為「否」的項目必須依照隨附的預設替代所提供的範例手動新增。</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">變數名稱</block>
+  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
+  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。</block>
+  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前的NKMO、並支援PSP/PSA1：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
+  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用Pod安全政策和Pod安全許可、並允許NKMO部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n &lt;命名空間&gt;| Grep -I pp（應顯示找不到任何項目）</block>
+  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
+  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
+  <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已過時</block>
+  <block id="6afca2df57e91c9479bb6e541df1bbe2" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。</block>
+  <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">支援下列三種資料收集器Cloud Insights ：</block>
+  <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基礎架構（儲存設備、網路交換器、運算基礎架構）</block>
+  <block id="31b29af38563f95fcd16900aef967adf" category="list-text">作業系統（例如VMware或Windows）</block>
+  <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">服務（例如Kafka）</block>
+  <block id="3e3d1f4256fe73b88a0ea758b3951eb9" category="paragraph">如果您選擇_Infrastructure_資料收集器、則需要擷取單元才能將資料注入Cloud Insights 到SURO。您必須在要從中收集資料的伺服器或VM上下載並安裝擷取設備軟體。單一擷取單元可用於多個資料收集器。</block>
+  <block id="344ab1c74a04a4daec201f19f0c5e693" category="list-text">視需要輸入認證（使用者名稱和密碼）以連線至裝置。</block>
+  <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">收集器生命週期：收集器在生命週期中屬於下列其中一種狀態：</block>
+  <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">採購單位：專為託管資料收集器而設的電腦、通常是虛擬機器。此電腦通常與受監控項目位於相同的資料中心/ VPC。</block>
+  <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">資料來源：與硬體或軟體堆疊進行通訊的模組。它由在AU電腦上執行的組態和程式碼所組成、可與裝置進行通訊。</block>
 </blocks>
