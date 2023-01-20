@@ -8896,7 +8896,6 @@
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安裝NetApp Kubernetes監控操作員之前</block>
   <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">請注意下列元件版本。以下是NetApp Kubernetes監控操作員所隨附的最新版本：</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
-  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">Kube-RBAC代理：v0.13.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state指標：v2.5.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent位元：1.9.8</block>
   <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">Kubernetes-EV-出口者：0.10</block>
@@ -10680,4 +10679,5 @@
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">收集器生命週期：收集器在生命週期中屬於下列其中一種狀態：</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">採購單位：專為託管資料收集器而設的電腦、通常是虛擬機器。此電腦通常與受監控項目位於相同的資料中心/ VPC。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">資料來源：與硬體或軟體堆疊進行通訊的模組。它由在AU電腦上執行的組態和程式碼所組成、可與裝置進行通訊。</block>
+  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">Kube-RBAC代理：v1.13.0</block>
 </blocks>
