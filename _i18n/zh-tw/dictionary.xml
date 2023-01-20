@@ -10667,7 +10667,6 @@
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已過時</block>
-  <block id="6afca2df57e91c9479bb6e541df1bbe2" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。</block>
   <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">支援下列三種資料收集器Cloud Insights ：</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基礎架構（儲存設備、網路交換器、運算基礎架構）</block>
   <block id="31b29af38563f95fcd16900aef967adf" category="list-text">作業系統（例如VMware或Windows）</block>
@@ -10681,4 +10680,5 @@
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自訂或私有泊塢視窗儲存庫</block>
   <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">請注意下列元件版本。這些是NetApp Kubernetes監控操作者所提供的最新版本。如果您是、特別需要注意這些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像。請參閱 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 以上章節提供這些元件的最新版本：</block>
+  <block id="9a792c4a7d9a1e15c6a95f98fe5b6491" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="df6681cbd934aebfa279b5a883862ef0" category="inline-link-macro-rx"></block>。</block>
 </blocks>
