@@ -8894,7 +8894,6 @@
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes資料收集器Tile</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安裝NetApp Kubernetes監控操作員之前</block>
-  <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">請注意下列元件版本。以下是NetApp Kubernetes監控操作員所隨附的最新版本：</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state指標：v2.5.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent位元：1.9.8</block>
@@ -8927,7 +8926,6 @@
   <block id="77cc6d4eb48f196cb4ec9933aeef1586" category="paragraph">此格式的輸出將採用下列Json格式：</block>
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">從Cloud Insights 「畫面」中拉出「運算子」泊塢視窗影像。請確定_NetApp-監 控_版本編號為最新版本：</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">使用下列命令尋找_NetApp-監 控_&lt;版本&gt;欄位：</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像：</block>
   <block id="725add584c7b017b758ee4ca5893c90a" category="paragraph">如果您是在OpenShift 4.6或更高版本上執行、則必須變更「特殊權限模式」設定。執行下列命令以開啟代理程式進行編輯。如果您使用的命名空間不是「NetApp監控」、請在命令列中指定該命名空間：</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。</block>
   <block id="dd9d67c4c74337838e56e1e3e14ceb18" category="admonition">如果您有先前安裝的指令碼型代理程式、您必須升級至NetApp Kubernetes監控操作員。</block>
@@ -10680,4 +10678,7 @@
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">採購單位：專為託管資料收集器而設的電腦、通常是虛擬機器。此電腦通常與受監控項目位於相同的資料中心/ VPC。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">資料來源：與硬體或軟體堆疊進行通訊的模組。它由在AU電腦上執行的組態和程式碼所組成、可與裝置進行通訊。</block>
   <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">Kube-RBAC代理：v1.13.0</block>
+  <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自訂或私有泊塢視窗儲存庫</block>
+  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">請注意下列元件版本。這些是NetApp Kubernetes監控操作者所提供的最新版本。如果您是、特別需要注意這些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
+  <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像。請參閱 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 以上章節提供這些元件的最新版本：</block>
 </blocks>
