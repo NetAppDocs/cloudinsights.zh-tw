@@ -9994,20 +9994,6 @@
   <block id="7b3a030e96e9ee2980e89d94c28dbb48" category="cell">Isilon的使用者名稱</block>
   <block id="2c56c637347a0a87008437d711d16263" category="cell">Isilon使用的密碼</block>
   <block id="01cba5236d5d580a0466283128eeaca6" category="cell">預設值為8080。</block>
-  <block id="abd9e0bb14f8b22570a2f7f71cda1899" category="doc">Amazon FSX for NetApp ONTAP 的「架構組態」</block>
-  <block id="e5444155690679de3490c237e18db0c4" category="paragraph">此資料收集器可收集Amazon FSX for NetApp ONTAP 的檔案與使用者存取資料。此資料收集器將逐步提供給Cloud Insights 整個「穩定」服務區域。如果Cloud Insights 您在自己的《不景》中沒有看到此收藏器的圖示、請聯絡您的銷售人員。</block>
-  <block id="0ee580e185da35a40a1d1984bc4f414a" category="list-text">登入AWS主控台並瀏覽至EC2-instances頁面、然後選取Launch instance。</block>
-  <block id="5beb340d7612e5199a7f1cf1fa8559a6" category="list-text">選取RHEL或CentOS AMI的適當版本、如中所述 <block ref="f14b7add63be60d820928fdd866e56cc" category="inline-link-macro-rx"></block>。</block>
-  <block id="7c197f72661240062d16ebc1d01f474a" category="list-text">在Amazon FSX for NetApp ONTAP 的VPC和子網路中建立「代理程式」方塊、此方塊與Amazon FSX for NetApp的執行個體位於相同的VPC和子網路中。</block>
-  <block id="84cdd7b041998cf9db566c8249b20d66" category="paragraph">或是Agent Box應位於VPC中、可連線至Amazon FSX for NetApp ONTAP VPC。</block>
-  <block id="d390a93ae0bf8ecb5f3eafac479ff1b7" category="paragraph">請確定代理程式與Amazon FSX for NetApp ONTAP 之間存在雙向通訊。</block>
-  <block id="244fc1e8ff83d4d166131ec1052c59de" category="list-text">選取T2.xLarge（4個vCPU和16 GB RAM）作為已配置資源。</block>
-  <block id="8b7fcdb58af006bf84d991e49eeebe51" category="list-text">安裝wGet並解壓縮原生Linux套件。</block>
-  <block id="d885b39aec33db3575946cc072241a27" category="list-text">瀏覽Cloud Secure 至「資料收集器」&gt;「資料收集器」、然後按一下「值機員」索引標籤。</block>
-  <block id="30bfaded2cce7bc8bce0c34aedd60d6a" category="list-text">按一下「+Agent」、並將RHEL指定為目標平台。</block>
-  <block id="6e9db8c0f07c6f970099588928158b5d" category="list-text">將「代理程式安裝」命令貼到您登入的RHEL EC2執行個體中。</block>
-  <block id="fbdfba9c1edac47c47090ea8623a8231" category="paragraph">只Cloud Secure 要符合所有的代理程式先決條件、即可安裝此程式。</block>
-  <block id="662c8fe551cd48617d7f1ceaea434408" category="paragraph">如需詳細步驟、請參閱Cloud Secure 《》 <block ref="7902d0521fa6bd726229418f042a3bdf" category="inline-link-macro-rx"></block> 第頁、</block>
   <block id="643c94a9b7fa8044a23bb9cbc6ebffbe" category="section-title">格式化表格小工具</block>
   <block id="9e2381c8e7ac28deb699317b34df149b" category="paragraph">如同單一值和量表小工具、您可以在表格小工具中設定設定格式化的條件、讓您以色彩和/或特殊圖示來強調顯示資料。</block>
   <block id="39fb612360768b141ab9cb2ecbdb6c06" category="paragraph">設定格式化的條件會針對表格中的每一欄分別設定。例如、您可以為容量欄選擇一組臨界值、為處理量欄選擇另一組臨界值。</block>
@@ -10680,5 +10666,5 @@
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自訂或私有泊塢視窗儲存庫</block>
   <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">請注意下列元件版本。這些是NetApp Kubernetes監控操作者所提供的最新版本。如果您是、特別需要注意這些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像。請參閱 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 以上章節提供這些元件的最新版本：</block>
-  <block id="9a792c4a7d9a1e15c6a95f98fe5b6491" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="df6681cbd934aebfa279b5a883862ef0" category="inline-link-macro-rx"></block>。</block>
+  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
