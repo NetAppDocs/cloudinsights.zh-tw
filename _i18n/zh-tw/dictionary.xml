@@ -1809,7 +1809,6 @@
   <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">簽署的Checksum檔案可以使用PEM檔案進行驗證：</block>
   <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows（透過上述匯入憑證安裝憑證之後）：</block>
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：</block>
-  <block id="e7d024454be5ad9e8d0f6defe29e154f" category="section-title">代理程式安裝疑難排解</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">如果您在設定代理程式時遇到問題、請嘗試下列事項：</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">我已經用Cloud Insights 了這個功能來安裝代理程式</block>
   <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">如果您已在主機/ VM上安裝代理程式、則不需要重新安裝代理程式。在這種情況下、只要在「代理程式安裝」畫面中選擇適當的平台和金鑰、然後按一下*繼續*或*完成*即可。</block>
@@ -8896,7 +8895,6 @@
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state指標：v2.5.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent位元：1.9.8</block>
-  <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">Kubernetes-EV-出口者：0.10</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。</block>
   <block id="f555190cc628f345214d8d00c587f506" category="list-text">當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。Cloud Insights Cloud Insights</block>
   <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。</block>
@@ -10654,9 +10652,7 @@
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">收集器生命週期：收集器在生命週期中屬於下列其中一種狀態：</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">採購單位：專為託管資料收集器而設的電腦、通常是虛擬機器。此電腦通常與受監控項目位於相同的資料中心/ VPC。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">資料來源：與硬體或軟體堆疊進行通訊的模組。它由在AU電腦上執行的組態和程式碼所組成、可與裝置進行通訊。</block>
-  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">Kube-RBAC代理：v1.13.0</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自訂或私有泊塢視窗儲存庫</block>
-  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">請注意下列元件版本。這些是NetApp Kubernetes監控操作者所提供的最新版本。如果您是、特別需要注意這些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像。請參閱 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 以上章節提供這些元件的最新版本：</block>
   <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">設定Dell EMC Isilon / PowerScale REST資料收集器。</block>
@@ -10706,4 +10702,9 @@
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">使用者名稱和密碼</block>
   <block id="4723d1b438a15598881f85467c0b7be8" category="cell">效能輪詢之間的時間間隔。</block>
   <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">一旦您的環境建立完成、您可以隨時登入NetApp Cloud Portal、然後按一下*移至Cloud Insights 瑞奇*。您將被直接帶到Cloud Insights 您的自然環境中。</block>
+  <block id="4e6966e86a775d896fac148f8f919b74" category="list-text">請注意下列元件版本。這些是NetApp Kubernetes監控操作員目前隨附的_required版本。如果您是、特別需要注意這些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
+  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">Kube-RBAC代理：v0.13.0</block>
+  <block id="09fac59df2e8bc91f55d933bf9d5c4b9" category="list-text">Kubernetes-EV-出口者：v0.10</block>
+  <block id="051aaec40811db88a3eb9b87af9a7838" category="cell">設定新的外掛程式並重新啟動Telegraf之後、Telegraf無法啟動。記錄顯示類似下列的錯誤：「[Telegraf]錯誤執行代理程式：載入組態檔/etc/Telegraf/Telegraf.d/cloudss-default.conf時發生錯誤：plugin outs.http：line 88：組態指定欄位["use_system_proxy"、但未使用」</block>
+  <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">安裝的Telegraf版本已過時。請依照本頁的步驟*升級您適當平台的代理程式*。</block>
 </blocks>

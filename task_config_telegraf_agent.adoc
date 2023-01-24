@@ -597,13 +597,16 @@ Windows：
  .\cloudinsights-windows.ps1 -install
 
 
-== 代理程式安裝疑難排解
+== 疑難排解
 
 如果您在設定代理程式時遇到問題、請嘗試下列事項：
 
 [cols="2*"]
 |===
 | 問題： | 試用： 
+
+
+| 設定新的外掛程式並重新啟動Telegraf之後、Telegraf無法啟動。記錄顯示類似下列的錯誤：「[Telegraf]錯誤執行代理程式：載入組態檔/etc/Telegraf/Telegraf.d/cloudss-default.conf時發生錯誤：plugin outs.http：line 88：組態指定欄位["use_system_proxy"、但未使用」 | 安裝的Telegraf版本已過時。請依照本頁的步驟*升級您適當平台的代理程式*。 
 
 
 | 我已經用Cloud Insights 了這個功能來安裝代理程式 | 如果您已在主機/ VM上安裝代理程式、則不需要重新安裝代理程式。在這種情況下、只要在「代理程式安裝」畫面中選擇適當的平台和金鑰、然後按一下*繼續*或*完成*即可。 
