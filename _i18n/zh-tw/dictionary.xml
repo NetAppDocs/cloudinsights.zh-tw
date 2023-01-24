@@ -2807,7 +2807,6 @@
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">開始訂購</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">在免費試用期間、您可以 <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> 隨時都能Cloud Insights 實現。訂閱後、Cloud Insights 您可以根據目前的訂閱內容來使用功能不完整的功能。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">登入後立即使用</block>
-  <block id="3c43cc5f14a9a8d5c0d0ad13a6807635" category="paragraph">一旦您的租戶建立完成、您隨時都可以登入NetApp Cloud Portal、然後按一下*移至Cloud Insights *。您將被直接帶到Cloud Insights 您的自然環境中。</block>
   <block id="8dac70c4541c93f0deed8b8bd734a673" category="paragraph">您也可以直接開啟瀏覽器至Cloud Insights 您的URL環境、例如：</block>
   <block id="0e15f0ff9eb552105028ff08fc92e09f" category="paragraph">每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入Cloud Central、系統會提示他們登入。</block>
   <block id="0df3e25ccf83cd4779234f7f928bebb5" category="admonition">新使用者仍必須先註冊以存取Cloud Central、才能存取其環境URL。</block>
@@ -10570,9 +10569,6 @@
   <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIkeys適用於_Sync_或_AsynSync_&lt;TBD More information&gt;</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">設定Dell EMC UnREST資料收集器。</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">設定Dell EMC Unisphere資料收集器</block>
-  <block id="40a4716908f3dbdf4bcc8ba2f723c402" category="paragraph">此資料收集器可從Dell EMC Un推出 的RESTRIS儲存系統取得庫存和效能資料。對於組態、資料收集器需要Un禁 用伺服器的IP位址和管理層級網域帳戶。</block>
-  <block id="178aa8940482ece4128332c5293d4776" category="list-text">Unan伺服器的IP位址</block>
-  <block id="e14ac1a874c2bab29d6bc82d3f0dbce3" category="list-text">Un推出 伺服器的管理層級網域帳戶</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">連接埠8443.</block>
   <block id="c62ee42653af581fe8eb16fb07118e8a" category="cell">Un禁 用伺服器的IP位址</block>
   <block id="2b6e86a54babfc32273d61df437cae05" category="cell">Un禁 用伺服器的IP位址或完整網域名稱</block>
@@ -10702,4 +10698,12 @@
   <block id="ae832e9b5bda2699db45f3fa6aa8c556" category="cell">Swift</block>
   <block id="7793f7416a4d38be57956421d8dd181c" category="cell">ISI_PRIV_job_engine</block>
   <block id="aa6591610b53847bfb4e19e53c0b4a05" category="cell">工作引擎</block>
+  <block id="c0accd1360dce3944f0726ef704217c0" category="paragraph">此資料收集器會從適用於PowerMax / Vmax 3管理系統的Dell EMC Unaerserview取得庫存與效能資料。</block>
+  <block id="7e8e4c2fd39cb301da1af7afb93e8962" category="paragraph">請注意、Dell/EMC直到Un推出 每個磁碟區統計資料、此資料收集器才支援9.2.0以上、但無法收集磁碟區統計資料、因為它們不存在。</block>
+  <block id="e3a699248ac2af0be8e4036425dd0b04" category="paragraph">VMAX/PowerMax執行個體的單一Un禁 用式儲存陣列可能管理一或多個Symmetrix 3或更高版本的儲存陣列、此收集器預設會嘗試探索所有儲存陣列。</block>
+  <block id="da3865d5e1a7d870e4707356b907f643" category="paragraph">對於組態、資料收集器需要Un禁 用伺服器的IP位址/FQDN、連接至連接埠8443的TCP連線、以及使用者名稱和密碼。</block>
+  <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">Un禁 用伺服器的IP位址/完整網域名稱</block>
+  <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">使用者名稱和密碼</block>
+  <block id="4723d1b438a15598881f85467c0b7be8" category="cell">效能輪詢之間的時間間隔。</block>
+  <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">一旦您的環境建立完成、您可以隨時登入NetApp Cloud Portal、然後按一下*移至Cloud Insights 瑞奇*。您將被直接帶到Cloud Insights 您的自然環境中。</block>
 </blocks>

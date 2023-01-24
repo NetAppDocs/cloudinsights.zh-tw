@@ -51,11 +51,11 @@ toc::[]
 
 == 登入後立即使用
 
-一旦您的租戶建立完成、您隨時都可以登入NetApp Cloud Portal、然後按一下*移至Cloud Insights *。您將被直接帶到Cloud Insights 您的自然環境中。
+一旦您的環境建立完成、您可以隨時登入NetApp Cloud Portal、然後按一下*移至Cloud Insights 瑞奇*。您將被直接帶到Cloud Insights 您的自然環境中。
 
 您也可以直接開啟瀏覽器至Cloud Insights 您的URL環境、例如：
 
- https://<environment-name>.c01.cloudinsights.netapp.com/
+ https://<environment-prefix>.c01.cloudinsights.netapp.com/
 每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入Cloud Central、系統會提示他們登入。
 
 
