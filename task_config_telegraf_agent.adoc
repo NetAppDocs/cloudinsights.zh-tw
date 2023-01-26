@@ -606,7 +606,10 @@ Windows：
 | 問題： | 試用： 
 
 
-| 設定新的外掛程式並重新啟動Telegraf之後、Telegraf無法啟動。記錄顯示類似下列的錯誤：「[Telegraf]錯誤執行代理程式：載入組態檔/etc/Telegraf/Telegraf.d/cloudss-default.conf時發生錯誤：plugin outs.http：line 88：組態指定欄位["use_system_proxy"、但未使用」 | 安裝的Telegraf版本已過時。請依照本頁的步驟*升級您適當平台的代理程式*。 
+| 設定新的外掛程式並重新啟動Telegraf之後、Telegraf無法啟動。記錄顯示類似下列的錯誤：「[Telegraf]錯誤執行代理程式：載入組態檔/etc/Telegraf/Telegraf.d/cloudss-default.conf時發生錯誤：plugin outs.http：line <linenumber> fes:組態指定欄位["use_system_proxy"、但未使用」 | 安裝的Telegraf版本已過時。請依照本頁的步驟*升級您適當平台的代理程式*。 
+
+
+| 我在舊安裝上執行安裝程式指令碼、現在代理程式並未傳送資料 | 解除安裝Telewraf代理程式、然後重新執行安裝指令碼。請依照本頁上的*升級代理程式*步驟、以取得適當的平台。 
 
 
 | 我已經用Cloud Insights 了這個功能來安裝代理程式 | 如果您已在主機/ VM上安裝代理程式、則不需要重新安裝代理程式。在這種情況下、只要在「代理程式安裝」畫面中選擇適當的平台和金鑰、然後按一下*繼續*或*完成*即可。 
