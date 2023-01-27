@@ -67,3 +67,17 @@ image:CS_ONTAP_ARP_EXAMPLE.png["Arp範例畫面ONTAP"]
 == 限制
 
 如果SVM不是Cloud Secure 由SVM監控、但ONTAP 有由Sfis產生的ARP事件、Cloud Secure 則事件仍會由Sfin接收並顯示。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。
+
+
+
+== 疑難排解
+
+下表說明已知問題及其解決方法。
+
+[cols="2*"]
+|===
+| 問題： | 解決方法： 
+
+
+| 偵測到攻擊後24小時內收到電子郵件警示。在UI中、警示會在Cloud Insights 收到電子郵件之前24小時顯示、而該電子郵件則是由「支援工作負載安全性」所接收。 | 當將「偵測到的勒索軟體事件」傳送至VMware工作負載安全（例如：VMware）時ONTAP 、系統會傳送電子郵件Cloud Secure Cloud Insights 。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。將特定數量的檔案編碼後、將偵測到的_r勒索 軟體事件傳送至VMware Cloud Insights ONTAP 。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。 
+|===

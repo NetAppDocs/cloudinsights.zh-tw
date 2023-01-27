@@ -10709,4 +10709,6 @@
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">設定新的外掛程式並重新啟動Telegraf之後、Telegraf無法啟動。記錄顯示類似下列的錯誤：「[Telegraf]錯誤執行代理程式：載入組態檔/etc/Telegraf/Telegraf.d/cloudss-default.conf時發生錯誤：plugin outs.http：line &lt;linenumber&gt; fes:組態指定欄位["use_system_proxy"、但未使用」</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在舊安裝上執行安裝程式指令碼、現在代理程式並未傳送資料</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">解除安裝Telewraf代理程式、然後重新執行安裝指令碼。請依照本頁上的*升級代理程式*步驟、以取得適當的平台。</block>
+  <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">偵測到攻擊後24小時內收到電子郵件警示。在UI中、警示會在Cloud Insights 收到電子郵件之前24小時顯示、而該電子郵件則是由「支援工作負載安全性」所接收。</block>
+  <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">當將「偵測到的勒索軟體事件」傳送至VMware工作負載安全（例如：VMware）時ONTAP 、系統會傳送電子郵件Cloud Secure Cloud Insights 。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。將特定數量的檔案編碼後、將偵測到的_r勒索 軟體事件傳送至VMware Cloud Insights ONTAP 。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。</block>
 </blocks>
