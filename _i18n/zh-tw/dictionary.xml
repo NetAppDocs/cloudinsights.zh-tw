@@ -10711,4 +10711,18 @@
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">偵測到攻擊後24小時內收到電子郵件警示。在UI中、警示會在Cloud Insights 收到電子郵件之前24小時顯示、而該電子郵件則是由「支援工作負載安全性」所接收。</block>
   <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">當將「偵測到的勒索軟體事件」傳送至VMware工作負載安全（例如：VMware）時ONTAP 、系統會傳送電子郵件Cloud Secure Cloud Insights 。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。將特定數量的檔案編碼後、將偵測到的_r勒索 軟體事件傳送至VMware Cloud Insights ONTAP 。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。</block>
   <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">在「*安全性*」功能表下、選取「*管理」&gt;「資料收集器」&gt;「代理程式」&gt;「+agent*」</block>
+  <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">原始容量：指派給FSX檔案系統之所有SSD儲存設備的基礎2總和。</block>
+  <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS：此儲存集區上所有已配置磁碟區的IOPS總和。</block>
+  <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">處理量：此儲存資源池上所有已配置磁碟區的總處理量。</block>
+  <block id="c70c5237e843e44e918067a6943132a4" category="section-title">進階度量</block>
+  <block id="6efc5e8caa50fab32c231807d02a492b" category="paragraph">此資料收集器會從FSXfor NetApp ONTAP Sfor Storage收集下列進階度量資料：</block>
+  <block id="7e30bf5c3bd5c005d855f2f6816576b2" category="list-text">fpolicy</block>
+  <block id="1b5ad5217299ac08e7305ed9ae0fc329" category="list-text">NFSv3</block>
+  <block id="db31b8e47d6e93240aa15cb08543d7d8" category="list-text">NFSv3：節點</block>
+  <block id="045b07c077b39ac849fd24abe6aecc82" category="list-text">NFSv4.</block>
+  <block id="0694297a7c3a0df4c2a4b8f121752190" category="list-text">NFSv4_1</block>
+  <block id="a5eaa78bc9c57ccd6d1f4ad5bb793922" category="list-text">NFSv1_1：節點</block>
+  <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">NFSv4：節點</block>
+  <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">policy_group</block>
+  <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">工作負載磁碟區</block>
 </blocks>
