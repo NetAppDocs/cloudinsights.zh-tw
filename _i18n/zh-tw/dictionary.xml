@@ -3,7 +3,6 @@
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="summary">使用資料收集器從裝置收集檔案和使用者存取資料。Cloud Secure</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">儲存組態Cloud Volumes ONTAP</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
-  <block id="3760923e63b2ef4cd5a4ef21ab164f35" category="paragraph">請參閱OnCommand 《VMware Cloud Manager文件》、以設定單一節點/ HA AWS執行個體來裝載Cloud Secure 此支援程式：<block ref="3a865d6888eced2f74a21bc9d0b68884" category="inline-link-rx"></block></block>
   <block id="60b02ea35fab7476f0f0cf2d8cfc680d" category="paragraph">組態完成後、請依照下列步驟設定SVM：<block ref="91221d0756e81d23329189ffc4e6701a" category="inline-link-rx"></block></block>
   <block id="276e994cf948a6c752060d65f4332540" category="section-title">代理機器組態</block>
   <block id="d4ed0ce3ae770f112754ea5fdeb0e838" category="paragraph">請使用下列步驟來設定機器以做Cloud Secure 為一個物件代理程式：</block>
@@ -10725,4 +10724,5 @@
   <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">NFSv4：節點</block>
   <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">policy_group</block>
   <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">工作負載磁碟區</block>
+  <block id="eb7df28f88bc327c30fcc0b6ef2648ff" category="paragraph">請參閱OnCommand Cloud Volumes ONTAP 《支援支援支援功能的支援說明文件》、以設定單一節點/ HA AWS執行個體來裝載Cloud Secure 支援此功能的支援功能：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
 </blocks>

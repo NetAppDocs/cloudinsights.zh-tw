@@ -15,7 +15,7 @@ summary: 使用資料收集器從裝置收集檔案和使用者存取資料。Cl
 
 == 儲存組態Cloud Volumes ONTAP
 
-請參閱OnCommand 《VMware Cloud Manager文件》、以設定單一節點/ HA AWS執行個體來裝載Cloud Secure 此支援程式：https://docs.netapp.com/us-en/occm/index.html[]
+請參閱OnCommand Cloud Volumes ONTAP 《支援支援支援功能的支援說明文件》、以設定單一節點/ HA AWS執行個體來裝載Cloud Secure 支援此功能的支援功能：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
 組態完成後、請依照下列步驟設定SVM：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
