@@ -813,30 +813,14 @@
   <block id="2afb7f9e9ab32f5802e520ebeefb1006" category="summary">歡迎使用Cloud Insights 適用於此的文件入口網站。</block>
   <block id="5858ee4031acd7b896faa2d3d2c1a299" category="doc">本文檔 Cloud Insights</block>
   <block id="b6569b5a5429e43ea4e566ae989fd3e6" category="paragraph">NetApp Cloud Insights 解決方案是一套雲端基礎架構監控工具、可讓您清楚掌握完整的基礎架構。利用VMware、您可以監控、疑難排解及最佳化所有資源、包括公有雲和私有資料中心。Cloud Insights</block>
-  <block id="cc5d763345784622142d479b60870517" category="paragraph">協助您：Cloud Insights</block>
-  <block id="a8ce02adf1b8f1d868a76d2884c11ae6" category="list-text">*平均解決時間減少90%*</block>
-  <block id="81a5ad4ad3a83b3b0865cd49702b608d" category="paragraph">停止搜尋記錄數天、無法手動建立基礎架構的關聯：請使用我們的動態拓撲與關聯分析、立即找出問題所在。</block>
-  <block id="1089a64ce496588b51d96bc23288e673" category="list-text">*平均降低33%的雲端基礎架構成本*</block>
-  <block id="ce96aa1ba51d1480d54029283b7e3b56" category="paragraph">找出已放棄和未使用的資源、並在最佳化的效能和成本層中找出適當規模的工作負載、藉此排除效率不彰的情況。</block>
-  <block id="fafa3a994653e89bbe761b3a3541b507" category="list-text">*避免高達80%的雲端問題影響終端使用者*</block>
-  <block id="3a8ecdf9d1b853778c90c18e9978742d" category="paragraph">使用進階分析和機器學習功能、在問題變成關鍵性停機之前、先找出問題、然後搜尋大量資料以找出相關的部分。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">快速入門</block>
-  <block id="10bf8b475a2a2eae831a99fa82bd172b" category="inline-link-macro">就職</block>
-  <block id="f3898f5a88d09ef39c4cde84d5aab65a" category="list-text">我是新客戶： <block ref="0d30770c7e0e3104674f70f806e6d9c0" category="inline-link-macro-rx"></block></block>
   <block id="c61d89e4678de80633fc43c34f7386e6" category="inline-link-macro">取得資料</block>
   <block id="f927c217103ddf84f61a2827580d4169" category="inline-link-macro">設定使用者</block>
-  <block id="f7ebaa62cc450aafa555a2c658a33689" category="list-text">我已註冊：現在該怎麼辦？<block ref="cbfa9b616716f21245fe15dc5f968c06" category="inline-link-macro-rx"></block>
-<block ref="781d4ec8a1ed10dd5e5e73381919382f" category="inline-link-macro-rx"></block></block>
   <block id="23d12a9ef5970703cfffa4ef4c742d68" category="inline-link-macro">準備資產：註釋</block>
   <block id="d673c4f593dbf920c9f4bc8e56bf17d5" category="inline-link-macro">尋找您想要的資產：查詢</block>
   <block id="381137dc478970e10f9007a45be6554a" category="inline-link-macro">查看您想要的資料：儀表板</block>
   <block id="2d762a3bbc5cce9178bdcae87b203e7c" category="inline-link-macro">監控與警示</block>
-  <block id="e0fbc74ad021275f0491ecc9a4b34363" category="list-text">如何充分發揮Cloud Insights 效益？<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
-<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
-<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
-<block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
   <block id="d17aef0dcce543eeda80f0586306b127" category="inline-link-macro">*訂閱*</block>
-  <block id="0cecfa140cecefa9da4e9bcfc9a4e42d" category="list-text">我已經嘗試Cloud Insights 過這個解決方法、現在我已經準備好了 <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
   <block id="f095e0cdb2fffac876c5898ceea1289b" category="summary">設定Infinidat InfinidBox資料收集器。</block>
   <block id="d16256b2a3f1af4c833cf23aba11bcc2" category="doc">Infinidat InfinidBox資料收集器</block>
   <block id="f76afdee7e70cdff834396cb9793cf9c" category="paragraph">Infinidat Infinbox（HTTP）資料收集器用於從Infinidat Infinidat InfinBox儲存系統收集庫存資訊。</block>
@@ -10725,4 +10709,25 @@
   <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">policy_group</block>
   <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">工作負載磁碟區</block>
   <block id="eb7df28f88bc327c30fcc0b6ef2648ff" category="paragraph">請參閱OnCommand Cloud Volumes ONTAP 《支援支援支援功能的支援說明文件》、以設定單一節點/ HA AWS執行個體來裝載Cloud Secure 支援此功能的支援功能：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
+  <block id="3878e180796265243705a46f1494ad55" category="section-title">我該怎麼辦Cloud Insights ？</block>
+  <block id="8e2f0fac2486fb4c82d056c8b3107326" category="paragraph">支援混合式多雲端監控功能、讓您能夠完整觀察基礎架構和工作負載Cloud Insights 。</block>
+  <block id="256e0247d88a2ebcaeb434e937f6934d" category="list-text">適用於異質基礎架構和工作負載的資料收集器、包括Kubernetes</block>
+  <block id="b7fcfbd32b85ebd067323740bd250cb8" category="list-text">開放式Telegraf收集器和開放式API、可輕鬆整合</block>
+  <block id="0492d3c207c09676bdaf2171b5a52a85" category="list-text">全方位警示與通知</block>
+  <block id="387df49b54434d0efc6f732ec5d3e4db" category="list-text">機器學習、提供智慧型洞見</block>
+  <block id="9ea8e80fba8d6edb71449d6ac523870d" category="list-text">最佳化資源使用率</block>
+  <block id="f7c53246bda8892727562ecf03b2af88" category="list-text">內建或可自訂的儀表板搭配進階篩選功能、可將回答問題的顯示雜訊降至最低</block>
+  <block id="5f0e583e0b23c4014b3313af93160414" category="list-text">探索ONTAP 您的不一樣儲存作業的健全狀況 </block>
+  <block id="30b80265dc62edf963a3ac0e34dc03e5" category="list-text">保護您最寶貴的商業資產（資料）、防範勒索軟體或資料毀損攻擊</block>
+  <block id="5abbdfc8c583cbf03ce02e46c06a6aa5" category="inline-link-macro">*入門*</block>
+  <block id="ebbd019b0838a3a78bddd453abd123e8" category="list-text">我要如何做到 <block ref="bdc33e916e289637bc8ce0319e314c7f" category="inline-link-macro-rx"></block> 使用支援嗎Cloud Insights ？</block>
+  <block id="9a2fea05fffd9db96b4c1b56a8565c0f" category="list-text">我已註冊。現在該怎麼辦？<block ref="cbfa9b616716f21245fe15dc5f968c06" category="inline-link-macro-rx"></block>
+<block ref="781d4ec8a1ed10dd5e5e73381919382f" category="inline-link-macro-rx"></block></block>
+  <block id="1f3aee47e5a067de1cdceffdeaa16afa" category="inline-link-macro">保護資料安全</block>
+  <block id="b3686203dff26adb25b86088bb90a8a9" category="list-text">太棒了！接下來呢？<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
+<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
+<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
+<block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block>
+<block ref="736f96cf0a6accc6598879f4794392e1" category="inline-link-macro-rx"></block></block>
+  <block id="f22fe88435293fe687ec1e801a002593" category="list-text">這是一件很棒的事！我準備好了 <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
 </blocks>
