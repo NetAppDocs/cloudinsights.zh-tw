@@ -17,6 +17,9 @@ summary: 設定NetApp 7-mode資料收集器。
 
 從NetApp 7-mode資料收集器取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
+
+NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.html#useful-definitions["已過時"]。
+
 [cols="2*"]
 |===
 | 廠商/模型術語 | 詞彙Cloud Insights 

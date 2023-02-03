@@ -10730,4 +10730,5 @@
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block>
 <block ref="736f96cf0a6accc6598879f4794392e1" category="inline-link-macro-rx"></block></block>
   <block id="f22fe88435293fe687ec1e801a002593" category="list-text">這是一件很棒的事！我準備好了 <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
+  <block id="1bad96ad9051405457c7ba247f0febab" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block>。</block>
 </blocks>
