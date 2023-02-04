@@ -1133,11 +1133,6 @@
   <block id="5c60159997a43283a73239576226151a" category="list-text">按一下查詢。</block>
   <block id="e5bcf73c937d17ab5c2459e257f2fbf3" category="inline-image-macro">匯出按鈕</block>
   <block id="b7cfb6aea053f23b3c1dd71219d376c3" category="list-text">按一下 <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 可將查詢結果導出至.CSV文件。</block>
-  <block id="8475fc267f53172a192d089b6caf3768" category="list-text">出現提示時、請執行下列其中一項：</block>
-  <block id="13dc29e9f9fb2afd49b52395ec37a0de" category="list-text">按一下「*開啟方式*」、然後按一下「*確定*」、以Microsoft Excel開啟檔案、並將檔案儲存至特定位置。</block>
-  <block id="da0c025c3c8275faa4ee5cc92e1acc0f" category="list-text">按一下*「Save file*（儲存檔案*）」、然後按*「OK*（確定）」將檔案儲存至「Downloads（下載）」資料夾。</block>
-  <block id="6525323a679d04dba5f7510340bc9125" category="paragraph">目前選取要顯示之欄中物件的所有屬性都會匯出至檔案、無論這些屬性是否顯示。</block>
-  <block id="39552cbc748088b6dee08e3e06304dbb" category="paragraph">匯出查詢結果時、請注意、結果表中的所有資料列都會匯出、而不只是選取或顯示在畫面上的資料列、最多可匯出10、000列。</block>
   <block id="2d76b561e385cd24b01c145687985ed4" category="paragraph">附註：當資產名稱中出現一個逗號時、匯出會以引號括住名稱、保留資產名稱和適當的.csf格式。</block>
   <block id="1e3b60f657283d7c9a3e3815d7399af5" category="paragraph">使用Excel開啟匯出的.CSV檔案時、如果您有NN格式的物件名稱或其他欄位（兩位數加上一個分號、再加上兩位數）、Excel有時會將該名稱解譯為時間格式、而非文字格式。這可能導致Excel在這些欄中顯示不正確的值。例如、在Excel中、名為「81：45」的物件會顯示為「81：45：00」。</block>
   <block id="b6e8fc6b314563c4e866b8ba521b9edb" category="paragraph">若要解決此問題、請使用下列步驟將.CSV匯入Excel：</block>
@@ -10731,4 +10726,82 @@
 <block ref="736f96cf0a6accc6598879f4794392e1" category="inline-link-macro-rx"></block></block>
   <block id="f22fe88435293fe687ec1e801a002593" category="list-text">這是一件很棒的事！我準備好了 <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
   <block id="1bad96ad9051405457c7ba247f0febab" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block>。</block>
+  <block id="069a2016d54bf7b98ce327edac1bcc77" category="section-title">額外的電源、活動訊號和其他系統監視器</block>
+  <block id="7027f8f662a0742578991ed7e8e66cf8" category="cell">發現磁碟櫃電源供應器</block>
+  <block id="d32528aaa543f441670938e1f8bb2b68" category="cell">資訊</block>
+  <block id="5b780178dbd223a3d174292d1e774b57" category="cell">將電源供應器新增至磁碟櫃時、會出現此訊息。</block>
+  <block id="b50339a10e1de285ac99d4c3990b8693" category="cell">無</block>
+  <block id="e8a20f8b60f17daddc871b2dac8b46db" category="cell">磁碟櫃電源供應器已移除</block>
+  <block id="edca6e3f5e85e57b9461413ce1f65c4c" category="cell">從磁碟櫃中取出電源供應器時、會出現此訊息。</block>
+  <block id="5f391166aaf7044286428f61ce6e0a7a" category="cell">自動非計畫性切換停用MetroCluster</block>
+  <block id="613faa2517038676f4bea3933b407c4a" category="cell">當自動非計畫性切換功能停用時、就會出現此訊息。</block>
+  <block id="bf478261cfa03185a1a4fa77f23a6cbb" category="cell">為MetroCluster 叢集中的每個節點執行「flexmodify -node-name &lt;nodename&gt; fice-automatic switchover onf失敗true」命令、以啟用自動切換。</block>
+  <block id="343a58509f0a735f654bd2aab3db1858" category="cell">無法連線的儲存橋接器MetroCluster</block>
+  <block id="73c638bb2399a94e75e4538ebbb1469a" category="cell">無法透過管理網路連線至儲存橋接器</block>
+  <block id="aa06516444854af9a4743d6e5338f756" category="cell">1）如果橋接器是由SNMP監控、請使用「network interface show」命令確認節點管理LIF已啟動。使用「network ping」命令來驗證橋接器是否處於活動狀態。2）如果橋接器是在頻內監控、請檢查連接至橋接器的光纖纜線、然後確認橋接器已開機。</block>
+  <block id="a89264d77ac0f470e57b91320ad32ce3" category="cell">橋接器溫度異常-低於臨界值MetroCluster</block>
+  <block id="7f13b95fcfad0a319c7fa71d198f7c9b" category="cell">Fibre Channel橋接器上的感測器報告的溫度低於臨界臨界值。</block>
+  <block id="9729fa4abb308d2670b40676d8d372fb" category="cell">1）檢查儲存橋接器上風扇的運作狀態。2）確認橋接器在建議的溫度條件下運作。</block>
+  <block id="142d5ec5047787ddc4c9054c6ce8773b" category="cell">橋接器溫度異常-高於臨界值MetroCluster</block>
+  <block id="a3577f72e850f9e62b6b10ce575008e1" category="cell">Fibre Channel橋接器上的感測器報告的溫度高於臨界臨界臨界值。</block>
+  <block id="f8f6b2db65a82ec61ce85e4812d7250d" category="cell">1）使用「storage bridge show -c冷卻」命令、檢查儲存橋接器上機箱溫度感測器的運作狀態。2）確認儲存橋接器在建議的溫度條件下運作。</block>
+  <block id="c01dad7e44c557605322ef97b53b10c3" category="cell">不再使用的支援集合體MetroCluster</block>
+  <block id="093a9edb9d794726954b54111018b7cf" category="cell">在切換回復期間、集合體留在後端。</block>
+  <block id="2db6a0bcd09f626bfb7882937d8c575d" category="cell">1）使用命令「aggr show」檢查Aggregate狀態。2）如果Aggregate在線上、請使用命令MetroCluster 「還原」將其歸還給原始擁有者。</block>
+  <block id="46710e8acb38bde0266ea766ee2ae8da" category="cell">所有鏈接MetroCluster 均由各個不完整的合作夥伴提供</block>
+  <block id="e0ac6545329ac97b9e862bb500364c06" category="cell">RDMA互連介面卡和叢集間LIF與連接叢集的連線中斷、或是連接叢集的連線中斷。</block>
+  <block id="8d167a7757b8906305ae9544c9af6e69" category="cell">1）確保叢集間的生命體已啟動並執行。如果叢集間的生命體當機、請修復它們。2）使用「叢集對等ping」命令來驗證連接的叢集是否已啟動並正在執行。如果MetroCluster 連接的叢集當機、請參閱《The《支援災難恢復指南》。3）對於Fabric MetroCluster 功能、請驗證後端Fabric ISL是否正常運作。如果後端架構ISL當機、請修復它們。4）對於非Fabric MetroCluster 的非結構性配置、請確認RDMA互連介面卡之間的纜線正確無誤。如果連結中斷、請重新設定纜線。</block>
+  <block id="fa2aee1bf59ed6d5ebff3672ad78e52a" category="cell">無法透過對等網路連線至合作夥伴MetroCluster</block>
+  <block id="e6ec28e0e2e9208013c2e1058800db86" category="cell">與對等叢集的連線中斷。</block>
+  <block id="05b8acf883dfe256f5f39ca4014b54e1" category="cell">1）確認連接埠已連接至正確的網路/交換器。2）確保叢集間LIF已連接至連接的叢集。3）使用命令「叢集對等ping」、確保連接的叢集已啟動並執行。如果連接的叢集當機、請參閱MetroCluster 《支援災難恢復指南》。</block>
+  <block id="4dcdd54705c7f20f01f094ab656a606f" category="cell">停止所有連結MetroCluster</block>
+  <block id="dc1ca76dfb1a12b26b8ce316f73ee2a3" category="cell">儲存交換器上的所有交換器間連結（ISL）都已關閉。</block>
+  <block id="e83ac7645eb0fb1a3121d41f1adf11f1" category="cell">1）修復儲存交換器上的後端架構ISL。2）確保合作夥伴交換器正常運作、ISL正常運作。3）確保中介設備（例如xWDM裝置）正常運作。</block>
+  <block id="f0fa6605991a363821e648872f19cb87" category="cell">節點對儲存堆疊SAS連結中斷MetroCluster</block>
+  <block id="73b3e7056192ed906edba7d7ad84556e" category="cell">SAS介面卡或其連接的纜線可能故障。</block>
+  <block id="ca42f2db2956c3a6e8687e547b7dbe5b" category="cell">1.確認SAS介面卡已上線且正在執行。2.確認實體纜線連線穩固且正常運作、必要時請更換纜線。3.如果SAS介面卡連接到磁碟櫃、請確定IOM和磁碟已正確安裝。</block>
+  <block id="fed1c67608dbad055a6c51bd844faeaf" category="cell">MetroCluster FC啟動器連結中斷</block>
+  <block id="f4d347eaffdab4f74c5bac9af605ee25" category="cell">FC啟動器介面卡故障。</block>
+  <block id="763b81593b10cd91332e0da906323146" category="cell">1.確保FC啟動器連結未遭竄改。2.使用命令「system node" run -node" local -command storage show介面卡、驗證FC啟動器介面卡的作業狀態。</block>
+  <block id="4a2ab00572700e82bc134c3cf18ddd3a" category="cell">FC-VI互連連結中斷</block>
+  <block id="007d6763a46a9f1013a702b54eb3e48a" category="cell">FC-VI連接埠上的實體連結已離線。</block>
+  <block id="3c8a727a341f3e65ef21972bd2e00049" category="cell">1.確保FC-VI連結未遭竄改。2.使用命令MetroCluster 「show互連介面卡」、確認FC-VI介面卡的實體狀態為「up」。3.如果組態包含光纖交換器、請確定已正確連接並設定。</block>
+  <block id="49eb4f5d51469f3666ba8cef7c6482dd" category="cell">不支援的備用磁碟MetroCluster</block>
+  <block id="a195d2fc605b2d5c2f211892ee732421" category="cell">在切換期間、備用磁碟被留在後方。</block>
+  <block id="ccbac059f97d44b3daedeb2ab04ba101" category="cell">如果磁碟未故障、請使用命令MetroCluster 「還原」將其歸還給原始擁有者。</block>
+  <block id="6255ab80e69a766244822e806c48c785" category="cell">下移儲存橋接器連接埠MetroCluster</block>
+  <block id="4587a636473b6bc14831dfbfcaba426f" category="cell">儲存橋接器上的連接埠已離線。</block>
+  <block id="3e58ef46e60e9881f47c0bc65ae2f403" category="cell">1）使用命令「storage bridge show -port」檢查儲存橋接器上連接埠的運作狀態。2）驗證連接埠的邏輯和實體連線能力。</block>
+  <block id="e80a5a82aedba6e36fe14591c6014129" category="cell">儲存交換器風扇故障MetroCluster</block>
+  <block id="942f11137ccfed6aca94b348f4321660" category="cell">儲存交換器上的風扇故障。</block>
+  <block id="d077488483f6af46a86778b0d76c12db" category="cell">1）使用命令「storage switchshow -c冷卻」、確保交換器中的風扇正常運作。2）確保風扇FRU正確插入且正常運作。</block>
+  <block id="f018af47acb2fa042d7c58f6d3e89317" category="cell">無法連線的儲存交換器MetroCluster</block>
+  <block id="f428583015c7042e95a10ba4c2bc3817" category="cell">儲存交換器無法透過管理網路連線。</block>
+  <block id="dc2dffe5a9308f0b28966534c707ad40" category="cell">1）使用「network interface show」命令確保節點管理LIF正常運作。2）使用「network ping」命令確保交換器處於連線狀態。3）登入交換器後、請檢查其SNMP設定、以確保交換器可透過SNMP存取。</block>
+  <block id="28ab21cc197fc08bf9c17f4f63b1b4c6" category="cell">無法使用交換器電源供應器MetroCluster</block>
+  <block id="051f1fa04ba105a0bfdd1a08167ca201" category="cell">儲存交換器上的電源供應器無法運作。</block>
+  <block id="ef2e1ddd8e3e341ed91d254774de4ed3" category="cell">1）使用命令「storage switchshow -error -switch-name &lt;swtich name&gt; 」檢查錯誤詳細資料。2）使用命令「storage switchs show -power -switch-name &lt;switch name&gt; 」識別故障的電源供應器。3）確保電源供應器未正確插入儲存交換器的機箱、且完全正常運作。</block>
+  <block id="7e743a1a78b6c988fc709ea1f29de77e" category="cell">交換器溫度感測器故障MetroCluster</block>
+  <block id="f5877d42547793a1ab98b07309b8cc12" category="cell">Fibre Channel交換器上的感應器故障。</block>
+  <block id="bee46e725a4b2634d2b0af990cc98636" category="cell">1）使用命令「storage switchshow -c冷卻」檢查儲存交換器上溫度感測器的運作狀態。2）確認交換器在建議的溫度條件下運作。</block>
+  <block id="beba9a3364681a5dd20427689e22618f" category="cell">交換器溫度異常MetroCluster</block>
+  <block id="b028c784c093a8b250f028da81cd5ac3" category="cell">Fibre Channel交換器上的溫度感測器報告異常溫度。</block>
+  <block id="0a5d3748314cee07227ff41a58fcb820" category="cell">服務處理器訊號遺失</block>
+  <block id="89e7dd1914bc7aa7ba651383b401c5a7" category="cell">當服務處理器（SP）未收到預期的「活動訊號」訊號時、就會出現此訊息ONTAP 。連同此訊息、將會傳送SP的記錄檔進行偵錯。將重設SP以嘗試恢復通訊ONTAP 。重新開機時、SP將無法使用最多兩分鐘。</block>
+  <block id="2b93885e6e9208541e7be2c4b663ce47" category="cell">請聯絡NetApp技術支援部門。</block>
+  <block id="dfb150a2ee53ff74afcec025a2b94753" category="cell">服務處理器訊號已停止</block>
+  <block id="79a80b3a6c91f0ab618fa82137244bac" category="cell">當停止接收服務處理器（SP）的訊號時、就會出現此訊息ONTAP 。視硬體設計而定、系統可能會繼續提供資料、或決定關閉以避免資料遺失或硬體損壞。系統繼續提供資料、但由於SP可能無法運作、系統無法傳送設備停機、開機錯誤或開啟韌體（OFW）開機自我測試（POST）錯誤的通知。如果您的系統已設定為執行此作業、它會產生AutoSupport 並傳送一則消息到NetApp技術支援和設定的目的地、並將其傳送至該目的地。成功交付AutoSupport 不必要訊息可大幅改善問題判斷與解決。</block>
+  <block id="8a80e3e94ba0d624e0fb3ffcc89f4fc9" category="cell">如果系統已關機、請嘗試進行硬開機循環：將控制器從機箱中拉出、將其推回、然後開啟系統電源。如果問題在關機後仍持續發生、或是任何其他值得注意的情況、請聯絡NetApp技術支援部門。</block>
+  <block id="abb14d21829ba186172f6e1d0b64b55b" category="section-title">2023年1月</block>
+  <block id="636b18f0d68407e346d028a8211fb724" category="section-title">新的記錄監控器</block>
+  <block id="497c0ee717343a5ba95064eaf970a772" category="inline-link-macro">額外的系統監視器</block>
+  <block id="028a813ab7ca0ec1e490e58e353d0782" category="paragraph">我們新增了將近二十個 <block ref="21d27926b20de95eb7fd4474ce156c92" category="inline-link-macro-rx"></block> 以警示中斷的互連連結、活動訊號問題等。此外、我們也新增三個資料保護記錄監控器、以警示SnapMirror自動重新同步、MetroCluster 鏡射和FabricPool 鏡射鏡射重新同步變更。</block>
+  <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">請注意、這些監視器中有部分預設為啟用_；如果您不想對它們發出警示、則必須暫停_。另外請注意、這些監視器並未設定為傳送通知；如果您想要透過電子郵件或網路勾點傳送警示、則必須在這些監視器上設定通知收件者。</block>
+  <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">所有儀表板表格小工具的.CSV匯出</block>
+  <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">CSV匯出圖示</block>
+  <block id="44d9011c39c37e8f6a446942bc615548" category="paragraph">確保資料存取是不可或缺的要素、因此我們已匯出.CSV <block ref="c41d9af9fc2647da102c1cb100d033ea" category="inline-image-macro-rx" type="image"></block> 無論您查詢的資料類型（資產或整合）為何、均可用於所有的度量查詢、儀表板表格小工具和物件登陸頁面。</block>
+  <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">欄選取、重新命名欄及單位轉換等資料自訂功能現在也包含在新的匯出功能中。</block>
+  <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登入Cloud Insights 到</block>
+  <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">儀表板表格小工具的「三點」功能表、以及大部分的登陸頁表、也提供匯出至.CSV。</block>
+  <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">匯出的資料會反映目前顯示的篩選、欄和欄名稱。</block>
 </blocks>
