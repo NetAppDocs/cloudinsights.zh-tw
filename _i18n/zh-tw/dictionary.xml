@@ -9098,7 +9098,6 @@
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 ONTAP 全新預設的支援SnapMirror的顯示器、可確保營運不中斷</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">調校操作員</block>
-  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。請參閱下表以瞭解您可以設定的變數。</block>
   <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">資源相關變數</block>
   <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">請參閱<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block> 如需Kubernetes資源的相關資訊、</block>
   <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">預留位置</block>
@@ -10804,4 +10803,7 @@
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">匯出的資料會反映目前顯示的篩選、欄和欄名稱。</block>
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*本頁*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
+  <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。如需可調校的變數說明和清單、請參閱安裝套件隨附的README檔案。安裝操作員之後、請使用下列命令來檢視README：</block>
+  <block id="60adfc96965dc4b561d28aa82001462f" category="paragraph">////-開始調校區段您可以調整NetApp Kubernetes監控操作員、藉由微調「自訂資源」的特定變數來達到最佳效能。請參閱下表以瞭解您可以設定的變數。</block>
+  <block id="6bfc80ca044f246ded7fc934d4dacbaa" category="paragraph">////-結束調校區段</block>
 </blocks>

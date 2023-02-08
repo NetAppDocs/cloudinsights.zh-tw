@@ -436,7 +436,10 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 == 調校操作員
 
-您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。請參閱下表以瞭解您可以設定的變數。
+您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。如需可調校的變數說明和清單、請參閱安裝套件隨附的README檔案。安裝操作員之後、請使用下列命令來檢視README：
+
+ kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
+////-開始調校區段您可以調整NetApp Kubernetes監控操作員、藉由微調「自訂資源」的特定變數來達到最佳效能。請參閱下表以瞭解您可以設定的變數。
 
 若要修改這些值、請使用下列命令編輯代理程式CR（以<namespace> 支援功能取代功能變數來取代命名空間）：
 
@@ -542,6 +545,8 @@ CR規格的格式如下：
 
 | Curle_CMD_placeholder | 代理程式 | 是的 | Curl命令用於下載各種資源。例如：「Curl」（捲曲）或「Curl -k」（捲曲-k） 
 |===
+////-結束調校區段
+
 
 
 == 疑難排解
