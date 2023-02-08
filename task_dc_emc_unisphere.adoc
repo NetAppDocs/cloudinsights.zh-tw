@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere.html 
+keywords: data collector, Unisphere, EMC 
+summary: 設定Dell EMC UnREST資料收集器。 
+---
+= 設定Dell EMC Unisphere資料收集器
+:allow-uri-read: 
+
+
+[role="lead"]
+本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 link:task_dc_emc_unisphere_rest.html["*本頁*"]。

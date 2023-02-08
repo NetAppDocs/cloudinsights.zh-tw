@@ -53,7 +53,6 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 * 建立新的攻擊原則或編輯現有的攻擊原則。
 * 選取應監控攻擊原則的SVM。
 * 按一下「封鎖使用者檔案存取」核取方塊。此功能會在選取時啟用。
-* 在「限制使用者存取」下、選取應套用的限制模式。
 * 在「Time Period」（時間期間）下、選取應套用封鎖的時間。
 * 若要測試自動使用者封鎖、您可以透過模擬攻擊 link:concept_cs_attack_simulator.html["模擬指令碼"]。
 

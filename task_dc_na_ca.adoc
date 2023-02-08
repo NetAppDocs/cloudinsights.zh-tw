@@ -12,7 +12,7 @@ summary: NetApp Config Advisor 產品資料收集器
 此資料收集器會使用ONTAP 唯讀呼叫、從執行不完整功能和連接交換器的儲存系統取得組態資料。此資料收集器也會在ONTAP 整個堆疊的叢集組態上執行組態驗證和健全狀況檢查、以識別纜線、組態、恢復能力、可用度和安全性問題。
 
 
-NOTE: 此為_預覽_功能、因此可能有所變更。Config Advisor在預覽期間、不會產生MU成本。
+NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.html#useful-definitions["已過時"]。
 
 
 

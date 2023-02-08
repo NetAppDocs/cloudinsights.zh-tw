@@ -492,7 +492,6 @@
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何啟用此功能？</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">建立新的攻擊原則或編輯現有的攻擊原則。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">選取應監控攻擊原則的SVM。</block>
-  <block id="d08b030c0ac309193f01c8251798645c" category="list-text">在「限制使用者存取」下、選取應套用的限制模式。</block>
   <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">模擬指令碼</block>
   <block id="40184bc9041969d58ad379b9b3e319cd" category="section-title">手動限制及管理使用者存取</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">如何停用此功能？</block>
@@ -4095,7 +4094,6 @@
   <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor 產品資料收集器</block>
   <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">NetApp Config Advisor 資料收集器</block>
   <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">此資料收集器會使用ONTAP 唯讀呼叫、從執行不完整功能和連接交換器的儲存系統取得組態資料。此資料收集器也會在ONTAP 整個堆疊的叢集組態上執行組態驗證和健全狀況檢查、以識別纜線、組態、恢復能力、可用度和安全性問題。</block>
-  <block id="6db4c00428e1d05aeb71deccf277b6e0" category="admonition">此為_預覽_功能、因此可能有所變更。Config Advisor在預覽期間、不會產生MU成本。</block>
   <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">利用資料收集器、從不完整的資料中心和交換器取得組態資料。Cloud Insights ONTAP Config Advisor對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">顯示configAdvisor度量標籤的下拉式清單</block>
   <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">此外、Config Advisor 請注意、使用_NetApp_ONTAP.configt顧問_標籤的儀表板和其他查詢中、將會提供支援功能。<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
@@ -10804,4 +10802,6 @@
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登入Cloud Insights 到</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">儀表板表格小工具的「三點」功能表、以及大部分的登陸頁表、也提供匯出至.CSV。</block>
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">匯出的資料會反映目前顯示的篩選、欄和欄名稱。</block>
+  <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*本頁*</block>
+  <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
 </blocks>
