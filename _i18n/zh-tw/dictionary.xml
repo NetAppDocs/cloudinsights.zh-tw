@@ -8609,7 +8609,6 @@
   <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">若要啟動NetApp Kubernetes監控操作員：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
   <block id="0b17bce222385cebd477477b188e6434" category="paragraph">若要在Kubernetes上解除安裝以指令碼為基礎的代理程式（例如、升級至NetApp Kubernetes監控操作員時）、請執行下列步驟：</block>
-  <block id="98e7ede570d702984a8e51f5e4f2020c" category="section-title">移除NetApp Kubernetes監控操作員</block>
   <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">從指令碼型代理程式升級至NetApp Kubernetes監控操作員</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">解除安裝</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安裝</block>
@@ -9098,55 +9097,6 @@
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 ONTAP 全新預設的支援SnapMirror的顯示器、可確保營運不中斷</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">調校操作員</block>
-  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">資源相關變數</block>
-  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">請參閱<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block> 如需Kubernetes資源的相關資訊、</block>
-  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">預留位置</block>
-  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">外掛程式名稱</block>
-  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">包含在預設的CR中</block>
-  <block id="b4706783c74b583b849dec44244e0769" category="cell">ds_cpo_limits預留位置</block>
-  <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">代理程式</block>
-  <block id="a6105c0a611b41b08f1209506350279e" category="cell">是的</block>
-  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">Kubernetes適用於Telewraf-DS的CPU限制</block>
-  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_limits預留位置</block>
-  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">Kubernetes Telewraf-DS的記憶體限制</block>
-  <block id="6787619d810a62301cfe3986961a1d04" category="cell">ds_cpo_request預留位置</block>
-  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">Kubernetes遠端連網的CPU要求</block>
-  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_RErequest預留位置</block>
-  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">Kubernetes遠端連網的記憶體要求</block>
-  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">rs_cpo_limits預留位置</block>
-  <block id="b2099247c65bb590909309709da41854" category="cell">Kubernetes適用於Telewraf-RS的CPU限制。</block>
-  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">rs_MEM_limits預留位置</block>
-  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">Kubernetes Telewraf-RS的記憶體限制</block>
-  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">rs_cpo_request預留位置</block>
-  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">Kubernetes的遠端GRaf-RS CPU要求</block>
-  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">rs_mem_request預留位置</block>
-  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">Kubernetes的遠端GRaf-RS記憶體要求</block>
-  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_REPRO_placeholder_..</block>
-  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">ksm</block>
-  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">Kubernetes CPU要求進行Kube-State度量部署</block>
-  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_REPAT_placeholder_..</block>
-  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">與Telegraf相關的變數</block>
-  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">請參閱<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> 以取得遠端作業環境變數的相關資訊。</block>
-  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">collection_時間 間隔預留位置</block>
-  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">否</block>
-  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">（設定Telewraf時間間隔、類型間隔）：預設的Telewraf會在所有外掛程式的輸入之間等待一段時間。有效時間單位為ns、us（或 μ s）、ms、s、m、h</block>
-  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">Round_時間 間隔預留位置</block>
-  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">（設定Telewraf Round_interval、類型布林）會收集多個時間間隔的度量</block>
-  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">metric批次大小預留位置</block>
-  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">（設定Telewraf metric _batch_size、type int）輸出Telewraf的最大記錄數將以一批次寫入</block>
-  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">metric緩衝區限制預留位置</block>
-  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">（設定Telewraf metric _bider_limit、type int）輸出Telewraf的最大記錄數將會在成功寫入之前快取</block>
-  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">collection_timer_placeholder_</block>
-  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">（設定Telewraf collection_bit穩定性、類型間隔）：每個外掛程式會在收集輸入之前、於排程的收集時間與時間+ collection_bit之間隨機等候一段時間</block>
-  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">精度預留位置</block>
-  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">（設定Telewraf精度、類型間隔）：收集的度量會四捨五入至指定的精度、當設定為「0」精度時、會由時間間隔指定的單位來設定</block>
-  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">Flush間隔預留位置</block>
-  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">（設定Telewraf Flush時間間隔、類型間隔）：預設時間：Telewraf會在寫入輸出之間等待。</block>
-  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">Flip_JITAT_Placeholder_</block>
-  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">（設定Telewraf Flush _ditrit、類型時間間隔）：每個輸出會在排程寫入時間和寫入輸出之前、先隨機等候一段時間+ Flush _ditrit</block>
-  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">雜項變數</block>
-  <block id="327fbef93ac997add024577e1fdbe932" category="cell">Curle_CMD_placeholder</block>
-  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">Curl命令用於下載各種資源。例如：「Curl」（捲曲）或「Curl -k」（捲曲-k）</block>
   <block id="eab883150545736105e8c88087257995" category="section-title">SnapMirror for Business Continuity（SMBC）Medator記錄監控器</block>
   <block id="e0828fd72232d137dafad759271fe0fb" category="cell">加入了此功能ONTAP</block>
   <block id="46f05e41dafc7ca3fdb415dafaeadb9f" category="cell">當叢集上成功新增了「支援程式」時、就會出現此訊息ONTAP 。</block>
@@ -10605,10 +10555,6 @@
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
   <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。這些成品包括但不限於：</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
-  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">若要修改這些值、請使用下列命令編輯代理程式CR（以&lt;namespace&gt; 支援功能取代功能變數來取代命名空間）：</block>
-  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR規格的格式如下：</block>
-  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">值機員CR中已有標示為「yes」的「included in Default CR」項目、可在其各自的外掛程式下找到。標示為「否」的項目必須依照隨附的預設替代所提供的範例手動新增。</block>
-  <block id="3f60b096843929b02e1a070f57e27584" category="cell">變數名稱</block>
   <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。</block>
   <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前的NKMO、並支援PSP/PSA1：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
@@ -10804,6 +10750,5 @@
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*本頁*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
   <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。如需可調校的變數說明和清單、請參閱安裝套件隨附的README檔案。安裝操作員之後、請使用下列命令來檢視README：</block>
-  <block id="60adfc96965dc4b561d28aa82001462f" category="paragraph">////-開始調校區段您可以調整NetApp Kubernetes監控操作員、藉由微調「自訂資源」的特定變數來達到最佳效能。請參閱下表以瞭解您可以設定的變數。</block>
-  <block id="6bfc80ca044f246ded7fc934d4dacbaa" category="paragraph">////-結束調校區段</block>
+  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">移除NetApp Kubernetes監控操作員</block>
 </blocks>
