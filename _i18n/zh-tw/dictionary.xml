@@ -8864,7 +8864,6 @@
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes資料收集器Tile</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安裝NetApp Kubernetes監控操作員之前</block>
-  <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state指標：v2.5.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent位元：1.9.8</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。</block>
@@ -10752,4 +10751,5 @@
   <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">移除NetApp Kubernetes監控操作員</block>
   <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">編輯監控操作員部署、並修改所有映像參照、以使用新的Docker repo位置：</block>
   <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">編輯代理程式CR、以反映新的Docker repo位置。</block>
+  <block id="9de2afa9a42c7e74a8b83bbef4f14c20" category="list-text">Telegraf：1.25.0</block>
 </blocks>

@@ -25,7 +25,7 @@ image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 .先決條件：
 * 請注意下列元件版本。這些是NetApp Kubernetes監控操作員目前隨附的_required版本。如果您是、特別需要注意這些版本 <<using-a-custom-or-private-docker-repository,使用自訂或私有泊塢視窗儲存庫>>：
 +
-** Telegraf：1.24.0
+** Telegraf：1.25.0
 ** Kube-RBAC代理：v0.13.0
 ** Kube-state指標：v2.5.0
 ** Fluent位元：1.9.8
