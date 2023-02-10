@@ -1728,7 +1728,6 @@
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">登入Docker儲存庫：</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果已啟用Fluent位元、請同時下載：</block>
-  <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">編輯代理程式CR以反映新的Docker repo位置、停用自動升級（若已啟用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在_spec__區段中、進行下列變更：</block>
   <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state指標計數器</block>
   <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap指標</block>
@@ -10751,4 +10750,6 @@
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
   <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。如需可調校的變數說明和清單、請參閱安裝套件隨附的README檔案。安裝操作員之後、請使用下列命令來檢視README：</block>
   <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">移除NetApp Kubernetes監控操作員</block>
+  <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">編輯監控操作員部署、並修改所有映像參照、以使用新的Docker repo位置：</block>
+  <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">編輯代理程式CR、以反映新的Docker repo位置。</block>
 </blocks>
