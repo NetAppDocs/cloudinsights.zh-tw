@@ -1233,8 +1233,6 @@
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">若要追蹤與環境中執行的特定應用程式相關的資料、您可以在Cloud Insights 「資訊」中定義應用程式。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。</block>
   <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">利用此功能、您可以追蹤應用程式相關資產的資料、例如使用量或成本報告。Cloud Insights</block>
-  <block id="6d9d461026a19a3d065af99db5765921" category="paragraph">。在「功能表」中、按一下「*管理&gt;應用程式*」Cloud Insights 。</block>
-  <block id="0062c1fbde704d862293af74f9c341ee" category="paragraph">+此時會顯示「新增應用程式」對話方塊。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">輸入應用程式的唯一名稱。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">選取應用程式的優先順序。</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
@@ -4984,8 +4982,6 @@
   <block id="abf0b3ef23b5557422e33977a6ac3fbf" category="paragraph">* Linux：*</block>
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">在擷取裝置伺服器/VM上、執行下列命令：</block>
   <block id="fcee21cb77c380c25d5b88c1b64869b8" category="list-text">如需解除安裝的協助、請執行：</block>
-  <block id="ec62359e3a6ba69aa52f3e51f45e7418" category="paragraph">*兩者：*</block>
-  <block id="0de5666c48f0424cee331c8922fd923a" category="list-text">卸載AU軟體後、請前往*管理&gt;資料收集器*、然後選取*擷取單位*索引標籤。</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">按一下您想要解除安裝之擷取設備右側的選項按鈕、然後選取_刪除_。只有在未指派任何資料收集器時、您才能刪除擷取單元。</block>
   <block id="4262a364178344226a6201df72deaa22" category="paragraph">附註：您無法刪除預設的擷取單位。刪除舊的AU之前、請先選取另一個AU作為預設值。</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">重新安裝擷取裝置</block>
@@ -10752,4 +10748,11 @@
   <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">編輯監控操作員部署、並修改所有映像參照、以使用新的Docker repo位置：</block>
   <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">編輯代理程式CR、以反映新的Docker repo位置。</block>
   <block id="9de2afa9a42c7e74a8b83bbef4f14c20" category="list-text">Telegraf：1.25.0</block>
+  <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">在「功能表」中、按一下「*管理&gt;應用程式*」Cloud Insights 。</block>
+  <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">此時會顯示「新增應用程式」對話方塊。</block>
+  <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">如果您要解除安裝* Windows *擷取單元：</block>
+  <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">如果您要解除安裝* Linux *擷取單元：</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows與Linux：*</block>
+  <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*在*解除安裝AU之後：</block>
+  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在「支援」中、移至*管理&gt;資料收集器*、然後選取「*擷取單位*」標籤Cloud Insights 。</block>
 </blocks>
