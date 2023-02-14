@@ -62,7 +62,7 @@ APIkeys適用於_Sync_或_AsynSync_。
 
 所有通話的URL都是：_\https://<Cloud Insights url>/rest / v1/dwh-management / OData_。
 
-* Get /｛schema｝/*-從報告資料庫擷取資料、至少需要_Guest角色。
+* Get /｛schema｝/*-從報告資料庫擷取資料。
 
 
 格式：_\https://<Cloud Insights url>/rest / v1/dwh管理/OData/<schema_name>//<query>_

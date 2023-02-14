@@ -10754,4 +10754,5 @@
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*在*解除安裝AU之後：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在「支援」中、移至*管理&gt;資料收集器*、然後選取「*擷取單位*」標籤Cloud Insights 。</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows與Linux：*</block>
+  <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">Get /｛schema｝/*-從報告資料庫擷取資料。</block>
 </blocks>
