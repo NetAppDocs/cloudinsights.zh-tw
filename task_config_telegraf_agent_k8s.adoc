@@ -257,9 +257,8 @@ NOTE: 如果您有先前安裝的指令碼型代理程式、您必須升級至Ne
 . 請記下Cloud Insights 您的叢集名稱、此名稱已被辨識為由效益管理系統辨識。您可以執行下列命令來檢視叢集名稱。如果您的命名空間不是預設值（_CI-監 控_）、請替換適當的命名空間：
 +
  kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-. 備份現有組態：
-+
- kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
 . 儲存K8s叢集名稱、以便在安裝K8s以操作者為基礎的監控解決方案時使用、以確保資料不中斷。
 +
 如果您不記得CI中K8s叢集的名稱、可以使用下列命令列從您儲存的組態中擷取：
@@ -294,9 +293,6 @@ NOTE: 如果您有先前安裝的指令碼型代理程式、您必須升級至Ne
 * 請記下Cloud Insights 您的叢集名稱、此名稱已被辨識為由效益管理系統辨識。您可以執行下列命令來檢視叢集名稱。如果您的命名空間不是預設值（_NetApp-監 控_）、請替換適當的命名空間：
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* 備份現有組態：
-+
- kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
 <<to-remove-the-netapp-kubernetes-monitoring-operator,解除安裝>> 目前的運算子。

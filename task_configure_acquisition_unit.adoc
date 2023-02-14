@@ -176,7 +176,7 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 
 '''
-ec62359e3a6ba69aa52f3e51f45e7418
+* Windows與Linux：*
 
 *在*解除安裝AU之後：
 
