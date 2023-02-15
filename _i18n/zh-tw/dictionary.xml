@@ -10757,4 +10757,7 @@
   <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">代理程式最多可支援50個資料收集器。</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM事件率檢查器（代理程式規模調整指南）</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">事件率檢查器（代理程式規模調整指南）</block>
+  <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">我收到類似以下的錯誤訊息：「無法執行要求：連線&lt;AWS region endpoint&gt; 到EXRs8080 [ESC/AWS &lt;AWS region endpoint&gt; 區域端點IP&gt;&gt;」失敗：連線逾時：Get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 區域端點FQDN：8080 / v1/Storage/IPRANes HTTP/1.1 '</block>
+  <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知識庫文章</block>
+  <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> 由功能性開發所使用Cloud Insights 、無法與擷取裝置通訊Cloud Insights 、無法在功能性開發與資料收集器本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例：root@quitionunit# curl -s -H Accept:application/json -H "內容類型：application/json "-H APi-key:firse-X &lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; Get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 區域端點&gt;:8080 / v1/Storage/IPRANes請參閱此 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
