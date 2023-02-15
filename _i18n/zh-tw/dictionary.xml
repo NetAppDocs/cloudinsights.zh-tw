@@ -10753,4 +10753,7 @@
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows與Linux：*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">Get /｛schema｝/*-從報告資料庫擷取資料。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率</block>
+  <block id="190dd3a6d5f6ca42267f12b57190351c" category="doc">SVM事件率檢查器（規模調整指南）</block>
+  <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。使用「事件率檢查器」做為規模調整指南、協助您規劃安全環境。</block>
+  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">代理程式最多可支援50個資料收集器。</block>
 </blocks>

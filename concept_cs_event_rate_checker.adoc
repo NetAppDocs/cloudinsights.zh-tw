@@ -4,12 +4,14 @@ permalink: concept_cs_event_rate_checker.html
 summary: 在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= 4157783a6d651918a4d418c15ddff12f
+= SVM事件率檢查器（規模調整指南）
 :allow-uri-read: 
 
 
 [role="lead"]
-eff09a47f0894badbc59afef03e773cb
+「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。使用「事件率檢查器」做為規模調整指南、協助您規劃安全環境。
+
+代理程式最多可支援50個資料收集器。
 
 
 
