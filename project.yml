@@ -211,7 +211,7 @@ sidebar:
         url: "/task_config_cs_incloud.html"
       - title: 使用者管理Cloud Secure
         url: "/task_cs_user_management.html"
-      - title: 事件率檢查器
+      - title: 事件率檢查器（代理程式規模調整指南）
         url: "/concept_cs_event_rate_checker.html"
     - title: 警示
       url: "/cs_alert_data.html"

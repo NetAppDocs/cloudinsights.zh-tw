@@ -4,7 +4,7 @@ permalink: concept_cs_event_rate_checker.html
 summary: 在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= SVM事件率檢查器（規模調整指南）
+= SVM事件率檢查器（代理程式規模調整指南）
 :allow-uri-read: 
 
 
