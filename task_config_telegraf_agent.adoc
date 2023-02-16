@@ -440,14 +440,14 @@ sudo launchctl stop telegraf
 . 解除安裝Telewraf代理程式：
 +
 ....
-cp /Applications/telegraf.app/scripts/uninstall /tmp
+sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
 sudo /tmp/uninstall
 ....
 . 移除可能留下的任何組態或記錄檔：
 +
 ....
-rm -rf /usr/local/etc/telegraf*
-rm -rf /usr/local/var/log/telegraf.*
+sudo rm -rf /usr/local/etc/telegraf*
+sudo rm -rf /usr/local/var/log/telegraf.*
 ....
 
 
@@ -463,7 +463,7 @@ rm -rf /usr/local/var/log/telegraf.*
 . 解除安裝先前的Telewraf代理程式：
 +
 ....
-cp /Applications/telegraf.app/scripts/uninstall /tmp
+sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
 sudo /tmp/uninstall
 ....
 . link:#macos["安裝新代理程式"]。
