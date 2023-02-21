@@ -8843,7 +8843,6 @@
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">請注意、在本節中、按一下「Test Webhook」（測試Webhook）按鈕時、會執行「_not」（非）替換；此按鈕會傳送有效負載、顯示「%」替換、但不會以資料取代。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">編輯NetApp Kubernetes監控操作員。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。</block>
-  <block id="0a8446aea76ea046e4a350b7fcb33809" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。所有功能Cloud Insights <block ref="0238d81be08586a15b3db75855b659b7" category="inline-xref-macro-rx"></block> 可在此試用期間取得。</block>
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">透過AWS Marketplace試用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
   <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace免費試用版可讓您存取Cloud Insights VMware <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> 試用期為33天、最多可達499天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
@@ -10760,4 +10759,5 @@
   <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">我收到類似以下的錯誤訊息：「無法執行要求：連線&lt;AWS region endpoint&gt; 到EXRs8080 [ESC/AWS &lt;AWS region endpoint&gt; 區域端點IP&gt;&gt;」失敗：連線逾時：Get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 區域端點FQDN：8080 / v1/Storage/IPRANes HTTP/1.1 '</block>
   <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知識庫文章</block>
   <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> 由功能性開發所使用Cloud Insights 、無法與擷取裝置通訊Cloud Insights 、無法在功能性開發與資料收集器本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例：root@quitionunit# curl -s -H Accept:application/json -H "內容類型：application/json "-H APi-key:firse-X &lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; Get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 區域端點&gt;:8080 / v1/Storage/IPRANes請參閱此 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。</block>
 </blocks>

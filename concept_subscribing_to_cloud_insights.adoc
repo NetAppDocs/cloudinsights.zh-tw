@@ -98,7 +98,7 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 
 == 試用版
 
-當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。所有功能Cloud Insights <<editions,標準版>> 可在此試用期間取得。
+當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。
 
 您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*產品支援*"] 選項：
 
