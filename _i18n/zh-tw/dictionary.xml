@@ -2427,7 +2427,6 @@
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">REST API範例</block>
   <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">所有通話的URL都是：_\https://&lt;Cloud Insights url&gt;/rest / v1/dwh-management / OData_。</block>
-  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">Get /｛schema｝/*-從報告資料庫擷取資料、至少需要_Guest角色。</block>
   <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">格式：_\https://&lt;Cloud Insights url&gt;/rest / v1/dwh管理/OData/&lt;schema_name&gt;//&lt;query&gt;_</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">範例：</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">結果：</block>
@@ -10329,10 +10328,6 @@
   <block id="e82617a45c06fc64ba2c7a8022ad2c26" category="admonition">在本文件中、術語Cloud Insights 「不穩定」和「可觀察性」可互換使用。</block>
   <block id="27a7deb0ec1bdff43e3eb6bbcee65f55" category="paragraph">暫留工具提示提供更多資訊。</block>
   <block id="03aa38861ba70a29a2ebce320835a31b" category="paragraph">您可以在BlueXP網站上深入瞭解BlueXP。</block>
-  <block id="5b18f1d58f1483da5c81155095d22768" category="section-title">針對同步查詢進行REST用戶端設定</block>
-  <block id="ca5f5ae182f010eb67697760ff6586f3" category="list-text">查詢必須包含在單一行中</block>
-  <block id="2f9a3dbd7bceea75acec35221d985871" category="list-text">必須是有效的Json字串</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIkeys適用於_Sync_或_AsynSync_&lt;TBD More information&gt;</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">設定Dell EMC UnREST資料收集器。</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">設定Dell EMC Unisphere資料收集器</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">連接埠8443.</block>
@@ -10785,4 +10780,5 @@
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">工作負載安全入門</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">設定工作負載安全代理程式</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">工作負載安全性使用者管理</block>
+  <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">採購單位在Windows和Linux上安裝、解除安裝、設定Proxy支援等功能。</block>
 </blocks>
