@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: task_add_collector_svm.html 
 keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall 
-summary: 新增資料收集器 
+summary: 新增工作負載安全資料收集器 
 ---
 = 設定ONTAP SVM Data Collector
 :allow-uri-read: 
 
 
 [role="lead"]
-使用資料收集器從裝置收集檔案和使用者存取資料。Cloud Secure
+「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。
 
 
 
@@ -18,7 +18,7 @@ summary: 新增資料收集器
 * 下列項目支援此資料收集器：
 +
 ** 更新版本。Data ONTAP若要獲得最佳效能、請在Data ONTAP 何處使用VMware版本 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["此問題"] 已修正。
-** SMB傳輸協定3.1版及更早版本。請注意Cloud Secure 、不適用於FlexCache 使用支援功能的SMB組態。從ONTAP9.7開始、Fpolicy僅在NFS環境中受支援。
+** SMB傳輸協定3.1版及更早版本。請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。從ONTAP9.7開始、Fpolicy僅在NFS環境中受支援。
 ** NFS傳輸協定4.0版及更早版本
 ** 支援從支援的更新版本為支援FlexGroup ONTAP
 ** 支援的支援ONTAP Select
@@ -75,7 +75,7 @@ summary: 新增資料收集器
 
 === 透過*叢集管理IP*新增權限：
 
-如果您無法使用叢集管理管理員使用者來允許Cloud Secure Sfuse存取ONTAP SVM資料收集器、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。設定Cloud Secure 使用叢集管理IP的資料收集器時、請使用「CsUser」的使用者名稱和密碼。
+如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用叢集管理IP時、請使用「CsUser」的使用者名稱和密碼。
 
 若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到功能表、然後在ONTAP 功能表伺服器上執行下列命令：
 
@@ -99,7 +99,7 @@ security login create -user-or-group-name csuser -application ssh -authmethod pa
 
 === 透過* vserver管理IP*新增權限：
 
-如果您無法使用叢集管理管理員使用者來允許Cloud Secure Sfuse存取ONTAP SVM資料收集器、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將Cloud Secure 使用者名稱「CsUser」和密碼設定為使用Vserver Management IP時、請使用「CsUser」。
+如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用Vserver Management IP時、請使用「CsUser」的使用者名稱和密碼。
 
 若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到位、然後在ONTAP 伺服器上執行下列命令。為了方便起見、請先將這些命令複製到文字編輯器、並在ONTAP 執行下列命令之前、以Vserver名稱取代<vservername>：
 
@@ -230,7 +230,7 @@ image:CS_Data_Collector_Error.png[""]
 | 訊息：「無法判斷ONTAP [hostname:<IP Address>的資訊類型。原因：連線錯誤至儲存系統<IP位址>：主機無法連線（主機無法連線）" | 1.確認已提供正確的SVM IP管理位址或叢集管理IP。2. SSH連線至您要連線的SVM或叢集。連線後、請確認SVM或叢集名稱正確無誤。 
 
 
-| 錯誤訊息：「連接器處於錯誤狀態。service.name：稽核。故障原因：外部fpolicy伺服器已終止。" | 1.防火牆很可能會封鎖代理程式機器中的必要連接埠。確認已開啟連接埠範圍35000-55000/TCP、讓代理機器從SVM連線。此外、請確保ONTAP 沒有啟用任何防火牆、從「邊」封鎖與代理機器的通訊。2.在「代理程式」方塊中輸入下列命令、並確定連接埠範圍已開啟。_Sudo iptarts-SAVE | Grep 3500*範例輸出應如下所示：_A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctst態new -j Accept_3。登入SVM、輸入下列命令、並檢查是否未設定任何防火牆來封鎖與ONTAP 之通訊。_系統服務防火牆show __系統服務防火牆原則show_link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nmg%2FGUID-969851BB-4302-4645-8DAC-1B059D81C5B2.html["檢查防火牆命令"] 就在邊上。ONTAP4. SSH至您要監控的SVM/叢集。從SVM資料LIF Ping Agent Box（支援CIFS、NFS傳輸協定）、並確保ping正常運作： _network ping -vserver <vserver name>-destination <Agent ip>-lIF <LIF Name>-show-detect_如果無法ping通、請確定ONTAP 支援更新的網路設定正確、以便代理機器能夠ping通。如果透過2個資料收集器將單一SVM新增兩次至租戶、則會顯示此錯誤。透過UI刪除其中一個資料收集器。然後透過UI重新啟動其他資料收集器。然後資料收集器會顯示「執行中」狀態、並開始接收來自SVM的事件。基本上、在租戶中、只能透過1個資料收集器新增1個SVM。1 SVM不應透過2個資料收集器新增兩次。6.在兩Cloud Secure 個不同的版本環境（租戶）中新增相同SVM的情況下、最後一個將永遠成功。第二個收集器會使用自己的IP位址來設定fpolicy、然後啟動第一個。因此第一個收集器將停止接收事件、其「稽核」服務將進入錯誤狀態。若要避免這種情況發生、請在單一環境中設定每個SVM。7.如果服務原則設定不正確、也可能發生此錯誤。使用支援支援支援功能的支援功能9.8或更新版本時、若要連線至資料來源收集器、則需要資料服務資料服務、例如NFS和/或資料- CIFS、以提供資料- fpolice-Client服務ONTAP 。此外、資料fpolice-Client服務必須與受監控SVM的資料LIF相關聯。 
+| 錯誤訊息：「連接器處於錯誤狀態。service.name：稽核。故障原因：外部fpolicy伺服器已終止。" | 1.防火牆很可能會封鎖代理程式機器中的必要連接埠。確認已開啟連接埠範圍35000-55000/TCP、讓代理機器從SVM連線。此外、請確保ONTAP 沒有啟用任何防火牆、從「邊」封鎖與代理機器的通訊。2.在「代理程式」方塊中輸入下列命令、並確定連接埠範圍已開啟。_Sudo iptarts-SAVE | Grep 3500*範例輸出應如下所示：_A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctst態new -j Accept_3。登入SVM、輸入下列命令、並檢查是否未設定任何防火牆來封鎖與ONTAP 之通訊。_系統服務防火牆show __系統服務防火牆原則show_link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nmg%2FGUID-969851BB-4302-4645-8DAC-1B059D81C5B2.html["檢查防火牆命令"] 就在邊上。ONTAP4. SSH至您要監控的SVM/叢集。從SVM資料LIF Ping Agent Box（支援CIFS、NFS傳輸協定）、並確保ping正常運作： _network ping -vserver <vserver name>-destination <Agent ip>-lIF <LIF Name>-show-detect_如果無法ping通、請確定ONTAP 支援更新的網路設定正確、以便代理機器能夠ping通。如果透過2個資料收集器將單一SVM新增兩次至租戶、則會顯示此錯誤。透過UI刪除其中一個資料收集器。然後透過UI重新啟動其他資料收集器。然後資料收集器會顯示「執行中」狀態、並開始接收來自SVM的事件。基本上、在租戶中、只能透過1個資料收集器新增1個SVM。1 SVM不應透過2個資料收集器新增兩次。6.在兩種不同的工作負載安全環境（租戶）中新增相同SVM的情況下、最後一種將永遠成功。第二個收集器會使用自己的IP位址來設定fpolicy、然後啟動第一個。因此第一個收集器將停止接收事件、其「稽核」服務將進入錯誤狀態。若要避免這種情況發生、請在單一環境中設定每個SVM。7.如果服務原則設定不正確、也可能發生此錯誤。使用支援支援支援功能的支援功能9.8或更新版本時、若要連線至資料來源收集器、則需要資料服務資料服務、例如NFS和/或資料- CIFS、以提供資料- fpolice-Client服務ONTAP 。此外、資料fpolice-Client服務必須與受監控SVM的資料LIF相關聯。 
 
 
 | 活動頁面未顯示任何事件。 | 1.檢查ONTAP 收集器是否處於「執行中」狀態。如果是、請開啟部分檔案、確保CIFS用戶端VM上產生部分CIFS事件。2.如果未看到任何活動、請登入SVM並輸入下列命令。_<SVM>EVENT log show -SOURSfpolicy_Please ensure that are no errors related to fpolicy（事件日誌顯示-SOURSfpolicy_請 確保沒有與fpolicy相關的錯誤）。3.如果未看到任何活動、請登入SVM。輸入下列命令：_<SVM>fpolicy show_檢查是否已設定名為「clouded_」的fpolicy原則、且狀態為「on」。如果未設定、則代理程式很可能無法在SVM中執行命令。請確認已遵循頁面開頭所述的所有先決條件。 
@@ -251,13 +251,13 @@ image:CS_Data_Collector_Error.png[""]
 | 連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法設定（SVM svmname上的原則。原因：在'fpolicy.policy.scoe-modify:"felf"中為「res-to -include'元素指定的值無效 | 共用名稱必須在沒有任何報價的情況下提供。編輯ONTAP 「SVM DSC」組態以修正共用名稱。_包括和排除共享_不適用於長清單的共享區名稱。如果您要納入或排除大量共用、請改用依磁碟區篩選。 
 
 
-| 叢集中有未使用的現有fPolicies。安裝Cloud Secure 完不安裝的不知道該怎麼做？ | 建議刪除所有現有未使用的fpolicy設定、即使它們處於中斷連線狀態。以「cloudseced_」開頭的字元建立fpolicy。Cloud Secure可以刪除所有其他未使用的fpolicy組態。用於顯示fpolicy清單的CLI命令：_fpolicy show_刪除fpolicy組態的步驟：_fpolicy disable-vserver <svmname>-police-name <policy_name>_fpolicy刪除-vserver <svmname>-policy_name>-policy_name <policy_name_vpolicy <vmname -policy -vms_delete policy -policy <vpolicy -name_external policy -name> 
+| 叢集中有未使用的現有fPolicies。在安裝工作負載安全性之前、應該如何處理這些問題？ | 建議刪除所有現有未使用的fpolicy設定、即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。用於顯示fpolicy清單的CLI命令：_fpolicy show_刪除fpolicy組態的步驟：_fpolicy disable-vserver <svmname>-police-name <policy_name>_fpolicy刪除-vserver <svmname>-policy_name>-policy_name <policy_name_vpolicy <vmname -policy -vms_delete policy -policy <vpolicy -name_external policy -name> 
 
 
-| 啟用Cloud Secure 了不穩定功能之後ONTAP 、效能受到影響：延遲偶爾會變得很高、IOP偶爾會變得很低。 | 確保您使用Data ONTAP 的是版本不一致的版本 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["此問題"] 已修正。推薦使用的最低版本為9.8P7。ONTAP如果ONTAP 使用的是9.8p7之前的版本、而且發現此效能問題、ONTAP 則可以變更此版本的更新緩衝區大小、以改善ONTAP 不實的效能。如果您想要瀏覽此選項、但在新增新的資料收集器或編輯現有的資料收集器時卻看不到此設定、請聯絡NetApp支援部門。 
+| 啟用工作負載安全功能後ONTAP 、效能表現會受到影響：延遲偶爾會變得很高、IOP偶爾會變得很低。 | 確保您使用Data ONTAP 的是版本不一致的版本 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["此問題"] 已修正。推薦使用的最低版本為9.8P7。ONTAP如果ONTAP 使用的是9.8p7之前的版本、而且發現此效能問題、ONTAP 則可以變更此版本的更新緩衝區大小、以改善ONTAP 不實的效能。如果您想要瀏覽此選項、但在新增新的資料收集器或編輯現有的資料收集器時卻看不到此設定、請聯絡NetApp支援部門。 
 
 
-| 資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「 | 從只設定NFS服務的新SVM開始著手。在ONTAP 功能不均的情況下新增一個功能不整的SVM資料收集器Cloud Secure 。CIFS被設定為SVM允許的傳輸協定、同時將ONTAP SVM Data Collector加入Cloud Secure 到等到Cloud Secure 資訊收集器顯示錯誤為止。由於未在SVM上設定CIFS伺服器、Cloud Secure 所以如左側所示的錯誤會由SIRSH.顯示。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。 
+| 資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「 | 從只設定NFS服務的新SVM開始著手。在ONTAP 工作負載安全性中新增一個功能不全的SVM資料收集器。CIFS被設定為SVM允許的傳輸協定、同時在ONTAP 工作負載安全性中加入SVM Data Collector。等到工作負載安全性中的資料收集器顯示錯誤。由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。 
 
 
 | 資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。 | 1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的規模調整指南 link:https://docs.netapp.com/us-en/cloudinsights/concept_cs_event_rate_checker.html["本頁"]。 

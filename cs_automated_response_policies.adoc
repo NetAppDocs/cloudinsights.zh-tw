@@ -25,6 +25,6 @@ image:AutomatedAttackPolicy.png["建立攻擊原則"]
 
 您可以在原則的下拉式功能表中選擇選項、以修改或暫停「自動回應原則」。
 
-根據Snapshot清除設定、系統每天會自動刪除快照一次。Cloud Secure
+「工作負載安全性」會根據「Snapshot清除」設定、每天自動刪除快照一次。
 
 image:CloudSecure_SnapshotPurgeSettings.png["Snapshot清除設定"]

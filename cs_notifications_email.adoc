@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: cs_notifications_email.html 
-summary: 新增電子郵件地址以通知Cloud Secure 「不知知知警示」。 
+summary: 新增電子郵件地址以通知工作負載安全警示。 
 keywords: email, notifications, alerts, warnings, attacks 
 ---
 = 設定警示、警告及代理/資料來源收集器健全狀況的電子郵件通知
@@ -9,7 +9,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 [role="lead"]
-若要設定Cloud Secure 此警示收件者、請按一下*管理>通知*、然後在每個收件者的適當區段中輸入電子郵件地址。
+若要設定工作負載安全警示收件者、請按一下*管理>通知*、然後在每個收件者的適當區段中輸入電子郵件地址。
 
 
 

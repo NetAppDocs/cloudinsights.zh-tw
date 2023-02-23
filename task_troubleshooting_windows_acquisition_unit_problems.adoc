@@ -65,7 +65,7 @@ keywords: AU, acquisition unit, trioubleshooting
 
 === 檢視Proxy端點
 
-您可以在就職期間選擇資料收集器時、按一下* Proxy設定*連結來檢視Proxy端點、或按一下*說明>支援*頁面上「_Proxy設定_」下的連結。隨即顯示如下表格。如果Cloud Secure 您的環境中有任何不實之處、則已設定的端點URL也會顯示在此清單中。
+您可以在就職期間選擇資料收集器時、按一下* Proxy設定*連結來檢視Proxy端點、或按一下*說明>支援*頁面上「_Proxy設定_」下的連結。隨即顯示如下表格。如果您的環境具有工作負載安全性、則已設定的端點URL也會顯示在此清單中。
 
 image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_event_rate_checker.html 
 summary: 在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率 
-keywords: event, checker, rate, sizing, size, guide, 
+keywords: event, checker, rate, sizing, cloud secure 
 ---
 = SVM事件率檢查器（代理程式規模調整指南）
 :allow-uri-read: 
@@ -47,8 +47,7 @@ NOTE: 執行此指令碼時ONTAP 、不應針對正在判斷事件率的SVM執�
  “Svm svm_rate is generating 100 events/sec”.
 
 
-. 每ONTAP 個SVM資料收集器都可與單一SVM建立關聯、這表示每個資料收集器都能接收單一SVM產生的事件數。
-
+每ONTAP 個SVM資料收集器都可與單一SVM建立關聯、這表示每個資料收集器都能接收單一SVM產生的事件數。
 
 請謹記下列事項：
 
@@ -144,10 +143,10 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| 問：如果我在已設定Cloud Secure 為使用效益的SVM上執行此指令碼、它是否只使用SVM上現有的fpolicy組態、或是設定暫用的組態並執行此程序？ 
+| 問：如果我在已設定為工作負載安全性的SVM上執行此指令碼、它是否只使用SVM上現有的fpolicy組態、或是設定暫用的組態並執行此程序？ 
 
 
-| 答：事件率檢查器即使已設定Cloud Secure 為供使用的SVM、也能正常運作。應該沒有影響。 
+| 答：即使已設定為工作負載安全性的SVM、「事件率檢查器」仍可正常執行。應該沒有影響。 
 
 
 | 問：我可以增加執行指令碼的SVM數量嗎？ 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_integration_with_ontap_arp.html 
-summary: 搭配使用VMware的勒索軟體保護功能、可改善勒索軟體偵測功能。Cloud Secure ONTAP 
+summary: 工作負載安全功能整合ONTAP 了功能不全的勒索軟體保護功能、可改善勒索軟體偵測功能。 
 keywords: ransomware, ARP, Protection, Security 
 ---
 = 整合ONTAP 了功能完善的勒索軟體保護功能
@@ -13,9 +13,9 @@ keywords: ransomware, ARP, Protection, Security
 
 如需有關ARP的其他詳細資料和授權要求、請參閱 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["請按這裡"]。
 
-與NetApp整合以接收ARP事件、並提供額外的分析和自動回應層。Cloud Secure ONTAP
+工作負載安全功能與ONTAP VMware整合、可接收ARP事件、並提供額外的分析和自動回應層。
 
-從資訊區接收到Arp事件、並採取下列行動：Cloud Secure ONTAP
+工作負載安全性會接收ONTAP 來自於Arp的事件、並採取下列行動：
 
 . 將磁碟區加密事件與使用者活動建立關聯、以識別造成損害的原因。
 . 實作自動回應原則（若已定義）
@@ -32,8 +32,8 @@ keywords: ransomware, ARP, Protection, Security
 == 先決條件
 
 . 最低ONTAP 版本：9.11.1
-. 啟用了ARP的磁碟區。如需啟用ARP的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["請按這裡"]。必須透過OnCommand 「支援系統管理程式」來啟用ARP。無法啟用ARP。Cloud Secure
-. 應透過叢集IP新增此收集器。Cloud Secure
+. 啟用了ARP的磁碟區。如需啟用ARP的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["請按這裡"]。必須透過OnCommand 「支援系統管理程式」來啟用ARP。工作負載安全性無法啟用ARP。
+. 應透過叢集IP新增工作負載安全收集器。
 . 此功能需要叢集層級認證、才能正常運作。換句話說、新增SVM時必須使用叢集層級認證。
 
 
@@ -43,7 +43,7 @@ keywords: ransomware, ARP, Protection, Security
 
 如果您使用叢集管理認證、則不需要新的權限。
 
-如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予Cloud Secure 權限、以便從ONTAP SURO收集與Arp相關的資訊。
+如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以便從ONTAP Sfor收集與Arp相關的資訊。
 
 對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：
 
@@ -66,7 +66,7 @@ image:CS_ONTAP_ARP_EXAMPLE.png["Arp範例畫面ONTAP"]
 
 == 限制
 
-如果SVM不是Cloud Secure 由SVM監控、但ONTAP 有由Sfis產生的ARP事件、Cloud Secure 則事件仍會由Sfin接收並顯示。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。
+如果SVM未受工作負載安全性監控、但ONTAP 有由效益管理系統產生的ARP事件、則工作負載安全系統仍會接收並顯示這些事件。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。
 
 
 
@@ -79,5 +79,5 @@ image:CS_ONTAP_ARP_EXAMPLE.png["Arp範例畫面ONTAP"]
 | 問題： | 解決方法： 
 
 
-| 偵測到攻擊後24小時內收到電子郵件警示。在UI中、警示會在Cloud Insights 收到電子郵件之前24小時顯示、而該電子郵件則是由「支援工作負載安全性」所接收。 | 當將「偵測到的勒索軟體事件」傳送至VMware工作負載安全（例如：VMware）時ONTAP 、系統會傳送電子郵件Cloud Secure Cloud Insights 。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。將特定數量的檔案編碼後、將偵測到的_r勒索 軟體事件傳送至VMware Cloud Insights ONTAP 。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。 
+| 偵測到攻擊後24小時內收到電子郵件警示。在UI中、警示會在Cloud Insights 收到電子郵件之前24小時顯示、而該電子郵件則是由「支援工作負載安全性」所接收。 | 當將「偵測到的勒索軟體事件」傳送至「VMware工作負載安全性」（亦即「工作負載安全性」）時、就會傳送電子郵件Cloud Insights ONTAP 。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。將特定數量的檔案編碼後、將偵測到的_r勒索 軟體事件傳送至VMware Cloud Insights ONTAP 。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。 
 |===

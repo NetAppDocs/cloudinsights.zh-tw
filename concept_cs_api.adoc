@@ -2,32 +2,32 @@
 sidebar: sidebar 
 permalink: concept_cs_api.html 
 keywords: api, access, token, swagger 
-summary: 支援強大的API、可與其他應用程式（例如CMDB）整合。Cloud Secure 
+summary: 工作負載安全性包含功能強大的API、可與其他應用程式（例如CMDB）整合。 
 ---
-= 部分API Cloud Secure
+= 工作負載安全API
 :allow-uri-read: 
 
 
 [role="lead"]
-利用此解決方案、NetApp客戶和獨立軟體廠商（ISV）能夠將支援功能與其他應用程式（例如CMDB或其他票務系統）整合。Cloud Secure Cloud Secure
+工作負載安全性API可讓NetApp客戶和獨立軟體廠商（ISV）將工作負載安全性與其他應用程式（例如CMDB或其他票證系統）整合。
 
 API存取需求：
 
 * API存取權杖模式用於授予存取權。
-* API Token管理是Cloud Secure 由具備管理員角色的使用者執行。
+* API權杖管理是由具有管理員角色的工作負載安全使用者執行。
 
 
 
 
 == API文件（Swagger）
 
-您可以登入Cloud Secure 到「介紹」並瀏覽至「*管理> API存取*」、以找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。
+登入工作負載安全性並瀏覽至*管理> API存取*、即可找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。
 
 
 
 == API存取權杖
 
-在使用Cloud Secure 此功能之前、您必須先建立一個或多個* API存取權杖*。存取權杖可授予讀取權限。您也可以設定每個存取權杖的到期日。
+在使用工作負載安全性API之前、您必須先建立一個或多個* API存取權杖*。存取權杖可授予讀取權限。您也可以設定每個存取權杖的到期日。
 
 若要建立存取權杖：
 

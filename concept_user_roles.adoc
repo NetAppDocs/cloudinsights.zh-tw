@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_user_roles.html 
-keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observabilityu 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observability 
 summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights 
 ---
 = 使用者帳戶與角色
@@ -18,7 +18,7 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 您使用具有管理員權限的帳戶來建立或修改使用者帳戶。每個使用者帳戶都會從Cloud Insights 下列權限層級指派每個功能的角色。
 
 |===
-| 角色 | 觀察能力 | 安全性 | 報告 
+| 角色 | 觀察能力 | 工作負載安全 | 報告 
 
 
 | 帳戶擁有者 3+| 可修改訂閱、檢視帳單與使用資訊、並執行所有的系統管理員功能、以利觀察、安全性及報告。擁有者也可以邀請和管理使用者、以及管理SSO驗證和身分識別聯盟設定。當您註冊Cloud Insights 以供使用時、會建立第一個帳戶擁有者。強烈建議每Cloud Insights 個環境至少有兩位帳戶擁有者。  

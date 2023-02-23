@@ -113,7 +113,7 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 其他類型和/或API可能會隨時間提供。您可以在中找到最新的API資訊 link:#api-documentation-swagger["API Swagger文件"]。
 
-請注意、使用者可存取的API類型也取決於 link:concept_user_roles.html["使用者角色"] 每Cloud Insights 個功能集（監控、Cloud Secure 功能介紹、報告）都有。
+請注意、使用者可存取的API類型也取決於 link:concept_user_roles.html["使用者角色"] 每Cloud Insights 個功能集（監控、工作負載安全、報告）都有。
 
 
 

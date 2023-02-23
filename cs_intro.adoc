@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: cs_intro.html 
-keywords: CloudSecure 
+keywords: CloudSecure, Cloud Secure 
 summary: 總覽 
 ---
-= 關於Cloud Secure 本公司
+= 關於儲存工作負載安全性
 :allow-uri-read: 
 
 
 [role="lead"]
-利用可據以行動的內部威脅情報、協助保護您的資料。Cloud Secure它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。
+利用可據以行動的內部威脅情報、協助保護資料Cloud Secure Cloud Insights 。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。
 
 
 
@@ -17,7 +17,7 @@ summary: 總覽
 
 集中可見度並控制使用者對儲存在內部部署或雲端的重要企業資料的存取。
 
-取代無法提供即時且準確的資料存取與控制可見度的工具和手動程序。獨特的運作方式適用於雲端和內部部署儲存系統、可針對惡意使用者行為提供即時警示。Cloud Secure
+取代無法提供即時且準確的資料存取與控制可見度的工具和手動程序。工作負載安全功能可在雲端和內部部署儲存系統上進行獨特作業、為您提供惡意使用者行為的即時警示。
 
 
 

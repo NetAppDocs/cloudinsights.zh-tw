@@ -1,30 +1,30 @@
----
-sidebar: sidebar 
-permalink: concept_cs_attack_simulator.html 
-keywords: ransomware, simulation, simulator, restrict, attack 
-summary: 您可以使用指令碼來模擬勒索軟體攻擊、以進行測試或展示Cloud Secure 
----
-= 產品特色：模擬攻擊Cloud Secure
+= 工作負載安全性：模擬攻擊
 :allow-uri-read: 
 
 
+程式碼-側欄：側欄Permalink：concept_cs_attack_simulator.html關鍵字：勒索軟體、模擬、模擬器、限制、攻擊摘要：使用指令碼、您可以模擬勒索軟體攻擊、以測試或示範工作負載安全性-
+
+
+
+= 工作負載安全性：模擬攻擊
+
 [role="lead"]
-您可以使用本頁的說明、模擬攻擊、Cloud Secure 使用隨附Cloud Secure 的勒索軟體模擬指令碼來測試或展示VMware。
+您可以使用本頁上的指示、模擬攻擊、以便使用隨附的勒索軟體模擬指令碼來測試或示範工作負載安全性。
 
 
 
 == 開始之前要注意的事項
 
 * 勒索軟體模擬指令碼僅適用於Linux。
-* 指令碼會隨Cloud Secure 附於介紹代理程式安裝檔案。可在Cloud Secure 任何安裝了下列功能的機器上使用此功能：
-* 您可以在Cloud Secure 物件代理機器上執行指令碼、不需要再準備另一台Linux機器。不過、如果您偏好在其他系統上執行指令碼、只要複製指令碼並在該處執行即可。
+* 此指令碼隨工作負載安全代理程式安裝檔案一起提供。它適用於任何已安裝工作負載安全性代理程式的機器。
+* 您可以在工作負載安全代理程式機器上執行指令碼、不需要準備其他Linux機器。不過、如果您偏好在其他系統上執行指令碼、只要複製指令碼並在該處執行即可。
 
 
 
 
 == 至少有1、000個範例檔案
 
-此指令碼應在SVM上執行、其中的資料夾含有要加密的檔案。建議在該資料夾和任何子資料夾中至少有1、000個檔案。檔案不可為空白。請勿使用相同的使用者建立檔案並加密。此為低風險活動、因此不會產生警示（亦即同一位使用者修改剛建立的檔案）Cloud Secure 。
+此指令碼應在SVM上執行、其中的資料夾含有要加密的檔案。建議在該資料夾和任何子資料夾中至少有1、000個檔案。檔案不可為空白。請勿使用相同的使用者建立檔案並加密。「工作負載安全性」將此視為低風險活動、因此不會產生警示（亦即、相同的使用者會修改剛建立的檔案）。
 
 請參閱以下說明 link:#create-files-programmatically["以程式設計方式建立非空白檔案"]。
 
@@ -57,7 +57,7 @@ mount -t nfs -o vers=4.0 Vserver data IP>:/nfsvol /destinationlinuxfolder
  mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o username=raisa
 接下來、設定資料收集器：
 
-. 如果Cloud Secure 尚未設定、請設定該程式。
+. 如果尚未設定工作負載安全性代理程式、請加以設定。
 . 如果尚未完成、請設定SVM資料收集器。
 
 
@@ -65,7 +65,7 @@ mount -t nfs -o vers=4.0 Vserver data IP>:/nfsvol /destinationlinuxfolder
 
 == 執行勒索軟體模擬器指令碼
 
-. 登入（ssh）Cloud Secure 到資訊不限代理機器。
+. 登入（ssh）工作負載安全代理程式機器。
 . 瀏覽至：_/opt /NetApp/cloudsec/agent/install_
 . 呼叫不含參數的模擬器指令碼、查看使用狀況：
 +
@@ -118,7 +118,7 @@ File /root/for/File002.txt is restored.
 
 == 多次執行指令碼
 
-為使用者產生勒索軟體攻擊之後、請切換至其他使用者、以產生額外的攻擊。針對同一位使用者、在短時間內會得知使用者行為、不會針對反覆勒索軟體攻擊發出警示。Cloud Secure
+為使用者產生勒索軟體攻擊之後、請切換至其他使用者、以產生額外的攻擊。「工作負載安全性」會學習使用者行為、不會在短時間內針對相同使用者的反覆勒索軟體攻擊發出警示。
 
 
 

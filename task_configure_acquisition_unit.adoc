@@ -91,7 +91,7 @@ NOTE: 通配符通常使用星號（*）、但您的Proxy /防火牆組態可能
 
 image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
-如果Cloud Secure 您的環境中有任何不實之處、則已設定的端點URL也會顯示在此清單中。
+如果您的環境具有工作負載安全性、則已設定的端點URL也會顯示在此清單中。
 
 
 
@@ -145,7 +145,7 @@ NOTE: 通配符通常使用星號（*）、但您的Proxy /防火牆組態可能
 
 image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
-如果Cloud Secure 您的環境中有任何不實之處、則已設定的端點URL也會顯示在此清單中。
+如果您的環境具有工作負載安全性、則已設定的端點URL也會顯示在此清單中。
 
 
 

@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect_ldap.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: 設定Cloud Secure 功能介紹LDAP使用者目錄收集器 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: 設定工作負載安全性LDAP使用者目錄收集器 
 ---
 = 設定LDAP目錄伺服器收集器
 :allow-uri-read: 
 
 
 [role="lead"]
-您可以設定Cloud Secure 使用此功能、從LDAP目錄伺服器收集使用者屬性。
+您可以設定工作負載安全性、從LDAP目錄伺服器收集使用者屬性。
 
 .開始之前
 * 您必須是Cloud Insights 管理員或帳戶擁有者才能執行此工作。
@@ -18,7 +18,7 @@ summary: 設定Cloud Secure 功能介紹LDAP使用者目錄收集器
 
 
 .設定使用者目錄收集器的步驟
-. 在「支援」功能表中、按一下Cloud Secure ：*管理>資料收集器>使用者目錄收集器>+使用者目錄收集器*、然後選取* LDAP目錄伺服器*
+. 在Workload Security功能表中、按一下：*管理>資料收集器>使用者目錄收集器>+使用者目錄收集器*、然後選取* LDAP目錄伺服器*
 +
 系統會顯示Add User Directory（新增使用者目錄）畫面。
 
@@ -120,7 +120,7 @@ summary: 設定Cloud Secure 功能介紹LDAP使用者目錄收集器
 
 您可以使用下列程序來驗證LDAP使用者權限和屬性定義：
 
-* 使用下列命令來驗證Cloud Secure 《LDAP使用者權限：
+* 使用下列命令來驗證工作負載安全性LDAP使用者權限：
 +
  ldapsearch -D "uid=john ,cn=users,cn=accounts,dc=dorp,dc=company,dc=com" -W -x -LLL -o ldif-wrap=no -b "cn=accounts,dc=dorp,dc=company,dc=com" -H ldap://vmwipaapp08.dorp.company.com
 * 使用LDAP檔案總管瀏覽LDAP資料庫、檢視物件內容和屬性、檢視權限、檢視物件架構、執行精密的搜尋、您可以儲存並重新執行。
@@ -150,7 +150,7 @@ image:CloudSecure_LDAPDialog.png["LDAP連線"]
 | 新增LDAP目錄連接器會導致「錯誤」狀態。錯誤顯示：「無法取得對應於DN=DC=HQ、DC=domainname、DC=com的物件做為樹系名稱。」 | 提供的搜尋基礎不正確。編輯並提供正確的樹系名稱。 
 
 
-| 網域使用者的選用屬性不會出現在Cloud Secure 「無法使用者設定檔」頁面上。 | 這可能是因為CloudSecure中新增的選用屬性名稱與Active Directory中的實際屬性名稱不相符。欄位區分大小寫。編輯並提供正確的選用屬性名稱。 
+| 「工作負載安全性使用者設定檔」頁面不會顯示網域使用者的選用屬性。 | 這可能是因為CloudSecure中新增的選用屬性名稱與Active Directory中的實際屬性名稱不相符。欄位區分大小寫。編輯並提供正確的選用屬性名稱。 
 
 
 | 資料收集器處於錯誤狀態、並顯示「無法擷取LDAP使用者。故障原因：無法連線至伺服器、連線為null | 按一下「_Restart_」按鈕、重新啟動收集器。 
@@ -189,5 +189,5 @@ image:CloudSecure_LDAPDialog.png["LDAP連線"]
 | 電話號碼未填入使用者設定檔頁面。 | 這很可能是因為Active Directory的屬性對應問題所致。1.編輯從Active Directory擷取使用者資訊的特定Active Directory收集器。2.注意在選用屬性下、會有一個欄位名稱「電話號碼」對應至Active Directory屬性「電話號碼」。4.現在、請依照上述說明使用Active Directory Explorer工具來瀏覽LDAP目錄伺服器、並查看正確的屬性名稱。3.確保在LDAP目錄中有一個名爲「電話號碼」的屬性、該屬性確實具有使用者的電話號碼。5、讓我們在LDAP目錄中說、它已改為「電話網路電話」。6.然後編輯CloudSecure User Directory收集器。在選用屬性區段中、將「電話號碼」取代為「電話號碼」。7.儲存Active Directory收集器、收集器將重新啟動、取得使用者的電話號碼、並在使用者設定檔頁面中顯示相同的號碼。 
 
 
-| 如果Active Directory（AD）伺服器上已啟用加密憑證（SSL）、Cloud Secure 則無法連接到AD伺服器。 | 在設定使用者目錄收集器之前、請先停用AD伺服器加密。擷取使用者詳細資料後、將會保留13個月。如果擷取使用者詳細資料後AD伺服器中斷連線、則不會擷取AD中新增的使用者。若要再次擷取、使用者目錄收集器必須連線至AD。 
+| 如果Active Directory（AD）伺服器上已啟用加密憑證（SSL）、則工作負載安全性使用者目錄收集器將無法連線至AD伺服器。 | 在設定使用者目錄收集器之前、請先停用AD伺服器加密。擷取使用者詳細資料後、將會保留13個月。如果擷取使用者詳細資料後AD伺服器中斷連線、則不會擷取AD中新增的使用者。若要再次擷取、使用者目錄收集器必須連線至AD。 
 |===

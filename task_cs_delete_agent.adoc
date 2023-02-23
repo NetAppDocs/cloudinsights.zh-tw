@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_delete_agent.html 
-keywords: agent, Cloud Secure, delete agent 
-summary: 正在刪除Cloud Secure 代理程式 
+keywords: agent, Workload Security, delete agent, Cloud Secure 
+summary: 刪除工作負載安全性代理程式 
 ---
-= 刪除Cloud Secure 一個功能不一的代理程式
+= 刪除工作負載安全代理程式
 :allow-uri-read: 
 
 
 [role="lead"]
-當您刪除Cloud Secure 某個解決方法時、必須先刪除所有與代理程式相關的資料收集器。
+刪除工作負載安全代理程式時、必須先刪除與代理程式相關的所有資料收集器。
 
 
 
@@ -19,7 +19,7 @@ summary: 正在刪除Cloud Secure 代理程式
 IMPORTANT: 刪除值機員會刪除所有與值機員相關的資料收集器。如果您打算使用不同的代理程式來設定資料收集器、則應先建立資料收集器組態的備份、然後再刪除代理程式。
 
 .開始之前
-. 請確定所有與代理程式相關的資料收集器都已從Cloud Secure 這個入口網站刪除。
+. 請確定所有與代理程式相關的資料收集器都已從工作負載安全入口網站刪除。
 +
 附註：如果所有相關的收集器都處於「已停止」狀態、請忽略此步驟。
 
