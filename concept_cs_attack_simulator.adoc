@@ -1,12 +1,12 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_attack_simulator.html 
+keywords: ransomware, simulation, simulator, restrict, attack 
+summary: 您可以使用指令碼來模擬勒索軟體攻擊、以測試或展示工作負載安全性 
+---
 = 工作負載安全性：模擬攻擊
 :allow-uri-read: 
 
-
-程式碼-側欄：側欄Permalink：concept_cs_attack_simulator.html關鍵字：勒索軟體、模擬、模擬器、限制、攻擊摘要：使用指令碼、您可以模擬勒索軟體攻擊、以測試或示範工作負載安全性-
-
-
-
-= 工作負載安全性：模擬攻擊
 
 [role="lead"]
 您可以使用本頁上的指示、模擬攻擊、以便使用隨附的勒索軟體模擬指令碼來測試或示範工作負載安全性。

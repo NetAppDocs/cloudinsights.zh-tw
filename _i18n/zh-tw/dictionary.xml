@@ -10609,7 +10609,6 @@
   <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> 由功能性開發所使用Cloud Insights 、無法與擷取裝置通訊Cloud Insights 、無法在功能性開發與資料收集器本身之間進行通訊。以下是您可以嘗試的幾件事：確保取得設備能夠解析FQDN並到達所需的連接埠。確認不需要Proxy即可到達錯誤訊息中指定的端點。Curl可用來測試擷取裝置與端點之間的通訊。請確定您*未*使用Proxy進行此測試。範例：root@quitionunit# curl -s -H Accept:application/json -H "內容類型：application/json "-H APi-key:firse-X &lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; Get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 區域端點&gt;:8080 / v1/Storage/IPRANes請參閱此 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">當您註冊Cloud Insights 以供選擇使用時、您可以免費試用Cloud Insights 30天的VMware。在此試用期間、您可以在Cloud Insights 自己的環境中、探索VMware所提供的功能。</block>
   <block id="fca4fedbe53af4420a279beead573bdf" category="doc">工作負載安全性：模擬攻擊</block>
-  <block id="373799975bf9df78f2b7e58b488fdb43" category="paragraph">程式碼-側欄：側欄Permalink：concept_cs_attack_simulator.html關鍵字：勒索軟體、模擬、模擬器、限制、攻擊摘要：使用指令碼、您可以模擬勒索軟體攻擊、以測試或示範工作負載安全性-</block>
   <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">您可以使用本頁上的指示、模擬攻擊、以便使用隨附的勒索軟體模擬指令碼來測試或示範工作負載安全性。</block>
   <block id="16fa78539f96944e79f64b961036e74d" category="list-text">此指令碼隨工作負載安全代理程式安裝檔案一起提供。它適用於任何已安裝工作負載安全性代理程式的機器。</block>
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">您可以在工作負載安全代理程式機器上執行指令碼、不需要準備其他Linux機器。不過、如果您偏好在其他系統上執行指令碼、只要複製指令碼並在該處執行即可。</block>
@@ -10781,4 +10780,5 @@
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">設定工作負載安全代理程式</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">工作負載安全性使用者管理</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">採購單位在Windows和Linux上安裝、解除安裝、設定Proxy支援等功能。</block>
+  <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">您可以使用指令碼來模擬勒索軟體攻擊、以測試或展示工作負載安全性</block>
 </blocks>
