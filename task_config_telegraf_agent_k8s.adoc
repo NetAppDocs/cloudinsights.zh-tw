@@ -33,7 +33,7 @@ image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 
 
 * Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。
-* 當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。Cloud Insights Cloud Insights
+* 當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示NFS Cloud Insights Cloud Insights 。
 * 自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <<升級,升級>> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。
 * 如果您是在OpenShift 4.6或更高版本上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。
 * 監控功能僅安裝在Linux節點上

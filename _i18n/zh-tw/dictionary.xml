@@ -8717,7 +8717,6 @@
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state指標：v2.5.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent位元：1.9.8</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。</block>
-  <block id="f555190cc628f345214d8d00c587f506" category="list-text">當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示iSCSI。Cloud Insights Cloud Insights</block>
   <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。您必須 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes監控操作員（如果您的環境使用的是）。</block>
   <block id="ceb4fea071151ab6bb0ff80a20993744" category="list-text">如果您是在OpenShift 4.6或更高版本上執行、除了確保符合這些先決條件之外、您還必須遵循下列* OpenShift Instructions *。</block>
   <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="list-text">NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。</block>
@@ -10782,4 +10781,5 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">您可以使用指令碼來模擬勒索軟體攻擊、以測試或展示工作負載安全性</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">NFS的使用者（IP位址）封鎖正常運作、但對於SMB / CIFS、我看到錯誤訊息：「從SID到網域名稱的轉換失敗。原因逾時：通訊端未建立」</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">這種情況可能發生於_CsUser_沒有執行ssh的權限。（請確保叢集層級的連線、然後確定使用者可以執行ssh）。_CsUser_角色需要這些權限。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作： 安全性登入角色create -role csrole -cmd目錄名稱"vserver出口原則規則"-access all安全性登入角色create -role csrole -cmd目錄名稱-cmd目錄名稱set -access all安全性登入角色create -role csrole -cmd目錄名稱"vserver csse-check concall"-access"安全性登入密碼全名 角色建立-role csrole -cmd目錄名稱"vserver name-mapping "-access all如果不使用_CsUser_、而且使用叢集層級的管理員使用者、請確定管理員使用者具有ONTAP 支援Isrole的ssh權限。</block>
+  <block id="d511cfcda3973a3a336e284a48df103e" category="list-text">當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示NFS Cloud Insights Cloud Insights 。</block>
 </blocks>
