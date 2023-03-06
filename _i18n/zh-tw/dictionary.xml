@@ -10780,6 +10780,6 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">您可以使用指令碼來模擬勒索軟體攻擊、以測試或展示工作負載安全性</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">NFS的使用者（IP位址）封鎖正常運作、但對於SMB / CIFS、我看到錯誤訊息：「從SID到網域名稱的轉換失敗。原因逾時：通訊端未建立」</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">這種情況可能發生於_CsUser_沒有執行ssh的權限。（請確保叢集層級的連線、然後確定使用者可以執行ssh）。_CsUser_角色需要這些權限。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作： 安全性登入角色create -role csrole -cmd目錄名稱"vserver出口原則規則"-access all安全性登入角色create -role csrole -cmd目錄名稱-cmd目錄名稱set -access all安全性登入角色create -role csrole -cmd目錄名稱"vserver csse-check concall"-access"安全性登入密碼全名 角色建立-role csrole -cmd目錄名稱"vserver name-mapping "-access all如果不使用_CsUser_、而且使用叢集層級的管理員使用者、請確定管理員使用者具有ONTAP 支援Isrole的ssh權限。</block>
-  <block id="d511cfcda3973a3a336e284a48df103e" category="list-text">當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示NFS和iSCSI的Pod對PV對儲存設備對應；其他執行時間則只顯示NFS Cloud Insights Cloud Insights 。</block>
   <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">執行下列其中一項授權版本的電腦：Red Hat Enterprise Linux 7.x、8.x 64位元CentOS 7.x 64位元CentOS 8 Stream Ubuntu 20至22 64位元的Rocky 8.x 64位元、Rocky 9.x 64位元。此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。不支援SE（增強安全性）Linux。</block>
+  <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示適用於NFS和iSCSI的Pod對PV對儲存設備對應和度量；其他執行時間則只顯示NFS Cloud Insights Cloud Insights 。</block>
 </blocks>
