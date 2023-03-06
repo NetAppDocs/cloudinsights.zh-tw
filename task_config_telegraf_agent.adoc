@@ -114,7 +114,8 @@ sc.exe delete telegraf
 +
 ....
 cd Cert:\CurrentUser\Root
-rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+//rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+rm 1A918038E8E127BB5C87A202DF173B97A05B4996
 ....
 . 刪除_C:\Program Files\Telewraf_資料夾、以移除二進位檔、記錄檔和組態檔
 . 從登錄中移除_system\CurrentControlSet\Services\EventLog\Application\Telewraf_機碼
@@ -535,7 +536,7 @@ Windows：
 
 您可以確認其指紋為下列項目、以驗證該PEM檔案：
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 更具體地說、
 
 * 非Windows：

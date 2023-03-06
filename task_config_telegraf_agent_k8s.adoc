@@ -54,10 +54,7 @@ image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 |===
 * 在執行Arm64架構的節點上、不支援NetApp Kubernetes監控操作員及其相依性（遠端連線、Kube-state度量、fluentbit等）。
 * 下列命令必須可用：_curl_、_Sudo _、_openssl_、_shap256sum_和_kuvectl_。若要獲得最佳結果、請將這些命令新增至路徑。
-
-
->>> e64b5299cf9e0451417037778f9d37b843d9e6b *您將用於NetApp Kubernetes監控操作員安裝的主機必須設定為與目標K8s叢集通訊、並可透過網際網路連線至Cloud Insights 您的環境。如果此主機需要Proxy才能連絡Cloud Insights 到無法取得的支援、請依照中的指示進行 <<configuring-proxy-support,設定Proxy支援>> 區段。
-
+* 您將用於NetApp Kubernetes監控操作員安裝的主機必須設定為與目標K8s叢集通訊、並將網際網路連線至Cloud Insights 您的Suse環境。如果此主機需要Proxy才能連絡Cloud Insights 到無法取得的支援、請依照中的指示進行 <<configuring-proxy-support,設定Proxy支援>> 區段。
 * NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。
 * 如果您在安裝期間或在操作要監控的K8s叢集時、仍在使用Proxy、請依照中的指示進行 <<configuring-proxy-support,設定Proxy支援>> 區段。
 * 您必須擁有建立Kubernetes叢集角色和角色繫結的權限。
@@ -426,7 +423,7 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 您可以確認其指紋為下列項目、以驗證該PEM檔案：
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 更具體地說、
 
  openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
