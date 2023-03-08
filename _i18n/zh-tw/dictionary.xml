@@ -10787,4 +10787,6 @@
   <block id="0f68b3cd7cc981b302e5fc48409617ab" category="cell"><block ref="0f68b3cd7cc981b302e5fc48409617ab" category="inline-link-macro-rx"></block></block>
   <block id="e23a1eab258608c673f841550477728b" category="doc">Dell EMC Isilon / PowerScale REST資料收集器</block>
   <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
+  <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：</block>
+  <block id="aec78dde754edc4769d775d718da8408" category="list-text">如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：</block>
 </blocks>

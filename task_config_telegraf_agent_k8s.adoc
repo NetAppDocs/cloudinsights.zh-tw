@@ -90,10 +90,14 @@ image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 
 . 為目前使用者設定_https_proxy_和/或_https_proxy_環境變數：
 +
- export https_proxy=<proxy_server>:<proxy_port>
-. 建立/etc/default/Telegraf_、並插入_https_proxy_和/或_https_proxy_變數的定義：
+.. 如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：
 +
- https_proxy=<proxy_server>:<proxy_port>
+ export https_proxy=<proxy_server>:<proxy_port>
+.. 如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export http_proxy= <proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
 
 
 若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。
