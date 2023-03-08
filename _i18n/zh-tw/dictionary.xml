@@ -9744,7 +9744,6 @@
   <block id="0df3afc7b3c290bc4820d50b2bee11b4" category="cell">CPU等候時間總計（以百分比表示）</block>
   <block id="2c4465560ecae928ff0585737c3acf45" category="cell">VMware API</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web服務</block>
-  <block id="831b6c031c23b2fb141faacc1a32e259" category="doc">Dell EMC Isilon REST資料收集器</block>
   <block id="6d06382ef6c5abdd0a682226c6351821" category="list-text">HTTPS存取連接埠8080</block>
   <block id="f7ef35e4c0665f97997b1078e76e42c4" category="cell">Isilon IP位址</block>
   <block id="ed705ee9e97ca31274136726da061128" category="cell">Isilon儲存設備的IP位址或完整網域名稱</block>
@@ -10303,8 +10302,6 @@
   <block id="37b9c8ac0158a9b9c57a6fd39c09112a" category="cell">cpuIdleTimerPercent.Total</block>
   <block id="82e45cbb75d74071b021fa2fb638e1da" category="cell">cpuTotal等待時間百分比</block>
   <block id="6d26c12f389d527e1ebe5f28f0ca597b" category="cell">使用容量ForReportingMB</block>
-  <block id="3fb9d15e7ce5e74d2d3cbbd4d6d1eeb7" category="inline-link-macro">Dell EMC Isilon REST</block>
-  <block id="debcc72094a806a749160def821d5dcf" category="cell"><block ref="debcc72094a806a749160def821d5dcf" category="inline-link-macro-rx"></block></block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Un禁 用環境</block>
   <block id="7bb1c93f44835a04f1a5d46dd4f4b400" category="cell"><block ref="7bb1c93f44835a04f1a5d46dd4f4b400" category="inline-link-macro-rx"></block></block>
   <block id="6b290024189e0c4e1b4dfcdf7383e010" category="section-title">實用定義</block>
@@ -10786,4 +10783,8 @@
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud Connection for ONTAP R得9.9以上版本已過時</block>
   <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">Cloud Connection ONTAP for Re9.9+資料收集器已過時。從2023年4月4日起、您環境中的Cloud Connection資料收集器將不再收集資料、而會在輪詢時顯示錯誤。Cloud Connection資料收集器將在Cloud Insights 後續更新中從功能性的功能中一併移除。</block>
   <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">在2023年4月4日之前、您必須為ONTAP Cloud Connection目前收集的ONTAP 所有其他系統、設定新的NetApp支援資料管理軟體資料收集器。 <block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>。</block>
+  <block id="3d535cce2c7c7b6ca074afafcd02ca81" category="inline-link-macro">Dell EMC Isilon / PowerScale REST</block>
+  <block id="0f68b3cd7cc981b302e5fc48409617ab" category="cell"><block ref="0f68b3cd7cc981b302e5fc48409617ab" category="inline-link-macro-rx"></block></block>
+  <block id="e23a1eab258608c673f841550477728b" category="doc">Dell EMC Isilon / PowerScale REST資料收集器</block>
+  <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
 </blocks>

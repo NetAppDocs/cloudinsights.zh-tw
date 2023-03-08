@@ -4,7 +4,7 @@ permalink: task_dc_emc_isilon_rest.html
 keywords: data collector, isilon, EMC, DELL, PowerScale 
 summary: 設定Dell EMC Isilon / PowerScale REST資料收集器。 
 ---
-= Dell EMC Isilon REST資料收集器
+= Dell EMC Isilon / PowerScale REST資料收集器
 :allow-uri-read: 
 
 

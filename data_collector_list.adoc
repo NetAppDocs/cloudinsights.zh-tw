@@ -75,7 +75,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale（先前為Isilon）"] | 基礎架構 
 
 
-| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon REST"] | 基礎架構 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon / PowerScale REST"] | 基礎架構 
 
 
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | 基礎架構 
