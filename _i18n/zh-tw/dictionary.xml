@@ -5571,7 +5571,6 @@
   <block id="563ab1cab19237118c0d565ded4f7493" category="list-text">身為NetApp的新客戶、您也必須建立NetApp支援網站（NSS）使用者帳戶、以便日後登錄、並存取支援入口網站進行技術支援聊天和網路票證。此連結位於<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新登錄Cloud Insights 的不合格產品編號、以加速程序。</block>
   <block id="0e458a16f853c4e326f689913acf2dfe" category="list-text">這是Cloud Insights 對NetApp產品系列編號的一次性登錄。</block>
   <block id="bc4afdcc32d9a7d1bc03c2d8ad5b1828" category="section-title">取得支援資訊</block>
-  <block id="7c59aac37a994b7c8de5ecb669c6e209" category="paragraph">NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。若使用Cloud Insights 者訂閱任何一款支援功能（基本版、標準版、高級版）、可透過電話或網路票證取得技術支援。網路票證和案例管理都需要NetApp支援網站（NSS）SSO帳戶。</block>
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">自助服務支援：</block>
   <block id="6c0afebc7e7822e3ca22734d7b5d42c0" category="paragraph">這些支援選項以試用模式提供、全年無休免費提供：</block>
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">知識庫</block>
@@ -10789,4 +10788,6 @@
   <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
   <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：</block>
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：</block>
+  <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。若使用Cloud Insights 者訂閱任何一款支援功能（Basic、Standard、Premium）、可透過電話或網路票務取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。</block>
+  <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*只要您的所有NetApp儲存系統均涵蓋在「優級支援」層級以上、「基本版」即提供支援。</block>
 </blocks>
