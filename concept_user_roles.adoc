@@ -9,7 +9,7 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 
 
 [role="lead"]
-支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。（請注意、「安全性」功能集中沒有_User_和_Guest角色。）使用者也是 link:#creating-accounts-by-inviting-users["已邀請"] 提供特定角色、或是透過登入Cloud Insights link:#single-sign-on-sso-accounts["單一登入（SSO）授權"] 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。
+支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。使用者也是 link:#creating-accounts-by-inviting-users["已邀請"] 提供特定角色、或是透過登入Cloud Insights link:#single-sign-on-sso-accounts["單一登入（SSO）授權"] 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。
 
 
 
