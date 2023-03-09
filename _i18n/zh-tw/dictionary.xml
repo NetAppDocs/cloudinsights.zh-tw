@@ -8979,7 +8979,6 @@
   <block id="e49c7b347b6e9d379c33509b8c27ec5b" category="list-text">權限必須在Solutions Enabler伺服器的精靈組態檔中聲明、通常可在這裡找到：_/var/symapi/config/daema_users_</block>
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">以下是具有適當cisys權限的範例檔案。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">我看到「不明程式碼」訊息出現資料收集錯誤</block>
-  <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。</block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM有多種子類型。其中僅支援_default_、_sync來源_和_sync目的地_。</block>
   <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Metro叢集的建議組態</block>
   <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">以下是Metro叢集的建議：</block>
@@ -10790,4 +10789,5 @@
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：</block>
   <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。若使用Cloud Insights 者訂閱任何一款支援功能（Basic、Standard、Premium）、可透過電話或網路票務取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。</block>
   <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*只要您的所有NetApp儲存系統均涵蓋在「優級支援」層級以上、「基本版」即提供支援。</block>
+  <block id="575b95a19de7e191bf400580ceab0b27" category="cell">如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。如果未在/var/symapi/config/daema_users_USERS組態檔中設定_cisys使用者（執行Solutions Enabler命令）所需的精靈權限、也可能會發生此錯誤。若要修正此問題、請編輯/var/symapi/config/daema_userss檔案、並確定cisys使用者具有&lt;all&gt; 為storapid精靈指定的支援權限。範例：14：11：25 # tail /var/symapi/config/daema_users... cisys storapid &lt;all&gt;</block>
 </blocks>

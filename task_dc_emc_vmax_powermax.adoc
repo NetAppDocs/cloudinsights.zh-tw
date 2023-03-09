@@ -169,6 +169,6 @@ cisys storapid <all>
 | 錯誤：•使用Solutions Enabler Server 8.x收集的Solutions Enabler 7.x時、「symcfg list -tdev" CLI命令可能會傳回不正確的資料使用Solutions Enabler 8.1.0或更早版本從Solutions Enabler Server 8.3或更新版本收集到的「symcfg list -SRP」CLI命令可能會傳回不正確的資料。 | 請務必使用相同的Solutions Enabler主要版本 
 
 
-| 我看到「不明程式碼」訊息出現資料收集錯誤 | 如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <<需求,需求>> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。 
+| 我看到「不明程式碼」訊息出現資料收集錯誤 | 如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <<需求,需求>> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。如果未在/var/symapi/config/daema_users_USERS組態檔中設定_cisys使用者（執行Solutions Enabler命令）所需的精靈權限、也可能會發生此錯誤。若要修正此問題、請編輯/var/symapi/config/daema_userss檔案、並確定cisys使用者具有<all> 為storapid精靈指定的支援權限。範例：14：11：25 # tail /var/symapi/config/daema_users... cisys storapid <all> 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
