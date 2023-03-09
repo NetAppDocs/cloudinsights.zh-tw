@@ -58,7 +58,9 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 下列為因ARP事件而產生的警示範例：
 
-image:CS_ONTAP_ARP_EXAMPLE.png["Arp範例畫面ONTAP"]
+image:CS_Ransomware_Example_1.png["勒索軟體警示頂端區段"]
+image:CS_Ransomware_Example_2.png["勒索軟體警示頂端區段"]
+image:CS_Ransomware_Example_3.png["勒索軟體警示頂端區段"]
 
 高可信度橫幅表示攻擊顯示勒索軟體行為及檔案加密活動。加密檔案圖表會指出Arp解決方案偵測到磁碟區加密活動的時間戳記。
 

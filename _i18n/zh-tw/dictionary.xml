@@ -8681,8 +8681,6 @@
   <block id="ba95389dce56e78ab6a308128620b033" category="paragraph">對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：</block>
   <block id="20cdc94cc7059da994e4c0a98a544c8f" category="section-title">警示範例</block>
   <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">下列為因ARP事件而產生的警示範例：</block>
-  <block id="ba022000977a1c06f95377443d9b2500" category="inline-image-macro">Arp範例畫面ONTAP</block>
-  <block id="d12fcb220971d8d0a7e1d474102c977e" category="paragraph"><block ref="d12fcb220971d8d0a7e1d474102c977e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高可信度橫幅表示攻擊顯示勒索軟體行為及檔案加密活動。加密檔案圖表會指出Arp解決方案偵測到磁碟區加密活動的時間戳記。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="4c4518d4c20175eb4082a6b33eb4badb" category="section-title">2022年10月</block>
@@ -10792,4 +10790,8 @@
   <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知識庫</block>
   <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">如需Proxy組態的詳細資訊、請參閱NetApp <block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>。</block>
   <block id="21495a8ea3304b589e7d69a7ec0ce1cc" category="paragraph">支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。使用者也是 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> 提供特定角色、或是透過登入Cloud Insights <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。</block>
+  <block id="b83a60c5de546ea3d085bb1ce6636d9a" category="inline-image-macro">勒索軟體警示頂端區段</block>
+  <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
+<block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
+<block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
