@@ -10790,4 +10790,6 @@
   <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。若使用Cloud Insights 者訂閱任何一款支援功能（Basic、Standard、Premium）、可透過電話或網路票務取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。</block>
   <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*只要您的所有NetApp儲存系統均涵蓋在「優級支援」層級以上、「基本版」即提供支援。</block>
   <block id="575b95a19de7e191bf400580ceab0b27" category="cell">如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。如果未在/var/symapi/config/daema_users_USERS組態檔中設定_cisys使用者（執行Solutions Enabler命令）所需的精靈權限、也可能會發生此錯誤。若要修正此問題、請編輯/var/symapi/config/daema_userss檔案、並確定cisys使用者具有&lt;all&gt; 為storapid精靈指定的支援權限。範例：14：11：25 # tail /var/symapi/config/daema_users... cisys storapid &lt;all&gt;</block>
+  <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知識庫</block>
+  <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">如需Proxy組態的詳細資訊、請參閱NetApp <block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>。</block>
 </blocks>

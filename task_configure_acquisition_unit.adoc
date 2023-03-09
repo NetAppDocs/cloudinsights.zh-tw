@@ -83,6 +83,8 @@ image:NewLinuxAUInstall.png["Linux AU說明"]
 
 NOTE: 通配符通常使用星號（*）、但您的Proxy /防火牆組態可能使用不同的格式。請參閱您的Proxy文件、以確保環境中的萬用字元規格正確無誤。
 
+如需Proxy組態的詳細資訊、請參閱NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"]。
+
 
 
 ==== 檢視Proxy URL
@@ -136,6 +138,8 @@ image::NewWindowsAUInstall.png[Windows AU安裝]
  *.cloudinsights.netapp.com
 
 NOTE: 通配符通常使用星號（*）、但您的Proxy /防火牆組態可能使用不同的格式。請參閱您的Proxy文件、以確保環境中的萬用字元規格正確無誤。
+
+如需Proxy組態的詳細資訊、請參閱NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知識庫"]。
 
 
 
