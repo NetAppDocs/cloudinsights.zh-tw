@@ -172,7 +172,10 @@ password: <password from docker secret step above>
 ....
 從Cloud Insights 「畫面」中拉出「運算子」泊塢視窗影像。請確定_NetApp-監 控_版本編號為最新版本：
 
- docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
+....
 使用下列命令尋找_NetApp-監 控_<版本>欄位：
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
