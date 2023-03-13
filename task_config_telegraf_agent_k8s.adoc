@@ -453,7 +453,7 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：
 
-[cols="2*"]
+[cols="stretch"]
 |===
 | 問題： | 試用： 
 
@@ -480,5 +480,17 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 | 出現「ImagePullBackOff」錯誤 | 如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <<using-a-custom-or-private-docker-repository,瞭解更多資訊>> 關於設定自訂/私有repo。 
+
+
+| 我的監控操作員部署有問題、目前的文件無法協助我解決問題。  a| 
+擷取或記下下列命令的輸出、然後聯絡技術支援團隊。
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
