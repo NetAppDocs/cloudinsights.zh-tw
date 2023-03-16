@@ -8439,7 +8439,6 @@
   <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">若要開始探索、請從ONTAP 主功能表中選取*《SEssentials》* Cloud Insights 。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">適用於Essentials的概述儀表板ONTAP</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88c28e828c24faa9cbd8f5219c054d7e" category="paragraph">「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。如果您的基礎架構中有任何控制器在高溫度下執行、ONTAP 那麼將會顯示這些控制器。</block>
   <block id="39ef60f7b3d6d0c88b10d90a3775807a" category="paragraph">資訊圖表可讓您瞭解一段時間後的效能、以及容量使用量的細分。</block>
   <block id="192d723a70e1a973bee8e50c84ffa947" category="paragraph">每個圖表或資料點都可作為探索或調查的起點。</block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">附註：「從天到完整」的「0」（零）數表示、「從天到完整」的預估天數大於90天。換句話說、您的系統不可能隨時耗盡空間。</block>
@@ -10797,4 +10796,5 @@
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">我的監控操作員部署有問題、目前的文件無法協助我解決問題。</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">擷取或記下下列命令的輸出、然後聯絡技術支援團隊。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
+  <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。</block>
 </blocks>
