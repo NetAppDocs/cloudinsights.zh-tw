@@ -143,6 +143,7 @@ image:SubscriptionCompareTable-2.png["訂購選項"]
 
 請注意、下列資料收集器的計量單位是以不同的原始TiB與受管理單元速率。這些資料收集器上未格式化容量的每40TiB會被計入1個管理單元（MU）：
 
+* AWS S3
 * Dell EMC ECS
 * Hitachi內容平台
 * IBM Cleverafe
