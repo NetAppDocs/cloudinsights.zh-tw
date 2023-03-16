@@ -2882,12 +2882,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">已存在且名稱、順序編號等相同的fpolicy將會產生錯誤。</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">指令碼在執行時突然停止。</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">執行指令碼的範例如下所示：</block>
-  <block id="414578a6fb051cf762571b6abc3062a7" category="cell">問：我可以增加執行指令碼的SVM數量嗎？</block>
-  <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">答：可以。只要編輯指令碼、並將SVM的最大數量從5變更為任何所需的數量即可。</block>
-  <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">問：如果增加SVM數量、是否會增加指令碼的執行時間？</block>
-  <block id="f64044d833e646b68fe903a7d7204ce9" category="cell">答：不可以指令碼最多可執行5分鐘、即使SVM數量增加也沒問題。</block>
-  <block id="aeb20f65fbd8c09dda397cfc3a4d6120" category="cell">答：可以。您需要編輯指令碼、並將SVM的最大數量從5變更為任何所需的數量。</block>
-  <block id="e90fb31b8ec18f1817a08fecf70d9418" category="cell">答：不可以指令碼最多可執行5分鐘、即使SVM數量增加也沒問題。</block>
   <block id="99f1acff1d2f1ebc7fdf8742d4379f66" category="summary">建立Webhook、針對Slack的效能或庫存臨界值發出警示</block>
   <block id="24b87c1b869473ea3ff363d0080b7620" category="doc">Slack的Webhook範例</block>
   <block id="4bee282a8c22686bb3e6595e1333fbdc" category="paragraph">Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定Slack Webhooks的範例。</block>
@@ -10744,8 +10738,6 @@
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">「所有活動」頁面可協助您瞭解在工作負載安全性環境中、對實體所執行的行動。</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">活動歷程記錄會保留13個月、適用於作用中的工作負載安全環境。</block>
-  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">問：如果我在已設定為工作負載安全性的SVM上執行此指令碼、它是否只使用SVM上現有的fpolicy組態、或是設定暫用的組態並執行此程序？</block>
-  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">答：即使已設定為工作負載安全性的SVM、「事件率檢查器」仍可正常執行。應該沒有影響。</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">請參閱OnCommand Cloud Volumes ONTAP 《支援功能支援文件》、以設定單一節點/ HA AWS執行個體來裝載工作負載安全代理程式：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">在AWS中、請使用下列步驟設定要用作工作負載安全代理程式的機器：</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">請使用下列步驟、將機器設定為工作負載安全代理程式：</block>
@@ -10797,4 +10789,16 @@
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">擷取或記下下列命令的輸出、然後聯絡技術支援團隊。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。</block>
+  <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">問題</block>
+  <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">答</block>
+  <block id="d0361ec8dd55377b979879d46798dd21" category="cell">如果我在已設定為工作負載安全性的SVM上執行此指令碼、它是否只使用SVM上現有的fpolicy組態、或是設定暫用的組態並執行程序？</block>
+  <block id="dd6c1727e8619e941f226765e3ee28ed" category="cell">即使已設定為工作負載安全性的SVM、事件率檢查器仍可正常執行。應該沒有影響。</block>
+  <block id="865bc2d6c9cc50637b3abc05118e4574" category="cell">我可以增加執行指令碼的SVM數量嗎？</block>
+  <block id="d2a27dbe2bebb82fe8bccf11a4f69d9b" category="cell">是的。只要編輯指令碼、並將SVM的最大數量從5變更為任何所需的數量即可。</block>
+  <block id="e94aec426eb2ace8240d7abaeefa8597" category="cell">如果增加SVM數量、是否會增加指令碼的執行時間？</block>
+  <block id="3367c7848384adc0d8f9445dcca8b87e" category="cell">不可以指令碼最多可執行5分鐘、即使SVM數量增加也沒問題。</block>
+  <block id="49eeed91da2974d7d682c9398b2adbd0" category="cell">是的。您需要編輯指令碼、並將SVM的最大數量從5變更為任何所需的數量。</block>
+  <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">不可以指令碼最多可執行5分鐘、即使SVM數量增加也沒問題。</block>
+  <block id="ce3d712deda180dd445bfed60562d712" category="cell">如果我使用現有的代理程式執行「事件率檢查器」、會發生什麼事？</block>
+  <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">針對已存在的代理程式執行「事件率檢查器」、可能會增加SVM的延遲。這種增加是在事件率檢查器執行期間的暫時性增加。</block>
 </blocks>
