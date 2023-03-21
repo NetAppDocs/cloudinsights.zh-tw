@@ -10801,4 +10801,8 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">不可以指令碼最多可執行5分鐘、即使SVM數量增加也沒問題。</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">如果我使用現有的代理程式執行「事件率檢查器」、會發生什麼事？</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">針對已存在的代理程式執行「事件率檢查器」、可能會增加SVM的延遲。這種增加是在事件率檢查器執行期間的暫時性增加。</block>
+  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">以下是顯示操作員在您環境中所在位置的高階圖例。視您的環境而定、_Proxy Server_可能是必要的、也可能不是必要的。</block>
+  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">顯示駐留在Kubernetes叢集中的NKMO的高層地圖、其中箭頭顯示資料如何從主機、Proxy伺服器傳輸到叢集、全部都會循環到Cloud Insights Fesk</block>
+  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">操作員（NKMO）和資料收集器都是從Cloud Insights 《The》介紹中心下載。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
 </blocks>

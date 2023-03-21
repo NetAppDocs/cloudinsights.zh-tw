@@ -17,6 +17,12 @@ toc::[]
 
 image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 
+以下是顯示操作員在您環境中所在位置的高階圖例。視您的環境而定、_Proxy Server_可能是必要的、也可能不是必要的。
+
+image:CI_Diagram_with_NKMO.png["顯示駐留在Kubernetes叢集中的NKMO的高層地圖、其中箭頭顯示資料如何從主機、Proxy伺服器傳輸到叢集、全部都會循環到Cloud Insights Fesk"]
+
+操作員（NKMO）和資料收集器都是從Cloud Insights 《The》介紹中心下載。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights
+
 
 
 == 安裝NetApp Kubernetes監控操作員之前
