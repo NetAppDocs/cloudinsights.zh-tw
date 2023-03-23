@@ -185,8 +185,6 @@ docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<vers
 使用下列命令尋找_NetApp-監 控_<版本>欄位：
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
-根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。請確認儲存庫中這些影像的目錄路徑與Docker中的目錄路徑一致。<cluster>.cloudinsights.netapp.com。
-
 將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像。請參閱 <<before-installing-the-netapp-kubernetes-monitoring-operator,先決條件>> 以上章節提供這些元件的最新版本：
 
 ....
@@ -200,6 +198,8 @@ docker pull docker.<cluster>.cloudinsights.netapp.com/kube-state-metrics:<kube-s
 docker pull docker.<cluster>.cloudinsights.netapp.com/fluent-bit:<fluent-bit version>
 docker pull docker.<cluster>.cloudinsights.netapp.com/kubernetes-event-exporter:<kubernetes-event-exporter version>
 ....
+根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。請確認儲存庫中這些影像的目錄路徑與Docker中的目錄路徑一致。<cluster>.cloudinsights.netapp.com。
+
 編輯監控操作員部署、並修改所有映像參照、以使用新的Docker repo位置：
 
 ....
