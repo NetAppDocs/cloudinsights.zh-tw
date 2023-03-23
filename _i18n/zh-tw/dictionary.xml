@@ -1682,7 +1682,6 @@
   <block id="3910d1d80274049b67c375b0000311fb" category="paragraph">從上述命令的輸出中複製/貼上_.dockerconfigjson__的值。</block>
   <block id="683b8010d170fc689e256c2461d9ed7e" category="paragraph">解碼Docker機密：</block>
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">登入Docker儲存庫：</block>
-  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果已啟用Fluent位元、請同時下載：</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在_spec__區段中、進行下列變更：</block>
   <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state指標計數器</block>
@@ -10805,4 +10804,5 @@
   <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">顯示駐留在Kubernetes叢集中的NKMO的高層地圖、其中箭頭顯示資料如何從主機、Proxy伺服器傳輸到叢集、全部都會循環到Cloud Insights Fesk</block>
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">操作員（NKMO）和資料收集器都是從Cloud Insights 《The》介紹中心下載。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
+  <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。請確認儲存庫中這些影像的目錄路徑與Docker中的目錄路徑一致。&lt;cluster&gt;.cloudinsights.netapp.com。</block>
 </blocks>
