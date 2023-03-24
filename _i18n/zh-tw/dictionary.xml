@@ -10805,4 +10805,9 @@
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">操作員（NKMO）和資料收集器都是從Cloud Insights 《The》介紹中心下載。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。請確認儲存庫中這些影像的目錄路徑與Docker中的目錄路徑一致。&lt;cluster&gt;.cloudinsights.netapp.com。</block>
+  <block id="560b3269d8d097187c911ee417754210" category="summary">設定Rubrik CDM資料收集器。</block>
+  <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM資料收集器</block>
+  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">使用RRubrik CDM資料收集器來收集庫存和效能資料Cloud Insights 。</block>
+  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">這被視為_預覽_收集器、而且此資訊可能會在變更之前發生。</block>
+  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">本頁即將推出。</block>
 </blocks>
