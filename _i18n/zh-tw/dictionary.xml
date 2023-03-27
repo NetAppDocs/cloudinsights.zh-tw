@@ -5438,10 +5438,6 @@
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">記錄監視器</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">記錄監視器篩選器不可為空白。</block>
-  <block id="454176c970e70022beb38f8813bea495" category="section-title">定義警示行為</block>
-  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">選擇觸發記錄警示時要如何警示。您可以根據上述篩選條件、將監視器設定為警示_警告_、_嚴重_或_資訊_嚴重性。</block>
-  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">定義要監控的記錄行為</block>
-  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定義警示解決行為</block>
   <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">您可以選擇如何解決記錄監控警示。您有三種選擇：</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*立即解決*：立即解決警示、無需採取進一步行動</block>
@@ -10810,4 +10806,7 @@
   <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">使用RRubrik CDM資料收集器來收集庫存和效能資料Cloud Insights 。</block>
   <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">這被視為_預覽_收集器、而且此資訊可能會在變更之前發生。</block>
   <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">本頁即將推出。</block>
+  <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">RRubrik CDM儲存設備</block>
+  <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
+  <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">RRubrik CDM</block>
 </blocks>

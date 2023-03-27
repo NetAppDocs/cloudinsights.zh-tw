@@ -383,6 +383,8 @@ sidebar:
         url: "/task_dc_pure_flasharray.html"
       - title: Red Hat
         url: "/task_dc_redhat_virtualization.html"
+      - title: RRubrik CDM
+        url: "/task_dc_rubrik_cdm.html"
       - title: VMware
         url: "/task_dc_vmware.html"
     - title: 資料收集器參考資料-服務
