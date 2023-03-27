@@ -5439,7 +5439,6 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">記錄監視器</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">記錄監視器篩選器不可為空白。</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定義警示解決行為</block>
-  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">您可以選擇如何解決記錄監控警示。您有三種選擇：</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*立即解決*：立即解決警示、無需採取進一步行動</block>
   <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*根據時間解析*：警示會在指定時間過後解決</block>
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*根據記錄項目解析*：當發生後續記錄活動時、警示便會解決。例如、當物件記錄為「可用」時。</block>
@@ -10809,4 +10808,7 @@
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">RRubrik CDM儲存設備</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">RRubrik CDM</block>
+  <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">定義警示行為</block>
+  <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">您可以建立嚴重性等級為_critical_、_Warning_或_Inforational_的監控器、以便在上述條件發生一次（即立即）時發出警示、或等到情況發生2次以上時發出警示。</block>
+  <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">您可以選擇如何解決記錄監控警示。您有三種選擇：</block>
 </blocks>
