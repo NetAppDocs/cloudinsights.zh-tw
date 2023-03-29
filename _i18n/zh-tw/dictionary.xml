@@ -8451,7 +8451,6 @@
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「可觀察性」或「安全性」的角色。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必須以帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">升級</block>
-  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">下列命令必須可用：_curl_、_Sudo _、_openssl_、_shap256sum_和_kuvectl_。若要獲得最佳結果、請將這些命令新增至路徑。</block>
   <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">若要停止NetApp Kubernetes監控操作員：</block>
   <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">若要啟動NetApp Kubernetes監控操作員：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
@@ -10811,4 +10810,8 @@
   <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">定義警示行為</block>
   <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">您可以建立嚴重性等級為_critical_、_Warning_或_Inforational_的監控器、以便在上述條件發生一次（即立即）時發出警示、或等到情況發生2次以上時發出警示。</block>
   <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">您可以選擇如何解決記錄監控警示。您有三種選擇：</block>
+  <block id="af943d1d81f743ab6e7c9bcbe3a8c6e9" category="summary">NKMO Clusterrole的Yaml檔案範例</block>
+  <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMO Clusterrole Yaml範例</block>
+  <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">NetApp Kubernetes監控操作員（NKMO）的_kubectl_元件必須至少設定下列Kubernetes物件的存取權限：代理程式、叢集角色、叢集角色繫結、customresourcetings、部署、 命名空間、角色、角色繫結、機密、服務帳戶、 和服務。以下是叢集角色的範例、具有這些最低權限。</block>
+  <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">下列命令必須可用：_curl、Sudo、openssl、shap256sum、_和_kuvecl_。若要獲得最佳結果、請將這些命令新增至路徑。請注意、_kubectl_至少需要設定存取下列Kubernetes物件的權限：_agents、clusterrolebings、clusterrolebings、customresourcegies定義、部署、 命名空間、角色、角色繫結、機密、服務帳戶、_和_service_。請參閱 <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> 例如、具有這些最小叢集角色權限的.yaml檔案。</block>
 </blocks>
