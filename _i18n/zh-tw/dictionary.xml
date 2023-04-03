@@ -5439,11 +5439,7 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">記錄監視器</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">記錄監視器篩選器不可為空白。</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定義警示解決行為</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*立即解決*：立即解決警示、無需採取進一步行動</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*根據時間解析*：警示會在指定時間過後解決</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*根據記錄項目解析*：當發生後續記錄活動時、警示便會解決。例如、當物件記錄為「可用」時。</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警示解析度</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">選取通知類型和收件者</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">在「設定團隊通知」區段中、您可以選擇是透過電子郵件或Webhook警示團隊。</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">選擇警示方法</block>
@@ -10824,4 +10820,11 @@
   <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">檢查叢集設定是否正確、收集器是否指向單一叢集。</block>
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">我收到磁碟API傳回更多資料的警告</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">請洽詢支援部門以取得額外資料。</block>
+  <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">立即解決</block>
+  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並抑制此監視器所產生的所有後續警示、直到資料保留期間結束為止。</block>
+  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除</block>
+  <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">警示解析選項</block>
+  <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * * 立即解決 * ：警示會立即解決、無需採取進一步行動 * * 根據時間解決問題 * ：警示會在指定時間過後解決 * 根據記錄項目解決 * ：警示會在後續的記錄活動發生時解決。例如、當物件記錄為「可用」時。</block>
+  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
 </blocks>
