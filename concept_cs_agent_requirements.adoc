@@ -108,6 +108,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 
 
 | TCP | 7. | SVM資料LIF IP位址 | 雙向 | 在功能性和工作負載安全性之間實現雙向ONTAP 。代理程式Ping SVM LIF。 
+
+
+| SSH | 22 | 叢集管理 | 雙向 | CIFS/SMB 使用者封鎖所需。 
 |===
 
 

@@ -10832,4 +10832,6 @@
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您完成公司環境的建立。</block>
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在此試用期間、您可以探索 Cloud Insights 提供的功能。</block>
+  <block id="1eb5ae63609e68a11106494d272615bf" category="cell">叢集管理</block>
+  <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB 使用者封鎖所需。</block>
 </blocks>
