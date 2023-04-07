@@ -2709,21 +2709,14 @@
   <block id="f5e86717b7f98bd7a5fa01557cb08665" category="cell">可能原因：*認證不正確。* IP位址不正確。*網路問題。*儲存設備可能當機或無回應。可能的解決方案：*驗證輸入的認證資料和IP位址。*嘗試使用SSH用戶端與儲存設備通訊。</block>
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">註冊Cloud Insights 以利執行功能、並創造您的環境。</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">NetApp新進人員Cloud Insights</block>
-  <block id="6329d89c7b2b3701d83d3ed83052a76e" category="paragraph">開始使用Cloud Insights NetApp之前、您必須先在* NetApp Cloud Centr*入口網站上註冊。如果您已經登入NetApp Cloud Central、您可以透過Cloud Insights 幾個快速步驟、開始免費試用版的VMware。</block>
   <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">建立您的NetApp Cloud Central帳戶</block>
   <block id="f8345b18954fdb87b8ec25957d81a0fa" category="inline-link">* NetApp Cloud Centr*</block>
-  <block id="b774e3c992e27992438d1136422802d2" category="paragraph">若要註冊以存取NetApp的雲端服務、請前往<block ref="48193388be73f88a2882d9236b5e6933" category="inline-link-rx"></block> 然後按一下*註冊*。</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">輸入有效的商業電子郵件地址、然後選擇密碼。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">輸入您的公司名稱和全名。</block>
-  <block id="4c06cb4a1ddf48a942b31fd3adc6beac" category="list-text">接受條款與條件、然後按一下*註冊*。</block>
-  <block id="492ed91f9d2947561b2194ab07a36546" category="paragraph">接著您將前往NetApp的雲端產品頁面。</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">選取Cloud Insights 「</block>
   <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">如果我已經登入NetApp Cloud、該怎麼辦？</block>
-  <block id="f1ce126ef5bc99b772d2bf676e9623e3" category="paragraph">如果您已經擁有NetApp Cloud Central帳戶、只要在上選擇*登入*即可<block ref="48193388be73f88a2882d9236b5e6933" category="inline-link-rx"></block> 入口網站頁面。</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。</block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">開始Cloud Insights 免費試用</block>
-  <block id="d848196a84667339542dcb58ece628d0" category="paragraph">如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。接著、將會建立貴公司的環境。Cloud Insights</block>
-  <block id="bcd7dafbb46dcec5f527627b1114f261" category="paragraph">環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在本試用版中、您可以探索Cloud Insights 所有的功能。</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">開始訂購</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">在免費試用期間、您可以 <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> 隨時都能Cloud Insights 實現。訂閱後、Cloud Insights 您可以根據目前的訂閱內容來使用功能不完整的功能。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">登入後立即使用</block>
@@ -10827,4 +10820,16 @@
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * * 立即解決 * ：警示會立即解決、無需採取進一步行動 * * 根據時間解決問題 * ：警示會在指定時間過後解決 * 根據記錄項目解決 * ：警示會在後續的記錄活動發生時解決。例如、當物件記錄為「可用」時。</block>
   <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
+  <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* （前身為 Cloud Central ）入口網站。如果您已經登入NetApp Cloud Central、您可以透過Cloud Insights 幾個快速步驟、開始免費試用版的VMware。</block>
+  <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">* NetApp BlueXP*</block>
+  <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">若要開始使用 NetApp 的雲端服務、請前往<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> 然後按一下 * 開始使用 * 。</block>
+  <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果您尚未註冊、請選取 * 註冊 *</block>
+  <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">接受條款與條件、然後選擇 * 繼續 * 。</block>
+  <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXP 將引導您完成入門。</block>
+  <block id="263bd04f886f846996f5ed624502bf8f" category="inline-link">* NetApp BlueXPl*</block>
+  <block id="361b2969b0cdb055eb84b98514758bea" category="paragraph">擁有 NetApp BlueXP 帳戶後、只要在上選擇 * 登入 * 即可<block ref="87139ca7d238418aa56c6f30bb2cbebf" category="inline-link-rx"></block> 入口網站頁面。</block>
+  <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">BlueXP 上的 Cloud Insights 免費試用版</block>
+  <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您完成公司環境的建立。</block>
+  <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在此試用期間、您可以探索 Cloud Insights 提供的功能。</block>
 </blocks>

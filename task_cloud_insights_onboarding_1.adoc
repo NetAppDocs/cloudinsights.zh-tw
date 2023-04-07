@@ -8,7 +8,7 @@ summary: 註冊Cloud Insights 以利執行功能、並創造您的環境。
 
 
 [role="lead"]
-開始使用Cloud Insights NetApp之前、您必須先在* NetApp Cloud Centr*入口網站上註冊。如果您已經登入NetApp Cloud Central、您可以透過Cloud Insights 幾個快速步驟、開始免費試用版的VMware。
+在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* （前身為 Cloud Central ）入口網站。如果您已經登入NetApp Cloud Central、您可以透過Cloud Insights 幾個快速步驟、開始免費試用版的VMware。
 
 
 toc::[]
@@ -16,34 +16,34 @@ toc::[]
 
 == 建立您的NetApp Cloud Central帳戶
 
-若要註冊以存取NetApp的雲端服務、請前往 https://cloud.netapp.com["* NetApp Cloud Centr*"^] 然後按一下*註冊*。
+若要開始使用 NetApp 的雲端服務、請前往 https://cloud.netapp.com["* NetApp BlueXP*"^] 然後按一下 * 開始使用 * 。
 
+* 如果您尚未註冊、請選取 * 註冊 *
 * 輸入有效的商業電子郵件地址、然後選擇密碼。
 * 輸入您的公司名稱和全名。
-* 接受條款與條件、然後按一下*註冊*。
+* 接受條款與條件、然後選擇 * 繼續 * 。
+* BlueXP 將引導您完成入門。
 
-
-接著您將前往NetApp的雲端產品頁面。
-
-選取Cloud Insights 「
 
 
 
 === 如果我已經登入NetApp Cloud、該怎麼辦？
 
-如果您已經擁有NetApp Cloud Central帳戶、只要在上選擇*登入*即可 https://cloud.netapp.com["* NetApp Cloud Centr*"^] 入口網站頁面。
+擁有 NetApp BlueXP 帳戶後、只要在上選擇 * 登入 * 即可 https://cloud.netapp.com["* NetApp BlueXPl*"^] 入口網站頁面。
 
 輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。
 
 選取Cloud Insights 「
 
+image:BlueXP_CloudInsights.png["BlueXP 上的 Cloud Insights 免費試用版"]
+
 
 
 == 開始Cloud Insights 免費試用
 
-如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。接著、將會建立貴公司的環境。Cloud Insights
+如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您完成公司環境的建立。
 
-環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在本試用版中、您可以探索Cloud Insights 所有的功能。
+環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在此試用期間、您可以探索 Cloud Insights 提供的功能。
 
 在免費試用期間、您可以 link:concept_subscribing_to_cloud_insights.html["開始訂購"] 隨時都能Cloud Insights 實現。訂閱後、Cloud Insights 您可以根據目前的訂閱內容來使用功能不完整的功能。
 
