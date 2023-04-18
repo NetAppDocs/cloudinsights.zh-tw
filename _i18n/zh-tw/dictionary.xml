@@ -7657,8 +7657,6 @@
   <block id="aa2a179e15d11223c669195106a7e555" category="paragraph">在某些資產頁面上、摘要區段包含可檢視資產拓撲及其連線的連結。</block>
   <block id="575c9466566e751977f9292115eb4416" category="paragraph">拓撲適用於下列資產類型：</block>
   <block id="52e59638e3e7203a9a8c3071303759c9" category="paragraph"><block ref="52e59638e3e7203a9a8c3071303759c9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">嘗試連線至Azure CVO時、我看到下列錯誤：「The Certificate Signing request to Broker / manager CA service was not completed（未完成代理/管理器CA服務的憑證簽署要求）」。</block>
-  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">確認您的Cloud Manager Proxy設定已設定為Cloud Manager私有IP。Cloud Manager安裝可能會設定不同的Proxy。當Proxy設定為正確的IP、並在Cloud Connector對話方塊中參考Proxy後、就Cloud Insights 能成功連線至效益管理系統。</block>
   <block id="b11938f62b1381c70d7c54a31443f412" category="summary">設定Brocade FC交換器資料收集器。</block>
   <block id="dd95e4c7a837d3b569bf8739a342756b" category="doc">Brocade FC交換器資料收集器</block>
   <block id="371bcf524307344dd6166c1f092ba8ee" category="paragraph">支援使用Brocade FC交換器（SSH）資料來源來探索執行因素作業系統（FOS）韌體4.2及更新版本之Brocade或重新品牌交換器裝置的庫存。Cloud Insights同時支援FC交換器和存取閘道模式的裝置。</block>
@@ -10377,7 +10375,6 @@
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">資料來源：與硬體或軟體堆疊進行通訊的模組。它由在AU電腦上執行的組態和程式碼所組成、可與裝置進行通訊。</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自訂或私有泊塢視窗儲存庫</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">將所有開放原始碼相依性下載到您的Private Docker登錄。需要下載下列開放原始碼映像。請參閱 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 以上章節提供這些元件的最新版本：</block>
-  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">設定Dell EMC Isilon / PowerScale REST資料收集器。</block>
   <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">VMware使用Dell EMC Isilon / PowerScale REST資料收集器、從Dell EMC Isilon或PowerScale儲存設備取得庫存和效能資料Cloud Insights 。</block>
   <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">OneFS檔案系統</block>
@@ -10834,4 +10831,5 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在此試用期間、您可以探索 Cloud Insights 提供的功能。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">叢集管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB 使用者封鎖所需。</block>
+  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">自 2023 年 4 月 4 日起、 Cloud Insights 不再提供此資料收集器。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
