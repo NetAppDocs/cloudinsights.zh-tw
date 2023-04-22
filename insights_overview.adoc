@@ -28,3 +28,12 @@ Insights可讓您深入瞭解資源使用量、以及資源使用量對其他資
 === Kubernetes命名空間不足
 
 Kubernetes命名空間不足空間Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。 link:insights_k8s_namespaces_running_out_of_space.html["深入瞭解"]
+
+
+
+=== 回收 ONTAP Cold Storage
+
+回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。 link:insights_reclaim_ontap_cold_storage.html["深入瞭解"]
+
+
+NOTE: 這是_預覽_功能、可能會隨著時間而改變、因為已進行改善。 link:/concept_preview_features.html["深入瞭解"] 關於Cloud Insights 本產品的功能。

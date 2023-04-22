@@ -41,7 +41,7 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 
 您可以按一下功能表中的* Reports*連結來存取Cloud Insights 《S菜 色報告》。
 
-您將會進入報告介面。本報告引擎採用IBM Cognos分析技術。Cloud Insights使用您的報告認證登入。
+您將會進入報告介面。本報告引擎採用IBM Cognos分析技術。Cloud Insights
 
 
 

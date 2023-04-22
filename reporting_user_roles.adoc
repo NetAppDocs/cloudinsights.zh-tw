@@ -60,6 +60,18 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 
 
 | 執行管理工作 | 否 | 否 | 是的 
+
+
+| 新增 / 編輯 HTML 項目 | 否 | 否 | 是的 
+
+
+| 以 HTML 項目執行報告 | 是的 | 是的 | 是的 
+
+
+| 新增 / 編輯自訂 SQL | 否 | 否 | 是的 
+
+
+| 使用自訂 SQL 執行報告 | 是的 | 是的 | 是的 
 |===
 
 
@@ -82,7 +94,12 @@ NOTE: 如果您變更Cloud Insights 使用者在《不同步報告》（亦即Co
 
 若要確保報告得以保留、請使用下列步驟、將所有報告從「我的內容」移轉至「團隊內容」。在您的環境中啟用SSO之前、您必須先執行此動作：
 
-. 在_Team Content_建立新資料夾
+. 瀏覽至 * 功能表 > 內容 *
+
+
+image:Reporting_Menu.png["Cognos 左上角選單"]
+
+. 在 *_Team Content_* 中建立新資料夾
 +
 .. 如果已建立多位使用者、請為每位使用者建立個別的資料夾、以避免覆寫名稱重複的報告
 

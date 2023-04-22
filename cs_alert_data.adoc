@@ -11,6 +11,9 @@ summary: 當使用者活動異常或可能遭受攻擊時、「工作負載安�
 [role="lead"]
 工作負載安全警示頁面會顯示最近攻擊和/或警告的時間表、並可讓您檢視每個問題的詳細資料。
 
+
+NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
+
 image:CloudSecureAlertsListPage.png["警示清單"]
 
 

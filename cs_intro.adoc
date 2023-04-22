@@ -12,6 +12,9 @@ summary: 總覽
 利用可據以行動的內部威脅情報、協助保護資料Cloud Secure Cloud Insights 。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。
 
 
+NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
+
+
 
 == 可見度
 

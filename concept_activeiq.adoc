@@ -11,6 +11,9 @@ summary: 本產品可從NetApp收集風險資料Cloud Insights Active IQ
 [role="lead"]
 NetApp link:https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ"] 為NetApp客戶的硬體/軟體系統提供一系列視覺化、分析及其他支援相關服務。由NetApp回報的資料Active IQ 可加強系統問題的疑難排解、並提供與您的裝置相關的最佳化與預測分析。
 
+
+NOTE: Cloud Insights 聯邦版不提供 ActiveIQ 。
+
 針對任何由NetApp監控和回報的NetApp叢集式不知所面臨的*風險*。Cloud Insights Data ONTAP Active IQ針對儲存系統所回報的風險、Cloud Insights 會由效益管理系統自動收集、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增Cloud Insights 至功能不實、才能收集Active IQ 功能不實的風險資訊。
 
 不顯示不受監控且未經由效益分析報告的不適用的系統風險資料。Cloud Insights ONTAP Active IQ

@@ -8,8 +8,83 @@ keywords: features
 :allow-uri-read: 
 
 
-NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些有關使用介紹的最新功能。
+NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。
 
+
+NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少。在可能的情況下、文件中會記錄這些差異。
+
+
+
+== 2023 年 4 月
+
+
+
+=== Kubernetes 效能監控與地圖
+
+。 link:concept_kubernetes_performance_monitoring_and_map.html["_Kubernetes 網路效能與地圖 _"] 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
+
+主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
+
+顯示「投影片」詳細資料的工作負載地圖：
+
+image:Workload Map Example_withSlideout.png["工作負載對應範例顯示「 Slideout 」面板的詳細資料"]
+
+Kubernetes 效能監控與地圖以 A 的形式提供 link:concept_preview_features.html["預覽"] 功能。
+
+
+
+=== ONTAP Essentials 安全儀表板
+
+。 link:concept_ontap_essentials.html#security["安全性儀表板"] 讓您即時檢視目前的安全情況、並顯示硬體和軟體磁碟區加密、反勒索軟體狀態和叢集驗證方法的圖表。安全性儀表板的形式為 link:concept_preview_features.html["預覽"] 功能。
+
+image:OE_SecurityDashboard.png["ONTAP Essentials 安全儀表板"]
+
+
+
+=== 回收 ONTAP Cold Storage
+
+回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。
+
+image:Cold_Data_Example_1.png["Cold Data Insight 範例建議"]
+
+有了這個 Insight 、您可以回答下列問題：
+
+* 儲存叢集上有多少冷資料位於（ a ）高成本 SSD 磁碟、（ b ） HDD 磁碟和（ c ）虛擬磁碟上？
+* 在未最佳化的儲存設備方面、哪些工作負載是最大的貢獻者？
+* 在指定工作負載上、資料處於冷狀態的持續時間（以天為單位）為何？
+
+
+回收 ONTAP Cold Storage_ 被視為 A link:concept_preview_features.html["_預覽_"] 功能、因此可能有所變更。
+
+
+
+=== 訂閱通知也會控制橫幅訊息
+
+現在、設定訂閱通知（管理 > 通知）的收件者也會控制誰會看到與訂閱相關的產品內橫幅通知。
+
+image:Subscription_Expiring_Banner.png["2 天內到期的訂閱橫幅範例"]
+
+
+
+=== 報告有全新的外觀
+
+您會注意到 Cloud Insights 報告畫面有新的外觀、有些功能表導覽已經變更。這些畫面和導覽變更已在目前的狀態下更新 link:reporting_overview.html["報告文件"]。
+
+image:Reporting_Menu.png["全新報告功能表外觀"]
+
+
+
+=== 依預設會暫停監視器
+
+對於新的 Cloud Insights 環境、請注意 link:task_system_monitors.html["系統定義的監視器"] 依預設、請勿傳送警示通知。您需要為任何想要提醒您的監視器啟用通知、方法是為監視器新增一或多種傳送方法。對於現有的 Cloud Insights 環境、目前處於「 _Paused 」（暫停）狀態的任何系統定義監視器、其預設的 _global_ 通知收件者清單都已移除。使用者定義的通知會保持不變、目前作用中系統定義的監視器也會保持通知設定。
+
+
+
+=== 尋找 API 量測標籤？
+
+API 量測已從「訂閱」頁面移至「 * 管理 > API 存取 * 」頁面。
+
+'''
 
 
 == 2023年3月
@@ -22,6 +97,7 @@ Cloud Connection ONTAP for Re9.9+資料收集器已過時。從2023年4月4日�
 
 在2023年4月4日之前、您必須為ONTAP Cloud Connection目前收集的ONTAP 所有其他系統、設定新的NetApp支援資料管理軟體資料收集器。 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["深入瞭解"]。
 
+'''
 
 
 == 2023年1月
@@ -42,6 +118,7 @@ Cloud Connection ONTAP for Re9.9+資料收集器已過時。從2023年4月4日�
 
 欄選取、重新命名欄及單位轉換等資料自訂功能現在也包含在新的匯出功能中。
 
+'''
 
 
 == 2022年12月

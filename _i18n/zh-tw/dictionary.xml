@@ -1520,7 +1520,6 @@
   <block id="a3a23e64a26caa2ba68aabe6a653f8a3" category="paragraph">如果您是目前的Premium Edition客戶、系統不會自動為您的環境啟用SSO。啟用SSO時、報告入口網站（Cognos）的系統管理員使用者即不再存在。這表示「我的內容_」資料夾中的任何報告都會移除、必須在「團隊內容_」中重新安裝或重新建立。此外、一旦啟用SSO、就必須設定排程報告。</block>
   <block id="64e8aee8ab5bbf42a82844d113285456" category="section-title">我應該採取哪些步驟來準備現有環境以啟用SSO？</block>
   <block id="30cf09810334fcbe4d4ece63c4a34c1f" category="paragraph">若要確保報告得以保留、請使用下列步驟、將所有報告從「我的內容」移轉至「團隊內容」。在您的環境中啟用SSO之前、您必須先執行此動作：</block>
-  <block id="08ea2776accd4e01e2828e3d5d44a9d1" category="list-text">在_Team Content_建立新資料夾</block>
   <block id="380c82a01daf44bff25a9fba8565a8fc" category="list-text">如果已建立多位使用者、請為每位使用者建立個別的資料夾、以避免覆寫名稱重複的報告</block>
   <block id="71dbbbd4c0b2a1a14af0bc31bd294fab" category="list-text">瀏覽至「我的內容」</block>
   <block id="bdb9b0ef0c1a59ececa6a3b9a7d1f701" category="list-text">選取您要保留的所有報告。</block>
@@ -3311,10 +3310,6 @@
   <block id="a8a86b33ad8223d924704394aad3adbd" category="paragraph">支援將使用者與業務單位建立關聯、藉此在報告中容納多個租賃。Cloud Insights有了這項功能、系統管理員可以根據使用者的屬性或其所屬關係來分隔資料或報告。</block>
   <block id="88c37d058635eec215d68739ac39dc69" category="section-title">瀏覽至預先定義的報告</block>
   <block id="bf88a0d937dfcacb00859fb5c0c922bd" category="paragraph">當您開啟報告入口網站時、「團隊內容」資料夾是您在Cloud Insights 「團隊報告」中選擇所需資訊類型的起點。</block>
-  <block id="c925ffafa6fa8b4c91e482b581e7d375" category="list-text">在左側導覽窗格中、按一下*團隊內容*、然後選取您要使用的資訊類別。</block>
-  <block id="8e0570fe15f2f312237d21663317731c" category="list-text">按一下「*報告*」以存取預先定義的報告。</block>
-  <block id="c0c31bfff362ae8c60e501dcc0be99d6" category="inline-image-macro">團隊內容</block>
-  <block id="d1cc5675f0689ca7dd82760d2d0c9871" category="paragraph"><block ref="d1cc5675f0689ca7dd82760d2d0c9871" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a75b8fc33414d692d111110189a35f09" category="section-title">使用預先定義的報告來回答常見問題</block>
   <block id="e89ec6ed2e5ec193067c2a247878a526" category="paragraph">下列預先定義的報告可在*團隊內容&gt;報告*中找到。</block>
   <block id="1c3be015eacffb807e30cff683e0ab59" category="section-title">應用程式服務層級的容量與效能</block>
@@ -3410,7 +3405,6 @@
   <block id="cfbf1d79d6b8c6542bc0c846048611fc" category="summary">您可以使用Storage Manager儀表板來進行儲存服務的每日管理。</block>
   <block id="662f8024f59fc1c2dd8a5286eea38232" category="doc">Storage Manager儀表板</block>
   <block id="d74252d9dcf59266ed739f9e49821535" category="paragraph">Storage Manager儀表板提供集中化的視覺化功能、可讓您根據可接受的範圍和前幾天的活動、比較及對照一段時間內的資源使用量。只顯示儲存服務的關鍵效能指標、您就能決定如何維護資料中心。</block>
-  <block id="833bdc4fa8d8d77edfa382a57894811e" category="paragraph">儀表板包含七個元件、其中包含儲存環境特定層面的關聯式資訊。您可以深入瞭解儲存服務的各個層面、深入分析您最感興趣的部分。</block>
   <block id="290612199861c31d1036b185b4e69b75" category="section-title">摘要</block>
   <block id="9e741198d9bda7bfccfa30ddeab2c190" category="paragraph"><block ref="9e741198d9bda7bfccfa30ddeab2c190" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99dc92075be824170cbd69a2daf29053" category="paragraph">此元件顯示已使用與可用儲存容量、交換器連接埠總數與所連接的交換器連接埠數目、連接交換器連接埠使用率與總頻寬的總和、以及這些趨勢隨時間變化的每一項趨勢。您可以檢視實際使用率與低、中、高範圍的比較、以便根據目標來比較預測與所需實際值之間的使用率、並建立對比。對於容量和交換器連接埠、您可以設定此目標。此預測是根據目前成長率和您設定的日期的外推法來計算。根據未來使用量預測日期所預測的已用容量超過目標時、容量旁會出現警示（紅色圓圈）。</block>
@@ -3596,7 +3590,6 @@
   <block id="efc8210eb11247f37fcf2897dc53263a" category="paragraph">每個資料模型都包含一個簡單的資料倉儲和一個進階的資料倉儲：</block>
   <block id="a5aa36c6fb09127a07213f5b381bbdb2" category="list-text">簡單的資料倉儲可讓您快速存取最常用的資料元素、並僅包含資料倉儲資料的最後一張快照、不含歷史資料。</block>
   <block id="407f210e68fe30cea4ef4dea554d0fd0" category="list-text">進階資料倉儲可從簡單的資料倉儲中提供所有可用的值和詳細資料、並可存取歷史資料值。</block>
-  <block id="478d9af99c996cc38f70132f5044b464" category="section-title">容量資料模型</block>
   <block id="22f79478ed4e53c69293380f891e69da" category="paragraph">可讓您回答有關儲存容量、檔案系統使用率、內部Volume容量、連接埠容量、qtree容量、 和虛擬機器（VM）容量。容量資料模型是多種容量資料模型的容器。您可以使用此資料模式建立報告、回答各種類型的問題：</block>
   <block id="922ba5bc2df152d1f0d670699ad881cc" category="section-title">儲存與儲存資源池容量資料模型</block>
   <block id="927278981d00fa40a53e6212e1c393ac" category="paragraph">可讓您回答有關儲存容量資源規劃的問題、包括儲存與儲存資源池、以及實體與虛擬儲存資源池資料。這種簡單的資料模式可協助您回答與現場容量有關的問題、以及隨著時間推移、各層級和資料中心的儲存資源池容量使用量。如果您是容量報告的新手、您應該從這種資料模型開始著手、因為它是更簡單、目標明確的資料模型。您可以使用此資料模型回答類似下列的問題：</block>
@@ -3674,7 +3667,6 @@
   <block id="b40704fe20004f708ed3afff67273f92" category="list-text">對於每個複寫的Volume、來源和目標磁碟區是什麼？</block>
   <block id="bfbbdb9dea1c97fc36a593e74bd3e425" category="list-text">我的光纖通道主機HBA和交換器之間是否有任何韌體不相容或連接埠速度不相符的情形？</block>
   <block id="b1ad107dbc016a49d21a0a553064e9eb" category="section-title">效能資料模型</block>
-  <block id="2c0037a4f458b1653288179d2b2c5e33" category="paragraph">可讓您回答有關磁碟區、應用程式磁碟區、內部磁碟區、交換器、應用程式、 VM、VMDK、ESX與VM、主機和應用程式節點的比較。使用此資料模型、您可以建立報告來回答幾種效能管理問題：</block>
   <block id="4f1e2ea4b06b6d3cf73f63dfc0ecc6ea" category="list-text">在特定期間內、哪些磁碟區或內部磁碟區尚未使用或存取？</block>
   <block id="8a15c86ea5f9cccda5dd3efc2b4ef838" category="list-text">我們能否找出應用程式（未使用）儲存設備的任何可能設定錯誤？</block>
   <block id="eba647effca5d011df6a38b722a95aab" category="list-text">應用程式的整體存取行為模式為何？</block>
@@ -4145,18 +4137,9 @@
   <block id="e15fca67cd8338997729ad4099343915" category="summary">請使用此程序、使用預先定義Cloud Insights 的功能表建立報告。</block>
   <block id="8dff98a51b599d1388a5c2eaff15bfbd" category="doc">建立報告（範例）</block>
   <block id="d4bcce6f1018e3844c63df7e66d7890d" category="paragraph">請使用本範例中的步驟、針對多個資料中心的儲存設備和儲存資源池實體容量、產生簡單的報告。</block>
-  <block id="a1801f801edc477addfa72cc49ccf573" category="list-text">在工具列中、按一下*[+]*</block>
-  <block id="59bf3954bcfd5f9bfd016e3cf8803479" category="list-text">按一下*報告*</block>
-  <block id="cddc486f29821216ea7ad348e8aadccf" category="list-text">按一下*範本&gt;空白*</block>
-  <block id="ec942cb652c50e177ade375c500b71aa" category="list-text">按一下*主題&gt; Cool Blue &gt; OK*</block>
   <block id="f124bc31c83c04aa60264d612339edbb" category="paragraph">隨即顯示來源和資料索引標籤</block>
-  <block id="b9d8dd0b822b382386874a7cdfa4eb72" category="list-text">按一下*來源&gt;[+]*</block>
-  <block id="18c0de8298f8180e70ff987a207bd82d" category="list-text">在*開啟檔案*對話方塊中、按一下*團隊內容&gt;套件*</block>
   <block id="f3718446c55f94d227aa81c0b9bf24ce" category="paragraph">此時會顯示可用套件的清單。</block>
-  <block id="e82098718327470f02193d9f5891f501" category="list-text">按一下*儲存與儲存資源池容量&gt; Open*</block>
-  <block id="a9577202b939ee0a9f7200a7fb74fba9" category="list-text">按一下*[+]*</block>
   <block id="87e752a967467083d4981bc4b3003190" category="paragraph">隨即顯示報告的可用樣式。</block>
-  <block id="1aab8471ee8648f2a3ff747c26f7e9c4" category="list-text">按一下*清單*</block>
   <block id="cd78ef6fd8aa5d67dcb4ce7f78acd49c" category="paragraph">新增適當的清單和查詢名稱</block>
   <block id="a6b5442687cddc344ec895127143a7fb" category="list-text">展開_Physical Capacity</block>
   <block id="3aa60ff2250f7eef1d52bbeb7229eaba" category="list-text">擴充至_Data Center_的最低層級</block>
@@ -4164,8 +4147,6 @@
   <block id="0d20bdf74185b261c0eb2ec1ce73cbd4" category="list-text">展開_Capacity（MB）_</block>
   <block id="22219cf1dbbc4df1741cf160e6fb7598" category="list-text">將_Capacity（MB）_拖曳至「報告」上標。</block>
   <block id="d845844d6647ae7bfc6477302b52fa2f" category="list-text">將_使用容量（MB）_拖曳至報告上標。</block>
-  <block id="c5301693c4e792bcd5a479ef38fb8f8d" category="inline-image-macro">執行</block>
-  <block id="61d1e3c8a37b089f967558d71fdbe4f2" category="list-text">按一下以執行報告 <block ref="6e2bc7a972ed4bdb488d3eff43ebbc97" category="inline-image-macro-rx" type="image"></block> 並選擇輸出類型。</block>
   <block id="0c599bf60d5fb7c5c397b4b4fdaf5cd3" category="paragraph">系統會建立類似下列內容的報告：</block>
   <block id="e923fee50b18b26b2dd20a6daa41fe58" category="inline-image-macro">報告範例</block>
   <block id="56fc33e95aa7740fd8f2ae719f2b58a6" category="paragraph"><block ref="56fc33e95aa7740fd8f2ae719f2b58a6" category="inline-image-macro-rx" type="image"></block></block>
@@ -4429,29 +4410,11 @@
   <block id="e1039935b082dfd38ef43eb7fef4b452" category="doc">管理報告</block>
   <block id="ce2ce538c48e429c8dc98553649f3bbd" category="paragraph">您可以自訂報告的輸出格式與交付、設定報告內容或排程、以及電子郵件報告。</block>
   <block id="8bee38bef7beb0158135e68890b6cc17" category="paragraph">您可以自訂報告的格式和交付方法。</block>
-  <block id="c64e7d8f225e7e8875d2446a3b30bd34" category="list-text">在「更新報告入口網站」Cloud Insights 中、將滑鼠游標移到您要自訂的報告上、然後按一下*[...]*。</block>
-  <block id="58cae8bb2701afa19011bf0042646c9d" category="inline-image-macro">報告自訂功能表</block>
-  <block id="494954b0e50eef5daba3ecb926af7b30" category="paragraph"><block ref="494954b0e50eef5daba3ecb926af7b30" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a650cac6a2306a551f953daeb286482a" category="list-text">按一下*「內容」&gt;「排程」*</block>
-  <block id="4ca6beb431b20bb52a7a384ab50efd60" category="inline-image-macro">排程報告</block>
-  <block id="38346618e2fc2f8918c158292266df61" category="paragraph"><block ref="38346618e2fc2f8918c158292266df61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cd42e828c68c8b1d9a5e09dd0a14e4c" category="list-text">您可以設定下列選項：</block>
-  <block id="051dfe5da9d0c76aa324f95a3815f7d6" category="list-text">排程報告的執行時間。</block>
-  <block id="cf22ce177c2e9f117ba93d6199048cfc" category="list-text">格式化報告輸出。</block>
-  <block id="1db2de58e59ffb75632cdb40258c6e99" category="list-text">交付：列印、儲存或以電子郵件寄送報告。</block>
-  <block id="90404e539fba40120327d0c9cae007a2" category="list-text">語言定義報告的交付語言。</block>
-  <block id="206fabae859f1244bb49c6824742626d" category="list-text">按一下*「Create」（建立）*以使用您所做的選擇來產生報告。</block>
   <block id="8efb3c06ebeba51728acee2e4fa43ab0" category="section-title">將報告複製到剪貼簿</block>
   <block id="13a22d5d90d1796c52050f167b76bdad" category="paragraph">使用此程序將報告複製到剪貼簿。</block>
-  <block id="a92b55c502523ac5587ea2c640cb079f" category="inline-image-macro">頁面圖示</block>
-  <block id="8062e4ed4b63b8ff725e920c9a3cb230" category="inline-image-macro">報告圖示</block>
-  <block id="e9478c6eff03112d157ea67719497c47" category="list-text">按一下*頁*圖示 <block ref="5396c2b8aaf380c22499da1f19f1897c" category="inline-image-macro-rx" type="image"></block>。報告圖示 <block ref="cf1a1fdb4af836c132cdad8afc411048" category="inline-image-macro-rx" type="image"></block> 即會顯示</block>
-  <block id="b0b8507828189035d460cc3e32b7b2f9" category="list-text">按一下「Report（報告）」圖示。隨即顯示報告選項。</block>
-  <block id="d8e60e483920287395bf744a6aea252a" category="list-text">按一下*將報告複製到剪貼簿*。</block>
-  <block id="724836e44d24c5ce9adb9e201ddf3dbb" category="section-title">從剪貼簿開啟報告（XML）</block>
   <block id="b56673c922c2872cd2ae3dfd9cbbe0b7" category="paragraph">您可以開啟先前複製到剪貼簿的報告規格。</block>
-  <block id="f84a6818b902cb2f5250836a251b6631" category="paragraph">關於此工作您可以建立新報告或開啟現有報告、以進入「報告」使用者介面</block>
-  <block id="4b3644196858740b0368eb768a1aee24" category="list-text">按一下*從剪貼簿開啟報告*。</block>
   <block id="c1f58328aeef13bbe14c188aa6c895ea" category="paragraph">您可在此處找到解決「報告」問題的建議。</block>
   <block id="f6742e49587a771a1225e7c6e472c682" category="cell">排程透過電子郵件傳送報告時、登入的使用者名稱會預先填入電子郵件的「收件者」欄位。不過、名稱的格式為「firstname lastname」（名字、空格、姓氏）。由於這不是有效的電子郵件地址、因此在執行排程報告時、電子郵件將無法傳送。</block>
   <block id="155db2ed9995e9882b3be492b37935dc" category="cell">排程要透過電子郵件傳送的報告時、請清除預先填入的名稱、並在「收件人」欄位中輸入正確格式的有效電子郵件地址。</block>
@@ -4806,7 +4769,6 @@
   <block id="5002e2008b3c8a840362d49af15ecfca" category="list-text">儲存設備配置如何在一個月、一季或一年內改變？</block>
   <block id="3714e6d6cf8b80c9988ff389105e543c" category="section-title">存取Cloud Insights 本報告</block>
   <block id="b1c6484956adbf6f06fcde9ba959816a" category="paragraph">您可以按一下功能表中的* Reports*連結來存取Cloud Insights 《S菜 色報告》。</block>
-  <block id="23e02e08775b8df5cd08bc5178f1d41e" category="paragraph">您將會進入報告介面。本報告引擎採用IBM Cognos分析技術。Cloud Insights使用您的報告認證登入。</block>
   <block id="ae5c20191cb62f32246efcf9d57ec771" category="section-title">什麼是ETL？</block>
   <block id="ed3737df147bb5e0883ec9917bb6de42" category="paragraph">使用「報告」時、您會聽到「資料倉儲」和「ETL」等詞彙。ETL代表「擷取、轉換及載入」。ETL程序會擷取Cloud Insights 以EFlash收集的資料、並將資料轉換成用於「報告」的格式。「資料倉儲」是指可用於報告的收集資料。</block>
   <block id="59cfd65b8b6dc724aca0f9d1c7d41298" category="paragraph">ETL程序包括下列個別程序：</block>
@@ -5521,7 +5483,6 @@
   <block id="9a0ea7807c7dd21ed7a14f4f90d3e5ba" category="cell">作用中伺服器備份伺服器位元組數（以位元組為單位）快取命中快取查詢檢查當機用戶端中止壓縮位元組在壓縮位元組輸出壓縮回應中略過壓縮位元組連線平均時間停機安全性拒絕的總要求數安全性顧慮連線錯誤回應錯誤1xx回應 2xx回應3xx回應4xx回應5xx回應其他伺服器選取的回應其他伺服器目前佇列總計佇列最大佇列每秒工作階段平均時間最大要求數總計連線重複使用回應時間平均工作階段最大伺服器傳輸中止工作階段總工作階段總時間平均要求重新分派要求重試要求數 重新寫入</block>
   <block id="79bac41a8e857539d5a75dc7e93e17d8" category="summary">您可以檢視知識庫文章、與NetApp社群連線、觀看影片、或開啟問題單以申請支援。</block>
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">正在申請支援</block>
-  <block id="fece24766a61b92f80fd8d572bb323d4" category="paragraph">您可以按一下*「Help」（說明）&gt;「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您是處於試用模式或訂閱模式。</block>
   <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">支援頁面</block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">正在啟動支援權利</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">詳細資料</block>
@@ -6221,7 +6182,6 @@
   <block id="3f47a0b347b090238ebf3146d05878eb" category="cell">叢集中節點使用的DNS名稱</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">更新功能Cloud Insights 。</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">功能介紹Cloud Insights</block>
-  <block id="9cd1885267b8b63d53217c5f31b579c9" category="paragraph">NetApp持續改善及強化其產品與服務。以下是Cloud Insights 一些有關使用介紹的最新功能。</block>
   <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022年4月</block>
   <block id="259a90b9586b985b7c26543c1f883472" category="section-title">分享您的意見！</block>
   <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">*立即註冊*</block>
@@ -7830,7 +7790,6 @@
   <block id="3474cd92e50405481b9e7fa627d1ec50" category="cell">可自訂的儀表板</block>
   <block id="218645bc52c81c8985636d68a575596c" category="cell">檢查；</block>
   <block id="c3778b94ab899c76a40a1a02fe9a4d49" category="cell">論壇、文件及訓練影片</block>
-  <block id="81052fcdafabe271baded44b38721db2" category="cell">即時聊天室與技術支援</block>
   <block id="336d5ebc5436534e61d16e63ddfca327" category="cell">-</block>
   <block id="eaedcc38fe9f5ceda03da3c909bffa54" category="cell">VM指標</block>
   <block id="48ddfbf9b74c53d0faaa56e85e7f4945" category="cell">雲端指標</block>
@@ -8395,9 +8354,7 @@
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的監視器有30分鐘的時間範圍、通知在長期資料遺失之前、某個條件已被最後一個資料點違反、 由於監控器未收到任何其他資訊、無法用來確認是否恢復了度量、或注意到該條件持續存在、因此將產生警示。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
   <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast；</block>
-  <block id="e056d3391fc09511bb4b998310f69c58" category="cell">API存取加號（&amp;plus）；</block>
   <block id="d54591f265027d735d3be71d57199e4a" category="cell">商業情報與報告與快速；&amp;ast；</block>
-  <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">&amp;ast；一次僅限5個作用中的自訂監視器&amp;plus；API存取依版本&amp;ast而異；&amp;ast；適用於500個受管理單元以上的環境</block>
   <block id="d429655e140835b91db45b4324358975" category="list-text">使用ONTAP 叢集_admin_認證登入到32個叢集（您想要解除封鎖使用者的位置）。（若為Amazon FSX、請使用FSX認證登入）。</block>
   <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述輸出中、有2位使用者被網域CSLAB封鎖（US030、US040）。</block>
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：</block>
@@ -8414,13 +8371,10 @@
   <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">若要開始探索、請從ONTAP 主功能表中選取*《SEssentials》* Cloud Insights 。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">適用於Essentials的概述儀表板ONTAP</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="39ef60f7b3d6d0c88b10d90a3775807a" category="paragraph">資訊圖表可讓您瞭解一段時間後的效能、以及容量使用量的細分。</block>
-  <block id="192d723a70e1a973bee8e50c84ffa947" category="paragraph">每個圖表或資料點都可作為探索或調查的起點。</block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">附註：「從天到完整」的「0」（零）數表示、「從天到完整」的預估天數大於90天。換句話說、您的系統不可能隨時耗盡空間。</block>
   <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">資料保護</block>
   <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">選取「*資料保護*」頁面以檢視SnapMirror關係。按一下「至」以取得來源或目的地Volume資訊、或按一下齒輪圖示以新增您要檢視之資料的欄。</block>
   <block id="0b0af87f68e61a9b2546cb02922b8109" category="inline-image-macro">SnapMirror關係清單頁面</block>
-  <block id="ee2e5f4e15830a46863dde8ab0a741a9" category="paragraph"><block ref="ee2e5f4e15830a46863dde8ab0a741a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">「VMware Infrastructure *基礎架構*」頁面提供叢集健全狀況與效能的檢視、您可以使用所有基本的物件上預先建置（但仍可進一步自訂）的查詢。ONTAP ONTAP選取您要探索的物件類型（叢集、儲存資源池等）、然後選擇是檢視健全狀況或效能資訊。設定篩選條件、深入瞭解個別系統。</block>
   <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">儲存資源池的基礎架構選擇</block>
   <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
@@ -8553,12 +8507,7 @@
   <block id="f66a68b2ce406b961d0175d123132ef1" category="list-text">工作負載：為使用者提供讀寫資料介面的物件。</block>
   <block id="85d3998a83e328d8facfa5fc0ffc5c7a" category="list-text">資料保護：可以使用NetApp資料保護技術來保護的物件</block>
   <block id="a66819116f0ea13d8c7d391f072a94b3" category="paragraph">不需要使用過去七天內收集的資料來收集至少一部運作中的資料、即可獲得支援。ONTAP ONTAP</block>
-  <block id="704d895c2fdd387baf82cbd889ec2ac4" category="paragraph"><block ref="704d895c2fdd387baf82cbd889ec2ac4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d69c939c03cf5ed0d694b88094ca8309" category="paragraph">您可以在此檢視環境中的作用中警示、並快速深入瞭解潛在問題。選取「_resolved」索引標籤以檢視已解決的警示。</block>
-  <block id="a8a9422431d959b78b009edf9ca8e97c" category="inline-image-macro">「系統警示功能表」ONTAP</block>
-  <block id="a81771e75cfd0a261680be2fa844a7c3" category="inline-image-macro">顯示作用中警示的「警示」頁面範例ONTAP</block>
-  <block id="769427409530f58e4dace412d2741b71" category="paragraph"><block ref="34c43bd5ee99f9bff20a286878764efa" category="inline-image-macro-rx" type="image"></block>
-<block ref="83c2acb3e0809ee6fd30a80bed9be19c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">網路</block>
   <block id="4915558345cda00734062a8065ae320d" category="paragraph">透過「支援基礎架構網路」、您可以檢視FC、NVMe FC、乙太網路和iSCSI基礎架構。ONTAP在這些頁面上、您可以探索叢集及其節點中的連接埠等功能。</block>
   <block id="d6d29c8ac434b329501477631622c73a" category="inline-image-macro">「Essentials網路功能表」ONTAP</block>
@@ -9720,7 +9669,6 @@
   <block id="01cba5236d5d580a0466283128eeaca6" category="cell">預設值為8080。</block>
   <block id="643c94a9b7fa8044a23bb9cbc6ebffbe" category="section-title">格式化表格小工具</block>
   <block id="9e2381c8e7ac28deb699317b34df149b" category="paragraph">如同單一值和量表小工具、您可以在表格小工具中設定設定格式化的條件、讓您以色彩和/或特殊圖示來強調顯示資料。</block>
-  <block id="39fb612360768b141ab9cb2ecbdb6c06" category="paragraph">設定格式化的條件會針對表格中的每一欄分別設定。例如、您可以為容量欄選擇一組臨界值、為處理量欄選擇另一組臨界值。</block>
   <block id="1631a79ea8e49d2933f6cfd9657b3f26" category="paragraph">如果您變更欄的單位顯示、設定格式化的條件仍會保留並反映值的變更。下圖顯示相同的設定格式化條件、即使顯示單位不同。</block>
   <block id="8de694d5e70dc52a5e62f3e79f5e589e" category="inline-image-macro">設定格式化的條件- GiB</block>
   <block id="22018244aa524d30d610da20dbf958ad" category="inline-image-macro">設定格式化的條件- TiB</block>
@@ -10586,7 +10534,6 @@
   <block id="0506b86e6f0cdfab05c9570568f031d8" category="paragraph">您必須先完成一些組態工作、才能開始使用工作負載安全功能來監控使用者活動。</block>
   <block id="f827ca5aa861a4bddcbc872872858f88" category="paragraph">工作負載安全系統使用代理程式從儲存系統收集存取資料、並從目錄服務伺服器收集使用者資訊。</block>
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">工作負載安全功能也能與其他工具整合。例如、 <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 與Splunk整合。</block>
-  <block id="18a729837a70beac3395cfe79bcc30f2" category="list-text">*優質版*提供商業智慧與報告、以及工作負載安全性稽核與威脅偵測等其他優點。</block>
   <block id="ff6174f06964486c8970783d9abd7b54" category="cell">工作負載安全性使用者資料存取稽核</block>
   <block id="1b3681a6af892931e035b5a955f26be0" category="cell">利用AI / ML偵測工作負載安全性內部威脅</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">設定工作負載安全性LDAP使用者目錄收集器</block>
@@ -10670,33 +10617,15 @@
   <block id="49b8c9f7b839426b3e3b7c10efbe2cd5" category="cell">這可能是因為_cssys_使用者可能沒有安裝權限而失敗。如果/opp/netapp是NFS掛載、而且_cssy__使用者無法存取此資料夾、安裝將會失敗。_cssy__是由工作負載安全性安裝程式所建立的本機使用者、可能沒有存取掛載共用的權限。您可以嘗試使用_cssys_使用者來存取/opp/NetApp/cloudsec/agent/in/cloudseced-Agent來檢查此問題。如果傳回「權限遭拒」、表示安裝權限不存在。安裝在機器本機的目錄上、而非掛載的資料夾。</block>
   <block id="1bbfd833c09ec409acb6953c794c8762" category="cell">工作負載安全</block>
   <block id="06e93fcb3c37a2437f4b2d3bc4750cf3" category="doc">安全性管理工具</block>
-  <block id="815fe1d70f30132e76d3bc2971db1fb3" category="paragraph">CI具備安全功能、可讓Insight環境以增強的安全性運作。這些功能包括加密、密碼雜湊、以及變更加密和解密密碼的內部使用者密碼和金鑰配對的能力。</block>
-  <block id="02d87df4424a2b955208f7a9ac42561a" category="paragraph">為了保護敏感資料、NetApp建議您在安裝或升級後變更預設金鑰和擷取使用者密碼。</block>
-  <block id="a336c713c619d4139db57a48ae8cf1ff" category="paragraph">資料來源加密密碼儲存在Cloud Insights 效益管理系統中、當使用者在資料收集器組態頁面中輸入密碼時、會使用公開金鑰來加密密碼。不具備解密資料收集器密碼所需的私密金鑰；只有擷取單位擁有解密資料收集器密碼所需的資料收集器私密金鑰Cloud Insights 。</block>
   <block id="f24e839c52e7d6d17545ee4e29f7db51" category="section-title">升級與安裝考量</block>
   <block id="d2def24e2994d3733490e736e70820ee" category="paragraph">如果Insight系統包含非預設的安全性組態（亦即您有重新輸入的密碼）、則必須備份安全性組態。安裝新軟體、或在某些情況下升級軟體、會將系統還原為預設的安全組態。當系統恢復為預設組態時、您必須還原非預設組態、系統才能正常運作。</block>
   <block id="148c84721cc133725e943138cb351958" category="section-title">管理採購單位的安全性</block>
   <block id="d042a62979a8ab0c6d5e5d21ad8ca728" category="paragraph">安全性管理工具可讓您管理Cloud Insights 適用於此功能的安全性選項、並可在採購單位系統上執行。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
-  <block id="9aaac90b83b82599059476993f4df8fd" category="paragraph">您必須擁有AU系統的管理員權限、才能執行安全組態工作。</block>
-  <block id="1d7077d3e3f6962aaa789849c34c3bf9" category="paragraph">關於此工作、安全管理工具可在下列任一位置的採購單位系統上找到：</block>
-  <block id="5e96508962acc4c78cc42add9c1c6571" category="list-text">* Windows - C：\Program Files\SANSANSANSANW\securityadmin\bin\securityadmin.bat</block>
-  <block id="f23a1e539f589bb225b9464a0cf5849d" category="list-text">* Linux -/BIN/oci-securityadmin.sh</block>
-  <block id="153b0db04ba6bf11cb9e745deb47e48c" category="list-text">*以互動模式（-I）啟動安全管理工具。</block>
   <block id="3efa8859202eff1b280ec70c247e9ef0" category="paragraph">畫面會顯示下列選項：</block>
-  <block id="3500ba09d0538297440ca620c9dd46bf" category="list-text">備份</block>
   <block id="55ef7bc8b50b24453b764be4b80da043" category="paragraph">建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是下列預設位置：</block>
-  <block id="2bd339d85ee3b33e513359ce781b60cc" category="list-text">還原</block>
   <block id="0de47ee5de6bc6440821ee27a42c53ee" category="paragraph">還原所建立之資料保存庫的壓縮備份。還原之後、所有密碼和金鑰都會還原為建立備份時的現有值。</block>
-  <block id="d23690b7e16a11d2c6f9c38abb33baff" category="paragraph">還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更AU上的加密金鑰-建立資料庫備份-將資料庫備份還原至每個Aus</block>
-  <block id="e57784805c5218c8990e6502d4490908" category="list-text">變更加密金鑰</block>
-  <block id="58fad370faf96d43acd14616d579f6ec" category="paragraph">變更用於加密或解密裝置密碼的AU加密金鑰。</block>
   <block id="cf2ae7d819ca294e4484987de713c80d" category="paragraph">變更加密金鑰時、您應該備份新的安全性組態、以便在升級或安裝之後還原。</block>
-  <block id="bb78dd7992509064b8044b7afe6ec9ed" category="list-text">更新密碼</block>
-  <block id="5eb23cf8af1fa4acc187083ab93c9427" category="paragraph">變更「擷取」使用者帳戶的密碼。</block>
-  <block id="49647b0b7a42606d01f9ecb74faa768f" category="paragraph">變更密碼時、您應該備份新的安全組態、以便在必要時還原。</block>
-  <block id="6795975d2a3ee08c25bd74c360132342" category="list-text">重設為預設值</block>
   <block id="2df04d24bac801c2f370c45144ff5275" category="paragraph">將擷取使用者密碼和擷取使用者加密金鑰重設為預設值、預設值為安裝期間提供的值。</block>
-  <block id="fef46e5063ce3dc78b8ae64fa474241d" category="list-text">結束</block>
   <block id="f19dacbcbb6fe89fdcc7c3e384b66c96" category="paragraph">結束安全性管理工具。</block>
   <block id="8f025d17785cae128cd5fa24614cdf37" category="paragraph">選擇您要設定的選項、然後依照提示進行。</block>
   <block id="16d7c89b47f259f2ff68b2ae7532fad6" category="summary">新增工作負載安全資料收集器</block>
@@ -10832,4 +10761,279 @@
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">叢集管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB 使用者封鎖所需。</block>
   <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">自 2023 年 4 月 4 日起、 Cloud Insights 不再提供此資料收集器。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
+  <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">從「團隊內容」中選取 * 儲存管理員儀表板 * 、可提供多份報告、提供您的流量和儲存資訊。</block>
+  <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">Storage Manager 儀表板選項</block>
+  <block id="8f6a27e4a5050011d91bc9e27e37e101" category="paragraph"><block ref="8f6a27e4a5050011d91bc9e27e37e101" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="605a2ba69471aa08a0c9f0b51efc298c" category="paragraph">如需概覽、 * 儲存管理員報告 * 包含七個元件、其中包含儲存環境許多層面的內容相關資訊。您可以深入瞭解儲存服務的各個層面、深入分析您最感興趣的部分。</block>
+  <block id="971864d3cce467fe27261b25e4c90a3b" category="paragraph"><block ref="971864d3cce467fe27261b25e4c90a3b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f253e02ec507b689198b02ee61b62dab" category="paragraph">資訊圖表可讓您瞭解一段時間後的效能、以及容量使用量的細分。每個圖表或資料點都可作為探索或調查的起點。</block>
+  <block id="2b00b2591eefa2c660f44570ff1a8b90" category="paragraph"><block ref="2b00b2591eefa2c660f44570ff1a8b90" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="45d58050fc83f658d533966b07ead592" category="inline-link-macro">* 《 NetApp ONTAP 9 安全強化指南》 *</block>
+  <block id="95d10eb69527c16122bd44ec553d0f7c" category="paragraph">安全儀表板可讓您即時檢視目前的安全情況、顯示硬體和軟體磁碟區加密、反勒索軟體狀態和叢集驗證方法的圖表。安全性準則是根據中定義的建議來評估 <block ref="a1c84b5f46cbbd9a263e3a5732ed7485" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3ccbe813e27865c5c1154a78b3b9abd" category="paragraph">選擇任何加密或反勒索軟體數量、即可深入探索您的環境。</block>
+  <block id="48709e503decae3f55aa524537948025" category="inline-image-macro">ONTAP Essentials 安全儀表板</block>
+  <block id="1c29918b357b596e616f50e0877d45de" category="paragraph"><block ref="1c29918b357b596e616f50e0877d45de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac05d0fca214dab8244e52fd39ca3562" category="inline-link-macro">叢集法規遵循類別</block>
+  <block id="63dfa3b7c51d4f6c093294d3af3d839e" category="paragraph">ONTAP Essentials Security 儀表板可監控您的環境、以判斷叢集法規遵循狀態。請參閱 <block ref="bb24baebcd2322b9055818c601ce4848" category="inline-link-macro-rx"></block> 以深入瞭解。ONTAP Essentials 使用下列監視器來判斷法規遵循狀況：</block>
+  <block id="10524d213d3b4b7ca32ef57a3e792dee" category="cell">屬性名稱（顯示在叢集詳細資料中）</block>
+  <block id="228d43afcad3fa22c421808d25368cb6" category="cell">屬性符合值</block>
+  <block id="34d51d09bafb4f848d930331c3c8ea4e" category="cell">FIPS模式</block>
+  <block id="00d23a76e43b46dae9ec7aa9dcbebb32" category="cell">已啟用</block>
+  <block id="def18b3ad48ccc0c9d0b62d3097861e4" category="cell">安全 SSH 設定</block>
+  <block id="1f95e4c4080e3ed17f7c6c55167638e8" category="cell">遠端登入</block>
+  <block id="b9f5c797ebbf55adccdd8539a65a0241" category="cell">已停用</block>
+  <block id="30dd93050f45a54dd4dd8c7f002af1bb" category="cell">遠端Shell</block>
+  <block id="cd44553c1ef21a07ad732bde8e7184f6" category="cell">預設管理使用者</block>
+  <block id="3a715d7f546c13b1d811f10fbdb8846b" category="cell">使用中的 MD5</block>
+  <block id="8aa0eacd84c5f9a809210fcdbcc46da6" category="cell">叢集對等</block>
+  <block id="6e4d581d1ad1e0215174966f30d3b5bb" category="cell">加密 / 無對等</block>
+  <block id="d2cd303b6a04bd960b58f8159d18b17b" category="cell">AutoSupport HTTPS 傳輸已停用</block>
+  <block id="16dd9ffececee1b0a67a5a42e7eb8236" category="cell">使用 HTTPS 的 AutoSupport</block>
+  <block id="e7492cf77841eddec88e9be26034b9c6" category="cell">未設定 NTP 伺服器</block>
+  <block id="db73bd243162725b18b7cf06dce21d50" category="cell">網路時間傳輸協定</block>
+  <block id="61aa63eb3ac1c3408640463ee5fe8aa3" category="cell">已設定</block>
+  <block id="78cb01b9c0fae3cb36ec6f7556b1f6a9" category="cell">NTP 伺服器數量不足</block>
+  <block id="8bea3b588d20824cc56c9e5629943f1a" category="cell">登入橫幅</block>
+  <block id="6655feed21f2c17d9b2ac6b5f5811980" category="cell">記錄轉送已加密</block>
+  <block id="1428488215294e6672118ab54a87c51f" category="paragraph">請注意、如果停用上述監視器、叢集詳細資料會針對對應的安全性規範屬性、將值顯示為「 Not checked 」（未勾選）。</block>
+  <block id="37f4b14548809d33b7dd8443f1131fce" category="inline-image-macro">叢集法規遵循狀態</block>
+  <block id="f4a2e20a5baf5c55d6058548364c578c" category="paragraph"><block ref="f4a2e20a5baf5c55d6058548364c578c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c635530ab837911b67a504072cf0882d" category="paragraph">對於 SVM 、安全儀表板會查看下列監視器：</block>
+  <block id="d2c2ef0200f7029241c7f9c40dda309e" category="cell">屬性名稱（顯示在 Storage VM 設定中）</block>
+  <block id="5b2421f0f47e513e94c6256ebedcfef1" category="cell">稽核記錄</block>
+  <block id="6abc9ebc1faa56b713a9f175b863e090" category="paragraph">在叢集清單中、為每個叢集選取 _ 檢視詳細資料 _ 、以開啟「滑出」面板、顯示 _Cluster 、 Storage VM 、 _ 或 _Anti-勒索 ware_ 的目前設定。</block>
+  <block id="d04fa9ae9e4abc9822d4740c5a9058df" category="inline-image-macro">叢集詳細資料投影片面板</block>
+  <block id="cfe35138cd7906b077dcace570dccbee" category="paragraph">叢集詳細資料包括連線狀態、憑證資訊等：<block ref="e04c77223ecd159eafb08d6cdaa66521" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c848dd7c163b8af16c0a29a9cf8b2578" category="inline-image-macro">儲存索引標籤</block>
+  <block id="13c8c56ee088f3e66c6a2dc2117add80" category="paragraph">儲存 VM 詳細資料顯示稽核和 SSH 資訊：<block ref="0e7da2c2237a480e976d46827598a2be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="598b6b9767b632d5f8782aee146b8657" category="inline-image-macro">防勒索軟體標籤</block>
+  <block id="1da8d683ba248a66e7f1920206b6497b" category="paragraph">反勒索軟體詳細資料顯示儲存 VM 是否受到 ONTAP 的反勒索軟體保護或 Cloud Insights 工作負載安全保護。請注意、 ONTAP ARP 欄會顯示 ONTAP 內建的防勒索軟體保護目前的狀態、該保護是在 ONTAP 系統上設定的。您可以選取該欄中的「保護」來啟用 Cloud Insights 工作負載安全性。<block ref="cd09409d17429adfa1d9264e8890d599" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39f24b5dfbebdf196cf3620d23c570e9" category="inline-image-macro">ONTAP Essentials 警示清單</block>
+  <block id="cfe004eb013b3b1ab9775c51e75f954d" category="paragraph"><block ref="cfe004eb013b3b1ab9775c51e75f954d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="790c40cc1a1c9962041f45f681e47393" category="admonition">Cloud Insights 聯邦版不提供工作負載安全功能。</block>
+  <block id="c579fb48f9c33179f548470338a589f8" category="section-title">容量資料模型</block>
+  <block id="171f897b82746fe136ca00d1742ea44a" category="paragraph">可讓您回答有關磁碟區、應用程式磁碟區、內部磁碟區、交換器、應用程式、 VM、VMDK、ESX與VM、主機和應用程式節點的比較。其中許多報告 _ 每小時 _ 資料、 _ 每日 _ 資料、或兩者皆是。使用此資料模型、您可以建立報告來回答幾種效能管理問題：</block>
+  <block id="d972e288b86634fdb9a758828b4d511a" category="cell">回收 ONTAP Cold Storage</block>
+  <block id="e1f1a8af4cedab3466112b828b25b73f" category="cell">以冷容量和其他相關指標來提供 ONTAP Volume 工作負載的視覺化效果。</block>
+  <block id="e47829d1e83392ea564ddf977764e821" category="list-text">在 Cloud Insights 報告入口網站中、前往 * 功能表 &gt; 內容 &gt; 我的內容 / 團隊內容 * 。將滑鼠移至您要自訂的報告上方、然後開啟「三點」功能表。</block>
+  <block id="56b45e214ba24df2bd22f30c8daa395b" category="inline-image-macro">報告輸出與交付</block>
+  <block id="9ec7fe14283d298932f96b5a7faecee5" category="paragraph"><block ref="9ec7fe14283d298932f96b5a7faecee5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="533e5ac7d2c7b3534f833a38adea2af7" category="list-text">*排程*您想要執行報告的時間。</block>
+  <block id="30f41f4545ad626b5f152d0d91d2a119" category="list-text">選擇 * 選項 * 作為報告格式和交付（儲存、列印、電子郵件）、以及報告的語言。</block>
+  <block id="66f6af03fc03a4983b2347df65f985a6" category="list-text">按一下 * 儲存 * 以使用您所做的選擇來產生報告。</block>
+  <block id="5ca50133c18266ce39384fb8b246c9ca" category="list-text">選擇要複製的報告（ * 功能表 &gt; 內容 &gt; 我的內容或團隊內容 * ）</block>
+  <block id="f6029904a3647a249243f70d2674b2e1" category="list-text">從報告的下拉式功能表中選擇「編輯報告」</block>
+  <block id="6d91b3d299588d04c82ee7f1fd86b8ab" category="inline-image-macro">編輯報告</block>
+  <block id="a22b5097fa5696fea4f852e828a728e8" category="paragraph"><block ref="a22b5097fa5696fea4f852e828a728e8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e82c3b128c10cba9af7ad6dcefc8a32f" category="list-text">在畫面右上角、開啟「內容」旁的「三點」功能表。</block>
+  <block id="4834f13e189eb131221b94b67e968822" category="list-text">選取 * 複製報告至剪貼簿 * 。</block>
+  <block id="1f7210ead314cfb5b27ad1a95aceb212" category="paragraph"><block ref="1f7210ead314cfb5b27ad1a95aceb212" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10e402fa74918e2db3646f9835b897f9" category="section-title">從剪貼簿開啟報告</block>
+  <block id="64df91d9df4bc952e3ec62028670c8f4" category="paragraph">關於此工作、請先建立新報告、或開啟您想要以複製的報告取代的現有報告。以下步驟適用於新報告。</block>
+  <block id="aa5c89760abc28b39c079274f2297da5" category="list-text">選取 * 功能表 &gt; + 新增 &gt; 報告 * 、然後建立空白報告。</block>
+  <block id="605f285301e44cd2eee559baa74a96ed" category="list-text">選取 * 從剪貼簿開啟報告 * 。</block>
+  <block id="c75b484944d6db45325c6cea12f5746c" category="inline-image-macro">從剪貼簿開啟報告</block>
+  <block id="d2187cab9e83112fe1b8c8445e694788" category="paragraph"><block ref="d2187cab9e83112fe1b8c8445e694788" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bbc729c02b1714951279345e4ad27754" category="list-text">將複製的程式碼貼到視窗中、然後選取 * 確定 * 。</block>
+  <block id="ab454885dd844a82f5b4184bdfc16d44" category="list-text">選取磁片圖示以儲存報告。</block>
+  <block id="e22835c1b5d14fbe986f48643bfba81e" category="list-text">選擇要儲存報告的位置（ _ 我的內容 _ 、 _ 團隊內容 _ 、或建立新資料夾）。</block>
+  <block id="5f3572bdcfd5706cf2dbe7602a1729ba" category="list-text">給新報告一個有意義的名稱、然後選取 * 儲存 * 。</block>
+  <block id="1f4d5f4dccbb76f1e146c08d11854d51" category="cell">新增 / 編輯 HTML 項目</block>
+  <block id="135052b9569c428d27183d48537a3779" category="cell">以 HTML 項目執行報告</block>
+  <block id="0ed4affcca91dbb422c531b626279fe7" category="cell">新增 / 編輯自訂 SQL</block>
+  <block id="37394ad048cccadcb8fadc6b50055f50" category="cell">使用自訂 SQL 執行報告</block>
+  <block id="b3ac02e1033cf67cbcd4dfd278c25e00" category="list-text">瀏覽至 * 功能表 &gt; 內容 *</block>
+  <block id="0407a7c5b366f01d5671805c1f907afe" category="inline-image-macro">Cognos 左上角選單</block>
+  <block id="837aabd72a7904f0806179e23fe0d6e5" category="paragraph"><block ref="837aabd72a7904f0806179e23fe0d6e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e816756750f33badae1d375877be4d7" category="list-text">在 *_Team Content_* 中建立新資料夾</block>
+  <block id="72d743dc018b9aea07e4baa34bd41f04" category="admonition">除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版（基本版、標準版、優級版）。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。</block>
+  <block id="1127a17ff9264a478b5b2afbb0ec9fc5" category="list-text">* 聯邦版 * 提供符合 FedRAMP 標準的美國 Cloud Insights 版政府部門。上述商業版中提供的某些功能可能無法在聯邦版中使用、或可能會因功能受限而無法使用。在可能的情況下、 Cloud Insights 文件會記錄這些差異。</block>
+  <block id="bcb2daf8da854022329b57412821d9eb" category="cell">即時交談 ^&amp;plus ； &amp;plus ； ^ 與技術支援</block>
+  <block id="7a535c5cff09892a0f3fc0a2ecbe2932" category="cell">API 存取 ^&amp;plus ； ^</block>
+  <block id="cddad7083722bc6fb1722d2d5da45782" category="paragraph">加號 (&amp;D); 一次只能使用 5 個主動式自訂監視器； API 存取會因版本 &amp; 速度而異；加號；加號； Cloud Insights 聯邦版不提供 ^ 功能</block>
+  <block id="5452e6774adb97c1d8607e2b1af1851a" category="paragraph">您可以按一下*「Help」（說明）&gt;「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您的 Cloud Insights 版本。</block>
+  <block id="3c99b9f872acb5e317804aaff9d10cfb" category="admonition">Cloud Insights 聯邦版不提供線上客服支援選項。</block>
+  <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題</block>
+  <block id="75ff8d1aa96e6d68f1ba6bda0e071dc8" category="doc">Kubernetes 效能監控與地圖</block>
+  <block id="7d35930b6bf0e18febe20ed2d217de53" category="paragraph">Kubernetes 網路效能與地圖功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
+  <block id="31fde7b05ac8952dacf4af8a704074ec" category="inline-link-macro">預覽</block>
+  <block id="f89e65de07b960d4b5425476ae9c0960" category="admonition">Kubernetes 網路效能與地圖是一種 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能會有所變更。</block>
+  <block id="d11c5cdc648931cebdccd4a555384487" category="paragraph">主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。</block>
+  <block id="8a2af9e79fcf37987ce6d3a90e524451" category="inline-image-macro">工作負載對應範例顯示「 Slideout 」面板的詳細資料</block>
+  <block id="133852ad232a5260c837b4c5f3d5b845" category="paragraph"><block ref="133852ad232a5260c837b4c5f3d5b845" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="affadd0d40bb97efae705df520858892" category="section-title">先決條件</block>
+  <block id="9c1d716837ade69da7ff84fb4d2af1f4" category="paragraph">您必須先設定、才能使用 Kubernetes 網路效能和地圖 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。</block>
+  <block id="91339ff47e26f498d2f33194679f4d1f" category="inline-image-macro">在 NKMO STUP 期間選取地圖選項</block>
+  <block id="629532624af8fab6b66dfadc2398dfe1" category="paragraph"><block ref="629532624af8fab6b66dfadc2398dfe1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c2288858ee6061ed208feb40c842e9a" category="section-title">監控</block>
+  <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">監控</block>
+  <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">工作負載對應使用 <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> 以取得資訊。Cloud Insights 提供許多預設的 Kubernetes 監視器（請注意、這些監視器預設可能為 _Paused （暫停））。您可以 _ 恢復 _ （即啟用）您想要的監視器）、或是為 Kubernetes 物件建立自訂監視器、工作負載對應也會使用這些監視器。</block>
+  <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">地圖</block>
+  <block id="15e3eddd185c05a5fb388c2cd109a194" category="paragraph">地圖會顯示服務（也稱為工作負載）及其彼此之間的關係。箭頭顯示交通路況方向。將游標移至工作負載上方會顯示該工作負載的摘要資訊、如以下範例所示：</block>
+  <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">工作負載對應工作負載範例</block>
+  <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="42cecfeff00cc916fef4f64e7b921079" category="inline-xref">標籤</block>
+  <block id="80df825bd0df4f71f9d9bf8e39de49fa" category="paragraph">圓圈內的圖示代表不同的服務類型。請注意、只有在基礎物件具有的情況下、圖示才會顯示 <block ref="52a9a05af8ec042bd105e107ca8cf5a4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="705dd0706929287ea79c9a49563a28ca" category="inline-image-macro">說明服務圖示</block>
+  <block id="004ea18c954c1590f27432702e66625e" category="paragraph"><block ref="004ea18c954c1590f27432702e66625e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4f017003016ff533d5d87dd953fbb946" category="paragraph">每個圓圈的大小代表節點大小。請注意、這些大小是相對的、您的瀏覽器縮放等級或螢幕大小可能會影響實際的圓圈大小。同樣地、交通路況線條樣式也能讓您一目瞭然地瞭解連線大小、粗體實線是高流量、而輕點虛線則是較低的流量。</block>
+  <block id="53468379b701bba2e73b3b7ad19e38f9" category="paragraph">圓圈內的數字是服務目前正在處理的外部連線數量。</block>
+  <block id="81dc1ed60ed4bad9b79455159c2841f8" category="inline-image-macro">顯示相對圓形（節點）和連接大小的圖例</block>
+  <block id="75f2fb7ed8b9ba45a337ecf5927cb758" category="paragraph"><block ref="75f2fb7ed8b9ba45a337ecf5927cb758" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e32f9d1cf279122ec44b06c1b06cd428" category="section-title">工作負載詳細資料和警示</block>
+  <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">以色彩顯示的圓圈表示工作負載的警示或嚴重層級警示。將游標移到圓圈上方以取得問題摘要、或按一下圓圈以開啟詳細的滑出面板。</block>
+  <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">工作負載使用警示來整合詳細資料</block>
+  <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">篩選</block>
+  <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">如同其他 Cloud Insights 功能、您可以輕鬆設定篩選條件、將焦點放在您想要的特定物件或工作負載屬性上。</block>
+  <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">工作負載對應篩選</block>
+  <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1da4b5e074a63813b09ebd31c36c3b70" category="section-title">工作負載標籤</block>
+  <block id="deb0475feb493ff82c79e1e3ae6d77ea" category="paragraph">如果您希望地圖識別所顯示的工作負載類型（例如圓圈圖示）、則工作負載標籤是必要的。標籤的衍生方式如下：</block>
+  <block id="7bdbd3fbfd646718abde6244c5ef84ca" category="list-text">以一般術語執行的服務 / 應用程式名稱</block>
+  <block id="8079e3a427e5574a8e11aee165eaa34a" category="list-text">如果來源是 Pod ：</block>
+  <block id="f5617cd916f968d6f57576092e33e68c" category="list-text">衍生自 Pod 的工作負載標籤</block>
+  <block id="1cf01db723421f728c6d1ec366bc1525" category="list-text">工作負載上的預期標籤： app.Kubernetes.IO/ 元件</block>
+  <block id="f7a8098a415987972c499ac42c4b95f9" category="list-text">標籤名稱參照：<block ref="625495fb7d70df26441db849ce9bb393" category="inline-link-rx"></block></block>
+  <block id="1dbb5d26447acfe771d67c1e833d6d5a" category="list-text">建議標籤：</block>
+  <block id="aca33b9c046b2a50b8c3c54cc0380de8" category="list-text">前端</block>
+  <block id="b43fdd98b1fd705ae4c3a10cf25aad8a" category="list-text">後端</block>
+  <block id="11e0eed8d3696c0a632f822df385ab3c" category="list-text">資料庫</block>
+  <block id="0fea6a13c52b4d4725368f24b045ca84" category="list-text">快取</block>
+  <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">佇列</block>
+  <block id="541661622185851c248b41bf0cea7ad0" category="list-text">卡夫卡</block>
+  <block id="30231f87db181989dc6b48606b359f57" category="list-text">如果是 k8s 叢集外部的來源：</block>
+  <block id="2aa36d2124c1619305f749c6418c781f" category="list-text">嘗試剖析 DNS 解析名稱、並擷取服務類型</block>
+  <block id="1c145c21f55cfe3b796f2a421f92f818" category="paragraph">範例： s3.eu-north-1.amazonaws.com</block>
+  <block id="bf0940aef56e172d86f9f25d77945341" category="paragraph">解析名稱以取得 S3</block>
+  <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。</block>
+  <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">Cloud Insights 聯邦版可能不提供這些功能、或是功能較少。在可能的情況下、文件中會記錄這些差異。</block>
+  <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023 年 4 月</block>
+  <block id="ff13f3d2e68843ff68c076f0df232858" category="inline-link-macro">_Kubernetes 網路效能與地圖 _</block>
+  <block id="5d6a6764c313767cd859950497830f19" category="paragraph">。 <block ref="b7bf0f1797d3bf4fa978cc14a8d399a6" category="inline-link-macro-rx"></block> 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
+  <block id="c7e0f6549ee8e023d19670a2bd355d16" category="paragraph">主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。</block>
+  <block id="49bba7c2d621771c5537a7af911ee553" category="paragraph">顯示「投影片」詳細資料的工作負載地圖：</block>
+  <block id="7c9993d828f0d6e20976f0c79a2ae34e" category="paragraph">Kubernetes 效能監控與地圖以 A 的形式提供 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能。</block>
+  <block id="27951134254c89a40be0bb92f5ec2777" category="inline-link-macro">安全性儀表板</block>
+  <block id="ab1e44f30dffcec57c4d6c7f65484db0" category="paragraph">。 <block ref="26206f8b9a6f7e3a2302d637805f72bc" category="inline-link-macro-rx"></block> 讓您即時檢視目前的安全情況、並顯示硬體和軟體磁碟區加密、反勒索軟體狀態和叢集驗證方法的圖表。安全性儀表板的形式為 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能。</block>
+  <block id="3c12de882f376723275a6e1e9c5fa845" category="paragraph">回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。</block>
+  <block id="9b45613625c1b78221f6e0854fdf4fb1" category="inline-image-macro">Cold Data Insight 範例建議</block>
+  <block id="4117da082a02862c2210c855a636940f" category="paragraph"><block ref="4117da082a02862c2210c855a636940f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7ea7ec0541ee94fcafe46f2d31369ea" category="paragraph">有了這個 Insight 、您可以回答下列問題：</block>
+  <block id="cf56ff34be57d4155fe96eaa7af4d9b5" category="list-text">儲存叢集上有多少冷資料位於（ a ）高成本 SSD 磁碟、（ b ） HDD 磁碟和（ c ）虛擬磁碟上？</block>
+  <block id="c8a1555df6ea80c93d534a1536d2a6ab" category="list-text">在未最佳化的儲存設備方面、哪些工作負載是最大的貢獻者？</block>
+  <block id="39768730dda5981c1f6a167c07d19116" category="list-text">在指定工作負載上、資料處於冷狀態的持續時間（以天為單位）為何？</block>
+  <block id="12d4e113743b4d88b591cb7e29d22e73" category="paragraph">回收 ONTAP Cold Storage_ 被視為 A <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能有所變更。</block>
+  <block id="9997a04a1cb8869f239452aa16eccf78" category="section-title">訂閱通知也會控制橫幅訊息</block>
+  <block id="97b0ffae105c62d96e5db4ba2b6fbbbb" category="paragraph">現在、設定訂閱通知（管理 &gt; 通知）的收件者也會控制誰會看到與訂閱相關的產品內橫幅通知。</block>
+  <block id="f33f74a7a108d30e7f678ca081f91508" category="inline-image-macro">2 天內到期的訂閱橫幅範例</block>
+  <block id="8a9a1261365a4dc5a5dcc8b9fb005804" category="paragraph"><block ref="8a9a1261365a4dc5a5dcc8b9fb005804" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="266be08a05e7ba1d4867c5e04536ca9f" category="section-title">報告有全新的外觀</block>
+  <block id="10cb2d731d0f71de5d0f08bae34c43d6" category="inline-link-macro">報告文件</block>
+  <block id="f2ba20afed92bc354705d2de0fc480c0" category="paragraph">您會注意到 Cloud Insights 報告畫面有新的外觀、有些功能表導覽已經變更。這些畫面和導覽變更已在目前的狀態下更新 <block ref="ff91cb2535bc6b5bc8b488204ddd46f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="415cda74f3be0924146e2171db541514" category="inline-image-macro">全新報告功能表外觀</block>
+  <block id="7c8b7ed6f4b17128b9574e7ca8c0bd2d" category="paragraph"><block ref="7c8b7ed6f4b17128b9574e7ca8c0bd2d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9024a828eadd2e77938883d47af14489" category="section-title">依預設會暫停監視器</block>
+  <block id="75099a2aaa64769ddec75379a9bd50be" category="paragraph">對於新的 Cloud Insights 環境、請注意 <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block> 依預設、請勿傳送警示通知。您需要為任何想要提醒您的監視器啟用通知、方法是為監視器新增一或多種傳送方法。對於現有的 Cloud Insights 環境、目前處於「 _Paused 」（暫停）狀態的任何系統定義監視器、其預設的 _global_ 通知收件者清單都已移除。使用者定義的通知會保持不變、目前作用中系統定義的監視器也會保持通知設定。</block>
+  <block id="232ca80483a4f0ba6b501690e3cc769d" category="section-title">尋找 API 量測標籤？</block>
+  <block id="d8605cc0938124d2bc8de0b508f63549" category="paragraph">API 量測已從「訂閱」頁面移至「 * 管理 &gt; API 存取 * 」頁面。</block>
+  <block id="27daabf1c454d33595dbe589aefcd6e0" category="list-text">在左導覽窗格中、選取 * 內容 &gt; 團隊內容 * 。</block>
+  <block id="4049f6107bd22bd909a404599ebeacd6" category="list-text">選取 * 報告 * 以存取預先定義的報告。</block>
+  <block id="ee3a0672263c3995fe8e38b6cfe439c4" category="inline-image-macro">報告功能表</block>
+  <block id="81a9f8ce382fd16358d56245a66220a4" category="inline-image-macro">顯示報告的團隊內容已反白顯示</block>
+  <block id="48bcae107d50992efecf85a6c4736dba" category="paragraph"><block ref="042d6428eca469dceeec3a1b4202ab56" category="inline-image-macro-rx" type="image"></block>
+<block ref="9aede4345f2bc9132f2c99c71d833e20" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc6b270b9094337edca8a85819407d18" category="admonition">Cloud Insights 聯邦版不提供操作員調校功能</block>
+  <block id="5ad69c2277563fc580296910106cfd2f" category="paragraph">您將會進入報告介面。本報告引擎採用IBM Cognos分析技術。Cloud Insights</block>
+  <block id="e497269a2941afd9840d0178bcec0d65" category="admonition">Cloud Insights 聯邦版目前不提供設定格式化的條件。</block>
+  <block id="7dc3d22c559fc9f6b251de846b6d601b" category="paragraph">設定格式化的條件會針對表格中的每一欄分別設定。例如、您可以為容量欄選擇一組臨界值、而為處理量欄選擇另一組臨界值。</block>
+  <block id="04e933e576c69389922d790b28b832e2" category="admonition">Cloud Insights 聯邦版不提供 ActiveIQ 。</block>
+  <block id="6a1a692b3423f858e5d6fa10a48a203d" category="admonition">Cloud Insights 聯邦版中的使用者登入僅限於已設定的身分識別供應商（使用其指定的電子郵件網域）。當新使用者被邀請進入 Cloud Insights 聯邦環境時、其電子郵件地址必須符合為該環境所設定的網域。</block>
+  <block id="eb969e6aae227b477dde18795955ac2a" category="paragraph">Cloud Insights 包含安全功能、可讓您的環境以增強的安全性運作。這些功能包括增強加密、密碼雜湊、變更內部使用者密碼的能力、以及加密和解密密碼的金鑰配對。</block>
+  <block id="e2eb5a26f8f8c6cd350884687bbcf0fd" category="paragraph">為保護敏感資料、 NetApp 建議您在安裝或升級後變更預設金鑰和 _Acquisition 使用者密碼。</block>
+  <block id="c6105c3b082c3e22a8f735511736544b" category="paragraph">資料來源加密密碼儲存在Cloud Insights 效益管理系統中、當使用者在資料收集器組態頁面中輸入密碼時、會使用公開金鑰來加密密碼。Cloud Insights 沒有解密資料收集器密碼所需的私密金鑰；只有擷取單元（ Aus ）具有解密資料收集器密碼所需的資料收集器私密金鑰。</block>
+  <block id="d39add7e6bc84e58e3541f2c6e6019d4" category="list-text">您必須在 AU 系統上擁有管理權限、才能安裝擷取單元軟體（包括安全管理工具）。</block>
+  <block id="81c4b8e957fe3d7a1f7f310a21a6029d" category="list-text">如果您的非管理員使用者之後需要存取安全性管理工具、則必須將其新增至 _cisys 群組。_cisys_ 群組是在 AU 安裝期間建立。</block>
+  <block id="7ab79548d6f0c8450edc8e8082f09c1d" category="paragraph">AU 安裝之後、您可以在下列任一位置的採購單元系統上找到 securityadmin 工具：</block>
+  <block id="380c8b0ffe00866fd98fa7daa62786ea" category="section-title">使用 securityadmin Tool</block>
+  <block id="78bef16cd8d7975efa6cebc3e387b99e" category="paragraph">以互動模式（ -I ）啟動安全管理工具。</block>
+  <block id="48ae4dc61cef49ed3191aa72cc18bd3b" category="admonition">建議您在互動模式中使用 securityadmin 工具、以避免在命令列上傳遞機密、而這些機密可以擷取在記錄中。</block>
+  <block id="a41f9747b0fdd3ce2875e547ff389b7b" category="inline-image-macro">安全性管理工具選項（ Linux ）</block>
+  <block id="e1efdc1b0296d47fc665d00ecb261b17" category="paragraph"><block ref="e1efdc1b0296d47fc665d00ecb261b17" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad52c55c1186c01cd67df056c7652971" category="list-text">*備份*</block>
+  <block id="63eed23e66e658c7ba4c7fc22b85d79c" category="paragraph">建議您將資料保險箱備份保存在安全的位置、因為其中包含敏感資訊。</block>
+  <block id="aa1ec7cb01562da3b2fe6b08d32a8cc3" category="list-text">*還原*</block>
+  <block id="764a59cc54c13411caedde1f6fb9892c" category="paragraph">還原可用於同步多部伺服器上的密碼和金鑰、例如使用下列步驟： 1 ）變更 AU 上的加密金鑰。2) 建立資料保險箱的備份。3) 將資料保險箱備份還原至每個 Aus 。</block>
+  <block id="91c3aebab93aebccbd6add4850937b61" category="list-text">* 註冊 / 更新外部金鑰擷取指令碼 *</block>
+  <block id="aa12a80ec17beb55c3a5d1aedf17114a" category="paragraph">使用外部指令碼來登錄或變更用於加密或解密裝置密碼的 AU 加密金鑰。</block>
+  <block id="b80155995c56d15998e5a598ac919e11" category="paragraph">請注意、此選項僅適用於 Linux 。</block>
+  <block id="e86641f9c76cf92cb147ed719d81913c" category="paragraph">將您自己的金鑰擷取指令碼搭配 securityadmin 工具使用時、請謹記下列事項：</block>
+  <block id="357a7d2af171d6cd8d399fd15b2a527b" category="list-text">目前支援的演算法是 RSA 、至少 2048 位元。</block>
+  <block id="823a54e0d135a4cf6bbec5f64665b56f" category="list-text">指令碼必須以純文字傳回私密金鑰和公開金鑰。指令碼不得傳回加密的私密金鑰和公開金鑰。</block>
+  <block id="48c375ba5167d14fe57f7cecccf4d9f8" category="list-text">指令碼應傳回原始編碼內容（僅限 PEM 格式）。</block>
+  <block id="183fabc04a55a81e7b3ca602679cfd85" category="list-text">外部指令碼必須具有 _executive_ 權限。</block>
+  <block id="12ebd13f9baf0febd5c2ef5bbbf942ae" category="list-text">* 旋轉加密金鑰 *</block>
+  <block id="139b4eef48887d10b49c3d096736e92d" category="paragraph">旋轉您的加密金鑰（取消登錄目前金鑰並登錄新金鑰）。若要使用外部金鑰管理系統的金鑰、您必須指定公開金鑰 ID 和私密金鑰 ID 。</block>
+  <block id="f6fcfa442860e44fbe979f8332644978" category="list-text">* 重設為預設金鑰 *</block>
+  <block id="7546e816c487cc9c494524e798148a89" category="list-text">* 變更信任儲存密碼 *</block>
+  <block id="79cca1e248b11456eea4d14bb1946311" category="paragraph">變更信任存放區的密碼。</block>
+  <block id="60c33c25b569993e6a3630b75192c4c0" category="list-text">* 變更 Keystore 密碼 *</block>
+  <block id="1e24961d3bcf82f09b42ddaa10df9d6a" category="paragraph">變更 Keystore 的密碼。</block>
+  <block id="1baf87b30a07964a08a969d2966ec9d0" category="list-text">* 加密收集器密碼 *</block>
+  <block id="a82b6b26cd9ea3082540277fde8bea71" category="paragraph">加密資料收集器密碼。</block>
+  <block id="444316a65f8562dac9ea2de5bb9d051e" category="list-text">*退出*</block>
+  <block id="d44810b54d5798595e5d804b19e4731b" category="section-title">指定要執行工具的使用者</block>
+  <block id="0d8e3155546e11070c70d3661d96bcb8" category="paragraph">如果您處於受控且注重安全性的環境中、您可能沒有 _cisys 群組、但仍可能需要特定使用者執行安全性管理工具。</block>
+  <block id="d08acadf2554aa779d0535df282e9462" category="paragraph">您可以手動安裝 AU 軟體、並指定您要存取的使用者 / 群組來達成此目標。</block>
+  <block id="ffb5e06e57cfa505461406cc52e0d7de" category="list-text">使用 API 、將 CI Installer 下載至 AU 系統、然後將其解壓縮。</block>
+  <block id="b124a98674f8d8fe2c3743874282dfc7" category="list-text">您需要一次性授權權杖。請參閱 API Swagger 文件（ _Admin &gt; API Access_ 、然後選取 _API Documentation （ _API 說明文件）連結）、並找到 _get /au/oneTimeToken_ API 一節。</block>
+  <block id="6d5a69b00172cafb6c9804a6fc35f129" category="list-text">擁有權杖後、請使用 _get /au/installer/｛ platform ｝ / ｛ version ｝ _ API 下載安裝程式檔案。您需要提供平台（ Linux 或 Windows ）和安裝程式版本。</block>
+  <block id="bfcb29d60fb2a94e8f8ede7a5a3ef5cd" category="list-text">將下載的安裝程式檔案複製到 AU 系統、然後將其解壓縮。</block>
+  <block id="fd421a87e49b75c27bee20c196a01b81" category="list-text">瀏覽至包含檔案的資料夾、並以 root 身分執行安裝程式、指定使用者和群組：</block>
+  <block id="4815a88b44e3eb2678c85ebc8d56d072" category="paragraph">如果指定的使用者和 / 或群組不存在、將會建立這些使用者和 / 或群組。使用者將可存取安全管理工具。</block>
+  <block id="516771459584333b35af85b925a22513" category="section-title">更新或移除 Proxy</block>
+  <block id="b7c267cbdc06a47437c49814ca31c37a" category="paragraph">securityadmin 工具可用來設定或移除擷取單元的 Proxy 資訊、方法是使用 _ pr_ 參數執行工具：</block>
+  <block id="fe79ab14f7db790a4f9a8364f331d82b" category="paragraph">例如、若要移除 Proxy 、請執行下列命令：</block>
+  <block id="b0b22d5d02f87cb98c735f43abae9a57" category="paragraph">執行命令後、您必須重新啟動擷取單元。</block>
+  <block id="2ed6d0911bda563375b8a7f38ece8cba" category="paragraph">若要更新 Proxy 、命令是</block>
+  <block id="9d6898c9d6fff2bd62d85b66643bb3d1" category="doc">洞見：回收 ONTAP Cold Storage</block>
+  <block id="0d76fbb36f181c92649274af9d5b537e" category="paragraph">回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。</block>
+  <block id="dc258ad625dfe61afe78bdd8eaced72a" category="admonition">回收 ONTAP Cold Storage_ Insight 被視為 A <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能有所變更。</block>
+  <block id="62cbec5499f7528b78b111c904e78b71" category="paragraph">若要檢視這些洞見、請瀏覽 * 儀表板 &gt; Insights * 、並查看 _ 回收 ONTAP Cold Storage_ 洞見。請注意、如果 Cloud Insights 偵測到冷儲存設備、此 Insight 僅會列出受影響的儲存設備、否則您會看到「 All Clear 」訊息。</block>
+  <block id="da69b960f5bb93c02fdd4886868836f6" category="inline-image-macro">顯示 3 個含有 Cold 資料的儲存位置的深入資訊清單</block>
+  <block id="7718245a70dcc6279bf8af86a72c2e35" category="paragraph"><block ref="7718245a70dcc6279bf8af86a72c2e35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="930fd15ae62cafe82d62d6912f307087" category="paragraph">Insight 說明可快速指示偵測到的資料量為「冷」、以及資料所在的儲存容量。此表也提供含有冷資料的工作負載計數。</block>
+  <block id="7cc631429c391f70b58e64999f7fbe48" category="inline-link-macro">NetApp 的 TCO 計算機</block>
+  <block id="cdb12d4961181c6c0d6f14a1a17cfd87" category="paragraph">從清單中選取 Insight 會開啟一個頁面、顯示更多詳細資料、包括將資料移至雲端或關閉未受控制的磁碟的建議、以及您可能因實作這些建議而實現的預估成本和省電效益。此頁面甚至提供一個方便的連結 <block ref="928b307e42240e05f4c78ed4745d6f3a" category="inline-link-macro-rx"></block> 因此您可以嘗試使用數字。</block>
+  <block id="d4dcff57f0b29162c5b6b2c09678b2e2" category="inline-image-macro">Cold Data 範例</block>
+  <block id="3f7f21955dfa309fc0646bb3a937c6fb" category="paragraph"><block ref="3f7f21955dfa309fc0646bb3a937c6fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5048bf2003cf033b80e3fa2e33502f8" category="paragraph">在 Insight 頁面上、展開 * 建議 * 以探索下列選項：</block>
+  <block id="f77e48bcc98143a3f6bd8bcc492be286" category="list-text">將未使用的工作負載（殭屍）移至成本較低的儲存層（ HDD ）</block>
+  <block id="52119c89cf47d4da7004a38925cca6c7" category="paragraph">利用 zombie 旗標、冷儲存設備和天數、找出最冷且最大的資料量、並將工作負載移至成本較低的儲存層（例如使用硬碟儲存設備的儲存池）。當工作負載在七天或更長時間內未收到任何重大 IO 要求時、即視為「殭屍」。</block>
+  <block id="c8abb3322f2d9026ffca3cbd29c6e9ba" category="list-text">刪除未使用的工作負載</block>
+  <block id="42bb4c2dadbccfef009beef19eb60c44" category="paragraph">確認哪些工作負載未在使用中、並考慮將其歸檔或從儲存系統中移除。</block>
+  <block id="30dc3fa30dc934a0d0aa98e3789e46c2" category="list-text">請考慮 NetApp 的 Fabric Pool 解決方案</block>
+  <block id="5338c9536e3c14268eb7568f06d418b6" category="paragraph">NetApp 的 Fabric Pool 解決方案會自動將冷資料分層至低成本的雲端儲存設備、進而提高效能層的效率、並提供遠端資料保護。</block>
+  <block id="394172dfa5bac3cc560f6f81bc64334d" category="paragraph">圖表和表格提供其他趨勢資訊、並可讓您深入瞭解個別工作負載。</block>
+  <block id="e8f788aa86e776dcd96d7f18cf2b3073" category="inline-image-macro">Cold_Data_Workload Graph_and_Table</block>
+  <block id="18149ca5a604ec569675b78f1c8cfba7" category="paragraph"><block ref="18149ca5a604ec569675b78f1c8cfba7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db08e6b1d619064fa3fd2035f5926d18" category="paragraph">回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。 <block ref="82cab8f639b07ead699dc071830d992e" category="inline-link-macro-rx"></block></block>
+  <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">這是_預覽_功能、可能會隨著時間而改變、因為已進行改善。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 關於Cloud Insights 本產品的功能。</block>
+  <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">瀏覽至 * 功能表 &gt; 內容 &gt; 團隊內容 &gt; 報告 *</block>
+  <block id="a59e6206d800a2b43147a3078e8831f3" category="list-text">在畫面右上角、選取 *[ 新增 +]*</block>
+  <block id="ab8be94533c1cad6ab42818425762606" category="list-text">選取 * 報告 *</block>
+  <block id="4d77a2caca49a1180a815d35e0293fd9" category="inline-image-macro">建立新報告</block>
+  <block id="016938a7eb8e92d8b75d6772faa9de5c" category="paragraph"><block ref="016938a7eb8e92d8b75d6772faa9de5c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4102a4555f66008207d0661f03cb932" category="list-text">在 * Templates] 索引標籤上、選取 _ 空白 _</block>
+  <block id="6eee337bc014fe0c44e57cc85ea82f4a" category="list-text">打開 * 選擇來源 +*</block>
+  <block id="288103edce9a3dc76300dc41b4a9018a" category="list-text">在 * 團隊內容 * 下、開啟 * 封裝 *</block>
+  <block id="70c76a82d2063d725c92969050ac8fb3" category="inline-image-macro">選取報告來源</block>
+  <block id="2f09c3bfe1e77877fa9b4cd0cdf381a5" category="list-text">選擇 * 儲存與儲存池容量 *<block ref="6c44d54a1b771494b25a0d677bbaf119" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7727762c415fab56adde74a1272ec07" category="list-text">選取 * 開啟 *</block>
+  <block id="856ce4de59fcb05ec2c3f8c3a951ead4" category="list-text">選取 * 清單 *</block>
+  <block id="f1acb35ebcaf4d4649bf230f7054a4d9" category="list-text">選擇*確定*</block>
+  <block id="40cbfe4ff90102c4f28a5dd9034c30ca" category="list-text">從 *Run* 功能表中選取輸出類型來執行報告。</block>
+  <block id="8ed7b905a59e5488e500fdbff4d3cf32" category="inline-image-macro">選取報告輸出</block>
+  <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 聯邦版不提供儲存工作負載安全功能。</block>
 </blocks>

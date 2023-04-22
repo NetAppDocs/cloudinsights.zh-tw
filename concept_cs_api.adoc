@@ -11,6 +11,9 @@ summary: 工作負載安全性包含功能強大的API、可與其他應用程�
 [role="lead"]
 工作負載安全性API可讓NetApp客戶和獨立軟體廠商（ISV）將工作負載安全性與其他應用程式（例如CMDB或其他票證系統）整合。
 
+
+NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
+
 API存取需求：
 
 * API存取權杖模式用於授予存取權。

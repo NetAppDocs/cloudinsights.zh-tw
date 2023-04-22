@@ -454,6 +454,9 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
  kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
 
+NOTE: Cloud Insights 聯邦版不提供操作員調校功能
+
+
 
 == 疑難排解
 

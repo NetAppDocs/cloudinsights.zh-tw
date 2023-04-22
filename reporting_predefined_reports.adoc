@@ -28,11 +28,12 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 
 當您開啟報告入口網站時、「團隊內容」資料夾是您在Cloud Insights 「團隊報告」中選擇所需資訊類型的起點。
 
-. 在左側導覽窗格中、按一下*團隊內容*、然後選取您要使用的資訊類別。
-. 按一下「*報告*」以存取預先定義的報告。
+. 在左導覽窗格中、選取 * 內容 > 團隊內容 * 。
+. 選取 * 報告 * 以存取預先定義的報告。
 
 
-image:Reporting-TeamContent.png["團隊內容"]
+image:Reporting_Menu.png["報告功能表"]
+image:Reporting_Team_Content.png["顯示報告的團隊內容已反白顯示"]
 
 
 

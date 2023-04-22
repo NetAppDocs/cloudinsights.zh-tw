@@ -10,7 +10,10 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 toc::[]
-您可以按一下*「Help」（說明）>「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您是處於試用模式或訂閱模式。
+您可以按一下*「Help」（說明）>「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您的 Cloud Insights 版本。
+
+
+NOTE: Cloud Insights 聯邦版不提供線上客服支援選項。
 
 image:SupportPageWithLearningCenter.png["支援頁面"]
 

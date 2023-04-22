@@ -14,11 +14,15 @@ Storage Manager儀表板提供集中化的視覺化功能、可讓您根據可�
 
 NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:concept_subscribing_to_cloud_insights.html["Premium Edition"]。
 
-儀表板包含七個元件、其中包含儲存環境特定層面的關聯式資訊。您可以深入瞭解儲存服務的各個層面、深入分析您最感興趣的部分。
-
 
 
 == 摘要
+
+從「團隊內容」中選取 * 儲存管理員儀表板 * 、可提供多份報告、提供您的流量和儲存資訊。
+
+image:Reporting_Storage_Manager_Dashboard_Choices.png["Storage Manager 儀表板選項"]
+
+如需概覽、 * 儲存管理員報告 * 包含七個元件、其中包含儲存環境許多層面的內容相關資訊。您可以深入瞭解儲存服務的各個層面、深入分析您最感興趣的部分。
 
 image:Reporting-SMD.png["Storage Manager儀表板"]
 

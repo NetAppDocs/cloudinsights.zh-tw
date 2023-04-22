@@ -18,6 +18,9 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 在登錄過程中、您可以選擇全球區域來裝載Cloud Insights 您的支援環境。如需詳細資訊、請參閱Cloud Insights 關於資訊 link:security_information_and_region.html["資訊與地區"]。
 
 
+NOTE: 除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版（基本版、標準版、優級版）。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。
+
+
 
 == 版本
 
@@ -33,7 +36,7 @@ WARNING: 不活動Cloud Insights 的不活動版環境會被刪除、資源也�
 NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡易版》中收集的物件或指標、恕不另行通知。
 
 * * Standard Edition *可透過訂閱取得、並提供Basic Edition的所有功能及更多功能。
-* *優質版*提供商業智慧與報告、以及工作負載安全性稽核與威脅偵測等其他優點。
+* * 聯邦版 * 提供符合 FedRAMP 標準的美國 Cloud Insights 版政府部門。上述商業版中提供的某些功能可能無法在聯邦版中使用、或可能會因功能受限而無法使用。在可能的情況下、 Cloud Insights 文件會記錄這些差異。
 
 
 
@@ -61,7 +64,7 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 | 論壇、文件及訓練影片 | 檢查； | 檢查； | 檢查； 
 
 
-| 即時聊天室與技術支援 | - | 檢查； | 檢查； 
+| 即時交談 ^&plus ； &plus ； ^ 與技術支援 | - | 檢查； | 檢查； 
 
 
 | VM指標 | - | 檢查； | 檢查； 
@@ -76,7 +79,7 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 | 監控和警示 | &ast； | 檢查； | 檢查； 
 
 
-| API存取加號（&plus）； | 檢查； | 檢查； | 檢查； 
+| API 存取 ^&plus ； ^ | 檢查； | 檢查； | 檢查； 
 
 
 | 單一登入（SSO） | - | - | 檢查； 
@@ -90,7 +93,7 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 
 | 商業情報與報告與快速；&ast； | - | - | 檢查； 
 |===
-&ast；一次僅限5個作用中的自訂監視器&plus；API存取依版本&ast而異；&ast；適用於500個受管理單元以上的環境
+加號 (&D); 一次只能使用 5 個主動式自訂監視器； API 存取會因版本 & 速度而異；加號；加號； Cloud Insights 聯邦版不提供 ^ 功能
 
 使用Cloud Insights 時、如果看到掛鎖圖示 image:padlock.png["掛鎖"]、表示您目前的版本無法使用此功能、或是以有限形式提供。升級以完整存取此功能。
 

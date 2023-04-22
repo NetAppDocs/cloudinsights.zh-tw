@@ -11,6 +11,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 您必須 link:task_cs_add_agent.html["安裝代理程式"] 以便從資料收集器取得資訊。在安裝代理程式之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間的需求。
 
+
+NOTE: Cloud Insights 聯邦版不提供儲存工作負載安全功能。
+
 [cols="36,60"]
 |===
 | 元件 | Linux需求 

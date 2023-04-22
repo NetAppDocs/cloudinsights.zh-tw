@@ -12,6 +12,9 @@ keywords: email, notifications, alerts, warnings, attacks
 若要設定工作負載安全警示收件者、請按一下*管理>通知*、然後在每個收件者的適當區段中輸入電子郵件地址。
 
 
+NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
+
+
 
 == 潛在攻擊警示與警告
 
