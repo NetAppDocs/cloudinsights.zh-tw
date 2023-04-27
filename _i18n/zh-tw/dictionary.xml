@@ -2929,7 +2929,6 @@
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系統監視器</block>
   <block id="556db0fcb03373ffd4b535662a23642d" category="paragraph">包含多個系統定義的監控器、可同時用於測量數據和記錄。Cloud Insights可用的系統監視器取決於環境中的資料收集器。因此Cloud Insights 、當資料收集器新增或其組態變更時、可在功能性更新中使用的監視器可能會有所變更。</block>
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">啟用ONTAP 進階計數器和EMS記錄收集功能以利執行功能</block>
-  <block id="46df155a798a257bfbc43b89badd64d1" category="admonition">大多數系統監視器預設處於「暫停」狀態。在恢復監控器之前、您必須確保ONTAP 資料收集器中已啟用_Advanced Counter Data Collection_和_Enable Esensing log collection_。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a126bfb1fdb6bbbe10997dfc35ed2144" category="section-title">監控說明</block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系統定義的監控器由預先定義的指標和條件、以及無法修改的預設說明和修正行動所組成。您可以_修改系統定義監視器的通知收件者清單。若要檢視度量、條件、說明及修正行動、或是修改收件者清單、請開啟系統定義的監控群組、然後按一下清單中的監控名稱。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">無法修改或移除系統定義的監控群組。</block>
@@ -11044,4 +11043,5 @@
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</block>
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</block>
+  <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
