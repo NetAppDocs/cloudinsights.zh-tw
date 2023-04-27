@@ -11036,4 +11036,12 @@
   <block id="8ed7b905a59e5488e500fdbff4d3cf32" category="inline-image-macro">選取報告輸出</block>
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 聯邦版不提供儲存工作負載安全功能。</block>
+  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">NKMO 命名空間中的網路觀察者（工作負載對應） Pod 位於 CrashLoopBackOff</block>
+  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">這些 Pod 對應於網路可觀察性的工作負載對應資料收集器。請嘗試下列方法：•檢查其中一個 Pod 的記錄、以確認最低核心版本。例如： --{"CI-租 戶 -id":" 您的租戶 -id" 、 "collector 叢集 " ： "Your -k8s-cluster 名稱 " 、 "Environment ： "prod" 、 "Level" ： "error" 、 "msg" ：驗證失敗。原因：核心版本 3.10.0 低於最低核心版本 4.18.0 、 "Time" ： "2022-11-09T08:23:08Z"} --- • Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 &gt;=4.18.0</block>
+  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">NKMO 命名空間中的網路觀察者 Pod 位於 OpenShift 4 環境中的 CrashLoopBackOff</block>
+  <block id="c16b414538506d32ed8a234fa2331767" category="cell">目前不支援這項功能。請留意未來更新中要新增的支援。</block>
+  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Pod 在 NKMO 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料</block>
+  <block id="b301a7b156c241fb466de1bca776811c" category="cell">檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</block>
+  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
+  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</block>
 </blocks>
