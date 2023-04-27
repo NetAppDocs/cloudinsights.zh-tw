@@ -89,6 +89,16 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Kubernetes叢集頁面
       url: "/kubernetes_cluster_detail.html"
+  - title: 洞見
+    entries:
+    - title: 總覽
+      url: "/insights_overview.html"
+    - title: 共享的資源正承受壓力
+      url: "/insights_shared_resources_under_stress.html"
+    - title: Kubernetes命名空間不足
+      url: "/insights_k8s_namespaces_running_out_of_space.html"
+    - title: 回收 ONTAP Cold Storage
+      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: 精選資訊ONTAP
     url: "/concept_ontap_essentials.html"
   - title: 使用查詢
