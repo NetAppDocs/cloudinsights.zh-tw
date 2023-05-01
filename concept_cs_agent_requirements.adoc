@@ -107,13 +107,13 @@ NOTE: Cloud Insights 聯邦版不提供儲存工作負載安全功能。
 | TCP | 443.. | 叢集或SVM管理IP位址（視SVM收集器組態而定） | 傳出 | API與ONTAP NetApp通訊 
 
 
-| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 傳入/傳出 | 與ONTAP 適用於Fpolicy活動的功能溝通 
+| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 傳入 | 與ONTAP 適用於Fpolicy活動的功能溝通 
 
 
-| TCP | 7. | SVM資料LIF IP位址 | 雙向 | 在功能性和工作負載安全性之間實現雙向ONTAP 。代理程式Ping SVM LIF。 
+| TCP | 7. | SVM資料LIF IP位址 | 傳出 | ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。 
 
 
-| SSH | 22 | 叢集管理 | 雙向 | CIFS/SMB 使用者封鎖所需。 
+| SSH | 22 | 叢集管理 | 傳出 | CIFS/SMB 使用者封鎖所需。 
 |===
 
 

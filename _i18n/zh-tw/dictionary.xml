@@ -7434,7 +7434,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API與ONTAP NetApp通訊</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM資料LIF IP位址</block>
-  <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">傳入/傳出</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">與ONTAP 適用於Fpolicy活動的功能溝通</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件率檢查器</block>
@@ -10568,7 +10567,6 @@
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">對於*美國型*工作負載安全環境：</block>
   <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">對於*歐洲型*工作負載安全環境：</block>
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">對於* APAC型*工作負載安全環境：</block>
-  <block id="c62621daddc9bbedf66f077464765078" category="cell">在功能性和工作負載安全性之間實現雙向ONTAP 。代理程式Ping SVM LIF。</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">如果您的環境具有工作負載安全性、則已設定的端點URL也會顯示在此清單中。</block>
   <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">請注意、使用者可存取的API類型也取決於 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 每Cloud Insights 個功能集（監控、工作負載安全、報告）都有。</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">「工作負載安全性」會根據「Snapshot清除」設定、每天自動刪除快照一次。</block>
@@ -11044,4 +11042,6 @@
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">傳入</block>
+  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。</block>
 </blocks>
