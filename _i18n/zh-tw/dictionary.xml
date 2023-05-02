@@ -10639,8 +10639,6 @@
   <block id="7d29e14ab81a7f2d743b14063e512bf7" category="paragraph">利用可據以行動的內部威脅情報、協助保護資料Cloud Secure Cloud Insights 。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">取代無法提供即時且準確的資料存取與控制可見度的工具和手動程序。工作負載安全功能可在雲端和內部部署儲存系統上進行獨特作業、為您提供惡意使用者行為的即時警示。</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作負載安全性注意事項（先前Cloud Secure 稱為「不安全」）</block>
-  <block id="a2e7ba2dd94ada0070912463ec6803b4" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">「所有活動」頁面可協助您瞭解在工作負載安全性環境中、對實體所執行的行動。</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">活動歷程記錄會保留13個月、適用於作用中的工作負載安全環境。</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">請參閱OnCommand Cloud Volumes ONTAP 《支援功能支援文件》、以設定單一節點/ HA AWS執行個體來裝載工作負載安全代理程式：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -11044,4 +11042,6 @@
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">傳入</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。</block>
+  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
+<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
 </blocks>
