@@ -4124,7 +4124,6 @@
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">萬用字元字串不得包含引號：範例：searchtext、\*searchtext*會篩選任何包含「searchtext」的字串。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">字串加上字首、例如：searchtext*、會搜尋以「searchtext」開頭的任何字串。</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">您可以依時間、使用者、來源IP、活動、路徑_和實體類型_來排序活動記錄資料。根據預設、表格會依遞減的_Timed_順序排序、表示最新的資料會先顯示。「_Device」和「_Protocol」欄位的排序功能已停用。</block>
-  <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">您可以按一下「活動記錄」表格上方的「_Export」（匯出）按鈕、將活動記錄匯出至.CSV檔案。請注意、只會匯出前10、000筆記錄。</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">「_All activity」（全部活動）表格預設會顯示選取欄。若要新增、移除或變更欄、請按一下表格右側的齒輪圖示、然後從可用欄清單中選取。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">活動選擇器、寬=30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
@@ -11044,4 +11043,5 @@
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以按一下「活動記錄」表格上方的「_Export」（匯出）按鈕、將活動記錄匯出至.CSV檔案。請注意、只會匯出前 100 、 000 筆記錄。視資料量而定、匯出作業可能需要幾秒鐘到幾分鐘的時間才能完成。</block>
 </blocks>
