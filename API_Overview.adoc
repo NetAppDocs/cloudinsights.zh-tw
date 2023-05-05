@@ -312,21 +312,6 @@ spec:
 
 
 
-==== MacOS
-
-* 編輯Telegraf組態檔、並以新的API權杖取代舊API權杖的所有執行個體。
-+
- sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
-* 重新啟動Telegraf。
-+
-....
-sudo launchctl stop telegraf
-sudo launchctl start telegraf
-....
-
-
-
-
 ==== Windows
 
 * 對於_C:\Program Files\Telegraf\Telegraf.d_中的每個Telegraf組態檔、請將舊API權杖的所有執行個體、以新的API權杖取代。

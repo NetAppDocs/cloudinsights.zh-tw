@@ -371,8 +371,6 @@
   <block id="3dcf1132d2ac9bc21285187c48593f04" category="cell"><block ref="3dcf1132d2ac9bc21285187c48593f04" category="inline-link-macro-rx"></block></block>
   <block id="9c213cb7b5d19c2f29b16c443a8abfd6" category="inline-link-macro">Lenovo HX系列</block>
   <block id="cb794264bdd8eabce9d96fe3669eb8ba" category="cell"><block ref="cb794264bdd8eabce9d96fe3669eb8ba" category="inline-link-macro-rx"></block></block>
-  <block id="6c61a878ac2abe027fdc9bb02c9dc5ee" category="inline-link-macro">MacOS</block>
-  <block id="e7a7b834eaa4f36ff205b888218eb86a" category="cell"><block ref="e7a7b834eaa4f36ff205b888218eb86a" category="inline-link-macro-rx"></block></block>
   <block id="fa836c8f852703c79e684718602d15f3" category="inline-link-macro">memcached</block>
   <block id="126d3fe0d1082a69b5d94b09b5bc3c76" category="cell"><block ref="126d3fe0d1082a69b5d94b09b5bc3c76" category="inline-link-macro-rx"></block></block>
   <block id="b10bdb60d29ba046adcdfada8800a230" category="inline-link-macro">Microsoft Azure NetApp Files</block>
@@ -1393,7 +1391,6 @@
   <block id="c8d85f57956f127cf15ceb0dd0f01a67" category="paragraph">您稍後將能設定其他資料收集器。</block>
   <block id="38842479851f6bd610129b076a042485" category="section-title">設定資料收集器-作業系統與服務</block>
   <block id="0f0f84cb9775a6f4ad6b4796bfcedfe9" category="section-title">作業系統：</block>
-  <block id="975a66ed816bd277d0cef6e3be2ded78" category="paragraph">若為_Operating System_資料收集器、請選擇一個平台（MacOS、Linux、Windows）來安裝Cloud Insights 一個支援程式。您必須至少有一個代理程式、才能從服務收集資料。代理程式也會從主機本身收集資料、以供Cloud Insights 在支援中使用。此資料在小工具等中歸類為「節點」資料</block>
   <block id="3016defc353ac1d6c8fb67380dc453a9" category="list-text">在代理主機或VM上開啟終端機或命令視窗、然後貼上顯示的命令以安裝代理程式。</block>
   <block id="4307f095d2e3c10914861e3d0b27520b" category="list-text">安裝完成後、按一下*完整設定*。</block>
   <block id="2feb695214b35f4b4c9ae83eac6164ee" category="section-title">服務：</block>
@@ -1563,8 +1560,6 @@
   <block id="d9dc66c5dd0daf41b61af8de89a60066" category="list-text">每個DS5或FAStT陣列的IP位址</block>
   <block id="90708586f8afae2670c5e389c5b3df37" category="list-text">Ping陣列上兩個控制器的IP位址、以進行存取驗證</block>
   <block id="d0ad61d8d4e1d5d38bb6b0cb90a5d934" category="list-text">連接埠需求：2463</block>
-  <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">支援Telegraf作為收集整合資料的代理程式、可在Windows、Linux、MacOS和Kubernetes上設定。Cloud Insights</block>
-  <block id="1da5ffd366c7914393abacbd5eddb42f" category="doc">設定代理程式以收集資料（Linux/Linux/Mac）</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果您想在安裝代理程式之前驗證安裝檔案、請參閱以下的一節 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
@@ -1573,13 +1568,10 @@
   <block id="8d6f7baf6fd8e47d9316fcc507ab0f85" category="list-text"><block ref="85415f26af88eac138de6f713927df0c" category="inline-xref-macro-rx"></block></block>
   <block id="95f68796200de884bc3186742179de85" category="list-text"><block ref="8311b71d9af22c435aebd4b15988ca17" category="inline-xref-macro-rx"></block></block>
   <block id="d41bd76f36789e8fddb867c10a5eca40" category="list-text"><block ref="f0b8d86b1d5e602002cf4f7e7b6c1cac" category="inline-xref-macro-rx"></block></block>
-  <block id="bbf85c4af8ae929eb3f146ee14dc6de7" category="list-text"><block ref="eb2b23738d53e26664bd524aac0d946b" category="inline-xref-macro-rx"></block></block>
-  <block id="0fb66d0a12868f7a7a7ac80d4f6e61eb" category="list-text"><block ref="1e8f93845a7d4d0675fd8a2f9ee474e1" category="inline-xref-macro-rx"></block></block>
   <block id="4705018fb833a2cd4979b3acd0c3171f" category="paragraph">若要安裝代理程式、無論您使用的平台為何、都必須先執行下列動作：</block>
   <block id="60e927136e016a2a126538b1a592e8c5" category="list-text">登入您要用於代理程式的主機。</block>
   <block id="e9604f31aba2ec7275fd08fdb30a45f9" category="list-text">登入Cloud Insights 您的支援網站、前往*管理&gt;資料收集器*。</block>
   <block id="212039b527f83b6053ae8fd23bb11e26" category="list-text">按一下「*+資料收集器*」、然後選擇要安裝的資料收集器。</block>
-  <block id="ff90afa9cae89212ec8c4a56e9010e87" category="list-text">為主機選擇適當的平台（Windows、Linux、MacOS等）</block>
   <block id="0b5b60f6bf77a0318f6283c5d8ce5be7" category="list-text">請針對每個平台執行其餘步驟。</block>
   <block id="09e0466fcc22c337dc6af8a799296033" category="admonition">在主機上安裝代理程式之後、您就不需要在該主機上重新安裝代理程式。</block>
   <block id="4779eaa1340da59df6b8231755992886" category="inline-link-macro">「節點」度量</block>
@@ -1645,22 +1637,7 @@
   <block id="0d0d38b5222d561807cc4ef53f325bd5" category="list-text">建立/etc/default/Telegraf、並插入_https_proxy_和/或_https_proxy_變數的定義：</block>
   <block id="936ff88b3ce432ac2624f7f2bb4998a4" category="paragraph">若要在Ubuntu / Debian上解除安裝代理程式、請在Bash終端機中執行下列作業：</block>
   <block id="7f3a9bda6122a676154f73d5edf02232" category="list-text"><block ref="760050cb55c606cd7ef0af21f798bf45" category="inline-link-macro-rx"></block>。</block>
-  <block id="8b06df0295926efcdcc1f9e13c49848e" category="section-title">MacOS</block>
-  <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">安裝MacOS代理程式</block>
-  <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">下列命令必須可用：Curl、Sudo、openssl和shasum</block>
-  <block id="b23f4e2f2268beeee7ca70611f0a7a37" category="list-title">在MacOS上安裝代理程式的步驟：</block>
-  <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">如果您先前使用homebw安裝Telegraf代理程式、系統會提示您解除安裝。一旦解除安裝先前安裝的Telegraf代理程式、請重新執行上述步驟5中的命令。</block>
-  <block id="e747d1c9206ef290e765c44899e8276d" category="section-title">設定適用於MacOS的Proxy支援</block>
-  <block id="86ca857cd13e48a665c06adacc3bc11c" category="paragraph">對於位於Proxy後的系統、請執行下列步驟、為目前使用者*安裝Telegraf代理程式之前*設定_https_proxy_和/或_https_proxy_環境變數：</block>
-  <block id="b7811096d82a6677a2e9256752cdbc44" category="paragraph">*安裝Telegraf代理程式之後、請在_/Applications/Telegraf.app/Contents / telegraf.plist_:中新增並設定適當的_https_proxy_和/或_https_proxy_變數</block>
-  <block id="8bbdd3c386723d33a3bfe476f361744c" category="paragraph">然後、在載入上述變更後重新啟動Telegraf：</block>
-  <block id="903f8d1093beeadb9d59b74d760a40e8" category="paragraph">若要在MacOS上解除安裝代理程式、請在Bash終端機中執行下列步驟：</block>
-  <block id="1ed754660eab03374442236452ed9e39" category="list-text">解除安裝Telewraf代理程式：</block>
-  <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">解除安裝先前的Telewraf代理程式：</block>
-  <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">*到這裡*</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">監控功能僅安裝在Linux節點上</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">支援監控執行Linux的Kubernetes節點、方法是指定Kubernetes節點選取器、在這些平台上尋找下列Kubernetes標籤：Cloud Insights</block>
   <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">平台</block>
@@ -1719,7 +1696,6 @@
   <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">請遵循下列步驟：</block>
   <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">依照指示複製代理程式安裝程式程式片段。</block>
   <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。</block>
-  <block id="e596e19d0eb6c82c1aba63c3fd5cc626" category="list-text">從命令中刪除後端"--install"（Linux/Mac）或"-install"（Windows）。</block>
   <block id="34e3334224025c0302c21ab69b535b6e" category="list-text">從文字編輯器複製整個命令。</block>
   <block id="d2a9c05594a3807487efd306f7e06ff5" category="list-text">現在請將其貼到命令視窗（工作目錄）中、然後執行。</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">非Windows（這些範例適用於Kubernetes；實際的指令碼名稱可能有所不同）：</block>
@@ -2822,14 +2798,6 @@
   <block id="228775e556bb7d0b1893a0069479cc55" category="cell">已接收位元組已傳送封包Outboud已捨棄封包Outboud錯誤封包已接收捨棄的封包已接收錯誤封包已傳送的封包</block>
   <block id="620f85b913de46972f8dc2d9791d0335" category="inline-link-macro">設定代理程式</block>
   <block id="11e9a60bae5c09e0b15ee77e596f4b30" category="paragraph">如需設定與疑難排解資訊、請參閱 <block ref="253f1bddd94d888bccb7868889c4eaa6" category="inline-link-macro-rx"></block> 頁面。</block>
-  <block id="9b2aab4a17e8001708e5c064c18e9cc9" category="section-title">MacOS記憶體使用量</block>
-  <block id="bdb7a011a6dcafb6d9cca887b7acc5d4" category="paragraph">透過Telegraf和MacOS回報不同的記憶體使用量。Cloud InsightsTelegraf和Mac活動監控器都使用從_vm_stat_收集到的數據、不過每個數據的總記憶體使用量的計算方式各不相同。</block>
-  <block id="cf7023b1681322a2d9e0f6d0c97b53b8" category="paragraph">* Telegraf*計算_使用記憶體總計_如下：</block>
-  <block id="bdec3477c71d1105bc571aa81c60a497" category="paragraph">其中_可用記憶體總計_衍生自_vm_stat_中的「可用頁數」和「非使用中頁數」總和。</block>
-  <block id="cebe752b3cb71c1129081a5eb80e578b" category="paragraph">*另一方面、Mac活動監視器*會計算使用的記憶體、如下所示：</block>
-  <block id="4051f7a972961f2c2f00ce4e28456668" category="list-text">_App記憶體_衍生自於_VM_stat_中「匿名頁面」與「可清除頁面」之間的差異、</block>
-  <block id="83dd5b5fa4fab4140db6a44dd694c77e" category="list-text">_Wired Memory_衍生自_VM_stat_中的「連線頁面」、以及</block>
-  <block id="aeb19aa8690d7899c00999b3db5b53ab" category="list-text">_Compressed_is衍生自_vm_stat_中的「由壓縮器佔用的頁面」。</block>
   <block id="ef3aa6b9d2f782f33da5b73b27fa7356" category="summary">用於報告的資料倉儲架構圖表和表格</block>
   <block id="813a56890a4533afc3bcfe8afcb993b9" category="doc">適用於報告的架構Cloud Insights</block>
   <block id="37027f0e1c5a6324ee414a6d53995364" category="paragraph">此處提供這些架構表格和圖表、作為Cloud Insights 有關「促進報告」的參考資料。</block>
@@ -4207,7 +4175,6 @@
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS和DEBIAN/Ubuntu</block>
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">編輯Telegraf組態檔、並以新的API權杖取代舊API權杖的所有執行個體。</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">重新啟動Telegraf。</block>
-  <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">MacOS</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">對於_C:\Program Files\Telegraf\Telegraf.d_中的每個Telegraf組態檔、請將舊API權杖的所有執行個體、以新的API權杖取代。</block>
   <block id="5a4b4eed429420789b0c3c343b565829" category="summary">設定Azure運算資料收集器。</block>
   <block id="b9f971877c119683ae01bf78224fdfe8" category="doc">設定Azure運算資料收集器</block>
@@ -7995,8 +7962,6 @@
   <block id="87c6157f200d5f2c85eeda2dc68852f6" category="sidebar">我們儲存的內容和地點</block>
   <block id="55b171ae91c4f30690df081e54631deb" category="sidebar">收集資料</block>
   <block id="713f769811f3b7c68113061a88f193e4" category="sidebar">設定擷取單位</block>
-  <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">設定代理程式（Linux/Mac）</block>
-  <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">設定代理程式（Kubernetes）</block>
   <block id="e30ee94d3d17494d7e3f549e9b179b61" category="sidebar">判斷資料收集器擷取狀態</block>
   <block id="4aba696177ce8a74216803ac14343d2c" category="sidebar">管理已設定的資料收集器</block>
   <block id="72633c43eaf6d098d8df9b7b7cf5fb7a" category="sidebar">研究資料收集器錯誤</block>
@@ -8484,10 +8449,6 @@
   <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">安裝代理程式</block>
   <block id="d45fc0c2a28126623498664c1e032858" category="list-text">如果您使用Proxy、則必須遵循*設定RHEL/CentOS* Proxy支援一節中的指示。</block>
   <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">如果您使用的是代理服務器，則必須按照*配置Ubuntu / DEBIAN*代理支持一節中的說明操作。</block>
-  <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">如果您使用的是Proxy、則必須遵循「*設定MacOS的Proxy支援」一節中的指示。</block>
-  <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。</block>
-  <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">麻煩了 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。</block>
-  <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝</block>
   <block id="1b1cd01c54254af639999400741a0b75" category="list-text">支援的支援ONTAP Select</block>
   <block id="a1667a4627338ab4bba192e79668af02" category="paragraph"><block ref="a1667a4627338ab4bba192e79668af02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">當您嘗試在不受支援的系統上安裝代理程式時、就會出現此錯誤。請參閱 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
@@ -8841,7 +8802,6 @@
   <block id="2eb1ff7eeb74bcccfbd52597702cefd2" category="inline-image-macro">Kubernetes工作負載登陸頁面範例</block>
   <block id="b5983a6439977ea97f606ef9b22473da" category="paragraph"><block ref="b5983a6439977ea97f606ef9b22473da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="848145ac45f138034b0f73e33d01087d" category="section-title">檢查您的校驗和</block>
-  <block id="07d37618bb7cd1ed696f2a65da638c56" category="paragraph">您要求我們在安裝適用於Windows、Linux和MacOS的代理程式時、為您提供總和檢查值、我們認為這是一個很好的想法。以下是：</block>
   <block id="b205fe7e473302e0bfbfc761b5ff494f" category="inline-image-macro">安裝期間顯示的代理程式Checksum值</block>
   <block id="f9e15fb7ce69e61fac90a652cc378b31" category="paragraph"><block ref="f9e15fb7ce69e61fac90a652cc378b31" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86f7f75f0c9c85cf5db67a84570aecd1" category="section-title">記錄警示功能改善</block>
@@ -10274,7 +10234,6 @@
   <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">產生Checksum值</block>
   <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">若要產生Checksum值、請針對您的適當平台執行下列命令：</block>
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu：</block>
-  <block id="ba6ad5c825f9877ce4f39aaf439755f6" category="list-text">MacOS：</block>
   <block id="2759aa04a78ddf03f5db1a25acdca496" category="section-title">使用PEM檔案驗證Checksum</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">安裝下載的套件</block>
   <block id="e8cdc72b15f2eb76eb1815f526758f2e" category="doc">洞見：高消費的工作負載</block>
@@ -11044,4 +11003,12 @@
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以按一下「活動記錄」表格上方的「_Export」（匯出）按鈕、將活動記錄匯出至.CSV檔案。請注意、只會匯出前 100 、 000 筆記錄。視資料量而定、匯出作業可能需要幾秒鐘到幾分鐘的時間才能完成。</block>
+  <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">您要求我們在安裝 Windows 和 Linux 的代理程式時、提供檢查值、我們認為這是個好主意。以下是：</block>
+  <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。</block>
+  <block id="2ddc4416c197500bc7619829b98c8b77" category="doc">設定代理程式以收集資料（ Windows/Linux ）</block>
+  <block id="72213a3f462eab56462e1fd1892f6fc0" category="list-text">為您的主機選擇適當的平台（ Windows 、 Linux ）</block>
+  <block id="98cd1da81daac82fdd86ce7412e50a24" category="list-text">從命令中刪除結尾的 "--install" （ Linux ）或 "-install" （ Windows ）。</block>
+  <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">對於 _ 作業系統 _ 資料收集器、請選擇一個平台（ Linux 、 Windows ）來安裝 Cloud Insights 代理程式。您必須至少有一個代理程式、才能從服務收集資料。代理程式也會從主機本身收集資料、以供Cloud Insights 在支援中使用。此資料在小工具等中歸類為「節點」資料</block>
+  <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">在 Windows/Linux 上設定代理程式</block>
+  <block id="77206fd030aaac8141e97d837c255109" category="sidebar">設定 Kubernetes 運算子</block>
 </blocks>

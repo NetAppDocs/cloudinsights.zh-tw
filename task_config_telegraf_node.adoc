@@ -49,24 +49,3 @@ summary: Flink資料收集器組態
 == 設定
 
 如需設定與疑難排解資訊、請參閱 link:task_config_telegraf_agent.html["設定代理程式"] 頁面。
-
-
-
-== MacOS記憶體使用量
-
-透過Telegraf和MacOS回報不同的記憶體使用量。Cloud InsightsTelegraf和Mac活動監控器都使用從_vm_stat_收集到的數據、不過每個數據的總記憶體使用量的計算方式各不相同。
-
-* Telegraf*計算_使用記憶體總計_如下：
-
- Memory Used Total = Memory Total - Memory Available Total
-其中_可用記憶體總計_衍生自_vm_stat_中的「可用頁數」和「非使用中頁數」總和。
-
-*另一方面、Mac活動監視器*會計算使用的記憶體、如下所示：
-
- Memory Used = App Memory + Wired Memory + Compressed
-其中：
-
-* _App記憶體_衍生自於_VM_stat_中「匿名頁面」與「可清除頁面」之間的差異、
-* _Wired Memory_衍生自_VM_stat_中的「連線頁面」、以及
-* _Compressed_is衍生自_vm_stat_中的「由壓縮器佔用的頁面」。
-

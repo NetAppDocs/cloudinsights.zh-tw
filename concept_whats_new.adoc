@@ -141,7 +141,7 @@ image:Kubernetes_Workload_LP.png["Kubernetes工作負載登陸頁面範例"]
 
 === 檢查您的校驗和
 
-您要求我們在安裝適用於Windows、Linux和MacOS的代理程式時、為您提供總和檢查值、我們認為這是一個很好的想法。以下是：
+您要求我們在安裝 Windows 和 Linux 的代理程式時、提供檢查值、我們認為這是個好主意。以下是：
 
 image:Agent_Checksum_Instructions.png["安裝期間顯示的代理程式Checksum值"]
 

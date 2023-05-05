@@ -198,9 +198,6 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_dc_lenovo.html["Lenovo HX系列"] | 基礎架構 
 
 
-| link:task_config_telegraf_agent.html#macos["MacOS"] | 服務 
-
-
 | link:task_config_telegraf_memcached.html["memcached"] | 服務 
 
 

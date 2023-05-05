@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: 支援Telegraf作為收集整合資料的代理程式、可在Windows、Linux、MacOS和Kubernetes上設定。Cloud Insights 
+summary: Cloud Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。 
 ---
-= 設定代理程式以收集資料（Linux/Linux/Mac）
+= 設定代理程式以收集資料（ Windows/Linux ）
 :allow-uri-read: 
 
 
@@ -28,8 +28,6 @@ NOTE: 如果您想在安裝代理程式之前驗證安裝檔案、請參閱以�
 * <<Windows>>
 * <<RHEL與CentOS>>
 * <<Ubuntu與DEBIAN>>
-* <<MacOS>>
-* <<Kubernetes>>
 
 
 若要安裝代理程式、無論您使用的平台為何、都必須先執行下列動作：
@@ -37,9 +35,7 @@ NOTE: 如果您想在安裝代理程式之前驗證安裝檔案、請參閱以�
 . 登入您要用於代理程式的主機。
 . 登入Cloud Insights 您的支援網站、前往*管理>資料收集器*。
 . 按一下「*+資料收集器*」、然後選擇要安裝的資料收集器。
-
-
-. 為主機選擇適當的平台（Windows、Linux、MacOS等）
+. 為您的主機選擇適當的平台（ Windows 、 Linux ）
 . 請針對每個平台執行其餘步驟。
 
 
@@ -345,145 +341,6 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 
 
-=== MacOS
-
-
-
-==== 先決條件：
-
-* 下列命令必須可用：Curl、Sudo、openssl和shasum
-* 如果您使用的是Proxy、則必須遵循「*設定MacOS的Proxy支援」一節中的指示。
-
-
-
-
-==== 設定適用於MacOS的Proxy支援
-
-
-NOTE: 如果您的環境使用Proxy、請先閱讀本節再安裝。
-
-
-NOTE: 以下步驟概述設定_https_proxy/https_proxy_環境變數所需的動作。在某些Proxy環境中、使用者可能也需要設定_no_proxyEnvironments _變數。
-
-對於位於Proxy後的系統、請執行下列步驟、為目前使用者*安裝Telegraf代理程式之前*設定_https_proxy_和/或_https_proxy_環境變數：
-
- export https_proxy=<proxy_server>:<proxy_port>
-*安裝Telegraf代理程式之後、請在_/Applications/Telegraf.app/Contents / telegraf.plist_:中新增並設定適當的_https_proxy_和/或_https_proxy_變數
-
-....
-…
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-   <key>EnvironmentVariables</key>
-   <dict>
-          <key>https_proxy</key>
-          <string><proxy_server>:<proxy_port></string>
-   </dict>
-   <key>Program</key>
-   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-   <key>Label</key>
-   <string>telegraf</string>
-   <key>ProgramArguments</key>
-   <array>
-     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-     <string>--config</string>
-     <string>/usr/local/etc/telegraf.conf</string>
-     <string>--config-directory</string>
-     <string>/usr/local/etc/telegraf.d</string>
-   </array>
-   <key>RunAtLoad</key>
-   <true/>
-</dict>
-</plist>
-…
-....
-然後、在載入上述變更後重新啟動Telegraf：
-
-....
-sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf
-....
-
-
-==== 安裝代理程式
-
-image:Agent_Requirements_Macos.png["安裝MacOS代理程式"]
-
-.在MacOS上安裝代理程式的步驟：
-. 選擇代理程式存取金鑰。
-. 從代理程式安裝對話方塊複製命令區塊。您可以按一下剪貼簿圖示、將命令快速複製到剪貼簿。
-. 開啟Bash視窗
-. 將命令貼到Bash視窗中、然後按Enter鍵。
-. 命令會下載適當的代理程式安裝程式、安裝並設定預設組態。完成後、它會重新啟動代理程式服務。此命令具有唯一的金鑰、有效時間為24小時。
-. 如果您先前使用homebw安裝Telegraf代理程式、系統會提示您解除安裝。一旦解除安裝先前安裝的Telegraf代理程式、請重新執行上述步驟5中的命令。
-. 單擊*完成*或*繼續*
-
-
-安裝代理程式之後、您可以使用下列命令來啟動/停止服務：
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
-
-
-==== 解除安裝代理程式
-
-若要在MacOS上解除安裝代理程式、請在Bash終端機中執行下列步驟：
-
-. 停止Telegraf服務：
-+
- sudo launchctl stop telegraf
-. 解除安裝Telewraf代理程式：
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. 移除可能留下的任何組態或記錄檔：
-+
-....
-sudo rm -rf /usr/local/etc/telegraf*
-sudo rm -rf /usr/local/var/log/telegraf.*
-....
-
-
-
-
-==== 升級代理程式
-
-若要升級Telewraf代理程式、請執行下列步驟：
-
-. 停止Telewraf服務：
-+
- sudo launchctl stop telegraf
-. 解除安裝先前的Telewraf代理程式：
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. link:#macos["安裝新代理程式"]。
-
-
-｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝
-
-
-
-== Kubernetes
-
-NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights Sesi Insights的首選方法、可更靈活地設定監控作業、減少步驟、並有更多機會監控K8s叢集中執行的其他軟體。
-
-麻煩了 link:task_config_telegraf_agent_k8s.html["*到這裡*"] 以取得NetApp Kubernetes監控操作員的資訊與安裝指示。
-
-｛Empty｝｛Empty｝｛Empty｝｛Empty｝｛Empty｝ ｛空白｝
-
-
-
 == 驗證Checksum
 
 雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。
@@ -498,7 +355,7 @@ NetApp Kubernetes監控營運者（NKMO）是安裝Kubernetes for Cloud Insights
 
 . 依照指示複製代理程式安裝程式程式片段。
 . 不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。
-. 從命令中刪除後端"--install"（Linux/Mac）或"-install"（Windows）。
+. 從命令中刪除結尾的 "--install" （ Linux ）或 "-install" （ Windows ）。
 . 從文字編輯器複製整個命令。
 . 現在請將其貼到命令視窗（工作目錄）中、然後執行。
 
@@ -556,9 +413,6 @@ Windows：
 * RHEL/Ubuntu：
 +
  sha256sum <package_name>
-* MacOS：
-+
- shasum -a 256 telegraf.pkg
 * Windows：
 +
  Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List
