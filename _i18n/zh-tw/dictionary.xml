@@ -10208,25 +10208,6 @@
   <block id="e683c12dcf92dc441c52b41d48fae3bd" category="cell">要篩選的VM清單（以英文分隔、如果值中使用以英文分隔、則以分號分隔）以供篩選</block>
   <block id="8d9973d4d778ded1eba118da9ff38733" category="cell">Un推出 效能意見調查時間間隔（秒）</block>
   <block id="f1ef5b6a9704d8b164ef33c20e11ce70" category="cell">預設值為300秒</block>
-  <block id="7890c65c9613f0296dda2849907ff360" category="summary">支援Cloud Insights <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式、可在Windows、Linux、MacOS和Kubernetes上設定。</block>
-  <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">設定代理程式以收集資料</block>
-  <block id="e43d6e3ee8366674f4d3bc6eb87427a7" category="paragraph">使用自訂/私有泊塢視窗儲存庫設定代理伺服器、可從2021年12月10日21日12月10日21開始、為CR中的監控操作員設定Proxy</block>
-  <block id="1d3227ede43efb9f227fa30469358de3" category="paragraph">kubecl -n NetApp監控編輯代理代理代理監控-NetApp</block>
-  <block id="f41621a6649a18209de8ab1311719bde" category="paragraph">在此檔案的「規格：」區段中、新增下列程式碼區塊</block>
-  <block id="b0c450654b5e94522d011a58967a41c8" category="paragraph">規格：Proxy：isAoProxyEnabled:&lt;true or false&gt; 支援的驗證網速ProxyEnabled:&lt;true or false&gt; 支援的驗證位元Proxy:&lt;true or false&gt; 驗證密碼:&lt;password for proxy, optional&gt; 更新驗證埠:&lt;port for proxy&gt; 不驗證伺服器:&lt;server for proxy&gt; 不驗證使用者名稱:&lt;username for proxy, optional&gt; 不驗證代理伺服器:使用自訂/私有泊塢視窗儲存庫取得泊塢視窗秘密&lt;comma separated list of IPs or resolvable hostnames that should bypass a proxy&gt;</block>
-  <block id="eb7f0fe8e02a65d56982f5a74f6583c0" category="paragraph">kubecl -n NetApp-Monitoring Get secret Docker -o yaml</block>
-  <block id="58e1e7f30cb0fd80bcb9aa7b716cb724" category="paragraph">（複製貼上.dockerconfigjson的值：從上述命令的輸出中）解碼Docker密碼</block>
-  <block id="ac785eabe0073fe1171505c99a3724ee" category="paragraph">ECHO &lt;paste from step #1 above&gt; EASE| base64 -d輸出格式如下：｛"auths"：｛"dodee.f2 &lt;cluster&gt;.cloudinsights.netapp.com"：｛"username"：&lt;tenant id&gt; "flex"、"password"：&lt;password which is the CI API key&gt; "wse"、"auth"：&lt;encoded username:password basic auth key. "fas這是Docker的內部功能&gt;"｝｝｝登入Docker儲存庫</block>
-  <block id="c97b0dfe1c937e6a975eddccb95973ef" category="paragraph">Docker登入泊塢視窗。&lt;cluster&gt;.cloudinsights.netapp.com（從步驟2開始）-u &lt;username from step #2&gt; 密碼&lt;password from step #2&gt; ：從Cloud Insights 效益資料中提取操作員泊塢視窗影像</block>
-  <block id="3ec8cafe630fb58c78079faf4adeb00a" category="paragraph">Docker Pull Docker。&lt;cluster&gt;.cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</block>
-  <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">使用下列命令尋找&lt;版本&gt;欄位：</block>
-  <block id="f422cefb0886961455efb67de7e26231" category="paragraph">KVECEVECLT -n NetApp-Monitoring：取得部署監控操作員|綠色「image：」（映像：）將「operator」泊塢視窗映像推送到您的「Private / Enterprise」泊塢視窗登錄</block>
-  <block id="43d80889a5a41546c856cf06328616cd" category="paragraph">根據您的企業原則、將程式碼推送到您的「私有/本機/企業」泊塢視窗儲存庫。將所有開放原始碼相依性下載到您的「私有」泊塢視窗登錄</block>
-  <block id="9b7a2fdb4de8c1f948c779a8031bce3a" category="paragraph">需要下載下列開放原始碼映像：Docker。IO/Telewraf:1.19.3 GCR.IO/kubebbuilder/kube-RBAC代理伺服器：v0.5 k8s.gcr.io/kube-state指標/kube-state指標：v2.1.0</block>
-  <block id="582e00a87af2a3a98b1dc04e62419ae2" category="paragraph">如果啟用Fluent位元：Docker。IO/Fluent-bit:1.7.8 Docker。IO/Kubernetes：EVENT–Exporter：0.10編輯代理程式CR以反映新的Docker repo位置、請停用自動升級（若已啟用）。</block>
-  <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade：錯誤dock-repo：&lt;docker repo of the enterprise/corp docker repo&gt; RefeskerRepoSecret：&lt;選用：企業/公司泊塢視窗repo的Docker秘密名稱、此秘密應已在相同命名空間的k8s叢集上建立&gt;</block>
-  <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">在「規格：」區段中、進行下列變更：</block>
-  <block id="44adec27317574513bdc470781ccacb6" category="paragraph">規格：Telegraf：-名稱：ksm替換：-金鑰：k8s.gcr.IO值：&lt;same as "docker-repo" field above&gt; fel</block>
   <block id="25334cc3e68d534ebb5ad59907c70159" category="paragraph">雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。</block>
   <block id="1078df24543dad61e1b5b51f611f5b0f" category="section-title">無需安裝即可下載安裝程式套件</block>
   <block id="48feb91430f93bd8ac9740e9cdc40c75" category="paragraph">若要執行純下載作業（而非預設的下載與安裝）、使用者可以編輯從UI取得的代理程式安裝命令、並移除後置「install」選項。</block>
@@ -11011,4 +10992,7 @@
   <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">對於 _ 作業系統 _ 資料收集器、請選擇一個平台（ Linux 、 Windows ）來安裝 Cloud Insights 代理程式。您必須至少有一個代理程式、才能從服務收集資料。代理程式也會從主機本身收集資料、以供Cloud Insights 在支援中使用。此資料在小工具等中歸類為「節點」資料</block>
   <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">在 Windows/Linux 上設定代理程式</block>
   <block id="77206fd030aaac8141e97d837c255109" category="sidebar">設定 Kubernetes 運算子</block>
+  <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023 年 5 月</block>
+  <block id="675daaee26cb7a668008d96ba0afd8e2" category="section-title">改善工作負載安全性畫面載入</block>
+  <block id="394791778bc8c7c505ff97a4408cada8" category="paragraph">Cloud Insights 更有效率地顯示「可服務性」和「工作負載安全性」畫面、可縮短瀏覽這些功能時的負載時間、進而改善使用者體驗。請注意、工作負載安全性頁面 URL 已變更。先前的 URL 會自動重新導向至新的 URL 。</block>
 </blocks>
