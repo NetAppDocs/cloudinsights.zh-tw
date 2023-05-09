@@ -40,7 +40,8 @@ image:OE_Overview.png["適用於Essentials的概述儀表板ONTAP"]
 
 選取「*資料保護*」頁面以檢視SnapMirror關係。按一下「至」以取得來源或目的地Volume資訊、或按一下齒輪圖示以新增您要檢視之資料的欄。
 
-image:OE_DataProtection.png["SnapMirror關係清單頁面"]
+image:DataProtectionDashboard_OverviewWidgets.png["資料保護儀表板 Widget 顯示本機和遠端概觀"]
+image:DataProtectionDashboard_ClusterList.png["資料保護叢集清單"]
 
 
 
