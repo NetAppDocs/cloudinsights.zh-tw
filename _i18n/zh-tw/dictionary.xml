@@ -10997,4 +10997,8 @@
   <block id="185acbfb6bbd68c83e1d229b0f437594" category="inline-image-macro">資料保護叢集清單</block>
   <block id="2104c64c486c18ec271b0134a19654dd" category="paragraph"><block ref="c556223236d0a6ab73f15f6e6f21e0f9" category="inline-image-macro-rx" type="image"></block>
 <block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">工作負載對應範例</block>
+  <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">監控操作員入門</block>
+  <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetes 監控與地圖</block>
 </blocks>

@@ -16,7 +16,7 @@ NOTE: Kubernetes 網路效能與地圖是一種 link:concept_preview_features.ht
 
 主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
 
-image:Workload Map Example_withSlideout.png["工作負載對應範例顯示「 Slideout 」面板的詳細資料"]
+image:workload-map-animated.gif["工作負載對應範例"]
 
 
 
