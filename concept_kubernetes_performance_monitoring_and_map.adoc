@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_network_monitoring_and_map.html 
+permalink: concept_kubernetes_performance_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題 
 ---

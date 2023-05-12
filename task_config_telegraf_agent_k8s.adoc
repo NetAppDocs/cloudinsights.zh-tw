@@ -27,15 +27,26 @@ image:CI_Diagram_with_NKMO.png["顯示駐留在Kubernetes叢集中的NKMO的高�
 
 == 安裝NetApp Kubernetes監控操作員之前
 
+[[nkmoversion]]
 .先決條件：
-* 如果您使用自訂或私有泊塢視窗儲存庫、請遵循使用自訂或私有泊塢視窗儲存庫一節中的指示進行
+* 4e6966e86a775d896fac148f8f919b74
++
+** 9de2afa9a42c7e74a8b83bbef4f14c20
+** 6c7ca580ed97b823c501ac9c614a22e3
+** 479cd5be40ccd07011d75823574c7b07
+** a36b7ead4d7f7dfbc23cbc2511314f24
+** 09fac59df2e8bc91f55d933bf9d5c4b9
+
+
 * Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。
 * 當支援使用支援功能來監控後端儲存設備、而Kubernetes則搭配Docker Container執行時間使用時、即可顯示適用於NFS和iSCSI的Pod對PV對儲存設備對應和度量；其他執行時間則只顯示NFS Cloud Insights Cloud Insights 。
-* 自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。如果您的環境使用 PSP 、則必須升級至最新的 NetApp Kubernetes Monitoring Operator 。
-* 如果您是在 OpenShift 4.6 或更新版本上執行、則除了確保符合這些先決條件之外、還必須遵循下列 OpenShift 指示。
-* 僅在 Linux 節點上安裝監控 Cloud Insights 支援監控執行 Linux 的 Kubernetes 節點、方法是指定 Kubernetes 節點選取器、以便在這些平台上尋找下列 Kubernetes 標籤：
+* 1d71a30c3f76311c39e7b21e9d36041f
+* ceb4fea071151ab6bb0ff80a20993744
+* 56cb6633aba007c9c91082eb591c6ac6
++
+748fdb05a8ec278d9ce5ea3bde4405f4
 
-
++
 |===
 
 
@@ -48,13 +59,14 @@ image:CI_Diagram_with_NKMO.png["顯示駐留在Kubernetes叢集中的NKMO的高�
 | Rancher + Catchs.IO做為協調/ Kubernetes平台 | Catin.IO/OS = Linux 
 |===
 * 在執行Arm64架構的節點上、不支援NetApp Kubernetes監控操作員及其相依性（遠端連線、Kube-state度量、fluentbit等）。
-* 下列命令必須可用： curl 、 kubectl 。選用的安裝步驟需要泊塢視窗命令。若要獲得最佳結果、請將這些命令新增至路徑。請注意、 Kubectl 至少需要設定為能夠存取下列 Kubernetes 物件：代理程式、叢集角色、叢集角色繫結、自訂資源定義、部署、 命名空間、角色、角色繫結、機密、服務帳戶、 和服務。請參閱此處以取得具有這些叢集角色最低權限的範例 .yaml 檔案。
-* 您將用於 NetApp Kubernetes Monitoring Operator 安裝的主機必須設定為 kubectl 、才能與目標 K8s 叢集通訊、並可與 Cloud Insights 環境進行網際網路連線。
-* 如果您在安裝期間或在操作要監控的 K8s 叢集時位於 Proxy 後方、請依照「設定 Proxy 支援」一節中的指示進行。
-* NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。
-* 如果您要重新部署操作員（亦即您正在更新或取代它）、則不需要建立 _new_ API 權杖、您可以重新使用先前的權杖。
-* 另請注意、如果您最近安裝了 NetApp Kubernetes Monitoring Operator 、並且使用可更新的 API 存取權杖、過期的權杖將會自動由新的 / 重新整理的 API 存取權杖取代。
+* fcb70ec2b5ff14dcc062955ceca887b6
+* 82f6a763fe60e4e576dfec4afd406d65
+* 951a50d1b55837ddb5ff4cb5af4ebc8a
+* abd3f7869ce900c36e8cd1dc95b25a52
+* 4e7860768ab50263cd322fefea021fdc
 
+
+為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。
 
 
 
@@ -64,19 +76,7 @@ image:CI_Diagram_with_NKMO.png["顯示駐留在Kubernetes叢集中的NKMO的高�
 
 如果您要從先前的安裝升級、請同時閱讀 <<升級,升級>> 資訊：
 
-
-
-== 設定操作員
-
-在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含一些設定的註解範例。請參閱清單 link:telegraf_agent_k8s_config_options.html["可用的設定"] 適用於最新版的運算子。
-
-您也可以使用下列命令在部署運算子之後編輯此資源：
-
- kubectl -n netapp-monitoring edit AgentConfiguration
-若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：
-
- kubectl get crd agentconfigurations.monitoring.netapp.com
-如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。
+d0924ee26918b7c9acc0ec062a178e01
 
 
 
@@ -101,126 +101,158 @@ image:CI_Diagram_with_NKMO.png["顯示駐留在Kubernetes叢集中的NKMO的高�
  export https_proxy=<proxy_server>:<proxy_port>
 .. 如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：
 +
- export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+ export http_proxy= <proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
 
 
 
 
 若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。
 
-在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。
+e070931bcf07d2c50211632028c7aa04
+
+c0c113f7f05cafdbe990d465db2be0e5
+
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+5736221dbd17920aab4d48e61c7f1c4f
 
 [listing]
 ----
-proxy:
+ proxy:
 
-   server: <server for proxy>
-   port: <port for proxy>
-   username: <username for proxy>
-   password: <password for proxy>
+ # If an AU is enabled on your cluster for monitoring
+ # by Cloud Insights, then isAuProxyEnabled should be set to true:
+  isAuProxyEnabled: <true or false>
 
-# In the noproxy section, enter a comma-separated list of
-# IP addresses and/or resolvable hostnames that should bypass
-# the proxy:
+ # If your Operator install is behind a corporate proxy,
+ # isTelegrafProxyEnabled should be set to true:
+  isTelegrafProxyEnabled: <true or false>
 
-   noproxy: <comma separated list>
-   isTelegrafProxyEnabled: true
-   isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
-   isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
-   isAuProxyEnabled: <true or false> # true if AU enabled
+ # If LOGS_COLLECTION is enabled on your cluster for monitoring
+ # by CI, then isFluentbitProxyEnabled should be set to true:
+  isFluentbitProxyEnabled: <true or false>
+
+ # Set the following values according to your proxy login:
+  password: <password for proxy, optional>
+  port: <port for proxy>
+  server: <server for proxy>
+  username: <username for proxy, optional
+
+ # In the noProxy section, enter a comma-separated list of
+ # IP addresses and/or resolvable hostnames that should bypass
+ # the proxy:
+  noProxy: <comma separated list>
 ----
 
 
 === 使用自訂或私有泊塢視窗儲存庫
 
-根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。
+9d270fc3981764bdd3e499e4f29c806e
 
-從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。
+278e14bf473bd997ecfb9729513ee3dc
 
-核心營運者功能與 Kubernetes 監控
-
-* NetApp 監控
-* Kube-RBAC 代理程式
-* Kube-state 指標
-* Telegraf
-* 無 distrouse-root 使用者
-
-
-事件記錄
-
-* Fluent 位元
-* Kubernetes-event-Exporter
+. 76a29f4ebdb348450a0322a9c98cb4bf
++
+ kubectl -n netapp-monitoring get secret docker -o yaml
+. 3910d1d80274049b67c375b0000311fb
+. 683b8010d170fc689e256c2461d9ed7e
++
+ echo <paste from _.dockerconfigjson:_ output above> | base64 -d
 
 
-網路效能與地圖
+77cc6d4eb48f196cb4ec9933aeef1586
 
-* CI-net-觀察者
+....
+{ "auths":
+  {"docker.<cluster>.cloudinsights.netapp.com" :
+    {"username":"<tenant id>",
+     "password":"<password which is the CI API token>",
+     "auth"    :"<encoded username:password basic auth token. This is internal to docker>"}
+  }
+}
+....
+e46ad1cf454a36b0aa27d5cb43692c6b
 
+....
+docker login docker.<cluster>.cloudinsights.netapp.com (from step #2) -u <username from step #2>
+password: <password from docker secret step above>
+....
+db14bf839f053975690a0aa27f23e573
 
-根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
+....
+231509eaa9ac837e90f55a78ed5a859e
 
-在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。
+ kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
+6c427ef0d84924952ea57287d5c12a55
+
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/telegraf:<telegraf version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kube-rbac-proxy:<kube-rbac-proxy version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kube-state-metrics:<kube-state-metrics version>
+....
+cb43d6ddfc5892dafbf435fffd06e735
+
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/fluent-bit:<fluent-bit version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kubernetes-event-exporter:<kubernetes-event-exporter version>
+....
+5fdef5014971511d708c48ee3a739357
+
+0ee913a9f3f55f5a7505703cd1663976
 
 ....
 image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
-在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
+5c19ae7a43d3f48864d792ef857eb222
+
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+....
+docker-repo: <docker repo of the enterprise/corp docker repo>
+dockerRepoSecret: <optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace>
+....
+2f467f6ec28d4dda9efc2d651f82d1b6
 
 ....
-# An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-# Please see documentation link here:
-dockerRepo: your.docker.repo/long/path/to/test
-# Optional: A docker image pull secret that maybe needed for your private docker registry
-dockerImagePullSecret: docker-secret-name
+spec:
+  telegraf:
+    - name: ksm
+      substitutions:
+        - key: k8s.gcr.io
+          value: <same as "docker-repo" field above>
 ....
 
 
 === OpenShift指示
 
-如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：
+725add584c7b017b758ee4ca5893c90a
 
-....
-# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
-runPrivileged: true
-....
+ kubectl edit agent agent-monitoring-netapp -n netapp-monitoring
+7413b27c2a74484b9a0ae0a20c26cd28
+
 OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。
 
 
 
 == 安裝NetApp Kubernetes監控操作員
 
-image:NKMO-Instructions-1.png[""]
-image:NKMO-Instructions-2.png[""]
+40dd3c1786c7903240a93eee2a772bf3
 
 .在Kubernetes上安裝NetApp Kubernetes監控操作員代理程式的步驟：
 . 輸入唯一的叢集名稱和命名空間。如果您是 <<升級,升級>> 從指令碼型代理程式或先前的Kubernetes運算子、使用相同的叢集名稱和命名空間。
-. 一旦輸入這些指令碼、您就可以將 Download Command 片段複製到剪貼簿。
-. 將程式碼片段貼到_bash_視窗中並執行。將下載操作員安裝檔案。請注意、程式碼片段具有獨特的金鑰、有效時間為24小時。
-. 如果您有自訂或私有儲存庫、請複製選用的「影像」抽取片段、將其貼入 _bash_ Shell 並加以執行。影像擷取完成後、請將其複製到您的私有儲存庫。請務必維持相同的標記和資料夾結構。更新 _operer-deployment.yaml_ 中的路徑、以及 _operer-config.yaml_ 中的泊塢視窗儲存庫設定。
-. 如有需要、請檢閱可用的組態選項、例如 Proxy 或私有儲存庫設定。您可以深入瞭解 link:telegraf_agent_k8s_config_options.html["組態選項"]。
-. 準備好之後、請複製 KUBECtl 套用程式碼片段、下載並執行、以部署操作員。
-. 安裝會自動繼續進行。完成後、按一下 _ 下一步 _ 按鈕。
-. 安裝完成後、按一下 _ 下一步 _ 按鈕。請務必刪除或安全儲存 _operer-Secrets 。 yaml_ 檔案。
+. 5b82931325db3333d72e29bd0c4c7b88
+. 69fe7b86f073ff27417a8bb4f40bf251
+. 652fa40fdabd874246411d062f2d1615
+. ecf5918b75414ec8e1874242a839d017
 
 
-深入瞭解 <<configuring-proxy-support,設定 Proxy>>。
 
-深入瞭解 <<using-a-custom-or-private-docker-repository,使用自訂 / 私有泊塢視窗儲存庫>>。
+NOTE: aadc028d0de86e5da522c42edd9e1336
 
-安裝 NetApp Kubernetes Monitoring Operator 時、依預設會啟用 Kubernetes EMS 記錄收集。若要在安裝後停用此集合、請按一下 Kubernetes 叢集詳細資料頁面頂端的 * 修改部署 * 按鈕、然後取消選取「記錄集合」。
 
-image:K8s_Modify_Deployment_Screen.png["「修改部署」畫面顯示「記錄集合」核取方塊"]
-
-此畫面也會顯示目前的記錄收集狀態。以下是可能的狀態：
-
-* 已停用
-* 已啟用
-* 啟用 - 安裝進行中
-* 已啟用 - 離線
-* 已啟用 - 線上
-* 錯誤 - API 金鑰權限不足
-
+NOTE: a14c6d1b4b0dd061b28b6390917f22a1
 
 
 
@@ -269,35 +301,16 @@ NOTE: 如果您有先前安裝的指令碼型代理程式、您必須升級至Ne
 
 === 升級至最新的NetApp Kubernetes監控操作員
 
-判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：
+0fcb89be13d6b554b3b15359f81a94da
 
- kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
-如果存在 AgentConfiguration ：
-
-* <<installing-the-netapp-kubernetes-monitoring-operator,安裝>> 現有運算子的最新運算子。
-+
-** 確保您是 <<using-a-custom-or-private-docker-repository,擷取最新的容器映像>> 如果您使用的是自訂儲存庫。
-
-
-
-
-如果 AgentConfiguration 不存在：
-
-* 請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：
+* 34d201ca97c6d320bf1d9a8290e56e6d
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* 建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：
-+
- kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
-* <<to-remove-the-netapp-kubernetes-monitoring-operator,解除安裝>> 現有的運算子。
-* <<installing-the-netapp-kubernetes-monitoring-operator,安裝>> 最新的運算子。
-+
-** 請使用相同的叢集名稱。
-** 下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。
-** 確保您是 <<using-a-custom-or-private-docker-repository,擷取最新的容器映像>> 如果您使用的是自訂儲存庫。
 
 
+1add7b4bfd24c3b007b38922bea24831
 
+61555de764999433d6f85da2969523dd
 
 
 
@@ -433,6 +446,16 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：
 
  sudo -E -H ./<installation_script_name> --install
+
+
+== 951faa2232d4e162c12ecfe8efc935f7
+
+64a4677d63e0753d438e5ff1996b08dd
+
+ kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
+
+NOTE: bc6b270b9094337edca8a85819407d18
+
 
 
 == 疑難排解

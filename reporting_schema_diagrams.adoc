@@ -22,51 +22,33 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 
 
 
-=== 註釋
+=== 儲存設備
 
-image:annotations.png[""]
-
-
-
-=== 應用程式
-
-image:apps_annot.png[""]
+image:storage.png[""]
 
 
 
-=== Kubernetes 指標
+=== 儲存節點
 
-image:k8s_schema.jpg["Kubernetes"]
-
-
-
-==== Kubernetes 叢集指標事實
-
-image:k8s_cluster_metrics_fact.jpg["Kubernetes 叢集指標事實"]
+image:storage_node.png[""]
 
 
 
-==== Kubernetes 命名空間度量資料
+=== SAN Fabric
 
-image:k8s_namespace_metrics_fact.jpg["Kubernetes 命名空間度量資料"]
-
-
-
-==== Kubernetes Node Metrics 資料
-
-image:k8s_node_metrics_fact.jpg["Kubernetes Node Metrics 資料"]
+image:fabric.png[""]
 
 
 
-==== Kubernetes PVC 指標資料
+=== 連接埠連線能力
 
-image:k8s_pvc_metrics_fact.jpg["Kubernetes PVC 指標資料"]
+image:connectivity.png[""]
 
 
 
-==== Kubernetes 工作負載指標事實
+=== VM
 
-image:k8s_workload_metrics_fact.jpg["Kubernetes 工作負載指標事實"]
+image:vm.png[""]
 
 
 
@@ -82,76 +64,39 @@ image:logical.png[""]
 
 
 
-=== 連接埠連線能力
+=== 註釋
 
-image:connectivity.png[""]
-
-
-
-=== SAN Fabric
-
-image:fabric.png[""]
+image:annotations.png[""]
 
 
 
-=== 儲存設備
+=== 應用程式
 
-image:storage.png[""]
-
-
-
-=== 儲存節點
-
-image:storage_node.png[""]
+image:apps_annot.png[""]
 
 
 
-=== VM
+=== 儲存與儲存資源池容量
 
-image:vm.png[""]
-
-'''
-
-
-== 容量 Datamart
-
-下列影像說明容量資料傳輸技術。
+image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== 計費
+=== Volume容量
 
-image:Chargeback_Fact.png[""]
-
-
-
-=== 磁碟群組容量
-
-image:Disk_Group_Capacity.png[""]
+image:Volume_Capacity.png[""]
 
 
 
-=== 檔案系統使用率
+=== VM容量
 
-image:fs_util.png[""]
+image:VM_Capacity_Fact.png[""]
 
 
 
 === 內部Volume容量
 
 image:Internal_Volume_Capacity_Fact.png[""]
-
-
-
-=== Kubernetes PV 容量
-
-image:k8s_pvc_capacity_fact.jpg[""]
-
-
-
-=== 連接埠容量
-
-image:ports.png[""]
 
 
 
@@ -173,23 +118,28 @@ image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== 儲存節點容量
+=== 檔案系統使用率
 
-image:Storage_Node_Capacity_Fact.jpg[""]
-
-
-
-=== VM容量
-
-image:VM_Capacity_Fact.png[""]
+image:fs_util.png[""]
 
 
 
-=== Volume容量
+=== 連接埠容量
 
-image:Volume_Capacity.png[""]
+image:ports.png[""]
 
-'''
+
+
+=== 計費
+
+image:Chargeback_Fact.png[""]
+
+
+
+=== 磁碟群組容量
+
+image:Disk_Group_Capacity.png[""]
+
 
 
 == 效能資料
@@ -200,55 +150,43 @@ image:Volume_Capacity.png[""]
 
 === 應用程式Volume每小時效能
 
-image:application_performance_fact.jpg[""]
-
-
-
-=== 磁碟每日效能
-
-image:disk_daily_performance_fact.png[""]
-
-
-
-=== 磁碟每小時效能
-
-image:disk_hourly_performance_fact.png[""]
-
-
-
-=== 主機每小時效能
-
-image:host_performance_fact.jpg[""]
+b68ed2de708ea9b3b40e76b37e99573b
 
 
 
 === 內部Volume每小時效能
 
-image:internal_volume_performance_fact.jpg[""]
+49849b07ecf6904a481a051c4c6e59bf
+
+
+
+=== 內部Volume每小時效能
+
+566adfd62d1d59e5aa02e13ceb0d2212
 
 
 
 === 內部Volume每日效能
 
-image:internal_volume_daily_performance_fact.jpg[""]
+8665cb5eac9e402f835407ee789aba61
+
+
+
+=== Volume每小時效能
+
+image:vmdk_hourly_performance_fact.png[""]
+
+
+
+=== Volume每日效能
+
+d14385553d6e0a6f14394bc02a502a42
 
 
 
 === qtree每日效能
 
 image:QtreeDailyPerformanceFact.png[""]
-
-
-
-=== 儲存節點每日效能
-
-image:storage_node_daily_performance_fact.jpg[""]
-
-
-
-=== 儲存節點每小時效能
-
-image:storage_node_hourly_performance_fact.jpg[""]
 
 
 
@@ -318,12 +256,24 @@ image:vmdk_hourly_performance_fact.png[""]
 
 
 
-=== Volume每小時效能
+=== 儲存節點每小時效能
 
-image:volume_performance_fact.jpg[""]
+a6040f821773a9032da45c788b24e202
 
 
 
-=== Volume每日效能
+=== 磁碟每日效能
 
-image:volume_daily_performance_fact.jpg[""]
+image:disk_daily_performance_fact.png[""]
+
+
+
+=== 磁碟每小時效能
+
+image:disk_hourly_performance_fact.png[""]
+
+
+
+== Kubernetes
+
+image:k8s_schema.jpg["Kubernetes"]
