@@ -79,7 +79,7 @@ Cloud Insights 所收集的 Kubernetes 持續容量（ PV ）資訊現在可用�
 
 === Kubernetes 效能監控與地圖
 
-。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes 網路效能與地圖 _"] 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
+5d6a6764c313767cd859950497830f19
 
 主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
 

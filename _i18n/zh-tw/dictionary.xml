@@ -11102,7 +11102,6 @@
   <block id="64c33d04c497ade8947e8eadc210caf4" category="paragraph">Cloud Insights 所收集的 Kubernetes 持續容量（ PV ）資訊現在可用於報告、啟用計費、趨勢、預測、 TTF 計算、 以及其他業務報告、說明 Kubernetes 叢集、命名空間、工作負載等的指標。</block>
   <block id="98f382d1962b023b2f9625686af82de9" category="section-title">為新客戶啟用預設的 ONTAP 系統監控</block>
   <block id="31330c4ff7fe349e530327f3c9b8295a" category="paragraph">在新的 Cloud Insights 環境中、許多 ONTAP 系統監視器預設為啟用（即 _ 恢復 _ ）。以前、大部分的顯示器預設為 _ 已暫停 _ 狀態。由於企業需求因公司而異、因此我們建議您隨時查看 <block ref="6e23d996007e5a9ae1533f26f739ed3d" category="inline-link-macro-rx"></block> 在您的環境中、並根據您的警示需求暫停或恢復每個警示。</block>
-  <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
   <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights 可同時提供前端和後端虛擬化儲存設備的檢視。</block>
   <block id="f489c820bd49075e9fac81860fe93688" category="section-title">表 Widget 中的虛擬化</block>
   <block id="b54537489c4ac4c2d2a2fc686c6b85a7" category="paragraph">開始檢視儲存虛擬化的最簡單方法之一、就是建立顯示虛擬化類型的儀表板表 Widget 。建立 Widget 的查詢時、只要將「 virtualizedType 」新增至您的群組或篩選器即可。</block>
@@ -11154,5 +11153,4 @@
   <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 、 Stream 8 、 Stream 9 * Debian （ 64 位元）： 9 和 10 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 、 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位元）： 7.2 到 7.9 、 8.1 到 9.1 * Rocky 9.0 、 9.1 * Ubuntu Server ： 18.04 和 20.04 LTS 這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
 </blocks>

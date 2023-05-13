@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: 在免費試用期間、您可以隨時訂閱Cloud Insights 。 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, 
 ---
 = 訂閱Cloud Insights 此功能
 :allow-uri-read: 
