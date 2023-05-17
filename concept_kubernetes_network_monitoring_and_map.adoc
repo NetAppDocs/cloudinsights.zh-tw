@@ -1,18 +1,28 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_performance_monitoring_and_map.html 
+permalink: concept_kubernetes_network_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題 
 ---
-= Kubernetes 效能監控與地圖
+= Kubernetes 網路效能監控與地圖
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-Kubernetes 網路效能與地圖功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
+Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
 
 
-NOTE: Kubernetes 網路效能與地圖是一種 link:concept_preview_features.html["預覽"] 功能、可能會有所變更。
+NOTE: Kubernetes 網路效能監控與地圖是一種 link:concept_preview_features.html["預覽"] 功能、可能會有所變更。
 
 主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
 
@@ -22,7 +32,7 @@ image:workload-map-animated.gif["工作負載對應範例"]
 
 == 先決條件
 
-您必須先設定、才能使用 Kubernetes 網路效能和地圖 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。
+您必須先設定、才能使用 Kubernetes 網路效能監控和地圖 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。
 
 image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO STUP 期間選取地圖選項"]
 
@@ -77,7 +87,7 @@ image:Workload_Map_Filtering.png["工作負載對應篩選"]
 +
 ** 衍生自 Pod 的工作負載標籤
 ** 工作負載上的預期標籤： app.Kubernetes.IO/ 元件
-** 標籤名稱參照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** 標籤名稱參照： https://[]
 ** 建議標籤：
 +
 *** 前端

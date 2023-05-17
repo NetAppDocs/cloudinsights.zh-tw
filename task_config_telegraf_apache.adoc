@@ -14,7 +14,7 @@ summary: Apache資料收集器組態
 .先決條件
 * 您必須設定Apache HTTP伺服器並正確執行
 * 您必須擁有代理主機/ VM的Sudo或系統管理員權限
-* 通常、Apache _mod_STATUS_模組會設定為在Apache伺服器的「/server-STATUS」自動位置公開頁面。必須啟用「_ExtendedStatus」選項、才能收集所有可用欄位。如需如何設定伺服器的相關資訊、請參閱Apache模組文件： https://httpd.apache.org/docs/2.4/mod/mod_status.html#enable[]
+* 通常、Apache _mod_STATUS_模組會設定為在Apache伺服器的「/server-STATUS」自動位置公開頁面。必須啟用「_ExtendedStatus」選項、才能收集所有可用欄位。如需如何設定伺服器的相關資訊、請參閱Apache模組文件： https://[]
 
 
 

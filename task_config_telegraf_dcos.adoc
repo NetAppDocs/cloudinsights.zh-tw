@@ -29,7 +29,7 @@ summary: Dcos組態
 
 == 設定
 
-如需設定資訊、請參閱 https://docs.mesosphere.com["資料中心/作業系統文件"]。
+如需設定資訊、請參閱 https://["資料中心/作業系統文件"]。
 
 
 

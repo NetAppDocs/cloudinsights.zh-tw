@@ -30,7 +30,7 @@ image:PuppetDCConfigWindows.png["Puppet組態"]
 
 == 設定
 
-如需相關資訊、請參閱 https://puppet.com/docs["Puppet文件"]
+如需相關資訊、請參閱 https://["Puppet文件"]
 
 
 
