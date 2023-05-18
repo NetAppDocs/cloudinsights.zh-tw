@@ -21,7 +21,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | 元件 | Linux需求 | Windows需求 
 
 
-| 作業系統 | 9eaf347efd9d5225664dc4c414a82eb2 | 執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 、 Stream 8 、 Stream 9 * Debian （ 64 位元）： 9 和 10 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 、 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位元）： 7.2 到 7.9 、 8.1 到 9.1 * Rocky 9.0 、 9.1 * Ubuntu Server ： 18.04 和 20.04 LTS 這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。 | 執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
 
 
 | CPU | 2個CPU核心 | 相同 
@@ -63,3 +63,10 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 對於上述每個「是」答案、建議您在AU中新增8 GB記憶體和50 GB磁碟空間。舉例來說、如果您對這兩個項目都回答「是」、就應該部署一個24GB記憶體系統、其中有150GB或更多的磁碟空間。在Linux上、要新增至記錄位置的磁碟空間。
 
 如需其他規模調整問題、請聯絡NetApp支援部門。
+
+
+
+== 聯邦版的額外要求
+
+* Cloud Insights 聯邦版需要在擷取單元系統上安裝 _rng-ool_ 、才能讓 FIPS 驗證的加密功能正常運作。
+

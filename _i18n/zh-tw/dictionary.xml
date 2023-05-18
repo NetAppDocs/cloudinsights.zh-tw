@@ -10928,4 +10928,240 @@
   <block id="30d4cb002f857650eba9633e4a50ff2a" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubernetes 網路效能監控與地圖是一種 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能會有所變更。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">您必須先設定、才能使用 Kubernetes 網路效能監控和地圖 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。</block>
+  <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubernetes 監控營運者有許多可設定的選項。</block>
+  <block id="57e4cf9437210e6248eb8a2137609c4e" category="doc">NetApp Kubernetes 監控營運者組態選項</block>
+  <block id="fb1f92a623639f258302e35ca56fe965" category="paragraph">NetApp Kubernetes 監控營運商的安裝與組態可自訂。</block>
+  <block id="7753286779cc80ff196972ced13aef62" category="paragraph">下表列出 AgentConfiguration 檔案的可能選項：</block>
+  <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">代理程式</block>
+  <block id="4e49d105e5ecfd95da78eb980f698488" category="cell">操作員可以安裝的所有元件通用的組態選項。這些選項可視為「整體」選項。</block>
+  <block id="286bec770910c4da609323e21222e283" category="cell">dockerRepo</block>
+  <block id="73a46ab7157abd31c3ea3ef600cb7798" category="cell">相較於 Cloud Insights 泊塢視窗 repo 、 dockerRepo 會置換以從客戶的「私有」泊塢視窗資源中拉出影像。預設為 Cloud Insights 泊塢視窗 repo</block>
+  <block id="994be3a18bf7e0a16ab2be2d5c1643ae" category="cell">dockerImagePullSecret</block>
+  <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">選用：客戶的秘密私人回購</block>
+  <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">叢集名稱</block>
+  <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Cloud Insights 租戶中應該是唯一的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
+  <block id="b5249bb082b669e275606cdef10879b6" category="cell">Proxy 格式： Proxy ：伺服器：連接埠：使用者名稱：密碼： NoProxy ：啟用 ISTelegrafProxy: 啟用 isAuProxy: 啟用 isFluentbitProxy: 啟用 isCollectorProxy: 啟用 isCollectorProxy:</block>
+  <block id="f430d84b3603b6c921d2a45741baab1e" category="cell">客戶可選擇設定 Proxy 。這通常是客戶的公司代理。</block>
+  <block id="268e939178fee1d0125caa135f483ac0" category="cell">agentUUID</block>
+  <block id="53984dbf2cd283b6f60a1ba6a7af0c10" category="cell">所有 Cloud Insights 操作員安裝中唯一識別的字串。這通常由 Cloud Insights 自動設定。</block>
+  <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">Telegraf</block>
+  <block id="0c8011c6947aae43789eb8972c306e85" category="cell">可自訂電信業者安裝的組態選項</block>
+  <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">CollectionInterval</block>
+  <block id="ddc880d728f800827e372a1d2f48313a" category="cell">度量收集時間間隔（以秒為單位）</block>
+  <block id="2129471bf14899d19206e2b1aa6c00ca" category="cell">dsCpuLimit</block>
+  <block id="718918f6bff9fdd2a6292afbe4549d0b" category="cell">Telegraf DS 的 CPU 限制</block>
+  <block id="5eeea2f6351dff2df3a80bcff5cdd5be" category="cell">dsMemLimit</block>
+  <block id="bf35f5b9d6933443b78e7cd6b5b24039" category="cell">Telegraf DS 的記憶體限制</block>
+  <block id="32baad7599efdd63fc7dd0ebd6fb0462" category="cell">dsCpuRequest</block>
+  <block id="fb50fe579fe2186737910f4faafbfae2" category="cell">對 Telegraf DS 的 CPU 要求</block>
+  <block id="4fd630053ba42e53bf847444b5857abf" category="cell">dsMemRequest</block>
+  <block id="03a9d404d5e9073d007d6e38a710ebb1" category="cell">對 Telegraf DS 的記憶體要求</block>
+  <block id="00edda16a430ed1a43f73b6b6f8e5230" category="cell">rsCpuLimit</block>
+  <block id="be5f478627c9d3676f638d423c9b320b" category="cell">Telegraf RS 的 CPU 限制</block>
+  <block id="19db0dd97225788d8cd2ac82554de9d3" category="cell">rsMemLimit</block>
+  <block id="7ad3bdf2f332902d109247d0c3970fb4" category="cell">Telegraf RS 的記憶體限制</block>
+  <block id="1be922c4a70261e6656d70f9cc86dde2" category="cell">rsCpuRequest</block>
+  <block id="76b9e3aaffb44c3c4a7084bd7430088d" category="cell">適用於 Telegraf RS 的 CPU 要求</block>
+  <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
+  <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">對 Telegraf RS 的記憶體要求</block>
+  <block id="04808c0fd1505eb55198b91e2910694e" category="cell">dockerMountPoint</block>
+  <block id="8b4f648381c209aa11d7baaf654c5f90" category="cell">dockerMountPoint 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗</block>
+  <block id="986b967d4a19de83ed59389872e2eb46" category="cell">dockerUnixSocket</block>
+  <block id="4dccb3941fc9760d547f9ae348685ad3" category="cell">dockerUnixSocket 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。</block>
+  <block id="6ae45dc429d1f96b8c63fba54419b0f7" category="cell">CrioSockPath</block>
+  <block id="eeec0978474a40f056df3ffd9acfa360" category="cell">crioSockPath 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。</block>
+  <block id="6fd605953233d5564943f85815683d62" category="cell">RunPrivileged</block>
+  <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">以特殊權限模式執行 Telegraf 容器。如果您的 k8s 節點上已啟用 SELinux 、請將此設定為 True</block>
+  <block id="986b07451fa1766c43f2eead1470731c" category="cell">批次大小</block>
+  <block id="f73038607dbfd988c8ed06aa707b67b6" category="inline-link-macro">Telegraf 組態文件</block>
+  <block id="4a686d41d5d06d7af488bce13a4b6b1c" category="cell">請參閱 <block ref="1220f98ff4e67fb30a54b092e87489e7" category="inline-link-macro-rx"></block></block>
+  <block id="977c5d665ca82fa3d9d007ab47991cab" category="cell">bufferLimit</block>
+  <block id="3d5beabcc75357b9f0517b37a51d848b" category="cell">圓週期間隔</block>
+  <block id="0457354b493031778121a8634e49db5e" category="cell">CollectionJitter</block>
+  <block id="e2794d8f12719281eff5601251c8a680" category="cell">精度</block>
+  <block id="43a58acb58cbbbfc1abb27f189ec375c" category="cell">FlushInterval</block>
+  <block id="e177bfc26cdd2bb790365e538eef32a6" category="cell">FlushJitter</block>
+  <block id="8bdbcdcecbcc5e3e45877e3a15ebe124" category="cell">輸出逾時</block>
+  <block id="58af01fce51ad07206150454f8b829be" category="cell">Kube-state 指標</block>
+  <block id="81beb48dd63a014bf8c446eeeb319a2e" category="cell">可自訂操作員的 kbe 狀態度量安裝的組態選項</block>
+  <block id="664e65ce2a5a996437f898217e74c9dd" category="cell">cpuRequest</block>
+  <block id="3237c3bd0df775b78c9dafaf3c9bf9e6" category="cell">CPU 要求進行 kube 狀態指標部署</block>
+  <block id="c8f947b6b972e9866cc682a82d5ec34a" category="cell">MemRequest</block>
+  <block id="03dd8511b379b0b92595299b980d36e4" category="cell">kube 狀態指標部署的記憶體要求</block>
+  <block id="55b558c7ef820e6e00e5993b9e55d93b" category="cell">資源</block>
+  <block id="3b720d9649ae501d73e8f8c4a7a15348" category="cell">以逗號分隔的資源清單、可供擷取。範例： cronjobs 、 daemonsets 、部署、擷取、工作、命名空間、節點、持續磁碟區、持續磁碟區、 Pod 、複製集、資源等量、服務、狀態集</block>
+  <block id="d250be49afad7b894de05a3b7ae8bbae" category="cell">以逗號分隔的資源清單應擷取 +++ 範例： cronjobs=[*],daemonsets=[*],plasing=[*],inges=[*],jobs=[*],vedemas=[*],nodes=[*],sterentvolumes=[*,equpos=*[*],equas*[*</block>
+  <block id="2165e4fa5bddb65a31f6a0c495c2fa37" category="cell">記錄</block>
+  <block id="d795ec2d0a164433572a8d5d91b8fae0" category="cell">可自訂記錄收集和安裝操作員的組態選項</block>
+  <block id="031104420a282e1bdb63e280c40a4938" category="cell">readFromHead</block>
+  <block id="d7ff51440723c6bba696ef19f757a8af" category="cell">是非題、應能流暢地從標頭讀取記錄</block>
+  <block id="90272dda245ae1fb3cf197e91a8689dc" category="cell">逾時</block>
+  <block id="6136e8e4f59c6ebf3a47733e15cd8f8f" category="cell">逾時、以秒為單位</block>
+  <block id="a28f540659f42fa52be34b45558bb6c6" category="cell">dnsMode</block>
+  <block id="5c0864cc25dbf397d47948de9ac342f1" category="cell">TCP/UDP 、 DNS 模式</block>
+  <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">工作負載對應</block>
+  <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">可自訂工作負載對應集合及安裝 Operator 的組態選項</block>
+  <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
+  <block id="3a8e375aaa03d4b48cdd1a1758a69d81" category="cell">Net 觀察者 DS 的 CPU 上限</block>
+  <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">MemLimit</block>
+  <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">net 觀察者 DS 的記憶體限制</block>
+  <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">CPU 要求取得 Net 觀察者 DS</block>
+  <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">net 觀察者 DS 的記憶體要求</block>
+  <block id="25fe0f5d8da2c17ccf23ee0ed8327251" category="cell">MetricAgreegationInterval.</block>
+  <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">度量集合時間間隔（以秒為單位）</block>
+  <block id="c561450e999b4dfedfdbbc8b48e36db7" category="cell">bpfPollInterval.</block>
+  <block id="a75c6546b06d6f58867213c5349a5f15" category="cell">BPF 輪詢時間間隔（秒）</block>
+  <block id="3b7c5615013c6b42362845591653e503" category="cell">enabledDNSookup</block>
+  <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">是非題、啟用 DNS 查詢</block>
+  <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">AgentConfiguration 檔案範例</block>
+  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">以下是 AgentConfiguration 檔案範例。請注意、此處並未擷取所有選項：</block>
+  <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">如果您使用自訂或私有泊塢視窗儲存庫、請遵循使用自訂或私有泊塢視窗儲存庫一節中的指示進行</block>
+  <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。如果您的環境使用 PSP 、則必須升級至最新的 NetApp Kubernetes Monitoring Operator 。</block>
+  <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">如果您是在 OpenShift 4.6 或更新版本上執行、則除了確保符合這些先決條件之外、還必須遵循下列 OpenShift 指示。</block>
+  <block id="5b925a68a70ae9da77c295e7b4d7099e" category="list-text">僅在 Linux 節點上安裝監控 Cloud Insights 支援監控執行 Linux 的 Kubernetes 節點、方法是指定 Kubernetes 節點選取器、以便在這些平台上尋找下列 Kubernetes 標籤：</block>
+  <block id="98d685fda937571a72b80ee80cc3df63" category="list-text">下列命令必須可用： curl 、 kubectl 。選用的安裝步驟需要泊塢視窗命令。若要獲得最佳結果、請將這些命令新增至路徑。請注意、 Kubectl 至少需要設定為能夠存取下列 Kubernetes 物件：代理程式、叢集角色、叢集角色繫結、自訂資源定義、部署、 命名空間、角色、角色繫結、機密、服務帳戶、 和服務。請參閱此處以取得具有這些叢集角色最低權限的範例 .yaml 檔案。</block>
+  <block id="7e353b350f248a292faf4c1ef3558222" category="list-text">您將用於 NetApp Kubernetes Monitoring Operator 安裝的主機必須設定為 kubectl 、才能與目標 K8s 叢集通訊、並可與 Cloud Insights 環境進行網際網路連線。</block>
+  <block id="aa21c04425cac7977f19ae18bc35f341" category="list-text">如果您在安裝期間或在操作要監控的 K8s 叢集時位於 Proxy 後方、請依照「設定 Proxy 支援」一節中的指示進行。</block>
+  <block id="61bbee10c0e43ec8eab71be85b9e7b74" category="list-text">NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與任何其他執行個體發生衝突。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</block>
+  <block id="44f30d2da91071ac955bd6af9891db9d" category="list-text">如果您要重新部署操作員（亦即您正在更新或取代它）、則不需要建立 _new_ API 權杖、您可以重新使用先前的權杖。</block>
+  <block id="f9cbff62c46c7a73f51dee39b0ea930a" category="list-text">另請注意、如果您最近安裝了 NetApp Kubernetes Monitoring Operator 、並且使用可更新的 API 存取權杖、過期的權杖將會自動由新的 / 重新整理的 API 存取權杖取代。</block>
+  <block id="44df9c10959f57dfdf2dd50f7591a9c9" category="section-title">設定操作員</block>
+  <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用的設定</block>
+  <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含一些設定的註解範例。請參閱清單 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 適用於最新版的運算子。</block>
+  <block id="342414165099895140bbfbd3ffb613ca" category="paragraph">您也可以使用下列命令在部署運算子之後編輯此資源：</block>
+  <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：</block>
+  <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。</block>
+  <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。</block>
+  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。</block>
+  <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。</block>
+  <block id="e353fb1c241718a57c3f1ebea2f2eda2" category="paragraph">核心營運者功能與 Kubernetes 監控</block>
+  <block id="aadb900c6eaeed8ade58660fe972acec" category="list-text">NetApp 監控</block>
+  <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">Kube-RBAC 代理程式</block>
+  <block id="7b1808ad616c2f87f5c28aa1d89f75f7" category="list-text">無 distrouse-root 使用者</block>
+  <block id="f8dcd7540ab5947fed469158330013cc" category="paragraph">事件記錄</block>
+  <block id="bb84790255aac66744320e4417143dd8" category="list-text">Fluent 位元</block>
+  <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">Kubernetes-event-Exporter</block>
+  <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">網路效能與地圖</block>
+  <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">CI-net-觀察者</block>
+  <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
+  <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
+  <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：</block>
+  <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
+<block ref="6ba665c891b77a3a5dfb5c061b6e2ba3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="14acb12fc5baee38469b462494a56a68" category="list-text">一旦輸入這些指令碼、您就可以將 Download Command 片段複製到剪貼簿。</block>
+  <block id="492eb11b2ab5e4b044176b40a2eebeac" category="list-text">將程式碼片段貼到_bash_視窗中並執行。將下載操作員安裝檔案。請注意、程式碼片段具有獨特的金鑰、有效時間為24小時。</block>
+  <block id="aa976aff83a7c1132e171f3598f5502c" category="list-text">如果您有自訂或私有儲存庫、請複製選用的「影像」抽取片段、將其貼入 _bash_ Shell 並加以執行。影像擷取完成後、請將其複製到您的私有儲存庫。請務必維持相同的標記和資料夾結構。更新 _operer-deployment.yaml_ 中的路徑、以及 _operer-config.yaml_ 中的泊塢視窗儲存庫設定。</block>
+  <block id="cae73b6a00921ef48cee176b0d4336fe" category="inline-link-macro">組態選項</block>
+  <block id="ca9e0cae80a67833d83894f2324f8945" category="list-text">如有需要、請檢閱可用的組態選項、例如 Proxy 或私有儲存庫設定。您可以深入瞭解 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="2d9b30e80afc5eb380c508d14b4f0676" category="list-text">準備好之後、請複製 KUBECtl 套用程式碼片段、下載並執行、以部署操作員。</block>
+  <block id="cc56bec82b2c1d802e942018b5923042" category="list-text">安裝會自動繼續進行。完成後、按一下 _ 下一步 _ 按鈕。</block>
+  <block id="512795526de87931c50ae79cb1cb0a2b" category="list-text">安裝完成後、按一下 _ 下一步 _ 按鈕。請務必刪除或安全儲存 _operer-Secrets 。 yaml_ 檔案。</block>
+  <block id="faaf8961a729f548e51c3b9f1af0f7e8" category="inline-xref">設定 Proxy</block>
+  <block id="038f6519626a44bf13147d0f6bf585c1" category="paragraph">深入瞭解 <block ref="1a6ccc12a618fccf7330b5bee5bca7b7" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c149af672528f58d22f99809653add8a" category="inline-xref">使用自訂 / 私有泊塢視窗儲存庫</block>
+  <block id="868b132e8ef5a6adb3f9c30cc2596dfc" category="paragraph">深入瞭解 <block ref="5616d0aefbf2e33b5f6c94a93c02e259" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d815ee1e41746ef06fd66b3b30d2bc78" category="paragraph">安裝 NetApp Kubernetes Monitoring Operator 時、依預設會啟用 Kubernetes EMS 記錄收集。若要在安裝後停用此集合、請按一下 Kubernetes 叢集詳細資料頁面頂端的 * 修改部署 * 按鈕、然後取消選取「記錄集合」。</block>
+  <block id="88b2095fc7879662ec05b3f703681a11" category="inline-image-macro">「修改部署」畫面顯示「記錄集合」核取方塊</block>
+  <block id="5afc0f33a3c779dc228b788e5b0cae22" category="paragraph"><block ref="5afc0f33a3c779dc228b788e5b0cae22" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9f142ab6222e3ae7de290d8287b2920" category="paragraph">此畫面也會顯示目前的記錄收集狀態。以下是可能的狀態：</block>
+  <block id="5e7360afad9787a415b6f706e486423c" category="list-text">啟用 - 安裝進行中</block>
+  <block id="d5461aa4ef1df0b08d1c023caca59a6e" category="list-text">已啟用 - 離線</block>
+  <block id="3a7ceac4689e5c9ea84be781707cd148" category="list-text">已啟用 - 線上</block>
+  <block id="be85cefb4673c1f486c73de818be2056" category="list-text">錯誤 - API 金鑰權限不足</block>
+  <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
+  <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration ：</block>
+  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 現有運算子的最新運算子。</block>
+  <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">擷取最新的容器映像</block>
+  <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確保您是 <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> 如果您使用的是自訂儲存庫。</block>
+  <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">如果 AgentConfiguration 不存在：</block>
+  <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：</block>
+  <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：</block>
+  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> 現有的運算子。</block>
+  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新的運算子。</block>
+  <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">請使用相同的叢集名稱。</block>
+  <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。</block>
+  <block id="bd8a3856de3da0db088a741e7cd81e16" category="section-title">編輯 ONTAP 通知</block>
+  <block id="82ade85625dc6ecdc6fabebd2e345d19" category="paragraph">您可以從儲存設備登陸頁面右上角的下拉式清單中選取 _Edit Notifications_ 、以修改 ONTAP 叢集的通知。</block>
+  <block id="8328b360704f8cf7f0beb073b0b83137" category="inline-image-macro">ONTAP 編輯通知</block>
+  <block id="4b7465a88d7e0bbf7cc001f3780775bb" category="paragraph"><block ref="4b7465a88d7e0bbf7cc001f3780775bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c77ddc9f57c017ba637124d4722446a7" category="paragraph">您可以在此設定「重大」、「警告」、「資訊」和 / 或「已解決」警示的通知。每個案例都可以通知「全域收件者」清單或您選擇的其他收件者。</block>
+  <block id="80501d323e4be5227482cd3a9ab61d4f" category="inline-image-macro">適用於不同案例的 ONTAP 通知</block>
+  <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a33c53884818c3fc88ab0531e515addb" category="section-title">改善 Kubernetes 監控操作員安裝</block>
+  <block id="3e1d445ca1169cb6a1128270df9b6d0f" category="paragraph">的安裝與組態 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 下列改善功能比以往更容易：</block>
+  <block id="581978383d3baa213002e5bc8a0db701" category="inline-link-macro">組態設定</block>
+  <block id="ea06c8a4bc5e070206dea22d4c09ea4a" category="list-text">環境 <block ref="9d0f209eaf780338551d5fb55073783e" category="inline-link-macro-rx"></block> 保存在單一、自行記錄的組態檔案中。</block>
+  <block id="dbb10094b7027f43a7c8cc544cbee30f" category="list-text">將 Kubernetes Monitoring Operator 影像上傳至私有儲存庫的逐步指示。</block>
+  <block id="7d172723653a9d40e99e5040fd8757e7" category="list-text">只需一個命令即可輕鬆升級 Kubernetes Monitoring 、同時保留自訂組態。</block>
+  <block id="c770d409be90cb086358d4b4119ab823" category="list-text">更安全： API 金鑰可安全地管理機密。</block>
+  <block id="b192616c215e5b3485649cec14069151" category="list-text">輕鬆整合並部署您的 CI/CD 自動化工具。</block>
+  <block id="e9e0f5f2c513c7138ea70b4c929d6fef" category="section-title">儲存虛擬化</block>
+  <block id="b31373d4caa56b14d0dc692822089daa" category="paragraph">Cloud Insights 可以區分擁有本機儲存或其他儲存陣列虛擬化的儲存陣列。這可讓您將成本與效能與前端完全關聯到基礎架構後端。</block>
+  <block id="7bc96b4b6c6990ba4856f16ae1ea6e9d" category="inline-image-macro">顯示虛擬與備份儲存資訊的儲存設備登陸頁面</block>
+  <block id="a96d8e98a51d01b994800674243117da" category="paragraph"><block ref="a96d8e98a51d01b994800674243117da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="00565edd2c3bc3b3b6ac5fda93851ea4" category="section-title">新 Webhook 參數</block>
+  <block id="150c7abfca6c489fee5cb82fbb7a9bc4" category="inline-link-macro">Webhook</block>
+  <block id="0985e727a4acbbef2cbda2d09f233f71" category="paragraph">建立時 <block ref="86159816db28417491ca84970a5c9f33" category="inline-link-macro-rx"></block> 通知、您現在可以將這些參數納入網路攔截器定義：</block>
+  <block id="a74d2cb8815d758fcd21e0f39d62c54e" category="list-text">%%TriggeredOnKeys%%</block>
+  <block id="dbf25e694d93c77b66ef93660f6694b1" category="list-text">%%TriggeredOnValues%%</block>
+  <block id="32b3ebd0e320ec97f0624baeb622057a" category="section-title">報告 Kubernetes PV 資料</block>
+  <block id="64c33d04c497ade8947e8eadc210caf4" category="paragraph">Cloud Insights 所收集的 Kubernetes 持續容量（ PV ）資訊現在可用於報告、啟用計費、趨勢、預測、 TTF 計算、 以及其他業務報告、說明 Kubernetes 叢集、命名空間、工作負載等的指標。</block>
+  <block id="98f382d1962b023b2f9625686af82de9" category="section-title">為新客戶啟用預設的 ONTAP 系統監控</block>
+  <block id="31330c4ff7fe349e530327f3c9b8295a" category="paragraph">在新的 Cloud Insights 環境中、許多 ONTAP 系統監視器預設為啟用（即 _ 恢復 _ ）。以前、大部分的顯示器預設為 _ 已暫停 _ 狀態。由於企業需求因公司而異、因此我們建議您隨時查看 <block ref="6e23d996007e5a9ae1533f26f739ed3d" category="inline-link-macro-rx"></block> 在您的環境中、並根據您的警示需求暫停或恢復每個警示。</block>
+  <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
+  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 、 Stream 8 、 Stream 9 * Debian （ 64 位元）： 9 和 10 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 、 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位元）： 7.2 到 7.9 、 8.1 到 9.1 * Rocky 9.0 、 9.1 * Ubuntu Server ： 18.04 和 20.04 LTS 這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
+  <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">聯邦版的額外要求</block>
+  <block id="1bfc03463960617c4448bf68a9d88b02" category="list-text">Cloud Insights 聯邦版需要在擷取單元系統上安裝 _rng-ool_ 、才能讓 FIPS 驗證的加密功能正常運作。</block>
+  <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights 可同時提供前端和後端虛擬化儲存設備的檢視。</block>
+  <block id="f489c820bd49075e9fac81860fe93688" category="section-title">表 Widget 中的虛擬化</block>
+  <block id="b54537489c4ac4c2d2a2fc686c6b85a7" category="paragraph">開始檢視儲存虛擬化的最簡單方法之一、就是建立顯示虛擬化類型的儀表板表 Widget 。建立 Widget 的查詢時、只要將「 virtualizedType 」新增至您的群組或篩選器即可。</block>
+  <block id="faffd9673a91f79b7697893831a280c9" category="inline-image-macro">顯示儲存虛擬化類型的基本查詢</block>
+  <block id="fd9a8824e3f247a75b5869b6cdc4f926" category="paragraph"><block ref="fd9a8824e3f247a75b5869b6cdc4f926" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1e4c896e1dca588b00da9556c4dcf4b6" category="paragraph">產生的表格 Widget 會顯示環境中的 _Standard_ 、 _Backend_ 和 _Virtual_ 儲存。</block>
+  <block id="5850ea600e38d6358cb902425e89a83b" category="inline-image-macro">顯示虛擬化類型的表格</block>
+  <block id="ae2aba5ebd1778b2721cbaa556c1254f" category="paragraph"><block ref="ae2aba5ebd1778b2721cbaa556c1254f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec66a493587eeadf86c85660036b0556" category="section-title">登陸頁面顯示虛擬化資訊</block>
+  <block id="32c3437b5141aa71adae8b70b3e0ba56" category="paragraph">在儲存、磁碟區、內部磁碟區或磁碟登陸頁面上、您可以看到相關的虛擬化資訊。例如、查看下方的儲存登陸頁面、您可以看到這是虛擬儲存設備、以及適用的後端儲存系統。登陸頁面上的任何相關表格也會視情況顯示虛擬化資訊。</block>
+  <block id="53b6e64625bada99ba54be923fda44fa" category="section-title">現有的登陸頁面和儀表板</block>
+  <block id="a00a374ac04c1276bcdf9526692575de" category="paragraph">請注意、如果您目前環境中有自訂的登錄頁面或儀表板、這些頁面或儀表板在預設情況下不會自動顯示所有的虛擬化資訊。不過、您可以 _ 恢復為預設 _ 任何自訂儀表板或登陸頁面（您必須重新實作自訂）、或修改相關的 Widget 來納入所需的虛擬化屬性或指標。</block>
+  <block id="3242b3c34922ab4d5cbff714ffb3f35b" category="paragraph">自訂儀表板或登陸頁畫面的右上角提供 _ 恢復為預設 _ 。</block>
+  <block id="22d3924d22161b1ae53430a86affea68" category="inline-image-macro">恢復為預設按鈕</block>
+  <block id="bf5be9dc856a4d42607ac85b1e6ff046" category="paragraph"><block ref="bf5be9dc856a4d42607ac85b1e6ff046" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="07771c0af5efde2b4fbae3151b85a7ae" category="paragraph">Microsoft Hyper-V資料收集器會從虛擬化伺服器運算環境取得庫存與效能資料。此資料收集器可探索獨立式 Hyper-V 主機或整個叢集、每個獨立主機或叢集建立一個收集器。</block>
+  <block id="8c7e59a5cdb49e2a8cab80c42a4342af" category="list-text">叢集或獨立 Hypervisor 的 IP 位址或 FQDN 。使用浮動叢集主機名稱或 IP 可能是最可靠的方法、而不是將收集器指向叢集中的某個特定節點。</block>
+  <block id="5a8e7ab77aee94008b9126631260c5f7" category="list-text">管理層級的使用者帳戶、可在叢集中的所有 Hypervisor 上運作。</block>
+  <block id="2551b0dcbdeedcae82fd62a4424c84f0" category="list-text">必須啟用 WinRM 、並在所有 Hypervisor 上聆聽</block>
+  <block id="386bed3302278e5a638f0e7bcb2975a7" category="list-text">每個Hyper-V Hypervisor都必須為每個主機上的每個VM開啟「資源計量」。如此一來、每Cloud Insights 個Hypervisor都能在每個來賓作業系統上提供更多資料以供其使用。如果未設定、則會為每個來賓取得較少的效能指標。如需資源計量的詳細資訊、請參閱 Microsoft 文件：</block>
+  <block id="7ccf34a3b1c13f51efc6e80f65581407" category="cell">叢集 IP 位址或浮動叢集 FQDN</block>
+  <block id="e83f6b13760c391bf29eb2e1ac88c279" category="cell">叢集的 IP 位址或完整網域名稱、或獨立的非叢集 Hypervisor</block>
+  <block id="b8adad41e88791514af597358506f749" category="cell">DNS 網域尾碼</block>
+  <block id="3b15ddcf76b613b05aa53ea7cf06a953" category="cell">結合簡單主機名稱的主機名稱尾碼、可呈現 Hypervisor 的 FQDN</block>
+  <block id="eb59b991a8859e32315f0c110063a18c" category="section-title">Kubernetes 指標</block>
+  <block id="889b2b6891b247cb3f1629028a6a72ad" category="section-title">Kubernetes 叢集指標事實</block>
+  <block id="4b8c184a61895e613e3b38aaa98e8328" category="paragraph"><block ref="4b8c184a61895e613e3b38aaa98e8328" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe896f49e503c0194f73c1c6cf8c07f1" category="section-title">Kubernetes 命名空間度量資料</block>
+  <block id="d53514e865ca6927c453ce9914b4db42" category="paragraph"><block ref="d53514e865ca6927c453ce9914b4db42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="821a56690c4cffc00de1fe52e21832a5" category="section-title">Kubernetes Node Metrics 資料</block>
+  <block id="a95b98345698ecd12274c73f0b3763a8" category="paragraph"><block ref="a95b98345698ecd12274c73f0b3763a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="007c26ac88d148eaf1ad1f5122ab0688" category="section-title">Kubernetes PVC 指標資料</block>
+  <block id="3ccb715287949a73ce94c140fef2e59a" category="paragraph"><block ref="3ccb715287949a73ce94c140fef2e59a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4620a71a57aaf26c998c4ca2014b6d3" category="section-title">Kubernetes 工作負載指標事實</block>
+  <block id="8069630217044bdf027d2b8af00a69d8" category="paragraph"><block ref="8069630217044bdf027d2b8af00a69d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d260e141887ca1a59da8973861299709" category="section-title">容量 Datamart</block>
+  <block id="9ad5c20e0121bd52bd3fcef56f73d00d" category="paragraph">下列影像說明容量資料傳輸技術。</block>
+  <block id="d7e27f6a5d216572cc692811c6530f82" category="section-title">Kubernetes PV 容量</block>
+  <block id="629604d8234527b8f55ed9a4f1119cc9" category="paragraph"><block ref="629604d8234527b8f55ed9a4f1119cc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="955630f91d989ab6e44388b92dc3ec42" category="section-title">儲存節點容量</block>
+  <block id="c99969b26ce76580fac3132d1addc9bd" category="paragraph"><block ref="c99969b26ce76580fac3132d1addc9bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23f05aab2c347892b769f3ccf77b61ab" category="paragraph"><block ref="23f05aab2c347892b769f3ccf77b61ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3176895f7b0fd7802579ef7f42a2c642" category="section-title">主機每小時效能</block>
+  <block id="98c76a8e012a3b0335dadc45e22612b3" category="paragraph"><block ref="98c76a8e012a3b0335dadc45e22612b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2995061fb96ddb9884cf89bb2a0a4eba" category="paragraph"><block ref="2995061fb96ddb9884cf89bb2a0a4eba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c5acdb673581325ace1afb429eff665" category="paragraph"><block ref="8c5acdb673581325ace1afb429eff665" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d6b73d87facce72dbc09974de7a801e6" category="section-title">儲存節點每日效能</block>
+  <block id="73ff8710d68388c0f16d396727e1bb29" category="paragraph"><block ref="73ff8710d68388c0f16d396727e1bb29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

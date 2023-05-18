@@ -5,11 +5,21 @@ keywords: data collector, Microsoft, Hyper-V
 summary: 設定Microsoft Hyper-V資料收集器。 
 ---
 = Microsoft Hyper-V資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-7715b27c3c633c894edbc1c3480d311c
+Microsoft Hyper-V資料收集器會從虛擬化伺服器運算環境取得庫存與效能資料。此資料收集器可探索獨立式 Hyper-V 主機或整個叢集、每個獨立主機或叢集建立一個收集器。
 
 
 
@@ -48,13 +58,12 @@ summary: 設定Microsoft Hyper-V資料收集器。
 設定此資料收集器需要下列項目：
 
 * Hyper-V需要開啟連接埠5985才能進行資料收集和遠端存取/管理。
-* ecda38bc28a47936b29d11e115c3da48
-* 0d2113f67a7658f557c02b2de3f05cf1
-* 6c3c9df6e16d0246aaa0ec5441c04561
-* 8c1948e0309134002250ecab98bf55ec
+* 叢集或獨立 Hypervisor 的 IP 位址或 FQDN 。使用浮動叢集主機名稱或 IP 可能是最可靠的方法、而不是將收集器指向叢集中的某個特定節點。
+* 管理層級的使用者帳戶、可在叢集中的所有 Hypervisor 上運作。
+* 必須啟用 WinRM 、並在所有 Hypervisor 上聆聽
 * 連接埠需求：連接埠135透過Windows 2003與舊版的指派1024-65535與Windows 2008的指派49152-65535的WMI&動態TCP連接埠。
 * 即使資料收集器只指向IP位址、DNS解析也必須成功
-* cdc59ca9a737e48e94e58966b33d355f
+* 每個Hyper-V Hypervisor都必須為每個主機上的每個VM開啟「資源計量」。如此一來、每Cloud Insights 個Hypervisor都能在每個來賓作業系統上提供更多資料以供其使用。如果未設定、則會為每個來賓取得較少的效能指標。如需資源計量的詳細資訊、請參閱 Microsoft 文件：
 +
 link:https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831661(v=ws.11)["Hyper-V資源計量概觀"]
 
@@ -75,7 +84,7 @@ NOTE: Hyper-V資料收集器需要Windows擷取單元。
 | 欄位 | 說明 
 
 
-| 48b865172aa7a91dee1b9137be290087 | 93a540a173a30e909c6fc0df2f5f12cd 
+| 叢集 IP 位址或浮動叢集 FQDN | 叢集的 IP 位址或完整網域名稱、或獨立的非叢集 Hypervisor 
 
 
 | 使用者名稱 | Hypervisor的系統管理員使用者名稱 
@@ -84,7 +93,7 @@ NOTE: Hyper-V資料收集器需要Windows擷取單元。
 | 密碼 | Hypervisor密碼 
 
 
-| 7eaf62c20e3754bb13a378f4a1535681 | 3f47a0b347b090238ebf3146d05878eb 
+| DNS 網域尾碼 | 結合簡單主機名稱的主機名稱尾碼、可呈現 Hypervisor 的 FQDN 
 |===
 
 

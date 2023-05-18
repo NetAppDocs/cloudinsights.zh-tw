@@ -54,8 +54,19 @@ image:Notifications_email_list.png["電子郵件通知"]
 
 若要設定全域警示收件者、請在*全域監控通知收件者*區段中選擇所需的收件者。
 
-[role="thumb"]
 在建立或修改監視器時、您可以隨時覆寫個別監視器的全域收件者清單。
 
 
 NOTE: 「資料收集器」通知的優先順序高於任何與叢集/資料收集器相關的特定「監視器」通知。ONTAP您為資料收集器本身設定的收件者清單將會收到資料收集器警示。如果沒有作用中的資料收集器警示、則會將監控產生的警示傳送給特定的監控收件者。
+
+
+
+== 編輯 ONTAP 通知
+
+您可以從儲存設備登陸頁面右上角的下拉式清單中選取 _Edit Notifications_ 、以修改 ONTAP 叢集的通知。
+
+image:EditONTAPNotifications.png["ONTAP 編輯通知"]
+
+您可以在此設定「重大」、「警告」、「資訊」和 / 或「已解決」警示的通知。每個案例都可以通知「全域收件者」清單或您選擇的其他收件者。
+
+image:EditONTAPNotifications_MultipleScenarios.png["適用於不同案例的 ONTAP 通知"]

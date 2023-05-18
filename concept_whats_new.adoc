@@ -29,10 +29,48 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
-=== 675daaee26cb7a668008d96ba0afd8e2
+=== 改善 Kubernetes 監控操作員安裝
 
-394791778bc8c7c505ff97a4408cada8
+的安裝與組態 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 下列改善功能比以往更容易：
 
+* 環境 link:telegraf_agent_k8s_config_options.html["組態設定"] 保存在單一、自行記錄的組態檔案中。
+* 將 Kubernetes Monitoring Operator 影像上傳至私有儲存庫的逐步指示。
+* 只需一個命令即可輕鬆升級 Kubernetes Monitoring 、同時保留自訂組態。
+* 更安全： API 金鑰可安全地管理機密。
+* 輕鬆整合並部署您的 CI/CD 自動化工具。
+
+
+
+
+=== 儲存虛擬化
+
+Cloud Insights 可以區分擁有本機儲存或其他儲存陣列虛擬化的儲存陣列。這可讓您將成本與效能與前端完全關聯到基礎架構後端。
+
+image:StorageVirtualization_StorageSummary.png["顯示虛擬與備份儲存資訊的儲存設備登陸頁面"]
+
+
+
+=== 新 Webhook 參數
+
+建立時 link:task_create_webhook.html["Webhook"] 通知、您現在可以將這些參數納入網路攔截器定義：
+
+* %%TriggeredOnKeys%%
+* %%TriggeredOnValues%%
+
+
+
+
+=== 報告 Kubernetes PV 資料
+
+Cloud Insights 所收集的 Kubernetes 持續容量（ PV ）資訊現在可用於報告、啟用計費、趨勢、預測、 TTF 計算、 以及其他業務報告、說明 Kubernetes 叢集、命名空間、工作負載等的指標。
+
+
+
+=== 為新客戶啟用預設的 ONTAP 系統監控
+
+在新的 Cloud Insights 環境中、許多 ONTAP 系統監視器預設為啟用（即 _ 恢復 _ ）。以前、大部分的顯示器預設為 _ 已暫停 _ 狀態。由於企業需求因公司而異、因此我們建議您隨時查看 link:task_system_monitors.html["系統監視器"] 在您的環境中、並根據您的警示需求暫停或恢復每個警示。
+
+'''
 
 
 == 2023 年 4 月
@@ -41,7 +79,7 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 === Kubernetes 效能監控與地圖
 
-5d6a6764c313767cd859950497830f19
+。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes 網路效能與地圖 _"] 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
 
 主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
 
