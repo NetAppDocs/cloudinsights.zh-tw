@@ -11153,4 +11153,15 @@
   <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd8a3856de3da0db088a741e7cd81e16" category="section-title">編輯 ONTAP 通知</block>
+  <block id="82ade85625dc6ecdc6fabebd2e345d19" category="paragraph">您可以從儲存設備登陸頁面右上角的下拉式清單中選取 _Edit Notifications_ 、以修改 ONTAP 叢集的通知。</block>
+  <block id="8328b360704f8cf7f0beb073b0b83137" category="inline-image-macro">ONTAP 編輯通知</block>
+  <block id="4b7465a88d7e0bbf7cc001f3780775bb" category="paragraph"><block ref="4b7465a88d7e0bbf7cc001f3780775bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c77ddc9f57c017ba637124d4722446a7" category="paragraph">您可以在此設定「重大」、「警告」、「資訊」和 / 或「已解決」警示的通知。每個案例都可以通知「全域收件者」清單或您選擇的其他收件者。</block>
+  <block id="80501d323e4be5227482cd3a9ab61d4f" category="inline-image-macro">適用於不同案例的 ONTAP 通知</block>
+  <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
+  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 、 Stream 8 、 Stream 9 * Debian （ 64 位元）： 9 和 10 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 、 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位元）： 7.2 到 7.9 、 8.1 到 9.1 * Rocky 9.0 、 9.1 * Ubuntu Server ： 18.04 和 20.04 LTS 這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
+  <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">聯邦版的額外要求</block>
+  <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">在 Cloud Insights 聯邦版叢集中安裝採購單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。</block>
 </blocks>
