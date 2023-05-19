@@ -16,11 +16,7 @@ NOTE: 回收 ONTAP Cold Storage_ Insight 被視為 A link:concept_preview_featur
 
 若要檢視這些洞見、請瀏覽 * 儀表板 > Insights * 、並查看 _ 回收 ONTAP Cold Storage_ 洞見。請注意、如果 Cloud Insights 偵測到冷儲存設備、此 Insight 僅會列出受影響的儲存設備、否則您會看到「 All Clear 」訊息。
 
-請記住：
-
-* 不會顯示 30 天以內的冷資料。
-* FlexGroup 中的組成 Volume 不包含在冷資料計算中（因為無法在成員上設定階層原則）。
-
+請記住、未顯示 30 天以內的冷資料。
 
 image:Cold_Data_Insight_List.png["顯示 3 個含有 Cold 資料的儲存位置的深入資訊清單"]
 

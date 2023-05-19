@@ -11157,9 +11157,6 @@
   <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 、 Stream 8 、 Stream 9 * Debian （ 64 位元）： 9 和 10 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 、 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位元）： 7.2 到 7.9 、 8.1 到 9.1 * Rocky 9.0 、 9.1 * Ubuntu Server ： 18.04 和 20.04 LTS 這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">聯邦版的額外要求</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">在 Cloud Insights 聯邦版叢集中安裝採購單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。</block>
-  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">請記住：</block>
-  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">不會顯示 30 天以內的冷資料。</block>
-  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">FlexGroup 中的組成 Volume 不包含在冷資料計算中（因為無法在成員上設定階層原則）。</block>
   <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Cold Data Power 資訊</block>
   <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">建議</block>
@@ -11172,4 +11169,5 @@
   <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">Cold Data Workload Table</block>
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">請記住、未顯示 30 天以內的冷資料。</block>
 </blocks>
