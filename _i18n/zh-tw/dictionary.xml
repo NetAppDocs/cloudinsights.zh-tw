@@ -10862,18 +10862,11 @@
   <block id="930fd15ae62cafe82d62d6912f307087" category="paragraph">Insight 說明可快速指示偵測到的資料量為「冷」、以及資料所在的儲存容量。此表也提供含有冷資料的工作負載計數。</block>
   <block id="7cc631429c391f70b58e64999f7fbe48" category="inline-link-macro">NetApp 的 TCO 計算機</block>
   <block id="cdb12d4961181c6c0d6f14a1a17cfd87" category="paragraph">從清單中選取 Insight 會開啟一個頁面、顯示更多詳細資料、包括將資料移至雲端或關閉未受控制的磁碟的建議、以及您可能因實作這些建議而實現的預估成本和省電效益。此頁面甚至提供一個方便的連結 <block ref="928b307e42240e05f4c78ed4745d6f3a" category="inline-link-macro-rx"></block> 因此您可以嘗試使用數字。</block>
-  <block id="d4dcff57f0b29162c5b6b2c09678b2e2" category="inline-image-macro">Cold Data 範例</block>
-  <block id="3f7f21955dfa309fc0646bb3a937c6fb" category="paragraph"><block ref="3f7f21955dfa309fc0646bb3a937c6fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5048bf2003cf033b80e3fa2e33502f8" category="paragraph">在 Insight 頁面上、展開 * 建議 * 以探索下列選項：</block>
   <block id="f77e48bcc98143a3f6bd8bcc492be286" category="list-text">將未使用的工作負載（殭屍）移至成本較低的儲存層（ HDD ）</block>
-  <block id="52119c89cf47d4da7004a38925cca6c7" category="paragraph">利用 zombie 旗標、冷儲存設備和天數、找出最冷且最大的資料量、並將工作負載移至成本較低的儲存層（例如使用硬碟儲存設備的儲存池）。當工作負載在七天或更長時間內未收到任何重大 IO 要求時、即視為「殭屍」。</block>
   <block id="c8abb3322f2d9026ffca3cbd29c6e9ba" category="list-text">刪除未使用的工作負載</block>
   <block id="42bb4c2dadbccfef009beef19eb60c44" category="paragraph">確認哪些工作負載未在使用中、並考慮將其歸檔或從儲存系統中移除。</block>
   <block id="30dc3fa30dc934a0d0aa98e3789e46c2" category="list-text">請考慮 NetApp 的 Fabric Pool 解決方案</block>
-  <block id="5338c9536e3c14268eb7568f06d418b6" category="paragraph">NetApp 的 Fabric Pool 解決方案會自動將冷資料分層至低成本的雲端儲存設備、進而提高效能層的效率、並提供遠端資料保護。</block>
-  <block id="394172dfa5bac3cc560f6f81bc64334d" category="paragraph">圖表和表格提供其他趨勢資訊、並可讓您深入瞭解個別工作負載。</block>
-  <block id="e8f788aa86e776dcd96d7f18cf2b3073" category="inline-image-macro">Cold_Data_Workload Graph_and_Table</block>
-  <block id="18149ca5a604ec569675b78f1c8cfba7" category="paragraph"><block ref="18149ca5a604ec569675b78f1c8cfba7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db08e6b1d619064fa3fd2035f5926d18" category="paragraph">回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。 <block ref="82cab8f639b07ead699dc071830d992e" category="inline-link-macro-rx"></block></block>
   <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">這是_預覽_功能、可能會隨著時間而改變、因為已進行改善。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 關於Cloud Insights 本產品的功能。</block>
   <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">瀏覽至 * 功能表 &gt; 內容 &gt; 團隊內容 &gt; 報告 *</block>
@@ -11164,4 +11157,19 @@
   <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">執行下列其中一項授權版本的電腦： * CentOS （ 64 位元）： 7.2 到 7.9 、 Stream 8 、 Stream 9 * Debian （ 64 位元）： 9 和 10 * Oracle Enterprise Linux （ 64 位元）： 7.5 到 7.9 、 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位元）： 7.2 到 7.9 、 8.1 到 9.1 * Rocky 9.0 、 9.1 * Ubuntu Server ： 18.04 和 20.04 LTS 這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">聯邦版的額外要求</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">在 Cloud Insights 聯邦版叢集中安裝採購單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。</block>
+  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">請記住：</block>
+  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">不會顯示 30 天以內的冷資料。</block>
+  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">FlexGroup 中的組成 Volume 不包含在冷資料計算中（因為無法在成員上設定階層原則）。</block>
+  <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Cold Data Power 資訊</block>
+  <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">建議</block>
+  <block id="987152d50a80bdf0820a4f1fd1771f81" category="paragraph">利用 zombie 旗標、冷儲存設備和天數、找出最冷且最大的資料量、並將工作負載移至成本較低的儲存層（例如使用硬碟儲存設備的儲存池）。當工作負載在 30 天或更長時間內未收到任何重大 IO 要求時、即視為「殭屍」。</block>
+  <block id="27130393c9a69c9ac4259ad677b7e09b" category="inline-link-macro">Fabric Pool 解決方案</block>
+  <block id="a7c5cd98f24711202e2a8089e206922c" category="paragraph">NetApp 的 <block ref="6dfc63a251a9b042b77c667e40f20df9" category="inline-link-macro-rx"></block> 自動將冷資料分層至低成本的雲端儲存設備、藉此提高效能層的效率、並提供遠端資料保護。</block>
+  <block id="b0bad3786567c06c6ba5f9c05f89f0fb" category="section-title">視覺化與探索</block>
+  <block id="f9a5f3e9d6c824797a0884341490f583" category="paragraph">圖表和表格提供其他趨勢資訊、並可讓您深入瞭解個別工作負載。</block>
+  <block id="046d0c83fcc2f8749fd500daded4836a" category="inline-image-macro">Cold Data Summary Graphs</block>
+  <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">Cold Data Workload Table</block>
+  <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
+<block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
