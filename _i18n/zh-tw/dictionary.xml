@@ -189,23 +189,7 @@
   <block id="b64fa7905e81fd64c5b00971051ce0f8" category="paragraph">Cloud Insight的RESTful API是整合的主要點、可讓使用者輕鬆有效地移動資料、並讓使用者無縫存取資料。</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">設定NetApp Cloud Connection以供ONTAP 採用NetApp 9.9以上資料收集器</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">NetApp Cloud Connection for ONTAP NetApp 9.9以上資料收集器</block>
-  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">此頁面會改為</block>
-  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">此頁面已過時、不會更新。請前往 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS</block>
-  <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">利用*雲端連線*從支援的9.9以上版本收集資料、無需安裝外部採購單元、即可簡化疑難排解、維護及初始部署作業。Cloud Insights ONTAP若要設定ONTAP 適用於整個過程的Cloud Connection for the Sing 9.9+資料收集器、您必須將*配對碼*複製到ONTAP 「系統管理員」、然後再將其建立至Cloud Insights 您的「世界」環境的連線。建立連線之後、所收集的資料與透過擷取單位收集的資料相同。</block>
-  <block id="72c287aa31792e43cc71160178046540" category="paragraph">此資料收集器可支援ONTAP 使用支援功能的支援版本為9.9以上的CVO、AFF 功能豐富的功能及FAS 功能豐富的功能。</block>
-  <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">雲端代理程式資料收集器組態</block>
-  <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b3f4b400496b1f1be79ceb4e94a91c9a" category="paragraph">請依照下列步驟設定連線：</block>
-  <block id="3e71c2acb888e5c54e107a6e20c6d734" category="list-text">產生一個獨特的Token、用於建立與ONTAP 該系統的連線。</block>
-  <block id="5aa319f21d7d467c78e0900ae3ce4fe7" category="list-text">複製配對碼、其中包含權杖。您可以按一下「_[+]顯示程式碼片段_」來檢視配對代碼。</block>
-  <block id="92d743a425aee6a9d199011e37f4a7a4" category="paragraph">複製配對代碼後、資料收集器組態畫面會顯示步驟6、提示您等待建立連線。在建立連線之前、無需在此畫面上執行任何其他動作。</block>
-  <block id="91984937f546d43518e93c72ed5b7c0f" category="inline-image-macro">正在等待連線</block>
-  <block id="5e9af3de724d92d3056b1b1acbe5c289" category="paragraph"><block ref="5e9af3de724d92d3056b1b1acbe5c289" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="017330578692e5d7e9299cce45d52f9a" category="list-text">在新的瀏覽器索引標籤中、登入ONTAP 「更新系統管理程式」、然後瀏覽至「叢集」&gt;「設定」&gt;「雲端連線」。</block>
-  <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">按一下「新增雲端連線」、然後貼上配對代碼。</block>
-  <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">返回Cloud Insights 到「瀏覽器」索引標籤、等待連線建立。一旦建立、就會顯示「完成」按鈕。</block>
-  <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">按一下「完成」。</block>
   <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="74e0a2e3755eeebe63a75f28fcd4310c" category="doc">匯入附註</block>
   <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">包含API、可從CSV檔案匯入註釋或應用程式、並將其指派給您指定的物件。Cloud Insights</block>
@@ -10623,7 +10607,6 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在此試用期間、您可以探索 Cloud Insights 提供的功能。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">叢集管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB 使用者封鎖所需。</block>
-  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">自 2023 年 4 月 4 日起、 Cloud Insights 不再提供此資料收集器。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">從「團隊內容」中選取 * 儲存管理員儀表板 * 、可提供多份報告、提供您的流量和儲存資訊。</block>
   <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">Storage Manager 儀表板選項</block>
   <block id="8f6a27e4a5050011d91bc9e27e37e101" category="paragraph"><block ref="8f6a27e4a5050011d91bc9e27e37e101" category="inline-image-macro-rx" type="image"></block></block>
@@ -11170,4 +11153,5 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">請記住、未顯示 30 天以內的冷資料。</block>
+  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再提供 Cloud Insights 安裝、並將於 2023 年 5 月 25 日從所有 Cloud Insights 安裝中移除。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
