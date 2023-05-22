@@ -8288,7 +8288,6 @@
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">附註：「從天到完整」的「0」（零）數表示、「從天到完整」的預估天數大於90天。換句話說、您的系統不可能隨時耗盡空間。</block>
   <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">資料保護</block>
-  <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">選取「*資料保護*」頁面以檢視SnapMirror關係。按一下「至」以取得來源或目的地Volume資訊、或按一下齒輪圖示以新增您要檢視之資料的欄。</block>
   <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">「VMware Infrastructure *基礎架構*」頁面提供叢集健全狀況與效能的檢視、您可以使用所有基本的物件上預先建置（但仍可進一步自訂）的查詢。ONTAP ONTAP選取您要探索的物件類型（叢集、儲存資源池等）、然後選擇是檢視健全狀況或效能資訊。設定篩選條件、深入瞭解個別系統。</block>
   <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">儲存資源池的基礎架構選擇</block>
   <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
@@ -10894,8 +10893,6 @@
   <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023 年 5 月</block>
   <block id="6b091071a7d33b506abd7a64e9f0795d" category="inline-image-macro">資料保護儀表板 Widget 顯示本機和遠端概觀</block>
   <block id="185acbfb6bbd68c83e1d229b0f437594" category="inline-image-macro">資料保護叢集清單</block>
-  <block id="2104c64c486c18ec271b0134a19654dd" category="paragraph"><block ref="c556223236d0a6ab73f15f6e6f21e0f9" category="inline-image-macro-rx" type="image"></block>
-<block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">工作負載對應範例</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">監控操作員入門</block>
@@ -11154,4 +11151,21 @@
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">請記住、未顯示 30 天以內的冷資料。</block>
   <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再提供 Cloud Insights 安裝、並將於 2023 年 5 月 25 日從所有 Cloud Insights 安裝中移除。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
+  <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">「 * 資料保護 * 」頁面會顯示受 * Snapshot Copies * 或 * SnapMirror Policies * 保護的磁碟區狀態。</block>
+  <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">在 _ 本機保護概觀 _ 區段中、這些圖表會針對受 Snapshot 複本保護的磁碟區提供下列資訊：</block>
+  <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">受 Snapshot 複本保護的磁碟區數量、以及未受保護的磁碟區數量。</block>
+  <block id="3f47a78c5f66b83b60ca72ace954dca7" category="list-text">使用或超過 Snapshot 複本保留空間的磁碟區數量。</block>
+  <block id="97fdc67fef73327f22b8fc495e435f8e" category="list-text">特定 Snapshot 複本數範圍內的磁碟區數量（例如少於 10 個複本、 10 至 200 個複本等）。</block>
+  <block id="b8a1fa4d1861a618562ca06e01978c9e" category="paragraph">在 _ 遠端保護概述 _ 一節中、這些圖表提供與受 SnapMirror 原則保護的磁碟區相關的資訊：</block>
+  <block id="b43d32c4db7003345fb07d24af63f6df" category="list-text">健全且不健全的 SnapMirror 關係數量。</block>
+  <block id="14160d3e23782b8cd0b814d46365dddf" category="list-text">根據延遲狀態、發生恢復點目標（ RPO ）延遲的 SnapMirror 關係數。</block>
+  <block id="80ba86360fcf2d182d10656bc16ae2c5" category="list-text">SnapMirror Volume 保護類型（例如 Volume SnapMirror 、 SVMDR 關係、 FlexGroup SnapMirror 關係、 SnapMirror 業務連續性（ SMBC ）一致性群組關係、以及未受保護的磁碟區）所保護的關係數量。</block>
+  <block id="c7fe2f93c4d26e8d245132ba4de7e3c6" category="list-text">受 SnapMirror 關係類型保護的關係數、例如 Asynous Mirror 、 Asynous Vault 、 Asynous MirrorVault 、 StrictSync 和 Sync 。</block>
+  <block id="2e34ea590b54b579c6accf225d3ae30e" category="paragraph"><block ref="2e34ea590b54b579c6accf225d3ae30e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6b707fac607c8a9643179751e9c495d" category="paragraph">頁面底部的 _Clusters_ 網格提供下列相關詳細資料：</block>
+  <block id="e6e7aa3e8144e8696637ef6e047685ee" category="list-text">未受 Snapshot 保護的磁碟區。</block>
+  <block id="2d71ecbcc9900bb68660e6db988080ca" category="list-text">磁碟區違反快照保留空間。</block>
+  <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">未受 SnapMirror 原則保護的磁碟區和 SnapMirror 關係發生延遲。</block>
+  <block id="9354fc9fde4206bac6177054249907e9" category="list-text">不良的 SnapMirror 關係。</block>
+  <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

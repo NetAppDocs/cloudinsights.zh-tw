@@ -38,9 +38,33 @@ image:OE_Overview.png["適用於Essentials的概述儀表板ONTAP"]
 
 == 資料保護
 
-選取「*資料保護*」頁面以檢視SnapMirror關係。按一下「至」以取得來源或目的地Volume資訊、或按一下齒輪圖示以新增您要檢視之資料的欄。
+「 * 資料保護 * 」頁面會顯示受 * Snapshot Copies * 或 * SnapMirror Policies * 保護的磁碟區狀態。
 
-image:DataProtectionDashboard_OverviewWidgets.png["資料保護儀表板 Widget 顯示本機和遠端概觀"]
+在 _ 本機保護概觀 _ 區段中、這些圖表會針對受 Snapshot 複本保護的磁碟區提供下列資訊：
+
+* 受 Snapshot 複本保護的磁碟區數量、以及未受保護的磁碟區數量。
+* 使用或超過 Snapshot 複本保留空間的磁碟區數量。
+* 特定 Snapshot 複本數範圍內的磁碟區數量（例如少於 10 個複本、 10 至 200 個複本等）。
+
+
+在 _ 遠端保護概述 _ 一節中、這些圖表提供與受 SnapMirror 原則保護的磁碟區相關的資訊：
+
+* 健全且不健全的 SnapMirror 關係數量。
+* 根據延遲狀態、發生恢復點目標（ RPO ）延遲的 SnapMirror 關係數。
+* SnapMirror Volume 保護類型（例如 Volume SnapMirror 、 SVMDR 關係、 FlexGroup SnapMirror 關係、 SnapMirror 業務連續性（ SMBC ）一致性群組關係、以及未受保護的磁碟區）所保護的關係數量。
+* 受 SnapMirror 關係類型保護的關係數、例如 Asynous Mirror 、 Asynous Vault 、 Asynous MirrorVault 、 StrictSync 和 Sync 。
+
+
+image:DataProtectionDashboard_OverviewWidgets_.png["資料保護儀表板 Widget 顯示本機和遠端概觀"]
+
+頁面底部的 _Clusters_ 網格提供下列相關詳細資料：
+
+* 未受 Snapshot 保護的磁碟區。
+* 磁碟區違反快照保留空間。
+* 未受 SnapMirror 原則保護的磁碟區和 SnapMirror 關係發生延遲。
+* 不良的 SnapMirror 關係。
+
+
 image:DataProtectionDashboard_ClusterList.png["資料保護叢集清單"]
 
 
