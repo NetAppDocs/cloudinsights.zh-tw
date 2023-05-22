@@ -11150,7 +11150,6 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">請記住、未顯示 30 天以內的冷資料。</block>
-  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再提供 Cloud Insights 安裝、並將於 2023 年 5 月 25 日從所有 Cloud Insights 安裝中移除。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">「 * 資料保護 * 」頁面會顯示受 * Snapshot Copies * 或 * SnapMirror Policies * 保護的磁碟區狀態。</block>
   <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">在 _ 本機保護概觀 _ 區段中、這些圖表會針對受 Snapshot 複本保護的磁碟區提供下列資訊：</block>
   <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">受 Snapshot 複本保護的磁碟區數量、以及未受保護的磁碟區數量。</block>
@@ -11168,4 +11167,5 @@
   <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">未受 SnapMirror 原則保護的磁碟區和 SnapMirror 關係發生延遲。</block>
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">不良的 SnapMirror 關係。</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再提供 Cloud Insights 安裝、並將於 2023 年 5 月 25 日從所有 Cloud Insights 安裝中移除。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
