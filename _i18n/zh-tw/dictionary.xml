@@ -11175,4 +11175,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">我在同一個 Qtree 中手動設定了軟配額和硬配額、但顯示的總容量是硬配額、對嗎？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">是、如果指定硬配額、則會顯示為總容量。</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">登入問題</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">安裝 NetApp Kubernetes Monitoring Operator 後、我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向發出 HTTP 要求時發生錯誤<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 取得<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 撥號 TCP ： LOOKUP kube-state - 規格。 &lt;namespace&gt; 。 Svc.cluster 。本機：無這類主機</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
 </blocks>

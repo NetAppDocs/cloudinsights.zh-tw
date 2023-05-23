@@ -490,5 +490,8 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 | NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態 | Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。 
+
+
+| 安裝 NetApp Kubernetes Monitoring Operator 後、我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向發出 HTTP 要求時發生錯誤 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 取得 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 撥號 TCP ： LOOKUP kube-state - 規格。 <namespace> 。 Svc.cluster 。本機：無這類主機 | 此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
