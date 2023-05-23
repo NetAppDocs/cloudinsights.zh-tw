@@ -194,7 +194,7 @@ Position Hostname         IP Address/Mask
 | 無法修改原則。原因：未授權使用該命令。 | 請檢查是否使用CsUser、是否會如上所述授予使用者權限。 
 
 
-| NFS的使用者（IP位址）封鎖正常運作、但對於SMB / CIFS、我看到錯誤訊息：「從SID到網域名稱的轉換失敗。原因逾時：通訊端未建立」 | 這種情況可能發生於_CsUser_沒有執行ssh的權限。（請確保叢集層級的連線、然後確定使用者可以執行ssh）。_CsUser_角色需要這些權限。 https://[]對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作： 安全性登入角色create -role csrole -cmd目錄名稱"vserver出口原則規則"-access all安全性登入角色create -role csrole -cmd目錄名稱-cmd目錄名稱set -access all安全性登入角色create -role csrole -cmd目錄名稱"vserver csse-check concall"-access"安全性登入密碼全名 角色建立-role csrole -cmd目錄名稱"vserver name-mapping "-access all如果不使用_CsUser_、而且使用叢集層級的管理員使用者、請確定管理員使用者具有ONTAP 支援Isrole的ssh權限。 
+| NFS的使用者（IP位址）封鎖正常運作、但對於SMB / CIFS、我看到錯誤訊息：「從SID到網域名稱的轉換失敗。原因逾時：通訊端未建立」 | 這種情況可能發生於_CsUser_沒有執行ssh的權限。（請確保叢集層級的連線、然後確定使用者可以執行ssh）。_CsUser_角色需要這些權限。 https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作： 安全性登入角色create -role csrole -cmd目錄名稱"vserver出口原則規則"-access all安全性登入角色create -role csrole -cmd目錄名稱-cmd目錄名稱set -access all安全性登入角色create -role csrole -cmd目錄名稱"vserver csse-check concall"-access"安全性登入密碼全名 角色建立-role csrole -cmd目錄名稱"vserver name-mapping "-access all如果不使用_CsUser_、而且使用叢集層級的管理員使用者、請確定管理員使用者具有ONTAP 支援Isrole的ssh權限。 
 
 
 |  |  

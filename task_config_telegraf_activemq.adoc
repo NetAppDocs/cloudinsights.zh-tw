@@ -30,7 +30,7 @@ image:ActiveMQDCConfigWindows.png["ActiveMQ組態"]
 
 == 設定
 
-如需相關資訊、請參閱 http://["ActiveMQ文件"]
+如需相關資訊、請參閱 http://activemq.apache.org/getting-started.html["ActiveMQ文件"]
 
 
 

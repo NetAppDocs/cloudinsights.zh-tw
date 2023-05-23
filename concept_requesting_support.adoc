@@ -34,7 +34,7 @@ image:SupportPageWithLearningCenter.png["支援頁面"]
 === 選項1：使用預先存在的NetApp支援網站（NSS）SSO帳戶的使用者步驟
 
 .步驟
-. 瀏覽至NetApp註冊網站 https://[]
+. 瀏覽至NetApp註冊網站 https://register.netapp.com[]
 . 選擇「我已經註冊為NetApp客戶」、然後選擇「_S__ Cloud Insights 」作為產品系列。選擇您的帳單供應商（NetApp或AWS）、並參閱Cloud Insights 《支援》（英文）功能表中的「說明>支援」功能表、提供您的序號和NetApp訂閱名稱或AWS客戶ID：
 +
 image:SupportPage_SN_Section-NA.png["SN_SCREEN"]
@@ -52,7 +52,7 @@ image:ExistingCustomerRegExample.png["現有客戶表單"]
 === 選項2：新NetApp客戶的步驟、不含預先存在的NetApp支援網站（NSS）SSO帳戶
 
 .步驟
-. 瀏覽至NetApp註冊網站 https://[]
+. 瀏覽至NetApp註冊網站 https://register.netapp.com[]
 . 選擇「我不是NetApp註冊客戶」、並以下列範例填寫所需資訊：
 
 
@@ -63,7 +63,7 @@ image:NewCustomerRegExample.png["新客戶表單"]
 image:SupportPage_SN_Section-NA.png["SN_SCREEN"]
 
 . 如果沒有錯誤發生、使用者將會被引導至「Registration Submitted Successfully（已成功提交登錄）」頁面。與用於註冊的NSSSSO使用者名稱相關的電子郵件地址、會在幾小時內收到一封電子郵件、說明「您的產品現在符合支援資格」。
-. 身為NetApp的新客戶、您也必須建立NetApp支援網站（NSS）使用者帳戶、以便日後登錄、並存取支援入口網站進行技術支援聊天和網路票證。此連結位於 https://[]。您可以提供新登錄Cloud Insights 的不合格產品編號、以加速程序。
+. 身為NetApp的新客戶、您也必須建立NetApp支援網站（NSS）使用者帳戶、以便日後登錄、並存取支援入口網站進行技術支援聊天和網路票證。此連結位於 https://mysupport.netapp.com/eservice/public/now.do[]。您可以提供新登錄Cloud Insights 的不合格產品編號、以加速程序。
 . 這是Cloud Insights 對NetApp產品系列編號的一次性登錄。
 
 

@@ -87,7 +87,7 @@ image:Workload_Map_Filtering.png["工作負載對應篩選"]
 +
 ** 衍生自 Pod 的工作負載標籤
 ** 工作負載上的預期標籤： app.Kubernetes.IO/ 元件
-** 標籤名稱參照： https://[]
+** 標籤名稱參照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** 建議標籤：
 +
 *** 前端

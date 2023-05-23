@@ -27,7 +27,7 @@ summary: 設定Azure NetApp Files 資料收集器。
 
 
 
-https://[]
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 

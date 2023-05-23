@@ -371,19 +371,19 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 請使用下列連結來存取這些kube狀態度量計數器的資訊：
 
-. https://["ConfigMap指標"]
-. https://["示範設定指標"]
-. https://["部署指標"]
-. https://["入口指標"]
-. https://["命名空間度量"]
-. https://["節點度量"]
-. https://["持續Volume指標"]
-. https://["持續Volume報銷標準"]
-. https://["Pod指標"]
-. https://["ReplicaSet度量"]
-. https://["機密數據"]
-. https://["服務指標"]
-. https://["StatefulSet指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["示範設定指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["部署指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["入口指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["命名空間度量"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["節點度量"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["持續Volume指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["持續Volume報銷標準"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Pod指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet度量"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["機密數據"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["服務指標"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatefulSet指標"]
 
 
 

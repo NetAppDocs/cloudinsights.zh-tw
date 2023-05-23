@@ -18,7 +18,7 @@ NOTE: 本頁是指可能會變更的第三方指示。請參閱 link:https://sla
 
 == 寬限時間範例：
 
-* 前往 https://[] 並建立新的應用程式命名有意義的名稱、然後選取Slack工作區。
+* 前往 https://api.slack.com/apps[] 並建立新的應用程式命名有意義的名稱、然後選取Slack工作區。
 +
 image:Webhooks_Slack_Create_Webhook.png["建立Slack Webhook"]
 
@@ -59,6 +59,6 @@ image:Webhooks_Slack_Notifications.png["Webhook通知"]
 
 ==== 更多資訊：
 
-* 若要修改訊息格式和配置、請參閱 https://[]
-* 錯誤處理： https://[]
+* 若要修改訊息格式和配置、請參閱 https://api.slack.com/messaging/composing[]
+* 錯誤處理： https://api.slack.com/messaging/webhooks#handling_errors[]
 

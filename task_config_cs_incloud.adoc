@@ -15,9 +15,9 @@ summary: 「工作負載安全性」使用資料收集器從裝置收集檔案�
 
 == 儲存組態Cloud Volumes ONTAP
 
-請參閱OnCommand Cloud Volumes ONTAP 《支援功能支援文件》、以設定單一節點/ HA AWS執行個體來裝載工作負載安全代理程式：https://[]
+請參閱OnCommand Cloud Volumes ONTAP 《支援功能支援文件》、以設定單一節點/ HA AWS執行個體來裝載工作負載安全代理程式：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
-組態完成後、請依照下列步驟設定SVM：https://[]
+組態完成後、請依照下列步驟設定SVM：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
 
 
@@ -41,7 +41,7 @@ summary: 「工作負載安全性」使用資料收集器從裝置收集檔案�
 
 .步驟
 . 登入AWS主控台並瀏覽至EC2-instances頁面、然後選取_Launch instance_。
-. 請選擇本頁所述版本適當的RHEL或CentOS AMI：https://[]
+. 請選擇本頁所述版本適當的RHEL或CentOS AMI：https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
 . 選取Cloud ONTAP 實例所在的VPC和子網路。
 . 選取「_t2.xlarge」（4個vCPU和16 GB RAM）作為配置資源。
 +

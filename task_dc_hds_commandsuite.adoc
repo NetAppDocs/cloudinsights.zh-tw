@@ -101,7 +101,7 @@ Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Devic
 * 適用於HiCommand Device Manager軟體和對等權限的唯讀使用者名稱和密碼
 * 連接埠需求：2001（http）或2443（https）
 * 使用使用者名稱和密碼登入HiCommand Device Manager軟體
-* 驗證存取「HiCommand Device Manager」 http://[]
+* 驗證存取「HiCommand Device Manager」 http://<HiCommand_Device_Manager_IP>:2001/service/StorageManager[]
 
 
 
