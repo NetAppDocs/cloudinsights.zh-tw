@@ -11168,4 +11168,11 @@
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">不良的 SnapMirror 關係。</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再提供 Cloud Insights 安裝、並將於 2023 年 5 月 25 日從所有 Cloud Insights 安裝中移除。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
+  <block id="6f482c482b4f6739bf91b49fb509e1fa" category="section-title">其他問題</block>
+  <block id="38371752dff5ee84c99f5d61b5071683" category="cell">* 問題： *</block>
+  <block id="c0a6863442a128c06f6f664c5acfb867" category="cell">* 答案： *</block>
+  <block id="17cd9c18b0bda3836dcd76df6d7b3e6d" category="cell">我的 Qtree 硬式配額在查詢中顯示正確、但我的軟式配額顯示為磁碟區的總容量。答對了嗎？</block>
+  <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">只有硬配額（手動設定或透過 Trident 設定）會顯示為設定配額；如果未指定硬配額、則 Qtree 容量會是內部 Volume 容量。</block>
+  <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">我在同一個 Qtree 中手動設定了軟配額和硬配額、但顯示的總容量是硬配額、對嗎？</block>
+  <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">是、如果指定硬配額、則會顯示為總容量。</block>
 </blocks>
