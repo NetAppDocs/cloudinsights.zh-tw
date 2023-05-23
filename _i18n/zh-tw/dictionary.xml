@@ -2467,7 +2467,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">疑難排解Linux擷取單元問題</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">疑難排解Windows接收單元問題</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">另請參閱 <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> 和 <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
-  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">登入問題：</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">每5分鐘登出一次Cloud Insights</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">我有Cloud Central帳戶、但無法登入Cloud Central。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp支援</block>
@@ -11175,4 +11174,5 @@
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">只有硬配額（手動設定或透過 Trident 設定）會顯示為設定配額；如果未指定硬配額、則 Qtree 容量會是內部 Volume 容量。</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">我在同一個 Qtree 中手動設定了軟配額和硬配額、但顯示的總容量是硬配額、對嗎？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">是、如果指定硬配額、則會顯示為總容量。</block>
+  <block id="37b418c8c2b422040e90081e18556979" category="section-title">登入問題</block>
 </blocks>
