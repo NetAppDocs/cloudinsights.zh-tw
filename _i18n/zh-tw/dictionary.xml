@@ -10709,7 +10709,6 @@
   <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">監控</block>
   <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">工作負載對應使用 <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> 以取得資訊。Cloud Insights 提供許多預設的 Kubernetes 監視器（請注意、這些監視器預設可能為 _Paused （暫停））。您可以 _ 恢復 _ （即啟用）您想要的監視器）、或是為 Kubernetes 物件建立自訂監視器、工作負載對應也會使用這些監視器。</block>
   <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">地圖</block>
-  <block id="15e3eddd185c05a5fb388c2cd109a194" category="paragraph">地圖會顯示服務（也稱為工作負載）及其彼此之間的關係。箭頭顯示交通路況方向。將游標移至工作負載上方會顯示該工作負載的摘要資訊、如以下範例所示：</block>
   <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">工作負載對應工作負載範例</block>
   <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42cecfeff00cc916fef4f64e7b921079" category="inline-xref">標籤</block>
@@ -10731,7 +10730,6 @@
   <block id="deb0475feb493ff82c79e1e3ae6d77ea" category="paragraph">如果您希望地圖識別所顯示的工作負載類型（例如圓圈圖示）、則工作負載標籤是必要的。標籤的衍生方式如下：</block>
   <block id="7bdbd3fbfd646718abde6244c5ef84ca" category="list-text">以一般術語執行的服務 / 應用程式名稱</block>
   <block id="8079e3a427e5574a8e11aee165eaa34a" category="list-text">如果來源是 Pod ：</block>
-  <block id="f5617cd916f968d6f57576092e33e68c" category="list-text">衍生自 Pod 的工作負載標籤</block>
   <block id="1cf01db723421f728c6d1ec366bc1525" category="list-text">工作負載上的預期標籤： app.Kubernetes.IO/ 元件</block>
   <block id="f7a8098a415987972c499ac42c4b95f9" category="list-text">標籤名稱參照：<block ref="625495fb7d70df26441db849ce9bb393" category="inline-link-rx"></block></block>
   <block id="1dbb5d26447acfe771d67c1e833d6d5a" category="list-text">建議標籤：</block>
@@ -10741,10 +10739,6 @@
   <block id="0fea6a13c52b4d4725368f24b045ca84" category="list-text">快取</block>
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">佇列</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">卡夫卡</block>
-  <block id="30231f87db181989dc6b48606b359f57" category="list-text">如果是 k8s 叢集外部的來源：</block>
-  <block id="2aa36d2124c1619305f749c6418c781f" category="list-text">嘗試剖析 DNS 解析名稱、並擷取服務類型</block>
-  <block id="1c145c21f55cfe3b796f2a421f92f818" category="paragraph">範例： s3.eu-north-1.amazonaws.com</block>
-  <block id="bf0940aef56e172d86f9f25d77945341" category="paragraph">解析名稱以取得 S3</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。</block>
   <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">Cloud Insights 聯邦版可能不提供這些功能、或是功能較少。在可能的情況下、文件中會記錄這些差異。</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023 年 4 月</block>
@@ -10896,7 +10890,6 @@
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">監控操作員入門</block>
   <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetes 監控與地圖</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubernetes 網路效能監控與地圖</block>
-  <block id="30d4cb002f857650eba9633e4a50ff2a" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubernetes 網路效能監控與地圖是一種 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能會有所變更。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">您必須先設定、才能使用 Kubernetes 網路效能監控和地圖 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubernetes 監控營運者有許多可設定的選項。</block>
@@ -11180,4 +11173,30 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同樣地、在 _Find_ 欄位中鍵入字串、也會醒目提示相符的工作負載。</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在「尋找」方塊中鍵入會強調工作負載</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 服務（也稱為工作負載）之間的相依性、進而簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
+  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">您可以針對下列任何物件類型建立 Cloud Insights 度量警示。請確定物件已依 id 分組。</block>
+  <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">Kubernetes.Workload</block>
+  <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">Kubernetes.daemonset</block>
+  <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
+  <block id="da08d7cb113a582345e1c87537667bfd" category="list-text">Kubernetes.cronjob</block>
+  <block id="e8eeaeeace97ddc1d8d3fd0e2d727de6" category="list-text">Kubernetes.job</block>
+  <block id="2dd2185af8e18909d0c1f96b139ff088" category="list-text">Kubernetes.Replicaset</block>
+  <block id="b11992f8220e27ed38a528aa3279ca6c" category="list-text">Kubernetes.statefset</block>
+  <block id="959158aaf864560f2a6da1c5111a2488" category="list-text">Kubernetes.pod</block>
+  <block id="e5dd88b41415ccc9b96130968a48a25c" category="list-text">kubernetes.network_traffic_l4</block>
+  <block id="5b5c93dfe04a64ec52da6b4603542b2d" category="paragraph">地圖會顯示服務 / 工作負載及其彼此之間的關係。箭頭顯示交通路況方向。將游標移至工作負載上方會顯示該工作負載的摘要資訊、如以下範例所示：</block>
+  <block id="85adf3862ca2037a273ff3441c2be5f9" category="list-text">標籤衍生自 Pod 的工作負載標籤</block>
+  <block id="cf568df890526e57bf700e2dc4b65a7c" category="list-text">如果來源位於 Kubernetes 叢集外部：</block>
+  <block id="87ff7926a3611a5c9e94e85db4fa5bea" category="list-text">Cloud Insights 會嘗試剖析 DNS 解析名稱、以擷取服務類型。</block>
+  <block id="bd1a60f90cea9c1c50d2670c398e61e4" category="paragraph">例如、使用 DNS 解析名稱 _s3.eu-north-1.amazonaws.com 、解析解析名稱以取得 _S__ 作為服務類型。</block>
+  <block id="500b3306f51ddde04e4c6da822f4a0e1" category="section-title">深入探索</block>
+  <block id="85b2e2afff81bc570758ed245f94e0ab" category="paragraph">在工作負載上按一下滑鼠右鍵、即可提供其他選項、讓您進一步探索。例如、您可以從這裡放大檢視該工作負載的連線。</block>
+  <block id="382fe39fadd269cb6f5709f01bcb97f3" category="inline-image-macro">工作負載對應右鍵按一下「縮放」以顯示工作負載的連線</block>
+  <block id="11cf13816a69e8f7513d902d787c018f" category="paragraph"><block ref="11cf13816a69e8f7513d902d787c018f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="08a268f9324eb2fedb3f30f6aed68c83" category="paragraph">或者、您也可以開啟「詳細資料」滑出面板、直接檢視「 _Summary_ 」、「 _Network_ 」或「 _Pod &amp; Storage_ 」標籤。</block>
+  <block id="c878025155cecb2c39acd2fc019a750c" category="inline-image-macro">詳細資料投影片網路索引標籤範例</block>
+  <block id="e1ad379a2729c042c49570a56d16450f" category="paragraph"><block ref="e1ad379a2729c042c49570a56d16450f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">最後、選取 _ 移至資產頁面 _ 將會開啟工作負載的詳細資產登陸頁面。</block>
+  <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">工作負載資產頁面</block>
+  <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

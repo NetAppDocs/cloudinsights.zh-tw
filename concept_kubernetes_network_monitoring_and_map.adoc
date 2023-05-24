@@ -19,7 +19,7 @@ summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路�
 
 
 [role="lead"]
-Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
+Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 服務（也稱為工作負載）之間的相依性、進而簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
 
 
 NOTE: Kubernetes 網路效能監控與地圖是一種 link:concept_preview_features.html["預覽"] 功能、可能會有所變更。
@@ -42,11 +42,24 @@ image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO STUP 期間選取地圖�
 
 工作負載對應使用 link:task_create_monitor.html["監控"] 以取得資訊。Cloud Insights 提供許多預設的 Kubernetes 監視器（請注意、這些監視器預設可能為 _Paused （暫停））。您可以 _ 恢復 _ （即啟用）您想要的監視器）、或是為 Kubernetes 物件建立自訂監視器、工作負載對應也會使用這些監視器。
 
+您可以針對下列任何物件類型建立 Cloud Insights 度量警示。請確定物件已依 id 分組。
+
+* Kubernetes.Workload
+* Kubernetes.daemonset
+* kubernetes.deployment
+* Kubernetes.cronjob
+* Kubernetes.job
+* Kubernetes.Replicaset
+* Kubernetes.statefset
+* Kubernetes.pod
+* kubernetes.network_traffic_l4
+
+
 
 
 == 地圖
 
-地圖會顯示服務（也稱為工作負載）及其彼此之間的關係。箭頭顯示交通路況方向。將游標移至工作負載上方會顯示該工作負載的摘要資訊、如以下範例所示：
+地圖會顯示服務 / 工作負載及其彼此之間的關係。箭頭顯示交通路況方向。將游標移至工作負載上方會顯示該工作負載的摘要資訊、如以下範例所示：
 
 image:ServiceMap_Simple_Example.png["工作負載對應工作負載範例"]
 
@@ -89,7 +102,7 @@ image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強�
 * 以一般術語執行的服務 / 應用程式名稱
 * 如果來源是 Pod ：
 +
-** 衍生自 Pod 的工作負載標籤
+** 標籤衍生自 Pod 的工作負載標籤
 ** 工作負載上的預期標籤： app.Kubernetes.IO/ 元件
 ** 標籤名稱參照： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** 建議標籤：
@@ -104,15 +117,28 @@ image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強�
 
 
 
-* 如果是 k8s 叢集外部的來源：
+* 如果來源位於 Kubernetes 叢集外部：
 +
-** 嘗試剖析 DNS 解析名稱、並擷取服務類型
+** Cloud Insights 會嘗試剖析 DNS 解析名稱、以擷取服務類型。
 +
-範例： s3.eu-north-1.amazonaws.com
-
-+
-解析名稱以取得 S3
+例如、使用 DNS 解析名稱 _s3.eu-north-1.amazonaws.com 、解析解析名稱以取得 _S__ 作為服務類型。
 
 
 
 
+
+
+
+== 深入探索
+
+在工作負載上按一下滑鼠右鍵、即可提供其他選項、讓您進一步探索。例如、您可以從這裡放大檢視該工作負載的連線。
+
+image:Workload_Map_Zoom_Into_Connections.png["工作負載對應右鍵按一下「縮放」以顯示工作負載的連線"]
+
+或者、您也可以開啟「詳細資料」滑出面板、直接檢視「 _Summary_ 」、「 _Network_ 」或「 _Pod & Storage_ 」標籤。
+
+image:Workload_Map_Detail_Network_Slideout.png["詳細資料投影片網路索引標籤範例"]
+
+最後、選取 _ 移至資產頁面 _ 將會開啟工作負載的詳細資產登陸頁面。
+
+image:Workload_Map_Asset_Page.png["工作負載資產頁面"]
