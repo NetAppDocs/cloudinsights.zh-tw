@@ -70,11 +70,15 @@ image:Workload_Map_Slideout_with_Alert.png["工作負載使用警示來整合詳
 
 
 
-== 篩選
+== 尋找及篩選
 
 如同其他 Cloud Insights 功能、您可以輕鬆設定篩選條件、將焦點放在您想要的特定物件或工作負載屬性上。
 
 image:Workload_Map_Filtering.png["工作負載對應篩選"]
+
+同樣地、在 _Find_ 欄位中鍵入字串、也會醒目提示相符的工作負載。
+
+image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強調工作負載"]
 
 
 

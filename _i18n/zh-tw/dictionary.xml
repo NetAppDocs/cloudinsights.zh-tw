@@ -10724,7 +10724,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">以色彩顯示的圓圈表示工作負載的警示或嚴重層級警示。將游標移到圓圈上方以取得問題摘要、或按一下圓圈以開啟詳細的滑出面板。</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">工作負載使用警示來整合詳細資料</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">篩選</block>
   <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">如同其他 Cloud Insights 功能、您可以輕鬆設定篩選條件、將焦點放在您想要的特定物件或工作負載屬性上。</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">工作負載對應篩選</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
@@ -11177,4 +11176,8 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">登入問題</block>
   <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">安裝 NetApp Kubernetes Monitoring Operator 後、我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向發出 HTTP 要求時發生錯誤<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 取得<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 撥號 TCP ： LOOKUP kube-state - 規格。 &lt;namespace&gt; 。 Svc.cluster 。本機：無這類主機</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
+  <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">尋找及篩選</block>
+  <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同樣地、在 _Find_ 欄位中鍵入字串、也會醒目提示相符的工作負載。</block>
+  <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在「尋找」方塊中鍵入會強調工作負載</block>
+  <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
