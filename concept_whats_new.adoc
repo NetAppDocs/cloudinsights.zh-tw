@@ -62,8 +62,6 @@ image:StorageVirtualization_StorageSummary.png["顯示虛擬與備份儲存資�
 
 === 報告 Kubernetes 資料
 
-Cloud Insights 現在可以對所有 Kubernetes 資料進行報告、包括 PV 、 PVC 、工作負載、叢集和命名空間。
-
 藉由 Cloud Insights 收集的 Kubernetes 資料（包括持續容量（ PV ）、 PVC 、工作負載、叢集和命名空間）現在可用於報告、提供計費、趨勢分析、預測、 TTF 計算、 以及其他有關 Kubernetes 指標的業務報告。
 
 
