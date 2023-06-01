@@ -11198,6 +11198,11 @@
   <block id="2ec69e962ebca3d9f0e5279aa138f19a" category="paragraph">您可以針對下列任何物件類型建立 Cloud Insights 度量警示。請確定資料已依預設物件類型分組。</block>
   <block id="50d6312212b08c0755c2248f03f03828" category="admonition">自 2023 年 4 月 4 日起、此資料收集器將不再提供 Cloud Insights 安裝、並將於 2023 年 7 月從所有 Cloud Insights 安裝中移除。如需移轉至AU型資料收集的相關資訊、請參閱 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="be00894fb094481f332cdeb18d58160f" category="section-title">報告 Kubernetes 資料</block>
-  <block id="2d8296af8d7a0918f208034f2cd5fe1f" category="paragraph">Cloud Insights 現在可以對所有 Kubernetes 資料進行報告、包括 PV 、 PVC 、工作負載、叢集和命名空間。</block>
   <block id="aa0a317cf28a0f0d299d7319c70613b5" category="paragraph">藉由 Cloud Insights 收集的 Kubernetes 資料（包括持續容量（ PV ）、 PVC 、工作負載、叢集和命名空間）現在可用於報告、提供計費、趨勢分析、預測、 TTF 計算、 以及其他有關 Kubernetes 指標的業務報告。</block>
+  <block id="3b1c56e7c6b15724089ac1fbd8291af2" category="section-title">接收代理程式和資料收集器升級通知</block>
+  <block id="1f56a492ab24b15ab7bdf4b716067acd" category="list-text">在「資料收集健全狀況警示」中輸入電子郵件 ID 。</block>
+  <block id="2ea94aba509e4f34b59231b813dd33f2" category="list-text">「啟用升級通知」核取方塊即會啟用。</block>
+  <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">代理程式和資料收集器升級電子郵件通知會在計畫升級前一天傳送至電子郵件 ID 。</block>
+  <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">電子郵件 ID 出現在「資料收集器健全狀況警示」中、但我沒有收到通知。</block>
+  <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知電子郵件是從 NetApp Cloud Insights 網域傳送、例如從 _accounts@service.cloudinsights.netapp.com_ 傳送。有些公司會封鎖來自外部網域的傳入電子郵件。確認 NetApp Cloud Insights 網域的外部通知已列入白名單。</block>
 </blocks>
