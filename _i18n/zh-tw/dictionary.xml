@@ -4967,9 +4967,7 @@
   <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">您可以針對潛在攻擊（例如勒索軟體）和/或活動警告、設定自動回應原則</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自動化回應原則</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">回應原則會觸發動作、例如在發生攻擊或異常使用者行為時、拍攝快照或限制使用者存取。</block>
-  <block id="4a2c418e248f1a17cef7314e84e4d21f" category="paragraph">您可以在特定裝置或所有裝置上設定原則。若要設定回應原則、請選取*管理&gt;自動回應原則*、然後按一下適當的*+原則+按鈕。您可以建立攻擊或警告的原則。</block>
   <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">建立攻擊原則</block>
-  <block id="96dd8b86864f9c90bf0289c5f7b02b4d" category="paragraph"><block ref="96dd8b86864f9c90bf0289c5f7b02b4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">您必須以唯一名稱儲存原則。</block>
   <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">若要停用自動回應動作（例如「拍攝Snapshot」）、只要取消檢查動作並儲存原則即可。</block>
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">警示詳細資料頁面</block>
@@ -11205,4 +11203,6 @@
   <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">代理程式和資料收集器升級電子郵件通知會在計畫升級前一天傳送至電子郵件 ID 。</block>
   <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">電子郵件 ID 出現在「資料收集器健全狀況警示」中、但我沒有收到通知。</block>
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知電子郵件是從 NetApp Cloud Insights 網域傳送、例如從 _accounts@service.cloudinsights.netapp.com_ 傳送。有些公司會封鎖來自外部網域的傳入電子郵件。確認 NetApp Cloud Insights 網域的外部通知已列入白名單。</block>
+  <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以在特定裝置或所有裝置上設定原則。若要設定回應原則、請選取 * 管理 &gt; 自動回應原則 * 、然後按一下適當的 *+Policy* 按鈕。您可以建立攻擊或警告的原則。</block>
+  <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
