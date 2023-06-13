@@ -39,7 +39,7 @@ NetApp Kubernetes 監控營運商的安裝與組態可自訂。
 | Telegraf |  | 可自訂電信業者安裝的組態選項 
 
 
-|  | CollectionInterval | 度量收集時間間隔（以秒為單位） 
+|  | CollectionInterval | 度量收集時間間隔（以秒為單位）（最大 = 60 秒） 
 
 
 |  | dsCpuLimit | Telegraf DS 的 CPU 限制 

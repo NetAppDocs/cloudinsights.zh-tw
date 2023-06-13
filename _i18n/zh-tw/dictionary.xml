@@ -10854,7 +10854,6 @@
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">Telegraf</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">可自訂電信業者安裝的組態選項</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">CollectionInterval</block>
-  <block id="ddc880d728f800827e372a1d2f48313a" category="cell">度量收集時間間隔（以秒為單位）</block>
   <block id="2129471bf14899d19206e2b1aa6c00ca" category="cell">dsCpuLimit</block>
   <block id="718918f6bff9fdd2a6292afbe4549d0b" category="cell">Telegraf DS 的 CPU 限制</block>
   <block id="5eeea2f6351dff2df3a80bcff5cdd5be" category="cell">dsMemLimit</block>
@@ -11211,4 +11210,5 @@
 使用以字首為基礎的搜尋、以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如： /path1/path2/path3_ 或 _ "/path1/path2/path3"_ 將在 "_/path1/path2/path3_ 下以遞歸方式列出所有活動。
 或者、也可以使用「所有活動」索引標籤下的「新增至篩選」選項。</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">* 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可在任一Cloud Insights 個畫面右上角的*說明&gt;即時聊天室*功能表選項中找到聊天室。</block>
+  <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">度量收集時間間隔（以秒為單位）（最大 = 60 秒）</block>
 </blocks>
