@@ -5,95 +5,33 @@ summary: 在免費試用期間、您可以隨時訂閱Cloud Insights 。
 keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
 ---
 = 訂閱Cloud Insights 此功能
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: OnCommand, Insight, documentation, help, onboarding, getting started
+:toc-position: content
 
 
 使用效益只需三個簡單步驟、即可輕鬆開始使用Cloud Insights ：
 
-* 請在上註冊帳戶 link:https://cloud.netapp.com/["* NetApp Cloud Centr*"] 以存取所有NetApp雲端產品。
+* 請在上註冊帳戶 link:https://https://bluexp.netapp.com//["* NetApp BlueXP*"] 以存取所有NetApp雲端產品。
 * 註冊以取得 link:https://cloud.netapp.com/cloud-insights["*免費試用*"] 以探索可用的功能。Cloud Insights
-* *訂閱Cloud Insights *不中斷地透過存取您的資料 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"] Direct或AWS Marketplace（link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["標準版"] 或 link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Premium Edition"]）。
+* *訂閱Cloud Insights *不中斷地透過存取您的資料 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"] 直接或 link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]。
 
 
 在登錄過程中、您可以選擇全球區域來裝載Cloud Insights 您的支援環境。如需詳細資訊、請參閱Cloud Insights 關於資訊 link:security_information_and_region.html["資訊與地區"]。
 
 
-NOTE: 除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版（基本版、標準版、優級版）。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。
+NOTE: 除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。
 
-
-
-== 版本
-
-您可在Cloud Insights 支援的功能與功能取決於您訂閱的版本。此處說明可用的版本。
-
-* *基礎版*是免費的、目前擁有有效NetApp支援帳戶的NetApp客戶可以使用。
-+
-
-WARNING: 不活動Cloud Insights 的不活動版環境會被刪除、資源也會回收。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。在刪除環境之前、將會傳送通知並提供四天的寬限期。Cloud Insights
-
-+
-
-NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡易版》中收集的物件或指標、恕不另行通知。
-
-* * Standard Edition *可透過訂閱取得、並提供Basic Edition的所有功能及更多功能。
-* * 聯邦版 * 提供符合 FedRAMP 標準的美國 Cloud Insights 版政府部門。上述商業版中提供的某些功能可能無法在聯邦版中使用、或可能會因功能受限而無法使用。在可能的情況下、 Cloud Insights 文件會記錄這些差異。
-
-
-
-
-=== 主要特色
-
-以下是Basic、Standard和Premium Edition的主要功能：
-
-[cols=".<,.^,.^,.^"]
-|===
-
-
-| 主要功能 | 基本版 | 標準版 | Premium Edition 
-
-
-| 資料保留 | 7天 | 90天 | 13個月 
-
-
-| 基礎架構與儲存指標 | 僅限NetApp | 多廠商 | 多廠商 
-
-
-| 可自訂的儀表板 | 檢查； | 檢查； | 檢查； 
-
-
-| 論壇、文件及訓練影片 | 檢查； | 檢查； | 檢查； 
-
-
-| 即時交談 ^&plus ； &plus ； ^ 與技術支援 | - | 檢查； | 檢查； 
-
-
-| VM指標 | - | 檢查； | 檢查； 
-
-
-| 雲端指標 | - | 檢查； | 檢查； 
-
-
-| 服務指標 | - | 檢查； | 檢查； 
-
-
-| 監控和警示 | &ast； | 檢查； | 檢查； 
-
-
-| API 存取 ^&plus ； ^ | 檢查； | 檢查； | 檢查； 
-
-
-| 單一登入（SSO） | - | - | 檢查； 
-
-
-| 工作負載安全性使用者資料存取稽核 | - | - | 檢查； 
-
-
-| 利用AI / ML偵測工作負載安全性內部威脅 | - | - | 檢查； 
-
-
-| 商業情報與報告與快速；&ast； | - | - | 檢查； 
-|===
-加號 (&D); 一次只能使用 5 個主動式自訂監視器； API 存取會因版本 & 速度而異；加號；加號； Cloud Insights 聯邦版不提供 ^ 功能
+如需 Cloud Insights Basic 與 Premium 版本所提供功能的完整比較、請參閱 link:https://bluexp.netapp.com/cloud-insights-pricing["Cloud Insights 定價"] 頁面。
 
 使用Cloud Insights 時、如果看到掛鎖圖示 image:padlock.png["掛鎖"]、表示您目前的版本無法使用此功能、或是以有限形式提供。升級以完整存取此功能。
 
@@ -105,7 +43,7 @@ NOTE: 如需變更Cloud Insights 功能、資料保留時間、以及在《簡�
 
 您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*產品支援*"] 選項：
 
-當您的免費試用即將結束時、系統會顯示橫幅Cloud Insights在該橫幅內有一個_View訂購_連結、可開啟*管理>訂閱*頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。
+當您的免費試用即將結束時、系統會顯示橫幅Cloud Insights該橫幅中有一個 _View Subscription_ 連結、可開啟 * 管理 -> Subscription* 頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。
 
 
 NOTE: 如果您需要更多時間來評估Cloud Insights VMware、而且您的試用期設定為4天或更短、您可以將試用期延長30天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。
@@ -114,11 +52,11 @@ NOTE: 如果您需要更多時間來評估Cloud Insights VMware、而且您的�
 
 == 透過AWS Marketplace試用
 
-您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace免費試用版可讓您存取Cloud Insights VMware <<editions,Premium Edition>> 試用期為33天、最多可達499天 <<pricing,託管單位>> （MU）。
+您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 天 <<pricing,託管單位>> （MU）。
 
 附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。
 
-AWS Marketplace免費試用版無法延長。在試用期間、Cloud Insights 您可以Cloud Insights 隨時前往*管理->訂閱*頁面、降級至VMware Basic Edition訂閱、或變更為付費版或Premium Edition訂閱。
+AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Cloud Insights Basic Edition 訂閱、或造訪 * 管理 -> 訂閱 * 頁面、變更為付費 Cloud Insights 訂閱。
 
 
 
@@ -130,9 +68,7 @@ AWS Marketplace免費試用版無法延長。在試用期間、Cloud Insights �
 
 == 訂購選項
 
-若要訂閱、請前往*管理>訂閱*。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於一般環境、您可以按一下自助服務AWS Marketplace *立即訂閱*按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。
-
-image:SubscriptionCompareTable-2.png["訂購選項"]
+若要訂閱、請前往 * 管理 -> 訂閱 * 。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。
 
 
 
@@ -147,6 +83,8 @@ image:SubscriptionCompareTable-2.png["訂購選項"]
 請注意、下列資料收集器的計量單位是以不同的原始TiB與受管理單元速率。這些資料收集器上未格式化容量的每40TiB會被計入1個管理單元（MU）：
 
 * AWS S3
+* Co猶豫不決 的SmartFiles
+* Dell EMC Data Domain
 * Dell EMC ECS
 * Hitachi內容平台
 * IBM Cleverafe
@@ -159,12 +97,12 @@ image:SubscriptionCompareTable-2.png["訂購選項"]
 
 === 預估您的訂閱成本
 
-訂閱計算機根據Cloud Insights 資料收集器所報告的主機數量和未格式化容量、提供每月的預估標價等成本。目前的值會預先填入「_hosts_」和「_Unscheduled Capacity」欄位。您可以輸入不同的值來協助規劃預估的未來成長。
+訂閱計算器會根據您估計需要的託管單元數量、提供您每月 Cloud Insights 的預估成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。
 
 您的預估標價成本將根據訂閱期限而有所變動。
+附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。
 
-
-NOTE: 此計算機僅供預估。您的確切價格將在訂閱時設定。
+image:Subscription_Cost_Calculators.png["訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機"]
 
 
 
@@ -187,11 +125,11 @@ NOTE: 此計算機僅供預估。您的確切價格將在訂閱時設定。
 
 NOTE: 您必須是帳戶擁有者或管理員、才能將AWS Marketplace訂閱套用至現有Cloud Insights 的VMware試用帳戶。此外、您必須擁有Amazon Web Services（AWS）帳戶。
 
-按一下*立即訂閱*按鈕即可開啟AWS link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。
+按一下 Amazon Marketplace 連結即可開啟 AWS link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。
 
 在您輸入管理單元總數並選擇12個月或36個月的訂閱期限之後、請按一下*設定您的帳戶*以完成訂閱程序。
 
-AWS訂購程序完成後、您將會被帶回Cloud Insights 您的作業系統環境。或者、如果環境不再處於作用中狀態（例如您已登出）、您將會進入Cloud Central登入頁面。當您再次登入Cloud Insights 時、您的訂閱將會啟用。
+AWS訂購程序完成後、您將會被帶回Cloud Insights 您的作業系統環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入Cloud Insights 時、您的訂閱將會啟用。
 
 
 NOTE: 在AWS Marketplace頁面上按一下*設定您的帳戶*之後、您必須在一小時內完成AWS訂購程序。如果您未在一小時內完成、則必須再次按*設定帳戶*以完成程序。
@@ -204,20 +142,19 @@ NOTE: 在AWS Marketplace頁面上按一下*設定您的帳戶*之後、您必須
 
 一旦您的訂閱啟用、您就可以從*管理>訂閱*頁面檢視您的訂閱狀態和受管理單元使用量。
 
-image:Subscription_Status_Usage.png["檢視您的訂閱資訊"]
+訂閱摘要索引標籤會顯示下列項目：
 
-「訂閱詳細資料」索引標籤會顯示下列項目：
-
-* 目前訂閱或使用中版本
-* 訂閱詳細資料
-* 修改訂閱或預估成本變更的連結
+* 目前版本
+* 訂閱序號
+* 目前的 MU 使用量和「假設情況如何？」 成本估算工具
+* 修改訂閱的連結
 
 
 
 
 == 檢視您的使用管理
 
-「使用管理」索引標籤會顯示受管理單元使用量的總覽、以及安裝在您環境中的資料收集器清單、以及每個受管理單元的明細。
+使用管理索引標籤會顯示受管理單元使用率的概觀、以及依收集器或 Kubernetes 叢集區分受管理單元使用量的索引標籤。
 
 
 NOTE: 「未格式化的容量管理單元」數會反映環境中總原始容量的總和、並四捨五入至最近的管理單元。
@@ -225,7 +162,7 @@ NOTE: 「未格式化的容量管理單元」數會反映環境中總原始容�
 
 NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。
 
-如果使用量即將達到或超過訂閱量、您可以按一下「三點」功能表、然後選取「刪除」來刪除此清單中的資料收集器。
+如果您的使用量接近或超過您訂閱的數量、您可以刪除資料收集器或停止監控 Kubernetes 叢集、以減少使用量。按一下「三點」功能表並選取「刪除」、即可刪除此清單中的項目。
 
 
 
@@ -245,7 +182,9 @@ NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略�
 | * 90%* | 隨即顯示警告橫幅。您可能想要增加訂閱的託管單元數。 
 
 
-| * 100%* | 系統會顯示錯誤橫幅、您的功能有限、直到您執行下列其中一項動作為止：*修改訂閱以增加訂閱的受管理單元數*移除資料收集器、使您的受管理單元使用量達到或低於訂閱量 
+| * 100%* | 系統會顯示錯誤橫幅、您的功能有限、直到您執行下列其中一項操作為止：
+* 移除資料收集器、讓您的受管理單元使用量等於或低於您的訂閱量
+* 修改您的訂閱以增加訂閱的託管單元數 
 |===
 
 

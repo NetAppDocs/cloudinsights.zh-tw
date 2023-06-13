@@ -2653,7 +2653,6 @@
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">註冊Cloud Insights 以利執行功能、並創造您的環境。</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">NetApp新進人員Cloud Insights</block>
   <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">建立您的NetApp Cloud Central帳戶</block>
-  <block id="f8345b18954fdb87b8ec25957d81a0fa" category="inline-link">* NetApp Cloud Centr*</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">輸入有效的商業電子郵件地址、然後選擇密碼。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">輸入您的公司名稱和全名。</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">選取Cloud Insights 「</block>
@@ -7680,47 +7679,19 @@
   <block id="da6ac19a818a6de76b382ff406bf15b4" category="summary">在免費試用期間、您可以隨時訂閱Cloud Insights 。</block>
   <block id="5a2dd268fff03fda59184d39fcea3904" category="doc">訂閱Cloud Insights 此功能</block>
   <block id="48749104f97dbc83956df65c789fed9f" category="paragraph">使用效益只需三個簡單步驟、即可輕鬆開始使用Cloud Insights ：</block>
-  <block id="bc08fa610320914a0054ff93bcd79397" category="list-text">請在上註冊帳戶 <block ref="2cff9f38148e7f8c74bd89c0309a200d" category="inline-link-macro-rx"></block> 以存取所有NetApp雲端產品。</block>
   <block id="3f6b1218c41eefc30536db7e39f979df" category="inline-link-macro">*免費試用*</block>
   <block id="e4f3a6f7a1f50be5b653bf57b0b61372" category="list-text">註冊以取得 <block ref="82b0fa617f1dfb2e34805f2626cf97a5" category="inline-link-macro-rx"></block> 以探索可用的功能。Cloud Insights</block>
   <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">NetApp銷售</block>
-  <block id="4c7e636779d99dc62c5aac24a3c8eb71" category="inline-link-macro">標準版</block>
-  <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">*訂閱Cloud Insights *不中斷地透過存取您的資料 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direct或AWS Marketplace（<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">在登錄過程中、您可以選擇全球區域來裝載Cloud Insights 您的支援環境。如需詳細資訊、請參閱Cloud Insights 關於資訊 <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>。</block>
-  <block id="40a5834e83975621427553254177c0ab" category="section-title">版本</block>
-  <block id="e5357ca832e310fe2d063fed63521e4d" category="paragraph">您可在Cloud Insights 支援的功能與功能取決於您訂閱的版本。此處說明可用的版本。</block>
-  <block id="1dd24ddc8bdc4a8ad7940369b2db779f" category="list-text">*基礎版*是免費的、目前擁有有效NetApp支援帳戶的NetApp客戶可以使用。</block>
-  <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">不活動Cloud Insights 的不活動版環境會被刪除、資源也會回收。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。在刪除環境之前、將會傳送通知並提供四天的寬限期。Cloud Insights</block>
-  <block id="ffec407b7dac5bde197f9fa34cee89d5" category="admonition">如需變更Cloud Insights 功能、資料保留時間、以及在《簡易版》中收集的物件或指標、恕不另行通知。</block>
-  <block id="b0bb53aca4f0808da1b4e8c638bf67a0" category="list-text">* Standard Edition *可透過訂閱取得、並提供Basic Edition的所有功能及更多功能。</block>
-  <block id="219927b224df858b634f5817e92a43c9" category="section-title">主要特色</block>
-  <block id="156cab06046ee0bb08bbcf2279656592" category="paragraph">以下是Basic、Standard和Premium Edition的主要功能：</block>
-  <block id="0ad6a6d28761ee1aea9142218e951165" category="cell">主要功能</block>
-  <block id="4f407ad617aec7f56138e7f5dcb581be" category="cell">基本版</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">資料保留</block>
-  <block id="e7bf25f23f000e012533efc35c4d2416" category="cell">基礎架構與儲存指標</block>
-  <block id="0dbffb0c659b5d4a9b9db7c99921c0ff" category="cell">僅限NetApp</block>
-  <block id="6723887a7f5a25b38fc43b06de935334" category="cell">多廠商</block>
-  <block id="3474cd92e50405481b9e7fa627d1ec50" category="cell">可自訂的儀表板</block>
-  <block id="218645bc52c81c8985636d68a575596c" category="cell">檢查；</block>
-  <block id="c3778b94ab899c76a40a1a02fe9a4d49" category="cell">論壇、文件及訓練影片</block>
-  <block id="336d5ebc5436534e61d16e63ddfca327" category="cell">-</block>
-  <block id="eaedcc38fe9f5ceda03da3c909bffa54" category="cell">VM指標</block>
-  <block id="48ddfbf9b74c53d0faaa56e85e7f4945" category="cell">雲端指標</block>
-  <block id="c804187aad1ac0e05bfe9734492a853f" category="cell">服務指標</block>
-  <block id="3e61ac3c29f7cbd9ed1cd4606d9a50e6" category="cell">監控和警示</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">使用Cloud Insights 時、如果看到掛鎖圖示 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>、表示您目前的版本無法使用此功能、或是以有限形式提供。升級以完整存取此功能。</block>
-  <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">試用版</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">*產品支援*</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> 選項：</block>
-  <block id="21d39705a699dccfee88543d413556c8" category="paragraph">當您的免費試用即將結束時、系統會顯示橫幅Cloud Insights在該橫幅內有一個_View訂購_連結、可開啟*管理&gt;訂閱*頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">如果您需要更多時間來評估Cloud Insights VMware、而且您的試用期設定為4天或更短、您可以將試用期延長30天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的試用期已到期、該怎麼辦？</block>
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">如果您的免費試用期已過期、但尚未訂閱Cloud Insights 、則在您訂閱之前、您的功能將受限。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">訂購選項</block>
-  <block id="91817940c8ccf98f5864299e8c3db4d7" category="paragraph">若要訂閱、請前往*管理&gt;訂閱*。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於一般環境、您可以按一下自助服務AWS Marketplace *立即訂閱*按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。</block>
-  <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定價</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">根據*管理單元*定價。Cloud Insights管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量</block>
@@ -7732,9 +7703,6 @@
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">以下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 以取得更多詳細資料。</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">預估您的訂閱成本</block>
-  <block id="b3a13f2ac714cd20783d18ca8d2f35c7" category="paragraph">訂閱計算機根據Cloud Insights 資料收集器所報告的主機數量和未格式化容量、提供每月的預估標價等成本。目前的值會預先填入「_hosts_」和「_Unscheduled Capacity」欄位。您可以輸入不同的值來協助規劃預估的未來成長。</block>
-  <block id="83697bcbf001c6401bd12a7e4d024920" category="paragraph">您的預估標價成本將根據訂閱期限而有所變動。</block>
-  <block id="5c42608f26905e7504f522bdb6724935" category="admonition">此計算機僅供預估。您的確切價格將在訂閱時設定。</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">如何訂閱？</block>
   <block id="29778014c6460acd3ebe88e1e1f1652b" category="paragraph">如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 <block ref="c7602cfa7469b32fb39d8de19e42676e" category="inline-xref-macro-rx"></block> 透過AWS Marketplace。</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">透過NetApp銷售直接訂閱</block>
@@ -7742,24 +7710,14 @@
   <block id="1cf7fd422699345d54e2c23df79ac3a2" category="paragraph">您必須提供Cloud Insights 您的資料*序號*給NetApp銷售代表、以便將付費訂閱套用Cloud Insights 至您的不實環境。序號可在Cloud Insights *管理&gt;訂閱*頁面上找到您獨特的嘗試環境。</block>
   <block id="ba16017252787d62326108ae062b54b0" category="section-title">透過AWS Marketplace自行訂閱</block>
   <block id="24dced9ec471b11c43d64232ba07d95a" category="admonition">您必須是帳戶擁有者或管理員、才能將AWS Marketplace訂閱套用至現有Cloud Insights 的VMware試用帳戶。此外、您必須擁有Amazon Web Services（AWS）帳戶。</block>
-  <block id="cd8989ed97c93cf5c202f61c8f811c55" category="paragraph">按一下*立即訂閱*按鈕即可開啟AWS <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
   <block id="b0d79f167bb60f1ee8201b52678b1e91" category="paragraph">在您輸入管理單元總數並選擇12個月或36個月的訂閱期限之後、請按一下*設定您的帳戶*以完成訂閱程序。</block>
-  <block id="7ad3a84f1fcb16f2e949410059075192" category="paragraph">AWS訂購程序完成後、您將會被帶回Cloud Insights 您的作業系統環境。或者、如果環境不再處於作用中狀態（例如您已登出）、您將會進入Cloud Central登入頁面。當您再次登入Cloud Insights 時、您的訂閱將會啟用。</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">在AWS Marketplace頁面上按一下*設定您的帳戶*之後、您必須在一小時內完成AWS訂購程序。如果您未在一小時內完成、則必須再次按*設定帳戶*以完成程序。</block>
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">如果發生問題且訂閱程序無法正確完成、您仍會在登入環境時看到「試用版」橫幅。在此情況下、您可以前往*管理&gt;訂閱*、然後重複訂閱程序。</block>
   <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">檢視您的訂閱狀態</block>
   <block id="4d71df4f1ca4df08ff676034d4f602c1" category="paragraph">一旦您的訂閱啟用、您就可以從*管理&gt;訂閱*頁面檢視您的訂閱狀態和受管理單元使用量。</block>
-  <block id="cf9f7d335ccf63f9afafb03e9bccbb83" category="inline-image-macro">檢視您的訂閱資訊</block>
-  <block id="5b5d45532915c043e48d673f375857ab" category="paragraph"><block ref="5b5d45532915c043e48d673f375857ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a6d1c39ffb1db427cb7afbe60b68ee43" category="paragraph">「訂閱詳細資料」索引標籤會顯示下列項目：</block>
-  <block id="6d9a2e2290d3df63014b18bdb7da2212" category="list-text">目前訂閱或使用中版本</block>
-  <block id="a62d98f1bf3d70795bcdab761b572ade" category="list-text">訂閱詳細資料</block>
-  <block id="2f40f378178c238fe365dfbf4f50ca13" category="list-text">修改訂閱或預估成本變更的連結</block>
   <block id="3252142ff4dd2ca67a9bff6f0a7fd71b" category="section-title">檢視您的使用管理</block>
-  <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">「使用管理」索引標籤會顯示受管理單元使用量的總覽、以及安裝在您環境中的資料收集器清單、以及每個受管理單元的明細。</block>
   <block id="2d5c36fcd4687378b85e14d41941a80f" category="admonition">「未格式化的容量管理單元」數會反映環境中總原始容量的總和、並四捨五入至最近的管理單元。</block>
   <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。</block>
-  <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">如果使用量即將達到或超過訂閱量、您可以按一下「三點」功能表、然後選取「刪除」來刪除此清單中的資料收集器。</block>
   <block id="cbeff837b5b145559373d2d49dde5efb" category="section-title">如果我超過訂閱使用量、會發生什麼情況？</block>
   <block id="8014c42068ef58c63a245dfd8cb969f3" category="paragraph">當您的託管設備使用量超過80%、90%及100%的訂購總金額時、系統會顯示警告：</block>
   <block id="5d5e1ac7bb660dd92446dd963f0ab9ec" category="cell">*使用量超過：*</block>
@@ -7769,7 +7727,6 @@
   <block id="c80438ed487f426482cacad6a4e99a1d" category="cell">* 90%*</block>
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">隨即顯示警告橫幅。您可能想要增加訂閱的託管單元數。</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100%*</block>
-  <block id="13b6624916681c7d00ae8634971f8cd8" category="cell">系統會顯示錯誤橫幅、您的功能有限、直到您執行下列其中一項動作為止：*修改訂閱以增加訂閱的受管理單元數*移除資料收集器、使您的受管理單元使用量達到或低於訂閱量</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接訂閱並跳過試用版</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
   <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">您也Cloud Insights 可以直接從訂閱 <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。</block>
@@ -8265,8 +8222,6 @@
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">如同資料到達速度緩慢（或沒有資料到達）的情況、由於資料到達率不足以「即時」觸發警示、因此需要接管定時器機制。 因此問題通常會變成「我需要等多久才能關閉分析視窗、看看我的現況？」 如果等待時間過長、就表示您產生警示的速度不夠快、無法使用。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的監視器有30分鐘的時間範圍、通知在長期資料遺失之前、某個條件已被最後一個資料點違反、 由於監控器未收到任何其他資訊、無法用來確認是否恢復了度量、或注意到該條件持續存在、因此將產生警示。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
-  <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast；</block>
-  <block id="d54591f265027d735d3be71d57199e4a" category="cell">商業情報與報告與快速；&amp;ast；</block>
   <block id="d429655e140835b91db45b4324358975" category="list-text">使用ONTAP 叢集_admin_認證登入到32個叢集（您想要解除封鎖使用者的位置）。（若為Amazon FSX、請使用FSX認證登入）。</block>
   <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述輸出中、有2位使用者被網域CSLAB封鎖（US030、US040）。</block>
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：</block>
@@ -8408,7 +8363,6 @@
   <block id="37d67556425a480bd771d25cccb64deb" category="list-text">Amazon FSX ONTAP</block>
   <block id="0dec2b903302bbd14d95abf2e3a6eb78" category="paragraph">代理機器必須在雲端服務供應商各自的子網路中進行設定。如需網路存取的詳細資訊、請參閱[Agent Requirements（代理程式需求）]。</block>
   <block id="608efa70bff9cd8ba64ac8f581eee545" category="paragraph">以下是AWS中的代理程式安裝步驟。您可在Azure或Google Cloud中遵循適用於雲端服務供應商的同等步驟進行安裝。</block>
-  <block id="e92d16963e5b72f89982fb54b922794a" category="list-text">*交談*：您將與NetApp支援人員聯絡以尋求協助（僅限平日）。您可在任一Cloud Insights 個畫面右上角的*說明&gt;即時聊天室*功能表選項中找到聊天室。</block>
   <block id="abc39e61f48aa5adbf3a9de149e1a87a" category="list-text">基礎架構/庫存：為使用者資料提供儲存/網路服務的物件</block>
   <block id="f66a68b2ce406b961d0175d123132ef1" category="list-text">工作負載：為使用者提供讀寫資料介面的物件。</block>
   <block id="85d3998a83e328d8facfa5fc0ffc5c7a" category="list-text">資料保護：可以使用NetApp資料保護技術來保護的物件</block>
@@ -8526,9 +8480,7 @@
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink .ap-key_值、以新的API權杖取代舊的API權杖。</block>
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">透過AWS Marketplace試用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
-  <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace免費試用版可讓您存取Cloud Insights VMware <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> 試用期為33天、最多可達499天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。</block>
-  <block id="9610f5475b4256230dbfd8bf12bacab1" category="paragraph">AWS Marketplace免費試用版無法延長。在試用期間、Cloud Insights 您可以Cloud Insights 隨時前往*管理-&gt;訂閱*頁面、降級至VMware Basic Edition訂閱、或變更為付費版或Premium Edition訂閱。</block>
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">設定NetApp Kubernetes監控操作員</block>
   <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">Fluent位元</block>
   <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">包含在內的許多元件Cloud Insights <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> 和 <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>（用於收集Kubernetes資料）。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
@@ -10383,8 +10335,6 @@
   <block id="0506b86e6f0cdfab05c9570568f031d8" category="paragraph">您必須先完成一些組態工作、才能開始使用工作負載安全功能來監控使用者活動。</block>
   <block id="f827ca5aa861a4bddcbc872872858f88" category="paragraph">工作負載安全系統使用代理程式從儲存系統收集存取資料、並從目錄服務伺服器收集使用者資訊。</block>
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">工作負載安全功能也能與其他工具整合。例如、 <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 與Splunk整合。</block>
-  <block id="ff6174f06964486c8970783d9abd7b54" category="cell">工作負載安全性使用者資料存取稽核</block>
-  <block id="1b3681a6af892931e035b5a955f26be0" category="cell">利用AI / ML偵測工作負載安全性內部威脅</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">設定工作負載安全性LDAP使用者目錄收集器</block>
   <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">您可以設定工作負載安全性、從LDAP目錄伺服器收集使用者屬性。</block>
   <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">在Workload Security功能表中、按一下：*管理&gt;資料收集器&gt;使用者目錄收集器&gt;+使用者目錄收集器*、然後選取* LDAP目錄伺服器*</block>
@@ -10687,11 +10637,6 @@
   <block id="0407a7c5b366f01d5671805c1f907afe" category="inline-image-macro">Cognos 左上角選單</block>
   <block id="837aabd72a7904f0806179e23fe0d6e5" category="paragraph"><block ref="837aabd72a7904f0806179e23fe0d6e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e816756750f33badae1d375877be4d7" category="list-text">在 *_Team Content_* 中建立新資料夾</block>
-  <block id="72d743dc018b9aea07e4baa34bd41f04" category="admonition">除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版（基本版、標準版、優級版）。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。</block>
-  <block id="1127a17ff9264a478b5b2afbb0ec9fc5" category="list-text">* 聯邦版 * 提供符合 FedRAMP 標準的美國 Cloud Insights 版政府部門。上述商業版中提供的某些功能可能無法在聯邦版中使用、或可能會因功能受限而無法使用。在可能的情況下、 Cloud Insights 文件會記錄這些差異。</block>
-  <block id="bcb2daf8da854022329b57412821d9eb" category="cell">即時交談 ^&amp;plus ； &amp;plus ； ^ 與技術支援</block>
-  <block id="7a535c5cff09892a0f3fc0a2ecbe2932" category="cell">API 存取 ^&amp;plus ； ^</block>
-  <block id="cddad7083722bc6fb1722d2d5da45782" category="paragraph">加號 (&amp;D); 一次只能使用 5 個主動式自訂監視器； API 存取會因版本 &amp; 速度而異；加號；加號； Cloud Insights 聯邦版不提供 ^ 功能</block>
   <block id="5452e6774adb97c1d8607e2b1af1851a" category="paragraph">您可以按一下*「Help」（說明）&gt;「Support*」（Cloud Insights 支援*）來存取支援選項。您可用的支援選項取決於您的 Cloud Insights 版本。</block>
   <block id="3c99b9f872acb5e317804aaff9d10cfb" category="admonition">Cloud Insights 聯邦版不提供線上客服支援選項。</block>
   <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題</block>
@@ -11205,4 +11150,65 @@
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知電子郵件是從 NetApp Cloud Insights 網域傳送、例如從 _accounts@service.cloudinsights.netapp.com_ 傳送。有些公司會封鎖來自外部網域的傳入電子郵件。確認 NetApp Cloud Insights 網域的外部通知已列入白名單。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以在特定裝置或所有裝置上設定原則。若要設定回應原則、請選取 * 管理 &gt; 自動回應原則 * 、然後按一下適當的 *+Policy* 按鈕。您可以建立攻擊或警告的原則。</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f54630a238a2ce40ac5742f2df04227" category="list-text">請在上註冊帳戶 <block ref="b7d0b9f9f12fc76a51e1b13d72622a5b" category="inline-link-macro-rx"></block> 以存取所有NetApp雲端產品。</block>
+  <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">*訂閱Cloud Insights *不中斷地透過存取您的資料 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接或 <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。</block>
+  <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insights 定價</block>
+  <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">如需 Cloud Insights Basic 與 Premium 版本所提供功能的完整比較、請參閱 <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">試用版</block>
+  <block id="011273891e0a49f42abc1a209e58868a" category="paragraph">當您的免費試用即將結束時、系統會顯示橫幅Cloud Insights該橫幅中有一個 _View Subscription_ 連結、可開啟 * 管理 -&gt; Subscription* 頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。</block>
+  <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
+  <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Cloud Insights Basic Edition 訂閱、或造訪 * 管理 -&gt; 訂閱 * 頁面、變更為付費 Cloud Insights 訂閱。</block>
+  <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">若要訂閱、請前往 * 管理 -&gt; 訂閱 * 。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。</block>
+  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Co猶豫不決 的SmartFiles</block>
+  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC Data Domain</block>
+  <block id="125896ecc7af5f5e57ffa0aa99abe89e" category="paragraph">訂閱計算器會根據您估計需要的託管單元數量、提供您每月 Cloud Insights 的預估成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。</block>
+  <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">您的預估標價成本將根據訂閱期限而有所變動。
+附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。</block>
+  <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機</block>
+  <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e45641d408ce7d31aa423768c5c36d43" category="paragraph">按一下 Amazon Marketplace 連結即可開啟 AWS <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
+  <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">AWS訂購程序完成後、您將會被帶回Cloud Insights 您的作業系統環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入Cloud Insights 時、您的訂閱將會啟用。</block>
+  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">訂閱摘要索引標籤會顯示下列項目：</block>
+  <block id="2638d109f7501322af782022ec53f096" category="list-text">目前版本</block>
+  <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">訂閱序號</block>
+  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">目前的 MU 使用量和「假設情況如何？」 成本估算工具</block>
+  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">修改訂閱的連結</block>
+  <block id="d3d856c02816952b24a5110171a09834" category="paragraph">使用管理索引標籤會顯示受管理單元使用率的概觀、以及依收集器或 Kubernetes 叢集區分受管理單元使用量的索引標籤。</block>
+  <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">如果您的使用量接近或超過您訂閱的數量、您可以刪除資料收集器或停止監控 Kubernetes 叢集、以減少使用量。按一下「三點」功能表並選取「刪除」、即可刪除此清單中的項目。</block>
+  <block id="718a66b23c9ea5a577883d447f892296" category="cell">系統會顯示錯誤橫幅、您的功能有限、直到您執行下列其中一項操作為止：
+* 移除資料收集器、讓您的受管理單元使用量等於或低於您的訂閱量
+* 修改您的訂閱以增加訂閱的託管單元數</block>
+  <block id="411d690288852abddc39378b2989bfda" category="section-title">2023 年 6 月</block>
+  <block id="291a655a304c4b76742b53402a12bbc9" category="section-title">查看您的使用情況</block>
+  <block id="0086a587e865c983a5de9f9b4d992e51" category="paragraph">自 2023 年 6 月起、 Cloud Insights 根據功能集提供受管理單元使用量的明細。現在您可以快速檢視及監控基礎架構的管理單元（ MU ）使用量、以及 Kubernetes 的 MU 使用量。</block>
+  <block id="32c091d4e02c7b82d97bee3fc5f2fd0c" category="inline-image-macro">計量使用率故障</block>
+  <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">Kubernetes 網路監控與地圖可供所有人使用</block>
+  <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 藉由對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序、提供 Kubernetes 網路效能延遲和異常狀況的即時可見度、以便在效能問題影響使用者之前先識別這些問題。許多客戶發現這項功能在 Preview 期間非常實用、現在每個人都能盡情享受。</block>
+  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Cloud Insights 的報告元件已重新命名為「 Cloud Insights 分析」。不過別擔心、功能還是一樣。</block>
+  <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">收集器 / 擷取變更：</block>
+  <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">下列資料收集器 / 擷取單元變更已就緒：</block>
+  <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">資料網域與 Coassity MU 的計量單位為 40 TiB ： 1 MU 。</block>
+  <block id="73a81d909884b3b62b84dacced2eeca9" category="list-text">採購單位現在支援 RHEL 和 Rocky 9.0 和 9.1 。</block>
+  <block id="c4f065a2c4ebd22f7bfd9dbe61a5ab49" category="section-title">全新 ONTAP Essentials 儀表板</block>
+  <block id="b972bd3ee7c713179adbfcfdf2701350" category="paragraph">下列 ONTAP Essentials 儀表板已在 Preview 環境中推出、現在可供所有人使用：</block>
+  <block id="9b2e2112dbf0945f11b7f04ac3421312" category="list-text">資料保護儀表板（包括本機與遠端保護概述）</block>
+  <block id="e549f5717ec1caa7dfb9fc872b4b87a3" category="section-title">其他系統監視器</block>
+  <block id="62a0cfde3778aefa78f4b178eaa97a76" category="paragraph">Cloud Insights 隨附下列系統監視器：</block>
+  <block id="ba58cfebfc4230ab4f6ab822a49aa1fe" category="list-text">儲存 VM FCP 服務無法使用</block>
+  <block id="99f7dcb5d0bc844ef56cc6cd317f2555" category="list-text">儲存 VM iSCSI 服務無法使用</block>
+  <block id="b2997605f7b826343b475f71837415f4" category="section-title">記錄位置</block>
+  <block id="21872dffda230726cb93a6dddff7dd00" category="paragraph">Telegraf 記錄訊息會從 STDout 重新導向至下列記錄檔為預設值：</block>
+  <block id="176f2e3b515143c4119028872457ab70" category="list-text">RHEL/CentOS ： /var/log/telegraf/telegraf.log</block>
+  <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu / Debian ： /var/log/telegraf/telegraf.log</block>
+  <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows ： C:\Program Files\telegraf\telegraf.log</block>
+  <block id="2c20388998fe9dc758bf7fb123ac7a32" category="cell">在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ \* ）等萬用字元的字母後、頁面載入速度非常緩慢。</block>
+  <block id="2fdbb1db4127b83dadc134e367935c11" category="cell">搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 &lt;searchTerm&gt; 或 &lt;searchTerm&gt; 等領先的通配符字符串將導致查詢速度緩慢。
+若要獲得更好的效能、請改用字首字串、格式為 &lt;searchTerm&gt; * （換句話說、在搜尋詞彙後加上星號（ * ）。
+範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。
+
+使用以字首為基礎的搜尋、以遞歸方式查看指定資料夾下的所有活動（階層式搜尋）。例如： /path1/path2/path3_ 或 _ "/path1/path2/path3"_ 將在 "_/path1/path2/path3_ 下以遞歸方式列出所有活動。
+或者、也可以使用「所有活動」索引標籤下的「新增至篩選」選項。</block>
+  <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">* 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可在任一Cloud Insights 個畫面右上角的*說明&gt;即時聊天室*功能表選項中找到聊天室。</block>
 </blocks>

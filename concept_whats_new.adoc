@@ -25,6 +25,61 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+== 2023 年 6 月
+
+
+
+=== 查看您的使用情況
+
+自 2023 年 6 月起、 Cloud Insights 根據功能集提供受管理單元使用量的明細。現在您可以快速檢視及監控基礎架構的管理單元（ MU ）使用量、以及 Kubernetes 的 MU 使用量。
+
+image:Metering_Usage.png["計量使用率故障"]
+
+
+
+=== Kubernetes 網路監控與地圖可供所有人使用
+
+。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes 網路效能與地圖 _"] 藉由對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序、提供 Kubernetes 網路效能延遲和異常狀況的即時可見度、以便在效能問題影響使用者之前先識別這些問題。許多客戶發現這項功能在 Preview 期間非常實用、現在每個人都能盡情享受。
+
+
+
+=== 報告
+
+Cloud Insights 的報告元件已重新命名為「 Cloud Insights 分析」。不過別擔心、功能還是一樣。
+
+
+
+=== 收集器 / 擷取變更：
+
+下列資料收集器 / 擷取單元變更已就緒：
+
+* 資料網域與 Coassity MU 的計量單位為 40 TiB ： 1 MU 。
+* 採購單位現在支援 RHEL 和 Rocky 9.0 和 9.1 。
+
+
+
+
+=== 全新 ONTAP Essentials 儀表板
+
+下列 ONTAP Essentials 儀表板已在 Preview 環境中推出、現在可供所有人使用：
+
+* 安全性儀表板
+* 資料保護儀表板（包括本機與遠端保護概述）
+
+
+
+
+=== 其他系統監視器
+
+Cloud Insights 隨附下列系統監視器：
+
+* 儲存 VM FCP 服務無法使用
+* 儲存 VM iSCSI 服務無法使用
+
+
+'''
+
+
 == 2023 年 5 月
 
 

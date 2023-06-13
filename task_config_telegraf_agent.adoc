@@ -50,6 +50,17 @@ NOTE: 如果您使用的是Proxy、請先閱讀平台的Proxy指示、再安裝T
 
 
 
+=== 記錄位置
+
+Telegraf 記錄訊息會從 STDout 重新導向至下列記錄檔為預設值：
+
+* RHEL/CentOS ： /var/log/telegraf/telegraf.log
+* Ubuntu / Debian ： /var/log/telegraf/telegraf.log
+* Windows ： C:\Program Files\telegraf\telegraf.log
+
+
+
+
 === Windows
 
 
