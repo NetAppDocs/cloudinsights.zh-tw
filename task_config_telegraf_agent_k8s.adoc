@@ -5,7 +5,17 @@ keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, ek
 summary: 支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights 
 ---
 = 設定NetApp Kubernetes監控操作員
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 2
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -459,7 +469,7 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 | 我看到Telegraf發出的錯誤訊息類似於下列內容、但Telegraf確實會啟動並執行：10月11日14：23：41 IP：172-31：39 - 47系統d[1]：啟動外掛程式導向的伺服器代理程式、以便向影響者xDB報告指標。10月11日14：23：41 IP-172-31-39-47 Telewraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg="failed to create cache directory./etc/telegraf/.cache / snowflake、err：mkdir /etc/telegraf/.ca Che：權限遭拒。ignored\n" func="gosnowflake.（*預設Logger）.Errorf" file="log.go:120" OCT 11 14：23：41 IP：172-31：39：47 Telefraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg=「無法開啟。忽略。開啟/etc/telegraf/.cache / snowflake/occs_rapping_cache。json：沒有這樣的檔案或目錄。\n" func="gosunflake.（*預設Logger）.rf" file="log.go:120" 10月11日14：23：41 IP：172-31：39 - 47 Telefraf[1827]：10-1014：T1114：10！啟動Telegraf 1.19.3 | 這是已知的問題。請參閱 link:https://github.com/influxdata/telegraf/issues/9407["這篇GitHub文章"] 以取得更多詳細資料。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。 
 
 
-| 在Kubernetes上、我的Telegraf pod報告下列錯誤：「處理mountstats資訊時發生錯誤：無法開啟mountstats檔案：/hostfs/proc/1/mountstats、錯誤：開啟/hostfs/proc/1/mountstats：權限遭拒」 | 如果啟用並強制實施SELinux、可能會使Telegraf pod無法存取Kubernetes節點上的/proc/1/mountstats檔案。若要放寬此限制、請編輯代理程式 (`kubectl edit agent agent-monitoring-netapp`）、並將「特權模式：假」變更為「特權模式：真」 
+| 在Kubernetes上、我的Telegraf pod報告下列錯誤：「處理mountstats資訊時發生錯誤：無法開啟mountstats檔案：/hostfs/proc/1/mountstats、錯誤：開啟/hostfs/proc/1/mountstats：權限遭拒」 | 如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱： https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]。 
 
 
 | 在Kubernetes上、我的Telegraf ReplicaSet pod報告下列錯誤：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /pi/etcd/server.key：open /etc/Kubernetes /pi/etcd/server.crt目錄或這樣的檔案 | Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。 

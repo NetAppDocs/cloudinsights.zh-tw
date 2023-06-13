@@ -8522,7 +8522,6 @@
   <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">請使用下列連結來存取這些kube狀態度量計數器的資訊：</block>
   <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</block>
-  <block id="6b429c610cd6e569edf0723797324d8a" category="cell">如果啟用並強制實施SELinux、可能會使Telegraf pod無法存取Kubernetes節點上的/proc/1/mountstats檔案。若要放寬此限制、請編輯代理程式 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>）、並將「特權模式：假」變更為「特權模式：真」</block>
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。</block>
@@ -11211,4 +11210,5 @@
 或者、也可以使用「所有活動」索引標籤下的「新增至篩選」選項。</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">* 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可在任一Cloud Insights 個畫面右上角的*說明&gt;即時聊天室*功能表選項中找到聊天室。</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">度量收集時間間隔（以秒為單位）（最大 = 60 秒）</block>
+  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱：<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
 </blocks>
