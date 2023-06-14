@@ -5,7 +5,17 @@ keywords: data collector, IBM, DS4000
 summary: IBM TotalStorage DS4000資料收集器 
 ---
 = IBM TotalStorage DS4000資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -15,7 +25,7 @@ summary: IBM TotalStorage DS4000資料收集器
 
 == 術語
 
-Cloud Insightst向IBM DS4000資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Cloud Insights 從 IBM DS4000 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===

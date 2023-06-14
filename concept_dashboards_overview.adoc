@@ -5,7 +5,17 @@ summary: 儀表板概述Cloud Insights 。
 keywords: dashboard, widget, custom, view, data 
 ---
 = 儀表板總覽
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

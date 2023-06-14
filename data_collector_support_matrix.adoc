@@ -15,13 +15,10 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
 :toc-position: content
 
 
+[role="lead"]
 資料收集器支援對照表提供Cloud Insights 支援的資料收集器參考資料、包括廠商與機型資訊。
 
 

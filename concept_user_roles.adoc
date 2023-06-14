@@ -5,7 +5,17 @@ keywords: roles, guest, user, administrator, SSO, Federate, federation, identity
 summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights 
 ---
 = 使用者帳戶與角色
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

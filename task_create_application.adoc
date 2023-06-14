@@ -5,7 +5,17 @@ summary: 您可以建立附註規則、根據您定義的準則、自動將附�
 keywords: application, create application, 
 ---
 = 建立應用程式
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

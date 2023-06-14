@@ -5,7 +5,17 @@ keywords: annotations, import, api
 summary: 您可以使用Cloud Insights 物件開發API匯入註釋和應用程式。 
 ---
 = 匯入附註
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

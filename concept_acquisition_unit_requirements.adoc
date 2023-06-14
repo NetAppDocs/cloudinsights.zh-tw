@@ -5,7 +5,17 @@ summary: 您作為擷取單位使用的伺服器或VM必須符合最低需求
 keywords: AU, acquisition unit, RAU, requirements, sizing 
 ---
 = 採購單位需求
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

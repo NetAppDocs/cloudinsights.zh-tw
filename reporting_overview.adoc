@@ -5,7 +5,17 @@ summary: 利用NetApp預先定義及自訂資料報告Cloud Insights 功能。
 keywords: reporting, cognos, data warehouse, dwh 
 ---
 = 報告總覽Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

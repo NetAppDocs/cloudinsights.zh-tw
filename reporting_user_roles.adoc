@@ -5,7 +5,17 @@ summary: 使用「效益報告」的功能Cloud Insights 取決於您的使用�
 keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
 ---
 = 《報告使用者角色Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

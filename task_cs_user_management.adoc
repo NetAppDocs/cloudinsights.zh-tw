@@ -5,7 +5,17 @@ keywords: Workload Security, User, Login, account, cloud secure
 summary: 工作負載安全使用者帳戶是透過Cloud Insights 「不受限的使用者管理」來管理 
 ---
 = 使用者管理
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

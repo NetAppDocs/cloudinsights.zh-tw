@@ -5,7 +5,17 @@ keywords: inactive, device,
 summary: 識別非作用中的裝置可讓您選擇刪除或將其分配給作用中的角色。 
 ---
 = 識別非使用中的裝置
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

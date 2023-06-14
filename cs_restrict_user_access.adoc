@@ -5,7 +5,12 @@ keywords: alert, snapshot,  attack
 summary: 有了工作負載安全功能、您就能在疑似遭破壞的情況下限制使用者存取權限 
 ---
 = 封鎖使用者存取
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media
 
 
 [role="lead"]

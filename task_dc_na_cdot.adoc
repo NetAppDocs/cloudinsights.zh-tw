@@ -5,7 +5,17 @@ keywords: data collector, ontap, ontap, CDOT
 summary: 資料收集器ONTAP 
 ---
 = NetApp ONTAP 數據管理軟體資料收集器
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

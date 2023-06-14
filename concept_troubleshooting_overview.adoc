@@ -5,7 +5,17 @@ summary: 在本節中、您將找到一些秘訣和技巧、協助您疑難排�
 keywords:  
 ---
 = 疑難排解Cloud Insights 疑難排解
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

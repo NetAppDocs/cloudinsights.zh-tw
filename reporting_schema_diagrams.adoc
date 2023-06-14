@@ -5,7 +5,16 @@ keywords: Schema, DB Schema, premium, dwh, data warehouse
 summary: 報告架構圖表 
 ---
 = 回報架構圖表Cloud Insights
+:toc: macro
+:hardbreaks:
 :allow-uri-read: 
+:toc: 
+:toclevekls: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

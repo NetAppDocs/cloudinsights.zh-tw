@@ -5,7 +5,12 @@ keywords: api, access, token, swagger
 summary: 工作負載安全性包含功能強大的API、可與其他應用程式（例如CMDB）整合。 
 ---
 = 工作負載安全API
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

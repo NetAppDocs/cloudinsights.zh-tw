@@ -5,7 +5,12 @@ keywords: Forensic, user, user, activity
 summary: 鑑識使用者詳細資料 
 ---
 = 鑑識使用者總覽
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 每位使用者的資訊都會在「使用者總覽」中提供。使用這些檢視來瞭解使用者特性、相關實體及最近的活動。

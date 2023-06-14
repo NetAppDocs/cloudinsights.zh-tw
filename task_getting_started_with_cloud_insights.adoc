@@ -5,9 +5,20 @@ summary: 功能入門Cloud Insights
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = 開始收集資料
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
+[role="lead"]
 在您首次註冊Cloud Insights 使用VMware技術並登入您的環境之後、系統會引導您完成下列步驟、以便開始收集及管理資料。
 
 資料收集器會從您的資料來源探索資訊、例如儲存裝置、網路交換器和虛擬機器。收集到的資訊用於分析、驗證、監控及疑難排解。

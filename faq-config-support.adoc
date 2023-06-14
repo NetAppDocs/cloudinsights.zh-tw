@@ -5,7 +5,17 @@ keywords: FAQ, Frequently asked questions, questions, configuration,
 summary:  
 ---
 = 組態與支援的裝置
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

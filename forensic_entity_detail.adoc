@@ -5,10 +5,18 @@ keywords: Forensic, entity, entity overview, entity behavior, detail
 summary: 鑑識實體詳細資料 
 ---
 = 鑑識實體詳細資料
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
-
-目錄：巨集：硬式分隔符號：：轉換標記：1：節點頁尾：：圖示：字型：連結屬性：：：imagesdir：./media/
 
 使用「實體詳細資料」頁面可存取實體的詳細資訊。
 

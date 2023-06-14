@@ -5,7 +5,17 @@ summary: 檢視已建立的查詢
 keywords: query, queries, viewing 
 ---
 = 檢視查詢
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

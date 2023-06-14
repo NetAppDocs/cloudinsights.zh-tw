@@ -5,7 +5,17 @@ summary: 整個發行生命週期中、均遵循安全最佳實務做法。Cloud
 keywords: security, risk, protection 
 ---
 = 安全性管理工具
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

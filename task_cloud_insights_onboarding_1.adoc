@@ -4,7 +4,18 @@ permalink: task_cloud_insights_onboarding_1.html
 summary: 註冊Cloud Insights 以利執行功能、並創造您的環境。 
 ---
 = NetApp新進人員Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: Cloud Insights, documentation, help, onboarding, getting started,
+:toc-position: content
 
 
 [role="lead"]

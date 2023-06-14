@@ -5,7 +5,17 @@ keywords: Forensic, user activity, user activity data,
 summary: 鑑識使用者活動資料 
 ---
 = 鑑識使用者活動資料
+:toc: macro
+:hardbreaks:
+:toclevels: 
 :allow-uri-read: 
+:toc: 
+:toclevels: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 「使用者活動」頁面可協助您瞭解使用者在實體上執行的動作。

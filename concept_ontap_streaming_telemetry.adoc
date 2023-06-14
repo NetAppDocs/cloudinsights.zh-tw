@@ -5,7 +5,17 @@ summary: 使用Cloud Insights NetApp ONTAP 的「資料流遙測」來設定功�
 keywords: ONTAP, Telemetry, streaming, 
 ---
 = NetApp ONTAP 資料流遙測
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

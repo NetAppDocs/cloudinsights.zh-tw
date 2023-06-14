@@ -5,7 +5,17 @@ summary: 支援的資料收集器清單。
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
 = 資料收集器清單Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

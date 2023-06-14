@@ -5,14 +5,25 @@ summary: 修改或刪除查詢
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = 修改或刪除查詢
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
+
+[role="lead]"]
+當您想要變更查詢資產的搜尋準則時、可以變更與查詢相關的準則。
 
 
 
 == 修改查詢
-
-當您想要變更查詢資產的搜尋準則時、可以變更與查詢相關的準則。
 
 .步驟
 . 按一下*查詢*、然後選取*顯示所有查詢*。

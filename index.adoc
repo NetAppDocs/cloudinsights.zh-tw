@@ -4,7 +4,18 @@ permalink: index.html
 summary: 歡迎使用Cloud Insights 適用於此的文件入口網站。 
 ---
 = 本文檔 Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: OnCommand, Insight, documentation, help
+:toc-position: content
 
 
 [role="lead"]
