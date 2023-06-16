@@ -89,6 +89,8 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: 監控操作員入門
       url: "/task_config_telegraf_agent_k8s.html"
+    - title: 監控話務員選項
+      url: "/telegraf_agent_k8s_config_options.html"
     - title: Kubernetes叢集頁面
       url: "/kubernetes_cluster_detail.html"
     - title: Kubernetes 監控與地圖
