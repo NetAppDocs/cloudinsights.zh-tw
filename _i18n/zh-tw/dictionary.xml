@@ -11262,4 +11262,6 @@
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在 Cloud Insights 中、瀏覽至 * 管理 &gt; 資料收集器 * 、然後選取 * 擷取單位 * 標籤。從 AU 右側的「三點」功能表中選擇 _Restart_ 。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 您可以自訂安裝與組態。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">監控話務員選項</block>
+  <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
+  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
 </blocks>

@@ -509,5 +509,8 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 | 安裝 NetApp Kubernetes Monitoring Operator 後、我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向發出 HTTP 要求時發生錯誤 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 取得 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 撥號 TCP ： LOOKUP kube-state - 規格。 <namespace> 。 Svc.cluster 。本機：無這類主機 | 此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。 
+
+
+| 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
