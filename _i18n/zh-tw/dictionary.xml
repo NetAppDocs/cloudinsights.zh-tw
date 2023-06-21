@@ -11275,4 +11275,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
 
 不支援SE（增強安全性）Linux。</block>
+  <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
+  <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
 </blocks>

@@ -124,6 +124,12 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | 標籤 | 以逗號分隔的資源清單應擷取 +++ 範例： cronjobs=[*],daemonsets=[*],plasing=[*],inges=[*],jobs=[*],vedemas=[*],nodes=[*],sterentvolumes=[*,equpos=*[*],equas*[* 
 
 
+|  | cpuLimit | kube 狀態度量部署的 CPU 限制 
+
+
+|  | MemLimit | kube 狀態度量部署的記憶體限制 
+
+
 | 記錄 |  | 可自訂記錄收集和安裝操作員的組態選項 
 
 
