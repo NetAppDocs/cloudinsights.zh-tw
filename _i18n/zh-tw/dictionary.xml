@@ -6072,8 +6072,6 @@
   <block id="8b91cb352f837187391eccc1bbd95135" category="summary">物件圖示參考。Cloud Insights</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">物件圖示參考</block>
   <block id="9c760c96232338b3451e1d7fde6ce957" category="paragraph">物件圖示的快速參考Cloud Insights 資料。</block>
-  <block id="390c989aa3d9a6bba33ccfbf291f42d3" category="inline-image-macro">圖示參考</block>
-  <block id="822c8b943b98c805e2153d211dbe71a8" category="paragraph"><block ref="822c8b943b98c805e2153d211dbe71a8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6867104f109b9761bb4fdcefc9edf5a" category="summary">設定Microsoft Hyper-V資料收集器。</block>
   <block id="28c1db509b1fc8c0d107a05488d8a089" category="doc">Microsoft Hyper-V資料收集器</block>
   <block id="a1b54670019f9b3f58a4114b79324145" category="paragraph">從Microsoft Hyper-V（WMI）取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
@@ -11277,4 +11275,13 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4
 不支援SE（增強安全性）Linux。</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基礎架構圖示：</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">基礎架構圖示參考</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetes 圖示：</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetes 圖示參考、寬度 = 180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetes 網路效能監控與地圖圖示：</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes 網路效能監控與地圖、寬度 =640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
