@@ -11261,18 +11261,6 @@
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">監控話務員選項</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
-  <block id="9f0b6346113de87bff4b194abaf599f1" category="cell">執行下列其中一項授權版本的電腦：
-
-Red Hat Enterprise Linux 7.x 、 8.x 64 位元
-CentOS 7.x 64 位元
-CentOS 8 Stream
-Ubuntu 20 至 22 64 位元
-Rocky 8.x 64 位元、 Rocky 9.x 64 位元
-SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4
-
-此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
-
-不支援SE（增強安全性）Linux。</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基礎架構圖示：</block>
@@ -11284,4 +11272,16 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetes 網路效能監控與地圖圖示：</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes 網路效能監控與地圖、寬度 =640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">執行下列其中一項授權版本的電腦：
+
+Red Hat Enterprise Linux 7.x 、 8.x 64 位元、 SELinux
+CentOS 7.x 64 位元、 SELinux
+CentOS 8 Stream 、 SELinux
+Ubuntu 20 至 22 64 位元
+Rocky 8.x 64 位元、 Rocky 9.x 64 位元、 SELinux
+SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 SUSE 15 SP3 上的 SELinux
+
+此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
+
+不支援SE（增強安全性）Linux。</block>
 </blocks>
