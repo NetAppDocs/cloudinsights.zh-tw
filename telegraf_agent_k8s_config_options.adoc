@@ -109,6 +109,9 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | 輸出逾時 | 請參閱 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf 組態文件"] 
 
 
+|  | 啟用 DockerMetricCollection | 收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。 
+
+
 | Kube-state 指標 |  | 可自訂操作員的 kbe 狀態度量安裝的組態選項 
 
 
@@ -228,6 +231,10 @@ spec:
 
     # Declare Rancher cluster as managed. Set this to true if your Rancher cluster is managed as opposed to on-premise.
     #isManagedRancher: true|false
+
+    # By default, docker metrics will be collected for on-premise, docker-based k8s deployments. To disable docker metric collection, set this to false.
+    # dockerMetricCollectionEnabled: true|false
+
 
     # Deamonset CPU/Mem limits and requests
     # dsCpuLimit:

@@ -11284,4 +11284,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
 
 不支援SE（增強安全性）Linux。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
 </blocks>

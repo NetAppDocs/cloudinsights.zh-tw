@@ -512,5 +512,8 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 | 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。 
+
+
+| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 link:telegraf_agent_k8s_config_options.html["組態選項"]。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
