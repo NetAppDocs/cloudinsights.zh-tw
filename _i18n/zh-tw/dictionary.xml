@@ -5315,7 +5315,6 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">記錄監視器</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">記錄監視器篩選器不可為空白。</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定義警示解決行為</block>
-  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警示解析度</block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">選取通知類型和收件者</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">在「設定團隊通知」區段中、您可以選擇是透過電子郵件或Webhook警示團隊。</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">選擇警示方法</block>
@@ -10526,12 +10525,8 @@
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">我收到磁碟API傳回更多資料的警告</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">請洽詢支援部門以取得額外資料。</block>
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">立即解決</block>
-  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並抑制此監視器所產生的所有後續警示、直到資料保留期間結束為止。</block>
-  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">警示解析選項</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * * 立即解決 * ：警示會立即解決、無需採取進一步行動 * * 根據時間解決問題 * ：警示會在指定時間過後解決 * 根據記錄項目解決 * ：警示會在後續的記錄活動發生時解決。例如、當物件記錄為「可用」時。</block>
-  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
   <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* （前身為 Cloud Central ）入口網站。如果您已經登入NetApp Cloud Central、您可以透過Cloud Insights 幾個快速步驟、開始免費試用版的VMware。</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">* NetApp BlueXP*</block>
   <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">若要開始使用 NetApp 的雲端服務、請前往<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> 然後按一下 * 開始使用 * 。</block>
@@ -11284,8 +11279,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
 
 不支援SE（增強安全性）Linux。</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
+  <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
+  <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
 </blocks>
