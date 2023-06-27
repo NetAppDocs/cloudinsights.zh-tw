@@ -112,6 +112,12 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 | Kube-state 指標 |  | 可自訂操作員的 kbe 狀態度量安裝的組態選項 
 
 
+|  | cpuLimit | kube 狀態度量部署的 CPU 限制 
+
+
+|  | MemLimit | kube 狀態度量部署的記憶體限制 
+
+
 |  | cpuRequest | CPU 要求進行 kube 狀態指標部署 
 
 
@@ -122,12 +128,6 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 
 
 |  | 標籤 | 以逗號分隔的資源清單應擷取 +++ 範例： cronjobs=[*],daemonsets=[*],plasing=[*],inges=[*],jobs=[*],vedemas=[*],nodes=[*],sterentvolumes=[*,equpos=*[*],equas*[* 
-
-
-|  | cpuLimit | kube 狀態度量部署的 CPU 限制 
-
-
-|  | MemLimit | kube 狀態度量部署的記憶體限制 
 
 
 | 記錄 |  | 可自訂記錄收集和安裝操作員的組態選項 
@@ -211,13 +211,14 @@ spec:
   telegraf:
     # use these settings to fine tune data collection
     collectionInterval: 20s
-    #batchSize:
-    #bufferLimit:
-    #roundInterval:
-    #collectionJitter:
-    #precision:
-    #flushInterval:
-    #flushJitter:
+
+    # batchSize:
+    # bufferLimit:
+    # roundInterval:
+    # collectionJitter:
+    # precision:
+    # flushInterval:
+    # flushJitter:
 
     # Collect kubernetes.system_container metrics and objects in the kube-system|cattle-system namespaces for managed kubernetes clusters
     # (EKS, AKS, GKE, managed Rancher). Set this to true if you want collect these metrics.
@@ -242,6 +243,8 @@ spec:
     # rsMemRequest:
 
   kube-state-metrics:
+    # cpuLimit:
+    # memLimit:
     # cpuRequest:
     # memRequest:
 
