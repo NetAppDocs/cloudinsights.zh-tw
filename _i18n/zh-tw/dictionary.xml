@@ -11145,7 +11145,6 @@
   <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">若要訂閱、請前往 * 管理 -&gt; 訂閱 * 。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。</block>
   <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Co猶豫不決 的SmartFiles</block>
   <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC Data Domain</block>
-  <block id="125896ecc7af5f5e57ffa0aa99abe89e" category="paragraph">訂閱計算器會根據您估計需要的託管單元數量、提供您每月 Cloud Insights 的預估成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。</block>
   <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">您的預估標價成本將根據訂閱期限而有所變動。
 附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機</block>
@@ -11281,4 +11280,7 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB傳輸協定3.1版及更早版本。  請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。在使用 FlexCache 的系統中、從 ONTAP 9.7 開始、 Fpolicy 僅在 NFS 環境中支援。</block>
+  <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU</block>
+  <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">訂閱計算機可協助您根據所需的託管單元數量來估計 Cloud Insights 訂閱成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。</block>
+  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">管理單元使用率檢視</block>
 </blocks>
