@@ -10421,7 +10421,6 @@
   <block id="8f025d17785cae128cd5fa24614cdf37" category="paragraph">選擇您要設定的選項、然後依照提示進行。</block>
   <block id="16d7c89b47f259f2ff68b2ae7532fad6" category="summary">新增工作負載安全資料收集器</block>
   <block id="5b5f6636f455e00151ff6c4d5e1be19c" category="paragraph">「工作負載安全性」使用資料收集器從裝置收集檔案和使用者存取資料。</block>
-  <block id="e6624b1e82461272ada2be584f22a093" category="list-text">SMB傳輸協定3.1版及更早版本。請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。從ONTAP9.7開始、Fpolicy僅在NFS環境中受支援。</block>
   <block id="e535de2e280b2b41b1a9d22720f0270c" category="paragraph">如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用叢集管理IP時、請使用「CsUser」的使用者名稱和密碼。</block>
   <block id="c1b7d24fc9ee9c43d2bc97ab81dbedb3" category="paragraph">如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用Vserver Management IP時、請使用「CsUser」的使用者名稱和密碼。</block>
   <block id="94748ec62c100ce45c97bda6d69f9969" category="cell">1.防火牆很可能會封鎖代理程式機器中的必要連接埠。確認已開啟連接埠範圍35000-55000/TCP、讓代理機器從SVM連線。此外、請確保ONTAP 沒有啟用任何防火牆、從「邊」封鎖與代理機器的通訊。2.在「代理程式」方塊中輸入下列命令、並確定連接埠範圍已開啟。_Sudo iptarts-SAVE | Grep 3500*範例輸出應如下所示：_A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctst態new -j Accept_3。登入SVM、輸入下列命令、並檢查是否未設定任何防火牆來封鎖與ONTAP 之通訊。_系統服務防火牆show __系統服務防火牆原則show_<block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block> 就在邊上。ONTAP4. SSH至您要監控的SVM/叢集。從SVM資料LIF Ping Agent Box（支援CIFS、NFS傳輸協定）、並確保ping正常運作： _network ping -vserver &lt;vserver name&gt;-destination &lt;Agent ip&gt;-lIF &lt;LIF Name&gt;-show-detect_如果無法ping通、請確定ONTAP 支援更新的網路設定正確、以便代理機器能夠ping通。如果透過2個資料收集器將單一SVM新增兩次至租戶、則會顯示此錯誤。透過UI刪除其中一個資料收集器。然後透過UI重新啟動其他資料收集器。然後資料收集器會顯示「執行中」狀態、並開始接收來自SVM的事件。基本上、在租戶中、只能透過1個資料收集器新增1個SVM。1 SVM不應透過2個資料收集器新增兩次。6.在兩種不同的工作負載安全環境（租戶）中新增相同SVM的情況下、最後一種將永遠成功。第二個收集器會使用自己的IP位址來設定fpolicy、然後啟動第一個。因此第一個收集器將停止接收事件、其「稽核」服務將進入錯誤狀態。若要避免這種情況發生、請在單一環境中設定每個SVM。7.如果服務原則設定不正確、也可能發生此錯誤。使用支援支援支援功能的支援功能9.8或更新版本時、若要連線至資料來源收集器、則需要資料服務資料服務、例如NFS和/或資料- CIFS、以提供資料- fpolice-Client服務ONTAP 。此外、資料fpolice-Client服務必須與受監控SVM的資料LIF相關聯。</block>
@@ -11281,4 +11280,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 不支援SE（增強安全性）Linux。</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
+  <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB傳輸協定3.1版及更早版本。  請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。在使用 FlexCache 的系統中、從 ONTAP 9.7 開始、 Fpolicy 僅在 NFS 環境中支援。</block>
 </blocks>
