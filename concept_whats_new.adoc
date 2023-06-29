@@ -43,12 +43,6 @@ image:Metering_Usage.png["計量使用率故障"]
 
 
 
-=== 報告
-
-Cloud Insights 的報告元件已重新命名為「 Cloud Insights 分析」。不過別擔心、功能還是一樣。
-
-
-
 === 收集器 / 擷取變更：
 
 下列資料收集器 / 擷取單元變更已就緒：
