@@ -10165,7 +10165,6 @@
   <block id="aa6591610b53847bfb4e19e53c0b4a05" category="cell">工作引擎</block>
   <block id="c0accd1360dce3944f0726ef704217c0" category="paragraph">此資料收集器會從適用於PowerMax / Vmax 3管理系統的Dell EMC Unaerserview取得庫存與效能資料。</block>
   <block id="7e8e4c2fd39cb301da1af7afb93e8962" category="paragraph">請注意、Dell/EMC直到Un推出 每個磁碟區統計資料、此資料收集器才支援9.2.0以上、但無法收集磁碟區統計資料、因為它們不存在。</block>
-  <block id="e3a699248ac2af0be8e4036425dd0b04" category="paragraph">VMAX/PowerMax執行個體的單一Un禁 用式儲存陣列可能管理一或多個Symmetrix 3或更高版本的儲存陣列、此收集器預設會嘗試探索所有儲存陣列。</block>
   <block id="da3865d5e1a7d870e4707356b907f643" category="paragraph">對於組態、資料收集器需要Un禁 用伺服器的IP位址/FQDN、連接至連接埠8443的TCP連線、以及使用者名稱和密碼。</block>
   <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">Un禁 用伺服器的IP位址/完整網域名稱</block>
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">使用者名稱和密碼</block>
@@ -11284,4 +11283,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">編輯現有報告</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">請注意、在其預設位置編輯檔案時、這些報告可能會在下次報告目錄重新整理時遭到覆寫。建議您以新名稱儲存已編輯的報告、或將其儲存在非預設位置。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ * ）等萬用字元的字母後、頁面載入速度會非常緩慢。</block>
+  <block id="1099e56ef7a6e4b5d3d41443b52d83aa" category="paragraph">一個 Unlocal for Vmax/PowerMax 執行個體可能正在管理一個或多個 Symmetrix Vmax 3 或更高版本的儲存陣列、此收集器預設會嘗試探索該 Un主動 式執行個體的所有「本機」儲存陣列。如果 Un主動 節點執行個體看到「遠端」陣列（即透過 SRDF 複寫連線的陣列）、則會忽略這些陣列、並在 Cloud Insights 中針對該站台的任何 Un主動 節點執行個體建立額外的 Un主動 收集器、以找出它們為本機。</block>
 </blocks>
