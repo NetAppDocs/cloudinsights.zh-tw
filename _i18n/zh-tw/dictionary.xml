@@ -11168,7 +11168,6 @@
   <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">Kubernetes 網路監控與地圖可供所有人使用</block>
   <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 藉由對應 Kubernetes 工作負載之間的相依性、簡化疑難排解程序、提供 Kubernetes 網路效能延遲和異常狀況的即時可見度、以便在效能問題影響使用者之前先識別這些問題。許多客戶發現這項功能在 Preview 期間非常實用、現在每個人都能盡情享受。</block>
-  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Cloud Insights 的報告元件已重新命名為「 Cloud Insights 分析」。不過別擔心、功能還是一樣。</block>
   <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">收集器 / 擷取變更：</block>
   <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">下列資料收集器 / 擷取單元變更已就緒：</block>
   <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">資料網域與 Coassity MU 的計量單位為 40 TiB ： 1 MU 。</block>
@@ -11283,4 +11282,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">訂閱計算機可協助您根據所需的託管單元數量來估計 Cloud Insights 訂閱成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">管理單元使用率檢視</block>
+  <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">編輯現有報告</block>
+  <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">請注意、在其預設位置編輯檔案時、這些報告可能會在下次報告目錄重新整理時遭到覆寫。建議您以新名稱儲存已編輯的報告、或將其儲存在非預設位置。</block>
 </blocks>
