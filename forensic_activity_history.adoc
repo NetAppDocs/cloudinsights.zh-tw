@@ -222,7 +222,7 @@ image:CloudSecure_ActivitySelection.png["活動選擇器、寬=30%"]
 | UI中未顯示某些NFS事件。 | 請檢查下列項目：1.具有POSIX屬性集的AD伺服器之使用者目錄收集器應以從UI啟用的unixid屬性執行。2.在UI 3的使用者頁面中搜尋時、應該會看到執行NFS存取的任何使用者。NFS不支援原始事件（尚未探索使用者的事件）4。不會監控匿名存取NFS匯出。5.確定NFS版本的使用版本低於NFS4.1。 
 
 
-| 在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ \* ）等萬用字元的字母後、頁面載入速度非常緩慢。 | 搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 <searchTerm> 或 <searchTerm> 等領先的通配符字符串將導致查詢速度緩慢。
+| 在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ * ）等萬用字元的字母後、頁面載入速度會非常緩慢。 | 搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 <searchTerm> 或 <searchTerm> 等領先的通配符字符串將導致查詢速度緩慢。
 若要獲得更好的效能、請改用字首字串、格式為 <searchTerm> * （換句話說、在搜尋詞彙後加上星號（ * ）。
 範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。
 

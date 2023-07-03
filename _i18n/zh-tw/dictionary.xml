@@ -11184,7 +11184,6 @@
   <block id="176f2e3b515143c4119028872457ab70" category="list-text">RHEL/CentOS ： /var/log/telegraf/telegraf.log</block>
   <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu / Debian ： /var/log/telegraf/telegraf.log</block>
   <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows ： C:\Program Files\telegraf\telegraf.log</block>
-  <block id="2c20388998fe9dc758bf7fb123ac7a32" category="cell">在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ \* ）等萬用字元的字母後、頁面載入速度非常緩慢。</block>
   <block id="2fdbb1db4127b83dadc134e367935c11" category="cell">搜尋字串中的星號（ \* ）會搜尋所有項目。但是，諸如 &lt;searchTerm&gt; 或 &lt;searchTerm&gt; 等領先的通配符字符串將導致查詢速度緩慢。
 若要獲得更好的效能、請改用字首字串、格式為 &lt;searchTerm&gt; * （換句話說、在搜尋詞彙後加上星號（ * ）。
 範例：使用字串 _testvolume * 、而非 _*testvolume 或 _*test* Volume 。
@@ -11284,4 +11283,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">管理單元使用率檢視</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">編輯現有報告</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">請注意、在其預設位置編輯檔案時、這些報告可能會在下次報告目錄重新整理時遭到覆寫。建議您以新名稱儲存已編輯的報告、或將其儲存在非預設位置。</block>
+  <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ * ）等萬用字元的字母後、頁面載入速度會非常緩慢。</block>
 </blocks>
