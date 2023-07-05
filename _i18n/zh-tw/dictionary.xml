@@ -5101,13 +5101,9 @@
   <block id="f6ee2d35944570b247cc02129e0311be" category="paragraph">*基準*定義為每個工作負載在偵測到的飽和前一小時內所報告的最大資料點。</block>
   <block id="bf306d07c3ed41852c5f9cb551a07b59" category="paragraph">當IOPS被判定影響共用儲存池中的其他資源或工作負載時、就會發生*爭用*或*飽和*。</block>
   <block id="0b34f00d1d4a3885b35a431a55efeb18" category="section-title">嚴苛的工作負載</block>
-  <block id="b3d48647b3779314aebd78fd52891ad4" category="paragraph">若要開始研究共享資源中要求嚴苛且受影響的工作負載、請按Cloud Insights 一下「支援資訊板」功能表中的「壓力*下的共享資源」。</block>
   <block id="f59f9eea55ba2a2439645d8e6d60708c" category="inline-image-macro">工作負載清單</block>
-  <block id="de841194d737155906a92014035475f2" category="paragraph"><block ref="de841194d737155906a92014035475f2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="abf3a029f9cc4648911d9ae02dd252ca" category="paragraph">顯示已偵測到飽和的任何工作負載清單。Cloud Insights請注意Cloud Insights 、只有在至少偵測到一個_strustrued resourc__*和*至少一個_Impacted resourc__的情況下、才能顯示此工作負載。</block>
   <block id="d7c664bf82d9e14603a845f0ffe47993" category="paragraph">按一下工作負載即可檢視其詳細資料頁面。上圖顯示發生爭用/飽和的共用資源（例如儲存資源池）活動。</block>
   <block id="2ca1e64d0a4fdfcf135961f6931ac68b" category="inline-image-macro">顯示爭用的共享資源</block>
-  <block id="bb6db0535ce42b380d76743c35ffe29a" category="paragraph"><block ref="bb6db0535ce42b380d76743c35ffe29a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e4a0aeb0ee372dc4742c55ad85d4088" category="paragraph">以下是兩張圖表、顯示_嚴苛_的工作負載、以及受_影響_的工作負載、這些工作負載都是嚴苛的工作負載。</block>
   <block id="3058d78451b014873b4ca65f0669489e" category="inline-image-macro">嚴苛的工作負載圖表</block>
   <block id="46562410a025cae8a5441c0cc0a4c00f" category="inline-image-macro">受影響的工作負載圖表</block>
@@ -11284,4 +11280,11 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">請注意、在其預設位置編輯檔案時、這些報告可能會在下次報告目錄重新整理時遭到覆寫。建議您以新名稱儲存已編輯的報告、或將其儲存在非預設位置。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ * ）等萬用字元的字母後、頁面載入速度會非常緩慢。</block>
   <block id="1099e56ef7a6e4b5d3d41443b52d83aa" category="paragraph">一個 Unlocal for Vmax/PowerMax 執行個體可能正在管理一個或多個 Symmetrix Vmax 3 或更高版本的儲存陣列、此收集器預設會嘗試探索該 Un主動 式執行個體的所有「本機」儲存陣列。如果 Un主動 節點執行個體看到「遠端」陣列（即透過 SRDF 複寫連線的陣列）、則會忽略這些陣列、並在 Cloud Insights 中針對該站台的任何 Un主動 節點執行個體建立額外的 Un主動 收集器、以找出它們為本機。</block>
+  <block id="ae8f504ff2e83723f08fc4f873fcdca5" category="paragraph">若要開始查看共享資源中要求嚴苛且受影響的工作負載、請按一下 * 儀表板 &gt; Insights * 、然後在 Stress * Insight 下選取 * Shared Resources 。</block>
+  <block id="923231dd5cc497f857ab7bc31259567c" category="inline-image-macro">Insights 功能表</block>
+  <block id="4ad858c99ade794af9d0e0a1491e01bc" category="paragraph"><block ref="4ad858c99ade794af9d0e0a1491e01bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0111ce9fed5023fdfdac30af08350a0d" category="paragraph">顯示已偵測到飽和的任何工作負載清單。Cloud Insights請注意、 Cloud Insights 會顯示至少偵測到一項要求嚴苛的資源 * 或 * 受影響資源 _ 的工作負載。</block>
+  <block id="6345c18147755da14a72a1bcc448c878" category="paragraph"><block ref="6345c18147755da14a72a1bcc448c878" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bea93c5448a53dbeae5f078ae207efa5" category="paragraph"><block ref="416a8d7353098379fdb36ba6e8aa6da8" category="inline-image-macro-rx" type="image"></block>
+<block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
