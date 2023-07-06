@@ -6823,7 +6823,6 @@
   <block id="cbbe9ca36f7a864171d70f736ed408bd" category="list-text">組態資料</block>
   <block id="b38208d6c0caf426b9ce527a7f6fa072" category="paragraph">此摘要說明客戶提供的組態資料、用於管理客戶的庫存和作業、例如受監控裝置的主機名稱或IP位址、輪詢時間間隔、逾時值等</block>
   <block id="ffb85bfe93f1d2f1654a7048b87f0403" category="list-text">機密</block>
-  <block id="d21b579e2da249b92e4bd86e3e8811ca" category="paragraph">機密資料包含Cloud Insights 由「資訊擷取單元」用來存取客戶裝置和服務的認證資料。這些認證資料會使用AES-256加密、私密金鑰僅儲存在擷取設備上、絕不會離開客戶環境。即使是權限Cloud Insights 僅有的部分SRE、也因為這項設計而無法以純文字存取客戶機密。</block>
   <block id="6bf565eb0af1d9c4319c14b7f1ed3b40" category="list-text">功能資料</block>
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">這是NetApp提供雲端資料服務所產生的資料、可讓NetApp在雲端資料服務的開發、部署、營運、維護及安全方面、掌握最新資訊。功能資料不包含客戶資訊或個人資訊。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">使用者存取資料</block>
@@ -11288,4 +11287,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 <block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">VMware使用Dell EMC Isilon / PowerScale REST資料收集器、從Dell EMC Isilon或PowerScale儲存設備取得庫存和效能資料Cloud Insights 。此收集器支援執行 OneFS 8.0.0+ 的陣列。</block>
   <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">執行 OneFS 8.0.0 或更新版本的 Isilon / PowerScale 叢集</block>
+  <block id="ffa95e8fd7e458c2481c8a1213dd74e9" category="paragraph">機密資料包含Cloud Insights 由「資訊擷取單元」用來存取客戶裝置和服務的認證資料。這些認證會使用強式非對稱式加密來加密、私密金鑰只會儲存在擷取單元上、絕不會離開客戶環境。即使是權限Cloud Insights 僅有的部分SRE、也因為這項設計而無法以純文字存取客戶機密。</block>
 </blocks>
