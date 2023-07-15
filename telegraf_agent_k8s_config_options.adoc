@@ -109,6 +109,15 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | 輸出逾時 | 請參閱 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf 組態文件"] 
 
 
+|  | 啟用 DockerMetricCollection | 收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。 
+
+
+|  | dsTolerations | Telegraf-DS 額外的容忍度。 
+
+
+|  | RsTolerations | Telegraf-RS 額外容忍度。 
+
+
 | Kube-state 指標 |  | 可自訂操作員的 kbe 狀態度量安裝的組態選項 
 
 
@@ -127,7 +136,15 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | 資源 | 以逗號分隔的資源清單、可供擷取。範例： cronjobs 、 daemonsets 、部署、擷取、工作、命名空間、節點、持續磁碟區、持續磁碟區、 Pod 、複製集、資源等量、服務、狀態集 
 
 
-|  | 標籤 | 以逗號分隔的資源清單應擷取 +++ 範例： cronjobs=[*],daemonsets=[*],plasing=[*],inges=[*],jobs=[*],vedemas=[*],nodes=[*],sterentvolumes=[*,equpos=*[*],equas*[* 
+|  | 公差 | Kube-state - 衡量其他容忍度。 
+
+
+|  | 標籤 | kube 狀態度量應擷取的資源清單（以逗號分隔）
+
+++
+範例： cronjobs=[*],daemonsets=[*],targets=[*],jobs=[*],命名 空間 =[*],nodes=[*],
+永久卷冊 =[*] 、持續卷 =[*] 、 Pod =[*] 、複製集 =[*] 、資源 equotas=[*] 、服務 =[*] 、狀態集 =[*]
+++ 
 
 
 | 記錄 |  | 可自訂記錄收集和安裝操作員的組態選項 
@@ -164,6 +181,15 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 
 
 |  | enabledDNSookup | 是非題、啟用 DNS 查詢 
+
+
+|  | 流暢的位元容忍度 | Fluent-bit-DS 額外公差。 
+
+
+|  | 事件導出者容忍度 | 事件導出者額外容忍度。 
+
+
+| 工作負載對應 |  | L4-公差 
 |===
 
 
@@ -229,6 +255,10 @@ spec:
 
     # Declare Rancher cluster as managed. Set this to true if your Rancher cluster is managed as opposed to on-premise.
     #isManagedRancher: true|false
+
+    # By default, docker metrics will be collected for on-premise, docker-based k8s deployments. To disable docker metric collection, set this to false.
+    # dockerMetricCollectionEnabled: true|false
+
 
     # Deamonset CPU/Mem limits and requests
     # dsCpuLimit:

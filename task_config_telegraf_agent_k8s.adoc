@@ -204,6 +204,14 @@ OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元�
 
 
 
+=== 公差和污染
+
+_telegraf_ 、 _Fluent-bit_ 和 _net-觀察者 示範示範必須在叢集中的每個節點上排程 Pod 、才能正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * link:telegraf_agent_k8s_config_options.html["在 _AgentConfiguration_ 中"]。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。
+
+深入瞭解 Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["污染與容許"]。
+
+
+
 == 安裝NetApp Kubernetes監控操作員
 
 image:NKMO-Instructions-1.png[""]
@@ -512,5 +520,8 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 | 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。 
+
+
+| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 link:telegraf_agent_k8s_config_options.html["組態選項"]。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。

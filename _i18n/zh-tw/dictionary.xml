@@ -10752,7 +10752,6 @@
   <block id="2ed6d0911bda563375b8a7f38ece8cba" category="paragraph">若要更新 Proxy 、命令是</block>
   <block id="9d6898c9d6fff2bd62d85b66643bb3d1" category="doc">洞見：回收 ONTAP Cold Storage</block>
   <block id="0d76fbb36f181c92649274af9d5b537e" category="paragraph">回收 ONTAP Cold Storage_ Insight 可提供冷容量、潛在成本 / 電力節約的相關資料、以及 ONTAP 系統上 Volume 的建議行動項目。</block>
-  <block id="dc258ad625dfe61afe78bdd8eaced72a" category="admonition">回收 ONTAP Cold Storage_ Insight 被視為 A <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能有所變更。</block>
   <block id="62cbec5499f7528b78b111c904e78b71" category="paragraph">若要檢視這些洞見、請瀏覽 * 儀表板 &gt; Insights * 、並查看 _ 回收 ONTAP Cold Storage_ 洞見。請注意、如果 Cloud Insights 偵測到冷儲存設備、此 Insight 僅會列出受影響的儲存設備、否則您會看到「 All Clear 」訊息。</block>
   <block id="da69b960f5bb93c02fdd4886868836f6" category="inline-image-macro">顯示 3 個含有 Cold 資料的儲存位置的深入資訊清單</block>
   <block id="7718245a70dcc6279bf8af86a72c2e35" category="paragraph"><block ref="7718245a70dcc6279bf8af86a72c2e35" category="inline-image-macro-rx" type="image"></block></block>
@@ -10873,7 +10872,6 @@
   <block id="03dd8511b379b0b92595299b980d36e4" category="cell">kube 狀態指標部署的記憶體要求</block>
   <block id="55b558c7ef820e6e00e5993b9e55d93b" category="cell">資源</block>
   <block id="3b720d9649ae501d73e8f8c4a7a15348" category="cell">以逗號分隔的資源清單、可供擷取。範例： cronjobs 、 daemonsets 、部署、擷取、工作、命名空間、節點、持續磁碟區、持續磁碟區、 Pod 、複製集、資源等量、服務、狀態集</block>
-  <block id="d250be49afad7b894de05a3b7ae8bbae" category="cell">以逗號分隔的資源清單應擷取 +++ 範例： cronjobs=[*],daemonsets=[*],plasing=[*],inges=[*],jobs=[*],vedemas=[*],nodes=[*],sterentvolumes=[*,equpos=*[*],equas*[*</block>
   <block id="2165e4fa5bddb65a31f6a0c495c2fa37" category="cell">記錄</block>
   <block id="d795ec2d0a164433572a8d5d91b8fae0" category="cell">可自訂記錄收集和安裝操作員的組態選項</block>
   <block id="031104420a282e1bdb63e280c40a4938" category="cell">readFromHead</block>
@@ -11288,4 +11286,77 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">VMware使用Dell EMC Isilon / PowerScale REST資料收集器、從Dell EMC Isilon或PowerScale儲存設備取得庫存和效能資料Cloud Insights 。此收集器支援執行 OneFS 8.0.0+ 的陣列。</block>
   <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">執行 OneFS 8.0.0 或更新版本的 Isilon / PowerScale 叢集</block>
   <block id="ffa95e8fd7e458c2481c8a1213dd74e9" category="paragraph">機密資料包含Cloud Insights 由「資訊擷取單元」用來存取客戶裝置和服務的認證資料。這些認證會使用強式非對稱式加密來加密、私密金鑰只會儲存在擷取單元上、絕不會離開客戶環境。即使是權限Cloud Insights 僅有的部分SRE、也因為這項設計而無法以純文字存取客戶機密。</block>
+  <block id="16601c709d6f082c4421fe1d28974834" category="section-title">選擇 Aggregation 、 Units 、 Conditional Formatting</block>
+  <block id="0a9f1c237356720961c024fce3f78a12" category="section-title">集合與單元</block>
+  <block id="c4d2b1e614724dc8838bf027b78d7fe8" category="paragraph">對於「值」欄、您可以選擇顯示值的彙總方式、以及選擇顯示這些值的單位、進一步細化查詢結果。您可以在欄的上角選取「三點」功能表來找到這些選項。</block>
+  <block id="4d5e2bd7c10a04613e320165a2aef636" category="inline-image-macro">查詢頁面結果會顯示 Aggregation 、 Conditional Formatting 、 Unit Display 和欄重新命名</block>
+  <block id="6359b5d0dddbd864f91ddfec03e1db49" category="paragraph"><block ref="6359b5d0dddbd864f91ddfec03e1db49" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5771a362d88a71a657bfcd21ca54b3f" category="section-title">單位</block>
+  <block id="ae2ad730f8b9e34404a53be6603eb8e4" category="paragraph">您可以選取要顯示值的單位。例如、如果選取的欄顯示原始容量、且值顯示在 GiB 中、但您偏好將其顯示為 TiB 、只要從「單位顯示」下拉式清單中選取 TiB 即可。</block>
+  <block id="d9ceca6b3a280ab6926157d124ea15d7" category="section-title">集合</block>
+  <block id="e108aa85577531fd71feda784d41caf3" category="paragraph">如果所顯示的值是從基礎資料彙總為「平均值」、 但是您偏好顯示所有值的總和、請從 _ 群組依據 _ 下拉式清單中選取「總和」（如果您想要任何群組值顯示總和）、或從 _ 時間集合依據 _ 下拉式清單中選取「總和」（如果您想要資料列值顯示基礎資料的總和）。</block>
+  <block id="4a0aedb71a2047b4501702b3bbc92002" category="paragraph">您可以選擇依平均、最大、最小或總和來彙總群組資料點。</block>
+  <block id="93ad26b5f738a3399877d18e809c4ffe" category="paragraph">您可以依平均、上次擷取的資料點、最大、最小或總和來彙總個別資料列資料。</block>
+  <block id="d07a67a9bf91a7e251537433f822107d" category="section-title">設定格式化的條件</block>
+  <block id="b286203207ee36be1b0daa6eb3a4e2f8" category="paragraph">設定格式化的條件可讓您在查詢結果清單中醒目提示警告層級和臨界層級臨界值、讓您即時掌握異常狀況和特殊資料點。</block>
+  <block id="4c941a5536be07eee34fa9b29bd005c9" category="inline-image-macro">查詢頁面上的設定格式化的條件</block>
+  <block id="077eb3e55847ad3494e20a7b4b22abfd" category="paragraph"><block ref="077eb3e55847ad3494e20a7b4b22abfd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a83a3620bfc4182656b8b3bba751d85b" category="paragraph">設定格式化的條件會分別針對每一欄進行設定。例如、您可以為容量欄選擇一組臨界值、而為處理量欄選擇另一組臨界值。</block>
+  <block id="b416aba7067608c1cc6b8c37ef3753a2" category="section-title">重新命名欄</block>
+  <block id="c478709a4fc402ef4317c5de6580c96f" category="paragraph">重新命名欄會變更查詢結果清單上顯示的名稱。如果您將查詢清單匯出至 .CSV 、則產生的檔案中也會顯示新的欄名稱。</block>
+  <block id="c9cc8cce247e49bae79f15173ce97354" category="section-title">儲存</block>
+  <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">2023 年 7 月</block>
+  <block id="8d6bad49c4eea7a9cf27fd507f44022c" category="section-title">顯示最近的變更</block>
+  <block id="210e83cd3251fb18d6b85fcfa343be97" category="paragraph">資料收集器登陸頁面現在包含最近變更的清單。只要按一下任何資料收集器登陸頁面底部的「最近變更」按鈕、即可顯示最近的資料收集器變更。</block>
+  <block id="f7796a8f8185c8c1d264bce4bad25eee" category="inline-image-macro">最近的變更範例</block>
+  <block id="57c43929c060c6b6731a95fee2e6ac4b" category="paragraph"><block ref="57c43929c060c6b6731a95fee2e6ac4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7106bac801506d89011c164f7281f183" category="section-title">改善營運商狀況</block>
+  <block id="c6d80de9d1332fa033db27b32896a7ca" category="paragraph">以下是對的改進 <block ref="89b3ece041fc6e3eaf91d1f18cb70562" category="inline-link-macro-rx"></block> 部署：</block>
+  <block id="2a81267b1c9c4611addccc58ffea4ce5" category="list-text">略過泊塢視窗度量集合的選項</block>
+  <block id="62643d895d41437dc1854e6321bbca7d" category="list-text">能夠新增及自訂對 Telegraf 示範和複製的容忍度</block>
+  <block id="4157bbc9478996de33c632d1be8b4617" category="section-title">洞見：回收 Cold Storage</block>
+  <block id="82f32ca1972e78989f469529f9e93e21" category="inline-link-macro">回收 ONTAP Cold Storage Insight</block>
+  <block id="2703e92da2def9a17ac70dcd90bd8ab5" category="paragraph">。 <block ref="a08e2a6a27f9f88fce91a86a2a4aaa0e" category="inline-link-macro-rx"></block> 現在支援 FlexGroups 、現在可供所有客戶使用。</block>
+  <block id="ffd94c31fd478610bae8a28f858f4967" category="section-title">營運者影像簽名</block>
+  <block id="b58a6be98adebdc6de5cd79aa5cf7223" category="paragraph">對於使用私有儲存庫做為 NetApp Kubernetes 監控操作員的客戶、您現在可以在操作員安裝期間複製影像簽名公開金鑰、讓您確認下載軟體的真實性。在選擇性步驟中選取 _ 複製影像簽名公開金鑰 _ 按鈕、將操作者影像上傳至您的私有儲存庫 _ 。</block>
+  <block id="b48c3957268aba1d2cb9774cdfb76b1a" category="inline-image-macro">下載公開金鑰</block>
+  <block id="241e648e3eaa9f9b228db06a6cf403f7" category="paragraph"><block ref="241e648e3eaa9f9b228db06a6cf403f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="659e26ba67b278fd61383664fb1ed670" category="section-title">查詢的集合、設定格式化的條件等</block>
+  <block id="7d7ce3fd83ffcf864f9c0285f8d8b6ab" category="paragraph">集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 <block ref="f011edc734cda8dc5136e8e133afbd9b" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b88de4b6bcbafe41a9b2e66846672ee" category="paragraph">這些功能現在可用於整合類型的資料（ Kubernetes 、 ONTAP 進階度量等）、基礎架構物件（儲存、 Volume 、交換器等）即將推出。</block>
+  <block id="2b4c43183ba48840a9a245b4b11ed0f1" category="section-title">用於稽核的 API</block>
+  <block id="8b0aa17c3cd1f148c8d84b8d9eade119" category="paragraph">您現在可以使用 API 來查詢或匯出稽核事件。前往「管理」 &gt; 「 API 存取」、然後選取「 _API 文件 _ 」連結以取得資訊。</block>
+  <block id="f0d8b3eaae91d14b5849226503f1f130" category="inline-image-macro">API Swagger for Audit 、 width=400</block>
+  <block id="08eebc22528b6ae269764bbbfbd37d98" category="paragraph"><block ref="08eebc22528b6ae269764bbbfbd37d98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9d9cc2d70ab2dbd66579e01f859b8da3" category="section-title">Data Collector ： Trident 經濟型</block>
+  <block id="3b9a2bab6a97ecd5c040555f8147b32b" category="paragraph">Cloud Insights 現在支援 Trident 經濟驅動程式、實現以下效益：</block>
+  <block id="5b51c0421974fa9b23cfbe623de43e2e" category="list-text">深入瞭解 pod 對 ONTAP Qtree 對應和效能指標。</block>
+  <block id="0e6dfce910a8488d971baa1019611d0e" category="list-text">提供從 Kubernetes Pod 到後端儲存設備的無縫疑難排解和簡易導覽</block>
+  <block id="d43e029b6a4626717198326d15889721" category="list-text">主動偵測顯示器的後端效能問題</block>
+  <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">公差和污染</block>
+  <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在 _AgentConfiguration_ 中</block>
+  <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">_telegraf_ 、 _Fluent-bit_ 和 _net-觀察者 示範示範必須在叢集中的每個節點上排程 Pod 、才能正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
+  <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">污染與容許</block>
+  <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">深入瞭解 Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
+  <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
+  <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS 額外的容忍度。</block>
+  <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">RsTolerations</block>
+  <block id="0a1cb9f6e7c89d89c765fdd1efa6183b" category="cell">Telegraf-RS 額外容忍度。</block>
+  <block id="d6c26478ca41a23cc9741a4e92576269" category="cell">公差</block>
+  <block id="c511c601aee805f46f3767063104cdd8" category="cell">Kube-state - 衡量其他容忍度。</block>
+  <block id="cea61529c4fbcfd86c0a3459bc229a87" category="cell">kube 狀態度量應擷取的資源清單（以逗號分隔）
+
+++
+範例： cronjobs=[*],daemonsets=[*],targets=[*],jobs=[*],命名 空間 =[*],nodes=[*],
+永久卷冊 =[*] 、持續卷 =[*] 、 Pod =[*] 、複製集 =[*] 、資源 equotas=[*] 、服務 =[*] 、狀態集 =[*]
+++</block>
+  <block id="7e7b391c65060e4613a7fb96bfd2ef31" category="cell">流暢的位元容忍度</block>
+  <block id="035bf5f67349238f72eae5d508efac99" category="cell">Fluent-bit-DS 額外公差。</block>
+  <block id="8776d1f0ee4232b1c2ff5bc38e4b2603" category="cell">事件導出者容忍度</block>
+  <block id="bac5ce71f32beb834c27a988cad33543" category="cell">事件導出者額外容忍度。</block>
+  <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公差</block>
 </blocks>

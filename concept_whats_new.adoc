@@ -25,6 +25,72 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+== 2023 年 7 月
+
+
+
+=== 顯示最近的變更
+
+資料收集器登陸頁面現在包含最近變更的清單。只要按一下任何資料收集器登陸頁面底部的「最近變更」按鈕、即可顯示最近的資料收集器變更。
+
+image:Recent_Changes_Example.png["最近的變更範例"]
+
+
+
+=== 改善營運商狀況
+
+以下是對的改進 link:/telegraf_agent_k8s_config_options.html["Kubernetes營運者"] 部署：
+
+* 略過泊塢視窗度量集合的選項
+* 能夠新增及自訂對 Telegraf 示範和複製的容忍度
+
+
+
+
+=== 洞見：回收 Cold Storage
+
+。 link:insights_reclaim_ontap_cold_storage.html["回收 ONTAP Cold Storage Insight"] 現在支援 FlexGroups 、現在可供所有客戶使用。
+
+
+
+=== 營運者影像簽名
+
+對於使用私有儲存庫做為 NetApp Kubernetes 監控操作員的客戶、您現在可以在操作員安裝期間複製影像簽名公開金鑰、讓您確認下載軟體的真實性。在選擇性步驟中選取 _ 複製影像簽名公開金鑰 _ 按鈕、將操作者影像上傳至您的私有儲存庫 _ 。
+
+image:Operator_Public_Image_Key.png["下載公開金鑰"]
+
+
+
+=== 查詢的集合、設定格式化的條件等
+
+集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 link:/task_create_query.html["查詢"]。
+
+image:Query_Page_Aggregation_etc.png["查詢頁面結果會顯示 Aggregation 、 Conditional Formatting 、 Unit Display 和欄重新命名"]
+
+這些功能現在可用於整合類型的資料（ Kubernetes 、 ONTAP 進階度量等）、基礎架構物件（儲存、 Volume 、交換器等）即將推出。
+
+
+
+=== 用於稽核的 API
+
+您現在可以使用 API 來查詢或匯出稽核事件。前往「管理」 > 「 API 存取」、然後選取「 _API 文件 _ 」連結以取得資訊。
+
+image:Audit_API_Swagger.png["API Swagger for Audit 、 width=400"]
+
+
+
+=== Data Collector ： Trident 經濟型
+
+Cloud Insights 現在支援 Trident 經濟驅動程式、實現以下效益：
+
+* 深入瞭解 pod 對 ONTAP Qtree 對應和效能指標。
+* 提供從 Kubernetes Pod 到後端儲存設備的無縫疑難排解和簡易導覽
+* 主動偵測顯示器的後端效能問題
+
+
+'''
+
+
 == 2023 年 6 月
 
 
