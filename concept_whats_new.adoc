@@ -39,7 +39,7 @@ image:Recent_Changes_Example.png["最近的變更範例"]
 
 === 改善營運商狀況
 
-以下是對的改進 link:/telegraf_agent_k8s_config_options.html["Kubernetes營運者"] 部署：
+以下是對的改進 link:telegraf_agent_k8s_config_options.html["Kubernetes營運者"] 部署：
 
 * 略過泊塢視窗度量集合的選項
 * 能夠新增及自訂對 Telegraf 示範和複製的容忍度
@@ -63,7 +63,7 @@ image:Operator_Public_Image_Key.png["下載公開金鑰"]
 
 === 查詢的集合、設定格式化的條件等
 
-集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 link:/task_create_query.html["查詢"]。
+集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 link:task_create_query.html["查詢"]。
 
 image:Query_Page_Aggregation_etc.png["查詢頁面結果會顯示 Aggregation 、 Conditional Formatting 、 Unit Display 和欄重新命名"]
 
