@@ -11358,5 +11358,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公差</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">以下是對的改進 <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 部署：</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
-  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">在 operer-config.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
 </blocks>
