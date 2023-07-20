@@ -10925,7 +10925,6 @@
   <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">網路效能與地圖</block>
   <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">CI-net-觀察者</block>
   <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。</block>
-  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：</block>
   <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
@@ -11359,4 +11358,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公差</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">以下是對的改進 <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 部署：</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">在 operer-config.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
 </blocks>
