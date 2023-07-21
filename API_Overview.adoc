@@ -99,8 +99,10 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 例如、使用下列項目來擷取儲存資產：
 
- curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
+ curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey:<API_Access_Token>'
 其中、_<API_Access_Token >>是您在API存取建立期間儲存的權杖。
+
+請參閱「瀏覽器」頁面、以取得您要使用的 API 特定範例。
 
 
 
@@ -304,7 +306,7 @@ API存取權杖有到期日。當API存取權杖過期時、使用者需要產�
 spec:
 …
   output-sink:
-  - api-key: <NEW_API_TOKEN>
+  - api-key:<NEW_API_TOKEN>
 ....
 
 
