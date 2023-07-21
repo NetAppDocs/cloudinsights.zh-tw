@@ -11379,4 +11379,37 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 然後重新啟動 Telegraf 。</block>
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">請參閱「瀏覽器」頁面、以取得您要使用的 API 特定範例。</block>
+  <block id="ad8f9b24701da9364290a4c2eee40c64" category="section-title">ONTAP 電力指標</block>
+  <block id="b665630963f971c488f8e065e0c06fa9" category="paragraph">多種 ONTAP 機型提供 Cloud Insights 的電力指標、可用於監控或警示。下列支援和不支援的機型清單並不完整、但應提供一些指引；一般而言、如果機型與清單上的機型屬於同一個系列、則支援應該相同。</block>
+  <block id="4331e7abe05d195d44f5ad7553810841" category="paragraph">支援的機型：</block>
+  <block id="1c7aba313bcd844b750939db18c6ba3f" category="paragraph">A200
+A220
+解答 250
+A300
+A320
+A400
+a700
+A700s
+A800
+A900
+C190
+FAS2240-4.
+FAS2552
+FAS2650
+FAS2720
+FAS2750
+FAS8200
+FAS8300
+FAS8700
+FAS9000</block>
+  <block id="f9e69d73975332449ef353ece92feba1" category="paragraph">不支援的機型：</block>
+  <block id="6b9e2344af026f5b0bd0790abba3451c" category="paragraph">FAS2620
+FAS3250
+FAS3270
+FAS500f
+FAS6280
+FAS / AFF 8020
+FAS / AFF 8040
+FAS / AFF 8060
+FAS / AFF 8080</block>
 </blocks>
