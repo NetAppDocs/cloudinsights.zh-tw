@@ -11359,4 +11359,23 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。例如、從您想要安裝操作員的伺服器 / 虛擬機器、您必須能夠存取 Cloud Insights 、並能從 Cloud Insights 下載二進位檔。</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
+
+ 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 已超過內容期限（等待標頭時超過 Client.Timeout ）</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">編輯每個 Telegraf 組態檔案（例如 /etc/telegraf/telegraf.d/ * 。 conf ）、並增加 Telegraf 輸出外掛程式的逾時時間。  例如、在每個 .conf 檔案中、取代 ... 的所有執行個體。
+
+[[outputs.http]]
+...
+逾時 = 「 5s 」
+...
+
+
+... 包含下列項目：
+
+[[outputs.http]]
+...
+逾時 = 「 10s 」
+...
+
+然後重新啟動 Telegraf 。</block>
 </blocks>

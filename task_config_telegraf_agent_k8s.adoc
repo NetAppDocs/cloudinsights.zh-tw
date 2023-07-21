@@ -523,5 +523,25 @@ NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使�
 
 
 | 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 link:telegraf_agent_k8s_config_options.html["組態選項"]。 
+
+
+| 我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
+
+ 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 已超過內容期限（等待標頭時超過 Client.Timeout ） | 編輯每個 Telegraf 組態檔案（例如 /etc/telegraf/telegraf.d/ * 。 conf ）、並增加 Telegraf 輸出外掛程式的逾時時間。  例如、在每個 .conf 檔案中、取代 ... 的所有執行個體。
+
+[[outputs.http]]
+...
+逾時 = 「 5s 」
+...
+
+
+... 包含下列項目：
+
+[[outputs.http]]
+...
+逾時 = 「 10s 」
+...
+
+然後重新啟動 Telegraf 。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
