@@ -93,7 +93,7 @@ sidebar:
       url: "/telegraf_agent_k8s_config_options.html"
     - title: Kubernetes叢集頁面
       url: "/kubernetes_cluster_detail.html"
-    - title: Kubernetes 監控與地圖
+    - title: 網路監控與地圖
       url: "/concept_kubernetes_network_monitoring_and_map.html"
   - title: 洞見
     entries:

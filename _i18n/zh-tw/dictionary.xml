@@ -10809,7 +10809,6 @@
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">工作負載對應範例</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">監控操作員入門</block>
-  <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetes 監控與地圖</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubernetes 網路效能監控與地圖</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubernetes 網路效能監控與地圖是一種 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能會有所變更。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">您必須先設定、才能使用 Kubernetes 網路效能監控和地圖 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。</block>
@@ -11412,4 +11411,5 @@ FAS / AFF 8020
 FAS / AFF 8040
 FAS / AFF 8060
 FAS / AFF 8080</block>
+  <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">網路監控與地圖</block>
 </blocks>
