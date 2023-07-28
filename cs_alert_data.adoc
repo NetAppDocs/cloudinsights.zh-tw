@@ -141,9 +141,6 @@ image:CloudSecureChangeAlertStatus.png["變更警示狀態"]
 | 問題： | 試用： 
 
 
-| 針對工作負載安全（CS）所拍攝的快照、CS快照是否有清除/歸檔期間？ | 不可以CS快照並未設定任何清除/歸檔期間。使用者需要定義CS快照的清除原則。請參閱 link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["本文檔 ONTAP"] 如何設定原則。 
-
-
 | 在這種情況ONTAP 下、每小時執行一次快照。工作負載安全（CS）快照是否會影響它？CS快照是否會在每小時快照的地方執行？預設的每小時快照是否會停止？ | 工作負載安全快照不會影響每小時快照。CS快照不會佔用每小時的快照空間、而且應該像以前一樣繼續。預設的每小時快照不會停止。 
 
 
