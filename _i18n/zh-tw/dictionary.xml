@@ -617,7 +617,6 @@
   <block id="2c4a65782f3fcd193e8e3aab503fa515" category="section-title">保留政策</block>
   <block id="77422aee0786be7f7c1880b7b0954687" category="cell">試用：</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link-macro">本文檔 ONTAP</block>
-  <block id="5aec7bee9bf7098941b7fab790f89ec8" category="cell">不可以CS快照並未設定任何清除/歸檔期間。使用者需要定義CS快照的清除原則。請參閱 <block ref="e3477019d6e8e26c6e36a5c10c372344" category="inline-link-macro-rx"></block> 如何設定原則。</block>
   <block id="97142806b6f8ba5285f1650e6822a478" category="cell">如果在不確定的情況下達到最大快照數、會發生什麼情況ONTAP ？</block>
   <block id="c718437c95f9699cf92562f47fc2c706" category="inline-link-macro">設定Snapshot刪除原則</block>
   <block id="a2649cdb2384d3388d38543a8ba844c7" category="cell">請確定用於建立快照的角色具有連結：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper權限已指派]。請確定已建立具有適當存取權限的_csrole_、以供拍攝快照：安全登入角色create -vserver &lt;vservername&gt;-role csrole -cmd dirname "volume snapshot"-access all</block>
@@ -8626,7 +8625,6 @@
   <block id="2855135907eef979db329ca6aebe0464" category="section-title">執行模擬器之前的準則：</block>
   <block id="d786b68b9cf5f686784afa64b69b3bce" category="list-text">請確定加密的檔案不是空白的。</block>
   <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">請務必加密超過50個檔案。少數檔案將會被忽略。</block>
-  <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">請勿多次使用相同的使用者執行攻擊。幾次之後、CS將會學習此使用者行為、並假設這是使用者的正常行為。</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">請勿加密剛建立相同使用者的檔案。變更使用者剛建立的檔案並不視為風險活動。而是使用其他使用者所建立的檔案、或是在建立檔案並加密檔案之間等待數小時。</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">請注意、當在資產上執行多個更新相同評註的規則時、第一個規則（從上而下執行）會套用評註並更新資產、然後套用第二個規則、但不會變更先前規則所設定的任何評註。</block>
@@ -10331,9 +10329,6 @@
   <block id="8771316aacd1c4b06854e0e9f30a545c" category="list-text">攻擊類型（勒索軟體、破壞）和警示ID（由工作負載安全指派）</block>
   <block id="37fa3057780441193fd46b687aef4974" category="paragraph">工作負載安全功能可在偵測到惡意活動時自動擷取快照、確保資料安全備份、進而保護資料安全。</block>
   <block id="106f889ad7fb5a787f85bc5d8d8471ec" category="paragraph">警示與警告會保留13個月。超過13個月的警示和警告將會刪除。如果刪除工作負載安全環境、則與環境相關的所有資料也會一併刪除。</block>
-  <block id="431fef516df90830b5c1c21b6ce07235" category="cell">針對工作負載安全（CS）所拍攝的快照、CS快照是否有清除/歸檔期間？</block>
-  <block id="e6fb05f0da5acc86f543947f4c4e697e" category="cell">在這種情況ONTAP 下、每小時執行一次快照。工作負載安全（CS）快照是否會影響它？CS快照是否會在每小時快照的地方執行？預設的每小時快照是否會停止？</block>
-  <block id="726c7f3f596062ccd907feb3815a05e0" category="cell">工作負載安全快照不會影響每小時快照。CS快照不會佔用每小時的快照空間、而且應該像以前一樣繼續。預設的每小時快照不會停止。</block>
   <block id="dbc12ef69e34122bf8f4ac6b397d0011" category="cell">如果快照數量達到上限、後續的快照拍攝將會失敗、而工作負載安全性會顯示錯誤訊息、指出快照已滿。使用者需要定義Snapshot原則來刪除最舊的快照、否則將無法擷取快照。在不含更新版本的版本中、Volume最多可包含255個Snapshot複本。ONTAP在NetApp 9.4及更新版本中、Volume最多可包含1023個Snapshot複本。ONTAP如ONTAP 需相關資訊、請參閱《VMware產品資料》 <block ref="be93a0e4b8c5168a6ec2dc10f7f34d59" category="inline-link-macro-rx"></block>。</block>
   <block id="58eb0692e2d7399b3579ee5ce166cc58" category="cell">工作負載安全功能完全無法擷取快照。</block>
   <block id="06319d1baa3128a2dcdf122c600b751e" category="cell">在SVM上的舊警示（從工作負載安全性中移除後又重新新增）、快照失敗。對於再次新增SVM之後發生的新警示、會擷取快照。</block>
@@ -11412,4 +11407,7 @@ FAS / AFF 8040
 FAS / AFF 8060
 FAS / AFF 8080</block>
   <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">網路監控與地圖</block>
+  <block id="8d41e3bd6529669109fc47034b6cec4c" category="cell">在這種情況ONTAP 下、每小時執行一次快照。工作負載安全性（ WS ）快照是否會影響它？WS 快照是否會採用每小時快照的位置？預設的每小時快照是否會停止？</block>
+  <block id="9abb3d91142b5821f0ea7a72b15b21d3" category="cell">工作負載安全快照不會影響每小時快照。WS 快照不會佔用每小時的快照空間、因此應該像以前一樣繼續。預設的每小時快照不會停止。</block>
+  <block id="9cdd30f36b5b67d9fc64c9bd48e9fac8" category="list-text">請勿多次使用相同的使用者執行攻擊。幾次之後、工作負載安全性會學習這種使用者行為、並假設這是使用者的正常行為。</block>
 </blocks>

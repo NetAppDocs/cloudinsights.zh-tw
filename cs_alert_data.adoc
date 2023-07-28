@@ -141,7 +141,7 @@ image:CloudSecureChangeAlertStatus.png["變更警示狀態"]
 | 問題： | 試用： 
 
 
-| 在這種情況ONTAP 下、每小時執行一次快照。工作負載安全（CS）快照是否會影響它？CS快照是否會在每小時快照的地方執行？預設的每小時快照是否會停止？ | 工作負載安全快照不會影響每小時快照。CS快照不會佔用每小時的快照空間、而且應該像以前一樣繼續。預設的每小時快照不會停止。 
+| 在這種情況ONTAP 下、每小時執行一次快照。工作負載安全性（ WS ）快照是否會影響它？WS 快照是否會採用每小時快照的位置？預設的每小時快照是否會停止？ | 工作負載安全快照不會影響每小時快照。WS 快照不會佔用每小時的快照空間、因此應該像以前一樣繼續。預設的每小時快照不會停止。 
 
 
 | 如果在不確定的情況下達到最大快照數、會發生什麼情況ONTAP ？ | 如果快照數量達到上限、後續的快照拍攝將會失敗、而工作負載安全性會顯示錯誤訊息、指出快照已滿。使用者需要定義Snapshot原則來刪除最舊的快照、否則將無法擷取快照。在不含更新版本的版本中、Volume最多可包含255個Snapshot複本。ONTAP在NetApp 9.4及更新版本中、Volume最多可包含1023個Snapshot複本。ONTAP如ONTAP 需相關資訊、請參閱《VMware產品資料》 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fvolume__snapshot__autodelete__modify.html["設定Snapshot刪除原則"]。 
