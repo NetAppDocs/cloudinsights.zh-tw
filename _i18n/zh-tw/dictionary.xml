@@ -11025,4 +11025,30 @@ FAS / AFF 8080</block>
   <block id="9453f63a9e7f74d7e4aba2db7d3e1d70" category="cell">VMware vCenter Server 6.7.0 組建編號 10244857 、 VMware vCenter Server 6.7.0 組建編號 14368073 、 VMware vCenter Server 7.0.3 組建編號 19234570 、 VMware vCenter Server 7.0.3 組建編號 20150588 、 VMware vCenter Server 7.0.3 組建編號 20395099 、 VMware vCenter Server 7.0.3 組建編號 20990077 、 VMware vCenter Server 7.0.3 組建編號： 21477706VMware vCenter Server 7.21703-21703-21703-21703-21703-21703-21703-227.0 、 VMware vCenter Server 組建編號： VMware vCenter Server</block>
   <block id="56cae3e29c9acf0337232282d32c85c1" category="cell">VMware vCenter Server 8.0.0 組建 -21709157 、 VMware vCenter Server 7.0.3 組建 -20870699 、 VMware vCenter Server 7.0.3 組建 -20532039</block>
   <block id="c2c46e278a3a0cfb21101adab5aed33b" category="cell">VMware ESXi 6.0.0 build-10719132 、 VMware ESXi 6.0.0 build-2494585 、 VMware ESXi 6.0.0 build-5572656 、 VMware ESXi 6.0.0 build-9313334 、 VMware ESXi 6.5.0 build-14990892 、 VMware ESXi 6.5.0 build-5969303 、 VMware ESXi 7.0.0 build-15843807 、 VMware ESXi 7.0.3 build 1750787 、 VMware vCenter Server 5.5.0 build 2442329 、 VMware vCenter Server 5.5.0 build 3000241 、 VMware vCenter Server 5.5.0 build -3252642 、 VMware vCenter Server 5.5.0 build -372164 、 VMware vCenter Server 5.5.0 build -4180647 、 VMware vCenter Server 5.5.0 build -6516310 、 VMware vCenter Server 5.5.0 build -9911218 、 vCenter Server Server 6.0.0 組建 -5960847 、 VMware vCenter Server 6.0.0 組建 -7924803 、 VMware vCenter Server 6.0.0 組建 -8803875 、 VMware vCenter Server 6.0.0 組建 -9313458 、 VMware vCenter Server 6.5.0 組建 -10964411 、 VMware vCenter Server 6.5.0 組建 -15679215 、 VMware vCenter Server 6.5.0 組建 -17590285 、 VMware vCenter Server 6.539 build -7119157 、 VMware vCenter Server 6.7.0 build -10244857 、 VMware vCenter Server 6.7.0 build -11727113 、 VMware vCenter Server 6.7.0 build -13007421 、 VMware vCenter Server 6.7.0 build -13639324 、 VMware vCenter Server 6.7.0 build -14368073 、 VMware vCenter Server 6.7.0 build 15129973 、 VMware vCenter Server 6.7.0 build 18757397-19279299 、 VMware vCenter Server 、 VMware vCenter Server 、 build 17737-19277-19277-19277-19277-19277-197.0 、 VMware vCenter Server 、 VMware vCenter Server 、 VMware vCenter Server 、 VMware vCenter Server Server 6.7.0 組建 -19832247 、 VMware vCenter Server 6.7.0 組建 -19832280 、 VMware vCenter Server 6.7.0 組建 -20504301 、 VMware vCenter Server 6.7.0 組建 -20504362 、 VMware vCenter Server 6.7.0 組建 -8170161 、 VMware vCenter Server 6.7.0 組建 -9433931 、 VMware vCenter Server 7.0.0 組建 -16620013 、 VMware vCenter Server 7.701-7471-717160 組建版本、 VMware vCenter Server 7.160.2-6170.2-49670 、 VMware vCenter Server 組建版本、 VMware vCenter Server 、 VMware vCenter Server 、 70.2-6170.2-6170.2-49670 、 VMware vCenter Server 組建版本、 VMware build 18455184 、 VMware vCenter Server 7.0.3 build 18700403 、 VMware vCenter Server 7.0.3 build 18778458 、 VMware vCenter Server 7.0.3 build 19234570 、 VMware vCenter Server 7.0.3 build 19480866 、 VMware vCenter Server 7.0.3 build 19717403 、 VMware vCenter Server 7.0.3 build 20051473 、 VMware vCenter Server 7.0.3 build 20150583 、 vCenter Server 7.20150589 、 vCenter Server 7.403-20703-VMware vCenter Server build 84520703-703-20703-VMware vCenter Server 、 VMware vCenter Server 7.403-20703-703-703-20703-703-VMware vCenter Server build 20703-20703-VMware vCenter Server 7.507.507.507.500.3VMware Server 7.0.3 組建 -21784236 、 VMware vCenter Server 7.0.3 組建 -21958406 、 VMware vCenter Server 8.0.0 組建 -20920323 、 VMware vCenter Server 8.0.0 組建 -21216066 、 VMware vCenter Server 8.0.0 組建 -21457384 、 VMware vCenter Server 8.0.1 組建 -21560480 、 VMware vCenter Server 8.0.1 組建編號 21815093 、 VMware vCenter Server 8.0.1 組建編號 21860503</block>
+  <block id="6d6bbe0ff14c220c87649b72d24ad927" category="section-title">2023 年 8 月</block>
+  <block id="2ddfcdc31d5e5de8a48fe5187b0f4eb7" category="section-title">改良功能表</block>
+  <block id="770b665998f011b1710d778c94d090f6" category="paragraph">我們已更新左側導覽功能表、以更好地支援客戶的工作流程。新的頂層項目（例如 _Kubernetes_ ）可加速存取客戶需求、而整合式管理員主控台則可支援租戶擁有者角色。</block>
+  <block id="57480340f42116feeb42f981543cebf6" category="paragraph">以下是一些變更的其他範例：</block>
+  <block id="060ffbae771393c5fa58e497eae200df" category="list-text">頂層的 _Observity_ 功能表會顯示資料探索、警示和記錄查詢</block>
+  <block id="a80be63428550b536ba9127edf7efe52" category="list-text">「 API 存取」功能可用於「可服務性」和「工作負載安全性」、位於單一功能表下</block>
+  <block id="1679e9c88d912350a1ef152cb4c30b3c" category="list-text">同樣地、「可觀察性」和「工作負載安全性」的「通知」功能、現在也在單一功能表下</block>
+  <block id="20575a36219e26edf0e8eff4cdfd93ca" category="inline-image-macro">已更新左側導覽功能表</block>
+  <block id="16b9fc89bf7ba3d8ae2c869378bbf565" category="paragraph"><block ref="16b9fc89bf7ba3d8ae2c869378bbf565" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c25b376d4ad18aade7fe74ca4996ee38" category="paragraph">以下是您可以在每個功能表下找到的功能的簡短清單：</block>
+  <block id="b4263a85713fbbc93aec389b541571a9" category="paragraph">可觀察性：</block>
+  <block id="ab767b7872cc3ea9c0cdd122da02c02b" category="list-text">探索（儀表板、指標查詢、基礎架構洞見）</block>
+  <block id="65f016c7729d8f39ac07154f40a6cc20" category="list-text">警示（監控和警示）</block>
+  <block id="24bc8c583ee815ab0b0fb5674f1f1ae2" category="list-text">收集器（資料收集器和擷取單元）</block>
+  <block id="5bcea4e0bbd8a619bf12b3aa1d579b02" category="list-text">豐富（附註和附註規則、應用程式、裝置解析度）</block>
+  <block id="bc5611c731b034c5f323419d0258aa44" category="paragraph">Kubernetes：</block>
+  <block id="e8c0a21a42b471e499e206f09618332b" category="list-text">叢集探索與網路地圖</block>
+  <block id="d9a678c96702146a2eb5a60f101e495c" category="paragraph">工作負載安全性：</block>
+  <block id="843d2730071ec91250d8f85419275d56" category="list-text">收集器</block>
+  <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">原則</block>
+  <block id="45e6c5ebb3c3cf63a5c792a668b7c38d" category="paragraph">ONTAP 基礎概論：</block>
+  <block id="8566fdf95f40ad545423b5340c581b8e" category="list-text">工作負載
+* VMware</block>
+  <block id="bca37b041da64be838599cd43784ed63" category="paragraph">管理員：</block>
+  <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">API存取</block>
+  <block id="4620823d389a7467f91084ea88f4f104" category="list-text">訂閱資訊</block>
 </blocks>
