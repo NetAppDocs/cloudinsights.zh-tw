@@ -10665,7 +10665,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">污染與容許</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">深入瞭解 Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">編輯 NetApp-monitoring 組態 agentconfiguration 、並將 _dockerMetricCollectionEnabled_ 設為 false 。  如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
@@ -11086,4 +11085,21 @@ g ）在 ONTAP 中開啟防火牆、讓 ONTAP 能夠連線到代理程式方塊�
 8. 確認連接埠 7 已開啟。
 
 9. 如果上述任何一項都無法解決問題、請使用開啟案例 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> 以取得進一步協助。</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">在 _AgentConfiguration_ 中編輯 NetApp-monitoring 組態區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
+
+...
+規格：
+...
+Telegraf ：
+    ...
+     - 名稱： Docker
+            執行模式：
+              –示範
+            替代：
+              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder
+                值： UNIX ： //RUN / Docker 。 sock
+    ...
+...</block>
 </blocks>
