@@ -29,6 +29,54 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+=== 收集 Isilon / PowerScale 記錄和進階分析資料
+
+Isilon REST 和 PowerScale REST 收集器具有下列改良功能：
+
+* Isilon 記錄事件可用於查詢和警示
+* Isilon 進階分析屬性可用於查詢、儀表板和警示：
++
+** emc_isilon 叢集
+** emc_isilon.node
+** emc_isilon.node_disk
+** emc_isilon.net_iface
+
+
+
+
+依預設、 Isilon REST 和 / 或 PowerScale REST 收集器的使用者會啟用這些功能。NetApp 強烈鼓勵 Isilon CLI 型收集器的使用者移轉至新的 REST API 型收集器、以接收上述增強功能。
+
+
+
+=== 改善工作負載對應
+
+工作負載對應更易使用且較不吵雜；如果所有類似的外部服務與相同的工作負載通訊、則會將這些服務群組在一個節點中、以降低圖表的複雜度、並讓您更容易瞭解服務如何互連。
+
+選擇群組節點將會顯示詳細的表格、其中列出與該節點相關的每項外部服務的網路流量計量。
+
+
+
+=== Kubernetes 託管單元使用量調整
+
+如果 Kubernetes 叢集環境中的運算資源同時由 NetApp Kubernetes 監控操作員和基礎基礎架構資料收集器（例如 VMware ）計算、則會調整這些資源的使用量、以確保管理單元的最有效率計算。您可以在「管理」 > 「訂閱」頁面的「摘要」和「使用」標籤中、檢視 Kubernetes MU 調整。
+
+摘要索引標籤：
+image:MU_Adjustments_K8s.png["k8s MU 調整顯示在預估計算機上"]
+
+使用標籤：
+image:MU_Adjustments_K8s_Usage_Tab.png["k8s MU 調整顯示在使用標籤上"]
+
+
+
+=== 收集器 / 擷取變更：
+
+下列資料收集器 / 擷取單元變更已就緒：
+
+* 採購單位現在支援 RHEL 8.7 。
+
+
+
+
 === 改良功能表
 
 我們已更新左側導覽功能表、以更好地支援客戶的工作流程。新的頂層項目（例如 _Kubernetes_ ）可加速存取客戶需求、而整合式管理員主控台則可支援租戶擁有者角色。

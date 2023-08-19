@@ -12912,4 +12912,25 @@ VMware vCenter Server 8.0.0 內部版本 -21457384
 VMware vCenter Server 8.0.1 build -21560480
 VMware vCenter Server 8.0.1 組建編號 21815093
 VMware vCenter Server 8.0.1 組建編號 21860503</block>
+  <block id="88abed0a9fa0fc7ed8be52f2de6d7f8d" category="section-title">收集 Isilon / PowerScale 記錄和進階分析資料</block>
+  <block id="93fa5fa7b7ca64e0109bdf3bfcc7c80d" category="paragraph">Isilon REST 和 PowerScale REST 收集器具有下列改良功能：</block>
+  <block id="6bfe1d5f79aa2a34935e35f4ad9f09c4" category="list-text">Isilon 記錄事件可用於查詢和警示</block>
+  <block id="c5922f5c7421c7ae70b97241261d79fa" category="list-text">Isilon 進階分析屬性可用於查詢、儀表板和警示：</block>
+  <block id="055ffc0f204dd9571932f105cc192d97" category="list-text">emc_isilon 叢集</block>
+  <block id="cc6fab0cd00772a7953b679fc832724f" category="list-text">emc_isilon.node</block>
+  <block id="30c0414214be11c59b1aa207a90a8b3d" category="list-text">emc_isilon.node_disk</block>
+  <block id="2f6871a6b3a926d4a14c71d0a97a5c03" category="list-text">emc_isilon.net_iface</block>
+  <block id="89dff3ed7503a715bcf83455f5951412" category="paragraph">依預設、 Isilon REST 和 / 或 PowerScale REST 收集器的使用者會啟用這些功能。NetApp 強烈鼓勵 Isilon CLI 型收集器的使用者移轉至新的 REST API 型收集器、以接收上述增強功能。</block>
+  <block id="f1c89ccf6bd41e321d0a5a4570ccbd41" category="section-title">改善工作負載對應</block>
+  <block id="406a6589551ad505a8c76df3da8e6d33" category="paragraph">工作負載對應更易使用且較不吵雜；如果所有類似的外部服務與相同的工作負載通訊、則會將這些服務群組在一個節點中、以降低圖表的複雜度、並讓您更容易瞭解服務如何互連。</block>
+  <block id="f2f7479271c7e3bd1526b7c962cfd1b6" category="paragraph">選擇群組節點將會顯示詳細的表格、其中列出與該節點相關的每項外部服務的網路流量計量。</block>
+  <block id="ec9c27a1c2d5a1d4769d15b48868bdaf" category="section-title">Kubernetes 託管單元使用量調整</block>
+  <block id="5e232fe3a0e64ea5b8742398f66c956c" category="paragraph">如果 Kubernetes 叢集環境中的運算資源同時由 NetApp Kubernetes 監控操作員和基礎基礎架構資料收集器（例如 VMware ）計算、則會調整這些資源的使用量、以確保管理單元的最有效率計算。您可以在「管理」 &gt; 「訂閱」頁面的「摘要」和「使用」標籤中、檢視 Kubernetes MU 調整。</block>
+  <block id="16cc34ec25ef5292c49b7fcf27d01385" category="inline-image-macro">k8s MU 調整顯示在預估計算機上</block>
+  <block id="9740da1fe13081b9e8603e12c24f457b" category="paragraph">摘要索引標籤：
+<block ref="f2ff1c7008221f157f7e2a4df38ba4f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="465299d39a69339fb8fc976919bdf64f" category="inline-image-macro">k8s MU 調整顯示在使用標籤上</block>
+  <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">使用標籤：
+<block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">採購單位現在支援 RHEL 8.7 。</block>
 </blocks>
