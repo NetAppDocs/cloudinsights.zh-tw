@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
 summary: 概述功能概述中的資產頁面摘要區段Cloud Insights 。 
-keywords: asset, summary, landing page, topology 
+keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = 資產頁摘要區段
 :toc: macro
@@ -20,6 +20,8 @@ keywords: asset, summary, landing page, topology
 
 [role="lead"]
 資產頁面的「摘要」區段會顯示資產的一般資訊、包括是否有任何指標或效能原則值得關注。潛在問題區域會以紅色圓圈表示。
+
+摘要區段中的資訊、以及資產頁面上的任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。您可以在「摘要」區段右上角看到目前的重新整理速度、表格和任何自訂 Widget 。
 
 image:Summary_Section_Example.png[""]
 

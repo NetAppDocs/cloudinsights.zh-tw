@@ -3824,7 +3824,6 @@
   <block id="730fe644f1d87eaec727a65945705b30" category="section-title">解決裝置問題</block>
   <block id="27a216601981d13fcf078fa6774638a5" category="summary">資產頁面的「專家檢視」區段是疑難排解或監控的強大工具。</block>
   <block id="b7020f7cb2b885f482e520e38265e6b0" category="doc">專家檢視</block>
-  <block id="6769810373d64f6178c70417f3100129" category="paragraph">資產頁面的「專家檢視」區段可讓您根據效能圖表中所選時間週期的任何適用指標、以及任何相關資產、來檢視基礎資產的效能範例。</block>
   <block id="a095544b81060891734744ad5bd2a5c3" category="section-title">使用「專家檢視」區段</block>
   <block id="62329137e14077120c0de9e866ecae4b" category="paragraph">以下是儲存資產頁面中「專家檢視」區段的範例：</block>
   <block id="beaa4bde61b31a115ee598bebfa3f120" category="inline-image-macro">專家檢視範例</block>
@@ -12933,4 +12932,7 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">使用標籤：
 <block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">採購單位現在支援 RHEL 8.7 。</block>
+  <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">資產頁面的「專家檢視」區段可讓您根據效能圖表中所選時間週期的任何適用指標、以及任何相關資產、來檢視基礎資產的效能範例。  取得資料收集器輪詢和更新資料時、圖表中的資料會自動重新整理。</block>
+  <block id="05c3e307f6dc616e1f39e3e2b33522d0" category="paragraph">資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理速度會顯示在「摘要」區段的右上角、以及頁面上的任何相關表格或 Widget 。</block>
+  <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要區段中的資訊、以及資產頁面上的任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。您可以在「摘要」區段右上角看到目前的重新整理速度、表格和任何自訂 Widget 。</block>
 </blocks>

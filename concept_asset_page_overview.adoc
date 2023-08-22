@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_page_overview.html 
 summary: 大多數物件類型都能顯示資產頁面。 
-keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric 
+keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric, refresh 
 ---
 = 資產頁面總覽
 :toc: macro
@@ -69,6 +69,8 @@ keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtua
 
 
 自訂時間範圍可讓您選擇最多連續31天。您也可以設定此範圍的開始時間和結束時間。預設的開始時間為所選第一天的上午12：00、預設的結束時間為所選最後一天的下午11：59。按一下「套用」將會將自訂時間範圍套用至資產頁面。
+
+資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理速度會顯示在「摘要」區段的右上角、以及頁面上的任何相關表格或 Widget 。
 
 
 

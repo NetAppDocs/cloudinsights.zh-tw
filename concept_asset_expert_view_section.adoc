@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
 summary: 資產頁面的「專家檢視」區段是疑難排解或監控的強大工具。 
-keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
+keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = 專家檢視
 :toc: macro
@@ -19,7 +19,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 [role="lead"]
-資產頁面的「專家檢視」區段可讓您根據效能圖表中所選時間週期的任何適用指標、以及任何相關資產、來檢視基礎資產的效能範例。
+資產頁面的「專家檢視」區段可讓您根據效能圖表中所選時間週期的任何適用指標、以及任何相關資產、來檢視基礎資產的效能範例。  取得資料收集器輪詢和更新資料時、圖表中的資料會自動重新整理。
 
 
 
