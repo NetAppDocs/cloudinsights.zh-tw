@@ -6082,7 +6082,6 @@
   <block id="f0865641bccffbd295dc7ee0faaa36e6" category="cell">Hypervisor的系統管理員使用者名稱</block>
   <block id="6b0e1ba821d4c57e9bb878372d7ac447" category="cell">Hypervisor密碼</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">更新功能Cloud Insights 。</block>
-  <block id="92589af47923f82dcbca7ca5709f1005" category="doc">功能介紹Cloud Insights</block>
   <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022年4月</block>
   <block id="259a90b9586b985b7c26543c1f883472" category="section-title">分享您的意見！</block>
   <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">*立即註冊*</block>
@@ -12935,4 +12934,5 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">資產頁面的「專家檢視」區段可讓您根據效能圖表中所選時間週期的任何適用指標、以及任何相關資產、來檢視基礎資產的效能範例。  取得資料收集器輪詢和更新資料時、圖表中的資料會自動重新整理。</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要區段中的資訊、以及資產頁面上的任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。您可以在「摘要」區段右上角看到目前的重新整理速度、表格和任何自訂 Widget 。</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理率會顯示在「摘要」區段的右上角、以及頁面上任何相關的表格或小工具上。</block>
+  <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insights 的新功能</block>
 </blocks>
