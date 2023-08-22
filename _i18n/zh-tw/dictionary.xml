@@ -12933,6 +12933,6 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
 <block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">採購單位現在支援 RHEL 8.7 。</block>
   <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">資產頁面的「專家檢視」區段可讓您根據效能圖表中所選時間週期的任何適用指標、以及任何相關資產、來檢視基礎資產的效能範例。  取得資料收集器輪詢和更新資料時、圖表中的資料會自動重新整理。</block>
-  <block id="05c3e307f6dc616e1f39e3e2b33522d0" category="paragraph">資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理速度會顯示在「摘要」區段的右上角、以及頁面上的任何相關表格或 Widget 。</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要區段中的資訊、以及資產頁面上的任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。您可以在「摘要」區段右上角看到目前的重新整理速度、表格和任何自訂 Widget 。</block>
+  <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理率會顯示在「摘要」區段的右上角、以及頁面上任何相關的表格或小工具上。</block>
 </blocks>
