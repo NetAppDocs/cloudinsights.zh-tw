@@ -12935,4 +12935,5 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要區段中的資訊、以及資產頁面上的任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。您可以在「摘要」區段右上角看到目前的重新整理速度、表格和任何自訂 Widget 。</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理率會顯示在「摘要」區段的右上角、以及頁面上任何相關的表格或小工具上。</block>
   <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insights 的新功能</block>
+  <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
 </blocks>
