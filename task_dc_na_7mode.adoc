@@ -216,4 +216,4 @@ NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.htm
 
 | 「無法連線至vFiler」錯誤 | 請檢查取得的使用者功能至少包括下列項目：API-* SECNTIA-API-VFiler login-http-admin確認檔案管理器執行的是最小ONTAPI 1.7版。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

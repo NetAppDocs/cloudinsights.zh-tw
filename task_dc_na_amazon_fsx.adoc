@@ -149,4 +149,4 @@ summary: 適用於NetApp ONTAP 的Amazon FSX資料蒐集器
 
 | 其他連線錯誤：ZAPI回應的錯誤代碼為13001、「資料庫未開啟」ZAPI錯誤代碼為60、回應包含「API未按時完成」ZAPI回應包含「initialize_session（）傳回的空環境」ZAPI錯誤代碼為14007、回應包含「節點不健全」 | 檢查網路、連接埠號碼和IP位址。使用者也應該嘗試從AU機器的命令列執行命令。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

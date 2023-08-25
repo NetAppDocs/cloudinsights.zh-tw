@@ -162,4 +162,4 @@ summary: 設定NetApp HCI 功能：功能：
 
 | 錯誤：IP上的VirtualCenter具有不符合JVM要求的憑證 | 可能的解決方案：*建議：使用更強大的功能（例如 1024位元）RSA金鑰。*不建議：修改JVM java.security組態、以利用限制JDK.certpath.disabledAlgorith數 來允許512位元RSA金鑰。請參閱位於的《JDK 7 update 40 Release Notes（英文） "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

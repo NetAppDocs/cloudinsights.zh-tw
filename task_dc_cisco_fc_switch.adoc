@@ -188,4 +188,4 @@ summary: 設定Cisco MDS Fablic交換器資料收集器。
 
 | 錯誤：SNMP v1不支援效能擷取 | •編輯資料來源並停用交換器效能•修改資料來源和交換器組態以使用SNMP v2或更新版本 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

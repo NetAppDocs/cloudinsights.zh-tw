@@ -123,4 +123,4 @@ Dell EMC Unity（前身為VNXe）資料收集器可為VNXe統一化儲存陣列�
 
 | 「無法執行外部公用程式」、並顯示錯誤訊息「無法找到Unefactable uemcli」 | *驗證IP位址、使用者名稱和密碼是否正確*確認Unere推出 的CLI已安裝在Cloud Insights 更新資料來源組態中*確認Uner主機CLI安裝目錄正確*確認VNXe的IP在資料來源組態中正確無誤。從「RealM擷 取單元」開啟CMD並變更至設定的安裝目錄：$｛InstallLDIR。Cloud Insights輸入uemcli -d <your ip>-u <your ID>/sys/aproomed show、嘗試連線VNXe裝置 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

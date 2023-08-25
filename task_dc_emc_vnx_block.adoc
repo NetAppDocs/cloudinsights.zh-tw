@@ -138,4 +138,4 @@ naviseccli.exe -h <IP位址>-user <user>-password <password>-scield <scoe.use 0 
 
 | 錯誤：不支援的組態-無光纖通道連接埠 | 裝置未設定任何光纖通道連接埠。目前僅支援FC組態。驗證是否支援此版本/韌體。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

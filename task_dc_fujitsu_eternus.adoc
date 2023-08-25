@@ -108,4 +108,4 @@ Fujitsu Eternus資料收集器會使用管理層級的儲存系統存取權來�
 
 | 出現錯誤訊息「無法建立與儲存設備的SSH連線」或「無法建立與VirtualCenter的連線」的「連線錯誤」 | 可能原因：*認證不正確。* IP位址不正確。*網路問題。*儲存設備可能當機或無回應。可能的解決方案：*驗證輸入的認證資料和IP位址。*嘗試使用SSH用戶端與儲存設備通訊。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

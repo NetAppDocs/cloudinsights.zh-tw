@@ -130,4 +130,4 @@ IBM SAN Volume Controller（SVC）資料收集器會使用SSH收集庫存與效�
 
 | 錯誤：「無法起始命令、因為命令並未在組態節點上執行。」 | 必須在組態節點上執行命令。 
 |===
-如需此資料收集器的其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需此資料收集器的其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

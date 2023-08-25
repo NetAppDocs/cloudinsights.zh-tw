@@ -114,4 +114,4 @@ summary: 設定Pure Storage資料收集器。
 
 | 「無效的登入認證資料」、並顯示錯誤訊息「Policy Not Allow（原則不允許）」或「you are not authorized（您未獲授權）」 | 透過Pure http介面驗證Pure使用者帳戶和密碼 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

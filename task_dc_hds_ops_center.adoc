@@ -122,4 +122,4 @@ summary: 設定HDS Ops Center資料收集器。
 
 | 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為300。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

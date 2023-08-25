@@ -129,4 +129,4 @@ IBM DS（CLI）資料收集器支援DS6xxx和DS8xxx裝置的庫存和效能資�
 
 | 錯誤：*無法執行程式*執行命令時發生錯誤 | * Cloud Insights 從「收購單元」中、在CLI的主目錄/Lib中開啟CMD * Open CLI/CFX檔案、然後檢查屬性Java_install、編輯值以符合您的環境*顯示此機器上安裝的Java版本、輸入： 「Java -version」* Ping發出CLI命令中指定的IBM Storage裝置IP位址。*如果以上皆正常運作、請手動執行CLI命令 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

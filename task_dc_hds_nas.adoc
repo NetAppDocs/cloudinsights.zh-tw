@@ -112,4 +112,4 @@ Hitachi Vantara NAS資料收集器是一種庫存與組態資料收集器、可�
 
 | 連線時發生「錯誤」或「登入認證無效」、並顯示錯誤訊息「無法與裝置通訊：」 | *檢查IP位址*檢查使用者名稱和密碼*確認與替代SSH用戶端的連線 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

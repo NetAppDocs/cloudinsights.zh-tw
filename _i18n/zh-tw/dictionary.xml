@@ -1070,7 +1070,6 @@
   <block id="f9cba995b86ac6c96d9d30c9ced7c828" category="cell">陣列控制器的IP位址和/或完整網域名稱</block>
   <block id="123823c1c5909eba4c00c4d8585c250f" category="cell">預設為30分鐘</block>
   <block id="28d14a9ee241f7011a6670c176790bf0" category="cell">效能意見調查間隔長達3、600秒</block>
-  <block id="aec2bde654bf8419f40a1a37b865d3df" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="de8c15fa89e8678b9bf3103b3af983de" category="summary">如何將查詢結果匯出至.csv檔案</block>
   <block id="d33a32a045d2f8fd982e5d3bf3425615" category="doc">將查詢結果匯出至.CSV檔案</block>
   <block id="a28f8ea31869026f095819f05219285b" category="paragraph">您可以將任何查詢的結果匯出至.CSV檔案、以便分析資料或將其匯入其他應用程式。</block>
@@ -12936,4 +12935,6 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">資產頁面摘要區段中的資訊、以及頁面上任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。目前的重新整理率會顯示在「摘要」區段的右上角、以及頁面上任何相關的表格或小工具上。</block>
   <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insights 的新功能</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
 </blocks>

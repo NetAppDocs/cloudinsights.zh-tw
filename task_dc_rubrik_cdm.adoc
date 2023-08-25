@@ -102,4 +102,4 @@ summary: 設定Rubrik CDM資料收集器。
 
 | 我收到磁碟API傳回更多資料的警告 | 請洽詢支援部門以取得額外資料。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

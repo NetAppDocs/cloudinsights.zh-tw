@@ -172,4 +172,4 @@ VMware使用Dell EMC Isilon / PowerScale REST資料收集器、從Dell EMC Isilo
 
 | 出現錯誤訊息「Command <your command> run f失敗with permissions:<your current permission>（命令<您的命令>運行失敗並取得許可：<您目前的權限>）」的「InternalSudo命令執行權限問題」 | 確認使用者具有Sudo權限、可在裝置上執行下列命令 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

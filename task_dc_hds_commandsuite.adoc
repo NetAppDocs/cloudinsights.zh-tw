@@ -262,4 +262,4 @@ Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Devic
 
 | 錯誤：*未在Storage Navigator模組化2 CLI中登錄陣列*未在Storage Navigator模組化2 CLI中登錄組態錯誤：Storage Array未在StorageNavigator模組化CLI中登錄 | *開啟命令提示字元並將目錄變更為設定的路徑*執行命令「set=STONAVM_home=」。 *執行命令「auunitref"*確認命令輸出包含IP陣列的詳細資料*如果輸出未包含陣列詳細資料、請使用Storage Navigator CLI登錄陣列： -開啟命令提示字元並將目錄變更為已設定的路徑-執行命令「set=STONAVM_home=」。 -執行命令「auunitaddauto -ip ${IP}」。以實際IP取代$｛IP｝ 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

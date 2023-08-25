@@ -126,4 +126,4 @@ OpenStack（REST API / KVM）資料收集器會擷取所有OpenStack執行個體
 
 | 「組態錯誤」、錯誤訊息開頭為「原則不允許」或「您未獲授權」 | *檢查IP位址*檢查使用者名稱和密碼 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

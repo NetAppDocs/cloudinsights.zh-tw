@@ -166,4 +166,4 @@ Cloud Insightst向VPLEX資料收集器取得下列庫存資訊。對於所取得
 
 | 錯誤：沒有來自Director的效能資料報告 | •檢查系統效能監視器是否正確執行•請聯絡EMC支援部門、以啟用系統效能監視器記錄檔的更新 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

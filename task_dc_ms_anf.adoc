@@ -80,4 +80,4 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-ser
 * 如果讀取器存取導致效能集合失敗、請嘗試在資源群組層級授予參與者存取權。
 
 
-如需此資料收集器的其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需此資料收集器的其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
