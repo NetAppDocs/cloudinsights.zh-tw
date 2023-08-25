@@ -493,4 +493,4 @@ Windows：
 
 | 我已經安裝了代理程式、但沒有使用Cloud Insights 這個安裝程式 | 移除先前的代理程式並執行Cloud Insights 安裝程序、以確保預設的組態檔設定正確無誤。完成後、按一下*繼續*或*完成*。 
 |===
-如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["資料收集器支援對照表"]。
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

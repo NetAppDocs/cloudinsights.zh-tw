@@ -79,7 +79,6 @@
   <block id="d3fb13aa93c07b18952569ac666e58a4" category="cell">* Cloud Insights 從「收購單元」中、在CLI的主目錄/Lib中開啟CMD * Open CLI/CFX檔案、然後檢查屬性Java_install、編輯值以符合您的環境*顯示此機器上安裝的Java版本、輸入： 「Java -version」* Ping發出CLI命令中指定的IBM Storage裝置IP位址。*如果以上皆正常運作、請手動執行CLI命令</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="inline-link-macro">支援</block>
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">資料收集器支援對照表</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="137b3f649398a1f9fa1259c39d880c93" category="summary">利用此解決方法、即可與監控和報告系統等其他應用程式整合。Cloud Insights</block>
   <block id="2be3c4c4132fe06361d81b1c1784eac3" category="doc">部分API Cloud Insights</block>
   <block id="551279e83d2a3c07e1a53609f28238f1" category="paragraph">利用此解決方案、NetApp客戶和獨立軟體廠商（ISV）可以將支援功能與其他應用程式（例如CMDB或其他票務系統）整合。Cloud Insights Cloud Insights</block>
@@ -190,7 +189,6 @@
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">設定NetApp Cloud Connection以供ONTAP 採用NetApp 9.9以上資料收集器</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">NetApp Cloud Connection for ONTAP NetApp 9.9以上資料收集器</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS</block>
-  <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="74e0a2e3755eeebe63a75f28fcd4310c" category="doc">匯入附註</block>
   <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">包含API、可從CSV檔案匯入註釋或應用程式、並將其指派給您指定的物件。Cloud Insights</block>
   <block id="6ea19b77fdbbe887a195870f5398f21f" category="admonition">此功能可在*《*》《*》《*》《*》《*》《*》《* Cloud Insights Cloud Insights</block>
@@ -5454,7 +5452,6 @@
   <block id="533e65443960283ff24073ad80db0e3d" category="paragraph"><block ref="533e65443960283ff24073ad80db0e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c52cf8dba7f709e8910813b93418d94" category="section-title">資料收集器支援對照表Cloud Insights</block>
   <block id="d59e2e05079f7c9c24f5bbba7c6e3547" category="inline-link-macro">* Cloud Insights 《資料收集器支援對照表》*、角色=「外部」</block>
-  <block id="34a28f543ea4981287965bd3ea1448ef" category="paragraph">您可以在中檢視或下載支援的資料收集器相關資訊與詳細資料 <block ref="4928518ab1eaba703f07b7f823f64b48" category="inline-link-macro-rx"></block>。</block>
   <block id="b69df43565e372517a8522587f62a492" category="paragraph">您必須先設定下列項目、才能開始收集資料：</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">工作</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="cell">相關資訊</block>
@@ -12937,4 +12934,5 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中檢視或下載支援的資料收集器相關資訊與詳細資料 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
 </blocks>
