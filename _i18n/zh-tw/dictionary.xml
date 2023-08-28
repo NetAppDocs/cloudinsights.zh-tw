@@ -8419,9 +8419,6 @@
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">利用支援功能、您可在環境中突顯資料點和趨勢、並可輸入任何有效的電子郵件地址作為警示收件者。Cloud Insights Cloud Insights如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">簽署的Checksum檔案（結尾為sh256.signed或sh256.ps1）</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安裝代理程式時、會在機器上建立本機使用者_cssy__和本機群組_cssy__。如果權限設定不允許建立本機使用者、而需要Active Directory、則必須在Active Directory伺服器中建立使用者名稱為_cssy__的使用者。</block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用Cloud Insights NetApp ONTAP 的「資料流遙測」來設定功能</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 資料流遙測</block>
-  <block id="458a37db2666885e234720ccdea58253" category="paragraph">如需最新資訊、請參閱 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 資料收集器頁面。</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">請參閱本指南</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_\https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
   <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">整合ONTAP 了功能完善的勒索軟體保護功能</block>
@@ -12935,4 +12932,11 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中檢視或下載支援的資料收集器相關資訊與詳細資料 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要檢視的集合體</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您所監控的叢集包含的自訂資源沒有 ClusterRole <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 &lt;namespace&gt; 附加權限 _</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
+  <block id="2420d7dae924d9613e0f888211903abc" category="cell">請務必遵循中的步驟 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> 上一節。</block>
 </blocks>
