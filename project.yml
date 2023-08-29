@@ -245,8 +245,6 @@ sidebar:
       url: "/cs_automated_response_policies.html"
     - title: 不受依賴的勒索軟體保護整合ONTAP
       url: "/concept_cs_integration_with_ontap_arp.html"
-    - title: ONTAP 存取遭拒整合
-      url: "/concept_ws_integration_with_ontap_access_denied.html"
     - title: 封鎖使用者存取
       url: "/cs_restrict_user_access.html"
     - title: 模擬勒索軟體攻擊
