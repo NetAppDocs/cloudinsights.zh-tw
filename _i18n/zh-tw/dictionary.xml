@@ -12932,11 +12932,24 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中檢視或下載支援的資料收集器相關資訊與詳細資料 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要檢視的集合體</block>
-  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您所監控的叢集包含的自訂資源沒有 ClusterRole <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。</block>
-  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 &lt;namespace&gt; 附加權限 _</block>
-  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
-  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
-  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
-  <block id="2420d7dae924d9613e0f888211903abc" category="cell">請務必遵循中的步驟 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> 上一節。</block>
+  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
+  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">與 ONTAP 存取整合遭拒</block>
+  <block id="c1aef2a1ae85a8f2d2f2972297da3d60" category="paragraph">ONTAP 存取遭拒功能會在 NAS （ NFS 和 SMB ）環境中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知、特別是在安全性相關失敗的情況下、將有助於在早期階段封鎖內部攻擊。</block>
+  <block id="b849ca242cbc590016b269c1ee91cc29" category="paragraph">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
+  <block id="5b3261ec26222327253513a1f5b85ba6" category="list-text">最低 ONTAP 版本： 9.13.0</block>
+  <block id="7238e9f6faa9a8bf2a1c0b55cb039588" category="list-text">「拒絕存取」功能預設為停用。工作負載安全管理員可以在新增收集器或編輯現有收集器時啟用此功能。若要啟用、請在工作負載安全性 &gt; 收集器中、新增或編輯所需的收集器、然後勾選進階組態下的監控存取遭拒事件 _ 核取方塊。</block>
+  <block id="a808fab09e2c9ae5a63f5e049dab0688" category="inline-image-macro">啟用拒絕存取</block>
+  <block id="6dbaec8d589ae936fddaa5da8e4136bc" category="paragraph"><block ref="6dbaec8d589ae936fddaa5da8e4136bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccce4bc08fadbf62adda903ef18b3a71" category="paragraph">如果使用叢集管理認證新增收集器、則不需要新的權限。</block>
+  <block id="7e94086884e2780e5b6c9f81ac89dc5b" category="paragraph">如果使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟授予工作負載安全性權限、以便向 ONTAP 註冊存取遭拒事件。</block>
+  <block id="fe6df009bfa9d725b811d49cdb8b4e7c" category="paragraph">對於具有叢集認證的 _CsUser_ 、請從 ONTAP 命令列執行下列命令：</block>
+  <block id="02efd7604209ddbbd8e84d4f61b73a6e" category="paragraph">對於具有 SVM 認證的 _CsUser_ 、請從 ONTAP 命令列執行下列命令：</block>
+  <block id="18eb08209dff281929039b467a472f31" category="paragraph">注意：在上述命令中、 _csrole_ 是自訂角色、而 _CsUser_ 則是 ONTAP 自訂使用者。</block>
+  <block id="d0aae2eaa03ecabb8c086f9955d726c7" category="section-title">存取遭拒事件範例</block>
+  <block id="428ed0ed1c01699e6322b706684fdb11" category="paragraph">「拒絕存取」事件範例將如下圖所示。您也可以在 _ 所需活動 _ 欄下、查看使用者遺失的特定作業所需權限清單、您可以選擇性地顯示這些權限。</block>
+  <block id="d41ccaf6090623996b7a77e9f74f06bf" category="inline-image-macro">拒絕存取範例事件</block>
+  <block id="66dcd3eccaf1048a46b7727780eeb9cd" category="inline-image-macro">拒絕存取顯示「拒絕活動」欄的範例事件</block>
+  <block id="143f93c0a250d7b4c81e78e2cb154211" category="paragraph"><block ref="ee0b481ebed31d6775d42686b376f648" category="inline-image-macro-rx" type="image"></block>
+<block ref="f913a701b0e25c9f7bd9dfbc47afd16c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP 存取遭拒整合</block>
 </blocks>
