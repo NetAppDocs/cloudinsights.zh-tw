@@ -205,7 +205,7 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: 架構表格
       url: "/reference_schemas.html"
-  - title: 儲存工作負載安全性
+  - title: 工作負載安全
     entries:
     - title: 關於工作負載安全性
       url: "/cs_intro.html"
