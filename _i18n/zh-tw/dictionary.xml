@@ -9763,7 +9763,6 @@
   <block id="8d490c030112e962535224e18e452ee2" category="paragraph">如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以便從ONTAP Sfor收集與Arp相關的資訊。</block>
   <block id="56684562f1f82eb99e69650845acd6ad" category="paragraph">如果SVM未受工作負載安全性監控、但ONTAP 有由效益管理系統產生的ARP事件、則工作負載安全系統仍會接收並顯示這些事件。但是、與警示相關的鑑識資訊以及使用者對應將不會被擷取或顯示。</block>
   <block id="bd8fcf14aeb2fa880d8470e2c4fee0a5" category="cell">當將「偵測到的勒索軟體事件」傳送至「VMware工作負載安全性」（亦即「工作負載安全性」）時、就會傳送電子郵件Cloud Insights ONTAP 。此活動包含攻擊清單及其時間戳記。工作負載安全性UI會顯示第一個受攻擊檔案的警示時間戳記。將特定數量的檔案編碼後、將偵測到的_r勒索 軟體事件傳送至VMware Cloud Insights ONTAP 。因此、在UI中顯示警示的時間與電子郵件傳送的時間可能有所不同。</block>
-  <block id="8d480c386a79b0bc67bd88ac44cd794f" category="sidebar">儲存工作負載安全性</block>
   <block id="9655cd831b69781db448703e74b15bf4" category="sidebar">關於工作負載安全性</block>
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">工作負載安全入門</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">設定工作負載安全代理程式</block>
@@ -11006,125 +11005,6 @@ Telegraf ：
     ...
 ...</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">此資料收集器支援的機型和版本：</block>
-  <block id="7ab5521b32fba28cefe0f978f2a356cb" category="cell">3.1.1 （ MU1 ）
-3.1.1 （ MU1 ） P10
-3.1.2 （ MU3 ） P16
-3.1.3 （ MU1 ） P07
-3.1.3 （ MU2 ）
-3.1.3 （ MU3 ）
-3.2.1 （ MU3 ） P17
-3.2.1 （ MU5 ） P49
-3.2.2 （ MU2 ） P14
-3.2.2 （ MU4 ） P56
-3.2.2 （ MU6 ） P96
-3.2.2 （ MU6 ） P99
-3.2.2 P03
-3.3.1 （ MU1 ） P09
-3.3.1 （ MU2 ） P30
-3.3.1 （ MU2 ） P32
-3.3.1 （ MU5 ） P126
-3.3.1 （ MU5 ） P132
-3.3.2 （ MU1 ）
-3.3.2 （ MU1 ） P04
-3.3.2 P01
-4.4.1 版本類型：標準支援版本
-4.5.11 版本類型：延伸支援版本
-4.5.3 版本類型：延伸支援版本
-4.5.7 版本類型：延伸支援版本
-9.5.8 版本類型：延伸支援版本
-P02
-P04
-P05
-P08
-P09
-第 103 頁
-第 106 頁
-P107-
-P11
-P111.
-P113
-P115
-P118
-P119
-P127.
-第 13 頁
-P131.
-P132.
-P133.
-P135
-P138
-P139
-P140
-第 141 頁
-P142.
-P146.
-P148
-P149.
-P15
-P150
-P151.
-P152
-P153.
-P154.
-P155
-P156.
-P157)
-P160
-P161.
-p162,
-P164.
-P165.
-P166.
-P167.
-P168.
-P170
-第 172 頁
-P173
-P175)
-P177.
-P18
-P180
-第 19 頁
-P22
-P23
-P25
-第 27 頁
-第 29 頁
-P30
-P32
-P34
-第 36 頁
-P37
-P39
-P40
-第 41 頁
-P42
-P45
-第 48 頁
-P49
-P50
-P51
-第 52 頁
-第 53 頁
-P56
-P57
-P59
-P60
-P70
-第 71 頁
-P72
-P73
-P75
-第 76 頁
-第 78 頁
-P80
-第 85 頁
-P90
-P93
-P94
-第 96 頁
-P98
-P99</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
 HPE_3PAR 20800
@@ -11548,26 +11428,6 @@ v8.0.0.7
 v8.1.2.0
 v8.2.2.0</block>
   <block id="1637df9cd961b86fbeb0fabf80ba05a6" category="cell">EMC Isilon 和 PowerScale REST API</block>
-  <block id="5dde3b080c893187156e20414f9764d5" category="cell">A200
-解答 2000
-A300
-F200
-F800
-F900
-H400
-H500
-H600
-H700
-來自 syslogd@ersk 的訊息
-NL400
-NL410
-S210
-模擬器
-X200
-X210
-X400
-X410
-infinimal_hba_bay 至裝置：無 DA 裝置密碼 7.</block>
   <block id="89555faebdb0be850c8096d96c21889b" category="cell">9.1.0.10
 9.1.0.12
 9.1.0.16
@@ -11620,8 +11480,6 @@ PowerStore 9200T</block>
 5.1.sp4.p3(h.109)
 5.1.SP4.P4 （ h.97 ）</block>
   <block id="5ea93ac7e9175685461a3aa7ecd6678d" category="cell">RecoverPoint REST API</block>
-  <block id="9ecd3117b1265682a0ebf5bfab4e6f3a" category="cell">2.5.
-3.5.</block>
   <block id="d10754452cfaa4a1e9127718e2623244" category="cell">R2_6.11000.113
 R2_6.11000.115
 R3_0.1400.101
@@ -11629,29 +11487,6 @@ R3_5.1200.104
 R3_6.500.113
 R3_6.700.103</block>
   <block id="ef2bf1c7f778e627ac9f8b235393cefc" category="cell">EMC ScaleIO 與 PowerFlex REST API</block>
-  <block id="ddf9e700baf694bd0e06ea3257f1a7f3" category="cell">v10.0.0.0
-v10.0.1.0
-v7.6.2.67
-V8.3.0.22
-V8.3.0.6
-v8.4.0.7
-v8.4.0.9
-v9.1.0.18
-v9.1.0.5
-v9.1.0.6
-v9.2.0.0
-v9.2.1.0
-v9.2.1.1
-v9.2.1.2
-v9.2.2.0
-v9.2.3.0
-v9.2.3.1
-v9.2.3.4
-v9.2.3.5
-v9.2.3.6
-v9.2.4.1
-v9.2.4.2
-無法使用</block>
   <block id="ced36b4cd1a263f511a018469d008a9a" category="cell">DMX3-24
 DMX424
 PMax2000
@@ -11737,10 +11572,6 @@ VMAX950F</block>
 6079.125.0 建置 53 、建置 53
 6079.175.0 組建 0 組建 0</block>
   <block id="248a2ada600649dd9a0defecae5a2871" category="cell">Dell Unisphere API</block>
-  <block id="9fce28a0e666c8b62bc169497c0f3166" category="cell">7.1.76-4.
-7.1.80-3.
-7.33
-8.1.9-232</block>
   <block id="650583531a5dada75e2debcf9178eb89" category="cell">VNX5300
 VNX5400
 VNX5700
@@ -12117,12 +11948,6 @@ F6304</block>
 7.0.14.20</block>
   <block id="47f7060be7cf2bba280a7fc28fd9a923" category="cell">Infinidat REST API</block>
   <block id="ec736ea56f7a370661ecd61258754f69" category="cell">Microsoft Azure 運算 REST API</block>
-  <block id="e6dd9171dfadb6c8f73da254cca36935" category="cell">ONTAPI 版本 =1.1.
-ONTAPI 版本 =1.14
-ONTAPI 版本 =1.17
-ONTAPI 版本 =1.19
-ONTAPI 版本 =1.20
-ONTAPI 版本 =1.21</block>
   <block id="f3cb24609643314e7a0326c5f8011a9e" category="cell">FAS2040
 FAS2050
 FAS2220
@@ -12175,226 +12000,7 @@ Data ONTAP 8.2.5 版 7-Mode</block>
   <block id="b25d1f10591ecf26b3978de4f3228bc7" category="cell">NetApp 7 模式 ZAPI</block>
   <block id="837e5317f8f1d06276bea49ab62e99d9" category="cell">ZAPI</block>
   <block id="63713dccbc1364b72d1a00c589b34dda" category="cell">Cloud Volumes Service REST API</block>
-  <block id="499749d8860f3be8018f2197936fe4df" category="cell">NetApp 版本 9.11.0P1 ：星期二 3 月 22 日 17:41:04 UTC 2022
-NetApp 版本 9.11.1P3 ： 9 月 29 日週四 16 ： 06 ： 51 UTC 2022
-NetApp 版本 9.11.1P5 ：星期六 12 月 10 日 23 ： 54 ： 17 UTC 2022
-NetApp 版本 9.11.1P6 ：週五 1 月 27 日 03 ： 16 ： 05 UTC 2023
-NetApp 版本 9.11.1P7 ： Thu Mar 09 11 ： 22 ： 24 UTC 2023
-NetApp 版本 9.11.1P9 ：週五 4 月 28 日 03 ： 24 ： 07 UTC 2023
-NetApp 版本 9.12.1P4 ：星期二 06 月 20 日： 41 ： 34 UTC 2023</block>
   <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">NetApp ONTAP API</block>
-  <block id="f50a061006ab57625d218533327934ec" category="cell">Data ONTAP 版本 9.12.1P2 ： 2005 年 4 月星期三 19 ： 57 ： 43 UTC 2023 （ Lenovo ）
-NetApp 版本 8.2.3P5 叢集模式： Thu Jul 16 21 ： 51 ： 07 PDT 2015
-NetApp 版本 8.3.1 ： 2015 年 8 月 31 日星期一 12 ： 42 ： 08 UTC
-NetApp 版本 8.3.1 P2 ： 2015 年 12 月 9 日星期三下午 3 ： 10 ： 24 UTC
-NetApp 版本 8.3.2 ： 2016 年 2 月 24 日週三 03 ： 29 ： 11 UTC
-NetApp 版本 8.3.2P12 ： 2017 年 8 月 14 日星期一上午 02 ： 57 ： 01 UTC
-NetApp 版本 8.3.2P2 ： 2016 年 5 月 23 日星期一下午 13 ： 45 ： 25 UTC
-NetApp 版本 8.3.2P5 ： 2016 年 8 月 23 日週二 12 ： 36 ： 56 UTC
-NetApp 版本 8.3 ： 2015 年 3 月 9 日星期一 23 ： 01 ： 28 太平洋夏令時間
-NetApp 版本 9.10.0 ： 8 月 19 日星期四 01:19:53 UTC 2021
-NetApp 版本 9.10.1 ： SAT 1 月 15 日 10:49:44 UTC 2022
-NetApp 版本 9.10.1 ： SAT 1 月 15 日 15 ： 04 ： 44 UTC 2022
-NetApp 版本 9.10.1P10 ： Sun 12 月 18 日 16 ： 24 ： 34 UTC 2022
-NetApp 版本 9.10.1P11 ：週四 2 月 23 日 06 ： 55 ： 33 UTC 2023
-NetApp 版本 9.10.1P12 ： 4 月 13 日週四 00 ： 30 ： 59 UTC 2023
-NetApp 版本 9.10.1P13 ：週一 6 月 19 日 06 ： 30 ： 54 UTC 2023
-NetApp 版本 9.10.1P1 ： Sun 2 月 20 日 04:09:09 UTC 2022
-NetApp 版本 9.10.1P2 ： Sun Mar 13 07 ： 13 ： 58 UTC 2022
-NetApp 版本 9.10.1P3 ：星期二 4 月 19 日下午 17 ： 44 ： 44 UTC 2022
-NetApp 版本 9.10.1P4 ：週一 9 月 9 日 22 ： 11 ： 44 UTC 2022
-NetApp 版本 9.10.1P5 ： Sun Jun 19 14 ： 49 ： 57 UTC 2022
-NetApp 版本 9.10.1P6 ：星期五 01 年 7 月 12 日： 06 ： 33 UTC 2022
-NetApp 版本 9.10.1P7 ：星期二 8 月 02 日 08 ： 59 ： 50 UTC 2022
-NetApp 版本 9.10.1 第 8 頁：週二 9 月 13 日下午 14 ： 10 ： 13 UTC 2022
-NetApp 版本 9.10.1P9 ： 11 月 3 日星期四 23 ： 29 ： 00 UTC 2022
-NetApp 版本 9.10.1RC1 ：週三 10 月 27 日 02 ： 46 ： 19 UTC 2021
-NetApp 版本 9.11.0P1 ：星期二 3 月 22 日 17:41:04 UTC 2022
-NetApp 版本 9.11.1 ：星期二 7 月 12 日 04 ： 38 ： 28 UTC 2022
-NetApp 版本 9.11.1 ：星期二 7 月 12 日 10:21:46 UTC 2022
-NetApp 版本 9.11.1P10 ：週四 5 月 25 日 12 ： 28 ： 26 UTC 2023
-NetApp 版本 9.11.1P1 ：星期二 09 年 8 月 13 ： 13 ： 19 UTC 2022
-NetApp 版本 9.11.1P2 ： 2005 年 9 月 1 日 03 ： 40 ： 01 UTC 2022
-NetApp 版本 9.11.1P3 ： 9 月 29 日週四 16 ： 06 ： 51 UTC 2022
-NetApp 版本 9.11.1P4 ： 10 月 27 日星期四 11 ： 37 ： 48 UTC 2022
-NetApp 版本 9.11.1P5 ：星期六 12 月 10 日 23 ： 54 ： 17 UTC 2022
-NetApp 版本 9.11.1P6 ：週五 1 月 27 日 03 ： 16 ： 05 UTC 2023
-NetApp 版本 9.11.1P7 ： Thu Mar 09 11 ： 22 ： 24 UTC 2023
-NetApp 版本 9.11.1P8 ：週五 4 月 07 日 00 ： 02 ： 50 UTC 2023
-NetApp 版本 9.11.1P9 ：週五 4 月 28 日 03 ： 24 ： 07 UTC 2023
-NetApp 版本 9.11.1RC1 ：週三 4 月 27 日 06 ： 57 ： 10 UTC 2022
-NetApp 版本 9.11.1X12 ： Thu Mar 24 16 ： 38 ： 36 UTC 2022
-NetApp 版本 9.11.1X26 ： Thu Jun 02 09 ： 48 ： 39 UTC 2022
-NetApp 版本 9.12.1 ： 2 月 1 日星期三 01 ： 10 ： 18 UTC 2023
-NetApp 版本 9.12.1P1 ： 2 月 22 日星期三 18 ： 22 ： 20 UTC 2023
-NetApp 版本 9.12.1P2 ：週三 4 月 05 日 14 ： 58 ： 46 UTC 2023
-NetApp 版本 9.12.1P2 ： 2005 年 4 月星期三 19 ： 57 ： 43 UTC 2023
-NetApp 版本 9.12.1P3 ：星期二 5 月 02 日 13 ： 02 ： 11 UTC 2023
-NetApp 版本 9.12.1P4 ：星期二 06 月 20 日： 41 ： 34 UTC 2023
-NetApp 版本 9.12.1RC1 ：週五 11 月 04 日 11 ： 45 ： 36 UTC 2022
-NetApp 版本 9.12.1RC1 ：週三 11 月 09 日 01 ： 14 ： 48 UTC 2022
-NetApp 版本 9.13.0 ：星期二 2 月 07 日 21 ： 20 ： 29 UTC 2023
-NetApp 版本 9.13.0P1 ： 3 月 27 日星期一 03 ： 33 ： 38 UTC 2023
-NetApp 版本 9.13.0P2 ：星期二 4 月 11 日下午 5 ： 05 ： 31 UTC 2023
-NetApp 版本 9.13.0P3 ： 5 月 17 日週三 16 ： 31 ： 25 UTC 2023
-NetApp 版本 9.13.1 ：週一 6 月 19 日 13 ： 36 ： 41 UTC 2023
-NetApp 版本 9.13.1RC1 ： 4 月 26 日星期三下午 15 ： 07 ： 24 UTC 2023
-NetApp 版本 9.13.1X19 ： 03 年 4 月 1 日 20 ： 51 ： 32 UTC 2023
-NetApp 版本 9.13.1X25 ： 4 月 26 日星期三下午 15 ： 07 ： 24 UTC 2023
-NetApp 版本 9.13.1X33 ： 5 月 29 日星期一 12 ： 34 ： 33 UTC 2023
-NetApp 版本 9.13.1X34 ： 2008 年 6 月 4 日上午 10 ： 20 ： 00 UTC 2023
-NetApp 版本 9.13.1X35 ：週一 6 月 12 日 12 ： 12 ： 13 UTC 2023
-NetApp 版本 9.13.1X36 ： 6 月 15 日星期四 13 ： 39 ： 29 UTC 2023
-NetApp 9.1 版： 2016 年 12 月 23 日星期五 04 ： 09 ： 51 UTC
-NetApp 版本 9.1P10 ：星期二 2017 年 11 月 14 日下午 18 ： 03 ： 02 UTC
-NetApp 版本 9.1P11 ： 2017 年 12 月 21 日星期四 15 ： 05 ： 39 UTC
-NetApp 版本 9.1P12 ： 2005 年 3 月 1 日 17 ： 39 ： 31 UTC 2018
-NetApp 版本 9.1P14 ： 2018 年 6 月 27 日星期三上午 9 ： 15 ： 16 UTC
-NetApp 版本 9.1P15 ： 2008 年 8 月 30 日上午 8 ： 19 ： 59 UTC 2018
-NetApp 版本 9.1P17 ： 2019 年 2 月 28 日上午 8 ： 05 ： 25 UTC
-NetApp 版本 9.1P19 ： 2019 年 5 月 27 日星期一上午 9 ： 09 ： 01 UTC
-NetApp 版本 9.1P1 ： 2017 年 2 月 14 日週二下午 13 ： 14 ： 46 UTC
-NetApp 版本 9.1P20 ： 2019 年 10 月 28 日星期一 14 ： 37 ： 28 UTC
-NetApp 版本 9.1P5 ： Sun Jun 11 02 ： 26 ： 58 UTC 2017
-NetApp 版本 9.1P7 ： 2017 年 8 月 14 日星期一 10 ： 27 ： 14 UTC
-NetApp 版本 9.1P8 ： 2017 年 8 月 30 日星期三下午 3 時 33 分 41 秒
-NetApp 版本 9.3P10 ： 2018 年 12 月 15 日星期六下午 4 ： 24 ： 49 UTC
-NetApp 版本 9.3P12 ： 2019 年 4 月 1 日星期一 23 ： 33 ： 10 UTC
-NetApp 版本 9.3P13 ： 2019 年 5 月 27 日星期一 19 ： 26 ： 00 UTC
-NetApp 版本 9.3P14 ： 2019 年 7 月 10 日星期三下午 14 ： 38 ： 46 UTC
-NetApp 版本 9.3P15 ： 2019 年 7 月 16 日週二 19 ： 40 ： 35 UTC
-NetApp 版本 9.3P18 ： 2019 年 12 月 30 日星期一上午 10 ： 39 ： 53 UTC
-NetApp 版本 9.3P19 ：週五 7 月 10 日 12 ： 47 ： 52 UTC 2020
-NetApp 版本 9.3P1 ： 2018 年 1 月 22 日星期一 18 ： 01 ： 29 UTC 2018
-NetApp 版本 9.3P20 ： 9 月 23 日星期三 21 ： 44 ： 43 UTC 2020
-NetApp 版本 9.3P21 ： 1 月 11 日星期一 17 ： 25 ： 42 UTC 2021
-NetApp 版本 9.3P2 ：週五 3 月 02 日 01 ： 02 ： 58 UTC 2018
-NetApp 版本 9.3P2 ： Thu Mar 01 16 ： 53 ： 13 UTC 2018
-NetApp 版本 9.3P4 ：週五 2018 年 4 月 27 日 19 ： 34 ： 03 UTC
-NetApp 版本 9.3P6 ： Thu Jun 14 20 ： 21 ： 25 UTC 2018
-NetApp 版本 9.3P7 ： 2018 年 7 月 25 日星期三 10 ： 11 ： 10 UTC
-NetApp 版本 9.3P8 ： 2018 年 9 月 3 日星期一 20 ： 01 ： 35 UTC
-NetApp 版本 9.3P9 ： 2018 年 10 月 25 日星期四上午 7 ： 42 ： 13 UTC
-NetApp 版本 9.4P2 ：星期二 2018 年 8 月 21 日 00 ： 00 ： 08 UTC
-NetApp 版本 9.4P3 ： 2018 年 10 月 11 日下午 2 ： 23 ： 50 UTC
-NetApp 版本 9.4P4 ： 2018 年 11 月 1 日星期四 15 ： 18 ： 22 UTC
-NetApp 版本 9.4P6 ： 2019 年 2 月 22 日星期五 09:43:14 UTC
-NetApp 版本 9.4RC1 ： 4 月 26 日星期四 09:13:57 UTC 2018
-NetApp 9.5 版： 2018 年 12 月 13 日星期四 20 ： 41 ： 33 UTC
-NetApp 版本 9.5P10 ： 2019 年 12 月 13 日星期五下午 1 ： 45 UTC
-NetApp 版本 9.5P12 ：週五 2016 年 4 月 10 日下午 18 ： 20 ： 31 UTC 2020
-NetApp 版本 9.5P13 ：星期二 5 月 19 日 02 ： 45 ： 36 UTC 2020
-NetApp 版本 9.5P14 ： 8 月 17 日星期一 05 ： 32 ： 42 UTC 2020
-NetApp 版本 9.5P15 ：星期二 2017 年 11 月 17 日上午 7 ： 31 ： 22 UTC 2020
-NetApp 版本 9.5P16 ：星期二 1 月 12 日 10:52:07 UTC 2021
-NetApp 版本 9.5P17 ： 5 月 12 日星期三 20 ： 42 ： 52 UTC 2021
-NetApp 版本 9.5P18 ： 8 月 11 日星期三 19 ： 17 ： 30 UTC 2021
-NetApp 版本 9.5P19 ：週六 11 月 27 日 06 ： 39 ： 07 UTC 2021
-NetApp 版本 9.5P1 ： 202019 年 2 月 19 日週二 21 ： 38 ： 50 UTC
-NetApp 版本 9.5P2 ： 2019 年 3 月 14 日 13 ： 59 ： 39 UTC
-NetApp 版本 9.5P3 ： 2017 年 4 月 16 日週二下午 18 ： 33 ： 13 UTC
-NetApp 版本 9.5P3 ： 2017 年 4 月 16 日週二下午 2 時 44 分 27 秒
-NetApp 版本 9.5P4 ： 2019 年 5 月 7 日星期二 3 ： 16 ： 26 UTC
-NetApp 版本 9.5P5 ： 2019 年 6 月 14 日星期五下午 15 ： 33 ： 34 UTC
-NetApp 版本 9.5P6 ： 2019 年 7 月 10 日星期三 18 ： 43 ： 50 UTC
-NetApp 版本 9.5P6 ： 2019 年 7 月 10 日星期三 22 ： 58 ： 11 UTC
-NetApp 版本 9.5P7 ： 2019 年 8 月星期二 00 ： 37 ： 41 UTC
-NetApp 版本 9.5P8 ： 2019 年 9 月 20 日星期五 19:03:08 UTC
-NetApp 版本 9.5P9 ： 2019 年 10 月 28 日星期一上午 9 ： 18 ： 10 UTC
-NetApp 版本 9.6 ： 2019 年 7 月 10 日星期三 10 ： 10 ： 43 UTC
-NetApp 版本 9.6 ： 2019 年 7 月 10 日星期三 16 ： 25 ： 33 UTC
-NetApp 版本 9.6P11 ： 2016 年 10 月 16 日週五 23 ： 13 ： 09 UTC 2020
-NetApp 版本 9.6P14 ： 05 年 4 月 1 日 15 ： 34 ： 55 UTC 2021
-NetApp 版本 9.6P15 ： 5 月 31 日上午 02 ： 25 ： 27 UTC 2021
-NetApp 版本 9.6P18 ：星期二 4 月 05 日 11 ： 08 ： 11 UTC 2022
-NetApp 版本 9.6P2 ： 2019 年 7 月 19 日星期五 06 ： 06 ： 59 UTC
-NetApp 版本 9.6P3 ： Sun 9 月 22 日 08 ： 26 ： 36 UTC 2019 年
-NetApp 版本 9.6P4 ： 2019 年 11 月 7 日星期四 01:50:36 UTC
-NetApp 版本 9.6P5 ： 2019 年 12 月 13 日星期五 18 ： 21 ： 56 UTC
-NetApp 版本 9.6RC1 ： 2019 年 5 月 11 日星期六 05 ： 58 ： 14 UTC
-NetApp 版本 9.6X11 ： Sun Mar 10 、 12:15 ： 04 UTC 2019
-NetApp 版本 9.7 ： Thu Jan 09 17 ： 11 ： 21 UTC 2020
-NetApp 版本 9.7P10 ： 12 月 10 日星期四、 00 ： 55 ： 43 UTC 2020
-NetApp 版本 9.7P11 ：週二 1 月 12 日下午 18 ： 41 ： 08 UTC 2021
-NetApp 版本 9.7P11 ：週二 1 月 12 日 23 ： 00 ： 49 UTC 2021
-NetApp 版本 9.7P12 ：星期二 3 月 02 日 23 ： 38 ： 44 UTC 2021
-NetApp 版本 9.7P13 ： 4 月 15 日星期四 02 ： 06 ： 46 UTC 2021
-NetApp 版本 9.7P14 ： 6 月 10 日星期四 22 ： 54 ： 31 UTC 2021
-NetApp 版本 9.7P15 ：星期五 06 年 8 月 19 日： 56 ： 41 UTC 2021
-NetApp 版本 9.7P16 ：週五 9 月 10 日 22 ： 33 ： 12 UTC 2021
-NetApp 版本 9.7P17 ：週六 11 月 27 日 13 ： 49 ： 53 UTC 2021
-NetApp 版本 9.7P18 ： Thu Mar 10 、 09:57:16 UTC 2022
-NetApp 版本 9.7P19 ： 5 月 23 日星期一 20 ： 55 ： 08 UTC 2022
-NetApp 版本 9.7P1 ： Thu Feb 2701:25:24 UTC 2020
-NetApp 版本 9.7P20 ： 8 月 11 日星期四 13 ： 20 ： 52 UTC 2022
-NetApp 版本 9.7P21 ：週五 12 月 23 日 11 ： 52 ： 44 UTC 2022
-NetApp 版本 9.7P22 ： 3 月 27 日星期一 14 ： 06 ： 51 UTC 2023
-NetApp 版本 9.7P2 ： Sun Mar 22 21 ： 50 ： 44 UTC 2020
-NetApp 版本 9.7P3 ： 2017 年 4 月 17 日星期五下午 4 點 14 分 37 分 51 秒 UTC 2020
-NetApp 版本 9.7P4 ： 2016 年 5 月 23 日 00 ： 43 ： 42 UTC 2020
-NetApp 版本 9.7P5 ：星期二 6 月 23 日 04:02:30 UTC 2020
-NetApp 版本 9.7P6 ：星期二 7 月 28 日 04 ： 06 ： 27 UTC 2020
-NetApp 版本 9.7P7 ： 8 月 27 日星期四 20 ： 57 ： 05 UTC 2020
-NetApp 版本 9.7P8 ：週四 10 月 15 日 04 ： 11 ： 57 UTC 2020
-NetApp 版本 9.7P9 ： 2006 年 11 月 6 日星期五 01:13:45 UTC 2020
-NetApp 版本 9.7RC1 ： 2019 年 11 月 22 日星期五 07:39:07 UTC
-NetApp 版本 9.7X17 ： 2019 年 11 月 16 日星期六下午 6 時 06 分 11 秒
-NetApp 版本 9.8 ： 2009 年 12 月 9 日星期三 06 ： 17 ： 24 UTC 2020
-NetApp 版本 9.8P10 ： 4 月 4 日星期五 19 ： 51 ： 21 UTC 2022
-NetApp 版本 9.8P11 ： SAT Mar 12 10 ： 19 ： 15 UTC 2022
-NetApp 版本 9.8P11D2 ： 4 月 14 日星期四 12:50:07 UTC 2022
-NetApp 版本 9.8P12 ： 5 月 13 日星期五 00 ： 04 ： 00 UTC 2022
-NetApp 版本 9.8P13 ：星期五 7 月 15 日 22 ： 40 ： 56 UTC 2022
-NetApp 版本 9.8P14 ：星期二 8 月 23 日 15 ： 29 ： 48 UTC 2022
-NetApp 版本 9.8P15 ： 11 月 23 日星期三上午 9 ： 29 ： 16 UTC 2022
-NetApp 版本 9.8P16 ：週五 12 月 02 日 02 ： 05 ： 05 UTC 2022
-NetApp 版本 9.8P16 ：星期四 01 年 12 月 20 日： 42 ： 37 UTC 2022
-NetApp 版本 9.8P17 ： 2 月 24 日星期五 15 ： 11 ： 05 UTC 2023
-NetApp 版本 9.8P18 ： 3 月 29 日星期三下午 13 ： 19 ： 30 UTC 2023
-NetApp 版本 9.8P19 ：週四 5 月 11 日 12 ： 52 ： 01 UTC 2023
-NetApp 版本 9.8P19 ：週四 5 月 11 日 17 ： 26 ： 53 UTC 2023
-NetApp 版本 9.8P1 ： Thu Jan 21 01 ： 11 ： 31 UTC 2021
-NetApp 版本 9.8P2 ： 2 月 16 日週二 3 ： 49 ： 46 UTC 2021
-NetApp 版本 9.8P3 ： SAT Mar 27 08 ： 43 ： 48 UTC 2021
-NetApp 版本 9.8P4 ： 5 月 03 日星期一上午 09 ： 22 ： 00 UTC 2021
-NetApp 版本 9.8P5 ： Thu Jun 10 21 ： 52 ： 01 UTC 2021
-NetApp 版本 9.8P6 ：星期二 03 年 8 月 16 日： 21 ： 11 UTC 2021
-NetApp 版本 9.8P7 ：星期二 9 月 14 日 18 ： 38 ： 58 UTC 2021
-NetApp 版本 9.8P8 ： 10 月 21 日星期四 19 ： 21 ： 56 UTC 2021
-NetApp 版本 9.8P9 ： 12 月 22 日星期三上午 9 ： 39 ： 04 UTC 2021
-NetApp 版本 9.8RC1 ： SAT 10 月 31 日 11:13:09 UTC 2020
-NetApp 版本 9.0.0 ： 5 月 5 日星期五 11 ： 29 ： 21 UTC 2021
-NetApp 版本 9.9.1 ： Sun Jun 13 06 ： 06 ： 29 UTC 2021
-NetApp 版本 9.9.1 ： Sun Jun 13 11 ： 45 ： 05 UTC 2021
-NetApp 版本 9.9.1 P10 ： 5 月 27 日星期五 16 ： 22 ： 46 UTC 2022
-NetApp 版本 9.9.1 P11 ：星期二 8 月 02 日 19 ： 12 ： 28 UTC 2022
-NetApp 版本 9.9.1 P12 ：週五 9 月 16 日 20 ： 50 ： 11 UTC 2022
-NetApp 版本 9.9.1 P13 ： 11 月 18 日星期五 17 ： 29 ： 45 UTC 2022
-NetApp 版本 9.9.1 P14 ：週五 1 月 27 日 21 ： 45 ： 51 UTC 2023
-NetApp 版本 9.9.1 P15 ： 3 月 27 日星期一 12:31 ： 36 UTC 2023
-NetApp 版本 9.9.9.1 P16 ： 4 月 25 日星期四 01:06:07 UTC 2023
-NetApp 版本 9.9.1 P1 ：星期五 02 年 7 月 20 日： 21 ： 27 UTC 2021
-NetApp 版本 9.9.9.1 P2 ： Thu Aug19 13 ： 53 ： 06 UTC 2021
-NetApp 版本 9.9.9.1P3 ： SAT 9 月 25 日 13 ： 10 ： 46 UTC 2021
-NetApp 版本 9.9.9.1P3 ： 9 月 29 日星期三 12 ： 55 ： 55 UTC 2021
-NetApp 版本 9.9.9.1 P4 ： 10 月 11 日上午 9 ： 20 ： 31 UTC 2021
-NetApp 版本 9.9.9.1P5 ： SAT 11 月 20 日 12:17:23 UTC 2021
-NetApp 版本 9.9.9.1P6 ：星期二 12 月 21 日下午 13 ： 38 ： 22 UTC 2021
-NetApp 版本 9.9.1 P7 ： SAT 1 月 29 日 01 ： 25 ： 00 UTC 2022
-NetApp 版本 9.9.1 第 8 頁：週二 3 月 15 日 22 ： 46 ： 53 UTC 2022
-NetApp 版本 9.9.1 第 9 頁： 4 月 20 日星期三 00 ： 42 ： 19 UTC 2022
-NetApp 版本： 2019 年 11 月 22 日星期五上午 7 ： 39 ： 07 UTC
-NetApp 版本 Dirtwolf__9.8.0 ：週二 1 月 18 日 07 ： 07 ： 03 UTC 2022
-NetApp 版本 Lighthouse _9.13.1 ：週一 6 月 19 日 07 ： 42 ： 08 UTC 2023
-NetApp 版本 Lighthouse _9.13.1 ： Sun Jun 18 05 ： 17 ： 33 UTC 2023
-NetApp 版本 Longboard__9.0.1 ： 2016 年 6 月 4 日 09:45:33 UTC
-NetApp 版本 Metropolitan _ 9.11.1 ：星期二 7 月 12 日 04 ： 38 ： 28 UTC 2022
-NetApp 版本 Metropolitan _ 9.11.1 ： 4 月 27 日星期三 01 ： 48 ： 31 UTC 2022
-NetApp 版本故事 _9.10.1 ： Sun Mar 13 02 ： 23 ： 34 UTC 2022
-NetApp 版本 Yellowdog__9.12.1 ： 11 月 28 日星期一 22 ： 02 ： 55 UTC 2022
-NetApp 版本 Yellowdog__9.12.1 ：週二 1 月 31 日 19 ： 19 ： 43 UTC 2023
-NetApp 版本 Yellowdog__9.12.1 ：星期二 11 月 8 日 20 ： 32 ： 25 UTC 2022
-NetApp 版本 Yellowdog__9.12.1 ：週三 10 月 05 日 05 ： 47 ： 17 UTC 2022</block>
   <block id="4a07a61fa2c711c9fc5bae0b8a8057fe" category="cell">AFF-A150
 AFF-A200
 AFF-A220
@@ -12444,186 +12050,6 @@ FAS9500
 FASDvM300
 SIMPX
 V6240</block>
-  <block id="76fe5692a92f8f0664c53254f69ec92c" category="cell">8.2.3P5 叢集式 Data ONTAP
-8.3.0 叢集式 Data ONTAP
-8.3.1 叢集式 Data ONTAP
-8.3.1P2 叢集式 Data ONTAP
-8.3.2 叢集式 Data ONTAP
-8.3.2P12 叢集式 Data ONTAP
-8.3.2P2 叢集式 Data ONTAP
-8.3.2P5 叢集式 Data ONTAP
-9.0.1 叢集式 Data ONTAP
-9.1.0 叢集式 Data ONTAP
-9.1.0P1 叢集式 Data ONTAP
-9.1.0P10 叢集式 Data ONTAP
-9.1.0P11 叢集式 Data ONTAP
-9.1.0P12 叢集式 Data ONTAP
-9.1.0P14 叢集式 Data ONTAP
-9.1.0P15 叢集式 Data ONTAP
-9.1.0P17 叢集式 Data ONTAP
-9.1.0P19 叢集式 Data ONTAP
-9.1.0P20 叢集式 Data ONTAP
-9.1.0P5 叢集式 Data ONTAP
-9.1.0P7 叢集式 Data ONTAP
-9.1.0P8 叢集式 Data ONTAP
-9.10.0 叢集式 Data ONTAP
-9.10.1 叢集式 Data ONTAP
-9.10.1P1 叢集式 Data ONTAP
-9.10.1P10 叢集式 Data ONTAP
-9.10.1 第 11 頁叢集式 Data ONTAP
-9.10.1 第 12 頁叢集式 Data ONTAP
-9.10.1 第 13 頁叢集式 Data ONTAP
-9.10.1P2 叢集式 Data ONTAP
-9.10.1P3 叢集式 Data ONTAP
-9.10.1P4 叢集式 Data ONTAP
-9.10.1P5 叢集式 Data ONTAP
-9.10.1P6 叢集式 Data ONTAP
-9.10.1 第 7 頁叢集式 Data ONTAP
-9.10.1 第 8 頁叢集式 Data ONTAP
-9.10.1 第 9 頁叢集式 Data ONTAP
-9.11.0P1 叢集式 Data ONTAP
-9.11.1 叢集式 Data ONTAP
-9.11.1P1 叢集式 Data ONTAP
-9.11.1P10 叢集式 Data ONTAP
-9.11.1P2 叢集式 Data ONTAP
-9.11.1P3 叢集式 Data ONTAP
-9.11.1P4 叢集式 Data ONTAP
-9.11.1P5 叢集式 Data ONTAP
-9.11.1P6 叢集式 Data ONTAP
-9.11.1P7 叢集式 Data ONTAP
-9.11.1P8 叢集式 Data ONTAP
-9.11.1P9 叢集式 Data ONTAP
-9.11.1X12 叢集式 Data ONTAP
-9.11.1X26 叢集式 Data ONTAP
-9.12.1 叢集式 Data ONTAP
-9.12.1P1 叢集式 Data ONTAP
-9.12.1P2 叢集式 Data ONTAP
-9.12.1P3 叢集式 Data ONTAP
-9.12.1P4 叢集式 Data ONTAP
-9.13.0 叢集式 Data ONTAP
-9.13.0P1 叢集式 Data ONTAP
-9.13.0P2 叢集式 Data ONTAP
-9.13.0P3 叢集式 Data ONTAP
-9.13.1 叢集式 Data ONTAP
-9.13.1X19 叢集式 Data ONTAP
-9.13.1X25 叢集式 Data ONTAP
-9.13.1X33 叢集式 Data ONTAP
-9.13.1X34 叢集式 Data ONTAP
-9.13.1X35 叢集式 Data ONTAP
-9.13.1X36 叢集式 Data ONTAP
-9.3.0P1 叢集式 Data ONTAP
-9.3.0P10 叢集式 Data ONTAP
-9.3.0P12 叢集式 Data ONTAP
-9.3.0P13 叢集式 Data ONTAP
-9.3.0P14 叢集式 Data ONTAP
-9.3.0P15 叢集式 Data ONTAP
-9.3.0P18 叢集式 Data ONTAP
-9.3.0P19 叢集式 Data ONTAP
-9.3.0P2 叢集式 Data ONTAP
-9.3.0P20 叢集式 Data ONTAP
-9.3.0P21 叢集式 Data ONTAP
-9.3.0P4 叢集式 Data ONTAP
-9.3.0P6 叢集式 Data ONTAP
-9.3.0P7 叢集式 Data ONTAP
-9.3.0P8 叢集式 Data ONTAP
-9.3.0P9 叢集式 Data ONTAP
-9.4.0 叢集式 Data ONTAP
-9.4.0P2 叢集式 Data ONTAP
-9.4.0P3 叢集式 Data ONTAP
-9.4.0P4 叢集式 Data ONTAP
-9.4.0P6 叢集式 Data ONTAP
-9.5.0 叢集式 Data ONTAP
-9.5.0P1 叢集式 Data ONTAP
-9.5.0P10 叢集式 Data ONTAP
-9.5.0P12 叢集式 Data ONTAP
-9.5.0P13 叢集式 Data ONTAP
-9.5.0P14 叢集式 Data ONTAP
-9.5.0P15 叢集式 Data ONTAP
-9.5.0P16 叢集式 Data ONTAP
-9.5.0P17 叢集式 Data ONTAP
-9.5.0P18 叢集式 Data ONTAP
-9.5.0P19 叢集式 Data ONTAP
-9.5.0P2 叢集式 Data ONTAP
-9.5.0P3 叢集式 Data ONTAP
-9.5.0P4 叢集式 Data ONTAP
-9.5.0P5 叢集式 Data ONTAP
-9.5.0P6 叢集式 Data ONTAP
-9.5.0P7 叢集式 Data ONTAP
-9.5.0P8 叢集式 Data ONTAP
-9.5.0P9 叢集式 Data ONTAP
-9.6.0 叢集式 Data ONTAP
-9.6.0P11 叢集式 Data ONTAP
-9.6.0P14 叢集式 Data ONTAP
-9.6.0P15 叢集式 Data ONTAP
-9.6.0P18 叢集式 Data ONTAP
-9.6.0P2 叢集式 Data ONTAP
-9.6.0P3 叢集式 Data ONTAP
-9.6.0P4 叢集式 Data ONTAP
-9.6.0P5 叢集式 Data ONTAP
-9.6.0X11 叢集式 Data ONTAP
-9.7.0 叢集式 Data ONTAP
-9.7.0P1 叢集式 Data ONTAP
-9.7.0P10 叢集式 Data ONTAP
-9.7.0P11 叢集式 Data ONTAP
-9.7.0P12 叢集式 Data ONTAP
-9.7.0P13 叢集式 Data ONTAP
-9.7.0P14 叢集式 Data ONTAP
-9.7.0P15 叢集式 Data ONTAP
-9.7.0P16 叢集式 Data ONTAP
-9.7.0P17 叢集式 Data ONTAP
-9.7.0P18 叢集式 Data ONTAP
-9.7.0P19 叢集式 Data ONTAP
-9.7.0P2 叢集式 Data ONTAP
-9.7.0P20 叢集式 Data ONTAP
-9.7.0P21 叢集式 Data ONTAP
-9.7.0P22 叢集式 Data ONTAP
-9.7.0P3 叢集式 Data ONTAP
-9.7.0P4 叢集式 Data ONTAP
-9.7.0P5 叢集式 Data ONTAP
-9.7.0P6 叢集式 Data ONTAP
-9.7.0P7 叢集式 Data ONTAP
-9.7.0P8 叢集式 Data ONTAP
-9.7.0P9 叢集式 Data ONTAP
-9.7.0x17 叢集式 Data ONTAP
-9.8.0 叢集式 Data ONTAP
-9.8.0P1 叢集式 Data ONTAP
-9.8.0P10 叢集式 Data ONTAP
-9.8.0P11 叢集式 Data ONTAP
-9.8.0P11D2 叢集式 Data ONTAP
-9.8.0P12 叢集式 Data ONTAP
-9.8.0P13 叢集式 Data ONTAP
-9.8.0P14 叢集式 Data ONTAP
-9.8.0P15 叢集式 Data ONTAP
-9.8.0P16 叢集式 Data ONTAP
-9.8.0P17 叢集式 Data ONTAP
-9.8.0P18 叢集式 Data ONTAP
-9.8.0P19 叢集式 Data ONTAP
-9.8.0P2 叢集式 Data ONTAP
-9.8.0P3 叢集式 Data ONTAP
-9.8.0P4 叢集式 Data ONTAP
-9.8.0P5 叢集式 Data ONTAP
-9.8.0P6 叢集式 Data ONTAP
-9.8.0P7 叢集式 Data ONTAP
-9.8.0P8 叢集式 Data ONTAP
-9.8.0P9 叢集式 Data ONTAP
-9.9.0 叢集式 Data ONTAP
-9.9.1 叢集式 Data ONTAP
-9.9.1P1 叢集式 Data ONTAP
-9.9.1P10 叢集式 Data ONTAP
-9.9.1P11 叢集式 Data ONTAP
-9.9.1P12 叢集式 Data ONTAP
-9.9.1P13 叢集式 Data ONTAP
-9.9.1P14 叢集式 Data ONTAP
-9.9.1P15 叢集式 Data ONTAP
-9.9.1P16 叢集式 Data ONTAP
-9.9.1P2 叢集式 Data ONTAP
-9.9.1P3 叢集式 Data ONTAP
-9.9.1P4 叢集式 Data ONTAP
-9.9.1P5 叢集式 Data ONTAP
-9.9.1P6 叢集式 Data ONTAP
-9.9.1P7 叢集式 Data ONTAP
-9.9.1P8 叢集式 Data ONTAP
-9.9.1P9 叢集式 Data ONTAP</block>
   <block id="e0e5e88bf87543da85f0d903d2d6fe42" category="cell">H410S-2
  H610S-2
  H610S-4
@@ -12932,24 +12358,250 @@ VMware vCenter Server 8.0.1 組建編號 21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">如需此資料收集器的其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中檢視或下載支援的資料收集器相關資訊與詳細資料 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
-  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">與 ONTAP 存取整合遭拒</block>
-  <block id="c1aef2a1ae85a8f2d2f2972297da3d60" category="paragraph">ONTAP 存取遭拒功能會在 NAS （ NFS 和 SMB ）環境中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知、特別是在安全性相關失敗的情況下、將有助於在早期階段封鎖內部攻擊。</block>
-  <block id="b849ca242cbc590016b269c1ee91cc29" category="paragraph">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
-  <block id="5b3261ec26222327253513a1f5b85ba6" category="list-text">最低 ONTAP 版本： 9.13.0</block>
-  <block id="7238e9f6faa9a8bf2a1c0b55cb039588" category="list-text">「拒絕存取」功能預設為停用。工作負載安全管理員可以在新增收集器或編輯現有收集器時啟用此功能。若要啟用、請在工作負載安全性 &gt; 收集器中、新增或編輯所需的收集器、然後勾選進階組態下的監控存取遭拒事件 _ 核取方塊。</block>
-  <block id="a808fab09e2c9ae5a63f5e049dab0688" category="inline-image-macro">啟用拒絕存取</block>
-  <block id="6dbaec8d589ae936fddaa5da8e4136bc" category="paragraph"><block ref="6dbaec8d589ae936fddaa5da8e4136bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ccce4bc08fadbf62adda903ef18b3a71" category="paragraph">如果使用叢集管理認證新增收集器、則不需要新的權限。</block>
-  <block id="7e94086884e2780e5b6c9f81ac89dc5b" category="paragraph">如果使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟授予工作負載安全性權限、以便向 ONTAP 註冊存取遭拒事件。</block>
-  <block id="fe6df009bfa9d725b811d49cdb8b4e7c" category="paragraph">對於具有叢集認證的 _CsUser_ 、請從 ONTAP 命令列執行下列命令：</block>
-  <block id="02efd7604209ddbbd8e84d4f61b73a6e" category="paragraph">對於具有 SVM 認證的 _CsUser_ 、請從 ONTAP 命令列執行下列命令：</block>
-  <block id="18eb08209dff281929039b467a472f31" category="paragraph">注意：在上述命令中、 _csrole_ 是自訂角色、而 _CsUser_ 則是 ONTAP 自訂使用者。</block>
-  <block id="d0aae2eaa03ecabb8c086f9955d726c7" category="section-title">存取遭拒事件範例</block>
-  <block id="428ed0ed1c01699e6322b706684fdb11" category="paragraph">「拒絕存取」事件範例將如下圖所示。您也可以在 _ 所需活動 _ 欄下、查看使用者遺失的特定作業所需權限清單、您可以選擇性地顯示這些權限。</block>
-  <block id="d41ccaf6090623996b7a77e9f74f06bf" category="inline-image-macro">拒絕存取範例事件</block>
-  <block id="66dcd3eccaf1048a46b7727780eeb9cd" category="inline-image-macro">拒絕存取顯示「拒絕活動」欄的範例事件</block>
-  <block id="143f93c0a250d7b4c81e78e2cb154211" category="paragraph"><block ref="ee0b481ebed31d6775d42686b376f648" category="inline-image-macro-rx" type="image"></block>
-<block ref="f913a701b0e25c9f7bd9dfbc47afd16c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP 存取遭拒整合</block>
+  <block id="c00642d871f5ba7dbc50bbe96271824a" category="cell">3.1.1 （ MU1 ）
+3.1.2 （ MU3 ）
+3.1.3 （ MU1 ）
+3.1.3 （ MU2 ）
+3.1.3 （ MU3 ）
+3.2.1 （ MU3 ）
+3.2.1 （ MU5 ）
+3.2.2.
+3.2.2 （ MU2 ）
+3.2.2 （ MU4 ）
+3.2.2 （ MU6 ）
+3.3.1 （ MU1 ）
+3.3.1 （ MU2 ）
+3.3.1 （ MU5 ）
+3.3.2.
+3.3.2 （ MU1 ）
+4.4.1 版本類型：標準支援版本
+4.5.11 版本類型：延伸支援版本
+4.5.3 版本類型：延伸支援版本
+4.5.7 版本類型：延伸支援版本
+9.5.8 版本類型：延伸支援版本</block>
+  <block id="51b625d6addc0e43e8a47ac5aa049060" category="cell">A200
+解答 2000
+A300
+F200
+F800
+F900
+H400
+H500
+H600
+H700
+NL400
+NL410
+S210
+X200
+X210
+X400
+X410</block>
+  <block id="80ab59f6aabf4af4349282653e17c8da" category="cell">v10.0.0.0
+v10.0.1.0
+v7.6.2.67
+V8.3.0.22
+V8.3.0.6
+v8.4.0.7
+v8.4.0.9
+v9.1.0.18
+v9.1.0.5
+v9.1.0.6
+v9.2.0.0
+v9.2.1.0
+v9.2.1.1
+v9.2.1.2
+v9.2.2.0
+v9.2.3.0
+v9.2.3.1
+v9.2.3.4
+v9.2.3.5
+v9.2.3.6
+v9.2.4.1
+v9.2.4.2</block>
+  <block id="8f18d2f14650495a35607299888487dd" category="cell">1.1.
+1.14.
+1.17.
+1.19.
+1.20
+1.21.</block>
+  <block id="0e81c94ca82abcdceefe92f03e92b4da" category="cell">8.2.3P5
+8.3.0
+8.3.1.
+8.3.1P2
+8.3.2.
+8.3.2 第 12 頁
+8.3.2P2
+8.3.2P5
+9.0.1
+9.1.0
+9.1.0P1
+9.1.0P10
+9.1.0P11
+9.1.0P12
+9.1.0P14
+9.1.0P15
+9.1.0P17
+9.1.0P19
+9.1.0P20
+9.1.0P5
+9.1.0P7
+9.1.0P8
+9.10.0%
+9.10.1
+9.10.1
+9.10.1 第 10 頁
+9.10.1 第 11 頁
+9.10.1 第 12 頁
+9.10.1 第 13 頁
+9.10.1P2
+9.10.1P3
+9.10.1
+9.10.1P5
+9.10.1P6
+9.10.1 第 7 頁
+9.10.1 第 8 頁
+9.10.1 第 9 頁
+9.11.0P1
+9.11.1.
+9.11.1P1
+9.11.1P10
+9.11.1P2
+9.11.1P3
+9.11.1P4
+9.11.1P5
+9.11.1P6
+9.11.1P7.
+9.11.1P8.
+9.11.1P9.
+9.11.1X12
+9.11.1X26
+9.12.1
+9.12.1P1
+9.12.1P2
+9.12.1P3
+9.12.1P4
+9.13.0
+9.13.0P1
+9.13.0P2
+9.13.0P3
+9.13.1.12.9.12.9.
+9.13.1X19
+9.13.1X25
+9.13.1X33
+9.13.1X34
+9.13.1X35
+9.13.1X36
+9.3.0P1
+9.3.0P10
+9.3.0P12
+9.3.0P13
+9.3.0P14
+9.3.0P15
+9.3.0P18
+9.3.0P19
+9.3.0P2
+9.3.0P20
+9.3.0P21
+9.3.0P4
+9.3.0P6
+9.3.0P7
+9.3.0P8
+9.3.0P9.
+9.4.0
+9.4.0P2
+9.4.0P3
+9.4.0P4
+9.4.0P6
+9.5.0
+9.5.0P1
+9.5.0P10
+9.5.0P12
+9.5.0P13
+9.5.0P14
+9.5.0P15
+9.5.0P16
+9.5.0P17
+9.5.0P18
+9.5.0P19
+9.5.0P2
+9.5.0P3
+9.5.0P4
+9.5.0P5
+9.5.0P6
+9.5.0P7
+9.5.0P8
+9.5.0P9
+9.6.0
+9.6.0P11
+9.6.0P14
+9.6.0P15
+9.6.0P18
+9.6.0P2
+9.6.0P3
+9.6.0P4
+9.6.0P5
+9.6.0X11
+9.7.0
+9.7.0P1
+9.7.0P10
+9.7.0P11
+9.7.0P12
+9.7.0P13
+9.7.0P14
+9.7.0P15
+9.7.0P16
+9.7.0P17
+9.7.0P18
+9.7.0P19
+9.7.0P2
+9.7.0P20
+9.7.0P21
+9.7.0P22
+9.7.0P3
+9.7.0P4
+9.7.0P5
+9.7.0P6
+9.7.0P7
+9.7.0P8
+9.7.0P9
+9.7.0x17
+9.8.0
+9.8.0P1
+9.8.0P10
+9.8.0P11
+9.8.0P11D2
+9.8.0P12
+9.8.0P13
+9.8.0P14
+9.8.0P15
+9.8.0P16
+9.8.0P17
+9.8.0P18
+9.8.0P19
+9.8.0P2
+9.8.0P3
+9.8.0P4
+9.8.0P5
+9.8.0P6
+9.8.0P7
+9.8.0P8
+9.8.0P9
+9.9.0
+9.9.1
+9.9.1P1
+9.9.1 第 10 頁
+9.9.1 第 11 頁
+9.9.1 第 12 頁
+9.9.1 第 13 頁
+9.9.1 第 14 頁
+9.9.1 第 15 頁
+9.9.1 第 16 頁
+9.9.1P2
+9.9.1P3
+9.9.1P4
+9.9.1P5
+9.9.1P6
+9.9.1 第 7 頁
+9.9.1 第 8 頁
+9.9.1 第 9 頁</block>
 </blocks>
