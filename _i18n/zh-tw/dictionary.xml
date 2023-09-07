@@ -7267,9 +7267,6 @@
   <block id="94b45e8398089264f0050004fb043bc4" category="cell">輪詢時要排除的叢集ID或名稱清單、以逗號分隔。</block>
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">記錄瀏覽器是一項功能強大的工具、可透過不同的系統記錄來調查問題。</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">這個功能強大的工具可用來查詢系統記錄。Cloud Insights除了協助調查之外、您也可以將記錄查詢儲存在監控器中、以便在特定記錄觸發程序啟動時提供警示。</block>
-  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">若要開始探索記錄、請按一下*查詢&gt;+新記錄查詢*。</block>
-  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">記錄查詢功能表、480</block>
-  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">從清單中選取可用的記錄。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">選擇您的記錄</block>
   <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">可供查詢的記錄類型可能會因您的環境而異。隨時間推移、可能會新增其他記錄類型。</block>
@@ -7278,16 +7275,6 @@
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">結果會顯示在圖表中、顯示每個顯示時段的記錄執行個體數目。圖表下方是記錄項目的範本。圖表和項目會根據選取的時間範圍自動重新整理。</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">顯示篩選器的查詢範例</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">記錄圖表</block>
-  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">圖表會顯示記錄項目的數量、這些記錄項目會根據所選儀表板時間範圍分組為_buckets _。每個時間範圍的值區如下：</block>
-  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">鏟斗尺寸</block>
-  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30分鐘</block>
-  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45分鐘</block>
-  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1天</block>
-  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">若要放大圖表、只要從任一側拖曳滑桿即可。若要平移縮放區域、請按住空白區域、然後左右移動。按一下「重設縮放」以重設縮放層級。</block>
-  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">拖曳圖表兩側以放大</block>
-  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">請注意、縮放圖表或捲動表格時、儀表板會暫停自動重新整理、時間範圍會顯示凍結時間。若要恢復重新整理、請按一下「_Resum__」按鈕 <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>。這也會重設縮放層級。</block>
   <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">在任何時候、您都可以按一下「建立記錄監視器」、以根據目前的篩選器建立新的監視器。</block>
   <block id="5498a5f4896f117c2848f41304cec816" category="section-title">記錄詳細資料</block>
   <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">按一下清單記錄項目中的任何位置、就會開啟該項目的詳細資料窗格。您可在此深入瞭解活動相關資訊。</block>
@@ -12464,4 +12451,30 @@ v9.2.4.2</block>
 9.9.1 第 8 頁
 9.9.1 第 9 頁</block>
   <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">不活動Cloud Insights 的不活動版環境會被刪除、資源也會回收。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。在刪除環境之前、將會傳送通知並提供四天的寬限期。Cloud Insights</block>
+  <block id="12a4857a4dbeb827f3ccc062e3e95447" category="paragraph">若要開始探索記錄、請按一下 * 記錄查詢 &gt; + 新記錄查詢 * 。</block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">篩選</block>
+  <block id="c372ce68f746709e625ff6a439caabb9" category="section-title">包括 / 排除</block>
+  <block id="2787899688f12e7489007de8b12213d5" category="paragraph">篩選記錄時、您可以選擇 * 包含 * （即「篩選至」）或 * 排除 * 您輸入的字串。排除的字串會在完整的篩選中顯示為「 Not &lt;string&gt; 」。</block>
+  <block id="1734ff7c4f75b54c961ad7d4359787e1" category="inline-image-macro">顯示「排除」選項的記錄篩選器</block>
+  <block id="405c7a3556714c3c384503dcad4e730a" category="paragraph"><block ref="405c7a3556714c3c384503dcad4e730a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">進階篩選</block>
+  <block id="110b3aa692108cdd731e2a20e7fab59a" category="paragraph">當您在查詢或儀表板小工具中篩選文字或清單值時、在您開始輸入時、系統會顯示根據目前文字建立*萬用字元篩選器*的選項。選取此選項會傳回符合萬用字元運算式的所有結果。您也可以使用 not 、 and 、 or 或建立運算式、或選取「無」選項來篩選 Null 值。</block>
+  <block id="ca6fcfb5b3944c9f5e1fc9d91e8b5fc9" category="admonition">建立篩選時、請務必及早且經常儲存查詢。進階查詢是「自由格式」字串項目、您建置時可能會發生剖析錯誤。</block>
+  <block id="6682349270b7766210b24eb769ff2f4b" category="paragraph">請查看此畫面影像、其中顯示 _logs.Kubernetes.event_ 記錄的進階查詢篩選結果。本頁有許多內容、請參閱下圖說明：</block>
+  <block id="1e7fa24e8c554b3ada8b33899f9054fb" category="inline-image-macro">說明「進階查詢」畫面</block>
+  <block id="67e358a5c19a682585f241c67623688b" category="paragraph"><block ref="67e358a5c19a682585f241c67623688b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46a8b17ae4f06cb7ca1032e9fd81030d" category="list-text">此進階查詢字串篩選器適用於下列項目：</block>
+  <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">篩選記錄項目、並以包含「失敗」一詞的 _ 理由 _ 、但不包含「失敗掛載」的特定原因。</block>
+  <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">請加入其中任何一項、包括 _metadata.namespace_ 、包括「監控」一詞、但不包括「 cm-monitoring 」或「 eg-monitoring 」的特定命名空間。</block>
+  <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">請注意、在上述情況下、由於「 cm-monitoring 」和「 eg-monitoring 」都包含破折號（ "-" ）、因此字串必須包含在雙引號中、否則將會顯示剖析錯誤。不包含破折號、空格等的字串不需要括在引號中。如果有疑問、請嘗試將字串放在引號中。</block>
+  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">目前篩選的結果、包括任何「篩選依據」值和「進階查詢」篩選器。清單可依任何顯示的欄排序。若要顯示其他欄、請選取「齒輪」圖示。</block>
+  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">圖表已放大、僅顯示在特定時間範圍內發生的記錄結果。此處顯示的時間範圍會反映目前的縮放等級。選取 _ 重設縮放 _ 按鈕、將縮放比例設回目前的 Cloud Insights 時間範圍。</block>
+  <block id="e9c3a605437c1d21260249137747effc" category="list-text">圖表結果已依 _ 來源 _ 欄位分組。圖表會以色彩分組的方式顯示每一欄的結果。將游標移至圖表中的某一欄、將會顯示特定項目的一些詳細資料。</block>
+  <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">群組 Hover 詳細資料</block>
+  <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9bb5a9e84c262c583c25b07c1af190" category="paragraph">您可以將簡單篩選與進階查詢篩選器結合、結果篩選器是兩者的「 AND 」。</block>
+  <block id="b761d7a9aa49f18da68cf21ea910b857" category="section-title">圖表圖例</block>
+  <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">圖表下方的 _ 圖例 _ 也有一些驚喜。對於圖例中顯示的每個結果（根據目前的篩選條件）、您可以選擇僅顯示該行的結果（新增篩選器）、或顯示該行以外的任何結果（新增排除篩選器）。圖表和記錄項目清單會更新、以根據您的選擇顯示結果。  若要移除此篩選、請再次開啟圖例、然後選取 [X] 以清除以圖例為基礎的篩選。</block>
+  <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">針對第一個結果顯示「新增篩選器」的進階查詢圖例</block>
+  <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
