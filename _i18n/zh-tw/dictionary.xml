@@ -1624,38 +1624,10 @@
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">Catin.IO/OS = Linux</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在Kubernetes上安裝NetApp Kubernetes監控操作員代理程式的步驟：</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift指示</block>
-  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state指標計數器</block>
-  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap指標</block>
-  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
-  <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">示範設定指標</block>
-  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
-  <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">部署指標</block>
-  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
-  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入口指標</block>
-  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
-  <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">命名空間度量</block>
-  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
-  <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">節點度量</block>
-  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
-  <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">持續Volume指標</block>
-  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
-  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">持續Volume報銷標準</block>
-  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
-  <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">Pod指標</block>
-  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
-  <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet度量</block>
-  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
-  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">機密數據</block>
-  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
-  <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">服務指標</block>
-  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
-  <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatefulSet指標</block>
-  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">請注意、這些命令使用的是預設命名空間「CI監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
   <block id="368e58ca73434aae8ab3a7bf3f6d2955" category="paragraph">若要在Kubernetes上解除安裝以指令碼為基礎的代理程式、請執行下列步驟：</block>
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">如果監控命名空間僅用於Telegraf：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">如果監控命名空間用於Telegraf以外的其他用途：</block>
-  <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">如果先前已手動為指令碼型Telegraf安裝建立安全內容限制：</block>
   <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">驗證Checksum</block>
   <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">請遵循下列步驟：</block>
   <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">依照指示複製代理程式安裝程式程式片段。</block>
@@ -5261,14 +5233,6 @@
   <block id="48efe9ecb0bd1de1d09e3291068bd38a" category="inline-link-macro">規則運算式範例</block>
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">另請參閱： <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights</block>
-  <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
-  <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</block>
-  <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在記錄中看到類似以下內容的訊息：E0901 15：21：39.962145 1反射器.go：178] k8s.io/kube狀態指標/內部/儲存區/建置者。Go：無法列出* v1.matingWebhookkConfiguration：伺服器找不到所要求的資源E0901 15：21：43.352/16ku.16178.16v1.資源搜尋失敗kuo.16178.</block>
-  <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到Telegraf發出的錯誤訊息類似於下列內容、但Telegraf確實會啟動並執行：10月11日14：23：41 IP：172-31：39 - 47系統d[1]：啟動外掛程式導向的伺服器代理程式、以便向影響者xDB報告指標。10月11日14：23：41 IP-172-31-39-47 Telewraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg="failed to create cache directory./etc/telegraf/.cache / snowflake、err：mkdir /etc/telegraf/.ca Che：權限遭拒。ignored\n" func="gosnowflake.（*預設Logger）.Errorf" file="log.go:120" OCT 11 14：23：41 IP：172-31：39：47 Telefraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg=「無法開啟。忽略。開啟/etc/telegraf/.cache / snowflake/occs_rapping_cache。json：沒有這樣的檔案或目錄。\n" func="gosunflake.（*預設Logger）.rf" file="log.go:120" 10月11日14：23：41 IP：172-31：39 - 47 Telefraf[1827]：10-1014：T1114：10！啟動Telegraf 1.19.3</block>
-  <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">這篇GitHub文章</block>
-  <block id="8f176f657f418586c2a4828045ab0c37" category="cell">這是已知的問題。請參閱 <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 以取得更多詳細資料。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。</block>
-  <block id="9aab00e938cede2932654042bc507309" category="cell">在Kubernetes上、我的Telegraf pod報告下列錯誤：「處理mountstats資訊時發生錯誤：無法開啟mountstats檔案：/hostfs/proc/1/mountstats、錯誤：開啟/hostfs/proc/1/mountstats：權限遭拒」</block>
-  <block id="f997e79142f159c33823b9deeab809eb" category="cell">在Kubernetes上、我的Telegraf ReplicaSet pod報告下列錯誤：[inputs.prometheus]錯誤in plugin：Could not load keypair /etc/Kubernetes /pi/etcd/server.crt：/etc/Kubernetes /pi/etcd/server.key：open /etc/Kubernetes /pi/etcd/server.crt目錄或這樣的檔案</block>
   <block id="b1268076894d71bd79285945ea54cad5" category="doc">使用監視器警示</block>
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">您可以建立監控器來設定觸發警示的臨界值、以通知您有關網路資源的問題。例如、您可以建立一個監控器、針對任何多種傳輸協定發出_節點寫入延遲_警示。</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監控功能可讓您針對儲存設備、VM、EC2和連接埠等「基礎架構」物件所產生的度量、以及針對Kubernetes、ONTAP 支援各種進階指標和Telegraf外掛程式所收集的「整合」資料、設定臨界值。當超過警告層級或臨界層級臨界值時、這些_metric _監控器會發出警示。</block>
@@ -8220,12 +8184,7 @@
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「可觀察性」或「安全性」的角色。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必須以帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">升級</block>
-  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">若要停止NetApp Kubernetes監控操作員：</block>
-  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">若要啟動NetApp Kubernetes監控操作員：</block>
-  <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
   <block id="0b17bce222385cebd477477b188e6434" category="paragraph">若要在Kubernetes上解除安裝以指令碼為基礎的代理程式（例如、升級至NetApp Kubernetes監控操作員時）、請執行下列步驟：</block>
-  <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">從指令碼型代理程式升級至NetApp Kubernetes監控操作員</block>
-  <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">解除安裝</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安裝</block>
   <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
   <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">更新外觀！Cloud Insights</block>
@@ -8463,31 +8422,15 @@
   <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。</block>
   <block id="ba5a4399ff89e39d6d73b55b320d32dc" category="section-title">使用自訂或私有泊塢視窗儲存庫</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。</block>
-  <block id="dd9d67c4c74337838e56e1e3e14ceb18" category="admonition">如果您有先前安裝的指令碼型代理程式、您必須升級至NetApp Kubernetes監控操作員。</block>
-  <block id="ce980eb171cf0f52904feafd9843c0cf" category="list-text">請記下Cloud Insights 您的叢集名稱、此名稱已被辨識為由效益管理系統辨識。您可以執行下列命令來檢視叢集名稱。如果您的命名空間不是預設值（_CI-監 控_）、請替換適當的命名空間：</block>
   <block id="fb990bfdcd5afe0e05c70ad5c62965f0" category="list-text"><block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 目前的運算子。請務必使用上述步驟1所述的相同叢集名稱。</block>
-  <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升級至最新的NetApp Kubernetes監控操作員</block>
   <block id="143bc427903e01a7afe2d41b83643f5e" category="section-title">安裝NetApp Kubernetes監控操作員</block>
   <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">升級</block>
-  <block id="8fd8f7aff1ee233a0c987ac476072bd4" category="list-text">輸入唯一的叢集名稱和命名空間。如果您是 <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> 從指令碼型代理程式或先前的Kubernetes運算子、使用相同的叢集名稱和命名空間。</block>
-  <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">正在解除安裝</block>
   <block id="f6df033900c8ae9dec99b302ab258469" category="admonition">如果您是在先前安裝的指令碼型Kubernetes代理程式上執行、則必須執行 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> NetApp Kubernetes監控營運者。</block>
   <block id="cef7a1ce5721683d9793e2eee4d38e9c" category="section-title">移除已過時的指令碼型代理程式</block>
-  <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">請注意、NetApp Kubernetes監控操作員的預設命名空間為「NetApp監控」。如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
-  <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">可使用下列命令解除安裝較新版本的監控操作員：</block>
-  <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。</block>
-  <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
-  <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使用者互動。</block>
-  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">請使用下列連結來存取這些kube狀態度量計數器的資訊：</block>
-  <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</block>
-  <block id="31374f026fd34f38c1768e8bcae58183" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</block>
-  <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。</block>
   <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">目前的Telegraf版本Cloud Insights 是* 1.24.0*。</block>
-  <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">我有PSP/PSA.環境。這是否會影響我的監控操作員？</block>
-  <block id="6ae137903bc328659928ed818d9ee78a" category="cell">我在嘗試部署NKMO時遇到問題、我使用PP/PSA.</block>
   <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">返回頁首</block>
   <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
   <block id="0091efee7f9b5f0e27211eb7226d0a23" category="cell">臨界值</block>
@@ -9362,17 +9305,6 @@
   <block id="5913820121a0441bda6301d54adb6f18" category="paragraph">以下兩張圖表顯示嚴苛的工作負載、以及受嚴苛工作負載影響的工作負載。</block>
   <block id="89ddd7746bd74dd5bc0f8ecebb9b8a48" category="paragraph">您可以採取許多步驟來降低或消除環境中的飽和機率。以下是您可以嘗試的幾項功能。</block>
   <block id="4085e40ddd1e35991b92d689ee9b414a" category="section-title">請在開始之前先記下這些資訊</block>
-  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">停止並啟動NetApp Kubernetes監控操作員</block>
-  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。</block>
-  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
-  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。這些成品包括但不限於：</block>
-  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
-  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。若要取得Kubernetes版本：_kubeclt版本_若要取得Kube-st態 度量版本：_kubeclt Get Deploy / kube-state-metases -o jsonpath='{.image}'_若要避免發生這些訊息、使用者可以修改其kube-state-metases部署、以停用下列Les:_mutatingwebhookwebhookvalidkap_props_enefroup參數組態： resources=certicatesignquests、水平複製、組態、cronjobs、取消套用、部署、端點、橫向套用自動擴充、擷取、工作、限制範圍、命名空間、網路原則、節點、持續套用磁碟區、持續套用磁碟區、資源資源等、機密、服務、服務、網路套用原則、預設套用範圍、重複本、複本、複製、資源、套用、資源、限制、資源組、資源、資源組態、資源、儲存、預設值、資源、限制、資源、資源、儲存、組態設定、儲存、儲存、儲存、限制、資源、資源、資源、儲存區、限制、資源、資源、資源、資源、儲存區、資源、限制、資源、資源、資源、儲存區、限制、儲存區、資源組態設定、資源、儲存區、資源、資源、儲存區、資源、資源、資源、儲存區、儲存區、資源、資源、資源、資源、資源、資源、 驗證webhookconfigurations、volume附件"</block>
-  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。例如、編輯ReplicaSet... kurbectl編輯RS Telefra-RS ...、並將適當的容許值新增至規格。然後重新啟動ReplicaSet Pod。</block>
-  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前的NKMO、並支援PSP/PSA1：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控操作員：kubecl刪除代理代理程式監控-netapp -n netapp監控kebecl刪除ns netapp監控kubecl刪除crd agents.monitoring.netapp.com kubecl刪除叢集角色代理程式管理員角色代理程式角色代理程式角色代理程式-度量讀取程式kubeclete roleBinding代理程式管理員角色繫結代理程式角色代理程式-叢集管理角色2。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
-  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.使用下列命令編輯代理程式：kubecl -n &lt;name-space&gt;編輯代理程式2.將「已啟用安全性原則」標示為「假」。這會停用Pod安全政策和Pod安全許可、並允許NKMO部署。使用下列命令進行確認：kubecll Get PSP（應顯示Pod安全性原則已移除）kbecll Get all -n &lt;命名空間&gt;| Grep -I pp（應顯示找不到任何項目）</block>
-  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
-  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已過時</block>
   <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">支援下列三種資料收集器Cloud Insights ：</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基礎架構（儲存設備、網路交換器、運算基礎架構）</block>
@@ -9550,7 +9482,6 @@
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">匯出的資料會反映目前顯示的篩選、欄和欄名稱。</block>
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*本頁*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">移除NetApp Kubernetes監控操作員</block>
   <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">在「功能表」中、按一下「*管理&gt;應用程式*」Cloud Insights 。</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">此時會顯示「新增應用程式」對話方塊。</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">如果您要解除安裝* Windows *擷取單元：</block>
@@ -9732,8 +9663,6 @@
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
 <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">我的監控操作員部署有問題、目前的文件無法協助我解決問題。</block>
-  <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">擷取或記下下列命令的輸出、然後聯絡技術支援團隊。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。</block>
   <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">問題</block>
@@ -10042,14 +9971,6 @@
   <block id="8ed7b905a59e5488e500fdbff4d3cf32" category="inline-image-macro">選取報告輸出</block>
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 聯邦版不提供儲存工作負載安全功能。</block>
-  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">NKMO 命名空間中的網路觀察者（工作負載對應） Pod 位於 CrashLoopBackOff</block>
-  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">這些 Pod 對應於網路可觀察性的工作負載對應資料收集器。請嘗試下列方法：•檢查其中一個 Pod 的記錄、以確認最低核心版本。例如： --{"CI-租 戶 -id":" 您的租戶 -id" 、 "collector 叢集 " ： "Your -k8s-cluster 名稱 " 、 "Environment ： "prod" 、 "Level" ： "error" 、 "msg" ：驗證失敗。原因：核心版本 3.10.0 低於最低核心版本 4.18.0 、 "Time" ： "2022-11-09T08:23:08Z"} --- • Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 &gt;=4.18.0</block>
-  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">NKMO 命名空間中的網路觀察者 Pod 位於 OpenShift 4 環境中的 CrashLoopBackOff</block>
-  <block id="c16b414538506d32ed8a234fa2331767" category="cell">目前不支援這項功能。請留意未來更新中要新增的支援。</block>
-  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Pod 在 NKMO 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料</block>
-  <block id="b301a7b156c241fb466de1bca776811c" category="cell">檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</block>
-  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
-  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">傳入</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。</block>
@@ -10208,18 +10129,6 @@
   <block id="d5461aa4ef1df0b08d1c023caca59a6e" category="list-text">已啟用 - 離線</block>
   <block id="3a7ceac4689e5c9ea84be781707cd148" category="list-text">已啟用 - 線上</block>
   <block id="be85cefb4673c1f486c73de818be2056" category="list-text">錯誤 - API 金鑰權限不足</block>
-  <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
-  <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration ：</block>
-  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 現有運算子的最新運算子。</block>
-  <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">擷取最新的容器映像</block>
-  <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確保您是 <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> 如果您使用的是自訂儲存庫。</block>
-  <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">如果 AgentConfiguration 不存在：</block>
-  <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：</block>
-  <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：</block>
-  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> 現有的運算子。</block>
-  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新的運算子。</block>
-  <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">請使用相同的叢集名稱。</block>
-  <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。</block>
   <block id="a33c53884818c3fc88ab0531e515addb" category="section-title">改善 Kubernetes 監控操作員安裝</block>
   <block id="3e1d445ca1169cb6a1128270df9b6d0f" category="paragraph">的安裝與組態 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 下列改善功能比以往更容易：</block>
   <block id="581978383d3baa213002e5bc8a0db701" category="inline-link-macro">組態設定</block>
@@ -10339,8 +10248,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">我在同一個 Qtree 中手動設定了軟配額和硬配額、但顯示的總容量是硬配額、對嗎？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">是、如果指定硬配額、則會顯示為總容量。</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">登入問題</block>
-  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">安裝 NetApp Kubernetes Monitoring Operator 後、我會立即在記錄中看到下列內容： [ 外掛程式中出現 inputs.prometheus] 錯誤：向發出 HTTP 要求時發生錯誤<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 取得<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 撥號 TCP ： LOOKUP kube-state - 規格。 &lt;namespace&gt; 。 Svc.cluster 。本機：無這類主機</block>
-  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
   <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">尋找及篩選</block>
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同樣地、在 _Find_ 欄位中鍵入字串、也會醒目提示相符的工作負載。</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在「尋找」方塊中鍵入會強調工作負載</block>
@@ -10441,7 +10348,6 @@
 或者、也可以使用「所有活動」索引標籤下的「新增至篩選」選項。</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">* 交談 * ：您將與 NetApp 支援人員連線以取得協助（僅限工作日）。您可在任一Cloud Insights 個畫面右上角的*說明&gt;即時聊天室*功能表選項中找到聊天室。</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">度量收集時間間隔（以秒為單位）（最大 = 60 秒）</block>
-  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱：<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
   <block id="3407e6f55320fe223ef04230620a7680" category="paragraph">Cloud Insights 從 IBM DS4000 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">Cloud Insights 可設定為手動更新 AU 軟體、讓您更能掌控環境中安裝的軟體。</block>
   <block id="a7c522a068ca75556dee476101135cc4" category="doc">手動安裝擷取單元軟體</block>
@@ -10499,8 +10405,6 @@
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在 Cloud Insights 中、瀏覽至 * 管理 &gt; 資料收集器 * 、然後選取 * 擷取單位 * 標籤。從 AU 右側的「三點」功能表中選擇 _Restart_ 。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 您可以自訂安裝與組態。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">監控話務員選項</block>
-  <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
-  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基礎架構圖示：</block>
@@ -10594,7 +10498,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">_telegraf_ 、 _Fluent-bit_ 和 _net-觀察者 示範示範必須在叢集中的每個節點上排程 Pod 、才能正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">污染與容許</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">深入瞭解 Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
@@ -10618,25 +10521,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">集合體、單位選擇、條件格式化和欄重新命名是儀表板表格 Widget 最實用的功能、現在這些功能也適用於 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。例如、從您想要安裝操作員的伺服器 / 虛擬機器、您必須能夠存取 Cloud Insights 、並能從 Cloud Insights 下載二進位檔。</block>
-  <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
-
- 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 已超過內容期限（等待標頭時超過 Client.Timeout ）</block>
-  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">編輯每個 Telegraf 組態檔案（例如 /etc/telegraf/telegraf.d/ * 。 conf ）、並增加 Telegraf 輸出外掛程式的逾時時間。  例如、在每個 .conf 檔案中、取代 ... 的所有執行個體。
-
-[[outputs.http]]
-...
-逾時 = 「 5s 」
-...
-
-
-... 包含下列項目：
-
-[[outputs.http]]
-...
-逾時 = 「 10s 」
-...
-
-然後重新啟動 Telegraf 。</block>
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">請參閱「瀏覽器」頁面、以取得您要使用的 API 特定範例。</block>
   <block id="ad8f9b24701da9364290a4c2eee40c64" category="section-title">ONTAP 電力指標</block>
   <block id="b665630963f971c488f8e065e0c06fa9" category="paragraph">多種 ONTAP 機型提供 Cloud Insights 的電力指標、可用於監控或警示。下列支援和不支援的機型清單並不完整、但應提供一些指引；一般而言、如果機型與清單上的機型屬於同一個系列、則支援應該相同。</block>
@@ -10833,23 +10717,6 @@ g ）在 ONTAP 中開啟防火牆、讓 ONTAP 能夠連線到代理程式方塊�
 8. 確認連接埠 7 已開啟。
 
 9. 如果上述任何一項都無法解決問題、請使用開啟案例 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> 以取得進一步協助。</block>
-  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">在 _AgentConfiguration_ 中編輯 NetApp-monitoring 組態區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
-
-附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
-
-...
-規格：
-...
-Telegraf ：
-    ...
-     - 名稱： Docker
-            執行模式：
-              –示範
-            替代：
-              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder
-                值： UNIX ： //RUN / Docker 。 sock
-    ...
-...</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">此資料收集器支援的機型和版本：</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
@@ -12477,4 +12344,62 @@ v9.2.4.2</block>
   <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">圖表下方的 _ 圖例 _ 也有一些驚喜。對於圖例中顯示的每個結果（根據目前的篩選條件）、您可以選擇僅顯示該行的結果（新增篩選器）、或顯示該行以外的任何結果（新增排除篩選器）。圖表和記錄項目清單會更新、以根據您的選擇顯示結果。  若要移除此篩選、請再次開啟圖例、然後選取 [X] 以清除以圖例為基礎的篩選。</block>
   <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">針對第一個結果顯示「新增篩選器」的進階查詢圖例</block>
   <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c22968bfe7941ac13825abafc2a7f5b1" category="list-text">輸入唯一的叢集名稱和命名空間。如果您是 <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> 從先前的 Kubernetes 運算子中、使用相同的叢集名稱和命名空間。</block>
+  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">備份現有組態：</block>
+  <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">調校操作員</block>
+  <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。如需可調校的變數說明和清單、請參閱安裝套件隨附的README檔案。安裝操作員之後、請使用下列命令來檢視README：</block>
+  <block id="bc6b270b9094337edca8a85819407d18" category="admonition">Cloud Insights 聯邦版不提供操作員調校功能</block>
+  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">您可以調整NetApp Kubernetes監控操作員、藉由微調自訂資源的特定變數來獲得最佳效能。  請參閱下表以瞭解您可以設定的變數。</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">若要修改這些值、請使用下列命令編輯代理程式CR（以&lt;namespace&gt; 支援功能取代功能變數來取代命名空間）：</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR規格的格式如下：</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">值機員CR中已有標示為「yes」的「included in Default CR」項目、可在其各自的外掛程式下找到。標示為「否」的項目必須依照隨附的預設替代所提供的範例手動新增。</block>
+  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">資源相關變數</block>
+  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">請參閱<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block>	如需Kubernetes資源的相關資訊、</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">變數名稱</block>
+  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">外掛程式名稱</block>
+  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">包含在預設的CR中</block>
+  <block id="b4706783c74b583b849dec44244e0769" category="cell">ds_cpo_limits預留位置</block>
+  <block id="a6105c0a611b41b08f1209506350279e" category="cell">是的</block>
+  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">Kubernetes適用於Telewraf-DS的CPU限制</block>
+  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_limits預留位置</block>
+  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">Kubernetes Telewraf-DS的記憶體限制</block>
+  <block id="6787619d810a62301cfe3986961a1d04" category="cell">ds_cpo_request預留位置</block>
+  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">Kubernetes遠端連網的CPU要求</block>
+  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_RErequest預留位置</block>
+  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">Kubernetes遠端連網的記憶體要求</block>
+  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">rs_cpo_limits預留位置</block>
+  <block id="b2099247c65bb590909309709da41854" category="cell">Kubernetes適用於Telewraf-RS的CPU限制。</block>
+  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">rs_MEM_limits預留位置</block>
+  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">Kubernetes Telewraf-RS的記憶體限制</block>
+  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">rs_cpo_request預留位置</block>
+  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">Kubernetes的遠端GRaf-RS CPU要求</block>
+  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">rs_mem_request預留位置</block>
+  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">Kubernetes的遠端GRaf-RS記憶體要求</block>
+  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_REPRO_placeholder_..</block>
+  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">ksm</block>
+  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">Kubernetes CPU要求進行Kube-State度量部署</block>
+  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_REPAT_placeholder_..</block>
+  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">與Telegraf相關的變數</block>
+  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">請參閱<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> 以取得遠端作業環境變數的相關資訊。</block>
+  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">預留位置</block>
+  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">collection_時間 間隔預留位置</block>
+  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">否</block>
+  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">（設定Telewraf時間間隔、類型間隔）：預設的Telewraf會在所有外掛程式的輸入之間等待一段時間。有效時間單位為ns、us（或 μ s）、ms、s、m、h</block>
+  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">Round_時間 間隔預留位置</block>
+  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">（設定Telewraf Round_interval、類型布林）會收集多個時間間隔的度量</block>
+  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">metric批次大小預留位置</block>
+  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">（設定Telewraf metric _batch_size、type int）輸出Telewraf的最大記錄數將以一批次寫入</block>
+  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">metric緩衝區限制預留位置</block>
+  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">（設定Telewraf metric _bider_limit、type int）輸出Telewraf的最大記錄數將會在成功寫入之前快取</block>
+  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">collection_timer_placeholder_</block>
+  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">（設定Telewraf collection_bit穩定性、類型間隔）：每個外掛程式會在收集輸入之前、於排程的收集時間與時間+ collection_bit之間隨機等候一段時間</block>
+  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">精度預留位置</block>
+  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">（設定Telewraf精度、類型間隔）：收集的度量會四捨五入至指定的精度、當設定為「0」精度時、會由時間間隔指定的單位來設定</block>
+  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">Flush間隔預留位置</block>
+  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">（設定Telewraf Flush時間間隔、類型間隔）：預設時間：Telewraf會在寫入輸出之間等待。</block>
+  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">Flip_JITAT_Placeholder_</block>
+  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">（設定Telewraf Flush _ditrit、類型時間間隔）：每個輸出會在排程寫入時間和寫入輸出之前、先隨機等候一段時間+ Flush _ditrit</block>
+  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">雜項變數</block>
+  <block id="327fbef93ac997add024577e1fdbe932" category="cell">Curle_CMD_placeholder</block>
+  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">Curl命令用於下載各種資源。例如：「Curl」（捲曲）或「Curl -k」（捲曲-k）</block>
 </blocks>
