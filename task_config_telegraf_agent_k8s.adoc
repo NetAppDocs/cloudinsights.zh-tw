@@ -19,18 +19,10 @@ summary: 支援Telegraf做為其代理程式、可在Kubernetes上收集整合�
 
 
 [role="lead"]
-包含在內的許多元件Cloud Insights link:https://docs.fluentbit.io/manual["Fluent位元"] 和 link:https://docs.influxdata.com/telegraf/["Telegraf"]（用於收集Kubernetes資料）。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights
+提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。
 
 
 toc::[]
-提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。
-
-image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
-
-以下是顯示操作員在您環境中所在位置的高階圖例。視您的環境而定、_Proxy Server_可能是必要的、也可能不是必要的。
-
-image:CI_Diagram_with_NKMO.png["顯示駐留在Kubernetes叢集中的NKMO的高層地圖、其中箭頭顯示資料如何從主機、Proxy伺服器傳輸到叢集、全部都會循環到Cloud Insights Fesk"]
-
 操作員（NKMO）和資料收集器都是從Cloud Insights 《The》介紹中心下載。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights
 
 
