@@ -200,7 +200,10 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 
 NOTE: 您無法刪除已連接資料收集器的擷取單元（ AU ）。在刪除原始 AU 之前、請將所有 AU 的資料收集器移至另一個 AU （編輯收集器、只需選取不同的 AU ）。
-「」
+
+在設備解析度中使用的擷取單元旁邊有一顆星。移除此 AU 之前、您必須先選取另一個 AU 以用於裝置解析度。將游標移至不同的 AU 上方、然後開啟「三點」功能表、選取「用於裝置解析度」。
+
+image:AU_for_Device_Resolution.png["AU 用於裝置解析度"]
 
 
 

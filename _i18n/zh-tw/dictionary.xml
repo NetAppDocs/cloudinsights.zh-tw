@@ -12394,6 +12394,8 @@ v9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">雜項變數</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">Curle_CMD_placeholder</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">Curl命令用於下載各種資源。例如：「Curl」（捲曲）或「Curl -k」（捲曲-k）</block>
-  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">您無法刪除已連接資料收集器的擷取單元（ AU ）。在刪除原始 AU 之前、請將所有 AU 的資料收集器移至另一個 AU （編輯收集器、只需選取不同的 AU ）。
-「」</block>
+  <block id="1f0e93b0a15bd60e04388c6d5ff59fdc" category="admonition">您無法刪除已連接資料收集器的擷取單元（ AU ）。在刪除原始 AU 之前、請將所有 AU 的資料收集器移至另一個 AU （編輯收集器、只需選取不同的 AU ）。</block>
+  <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">在設備解析度中使用的擷取單元旁邊有一顆星。移除此 AU 之前、您必須先選取另一個 AU 以用於裝置解析度。將游標移至不同的 AU 上方、然後開啟「三點」功能表、選取「用於裝置解析度」。</block>
+  <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">AU 用於裝置解析度</block>
+  <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
