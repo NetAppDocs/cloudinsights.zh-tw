@@ -204,6 +204,19 @@ _telegraf_ 、 _Fluent-bit_ 和 _net-觀察者 示範示範必須在叢集中的
 
 
 
+=== 權限
+
+如果您所監控的叢集包含的自訂資源沒有 ClusterRole link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["要檢視的集合體"]，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。
+
+. 在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 <namespace> 附加權限 _
+. 使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. 將變更套用至叢集
+
+
+附註：如果您要移除先前新增的權限、變更將不會生效、直到 _event-aliper-pod 重新啟動為止。
+
+
+
 == 安裝NetApp Kubernetes監控操作員
 
 image:NKMO-Instructions-1.png[""]

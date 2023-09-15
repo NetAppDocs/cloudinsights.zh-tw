@@ -12398,4 +12398,10 @@ v9.2.4.2</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">在設備解析度中使用的擷取單元旁邊有一顆星。移除此 AU 之前、您必須先選取另一個 AU 以用於裝置解析度。將游標移至不同的 AU 上方、然後開啟「三點」功能表、選取「用於裝置解析度」。</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">AU 用於裝置解析度</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要檢視的集合體</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您所監控的叢集包含的自訂資源沒有 ClusterRole <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 &lt;namespace&gt; 附加權限 _</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
+  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">附註：如果您要移除先前新增的權限、變更將不會生效、直到 _event-aliper-pod 重新啟動為止。</block>
 </blocks>
