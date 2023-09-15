@@ -12404,4 +12404,33 @@ v9.2.4.2</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
   <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">附註：如果您要移除先前新增的權限、變更將不會生效、直到 _event-aliper-pod 重新啟動為止。</block>
+  <block id="4ae43ffefdaf3c2343be08c2c231978f" category="section-title">2023 年 9 月</block>
+  <block id="34e28a7e0863af99d5c1703dc6cda717" category="section-title">輕鬆在記錄檔中找到您想要的內容</block>
+  <block id="fcf6af69900c1559042fbe3fe72c94a1" category="inline-link-macro">增強功能</block>
+  <block id="d79e17684f1a24c58bb32d08bef3a3ff" category="paragraph">記錄查詢（ * 可伺服性 &gt; 記錄查詢 &gt; + 新記錄查詢 * ）包含數個項目 <block ref="86ca1f2cb3e438ee4c22e212690c972d" category="inline-link-macro-rx"></block> 讓記錄探索變得更簡單、資訊更豐富。</block>
+  <block id="848fb0e63e13a4434909fdea6458ed6d" category="section-title">包括 / 排除</block>
+  <block id="e60e1b57ed4e38e138695033de1e9d1e" category="paragraph">篩選值時、您可以輕鬆選擇是否要 * 包含 * 或 * 排除 * 符合篩選條件的結果。選取「排除」會建立「非 &lt;value&gt; 」篩選器。您可以在單一篩選器中合併「包含」和「排除」值。</block>
+  <block id="0792509c03d281def53e2cbb6d7f07df" category="inline-image-macro">篩選器顯示「排除」選項按鈕</block>
+  <block id="ba1b079c59ef8c16f8f957aa0df9c4de" category="paragraph"><block ref="ba1b079c59ef8c16f8f957aa0df9c4de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b45c0ca13c55b7f66782e958a84142d4" category="section-title">進階查詢</block>
+  <block id="95f02ff52db65fe00fc8634318fba90e" category="paragraph">* 進階查詢 * 可讓您建立「自由格式」篩選器、使用 AND 、 not 、 OR 、通配符等來合併或排除值</block>
+  <block id="b0afc67d027a88643736219f858d2596" category="inline-image-macro">記錄查詢範例說明及、非及或功能</block>
+  <block id="c6d89674714a140b24e4a9d11d190824" category="paragraph"><block ref="c6d89674714a140b24e4a9d11d190824" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="190febc1a687d2e28053104a1cffd7c7" category="paragraph">「篩選條件」和「進階查詢」會「和」一起組成單一查詢。結果會顯示在結果清單和圖表中。</block>
+  <block id="82b7b893771cf0e9f3adb5b42ae6ee7e" category="section-title">在圖表中分組</block>
+  <block id="496613147f6975d1aa2dac2ceaa46634" category="paragraph">當您選取 * 群組依據 * 的記錄屬性時、清單和圖表會顯示目前篩選的結果。在圖表中、分成不同色彩的欄。將游標移到圖表中的某一欄上、會顯示特定項目的詳細資料、類似於展開圖表圖例時所顯示的整體資訊。  在圖例中、您也可以選擇為特定群組設定「包括」或「排除」篩選。</block>
+  <block id="44f9aec87f1c51a61aeca11ad9786542" category="inline-image-macro">以圖表中堆疊欄的範例來記錄查詢群組</block>
+  <block id="e9523ec897a9823fb02ccbd1944b7f3f" category="paragraph"><block ref="e9523ec897a9823fb02ccbd1944b7f3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a80f4dd9b1327eb6d1bd68998aa54c3" category="section-title">「浮動」記錄詳細資料面板</block>
+  <block id="91d94db59fc7134cda265c7016d2dd86" category="paragraph">使用記錄查詢探索記錄時、在清單中選取項目會開啟該項目的詳細面板。您現在可以選擇顯示滑出面板「浮動」（即顯示在螢幕的其餘部分）或「頁面」（即顯示為頁面內的自己框架）。若要在這些檢視之間切換、請選取面板右上角的「頁面 / 浮動」按鈕。</block>
+  <block id="fb8b0b641df922f8eab6bd7c3c4a1131" category="inline-image-macro">「頁面內」滑出面板、並反白顯示按鈕</block>
+  <block id="e8d14fa9be7f94fb8271ac286e2294a8" category="paragraph"><block ref="e8d14fa9be7f94fb8271ac286e2294a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d5f3e5dd25b324aa763247302dd4e5ba" category="section-title">收合功能表</block>
+  <block id="21425fa36b8a56c29ff0c7d71c2109fa" category="paragraph">您可以選取功能表下方的「最小化」按鈕、以收合左側的 Cloud Insights 導覽功能表。將功能表最小化時、請將游標移至圖示上方、查看其開啟的區段；選取圖示會開啟功能表、並直接前往該區段。</block>
+  <block id="063ac5c87e9ce20ce0f904d0551f0a18" category="inline-image-macro">將功能表最小化</block>
+  <block id="a42f1d09ea5508165ffbb74fd0d019d7" category="paragraph"><block ref="a42f1d09ea5508165ffbb74fd0d019d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36ffaf16e7982bb87a23ee56b05db6df" category="section-title">Data Collector 改良功能</block>
+  <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights 讓顯示和尋找資料收集器資訊變得更容易：</block>
+  <block id="203714762dd5efde1be30c09220249eb" category="list-text">* 資料收集器清單 * 的處理效率更高、這表示顯示和瀏覽這些清單所需的時間將大幅縮短。如果您的環境很大、而且有許多資料收集器、則在列出資料收集器時、您會看到顯著的改善。</block>
+  <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">* 資料收集器支援對照表 * 已從 .PDF 檔案移至 .html 型頁面、瀏覽速度更快、維護更輕鬆。請在此查看新的對照表：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
 </blocks>
