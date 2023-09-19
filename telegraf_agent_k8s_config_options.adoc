@@ -159,6 +159,12 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | dnsMode | TCP/UDP 、 DNS 模式 
 
 
+|  | 流暢的位元容忍度 | Fluent-bit-DS 額外公差。 
+
+
+|  | 事件導出者容忍度 | 事件導出者額外容忍度。 
+
+
 | 工作負載對應 |  | 可自訂工作負載對應集合及安裝 Operator 的組態選項 
 
 
@@ -183,13 +189,7 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | enabledDNSookup | 是非題、啟用 DNS 查詢 
 
 
-|  | 流暢的位元容忍度 | Fluent-bit-DS 額外公差。 
-
-
-|  | 事件導出者容忍度 | 事件導出者額外容忍度。 
-
-
-| 工作負載對應 |  | L4-公差 
+|  | L4-公差 | net-觀察者 -L4-DS 額外容忍度。 
 |===
 
 

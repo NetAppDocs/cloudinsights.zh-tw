@@ -12442,4 +12442,5 @@ v9.2.4.2</block>
 * Ubuntu 伺服器： 18.04 和 20.04 LTS
 
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">net-觀察者 -L4-DS 額外容忍度。</block>
 </blocks>
