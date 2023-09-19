@@ -87,7 +87,9 @@ sidebar:
     entries:
     - title: Kubernetes總覽頁面
       url: "/kubernetes_landing_page.html"
-    - title: 監控操作員入門
+    - title: 安裝或升級操作員之前
+      url: "/pre-requisites_for_k8s_operator.html"
+    - title: 安裝監控操作員
       url: "/task_config_telegraf_agent_k8s.html"
     - title: 監控話務員選項
       url: "/telegraf_agent_k8s_config_options.html"
