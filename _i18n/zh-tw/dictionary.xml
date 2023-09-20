@@ -10028,7 +10028,6 @@
   <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">net 觀察者 DS 的記憶體限制</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">CPU 要求取得 Net 觀察者 DS</block>
   <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">net 觀察者 DS 的記憶體要求</block>
-  <block id="25fe0f5d8da2c17ccf23ee0ed8327251" category="cell">MetricAgreegationInterval.</block>
   <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">度量集合時間間隔（以秒為單位）</block>
   <block id="c561450e999b4dfedfdbbc8b48e36db7" category="cell">bpfPollInterval.</block>
   <block id="a75c6546b06d6f58867213c5349a5f15" category="cell">BPF 輪詢時間間隔（秒）</block>
@@ -12730,4 +12729,5 @@ Telegraf ：
 然後重新啟動 Telegraf 。</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安裝或升級操作員之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安裝監控操作員</block>
+  <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggergationInterval.</block>
 </blocks>

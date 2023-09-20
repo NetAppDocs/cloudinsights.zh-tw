@@ -180,7 +180,7 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | MemRequest | net 觀察者 DS 的記憶體要求 
 
 
-|  | MetricAgreegationInterval. | 度量集合時間間隔（以秒為單位） 
+|  | MetricAggergationInterval. | 度量集合時間間隔（以秒為單位） 
 
 
 |  | bpfPollInterval. | BPF 輪詢時間間隔（秒） 
