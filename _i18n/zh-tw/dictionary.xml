@@ -3144,17 +3144,10 @@
   <block id="b7550fa0abbe6f770a66125cfc4f1ea4" category="paragraph">使用Lenovo資料收集器來探索Lenovo HX儲存系統的庫存和效能資料。Cloud Insights</block>
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP連接埠需求：9440</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">用於連接陣列的TCP連接埠。預設值為9440。</block>
-  <block id="4a4a6b257377a1be5e4488cf0a12459b" category="summary">說明存留時間（TTL）和縮減取樣</block>
-  <block id="ded51882afc1e18389057617d96454cb" category="doc">存留時間（TTL）和縮減取樣的資料</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">由於將資料保留一段設定期間（每版）、因此有可能處理數千個資料點。Cloud Insights因此、在圖表和表格中顯示資料之前、資料可能會先縮減取樣。</block>
-  <block id="9f006f2f14b484069511ef4a3f5315b3" category="section-title">資料保留（上線時間）</block>
   <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">由作用中訂閱版本決定的資料保留時間。Cloud Insights資料保留也稱為「存留時間」或「TTL」。</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">版本</block>
-  <block id="433a6d1dc9f59395173b9c44da198568" category="cell">TTL</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7天</block>
-  <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90天</block>
-  <block id="025025548582d3777fd0b072c16e2656" category="cell">13個月</block>
-  <block id="c6de11ce9bf3311bd827033947947ad4" category="paragraph">Premium Edition訂閱至少有500個託管單元（MU）、也會保留13個月的商業智慧與報告資料。</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">資料縮減取樣</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">*減量取樣*提供圖表中資料的統計近似資料、讓您在不顯示每個資料點的情況下、有效地概述資料、同時維持所收集資料的正確檢視。</block>
   <block id="b75dadfce21049a86b69409a71f9d89d" category="section-title">為何需要縮減取樣？</block>
@@ -12730,4 +12723,9 @@ Telegraf ：
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安裝或升級操作員之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安裝監控操作員</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggergationInterval.</block>
+  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">存留時間（ TTL ） - 即說明資料保留和縮減取樣</block>
+  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">資料保留與縮減取樣資料</block>
+  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">資料保留（亦即上線時間）</block>
+  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 天</block>
+  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Premium Edition 訂閱至少 500 部託管單位（ MU ）、可保留商業智慧與報告資料達 13 個月。</block>
 </blocks>
