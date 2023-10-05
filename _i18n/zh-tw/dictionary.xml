@@ -12507,7 +12507,6 @@ v9.2.4.2</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">從 Cloud Insights Docker 登錄下載操作員和資料收集器。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">* 安裝或升級之前 *</block>
-  <block id="f8d86927776a602d23bcf32f5dc5ea76" category="admonition">閱讀 <block ref="0b7fc724dd1c400c20e2b859e6c06230" category="inline-link-macro-rx"></block> 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升級至最新的NetApp Kubernetes監控操作員</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration ：</block>
@@ -12726,4 +12725,12 @@ Rocky 8.x 64 位元、 Rocky 9.x 64 位元、 SELinux
 SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 SUSE 15 SP3 上的 SELinux
 
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要檢視的集合體</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您所監控的叢集包含的自訂資源沒有 ClusterRole <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 &lt;namespace&gt; 附加權限 _</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
+  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">閱讀 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
+  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">請務必遵循中的步驟 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 上一節。</block>
 </blocks>

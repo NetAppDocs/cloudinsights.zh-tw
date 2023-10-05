@@ -32,7 +32,7 @@ toc::[]
 == 安裝NetApp Kubernetes監控操作員之前
 
 
-IMPORTANT: 閱讀 link:/pre-requisites_for_k8s_operator.html["* 安裝或升級之前 *"] 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。
+IMPORTANT: 閱讀 link:pre-requisites_for_k8s_operator.html["* 安裝或升級之前 *"] 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。
 
 
 
@@ -523,5 +523,8 @@ Telegraf ：
 ...
 
 然後重新啟動 Telegraf 。 
+
+
+| 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循中的步驟 link:pre-requisites_for_k8s_operator.html["權限"] 上一節。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
