@@ -10367,18 +10367,6 @@
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetes 網路效能監控與地圖圖示：</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes 網路效能監控與地圖、寬度 =640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">執行下列其中一項授權版本的電腦：
-
-Red Hat Enterprise Linux 7.x 、 8.x 64 位元、 SELinux
-CentOS 7.x 64 位元、 SELinux
-CentOS 8 Stream 、 SELinux
-Ubuntu 20 至 22 64 位元
-Rocky 8.x 64 位元、 Rocky 9.x 64 位元、 SELinux
-SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 SUSE 15 SP3 上的 SELinux
-
-此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
-
-不支援SE（增強安全性）Linux。</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB傳輸協定3.1版及更早版本。  請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。在使用 FlexCache 的系統中、從 ONTAP 9.7 開始、 Fpolicy 僅在 NFS 環境中支援。</block>
@@ -12728,4 +12716,14 @@ Telegraf ：
   <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">資料保留（亦即上線時間）</block>
   <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 天</block>
   <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Premium Edition 訂閱至少 500 部託管單位（ MU ）、可保留商業智慧與報告資料達 13 個月。</block>
+  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">執行下列其中一項授權版本的電腦：
+
+Red Hat Enterprise Linux 7.x 、 8.x 64 位元、 SELinux
+CentOS 7.x 64 位元、 SELinux
+CentOS 8 Stream 、 SELinux
+Ubuntu 20 至 22 64 位元
+Rocky 8.x 64 位元、 Rocky 9.x 64 位元、 SELinux
+SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 SUSE 15 SP3 上的 SELinux
+
+此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。</block>
 </blocks>

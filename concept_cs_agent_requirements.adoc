@@ -38,9 +38,7 @@ Ubuntu 20 至 22 64 位元
 Rocky 8.x 64 位元、 Rocky 9.x 64 位元、 SELinux
 SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 SUSE 15 SP3 上的 SELinux
 
-此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
-
-不支援SE（增強安全性）Linux。 
+此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。 
 
 
 | 命令 | 安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。 
