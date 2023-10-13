@@ -7594,11 +7594,8 @@
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定價</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">根據*管理單元*定價。Cloud Insights管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量</block>
-  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">請注意、下列資料收集器的計量單位是以不同的原始TiB與受管理單元速率。這些資料收集器上未格式化容量的每40TiB會被計入1個管理單元（MU）：</block>
-  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi內容平台</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleverafe</block>
-  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID</block>
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">以下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 以取得更多詳細資料。</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">預估您的訂閱成本</block>
@@ -9621,7 +9618,6 @@
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
 <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">「*總覽*」儀表板會顯示有用的資訊、例如您環境中的叢集數量及其整體容量與效能百分比。您也會看到預測性資料、說明在儲存容量或效能容量用盡空間之前、預期的天數。此外、如果基礎架構中的任何控制器都以超過65%的CPU執行、則在發生容錯移轉時可能會使叢集承受風險、ONTAP Essentials會將這些控制器顯示為「Hot」（熱）控制器。</block>
   <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">問題</block>
   <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">答</block>
@@ -10250,8 +10246,6 @@
   <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Cloud Insights Basic Edition 訂閱、或造訪 * 管理 -&gt; 訂閱 * 頁面、變更為付費 Cloud Insights 訂閱。</block>
   <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">若要訂閱、請前往 * 管理 -&gt; 訂閱 * 。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。</block>
-  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Co猶豫不決 的SmartFiles</block>
-  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC Data Domain</block>
   <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">您的預估標價成本將根據訂閱期限而有所變動。
 附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機</block>
@@ -12756,4 +12750,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">限制存取預設網域：預設網域是 Cloud Insights 環境帳戶擁有者所使用的網域。這些網域永遠都可以存取。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">將存取限制為預設值加上您指定的網域。列出您想要存取 Cloud Insights 環境的任何網域、以及預設網域。</block>
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 。</block>
 </blocks>

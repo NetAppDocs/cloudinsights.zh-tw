@@ -113,18 +113,8 @@ image:Module_Trials_Estimator.png["評估者"]
 
 * 1個受管理單元= 2個主機（任何虛擬或實體機器）
 * 1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量
+* 1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 。
 * 1 個託管單元 = 4 個 Kuberentes vCPU
-
-
-請注意、下列資料收集器的計量單位是以不同的原始TiB與受管理單元速率。這些資料收集器上未格式化容量的每40TiB會被計入1個管理單元（MU）：
-
-* AWS S3
-* Co猶豫不決 的SmartFiles
-* Dell EMC Data Domain
-* Dell EMC ECS
-* Hitachi內容平台
-* IBM Cleverafe
-* NetApp StorageGRID
 
 
 如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <<how-do-i-subscribe,以下>> 以取得更多詳細資料。
