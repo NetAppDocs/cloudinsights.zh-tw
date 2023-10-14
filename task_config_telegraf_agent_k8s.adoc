@@ -526,5 +526,8 @@ Telegraf ：
 
 
 | 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循中的步驟 link:pre-requisites_for_k8s_operator.html["權限"] 上一節。 
+
+
+| 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <<uninstalling,移除舊的運算子>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,安裝新的>>。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

@@ -25,6 +25,35 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+== 2023 年 10 月
+
+
+
+=== 模組試用
+
+除了 Cloud Insights 的初始試用版之外、您也可以利用 link:/concept_subscribing_to_cloud_insights.html#module-trials["模組試用"]。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。
+
+
+
+=== 限制對指定網域的存取
+
+管理員和帳戶擁有者現在有能力 link:/concept_user_roles.html#restricting-access-by-domain["限制 Cloud Insights 存取"] 以電子郵件傳送他們指定的網域。移至 * 管理 > 使用者管理 * 、然後選取 _ 限制網域 _ 按鈕。
+
+image:Restrict_Domains_Modal.png["限制網域模式"]
+
+
+
+=== 資料收集器更新
+
+下列資料收集器 / 擷取單元變更已就緒：
+
+* * Isilon / PowerScale REST * ： _emc_isilon.node_pool.*_ 名稱下的 Cloud Insights 增強分析功能已新增各種新屬性和指標。這些計數器和屬性可讓使用者建置儀表板和監控器、以利使用 _node_pool_ 容量；使用以不同硬體節點模型建置的 Isilon 叢集的使用者將擁有多個節點集區、瞭解節點集區層級的 HDD/SSD/total 容量使用量對於監控和規劃都很有用。
+* * Rubrik* 「服務帳戶」驗證支援： Cloud Insights 的 Rubrik 收集器現在支援傳統的 HTTP 基本驗證（使用者名稱和密碼）、以及 Rubrik 的服務帳戶方法（需要使用者名稱 + 秘密 + 組織 ID ）。
+
+
+'''
+
+
 == 2023 年 9 月
 
 
