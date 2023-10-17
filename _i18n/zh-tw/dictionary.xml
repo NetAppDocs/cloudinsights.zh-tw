@@ -12749,10 +12749,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 。</block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">2023 年 10 月</block>
-  <block id="1635c81c535bebd1d71a550697cceedf" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="0a393d5915f3031e3913a845dbcd9869" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">限制對指定網域的存取</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">限制 Cloud Insights 存取</block>
-  <block id="e00c08ca1d34e9c7ed5fb663ec3ef083" category="paragraph">管理員和帳戶擁有者現在有能力 <block ref="1f768d08438f0d475784e27a98b86880" category="inline-link-macro-rx"></block> 以電子郵件傳送他們指定的網域。移至 * 管理 &gt; 使用者管理 * 、然後選取 _ 限制網域 _ 按鈕。</block>
   <block id="03f0a9b50f7190c4b9c37f5692c049e7" category="inline-image-macro">限制網域模式</block>
   <block id="d8b198c983a9ca0805f2b1190da10dff" category="paragraph"><block ref="d8b198c983a9ca0805f2b1190da10dff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef2fcf22f1eb38c485f3be87c8df5354" category="list-text">* Isilon / PowerScale REST * ： _emc_isilon.node_pool.*_ 名稱下的 Cloud Insights 增強分析功能已新增各種新屬性和指標。這些計數器和屬性可讓使用者建置儀表板和監控器、以利使用 _node_pool_ 容量；使用以不同硬體節點模型建置的 Isilon 叢集的使用者將擁有多個節點集區、瞭解節點集區層級的 HDD/SSD/total 容量使用量對於監控和規劃都很有用。</block>
@@ -12764,4 +12762,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">Agent 最多可支援 50 個資料收集器。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
   <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a ）使用此表格做為一般尺寸指南。您可以增加核心和 / 或記憶體的數量、以增加支援的資料收集器數量、最多可增加 50 個資料收集器：</block>
+  <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
+  <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理員和帳戶擁有者現在有能力 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以電子郵件傳送他們指定的網域。移至 * 管理 &gt; 使用者管理 * 、然後選取 _ 限制網域 _ 按鈕。</block>
 </blocks>
