@@ -2742,7 +2742,6 @@
   <block id="98349559eceadcec0dc76cadc5fbcc36" category="list-text">依照CloudSecure中的指示安裝代理程式。</block>
   <block id="2ec48fb989cd0668ab2b0f0b34915834" category="list-text">安裝代理程式後、以Sudo使用者身分執行_server_data_rate_checker.sh_指令碼：</block>
   <block id="7ad6363059d1736f3a11960eab53e364" category="list-text">此指令碼需要在Linux機器上安裝_sshpass_。安裝方法有兩種：</block>
-  <block id="6cf31abcd39b8549a7f488c6aa8b2fef" category="list-text">執行fillowing命令：</block>
   <block id="de60349d54fe34d614b0fb4793843635" category="list-text">如果這不管用、請從網路下載_sshpass_到Linux機器、然後執行下列命令：</block>
   <block id="22716ce17ab9464ee020ed67252afe9c" category="list-text">出現提示時、請提供正確的值。請參閱以下範例。</block>
   <block id="cd0c9650e0d2fb93465de9f54297b6d5" category="list-text">執行指令碼大約需要5分鐘。</block>
@@ -8007,7 +8006,6 @@
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">您現在可以設定Cloud Insights 當在ONTAP 支援系統上偵測到FlexVols、節點和SVM的修改或移除時發出警示。</block>
   <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">啟動擷取單元伺服器服務時、權限遭拒</block>
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">當AU安裝在SELinux上時、SE應設定為_permals_模式。不支援_強制_模式。將SELinux設定為允許模式後、請重新啟動AU服務。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
-  <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a）使用此表格做為一般規模調整指南：</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">範例9.</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此範例會找出第1 _個之後的所有項目、直到第二個_。</block>
@@ -9447,7 +9445,6 @@
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">Get /｛schema｝/*-從報告資料庫擷取資料。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率</block>
   <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">「事件率檢查器」用於檢查SVM中的NFS/SMB組合事件率、然後再安裝ONTAP 一套SVM資料收集器、以查看一部代理機器能夠監控的SVM數量。使用「事件率檢查器」做為規模調整指南、協助您規劃安全環境。</block>
-  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">代理程式最多可支援50個資料收集器。</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM事件率檢查器（代理程式規模調整指南）</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">事件率檢查器（代理程式規模調整指南）</block>
   <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">我收到類似以下的錯誤訊息：「無法執行要求：連線&lt;AWS region endpoint&gt; 到EXRs8080 [ESC/AWS &lt;AWS region endpoint&gt; 區域端點IP&gt;&gt;」失敗：連線逾時：Get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 區域端點FQDN：8080 / v1/Storage/IPRANes HTTP/1.1 '</block>
@@ -12764,4 +12761,7 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">移除舊的運算子</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">安裝新的</block>
   <block id="e7d6cf6485500824df0535ac307eb301" category="cell">截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>。</block>
+  <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">Agent 最多可支援 50 個資料收集器。</block>
+  <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
+  <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a ）使用此表格做為一般尺寸指南。您可以增加核心和 / 或記憶體的數量、以增加支援的資料收集器數量、最多可增加 50 個資料收集器：</block>
 </blocks>
