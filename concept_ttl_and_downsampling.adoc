@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_ttl_and_downsampling.html 
-summary: 存留時間（ TTL ） - 即說明資料保留和縮減取樣 
+summary: 說明資料保留時間和縮減取樣 
 keywords: time-to-live, TTL, downsampling, downsample, retention 
 ---
 = 資料保留與縮減取樣資料
@@ -23,9 +23,9 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 
 
 
-== 資料保留（亦即上線時間）
+== 資料保留
 
-由作用中訂閱版本決定的資料保留時間。Cloud Insights資料保留也稱為「存留時間」或「TTL」。
+由作用中訂閱版本決定的資料保留時間。Cloud Insights
 
 |===
 | 版本 | 資料保留 
@@ -34,9 +34,9 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 | 基本 | 7天 
 
 
-| 優質 | 90 天 
+| 優質 | 13個月 
 |===
-Premium Edition 訂閱至少 500 部託管單位（ MU ）、可保留商業智慧與報告資料達 13 個月。
+Cloud Insights 提供每個版本可用功能的完整清單 link:https://bluexp.netapp.com/cloud-insights-pricing["版本和定價"] 頁面。
 
 
 

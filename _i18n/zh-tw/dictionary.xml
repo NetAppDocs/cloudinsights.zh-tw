@@ -3144,7 +3144,6 @@
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP連接埠需求：9440</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">用於連接陣列的TCP連接埠。預設值為9440。</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">由於將資料保留一段設定期間（每版）、因此有可能處理數千個資料點。Cloud Insights因此、在圖表和表格中顯示資料之前、資料可能會先縮減取樣。</block>
-  <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">由作用中訂閱版本決定的資料保留時間。Cloud Insights資料保留也稱為「存留時間」或「TTL」。</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">版本</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7天</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">資料縮減取樣</block>
@@ -12701,11 +12700,6 @@ Telegraf ：
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安裝或升級操作員之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安裝監控操作員</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggergationInterval.</block>
-  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">存留時間（ TTL ） - 即說明資料保留和縮減取樣</block>
-  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">資料保留與縮減取樣資料</block>
-  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">資料保留（亦即上線時間）</block>
-  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 天</block>
-  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Premium Edition 訂閱至少 500 部託管單位（ MU ）、可保留商業智慧與報告資料達 13 個月。</block>
   <block id="fc053bcc2bca8112838f33be578f7479" category="cell">執行下列其中一項授權版本的電腦：
 
 Red Hat Enterprise Linux 7.x 、 8.x 64 位元、 SELinux
@@ -12766,4 +12760,10 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理員和帳戶擁有者現在有能力 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以電子郵件傳送他們指定的網域。移至 * 管理 &gt; 使用者管理 * 、然後選取 _ 限制網域 _ 按鈕。</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和規則</block>
   <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONTAP 使用者。請檢閱 AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 可用選項的文件。目前 AWS 只支援一種檔案系統範圍的使用者角色、即 _fsxadmin_ 。這是用於 Cloud Insights 收集器的適當角色。</block>
+  <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">說明資料保留時間和縮減取樣</block>
+  <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">資料保留與縮減取樣資料</block>
+  <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">由作用中訂閱版本決定的資料保留時間。Cloud Insights</block>
+  <block id="025025548582d3777fd0b072c16e2656" category="cell">13個月</block>
+  <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">版本和定價</block>
+  <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Cloud Insights 提供每個版本可用功能的完整清單 <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> 頁面。</block>
 </blocks>
