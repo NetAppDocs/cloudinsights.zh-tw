@@ -7649,11 +7649,6 @@
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">識別非使用中的裝置</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">識別您擁有的資產及使用者是「適當調整規模」及釋出未使用基礎架構的關鍵。您可以輕鬆地重新分配或取消分配使用不足的資源、避免不必要的採購。</block>
   <block id="89335488274d94cea3defd958dbbabbe" category="paragraph">請使用下列步驟來識別非使用中資產。</block>
-  <block id="74f2d5af3d35830fbffe4e065b028732" category="list-text">在功能表中、按一下Cloud Insights *查詢&gt;新查詢*</block>
-  <block id="355d0fe6f460ad7e9e4be906a083f7e4" category="list-text">在「Search for」（搜尋目標）功能表中、選取您要查詢的資產類型</block>
-  <block id="08b0a890022d521dd17d275bcefd82ef" category="list-text">按一下「*+&gt;是作用中的*」</block>
-  <block id="cc1d1782b616d7d5b18a8e83247f82c9" category="list-text">按一下*任何*並將其變更為*否*</block>
-  <block id="d6badef7150cd45268b7ee1f29045a26" category="paragraph">系統會顯示您所選裝置類型的非使用中資產清單。</block>
   <block id="5194ac07f0578fb108df17cc52b75ccc" category="summary">設定Pure Storage資料收集器。</block>
   <block id="4d05f9f9aae283a43131d72fd410500e" category="doc">Pure Storage FlashArray資料收集器</block>
   <block id="4803e12533cf1a9835839a2e3730efdf" category="paragraph">使用Pure Storage FlashArray資料收集器來收集庫存和效能資料。Cloud Insights</block>
@@ -12766,4 +12761,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13個月</block>
   <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">版本和定價</block>
   <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Cloud Insights 提供每個版本可用功能的完整清單 <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">瀏覽至 * 瀏覽 -&gt; + 新指標查詢 * 。</block>
+  <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">從下拉式清單中選取 _Storage_ 。</block>
+  <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">按一下齒輪、並將 _IsActive_ 新增為欄。</block>
+  <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">顯示檢查的列為作用中。「 x 」表示非使用中的裝置。</block>
 </blocks>
