@@ -22,6 +22,9 @@ summary: 適用於NetApp ONTAP 的Amazon FSX資料蒐集器
 此資料收集器會從Amazon FSX for NetApp ONTAP 獲取庫存與效能資料。此資料收集器將逐步提供給Cloud Insights 整個「穩定」服務區域。如果Cloud Insights 您在自己的《不景》中沒有看到此收藏器的圖示、請聯絡您的銷售人員。
 
 
+NOTE: 此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONTAP 使用者。請檢閱 AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和規則"] 可用選項的文件。目前 AWS 只支援一種檔案系統範圍的使用者角色、即 _fsxadmin_ 。這是用於 Cloud Insights 收集器的適當角色。
+
+
 
 == 術語
 

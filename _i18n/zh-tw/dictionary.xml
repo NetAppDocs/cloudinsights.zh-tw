@@ -12764,4 +12764,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a ）使用此表格做為一般尺寸指南。您可以增加核心和 / 或記憶體的數量、以增加支援的資料收集器數量、最多可增加 50 個資料收集器：</block>
   <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理員和帳戶擁有者現在有能力 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以電子郵件傳送他們指定的網域。移至 * 管理 &gt; 使用者管理 * 、然後選取 _ 限制網域 _ 按鈕。</block>
+  <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和規則</block>
+  <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONTAP 使用者。請檢閱 AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 可用選項的文件。目前 AWS 只支援一種檔案系統範圍的使用者角色、即 _fsxadmin_ 。這是用於 Cloud Insights 收集器的適當角色。</block>
 </blocks>
