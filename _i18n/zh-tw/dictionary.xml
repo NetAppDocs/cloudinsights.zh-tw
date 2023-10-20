@@ -12765,4 +12765,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">從下拉式清單中選取 _Storage_ 。</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">按一下齒輪、並將 _IsActive_ 新增為欄。</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">顯示檢查的列為作用中。「 x 」表示非使用中的裝置。</block>
+  <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">庫存最近狀態：擷取非預期的資料 - 陣列報告的 0 磁碟區</block>
+  <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常表示授權（非驗證）問題。請確定您的認證正確無誤、而且使用者名稱有權列出所有磁碟區並查看其屬性。</block>
 </blocks>

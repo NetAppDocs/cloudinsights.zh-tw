@@ -95,5 +95,8 @@ summary: 設定Dell EMC UnREST資料收集器。
 
 
 | 錯誤：使用者驗證失敗。 | 請確定您的此裝置認證資料正確無誤。 
+
+
+| 庫存最近狀態：擷取非預期的資料 - 陣列報告的 0 磁碟區 | 通常表示授權（非驗證）問題。請確定您的認證正確無誤、而且使用者名稱有權列出所有磁碟區並查看其屬性。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
