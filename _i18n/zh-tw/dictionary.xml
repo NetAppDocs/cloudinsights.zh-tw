@@ -427,7 +427,6 @@
   <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">資料中心/作業系統資料收集器</block>
   <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">支援此資料收集器、可從資料中心/作業系統收集數據。Cloud Insights</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">安裝</block>
-  <block id="08dec1f580b03429f9af42c9b6c5d154" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「*資料中心/作業系統*」。</block>
   <block id="90b5256380802f2feaca144a438190c3" category="inline-link-macro">安裝代理程式</block>
   <block id="dc31f8b70f914e6d9f6e9267b53fb552" category="paragraph">如果您尚未設定收集的值機員、系統會提示您 <block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block> 在您的環境中。</block>
   <block id="bfd9f9769236435b451e6625d2b38cd5" category="paragraph">如果您已設定代理程式、請選取適當的作業系統或平台、然後按一下*繼續*。</block>
@@ -452,7 +451,6 @@
   <block id="16bcb6504859efb370124aaf61c89fb1" category="paragraph">附註：如果所有相關的收集器都處於「已停止」狀態、請忽略此步驟。</block>
   <block id="ab71eb10a75782a66759f743954f1bf4" category="list-title">刪除代理程式的步驟：</block>
   <block id="4011c5dae5360156cb9edb8b312334ab" category="list-text">在代理VM中執行SSH、然後執行下列命令。出現提示時、請輸入「y」繼續。</block>
-  <block id="b5ba91ff29a00af62e0f8e16efcb41fd" category="list-text">按一下*管理&gt;資料收集器&gt;代理程式*</block>
   <block id="3fc177ab7a838f0ae5c224683acf4418" category="paragraph">系統會顯示已設定的值機員清單。</block>
   <block id="53d62f54f4323b076c538750bbea9371" category="list-text">按一下您要刪除之代理程式的選項功能表。</block>
   <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">按一下*刪除*。</block>
@@ -505,7 +503,6 @@
   <block id="29f2c433c8324679db838494d114ace0" category="summary">彈性搜尋資料收集器組態</block>
   <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">彈性搜尋資料收集器</block>
   <block id="7ad1c9b2a026e8cd588b98357fc68620" category="paragraph">使用此資料收集器從Elasticsearch收集指標。Cloud Insights</block>
-  <block id="59c6bcdf12427f3d11799d143d31e3bb" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇彈性搜尋。</block>
   <block id="577ef588d3f183c37ef82368a6ff589c" category="paragraph">選取安裝Telegraf代理程式的作業系統或平台。</block>
   <block id="1be0a2da8f4fd3b263e749ccf7b51da7" category="inline-link-macro">代理程式安裝</block>
   <block id="16a55be69114dba2ac674b708e441474" category="list-text">如果您尚未安裝代理程式以供收集、或想要為不同的作業系統或平台安裝代理程式、請按一下「_顯示指示_」以展開 <block ref="f5c63eced10ddc346253829eec79c562" category="inline-link-macro-rx"></block> 說明。</block>
@@ -736,7 +733,6 @@
   <block id="1da80b1336c0c9594d16e3d3dab10d20" category="summary">Consul資料收集器組態</block>
   <block id="c4079b6998dfb2e5f02a35b303e1acce" category="doc">Consul Data Collector</block>
   <block id="44aa5a1c223b0773b5006801b857966b" category="paragraph">此資料收集器可用來收集來自Consul的數據。Cloud Insights</block>
-  <block id="0ba4d88a843ce3dab96f8e8dce5648fc" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇「Consul」。</block>
   <block id="bddbdda6ad83151063cda71734d4faf4" category="list-text">請依照「Consul Configuration」（儲存組態）畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
   <block id="488f9e22c68fcc3e89060d2f5f537744" category="inline-link-macro">駐廠文件</block>
   <block id="a47b0fae235ee24589e1075c2fe0daeb" category="paragraph">如需相關資訊、請參閱 <block ref="209f85ad7011f70864ffdec527911e92" category="inline-link-macro-rx"></block>。</block>
@@ -1093,7 +1089,6 @@
   <block id="d66261bfe330aaa38171cf0aba38ed5b" category="paragraph">您可以在這裡找到Windows伺服器上的擷取單元疑難排解建議。</block>
   <block id="a6484180ab52e1912f65cd3c8a857673" category="cell">*問題：*</block>
   <block id="710c77cfc8d2136c51aad6a8316043b9" category="cell">*試用：*</block>
-  <block id="a7179f7901a2f6257761977d760a253d" category="cell">AU狀態顯示在「*擷取單位*」標籤的「*管理&gt;資料收集器*」頁面上、「憑證過期」或「憑證撤銷」。</block>
   <block id="cade12c2a9fd950d043d94c8ba081663" category="cell">按一下AU右側的功能表、然後選取*還原連線*。請依照指示還原您的擷取設備：1.停止擷取單元（AU）服務。您可以按一下「_複製停止命令_」按鈕、將命令快速複製到剪貼簿、然後將此命令貼到擷取單元機器上的命令提示字元中。2.在AU的_c：\Program Files\Cloud Insights \收購 單位\conf\_資料夾中建立名為「token」的檔案。3.按一下「複製權杖」按鈕、然後將此權杖貼到您建立的檔案中。4.重新啟動AU服務。按一下「_複製重新啟動命令_」按鈕、然後將命令貼到AU的命令提示字元中。</block>
   <block id="f8c1f64e9a97f83b0f209268bdd07bcb" category="cell">伺服器需求未達到</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">需求</block>
@@ -1300,7 +1295,6 @@
   <block id="170ac79db4abf3af53c36b5ba23d297a" category="summary">CouchDB資料收集器組態</block>
   <block id="1aa7fb61fdaf60c81a318c790c7e545e" category="doc">CouchDB資料收集器</block>
   <block id="2aa655c0610f5e45884f5257e54d539e" category="paragraph">使用此資料收集器從CouchDB收集數據。Cloud Insights</block>
-  <block id="bd6bf57fa1ccea508d5b9f2b66a2f54d" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇CouchDB。</block>
   <block id="9d3601e78c51a4b184d2fe86128539e4" category="inline-image-macro">CouchDB組態</block>
   <block id="61d7e3da551b2e4c1549750fbb518e22" category="paragraph"><block ref="61d7e3da551b2e4c1549750fbb518e22" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8a7006055e2291f0b9e46ee915f0ad0c" category="inline-link-macro">CouchDB文件</block>
@@ -1392,7 +1386,6 @@
   <block id="4bfbaf73f806e0f2e37658d94bd02b1d" category="summary">Puppet資料收集器組態</block>
   <block id="4f3343312b305965c29f8f14046d895c" category="doc">Puppet Agent資料收集器</block>
   <block id="3fb67cc5cc9f9143457c24db7b7dd502" category="paragraph">使用此資料收集器從Puppet Agent收集數據。Cloud Insights</block>
-  <block id="1a8476f5506eed4a9be62f6fb0426b2a" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Puppet。</block>
   <block id="f28ce6829aadfe8650a22f9c6a697a20" category="inline-image-macro">Puppet組態</block>
   <block id="f02b842ccd15155934dc65921239d4f0" category="paragraph"><block ref="f02b842ccd15155934dc65921239d4f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c6265f8b688769e31b9b757f9e54749" category="inline-link">Puppet文件</block>
@@ -1549,7 +1542,6 @@
   <block id="d41bd76f36789e8fddb867c10a5eca40" category="list-text"><block ref="f0b8d86b1d5e602002cf4f7e7b6c1cac" category="inline-xref-macro-rx"></block></block>
   <block id="4705018fb833a2cd4979b3acd0c3171f" category="paragraph">若要安裝代理程式、無論您使用的平台為何、都必須先執行下列動作：</block>
   <block id="60e927136e016a2a126538b1a592e8c5" category="list-text">登入您要用於代理程式的主機。</block>
-  <block id="e9604f31aba2ec7275fd08fdb30a45f9" category="list-text">登入Cloud Insights 您的支援網站、前往*管理&gt;資料收集器*。</block>
   <block id="212039b527f83b6053ae8fd23bb11e26" category="list-text">按一下「*+資料收集器*」、然後選擇要安裝的資料收集器。</block>
   <block id="0b5b60f6bf77a0318f6283c5d8ce5be7" category="list-text">請針對每個平台執行其餘步驟。</block>
   <block id="09e0466fcc22c337dc6af8a799296033" category="admonition">在主機上安裝代理程式之後、您就不需要在該主機上重新安裝代理程式。</block>
@@ -1879,7 +1871,6 @@
   <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis資料收集器組態</block>
   <block id="001dce6e76a3b3b754db59e538750dd8" category="doc">Redis Data Collector</block>
   <block id="0188f056a49bdb8c4c3a015b2229d13e" category="paragraph">使用此資料收集器從Redis收集數據。Cloud InsightsRedis是一種開放原始碼的記憶體內建資料結構存放區、可做為資料庫、快取和訊息代理程式、支援下列資料結構：字串、雜湊、清單、集等等。</block>
-  <block id="f7f5396aa94565cefc881e1c6728756d" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Redis。</block>
   <block id="602c395372ffc11185f0cc2291099c7f" category="inline-image-macro">Redis Data Collector組態</block>
   <block id="5c452c3f36884795da26d34b96db691c" category="paragraph"><block ref="5c452c3f36884795da26d34b96db691c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis文件</block>
@@ -1888,7 +1879,6 @@
   <block id="aee1b49e2ea5679073623959ef024069" category="summary">HTTP資料收集器組態</block>
   <block id="d5418d1fa8d23d7e5951dbf339c3c5a8" category="doc">ActiveMQ資料收集器</block>
   <block id="123afee47eb477e020c1546a00fd80a1" category="paragraph">使用此資料收集器從ActiveMQ收集數據。Cloud Insights</block>
-  <block id="19fe91396be7930f3d73bd8df1426ef4" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇ActiveMQ。</block>
   <block id="52e070f5418cead2f633bf0a2288946c" category="inline-image-macro">ActiveMQ組態</block>
   <block id="21562149e2176820b6c8d39f6bf47011" category="paragraph"><block ref="21562149e2176820b6c8d39f6bf47011" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16fc9b4d33f552995ec677b1a481fba5" category="inline-link">ActiveMQ文件</block>
@@ -2023,7 +2013,6 @@
   <block id="7bc9ce79d1161a4ae8d99d8fbb0200fe" category="cell">效能意見調查時間間隔（秒）</block>
   <block id="9d2537f158357c95ae162019d658de08" category="doc">RethinkDB Data Collector</block>
   <block id="86e303e0c497b52b7c3e448d2a739f78" category="paragraph">此資料收集器可用來從RethinkDB收集指標。Cloud Insights</block>
-  <block id="195db1a7dc11e7296624dbf54cf9c3cf" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇RethinkDB。</block>
   <block id="10e1e1205ffd97adbe671ede9a7d4f2d" category="inline-image-macro">RedinkDB Data Collector組態</block>
   <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">RethinkDB文件</block>
@@ -2059,7 +2048,6 @@
   <block id="f675ac1ea34754aba3279d7f93746721" category="summary">Kibana資料收集器組態</block>
   <block id="d6678652208f4e26109690d4ab6151e5" category="doc">Kibana資料收集器</block>
   <block id="75ac4fff844290c8b306aced90a6ad0d" category="paragraph">此資料收集器可用來收集Kibana的數據。Cloud Insights</block>
-  <block id="87366a70a6d77eeafc26fed79b827515" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Kibana。</block>
   <block id="ed9f8d76b0ccacc02aa67a13d6c1e9a8" category="inline-image-macro">Kibana組態</block>
   <block id="18785da9c6be5397773e5c495dcc23f4" category="paragraph"><block ref="18785da9c6be5397773e5c495dcc23f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c84e442bbf213b7d0e5047d09d7aef4" category="inline-link-macro">Kibana文件</block>
@@ -2393,7 +2381,6 @@
   <block id="3dc395f34d5747fa5d58e08302ab67fd" category="summary">Nginx資料收集器組態</block>
   <block id="21a6c8824057335f8e9dc232584c6ea0" category="doc">Nginx資料收集器</block>
   <block id="a04ac927bc32d4712f954795733890da" category="paragraph">此資料收集器可用來收集來自於Ngin像 的數據。Cloud Insights</block>
-  <block id="bd78dc47276d0b2f96cf76b9264e3719" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「恩靈思」。</block>
   <block id="e7e86cae130886a78274ae9b77db6f35" category="inline-image-macro">Linux Nginx組態</block>
   <block id="de93697b48f7103f9289abf65ca587b4" category="paragraph"><block ref="f310f9809260b458b5b99732eb2d720e" category="inline-image-macro-rx" type="image"></block>
 <block ref="884ba5b9c64ace436091d4a7d4619c6c" category="inline-image-macro-rx" type="image"></block></block>
@@ -2416,7 +2403,6 @@
   <block id="d500a402a0f4d5ab2dedb2c5a7ec2eaf" category="summary">memcached資料收集器組態</block>
   <block id="0f5c57f0abc7ee69be3379cf9f5ede78" category="doc">memcached資料收集器</block>
   <block id="353f811fa170b612fa3a1340d62d9219" category="paragraph">使用此資料收集器從Memcached收集度量資料。Cloud Insights</block>
-  <block id="a622b2ddd943ae801409ac3947b322c2" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Memcached。</block>
   <block id="198cd654ded33685760b4676e579ff66" category="inline-image-macro">memcached組態</block>
   <block id="a986c1bc689361d60658b48c116b9bda" category="paragraph"><block ref="a986c1bc689361d60658b48c116b9bda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e26124564f900a300b66ae6ad54d0791" category="inline-link-macro">memcached wikik</block>
@@ -2528,7 +2514,6 @@
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到位、然後在ONTAP 伺服器上執行下列命令。為了方便起見、請先將這些命令複製到文字編輯器、並在ONTAP 執行下列命令之前、以Vserver名稱取代&lt;vservername&gt;：</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">設定資料收集器</block>
   <block id="51bdd5739ec46025074c8dd62983fe18" category="list-title">組態步驟</block>
-  <block id="ec7545874efeb6d35ece424954185bc7" category="list-text">按一下*管理&gt;資料收集器&gt;+資料收集器*</block>
   <block id="f740a49ca955ba7a2c53c734ec5644af" category="paragraph">系統會顯示可用的資料收集器。</block>
   <block id="ccae37a4062faaa234bc03e54a73f635" category="list-text">將游標暫留在* NetApp SVM區塊上、然後按一下*+監控*。</block>
   <block id="4bbcb2378867aa5e0452759f6639206c" category="paragraph">系統會顯示ONTAP 「SVM組態」頁面。輸入每個欄位的必要資料。</block>
@@ -2661,7 +2646,6 @@
   <block id="1194c1f585884540788ba8946023cc33" category="list-text">您必須設定Apache HTTP伺服器並正確執行</block>
   <block id="6b1dbef46026830edbb8a38bb35f7c07" category="list-text">您必須擁有代理主機/ VM的Sudo或系統管理員權限</block>
   <block id="c16390c8cf2123acd316f38a743628ab" category="list-text">通常、Apache _mod_STATUS_模組會設定為在Apache伺服器的「/server-STATUS」自動位置公開頁面。必須啟用「_ExtendedStatus」選項、才能收集所有可用欄位。如需如何設定伺服器的相關資訊、請參閱Apache模組文件：<block ref="7174f93683616a9a4040d970e3c6eb19" category="inline-link-rx"></block></block>
-  <block id="f91d09ac9216dbbb2c3095fadb4d31c8" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Apache。</block>
   <block id="db3b3ca5f6c31a760f5aa49a9a809802" category="inline-image-macro">Apache組態</block>
   <block id="5ec6fd62051ccff5584535e6108b55ba" category="paragraph"><block ref="5ec6fd62051ccff5584535e6108b55ba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed6e8b2146d5bd121cfea083307611f3" category="paragraph">Telegraf的Apache HTTP伺服器外掛程式仰賴要啟用的「mod_STATUS」模組。啟用此功能時、Apache的HTTP伺服器會公開一個HTML端點、您可以在瀏覽器上檢視、或擷取所有Apache HTTP伺服器組態的狀態。</block>
@@ -2704,7 +2688,6 @@
   <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Flink資料收集器組態</block>
   <block id="43b4fe530611e0a29d40ae51f1110192" category="doc">節點資料收集</block>
   <block id="a95bc37c275448ac1c6069158f92b809" category="paragraph">從安裝代理程式的節點收集度量。Cloud Insights</block>
-  <block id="ce735cbd33ce6bba099eff6991d48cec" category="list-text">從*管理&gt;資料收集器*、選擇作業系統/平台。請注意、安裝任何整合資料收集器（Kubernetes、Docker、Apache等）也會設定節點資料收集。</block>
   <block id="5f6ce12582c69bad9341e28467c0c0d0" category="list-text">依照指示設定代理程式。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
   <block id="c166791fe89a8eb17ee0a37ad809ba2b" category="paragraph">下列物件及其計數器會收集為節點度量：</block>
   <block id="1f8c535824144ce794fd8ac5fdcfe9f1" category="cell">節點檔案系統</block>
@@ -3300,7 +3283,6 @@
   <block id="3ed1623d8dee972d71ef8f8f97d1e7b7" category="summary">JVM資料收集器組態</block>
   <block id="83940d42e25b16f92792429af8696c02" category="doc">JVM資料收集器</block>
   <block id="1df30fc376f79b28898758816aee8108" category="paragraph">此資料收集器可用來收集來自JVM的度量資料。Cloud Insights</block>
-  <block id="361e3edbe3bc9b14124c39095c18dd68" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「jvm」。</block>
   <block id="cfc15582c99f2d93d641ceef808c0dea" category="inline-image-macro">JVM組態</block>
   <block id="a1a11aab15942415d5fa3dbff92e14bd" category="paragraph"><block ref="a1a11aab15942415d5fa3dbff92e14bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d4d54ae01b1b207ad71b19545e065d0" category="inline-link-macro">JVM文件</block>
@@ -3637,7 +3619,6 @@
   <block id="b101d3b5c8c4309f4cffa3adfd387b6b" category="list-text">按一下「*確定*」</block>
   <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flink Data Collector</block>
   <block id="54387b91997cebc2b9f94c02572ea7c8" category="paragraph">使用此資料收集器從Flink收集指標。Cloud Insights</block>
-  <block id="6b7484ab321e2bb0cd1b30bf18f6dd76" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「Flink」。</block>
   <block id="c1a584a645c5a21efa505b7deca25b2b" category="inline-image-macro">Flink組態</block>
   <block id="2462dee15f2229ca8b824af60aa5037f" category="paragraph"><block ref="2462dee15f2229ca8b824af60aa5037f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88f3c1a97fbc332ad9adb7ff5179d0f5" category="paragraph">完整的Flink部署包含下列元件：</block>
@@ -3675,7 +3656,6 @@
   <block id="4c35289465431b7541002dd365bad198" category="summary">MySQL資料收集器組態</block>
   <block id="d1f43c925400e37adcd15285deaac430" category="doc">MySQL Data Collector</block>
   <block id="5d1d986fa74eaeda0a328a24da34dc8f" category="paragraph">此資料收集器可用來收集MySQL的數據。Cloud Insights</block>
-  <block id="ab4bf0a03f41519bbb1301fb38d65e36" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇MySQL。</block>
   <block id="cfe3b09f39613d05db4ca7532b374386" category="inline-image-macro">MySQL組態</block>
   <block id="acd86359b435b0d32d73a66fa03be887" category="paragraph"><block ref="acd86359b435b0d32d73a66fa03be887" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0281cf739776a9c6b7c6cb01c1accf40" category="inline-link-macro">MySQL文件</block>
@@ -3999,7 +3979,6 @@
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">在「All Activities」（所有活動）表格的「User」（使用者）欄下、使用者名稱顯示為：「LDAP:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817”」或「LDAP:Default：80038003」。</block>
   <block id="0c4a0e9a569be65e94908f9222457694" category="inline-link-macro">使用者目錄收集器疑難排解</block>
-  <block id="0b15e5ecfcaabb3952c7992d37b94c97" category="cell">可能的原因可能是：1.尚未設定使用者目錄收集器。若要新增一個、請前往*管理&gt;資料收集器&gt;使用者目錄收集器*、然後按一下*+使用者目錄收集器*。選擇_Active Directory或_LDAP Directory Server_。2.已設定使用者目錄收集器、但它已停止或處於錯誤狀態。請移至*管理&gt;資料收集器&gt;使用者目錄收集器*、然後檢查狀態。請參閱 <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> 說明文件中的一節、以取得疑難排解秘訣。正確設定後、名稱將在24小時內自動解析。如果仍無法解決、請檢查是否已新增正確的使用者資料收集器。確定使用者確實是新增Active Directory / LDAP目錄伺服器的一部分。</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">UI中未顯示某些NFS事件。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">請檢查下列項目：1.具有POSIX屬性集的AD伺服器之使用者目錄收集器應以從UI啟用的unixid屬性執行。2.在UI 3的使用者頁面中搜尋時、應該會看到執行NFS存取的任何使用者。NFS不支援原始事件（尚未探索使用者的事件）4。不會監控匿名存取NFS匯出。5.確定NFS版本的使用版本低於NFS4.1。</block>
   <block id="e15fca67cd8338997729ad4099343915" category="summary">請使用此程序、使用預先定義Cloud Insights 的功能表建立報告。</block>
@@ -4546,7 +4525,6 @@
   <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Couchbase資料收集器組態</block>
   <block id="c85700224d4de4029d47e8f7419f121a" category="doc">Couchbase Data Collector</block>
   <block id="2cc7a39d9220b0a6ca309f2f84801606" category="paragraph">使用此資料收集器從Couchbase收集數據。Cloud Insights</block>
-  <block id="876d2d741f04d145a3f8da9d95b50ca9" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Couchbase。</block>
   <block id="d7712cfab308e47f5bb1445e9fbcb070" category="inline-image-macro">Couchbase組態</block>
   <block id="64fffda04d6b10150c8c8726100e6239" category="paragraph"><block ref="64fffda04d6b10150c8c8726100e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41bdcd289793051395a360769595211c" category="inline-link-macro">Couchbase文件</block>
@@ -4683,13 +4661,11 @@
   <block id="95daeb54f7a6f1925add5849715872ad" category="section-title">新增Linux擷取單元</block>
   <block id="958f097fe9ccbb38e85c88ca82a73170" category="list-text">如果您的系統使用Proxy、則必須先設定Proxy環境變數、再安裝擷取單元。如需詳細資訊、請參閱 <block ref="cc8b2258e67f4301c61077ad43e8ce8b" category="inline-xref-macro-rx"></block>。</block>
   <block id="29e4728bd5327820a2862b6f2893f106" category="list-title">Linux擷取單元安裝步驟</block>
-  <block id="f6544337171161f937d7eafd6f3c1c52" category="list-text">按一下*管理&gt;資料收集器&gt;擷取單位&gt;+擷取單位*</block>
   <block id="c377ddafa0c23753505e4eef0b3150bf" category="paragraph">系統會顯示_安裝擷取單元_對話方塊。選擇Linux。</block>
   <block id="286b058d26c0a3fe2297fea81fdde42c" category="list-text">確認裝載擷取裝置的伺服器或VM符合建議的系統需求。</block>
   <block id="17f57a172683392356db7940747d8fa7" category="list-text">驗證伺服器是否執行支援的Linux版本。按一下「_OS versions Supported（i）_（作業系統支援版本（i）_）」以取得支援版本的清單。</block>
   <block id="8ee1aa8c453a757e226876f731e9cd26" category="list-text">將對話方塊中的安裝命令程式碼片段複製到將裝載擷取單元的伺服器或VM上的終端機視窗。</block>
   <block id="315fa945ac6eb373152b3ddaf9502ed0" category="list-text">在Bash Shell中貼上並執行命令。</block>
-  <block id="3d11c2f8fdd0961187e8dda5fc527dea" category="list-text">按一下「*管理&gt;資料收集器&gt;擷取單位*」以檢查擷取單位的狀態。</block>
   <block id="71f472583171cff49390f4dae43ea6cd" category="list-text">您可以在/var/log/NetApp/cloudinss/acq/acq.log存取購買單位記錄</block>
   <block id="3d2110a2733664229699d6929eef482a" category="list-text">使用下列指令碼來控制擷取單位：</block>
   <block id="32ccd5ec27f3b1aace6be79d7b494b16" category="list-text">cloudinsights-service.sh（停止、啟動、重新啟動、檢查狀態）</block>
@@ -4712,7 +4688,6 @@
   <block id="7bb8dc49e894513db639873cb06911d4" category="list-title">Windows擷取單元安裝步驟</block>
   <block id="d859eb4ae30b9eae60ffbcb09db52be6" category="list-text">以具有管理員權限的使用者身分登入擷取單元伺服器/ VM。</block>
   <block id="3cf3030bbe5a24323447cf60440415e7" category="list-text">在該伺服器上、開啟瀏覽器視窗、Cloud Insights 並以系統管理員或帳戶擁有者身分登入您的支援環境。</block>
-  <block id="7127e1b44efefedfeb8ba08e13767870" category="list-text">單擊*管理&gt;數據收集器&gt;採集單元&gt;+采 集單位*。</block>
   <block id="0c3a3bd2ed0dc5c611332312485e427f" category="paragraph">系統會顯示_安裝擷取單元_對話方塊。選擇Windows。</block>
   <block id="ec97136c856287bb07ca7148194c98e6" category="image-alt">Windows AU安裝</block>
   <block id="0ddeb8dc3872cd6d88bd4c549ed99742" category="list-text">確認伺服器執行的是受支援的Windows版本。按一下「_OS versions Supported（i）_（作業系統支援版本（i）_）」以取得支援版本的清單。</block>
@@ -4736,10 +4711,8 @@
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">若要在同一部伺服器/ VM上重新安裝擷取裝置、您必須依照下列步驟進行：</block>
   <block id="1405103bcf8e1e217a5c701e0664adf3" category="paragraph">重新安裝擷取設備之前、您必須在獨立的伺服器/ VM上設定暫用擷取設備。</block>
   <block id="0412a74c6fa998305a965b2e89cdedbf" category="list-text">登入擷取單元伺服器/VM、然後解除安裝AU軟體。</block>
-  <block id="fb7df762b91c6b3142717b8f5ae95fe9" category="list-text">登入Cloud Insights 您的支援環境、前往*管理&gt;資料收集器*。</block>
   <block id="33d249d050a70e456b1fc925b67c58f1" category="list-text">針對每個資料收集器、按一下右側的選項功能表、然後選取_Edit_。將資料收集器指派給暫用擷取設備、然後按一下*「Save"（儲存）*。</block>
   <block id="3005f55cd54d5a821222569df6baf337" category="paragraph">您也可以選取相同類型的多個資料收集器、然後按一下*大量動作*按鈕。選擇_Edit_、然後將資料收集器指派給暫用擷取單位。</block>
-  <block id="a5d25dc71d1e825652ea199481e35d26" category="list-text">將所有的資料收集器移至暫用擷取單元之後、請移至*管理&gt;資料收集器*、然後選取*擷取單元*索引標籤。</block>
   <block id="026a58fa6c27be328f43029729806c4b" category="list-text">按一下您要重新安裝之擷取設備右側的選項按鈕、然後選取_刪除_。只有在未指派任何資料收集器時、您才能刪除擷取單元。</block>
   <block id="4f529479185a997ea1538b00643e7fd0" category="list-text">您現在可以在原始伺服器/ VM上重新安裝擷取單元軟體。按一下「*+擷取設備*」、然後依照上述指示安裝擷取設備。</block>
   <block id="5cdf029d7ee5a4116eb823d71cbead39" category="list-text">一旦重新安裝擷取裝置、請將資料收集器重新指派回擷取裝置。</block>
@@ -4793,7 +4766,6 @@
   <block id="a1151f371f1db5ddea0adcadbc49738e" category="summary">PostgreSQL資料收集器組態</block>
   <block id="28279ca1d2fa23440d64e252b10c2f2e" category="doc">PostgreSQL資料收集器</block>
   <block id="45946606e52c951c2b379ff7a77d2b76" category="paragraph">此資料收集器可用來收集PostgreSQL的數據。Cloud Insights</block>
-  <block id="7bd41331ff9ce374fa5ffed7696f0c41" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「PostgreSQL」。</block>
   <block id="9efde47a7f6913de0fa15c50384c3916" category="inline-image-macro">PostgreSQL組態</block>
   <block id="ee807d599c86ec0cddb65a95252754a9" category="paragraph"><block ref="ee807d599c86ec0cddb65a95252754a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="939acd793e013bec3f238716d1e5a1e9" category="inline-link-macro">PostgreSQL文件</block>
@@ -4857,7 +4829,6 @@
   <block id="f4b59a337513071e6d4843f553d49bc6" category="section-title">認證安全性</block>
   <block id="4a2fd5083496ddce3be60eef8073b637" category="paragraph">資料收集器認證資料會在輸入Cloud Insights 到SURITY時加密、並先由AU的公開金鑰加密傳送至擷取單位（AU）、然後再透過HTTPS加密。當AU使用加密值與裝置和軟體通訊時、會將其解密。</block>
   <block id="ca28d4c52bb2a654a2678ff8d3dcefa2" category="section-title">設定資料收集器</block>
-  <block id="50fad681fab3955ee03277012c672831" category="list-text">在「支援」功能表中、按一下「*管理」&gt;「資料收集器*」Cloud Insights 、然後按一下「*+資料收集器*」按鈕。您可以選擇顯示所有的資料收集器、或是篩選、根據您的訂閱、僅顯示可用的資料收集器。</block>
   <block id="c339d1a32a95310d9e4a053f77cad28b" category="list-text">視您選擇的資料收集器類型而定、安裝步驟可能有所不同。</block>
   <block id="13762a4c9e8fa47d574db722fc1b3fa2" category="section-title">作業系統：</block>
   <block id="b00d7c7ac92f4aaddc21f00ae51e9ffb" category="paragraph">您必須安裝至少一個Cloud Insights 支援程序才能開始從環境中收集作業系統或服務資料。您可以安裝任意數量的代理程式。每個代理程式都能從多個服務收集資料。</block>
@@ -5003,14 +4974,12 @@
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">Netstat資料收集器組態</block>
   <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat資料收集器</block>
   <block id="1d90778793975e863bbd8302e8bebf4f" category="paragraph">使用此資料收集器來收集Netstat指標。Cloud Insights</block>
-  <block id="96b82a89fa745c35ca3fc3dc50892a3e" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「Netstat」。</block>
   <block id="fbe4c8006ab6084c9caa4749e31a48b2" category="inline-image-macro">Windows Netstat組態</block>
   <block id="3b600482a8cf2d80423a46534f251590" category="paragraph"><block ref="3b600482a8cf2d80423a46534f251590" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5640ddf22fd2c345be7dd9bb71023b38" category="cell">Netstat</block>
   <block id="dc1e65eec84ecdddd9d944665f004c81" category="summary">Kafka資料收集器組態</block>
   <block id="20c91ea30ac10f88575658fade0888da" category="doc">Kafka資料收集器</block>
   <block id="2f36f64899c7519b8c8cd9277f2bb502" category="paragraph">此資料收集器可用來收集卡夫卡的數據。Cloud Insights</block>
-  <block id="641a02928125f2cf211e4001ecb0067d" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「Kafka」。</block>
   <block id="a57380b3846ffa1f0e4bfb5181cdd4cc" category="inline-image-macro">Kafka組態</block>
   <block id="581191fc8057a11baa82fdf0c8a4684d" category="paragraph"><block ref="581191fc8057a11baa82fdf0c8a4684d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13369c33358db64680a157cf34f27d9c" category="paragraph">Kafka外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需要從所有的Kafka代理商收集資訊、需要透過Jolkia設定和公開所有元件的JMX。</block>
@@ -5073,7 +5042,6 @@
   <block id="2214d2294c225c2125b0860b83519fed" category="list-text">您必須先設定接收單位、才能開始收集資料。</block>
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">您需要從中收集資料的裝置的認證資料。</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">您從中收集資料的所有裝置都需要裝置網路位址、帳戶資訊和密碼。</block>
-  <block id="02c241a8f52ea083e207247048e27655" category="list-text">在「支援」功能表中、按一下Cloud Insights 「*管理」&gt;「資料收集器*」</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">系統會顯示廠商所安排的可用資料收集器。</block>
   <block id="98340026125b30253a889a183c2af3e1" category="list-text">按一下所需廠商上的*+ Collector*、然後選取要設定的資料收集器。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">在對話方塊中、您可以設定資料收集器並新增擷取單位。</block>
@@ -5304,7 +5272,6 @@
   <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy資料收集器組態</block>
   <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy資料收集器</block>
   <block id="f43901d1ca245307f30d36ef67a4ef53" category="paragraph">使用此資料收集器從HAProxy收集指標。Cloud Insights</block>
-  <block id="5819bbcb21b285d34fbde739069c0b6d" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在「*服務*」下、選擇「HAProxy」。</block>
   <block id="6c1dacdba2adca5cfa22ff19b2d327fe" category="inline-image-macro">HAProxy組態</block>
   <block id="00f9d91055267fed1b468bf28bbfbb04" category="paragraph"><block ref="00f9d91055267fed1b468bf28bbfbb04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb69e07b7e1dc3bc5864b07b79bba857" category="paragraph">Telegraf的HAProxy外掛程式仰賴HAProxy統計資料功能。這是HAProxy內建的組態、但並未隨裝即用。啟用後、HAProxy會顯示HTML端點、以便在瀏覽器上檢視或擷取所有HAProxy組態的狀態。</block>
@@ -5402,7 +5369,6 @@
 
 <block ref="e2ee1872ae14f9b079a5e15b45b85992" category="inline-link-macro-rx"></block></block>
   <block id="9a588e9b6b88f5c90c86bde96fc3f0c1" category="inline-link-macro">*影片* ONTAP ：SVM連線</block>
-  <block id="edecb6d917822e3e174b7b29c7e80c50" category="cell">按一下*管理&gt;資料收集器*按一下您要設定的資料收集器。請參閱文件的「資料收集器廠商參考資料」一節。<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
   <block id="a1d0a98f6922d21edbc391782fbb69e3" category="cell">建立使用者帳戶</block>
   <block id="8e9fceaaf84bd1591dc11726965a5b35" category="inline-link-macro">管理使用者帳戶</block>
   <block id="a6fe30cef6ad189dc3685c855c858b10" category="cell"><block ref="a6fe30cef6ad189dc3685c855c858b10" category="inline-link-macro-rx"></block></block>
@@ -5562,7 +5528,6 @@
   <block id="3adad2012916d4fe2406e6c49b979206" category="list-text">輸入使用者名稱以存取SVM</block>
   <block id="7bc230cfdf8694094a44dd4b8ecf760a" category="list-text">輸入密碼以存取SVM</block>
   <block id="73d6fcfd5229e0ecee1d38b803bee178" category="list-text">按一下「*+新增收集器*」</block>
-  <block id="8a785e1472191f0628c391c1a63b6bee" category="list-text">按一下*管理&gt;資料收集器*以檢查您設定的收集器狀態。</block>
   <block id="b0506ef14ff473094f5c0bea0c3c41bc" category="paragraph">收集器狀態顯示之前通常會有延遲。</block>
   <block id="38ed7bc985f8fe26e5b34cecd650286e" category="summary">儀表板功能與概念。</block>
   <block id="24d256825c40c4686e0e7bfb247bf40d" category="doc">儀表板功能</block>
@@ -5948,7 +5913,6 @@
   <block id="83fbc11c171008ea835730f7922a6417" category="summary">OpenZFS資料收集器組態</block>
   <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS Data Collector</block>
   <block id="9109116c1e875f98e978783a131e4466" category="paragraph">此資料收集器可用來收集OpenZFS的度量資料。Cloud Insights</block>
-  <block id="7bc2f3c2ab06e68dd0a06b93dedec7a5" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇OpenZFS。</block>
   <block id="c5ea32057bfe11187d339d524ccea393" category="inline-image-macro">Linux OpenZFS組態</block>
   <block id="252ab915aaf37678f2c31259844d9830" category="paragraph"><block ref="252ab915aaf37678f2c31259844d9830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b016f6d8b58fbc57dff98ba0460cd713" category="inline-link-macro">OpenZFS文件</block>
@@ -6705,7 +6669,6 @@
   <block id="1565534c3529832edbcb4b0a747b70e6" category="section-title">改善UI載入時間</block>
   <block id="57f7d6ec228afeb80fff9d41654bbca4" category="list-text">初始載入功能已大幅改善、以利Cloud Insights 使用者介面（UI）。使用者介面的重新整理時間、也因為在載入中繼資料的情況下有所改善而受益。</block>
   <block id="997b600cf8160cf5b1e3859e2bb60473" category="section-title">大量編輯資料收集器</block>
-  <block id="b830fc81cf4e90f6b02cca4ead4d3941" category="list-text">您可以同時編輯多個資料收集器的資訊。在「*管理&gt;資料收集器*」頁面上、勾選每個收集器左側的方塊、然後按一下「*大量動作*」按鈕、以選取要修改的資料收集器。選擇*編輯*並修改必要欄位。</block>
   <block id="70304904063006243370ebd403832f10" category="paragraph">所選的資料收集器必須是相同的廠商和機型、並位於相同的擷取設備上。</block>
   <block id="c3fe0955bd183cc44d168a97c2353942" category="section-title">在就職期間可取得支援與訂閱頁面</block>
   <block id="e61ce8796090b19c99188c4a47f73495" category="list-text">在就職工作流程中、您可以瀏覽至*「說明」&gt;「支援」*和*「管理」&gt;「訂閱」*頁面。如果您尚未關閉瀏覽器索引標籤、從這些頁面返回後、您將返回就職工作流程。</block>
@@ -6930,7 +6893,6 @@
   <block id="0982f7ddf38c72531e91321d3b4e198e" category="summary">Docker資料收集器組態</block>
   <block id="d80788e8d22d139775039533ead6bae8" category="doc">Docker Data Collector</block>
   <block id="6e48769f92efb7218705b56e64b2cc22" category="paragraph">使用此資料收集器從Docker收集指標。Cloud Insights</block>
-  <block id="554a779a5b12eab44643786faec81a00" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Docker。</block>
   <block id="0f4a5a5b8072d8e43816253b9197d0f1" category="list-text">請依照Docker組態畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
   <block id="4ed4e51db0aa02d2ed7e8fb292cc39c8" category="inline-image-macro">Docker組態</block>
   <block id="ee96e45eed0143814810825fc37d2fa8" category="paragraph"><block ref="ee96e45eed0143814810825fc37d2fa8" category="inline-image-macro-rx" type="image"></block></block>
@@ -6984,7 +6946,6 @@
   <block id="18906ecb044421552f4c94c742621646" category="summary">kapacitor.組態</block>
   <block id="d3761f3a03696694e546430b624f3542" category="doc">Kapacitor. Data Collector</block>
   <block id="1d82355e9a49b0e00b0df8f87a981b73" category="paragraph">本資料收集器可用來收集來自Influxdata Kapacitor. Cloud Insights</block>
-  <block id="83ed2ac7ca6d8bcb30aa864e5274fa97" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Kapacitor.</block>
   <block id="6501fa3c86462ded7187a4c119d46e5b" category="inline-image-macro">Kapacitor.組態</block>
   <block id="dbf6b5b2cdedf021b5f438c1d0d94f55" category="paragraph"><block ref="dbf6b5b2cdedf021b5f438c1d0d94f55" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e711cd4bbd4573cce8f56f9019ee69f5" category="inline-link">Kapacitor.文件</block>
@@ -6995,7 +6956,6 @@
   <block id="13b9b5c6c0fb1445ca79a2155f4dc602" category="summary">Hadoop資料收集器組態</block>
   <block id="38af629ca8cce22e7b7e641b96f8197b" category="doc">Hadoop Data Collector</block>
   <block id="20bacb7d7672e3432126a809496c0ace" category="paragraph">使用此資料收集器從Hadoop收集指標。Cloud Insights</block>
-  <block id="a21fbfcb9b79178469092d796d580b0c" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇Hadoop。</block>
   <block id="e844ff1ebc3eef465aed7960b58160c3" category="inline-image-macro">Hadoop組態</block>
   <block id="026b451ea6f45b0c92de7f54611efaf2" category="paragraph"><block ref="47353d83abd9981302d8e2ae7057d5b3" category="inline-image-macro-rx" type="image"></block>
 <block ref="7afda35c9e63e32c054b3ad27f5a4ccb" category="inline-image-macro-rx" type="image"></block></block>
@@ -7534,7 +7494,6 @@
   <block id="09d6123310780f93d8f4d27e5bea4c38" category="summary">摘要：</block>
   <block id="d094b5589a83ff9dbfcc2d0e99295078" category="doc">管理已設定的資料收集器</block>
   <block id="53b9802b3b72e00a64f054ac84f78c11" category="paragraph">「安裝的資料收集器」頁面可讓您存取已設定Cloud Insights 為供使用的資料收集器。您可以使用此頁面來修改現有的資料收集器。</block>
-  <block id="697135789f3382f6b269c2eff2c84cef" category="list-text">在「支援」功能表中、按一下Cloud Insights 「*管理」&gt;「資料收集器*」</block>
   <block id="b931042a6d27500a3c3952e7af9907a5" category="paragraph">此時會顯示「可用的資料收集器」畫面。</block>
   <block id="e57a6ec1c32ee71fdeae09f16bf7524f" category="list-text">按一下*安裝的資料收集器*</block>
   <block id="25d0acec025a9863386eb668b19dff06" category="paragraph">隨即顯示所有已安裝的資料收集器清單。此清單提供收集器名稱、狀態、收集器正在存取的IP位址、以及上次從裝置取得資料的時間。可在此畫面上執行的動作包括：</block>
@@ -7549,7 +7508,6 @@
   <block id="2501b8babb695bdec64e66eb11334512" category="section-title">編輯資料收集器資訊</block>
   <block id="0560feeeae310b75cae9ba26f91d59a8" category="paragraph">您可以編輯現有的資料收集器設定資訊。</block>
   <block id="831f0c2e9b0e7c5099cb9031c5dc0385" category="list-title">若要編輯單一資料收集器：</block>
-  <block id="0ffa9affe1709cdb1b9adec1380e1915" category="list-text">在「支援」功能表中、按一下「*管理」&gt;「資料收集器*」Cloud Insights 以開啟已安裝的資料收集器清單。</block>
   <block id="77d808925da6d415697912a926fa941f" category="list-text">在您要修改之資料收集器右側的選項功能表中、按一下*編輯*。</block>
   <block id="9792f388566911dc57896cf92d02b576" category="paragraph">隨即開啟「編輯收集器」對話方塊。</block>
   <block id="40b6e8c1a1d818be1bbc1cdb378f09df" category="list-text">輸入變更內容、然後按一下*測試組態*以測試新組態、或按一下*儲存*以儲存組態。</block>
@@ -7561,7 +7519,6 @@
   <block id="a282dcc95e28cd045551ecaf5f98025c" category="paragraph">編輯多個資料收集器時、*測試組態*按鈕無法使用。</block>
   <block id="c282617210ff18a52337d5334bd08aed" category="section-title">複製資料收集器</block>
   <block id="63a478f4e24d6d80d303e7f6b683ff3a" category="paragraph">使用複製工具、您可以快速新增與其他資料來源具有相同認證和屬性的資料來源。複製可讓您輕鬆設定相同裝置類型的多個執行個體。</block>
-  <block id="e2d9fabd9d06eb6aaafa33a7e708066c" category="list-text">在「支援」功能表中、按一下Cloud Insights 「*管理」&gt;「資料收集器*」。</block>
   <block id="7aa19fe5c61d4c1b3b090b6f97e1abde" category="list-text">按一下*安裝的資料收集器*。</block>
   <block id="bf7749db4d5b82ac73abb6d90abc9e33" category="list-text">按一下您要複製之資料收集器左側的核取方塊。</block>
   <block id="623a8968bde520b6006d484210fadb03" category="list-text">在所選資料收集器右側的選項功能表中、按一下* Clone（複製）*。</block>
@@ -7665,7 +7622,6 @@
   <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">MongoDB資料收集器組態</block>
   <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">MongoDB資料收集器</block>
   <block id="5365ec2fc489501ed613b8ad5b954e9c" category="paragraph">使用此資料收集器從MongoDB收集數據。Cloud Insights</block>
-  <block id="79d5a85827de0c0dacd0986e20079d62" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。在*服務*下、選擇MongoDB。</block>
   <block id="06dc92e8ae707ce9c6046e102df5a214" category="inline-image-macro">MongoDB組態</block>
   <block id="0f54e55841a24b143c2104aab4935f7b" category="paragraph"><block ref="0f54e55841a24b143c2104aab4935f7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38d4b2dc2b4a57b1ac9fd3ffb91a1e4e" category="inline-link-macro">MongoDB文件</block>
@@ -9312,7 +9268,6 @@
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在舊安裝上執行安裝程式指令碼、現在代理程式並未傳送資料</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">解除安裝Telewraf代理程式、然後重新執行安裝指令碼。請依照本頁上的*升級代理程式*步驟、以取得適當的平台。</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">偵測到攻擊後24小時內收到電子郵件警示。在UI中、警示會在Cloud Insights 收到電子郵件之前24小時顯示、而該電子郵件則是由「支援工作負載安全性」所接收。</block>
-  <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">在「*安全性*」功能表下、選取「*管理」&gt;「資料收集器」&gt;「代理程式」&gt;「+agent*」</block>
   <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">原始容量：指派給FSX檔案系統之所有SSD儲存設備的基礎2總和。</block>
   <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS：此儲存集區上所有已配置磁碟區的IOPS總和。</block>
   <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">處理量：此儲存資源池上所有已配置磁碟區的總處理量。</block>
@@ -9434,7 +9389,6 @@
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">如果您要解除安裝* Windows *擷取單元：</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">如果您要解除安裝* Linux *擷取單元：</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*在*解除安裝AU之後：</block>
-  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在「支援」中、移至*管理&gt;資料收集器*、然後選取「*擷取單位*」標籤Cloud Insights 。</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows與Linux：*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">Get /｛schema｝/*-從報告資料庫擷取資料。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安裝ONTAP SVM DSC之前、可以執行此指令碼來檢查SVM中的事件率</block>
@@ -9464,7 +9418,6 @@
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">工作負載安全功能也能與其他工具整合。例如、 <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 與Splunk整合。</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">設定工作負載安全性LDAP使用者目錄收集器</block>
   <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">您可以設定工作負載安全性、從LDAP目錄伺服器收集使用者屬性。</block>
-  <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">在Workload Security功能表中、按一下：*管理&gt;資料收集器&gt;使用者目錄收集器&gt;+使用者目錄收集器*、然後選取* LDAP目錄伺服器*</block>
   <block id="d449caeff5b9c80604d3878de0500478" category="list-text">使用下列命令來驗證工作負載安全性LDAP使用者權限：</block>
   <block id="65c4f6bc3272e61ec3bacf8385c9aca1" category="cell">「工作負載安全性使用者設定檔」頁面不會顯示網域使用者的選用屬性。</block>
   <block id="44f9e39b6d01a9bb96134d1fa664c4a9" category="cell">如果Active Directory（AD）伺服器上已啟用加密憑證（SSL）、則工作負載安全性使用者目錄收集器將無法連線至AD伺服器。</block>
@@ -9506,7 +9459,6 @@
   <block id="9491cdf060c59bf0f883c94db8cfe73d" category="paragraph">若要設定工作負載安全警示收件者、請按一下*管理&gt;通知*、然後在每個收件者的適當區段中輸入電子郵件地址。</block>
   <block id="dee5cfb5319806eabd9b28296b26207a" category="summary">設定工作負載安全性Active Directory使用者目錄收集器</block>
   <block id="8dccebe9a8725eed9d49bcce51664895" category="paragraph">工作負載安全性可設定為從Active Directory伺服器收集使用者屬性。</block>
-  <block id="68c7fae76dd5832ab65259eca0632822" category="list-text">在Workload Security功能表中、按一下：*管理&gt;資料收集器&gt;使用者目錄收集器&gt;+使用者目錄收集器*、然後選取* Active Directory *</block>
   <block id="392b73413f817556c91d974c59c48d26" category="summary">有了工作負載安全功能、您就能在疑似遭破壞的情況下限制使用者存取權限</block>
   <block id="54fc3d93cd49948e1764882084d106cc" category="paragraph">一旦偵測到攻擊、工作負載安全功能就能封鎖使用者存取檔案系統、藉此阻止攻擊。您可以使用自動回應原則、或從警示或使用者詳細資料頁面手動封鎖存取。</block>
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">直接封鎖使用者的SMB位址、導致NFS封鎖攻擊的主機機器IP位址。這些機器IP位址將會遭到封鎖、無法存取工作負載安全性所監控的任何儲存虛擬機器（SVM）。</block>
@@ -9569,7 +9521,6 @@
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">在AWS中、請使用下列步驟設定要用作工作負載安全代理程式的機器：</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">請使用下列步驟、將機器設定為工作負載安全代理程式：</block>
   <block id="9661d643a1d7bcdfae7260083848fe7c" category="section-title">安裝工作負載安全代理程式</block>
-  <block id="24e9816bffbf8174c3d54d3085dfdebb" category="list-text">瀏覽至工作負載安全性*管理&gt;資料收集器*、然後按一下*代理程式*索引標籤。</block>
   <block id="e6827eaa9bdbd78ae7e7018263f370fb" category="list-text">將「代理程式安裝」命令貼到您登入的RHEL EC2執行個體中。這會安裝工作負載安全代理程式、提供所有的 <block ref="f5706ef9ce891542a2a7f34eef5c175e" category="inline-link-macro-rx"></block> 達成。</block>
   <block id="27bdcc1bb00d03f954143a84da9b6cce" category="cell">Data Collector會顯示「工作負載安全性：無法判斷ONTAP Amazon FxSN資料收集器的支援類型」錯誤。客戶無法將新的Amazon FSxN資料收集器新增至工作負載安全性。從代理程式連接埠443連線至FSxN叢集的連線逾時。防火牆和AWS安全性群組已啟用必要的規則、以允許通訊。代理程式已經部署、而且也位於相同的AWS帳戶中。此相同的代理程式可用來連接及監控其餘的NetApp裝置（且所有裝置均正常運作）。</block>
   <block id="e885f70b36e77978775e5bda02528ac9" category="summary">工作負載安全功能整合ONTAP 了功能不全的勒索軟體保護功能、可改善勒索軟體偵測功能。</block>
@@ -10336,9 +10287,7 @@
   <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">將 &lt;version&gt; ． zip_ 複製到工作文件夾中。例如：</block>
   <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">變更至下載資料夾並解壓縮檔案：</block>
   <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">確保所有檔案的使用者、群組和權限均正確無誤：</block>
-  <block id="a0698382f5e68c4355ea29e32842015d" category="list-text">附註：如果您打算使用不同的自訂使用者來管理 AU 、請確保擁有者和群組的群組權限都設為讀取和寫入（ _chmod 660 … _ ）</block>
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">重新啟動 AU 。</block>
-  <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在 Cloud Insights 中、瀏覽至 * 管理 &gt; 資料收集器 * 、然後選取 * 擷取單位 * 標籤。從 AU 右側的「三點」功能表中選擇 _Restart_ 。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 您可以自訂安裝與組態。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">監控話務員選項</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
@@ -12767,4 +12716,68 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">顯示檢查的列為作用中。「 x 」表示非使用中的裝置。</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">庫存最近狀態：擷取非預期的資料 - 陣列報告的 0 磁碟區</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常表示授權（非驗證）問題。請確定您的認證正確無誤、而且使用者名稱有權列出所有磁碟區並查看其屬性。</block>
+  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 &gt; + 「擷取單位」 *</block>
+  <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 * 來檢查擷取單位的狀態。</block>
+  <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">單擊 *Observe （可觀察） &gt; Collectors （收集器） &gt; Acquisition Units （採集單元） &gt;+Acquisition Unit* （採集單元）。</block>
+  <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">按一下 * &gt; 可服務性 &gt; 收集器 &gt; 擷取單位 * 來檢查擷取單位的狀態。</block>
+  <block id="b61c07e7a0fb367b275d84c4f406ea62" category="list-text">在 Cloud Insights 中、移至 * 可服務性 &gt; 收集器、然後選取 * 擷取單位 * 標籤。</block>
+  <block id="3fca9907aed6b150137f898d0280fff6" category="list-text">登入您的 Cloud Insights 環境、前往 * 可服務性 &gt; 收集器 * 。</block>
+  <block id="be73cc0144104fdc76d1908fc25c13b8" category="list-text">將所有資料收集器移至暫存擷取單元之後、請移至 * 可服務性 &gt; 收集器 * 、然後選取 * 擷取單元 * 標籤。</block>
+  <block id="fa754fd7176d2dbf75086e702bb8e0ba" category="cell">可能的原因可能是：
+1. 尚未設定使用者目錄收集器。若要新增一個、請前往 * 工作負載安全性 &gt; 收集器 &gt; 使用者目錄收集器 * 、然後按一下 *+ 使用者目錄收集器 * 。選擇_Active Directory或_LDAP Directory Server_。
+2.已設定使用者目錄收集器、但它已停止或處於錯誤狀態。請前往 * 收集器 &gt; 使用者目錄收集器 * 、並檢查狀態。請參閱 <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> 說明文件中的一節、以取得疑難排解秘訣。
+正確設定後、名稱將在24小時內自動解析。
+如果仍無法解決、請檢查是否已新增正確的使用者資料收集器。確定使用者確實是新增Active Directory / LDAP目錄伺服器的一部分。</block>
+  <block id="43d39371e7465fe75cfe3d390dbe2744" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇RethinkDB。</block>
+  <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">在 *Acquisition Units* 標籤的 *Observe &gt; Collectors* 頁面上的 AU 狀態顯示 "Certificate Expired " （證書已過期）或 "Certificate Recalled （證書已撤銷） " 。</block>
+  <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">選取 * 收集器 &gt; 值機員 &gt; + 值機員 *</block>
+  <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">按一下 * 工作負載安全性 &gt; 收集器 *
+
+按一下您要設定的資料收集器。
+
+請參閱文件的「資料收集器廠商參考資料」一節。
+
+<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
+  <block id="0408a4c64dc1f3ab40855164b4b6f38d" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「恩靈思」。</block>
+  <block id="bdb77c4a55fae38966a8493c526d4be0" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Redis。</block>
+  <block id="2652c4ffbd453ec1aefdecf31ada9e0b" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「Kafka」。</block>
+  <block id="4ee3dacc3b31186e6116102c2ab72d19" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇MySQL。</block>
+  <block id="ebb792d33abbc8326e1a943e8426035a" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Docker。</block>
+  <block id="dbc1393b73d772391a52f39c8694a13c" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Kibana。</block>
+  <block id="9db4a00fe92c69a4d0bf878ff50fc95a" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「jvm」。</block>
+  <block id="b655d6566293cffcbf9e4e65bb4f042d" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「 + 資料收集器」 *</block>
+  <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">從 * 可服務性 &gt; 收集器 * 中、選擇作業系統 / 平台。請注意、安裝任何整合資料收集器（Kubernetes、Docker、Apache等）也會設定節點資料收集。</block>
+  <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">在 Workload Security 功能表中、按一下：
+* 收集器 &gt; 使用者目錄收集器 &gt;+ 使用者目錄收集器 * 、然後選取 * LDAP 目錄伺服器 *</block>
+  <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇「Consul」。</block>
+  <block id="232088b7a66f0b9f18bd94f0ff1ccbd9" category="list-text">附註：如果您打算使用不同的自訂使用者執行 AU 、請確保擁有者和群組的群組權限都設為讀取和寫入（ _chmod 660 … _ ）</block>
+  <block id="d9089236da8f5cf946e4497f9e886125" category="list-text">在 Cloud Insights 中、瀏覽至 * 可服務性 &gt; 收集器 * 、然後選取 * 擷取單位 * 標籤。從 AU 右側的「三點」功能表中選擇 _Restart_ 。</block>
+  <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Apache。</block>
+  <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">您可以同時編輯多個資料收集器的資訊。在 * 可伺服 &gt; 收集器 * 頁面上、勾選每個收集器左側的方塊、選取要修改的資料收集器、然後按一下 * 大量動作 * 按鈕。選擇*編輯*並修改必要欄位。</block>
+  <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Memcached。</block>
+  <block id="f5d9cddb5529cde22dbbfac64ed116e4" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇MongoDB。</block>
+  <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">在 Workload Security 功能表中、按一下：
+* 收集器 &gt; 使用者目錄收集器 &gt;+ 使用者目錄收集器 * 、然後選取 * Active Directory*</block>
+  <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 收集器 *</block>
+  <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">在 Cloud Insights 功能表中、按一下 * 可伺服 &gt; 收集器 * 以開啟已安裝資料收集器的清單。</block>
+  <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 收集器 * 。</block>
+  <block id="f47fcfa022338bb85388c62d011288a2" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「PostgreSQL」。</block>
+  <block id="b375a95628217618f913ff0addcb4f8e" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇OpenZFS。</block>
+  <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">登入您的 Cloud Insights 環境、然後瀏覽至 * 可服務性 &gt; 收集器 * 。</block>
+  <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">按一下 * 工作負載安全性 &gt; 收集器 &gt; 代理程式 *</block>
+  <block id="f7a71c08cded2c36e48dd402ecadd5ba" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Puppet。</block>
+  <block id="8bcbe1a1fde4e3d96f7aca6694b75230" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Couchbase。</block>
+  <block id="29f60eabcc5e39b67a2b7e9560e07dc6" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 收集器 * 、然後按一下 *+ 資料收集器 * 按鈕。您可以選擇顯示所有的資料收集器、或是篩選、根據您的訂閱、僅顯示可用的資料收集器。</block>
+  <block id="fd3211acf4f48156142e8f687cbe6c6b" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Kapacitor.</block>
+  <block id="588c730d062048ef78564e2278564813" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「Netstat」。</block>
+  <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">按一下 * 工作負載安全性 &gt; 收集器 * 、檢查您設定的收集器狀態。</block>
+  <block id="38d938dede033e6fd6e3fba721cdf402" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「HAProxy」。</block>
+  <block id="b9e357a2b86f1ae6976d85b140c34304" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「*資料中心/作業系統*」。</block>
+  <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 收集器 *</block>
+  <block id="ec35f90f2dd5badf0a40cb0d12d855be" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇ActiveMQ。</block>
+  <block id="ca888e8799d75a60bf8835194141e443" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇彈性搜尋。</block>
+  <block id="f1f3071daba335689c22cb4ecf169b27" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Hadoop。</block>
+  <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇CouchDB。</block>
+  <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「Flink」。</block>
+  <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。</block>
 </blocks>

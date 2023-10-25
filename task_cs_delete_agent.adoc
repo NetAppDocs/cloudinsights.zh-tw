@@ -42,7 +42,7 @@ IMPORTANT: 刪除值機員會刪除所有與值機員相關的資料收集器。
 sudo /opt/netapp/cloudsecure/agent/install/cloudsecure-agent-uninstall.sh
 Uninstall CloudSecure Agent? [y|N]:
 ....
-. 按一下*管理>資料收集器>代理程式*
+. 按一下 * 工作負載安全性 > 收集器 > 代理程式 *
 +
 系統會顯示已設定的值機員清單。
 
