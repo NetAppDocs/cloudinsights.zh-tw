@@ -5043,7 +5043,6 @@
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">您需要從中收集資料的裝置的認證資料。</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">您從中收集資料的所有裝置都需要裝置網路位址、帳戶資訊和密碼。</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">系統會顯示廠商所安排的可用資料收集器。</block>
-  <block id="98340026125b30253a889a183c2af3e1" category="list-text">按一下所需廠商上的*+ Collector*、然後選取要設定的資料收集器。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">在對話方塊中、您可以設定資料收集器並新增擷取單位。</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">輸入資料收集器的名稱。</block>
   <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">名稱可以包含字母（a到z）、數字（0到9）、破折號（-）、底線（_）、撇號（'）、 和句點（.）。</block>
@@ -12780,4 +12779,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇CouchDB。</block>
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「Flink」。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。</block>
+  <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">按一下 *+ Collector* 並選取要設定的資料收集器。</block>
 </blocks>
