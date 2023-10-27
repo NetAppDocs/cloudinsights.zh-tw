@@ -12780,4 +12780,12 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「Flink」。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">按一下 *+ Collector* 並選取要設定的資料收集器。</block>
+  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">將副檔名新增至白名單、以減少警示</block>
+  <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允許的檔案類型原則</block>
+  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">如果偵測到已知副檔名的勒索軟體攻擊、並在「警示」畫面上產生警示、則可將該副檔名列入白名單、以避免不必要的警示。</block>
+  <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">瀏覽至 * 工作負載安全性 &gt; 原則 * 、然後前往 _ 允許的檔案類型原則 _ 索引標籤。</block>
+  <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">一旦列入白名單、就不會針對該允許的檔案類型產生勒索軟體攻擊警示。請注意、 _ 允許的檔案類型 _ 原則僅適用於勒索軟體偵測。</block>
+  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">例如、如果名為 _test ． txt_ 的檔案重新命名為 _test ． txt ． abc_ 、而工作負載安全性因為 _ ． abc_ 副檔名而偵測到勒索軟體攻擊、則可以將其加白。白名單化後、將不再針對副檔名為 _.abc_ 的檔案產生勒索軟體攻擊。</block>
+  <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允許的檔案類型可以是完全相符的檔案類型（例如、 ".abc" ）或運算式（例如、 ".*type" 、 ".type*" 或 "*type" ）。不支援「 .a*c 」、「 .p*f 」類型的運算式。</block>
 </blocks>

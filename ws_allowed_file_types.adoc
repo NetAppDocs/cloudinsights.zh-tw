@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: ws_allowed_file_types.html 
+keywords: workload security, cloud secure, whitelist, ransomware 
+summary: 將副檔名新增至白名單、以減少警示 
+---
+= 允許的檔案類型原則
+:allow-uri-read: 
+
+
+[role="lead"]
+如果偵測到已知副檔名的勒索軟體攻擊、並在「警示」畫面上產生警示、則可將該副檔名列入白名單、以避免不必要的警示。
+
+瀏覽至 * 工作負載安全性 > 原則 * 、然後前往 _ 允許的檔案類型原則 _ 索引標籤。
+
+image:WS_Allowed_File_Type_Policies.png["允許的檔案類型原則"]
+
+一旦列入白名單、就不會針對該允許的檔案類型產生勒索軟體攻擊警示。請注意、 _ 允許的檔案類型 _ 原則僅適用於勒索軟體偵測。
+
+例如、如果名為 _test ． txt_ 的檔案重新命名為 _test ． txt ． abc_ 、而工作負載安全性因為 _ ． abc_ 副檔名而偵測到勒索軟體攻擊、則可以將其加白。白名單化後、將不再針對副檔名為 _.abc_ 的檔案產生勒索軟體攻擊。
+
+允許的檔案類型可以是完全相符的檔案類型（例如、 ".abc" ）或運算式（例如、 ".*type" 、 ".type*" 或 "*type" ）。不支援「 .a*c 」、「 .p*f 」類型的運算式。

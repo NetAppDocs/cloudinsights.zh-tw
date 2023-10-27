@@ -245,6 +245,8 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自動化回應原則
       url: "/cs_automated_response_policies.html"
+    - title: 允許的檔案類型原則
+      url: "/ws_allowed_file_types.html"
     - title: 不受依賴的勒索軟體保護整合ONTAP
       url: "/concept_cs_integration_with_ontap_arp.html"
     - title: 封鎖使用者存取
