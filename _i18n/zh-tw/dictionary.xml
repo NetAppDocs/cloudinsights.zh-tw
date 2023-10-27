@@ -1250,7 +1250,6 @@
   <block id="1affaa3c0d19c2e084afa700debb8740" category="paragraph">OpenStack（REST API / KVM）資料收集器會擷取所有OpenStack執行個體的庫存資料、以及VM效能資料（選用）。</block>
   <block id="ee627d472fc6df1e0c1367deb7ee0063" category="list-text">OpenStack控制器的IP位址</block>
   <block id="280f91bd66acb7cf04ec960fca75f64a" category="list-text">OpenStack管理員角色認證和Sudo存取Linux KVM Hypervisor。如果您未使用admin帳戶或與管理員同等的權限、則需要使用試用版和錯誤來識別資料收集器使用者ID的預設原則。</block>
-  <block id="ab920cce93179165ef5649da2b8c17f4" category="list-text">OpenStack Ceilometer模組必須安裝並設定、才能收集效能。設定Ceilometer的方法是編輯每個Hypervisor的nova.conff檔案、然後在每個Hypervisor上重新啟動Nova運算服務。不同OpenStack版本的選項名稱會變更：</block>
   <block id="8beeeec38dbc6258291f2e47130835d8" category="list-text">冰屋</block>
   <block id="291b02b25fbb9789119d2383e9f08e29" category="list-text">Juno</block>
   <block id="3afe87a2a8c61f8023e56883b9baccb8" category="list-text">公斤</block>
@@ -1264,7 +1263,6 @@
   <block id="5829ef3d89411d46f0a05f6867ff2efd" category="list-text">22適用於KVM SSH</block>
   <block id="a58963a7c2c9eafce2ab09ca28270ee0" category="list-text">8774適用於Nova Compute Service</block>
   <block id="745b1ee1989bc6dd0ac838e4dcb448e5" category="list-text">8776適用於Cinder Block Service</block>
-  <block id="3c96098040036cf157077588c3a5792d" category="list-text">8777適用於Ceilometer Performance Service</block>
   <block id="ca3d2d05f916b41d8f53f506ace2e80e" category="list-text">9292 for Glance Image Service *注意*連接埠會繫結至特定服務、而且該服務可能會在較大型環境的控制器或其他主機上執行。</block>
   <block id="9be07620e581c90b777b5fef1296cc28" category="cell">OpenStack控制器IP位址</block>
   <block id="c5e968faf75175530ec61fb1846cfdce" category="cell">OpenStack控制器的IP位址或完整網域名稱</block>
@@ -12788,4 +12786,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">一旦列入白名單、就不會針對該允許的檔案類型產生勒索軟體攻擊警示。請注意、 _ 允許的檔案類型 _ 原則僅適用於勒索軟體偵測。</block>
   <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">例如、如果名為 _test ． txt_ 的檔案重新命名為 _test ． txt ． abc_ 、而工作負載安全性因為 _ ． abc_ 副檔名而偵測到勒索軟體攻擊、則可以將其加白。白名單化後、將不再針對副檔名為 _.abc_ 的檔案產生勒索軟體攻擊。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允許的檔案類型可以是完全相符的檔案類型（例如、 ".abc" ）或運算式（例如、 ".*type" 、 ".type*" 或 "*type" ）。不支援「 .a*c 」、「 .p*f 」類型的運算式。</block>
+  <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">OpenStack 湯糰模組必須安裝並設定、才能收集效能。若要設定「湯糰」、請編輯每個 Hypervisor 的 nova.conf 檔案、然後在每個 Hypervisor 上重新啟動 Nova Compute 服務。不同OpenStack版本的選項名稱會變更：</block>
+  <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777 提供「湯糰效能服務」</block>
 </blocks>

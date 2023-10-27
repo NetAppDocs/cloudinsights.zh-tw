@@ -27,7 +27,7 @@ OpenStack（REST API / KVM）資料收集器會擷取所有OpenStack執行個體
 
 * OpenStack控制器的IP位址
 * OpenStack管理員角色認證和Sudo存取Linux KVM Hypervisor。如果您未使用admin帳戶或與管理員同等的權限、則需要使用試用版和錯誤來識別資料收集器使用者ID的預設原則。
-* OpenStack Ceilometer模組必須安裝並設定、才能收集效能。設定Ceilometer的方法是編輯每個Hypervisor的nova.conff檔案、然後在每個Hypervisor上重新啟動Nova運算服務。不同OpenStack版本的選項名稱會變更：
+* OpenStack 湯糰模組必須安裝並設定、才能收集效能。若要設定「湯糰」、請編輯每個 Hypervisor 的 nova.conf 檔案、然後在每個 Hypervisor 上重新啟動 Nova Compute 服務。不同OpenStack版本的選項名稱會變更：
 +
 ** 冰屋
 ** Juno
@@ -45,7 +45,7 @@ OpenStack（REST API / KVM）資料收集器會擷取所有OpenStack執行個體
 ** 22適用於KVM SSH
 ** 8774適用於Nova Compute Service
 ** 8776適用於Cinder Block Service
-** 8777適用於Ceilometer Performance Service
+** 8777 提供「湯糰效能服務」
 ** 9292 for Glance Image Service *注意*連接埠會繫結至特定服務、而且該服務可能會在較大型環境的控制器或其他主機上執行。
 
 
