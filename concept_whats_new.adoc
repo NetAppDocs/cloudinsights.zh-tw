@@ -29,6 +29,16 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+=== 增強工作負載安全性
+
+工作負載安全性已透過下列方式獲得改善：
+
+* * 拒絕存取 * ：工作負載安全性與 ONTAP 整合、可接收「拒絕存取」事件、並提供額外的分析和自動回應層。
+* 白名單 * 允許的檔案類型 * ：如果偵測到已知副檔名的勒索軟體攻擊、可以將該副檔名列入白名單、以避免不必要的警示。- link:/ws_allowed_file_types.html["深入瞭解"]
+
+
+
+
 === 模組試用
 
 除了 Cloud Insights 的初始試用版之外、您也可以利用 link:concept_subscribing_to_cloud_insights.html#module-trials["模組試用"]。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。

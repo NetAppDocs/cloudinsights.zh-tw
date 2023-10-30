@@ -12788,4 +12788,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允許的檔案類型可以是完全相符的檔案類型（例如、 ".abc" ）或運算式（例如、 ".*type" 、 ".type*" 或 "*type" ）。不支援「 .a*c 」、「 .p*f 」類型的運算式。</block>
   <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">OpenStack 湯糰模組必須安裝並設定、才能收集效能。若要設定「湯糰」、請編輯每個 Hypervisor 的 nova.conf 檔案、然後在每個 Hypervisor 上重新啟動 Nova Compute 服務。不同OpenStack版本的選項名稱會變更：</block>
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777 提供「湯糰效能服務」</block>
+  <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">增強工作負載安全性</block>
+  <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作負載安全性已透過下列方式獲得改善：</block>
+  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合、可接收「拒絕存取」事件、並提供額外的分析和自動回應層。</block>
+  <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">白名單 * 允許的檔案類型 * ：如果偵測到已知副檔名的勒索軟體攻擊、可以將該副檔名列入白名單、以避免不必要的警示。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
 </blocks>
