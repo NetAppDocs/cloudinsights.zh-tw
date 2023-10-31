@@ -12793,14 +12793,17 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECS 的使用者 ID</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">解除安裝</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安裝</block>
-  <block id="8469e2ae035ceb8a5938bd217eb94df0" category="cell">擷取事件導出者 Pod 的名稱：
+  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">擷取事件導出者 Pod 的名稱：
 
 <block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
 
 應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」
 
-    - 機碼： log_file
-      價值：
-      - /var/log/containers/NetApp-CI-event-export/.log
+...
+ - 機碼： log_file
+   價值：
+   - /var/log/containers/NetApp-CI-event-export/.log
+...
+
 或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
 </blocks>

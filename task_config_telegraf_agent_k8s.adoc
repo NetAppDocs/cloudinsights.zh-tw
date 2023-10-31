@@ -534,9 +534,12 @@ Telegraf ：
 
 應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式 `kubectl -n netapp-monitoring edit agent`，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」
 
-    - 機碼： log_file
-      價值：
-      - /var/log/containers/NetApp-CI-event-export/.log
+...
+ - 機碼： log_file
+   價值：
+   - /var/log/containers/NetApp-CI-event-export/.log
+...
+
 或者、您也可以 <<uninstalling,解除安裝>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安裝>> 代理程式。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
