@@ -468,9 +468,6 @@ kubectl Get all -n <namespace> | grep -i PSP （應顯示找不到任何項目�
 • Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 >=4.18.0 
 
 
-| NKMO 命名空間中的網路觀察者 Pod 位於 OpenShift 4 環境中的 CrashLoopBackOff | 目前不支援這項功能。請留意未來更新中要新增的支援。 
-
-
 | Pod 在 NKMO 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料 | 檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。 
 
 
