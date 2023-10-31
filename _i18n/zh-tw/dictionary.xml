@@ -12807,4 +12807,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
   <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">請注意、 FSX CLI 命令會擷取 FSX 透過 API 禁止的部分容量值。由於 Cloud Insights 嘗試透過 API 擷取 FSX 資料、因此 Cloud Insights 中的某些容量值（例如儲存池的容量值）可能與 FSX 本身不同。如需詳細資訊、請聯絡您的 Amazon 代表。</block>
+  <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">輸入 Cognos 報告排程時間時、有時我會在排程時間加上額外的「 m 」。例如、如果我輸入時間為「 02 ： 15 PM 」、可能會新增額外的字元：「 02 ： 15 PMM 」（或 PMM ）。當我按一下外部時、它會變更為「上午 2 ： 15 」。
+
+我可以儲存報告、但當我重新開啟儲存的報告時、排程時間會顯示為 AM （即晨間）、無論我是在排程時間中輸入 AM 或 PM 。</block>
+  <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">請重新輸入排程時間、小心不要輸入完整的「 AM 」或「 PM 」字元、只要在「 AM 」或「 P 」輸入「 A 」即可。如果您沒有看到額外的字元、排程時間將會正確設定。</block>
 </blocks>
