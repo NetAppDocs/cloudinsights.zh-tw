@@ -6926,18 +6926,12 @@
   <block id="905bf4f9d8189256f8247dcef263d5cb" category="cell">檢查Telegraf代理程式記錄、查看是否報告下列錯誤：e! 外掛程式[inports.dDocker中發生錯誤：嘗試連線至Docker精靈套接字時、取得權限遭拒（若有）、請採取必要步驟、提供Telegraf代理程式存取上述Docker Unix套接字。</block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">設定ECS資料收集器。</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">設定EMC ECS資料收集器</block>
-  <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要ECS伺服器的IP位址和管理層級網域帳戶。</block>
   <block id="babd4a2879d509662ea2e8a9168f34ed" category="paragraph">從ECS資料收集器取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="30edf70db68aa84f05d3e72326807b0c" category="cell">鏟斗</block>
-  <block id="f3d2ef1b407f9dac845144f7222446b0" category="list-text">ECS管理主控台的IP位址</block>
-  <block id="d53717de9f42bb927d66332c1b99aa0a" category="list-text">ECS系統的管理層級網域帳戶</block>
-  <block id="b28ad04cb96e374334fe66f0c126a953" category="list-text">連接埠443（HTTPS）。需要連線至ECS系統上的TCP連接埠443。</block>
   <block id="7a03f89966abe32a9145c5711baac2c6" category="cell">ECS主機</block>
   <block id="60103158e1fa8a921007c1692b656462" category="cell">ECS系統的IP位址或完整網域名稱</block>
   <block id="2ef0586f8254b68b62f3912e0765fb08" category="cell">ECS主機連接埠</block>
   <block id="55f849af32f2bc9f6a84120627639721" category="cell">用於與ECS主機通訊的連接埠</block>
-  <block id="2e610591aff0a1797343c00ad6a93ae8" category="cell">ECS廠商ID</block>
-  <block id="b523f7997888942f06b8d3a5bcbc4a29" category="cell">ECS的廠商ID</block>
   <block id="0750f8ac8a07b8a8acba23993fc3de34" category="cell">用於ECS的密碼</block>
   <block id="2d74084218f04becb882422545c77d5f" category="cell">預設值為360分鐘。</block>
   <block id="18906ecb044421552f4c94c742621646" category="summary">kapacitor.組態</block>
@@ -12794,4 +12788,10 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="530877d75874db688a349c68f4d664d6" category="cell">擷取事件導出者 Pod 的名稱「 kubectl -n NetApp-Monitoring Get Pod 」</block>
   <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">Grep 事件導出者</block>
   <block id="60154ad86ed086052b09e30faded046b" category="cell">awk ' ｛ print $1 ｝ '</block>
+  <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要 ECS 叢集的 IP 位址或主機名稱、以及使用者名稱和密碼。</block>
+  <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS 叢集的 IP 位址或主機名稱</block>
+  <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">ECS 系統的使用者名稱和密碼</block>
+  <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">連接埠 4443 （ HTTPS ）。  需要連線至 ECS 系統上的 TCP 連接埠 4443 的輸出連線。</block>
+  <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ECS 使用者 ID</block>
+  <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECS 的使用者 ID</block>
 </blocks>
