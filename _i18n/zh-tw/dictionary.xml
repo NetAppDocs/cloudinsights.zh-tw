@@ -12785,13 +12785,22 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合、可接收「拒絕存取」事件、並提供額外的分析和自動回應層。</block>
   <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">白名單 * 允許的檔案類型 * ：如果偵測到已知副檔名的勒索軟體攻擊、可以將該副檔名列入白名單、以避免不必要的警示。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的 Kubernetes 事件意外停止回報 Cloud Insights 。</block>
-  <block id="530877d75874db688a349c68f4d664d6" category="cell">擷取事件導出者 Pod 的名稱「 kubectl -n NetApp-Monitoring Get Pod 」</block>
-  <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">Grep 事件導出者</block>
-  <block id="60154ad86ed086052b09e30faded046b" category="cell">awk ' ｛ print $1 ｝ '</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要 ECS 叢集的 IP 位址或主機名稱、以及使用者名稱和密碼。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS 叢集的 IP 位址或主機名稱</block>
   <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">ECS 系統的使用者名稱和密碼</block>
   <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">連接埠 4443 （ HTTPS ）。  需要連線至 ECS 系統上的 TCP 連接埠 4443 的輸出連線。</block>
   <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ECS 使用者 ID</block>
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECS 的使用者 ID</block>
+  <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">解除安裝</block>
+  <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安裝</block>
+  <block id="8469e2ae035ceb8a5938bd217eb94df0" category="cell">擷取事件導出者 Pod 的名稱：
+
+<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
+
+應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」
+
+    - 機碼： log_file
+      價值：
+      - /var/log/containers/NetApp-CI-event-export/.log
+或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
 </blocks>
