@@ -12806,4 +12806,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 ...
 
 或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
+  <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">請注意、 FSX CLI 命令會擷取 FSX 透過 API 禁止的部分容量值。由於 Cloud Insights 嘗試透過 API 擷取 FSX 資料、因此 Cloud Insights 中的某些容量值（例如儲存池的容量值）可能與 FSX 本身不同。如需詳細資訊、請聯絡您的 Amazon 代表。</block>
 </blocks>
