@@ -12770,20 +12770,15 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在「*服務*」下、選擇「Flink」。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">按一下 *+ Collector* 並選取要設定的資料收集器。</block>
-  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">將副檔名新增至白名單、以減少警示</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允許的檔案類型原則</block>
-  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">如果偵測到已知副檔名的勒索軟體攻擊、並在「警示」畫面上產生警示、則可將該副檔名列入白名單、以避免不必要的警示。</block>
   <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">瀏覽至 * 工作負載安全性 &gt; 原則 * 、然後前往 _ 允許的檔案類型原則 _ 索引標籤。</block>
   <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">一旦列入白名單、就不會針對該允許的檔案類型產生勒索軟體攻擊警示。請注意、 _ 允許的檔案類型 _ 原則僅適用於勒索軟體偵測。</block>
-  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">例如、如果名為 _test ． txt_ 的檔案重新命名為 _test ． txt ． abc_ 、而工作負載安全性因為 _ ． abc_ 副檔名而偵測到勒索軟體攻擊、則可以將其加白。白名單化後、將不再針對副檔名為 _.abc_ 的檔案產生勒索軟體攻擊。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允許的檔案類型可以是完全相符的檔案類型（例如、 ".abc" ）或運算式（例如、 ".*type" 、 ".type*" 或 "*type" ）。不支援「 .a*c 」、「 .p*f 」類型的運算式。</block>
   <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">OpenStack 湯糰模組必須安裝並設定、才能收集效能。若要設定「湯糰」、請編輯每個 Hypervisor 的 nova.conf 檔案、然後在每個 Hypervisor 上重新啟動 Nova Compute 服務。不同OpenStack版本的選項名稱會變更：</block>
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777 提供「湯糰效能服務」</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">增強工作負載安全性</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作負載安全性已透過下列方式獲得改善：</block>
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合、可接收「拒絕存取」事件、並提供額外的分析和自動回應層。</block>
-  <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">白名單 * 允許的檔案類型 * ：如果偵測到已知副檔名的勒索軟體攻擊、可以將該副檔名列入白名單、以避免不必要的警示。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的 Kubernetes 事件意外停止回報 Cloud Insights 。</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要 ECS 叢集的 IP 位址或主機名稱、以及使用者名稱和密碼。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS 叢集的 IP 位址或主機名稱</block>
@@ -12811,4 +12806,10 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 我可以儲存報告、但當我重新開啟儲存的報告時、排程時間會顯示為 AM （即晨間）、無論我是在排程時間中輸入 AM 或 PM 。</block>
   <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">請重新輸入排程時間、小心不要輸入完整的「 AM 」或「 PM 」字元、只要在「 AM 」或「 P 」輸入「 A 」即可。如果您沒有看到額外的字元、排程時間將會正確設定。</block>
+  <block id="ec6303682456657014f28b879941ffc3" category="inline-link-macro">允許的檔案類型</block>
+  <block id="a962ae55ac740140e0980c56c9ca3d02" category="list-text">* 允許的檔案類型 * ：如果偵測到已知副檔名的勒索軟體攻擊、則可以將該副檔名新增至 <block ref="dc41f7077cede687c60abe45cd8114a8" category="inline-link-macro-rx"></block> 避免不必要警示的清單。</block>
+  <block id="f998abe6d6e1433185e617432fa562a7" category="summary">新增檔案副檔名至允許的檔案類型清單、以減少警示。</block>
+  <block id="3a0a3011be8f34f267c24177c748de10" category="paragraph">如果偵測到已知副檔名的勒索軟體攻擊、並在警示畫面上產生警示、則可將該副檔名新增至 _ 允許的檔案類型 _ 清單、以避免不必要的警示。</block>
+  <block id="bdf27b4c983630ae6531f89136fe0963" category="paragraph">一旦新增至 _ 允許的檔案類型 _ 清單、就不會針對該允許的檔案類型產生勒索軟體攻擊警示。請注意、 _ 允許的檔案類型 _ 原則僅適用於勒索軟體偵測。</block>
+  <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">例如、如果名為 _test ． txt_ 的檔案重新命名為 _test ． txt ． abc_ 、且工作負載安全性偵測到勒索軟體攻擊、因為副檔名是 _ ． abc_ 、則可以將 _ ． abc_ 副檔名新增至 _ 允許的檔案類型 _ 清單。將勒索軟體新增至清單後、將不再針對副檔名為 _.abc_ 的檔案進行勒索軟體攻擊。</block>
 </blocks>
