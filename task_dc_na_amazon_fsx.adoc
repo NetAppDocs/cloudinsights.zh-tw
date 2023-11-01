@@ -22,7 +22,7 @@ summary: 適用於NetApp ONTAP 的Amazon FSX資料蒐集器
 此資料收集器會從Amazon FSX for NetApp ONTAP 獲取庫存與效能資料。此資料收集器將逐步提供給Cloud Insights 整個「穩定」服務區域。如果Cloud Insights 您在自己的《不景》中沒有看到此收藏器的圖示、請聯絡您的銷售人員。
 
 
-NOTE: 此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONTAP 使用者。請檢閱 AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和規則"] 可用選項的文件。目前 AWS 只支援一種檔案系統範圍的使用者角色、即 _fsxadmin_ 。這是用於 Cloud Insights 收集器的適當角色。
+NOTE: 此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONTAP 使用者。請檢閱 AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和規則"] 可用選項的文件。目前 AWS 只支援一種檔案系統範圍的使用者角色、即 _fsxadmin_ 。這是用於 Cloud Insights 收集器的適當角色。使用者也應該指派這三個應用程式： HTTP 、 ontapi 、 ssh 。
 
 
 
@@ -79,9 +79,9 @@ NOTE: 此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONT
 
 以下是設定及使用此資料收集器的需求：
 
-* 您必須擁有設定為唯讀API呼叫的管理員帳戶存取權。
+* 您必須具有「 fsxadmin 」角色的帳戶存取權、並指派三個應用程式： ssh 、 ontapi 、 http
 * 帳戶詳細資料包括使用者名稱和密碼。
-* 連接埠需求：80或443
+* 連接埠需求： 443
 
 
 
@@ -120,7 +120,7 @@ NOTE: 此 Cloud Insights 收集器需要具有 _Filesystem-roculs_ 角色的 ONT
 * 工作負載磁碟區
 
 
-請注意、 FSX CLI 命令會擷取 FSX 透過 API 禁止的部分容量值。由於 Cloud Insights 嘗試透過 API 擷取 FSX 資料、因此 Cloud Insights 中的某些容量值（例如儲存池的容量值）可能與 FSX 本身不同。如需詳細資訊、請聯絡您的 Amazon 代表。
+請注意、 FSX CLI 和 API 命令會擷取 Cloud Insights ZAPI 未收集的一些容量值、因此 Cloud Insights 中的某些容量值（例如儲存集區的容量值）可能與 FSX 本身不同。
 
 
 
