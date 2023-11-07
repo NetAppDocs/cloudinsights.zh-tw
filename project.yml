@@ -39,8 +39,6 @@ sidebar:
         url: "/task_configure_acquisition_unit.html"
       - title: 在 Windows/Linux 上設定代理程式
         url: "/task_config_telegraf_agent.html"
-      - title: 設定 Kubernetes 運算子
-        url: "/task_config_telegraf_agent_k8s.html"
       - title: 設定資料收集器
         url: "/task_configure_data_collectors.html"
       - title: 判斷資料收集器擷取狀態
