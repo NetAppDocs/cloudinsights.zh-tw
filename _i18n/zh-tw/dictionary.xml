@@ -9867,7 +9867,6 @@
   <block id="98cd1da81daac82fdd86ce7412e50a24" category="list-text">從命令中刪除結尾的 "--install" （ Linux ）或 "-install" （ Windows ）。</block>
   <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">對於 _ 作業系統 _ 資料收集器、請選擇一個平台（ Linux 、 Windows ）來安裝 Cloud Insights 代理程式。您必須至少有一個代理程式、才能從服務收集資料。代理程式也會從主機本身收集資料、以供Cloud Insights 在支援中使用。此資料在小工具等中歸類為「節點」資料</block>
   <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">在 Windows/Linux 上設定代理程式</block>
-  <block id="77206fd030aaac8141e97d837c255109" category="sidebar">設定 Kubernetes 運算子</block>
   <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023 年 5 月</block>
   <block id="6b091071a7d33b506abd7a64e9f0795d" category="inline-image-macro">資料保護儀表板 Widget 顯示本機和遠端概觀</block>
   <block id="185acbfb6bbd68c83e1d229b0f437594" category="inline-image-macro">資料保護叢集清單</block>
@@ -12814,4 +12813,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">您必須具有「 fsxadmin 」角色的帳戶存取權、並指派三個應用程式： ssh 、 ontapi 、 http</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">連接埠需求： 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">請注意、 FSX CLI 和 API 命令會擷取 Cloud Insights ZAPI 未收集的一些容量值、因此 Cloud Insights 中的某些容量值（例如儲存集區的容量值）可能與 FSX 本身不同。</block>
+  <block id="283dda2d69780214459b88b24889f026" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="795cb2fef65468e8b6a28f3da1c0d62b" category="inline-link-macro-rx"></block>。</block>
 </blocks>
