@@ -12813,5 +12813,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">您必須具有「 fsxadmin 」角色的帳戶存取權、並指派三個應用程式： ssh 、 ontapi 、 http</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">連接埠需求： 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">請注意、 FSX CLI 和 API 命令會擷取 Cloud Insights ZAPI 未收集的一些容量值、因此 Cloud Insights 中的某些容量值（例如儲存集區的容量值）可能與 FSX 本身不同。</block>
-  <block id="283dda2d69780214459b88b24889f026" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="795cb2fef65468e8b6a28f3da1c0d62b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
 </blocks>
