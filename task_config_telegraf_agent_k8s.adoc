@@ -21,6 +21,9 @@ summary: 支援Telegraf做為其代理程式、可在Kubernetes上收集整合�
 [role="lead"]
 提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。
 
+
+NOTE: 如果您有 Cloud Insights 聯邦版、您的安裝和組態指示可能與本頁的指示不同。依照 Cloud Insights 中的指示安裝 NetApp Kubernetes 監控操作員。
+
 image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 
 
