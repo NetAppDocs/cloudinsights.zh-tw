@@ -10235,7 +10235,6 @@
   <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">在 Cloud Insights 中、建立 API Token 。</block>
   <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">瀏覽至 * 管理 &gt; API 存取 * 、然後選取 *+API 存取權杖 * 。</block>
   <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">設定容易識別的 * 名稱 * 和 * 描述 *</block>
-  <block id="095edbf2eeed607f4203d4060d6bebab" category="list-text">類型： * 擷取單位 *</block>
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">權限： * 讀取 / 寫入 *</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">選擇所需的 * 到期 * 和 * 自動續訂 * 值</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">複製產生的 API 存取權杖。您必須先執行此步驟、才能關閉視窗。</block>
@@ -10266,18 +10265,10 @@
   <block id="b03ba9c0b65f3d61c05a13e6e0556f6e" category="list-text">執行下列步驟、將一次性權杖和安裝程式版本匯出至環境變數：</block>
   <block id="f355abfc0309011b2480d033a0bd5a7c" category="list-text">執行下列步驟、以自訂使用者和群組來安裝 CI ：</block>
   <block id="c2edf0fde07151d96c99ce933b5db7fc" category="paragraph">注意：如果您不想使用自訂使用者和群組、可以使用預設的「 cisys 」使用者和群組。  在這種情況下、請執行上述安裝命令、但不要指定使用者和群組。</block>
-  <block id="442acde7a27750391de6a8358d813ebf" category="paragraph">此時、 AU 軟體已安裝在系統上、可由自訂使用者和群組存取。不過、您無法新增資料收集器。若要手動執行此作業、您必須將 datasources.war 檔案複製到適當的位置。</block>
-  <block id="aa65691c6297c950fcee712307bb1a91" category="list-text">瀏覽至 datasources.war 的來源位置、並驗證該處的 zip 檔案：</block>
-  <block id="a97626ad22c898bbe0080f7f7799f0e0" category="list-text">請注意預設 datasources.war 資料夾的權限：</block>
   <block id="43b4370cb1861295e2cf1d82e2cf71ce" category="list-text">您必須切換至（或登出 root 並以登入）自訂使用者、才能執行後續步驟。</block>
   <block id="c228e145e9e61000d0f54dd253874651" category="list-text">注意：如果您使用的是預設的「 cisys 」使用者和群組、則不需要執行此步驟。</block>
   <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">附註：自訂使用者可以是您在 AU 安裝期間提供給 cloudinsights-install.sh 的自訂群組成員、且可以與您在 AU 安裝期間提供的自訂使用者相同或不同。</block>
-  <block id="802dfb282c205a5ce3de537f88b12f68" category="list-text">建立工作資料夾、並調整為相同的權限：</block>
   <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">附註：如果使用「 cisys 」使用者和群組、則這些項目會顯示在上述輸出中。</block>
-  <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">將 &lt;version&gt; ． zip_ 複製到工作文件夾中。例如：</block>
-  <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">變更至下載資料夾並解壓縮檔案：</block>
-  <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">確保所有檔案的使用者、群組和權限均正確無誤：</block>
-  <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">重新啟動 AU 。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 您可以自訂安裝與組態。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">監控話務員選項</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
@@ -12737,8 +12728,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">在 Workload Security 功能表中、按一下：
 * 收集器 &gt; 使用者目錄收集器 &gt;+ 使用者目錄收集器 * 、然後選取 * LDAP 目錄伺服器 *</block>
   <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇「Consul」。</block>
-  <block id="232088b7a66f0b9f18bd94f0ff1ccbd9" category="list-text">附註：如果您打算使用不同的自訂使用者執行 AU 、請確保擁有者和群組的群組權限都設為讀取和寫入（ _chmod 660 … _ ）</block>
-  <block id="d9089236da8f5cf946e4497f9e886125" category="list-text">在 Cloud Insights 中、瀏覽至 * 可服務性 &gt; 收集器 * 、然後選取 * 擷取單位 * 標籤。從 AU 右側的「三點」功能表中選擇 _Restart_ 。</block>
   <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Apache。</block>
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">您可以同時編輯多個資料收集器的資訊。在 * 可伺服 &gt; 收集器 * 頁面上、勾選每個收集器左側的方塊、選取要修改的資料收集器、然後按一下 * 大量動作 * 按鈕。選擇*編輯*並修改必要欄位。</block>
   <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。在*服務*下、選擇Memcached。</block>
@@ -12815,4 +12804,26 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">請注意、 FSX CLI 和 API 命令會擷取 Cloud Insights ZAPI 未收集的一些容量值、因此 Cloud Insights 中的某些容量值（例如儲存集區的容量值）可能與 FSX 本身不同。</block>
   <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
   <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">如果您有 Cloud Insights 聯邦版、您的安裝和組態指示可能與本頁的指示不同。依照 Cloud Insights 中的指示安裝 NetApp Kubernetes 監控操作員。</block>
+  <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">類型：選擇 * 擷取單位 * 和 * 資料收集 *</block>
+  <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">修補程式</block>
+  <block id="1b61043ff027934bc2900e3c686978de" category="paragraph">此時、 AU 軟體已安裝在系統上、可由自訂使用者和群組存取。不過、您無法新增資料收集器。若要手動執行此操作、請閱讀下列指示。如果您只想安裝修補程式、請參閱 <block ref="40c0527ef35e12c3a3ce0496a70ee226" category="inline-xref-macro-rx"></block> 部分。</block>
+  <block id="7235d692fc62fcacd964ca3ad6df04b4" category="section-title">手動安裝資料收集器</block>
+  <block id="afa6999c343d1ebcba786b51f19dd530" category="paragraph">使用 /coller/patch/datasourceswar/latest API 下載最新的 datasources.war ：</block>
+  <block id="c627c3d68517a1230074d11fcf8e07e0" category="inline-image-macro">擷取最新 datasources.war 的 API</block>
+  <block id="bbfdaaee0b61ad57c8df04fd101b7d16" category="paragraph"><block ref="bbfdaaee0b61ad57c8df04fd101b7d16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c1ab1322fbfe20363f4fc51283afd1d" category="paragraph">注意：如果您未下載最新版本、請向 NetApp 確認要指定的下載版本。</block>
+  <block id="00945739bcbd26c8c0d12c48597c0dbb" category="paragraph">按一下「下載檔案」。如果您在 AU 系統以外的系統上執行這些步驟、請將下載的 datasources.war zip 套件複製到 AU 系統。</block>
+  <block id="efe48ed5576d7a3ea1584a18c0c39de9" category="paragraph">請確定 datasources.war zip 套件已複製到下列目錄： /var/lib/NetApp/cloudimses/acq/download</block>
+  <block id="5edf51309b0e54b161dde9f3f2dbe815" category="paragraph">瀏覽至 datasources.war 的 /var/lib/NetApp/cloudimses/acq/download 目錄、並驗證該處的 zip 檔案：</block>
+  <block id="ed7dc5789cb36687315d95140bf88b49" category="list-text">請執行下列步驟：</block>
+  <block id="60b0ec4bd2a387eb3da948b9a799f786" category="paragraph">附註：如果您打算使用不同的自訂使用者進行安裝、請確定已將擁有者和群組的群組權限設定為讀取和寫入（ chmod 660 …）</block>
+  <block id="9acc35fb262bf83f278335070c7ea2f2" category="list-text">重新啟動 AU 。在 Cloud Insights 中、瀏覽至「可服務性」 &gt; 「收集器」、然後選取「擷取單元」索引標籤。從 AU 右側的「三點」功能表中選擇「重新啟動」。</block>
+  <block id="57858de47985c55285f0cbb5890decfc" category="section-title">下載修補程式</block>
+  <block id="fc5e990e77fa1bad66c2b07f217c85ab" category="paragraph">使用 /collector / 修補程式 / 檔案 / ｛ version ｝ API 下載修補程式：</block>
+  <block id="be2277f73c347adaa72509bcb1829517" category="inline-image-macro">擷取修補程式的 API</block>
+  <block id="0c80703f9063a302ebd010cfe3b646e3" category="paragraph"><block ref="0c80703f9063a302ebd010cfe3b646e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de0ee35fb580f6913af161cbc6c1cc65" category="paragraph">附註：向 NetApp 確認要指定的下載版本。</block>
+  <block id="b20aea1fa1664bcc048770ea0e008918" category="paragraph">按一下「下載檔案」。如果您在 AU 系統以外的系統上執行這些步驟、請將下載的修補程式 zip 套件複製到 AU 系統。</block>
+  <block id="3e7f4643e7c9ebf9318c59a568b2521c" category="paragraph">請確定修補程式 zip 套件已複製到下列目錄： /var/lib/NetApp/cloudimses/acq/download</block>
+  <block id="9cb12f64263025528c33b8d045cd0c4a" category="paragraph">瀏覽至修補程式的 /var/lib/NetApp/cloudimses/acq/download 目錄、並在該處驗證 .zip 檔案：</block>
 </blocks>
