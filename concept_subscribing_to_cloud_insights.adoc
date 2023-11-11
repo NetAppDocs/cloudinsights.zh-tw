@@ -113,7 +113,7 @@ image:Module_Trials_Estimator.png["評估者"]
 
 * 1個受管理單元= 2個主機（任何虛擬或實體機器）
 * 1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量
-* 1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 。
+* 1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 、 Rukrik 。
 * 1 個託管單元 = 4 個 Kuberentes vCPU
 
 

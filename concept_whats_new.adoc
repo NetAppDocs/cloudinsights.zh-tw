@@ -25,6 +25,33 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+== 2023 年 11 月
+
+
+
+=== 儲存節點支援資訊
+
+在儲存節點登陸頁面上、 _ 使用者資料 _ 區段提供您的支援服務、目前狀態、支援狀態和保固結束日期的概覽資訊。請注意、 Cloud Insights 目前僅會自動發佈 NetApp 裝置的此資訊。另請注意、這些支援欄位是附註、因此可用於查詢和儀表板。
+
+image:StorageNodeSupportData.png["儲存節點支援資訊"]
+
+
+
+=== 將 VMware 標記對應至 Cloud Insights 註釋
+
+。 link:task_dc_vmware.html#mapping-vmware-tags-to-cloud-insights-annotations["VMware"] 資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。
+
+
+
+=== 適用於 FOS 9.1.1 c 及更高版本韌體的 Brocade CLI 收集器可靠性增強功能
+
+在某些執行 9.1.1c 韌體的 Brocade Fibre Channel 交換器上、某些 CLI 命令的輸出可能會以「 motd 」登入橫幅文字作為前置字元、或是使用者變更預設密碼的警告。Brocade CLI 收集器已經過強化、可忽略這兩種無關文字類型。
+
+在此增強之前、只有沒有虛擬架構的 FOS 9.1.1 交換器可能會在此收集器類型中被發現。
+
+'''
+
+
 == 2023 年 10 月
 
 

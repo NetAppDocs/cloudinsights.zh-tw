@@ -12664,7 +12664,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">限制存取預設網域：預設網域是 Cloud Insights 環境帳戶擁有者所使用的網域。這些網域永遠都可以存取。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">將存取限制為預設值加上您指定的網域。列出您想要存取 Cloud Insights 環境的任何網域、以及預設網域。</block>
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 。</block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">2023 年 10 月</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">限制對指定網域的存取</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">限制 Cloud Insights 存取</block>
@@ -12826,4 +12825,20 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b20aea1fa1664bcc048770ea0e008918" category="paragraph">按一下「下載檔案」。如果您在 AU 系統以外的系統上執行這些步驟、請將下載的修補程式 zip 套件複製到 AU 系統。</block>
   <block id="3e7f4643e7c9ebf9318c59a568b2521c" category="paragraph">請確定修補程式 zip 套件已複製到下列目錄： /var/lib/NetApp/cloudimses/acq/download</block>
   <block id="9cb12f64263025528c33b8d045cd0c4a" category="paragraph">瀏覽至修補程式的 /var/lib/NetApp/cloudimses/acq/download 目錄、並在該處驗證 .zip 檔案：</block>
+  <block id="1c5c258274f71ebb61b16a0e0935d305" category="list-text">1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 、 Rukrik 。</block>
+  <block id="fb784db76f57bc935639ba5340089d77" category="section-title">2023 年 11 月</block>
+  <block id="1cbf46f257da65cfaddea13008fd61b1" category="section-title">儲存節點支援資訊</block>
+  <block id="13914928279d372f0f0a3086f0823ccd" category="paragraph">在儲存節點登陸頁面上、 _ 使用者資料 _ 區段提供您的支援服務、目前狀態、支援狀態和保固結束日期的概覽資訊。請注意、 Cloud Insights 目前僅會自動發佈 NetApp 裝置的此資訊。另請注意、這些支援欄位是附註、因此可用於查詢和儀表板。</block>
+  <block id="135a3d8d94bbc8eb1cd03dbd8fa28277" category="paragraph"><block ref="135a3d8d94bbc8eb1cd03dbd8fa28277" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad437072c1980f7cddeaf25e082880bb" category="section-title">將 VMware 標記對應至 Cloud Insights 註釋</block>
+  <block id="b67ffcdf52573a01af5e6400d8043174" category="paragraph">。 <block ref="eb8043f75c4f74e4780785affa0e63c3" category="inline-link-macro-rx"></block> 資料收集器可讓您使用在 VMware 上設定的相同名稱標籤填入 Cloud Insights 文字註解。</block>
+  <block id="02892541231ed9b9797890da851659d1" category="section-title">適用於 FOS 9.1.1 c 及更高版本韌體的 Brocade CLI 收集器可靠性增強功能</block>
+  <block id="f451a3db1d946e0e6f7a6faff75241f4" category="paragraph">在某些執行 9.1.1c 韌體的 Brocade Fibre Channel 交換器上、某些 CLI 命令的輸出可能會以「 motd 」登入橫幅文字作為前置字元、或是使用者變更預設密碼的警告。Brocade CLI 收集器已經過強化、可忽略這兩種無關文字類型。</block>
+  <block id="08cc9fe40f6d675ceb9852acf6cb4d2d" category="paragraph">在此增強之前、只有沒有虛擬架構的 FOS 9.1.1 交換器可能會在此收集器類型中被發現。</block>
+  <block id="fdbc837080bf746694718923941b3ca6" category="section-title">將 VMware 標籤對應至 Cloud Insights 標註</block>
+  <block id="556f5b9e77a7546a1dbeab74aa1190e0" category="paragraph">VMware 資料收集器可讓您在 Cloud Insights 標註中填入 VMware 上設定的標籤。註釋的名稱必須與 VMware 標籤完全相同。將一律填入相同名稱的文字類型註釋、並「最佳」嘗試填入其他類型（數字、布林等）的註釋。Cloud Insights如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。</block>
+  <block id="8354fa58be11dc6519c7b2d92ba17795" category="paragraph">請注意、 VMware 標籤可能區分大小寫、而 Cloud Insights 標籤則不區分大小寫。因此、如果您在 Cloud Insights 中建立名為「擁有者」的註釋、並在 VMware 中建立名為「擁有者」、「擁有者」和「擁有者」的標記、則所有這些「擁有者」的變化都會對應至 Cloud Insight 的「擁有者」註釋。</block>
+  <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Cloud Insights 目前僅自動發佈 NetApp 裝置的支援資訊。</block>
+  <block id="8455a8bde7347555ff461cd652af2821" category="list-text">由於此支援資訊是以附註形式保存、因此您可以查詢或在儀表板中使用。</block>
+  <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">如果使用者覆寫或清空附註值、則當 Cloud Insights 每天更新附註時、該值會再次自動填入、</block>
 </blocks>
