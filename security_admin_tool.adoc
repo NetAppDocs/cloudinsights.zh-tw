@@ -48,8 +48,8 @@ Cloud Insights 包含安全功能、可讓您的環境以增強的安全性運�
 AU 安裝之後、您可以在下列任一位置的採購單元系統上找到 securityadmin 工具：
 
 ....
-Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
-Linux - /bin/oci-securityadmin.sh
+Windows: C:\Program Files\Cloud Insights\Acquisition Unit\acq\securityadmin\bin\securityadmin.bat
+Linux: /opt/netapp/cloudinsights/securityadmin/bin/securityadmin.sh
 ....
 
 
@@ -70,8 +70,8 @@ image:SecurityAdminMenuChoices.png["安全性管理工具選項（ Linux ）"]
 
 +
 ....
-Windows - C:\Program Files\SANscreen\backup\vault
-Linux - /var/log/netapp/oci/backup/vault
+Windows: C:\Program Files\Cloud Insights\Acquisition Unit\backup\vault
+Linux: /var/log/netapp/cloudinsights/backup/vault
 ....
 +
 建議您將資料保險箱備份保存在安全的位置、因為其中包含敏感資訊。
