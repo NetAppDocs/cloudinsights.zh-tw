@@ -408,24 +408,10 @@ Windows：
 * 安裝指令碼
 * 環境檔案
 * Y反 洗錢檔案
-* 簽署的Checksum檔案（結尾為sh256.signed或sh256.ps1）
-* 用於簽名驗證的一個PES檔案（NetApp_CERT.pem）
+* Checksum 檔案（結尾為 sho256.signed 或 sho256.ps1 ）
 
 
 安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。
-
-您可以確認其指紋為下列項目、以驗證該PEM檔案：
-
- 1A918038E8E127BB5C87A202DF173B97A05B4996
-更具體地說、
-
-* 非Windows：
-+
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-* Windows：
-+
- Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
-
 
 
 
@@ -443,24 +429,18 @@ Windows：
 
 
 
-=== 使用PEM檔案驗證Checksum
+=== 驗證 Checksum
 
-簽署的Checksum檔案可以使用PEM檔案進行驗證：
+從 Checksum 檔案擷取預期的 Checksum
 
 * 非Windows：
++
+ openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any -nosigs -noverify
+* Windows：
++
+ (Get-Content telegraf.zip.sha256.ps1 -First 1).toUpper()
 
 
- openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any
-* Windows（透過上述匯入憑證安裝憑證之後）：
-
-
-....
-Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$signer = $result.SignerCertificate
-Add-Type -Assembly System.Security
-[Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
-....
 
 
 === 安裝下載的套件
