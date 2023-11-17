@@ -12860,4 +12860,44 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6.</block>
   <block id="90328fccc937505ade5c16d577869c88" category="cell">如果資料收集器處於 _ 錯誤 _ 狀態、則無法將收集器變更為 _ 已暫停 _ 狀態。只有在收集器的狀態為 _Running 時、才會啟用「暫停」按鈕。</block>
   <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">如果代理程式中斷連線、則無法將收集器變更為 _ 已暫停 _ 狀態。收集器將進入 _Stopped_ 狀態、並停用暫停按鈕。</block>
+  <block id="cd5c932f5b2fa2206673bc29c081fa55" category="section-title">外部金鑰擷取</block>
+  <block id="7e344aed2e1990843db0c81944cc6f38" category="paragraph">如果您提供 UNIX Shell 指令碼、擷取單元可以執行該指令碼、從金鑰管理系統擷取 * 私密金鑰 * 和 * 公開金鑰 * 。</block>
+  <block id="76a8209497c46ce429a432b8cd7aba35" category="paragraph">為了擷取金鑰、 Cloud Insights 會執行指令碼、傳入兩個參數： _key id_ 和 _key type_ 。_Key ID_ 可用於識別金鑰管理系統中的金鑰。_Key 類型 _ 為「公開」或「私人」。當金鑰類型為「公開」時、指令碼必須傳回公開金鑰。當金鑰類型為「私密」時、必須傳回私密金鑰。</block>
+  <block id="09ca0fd15a1c6d7b2fe73ff5dea10c81" category="paragraph">若要將金鑰傳回擷取單元、指令碼必須將金鑰列印至標準輸出。指令碼必須列印 _ 僅 _ 標準輸出金鑰；不得將其他文字列印至標準輸出。一旦要求的金鑰列印至標準輸出、指令碼必須以 0 結束代碼結束、任何其他傳回代碼都會被視為錯誤。</block>
+  <block id="33290e9f863a844a70f389349e2d213c" category="paragraph">指令碼必須使用 securityadmin 工具在擷取單元中登錄、該工具會執行指令碼和擷取單元。指令碼必須具有 root 和「 cisys 」使用者的 _read_ 和 _executive_ 權限。如果在登錄後修改 Shell 指令碼、則必須重新在擷取單元中登錄修改後的 Shell 指令碼。</block>
+  <block id="c88fd792d889fe7e2f25a6da9c770e73" category="cell">輸入參數：金鑰 ID</block>
+  <block id="aeb0eba0bd57d78a26a1f2f0aa9fc2f6" category="cell">用於識別客戶金鑰管理系統中金鑰的金鑰識別碼。</block>
+  <block id="8fee5e82e6d0ac624c0ec7dac53c54cd" category="cell">輸入參數：金鑰類型</block>
+  <block id="bc7e6c0080a5c5ce725875c7b24391d3" category="cell">公有或私有。</block>
+  <block id="78e6221f6393d1356681db398f14ce6d" category="cell">輸出</block>
+  <block id="f6c5e65e6ef69077f24adde05d387958" category="cell">要求的金鑰必須列印至標準輸出。目前支援 2048 位元 RSA 金鑰。金鑰必須以下列格式編碼及列印：
+
+私密金鑰格式： PEM 、 DER 編碼的 PKCS8 Private KeyInfo RFC 5958
+
+公開金鑰格式： PEM 、 DER 編碼的 X.509 SubjectPublicKeyInfo RFC 5280</block>
+  <block id="38a85e59e30b7717fc81292db9eb12a6" category="cell">結束代碼</block>
+  <block id="7e1ef7a088c96cd46d5019ad5bdc9906" category="cell">結束碼為零、以取得成功。所有其他跳出值都視為失敗。</block>
+  <block id="8d75ffb8aae6aeca7452d699700fbaa3" category="cell">指令碼權限</block>
+  <block id="0d9d49f26f4aab969da2990ae2b8211d" category="cell">指令碼必須具有 root 和「 cisys 」使用者的讀取和執行權限。</block>
+  <block id="0ea37d55eb317357221495bc546dcbaa" category="cell">記錄指令碼執行。記錄位於：
+
+/var/log/NetApp/cloudses/securityadmin/securityadmin.log
+
+/var/log/NetApp/cloudinses/acq/acq.log</block>
+  <block id="5cb201937c70d0d7e6b436c37651b65f" category="section-title">加密用於 API 的密碼</block>
+  <block id="8b70536956ac4293adf79e90bb3d3f2b" category="paragraph">選項 8 可讓您加密密碼、然後透過 API 將密碼傳遞給資料收集器。</block>
+  <block id="4d51716521a241af558ff5a53edca414" category="paragraph">以互動模式啟動安全性管理工具、然後選取選項 8 ： _ 加密密碼 _ 。</block>
+  <block id="0a3123506e337e1df2e9d5b4bb357d4a" category="paragraph">系統會提示您輸入要加密的密碼。請注意、您輸入的字元不會顯示在畫面上。  出現提示時、請重新輸入密碼。</block>
+  <block id="2948748e083c2f5528a585e7f88f7ff4" category="paragraph">或者、如果您要在指令碼中使用命令、請在命令列上使用 _securityadmin.sh_ 搭配 "-enc" 參數、並傳入未加密的密碼：</block>
+  <block id="eeb5a14a1174d84c9c51964c5fd6bcc7" category="inline-image-macro">CLI 範例</block>
+  <block id="34f35c289dea93e5932a3510f4fa5bfd" category="paragraph"><block ref="34f35c289dea93e5932a3510f4fa5bfd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95c866463d0b969918d1f6e2fe8c5fd0" category="paragraph">加密的密碼會顯示在畫面上。複製整個字串、包括任何前置或結尾符號。</block>
+  <block id="23537177af171887aa709c82b7f95233" category="inline-image-macro">互動模式加密密碼、寬度 =640</block>
+  <block id="3ca1cac623f8adafa79329ed5ba66d22" category="paragraph"><block ref="3ca1cac623f8adafa79329ed5ba66d22" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ee6cdd4ad08464db4fdf18fe2a00dff" category="paragraph">若要將加密密碼傳送至資料收集器、您可以使用資料收集 API 。此 API 的瀏覽器可在 * 管理 &gt; API 存取 * 中找到、然後按一下「 API 文件」連結。選取「資料收集」 API 類型。  在 _data_collection.data_collector 標題下、為此範例選擇 __collector / datasources_POST API 。</block>
+  <block id="f144badbb7a6b07df0df4b80507d0ffa" category="inline-image-macro">用於資料收集的 API</block>
+  <block id="33690babc268213da4a993f9f69e1d58" category="paragraph"><block ref="33690babc268213da4a993f9f69e1d58" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b738fcd06367fb3c33e6d367c3e7c7ba" category="paragraph">如果您將 _preEncrypted_ 選項設為 _Tru_ 、則任何您透過 API 命令傳遞的密碼都會被視為 * 已加密 * ； API 將不會重新加密密碼。建置 API 時、只要將先前加密的密碼貼到適當的位置即可。</block>
+  <block id="d9d5abe9014e781e9e8b7465a4527c53" category="inline-image-macro">API 範例、 width=600</block>
+  <block id="adf35aae3d2f06ba0ccf5e21b031b3d6" category="paragraph"><block ref="adf35aae3d2f06ba0ccf5e21b031b3d6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
