@@ -94,7 +94,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_dc_emc_recoverpoint.html["Dell EMC RecoverPoint"] | 基礎架構 
 
 
-| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO"] | 基礎架構 
+| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO/PowerFlex "] | 基礎架構 
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | 基礎架構 

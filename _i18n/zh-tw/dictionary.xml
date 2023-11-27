@@ -279,8 +279,6 @@
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">Dell EMC RecoverPoint</block>
   <block id="32f16e66f82b765e2355b037f437f0d6" category="cell"><block ref="32f16e66f82b765e2355b037f437f0d6" category="inline-link-macro-rx"></block></block>
-  <block id="9e41c813bafe9260d22ac12ca1d86d6b" category="inline-link-macro">Dell EMC ScaleIO</block>
-  <block id="e05a976ebc9a4cca05ffe391dc9aea64" category="cell"><block ref="e05a976ebc9a4cca05ffe391dc9aea64" category="inline-link-macro-rx"></block></block>
   <block id="42658796d03fcc8216277518ea2d5203" category="inline-link-macro">Dell EMC Unity</block>
   <block id="7d4fe4e454bc9f68e87ed3a86244c35a" category="cell"><block ref="7d4fe4e454bc9f68e87ed3a86244c35a" category="inline-link-macro-rx"></block></block>
   <block id="20efc9aa81289aa30cb8621f0a4eadf8" category="inline-link-macro">Dell EMC VMAX-PowerMax系列裝置</block>
@@ -4260,19 +4258,10 @@
   <block id="c1f58328aeef13bbe14c188aa6c895ea" category="paragraph">您可在此處找到解決「報告」問題的建議。</block>
   <block id="f6742e49587a771a1225e7c6e472c682" category="cell">排程透過電子郵件傳送報告時、登入的使用者名稱會預先填入電子郵件的「收件者」欄位。不過、名稱的格式為「firstname lastname」（名字、空格、姓氏）。由於這不是有效的電子郵件地址、因此在執行排程報告時、電子郵件將無法傳送。</block>
   <block id="155db2ed9995e9882b3be492b37935dc" category="cell">排程要透過電子郵件傳送的報告時、請清除預先填入的名稱、並在「收件人」欄位中輸入正確格式的有效電子郵件地址。</block>
-  <block id="cf38d319bc1b083afe717ce8be4a0e2a" category="summary">設定Dell EMC ScaleIO資料收集器。</block>
-  <block id="a502d590a35b78e5a42f13e7f79aefd5" category="doc">Dell EMC ScaleIO資料收集器</block>
-  <block id="c502d2755afbc827d0b78e7bf29a63c3" category="paragraph">ScaleIO資料收集器會從ScaleIO儲存設備收集詳細目錄資訊。對於組態、此資料收集器需要ScaleIO閘道位址和管理使用者名稱和密碼。</block>
-  <block id="0711dbe30737a04c398a5d6577ea7fb6" category="paragraph">從ScaleIO資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">MDM（中繼資料管理程式）叢集</block>
-  <block id="32de3bca35dcedbe5dd77438efe818cd" category="cell">SDS（ScaleIO資料伺服器）</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">裝置</block>
   <block id="9bc4ba1e74d4345d8fb67c1039e8ee31" category="list-text">管理使用者帳戶的唯讀存取權</block>
   <block id="0e75d3cb4ff238983ed93446b3df10b4" category="list-text">連接埠需求：HTTPS連接埠443</block>
-  <block id="b598786f418563a6288a22d6b801761e" category="cell">ScaleIO閘道</block>
-  <block id="7f1dace1c2447400ca7e254d9f7c680d" category="cell">ScaleIO閘道的IP位址或FQDN、以逗號（、）或分號（；）分隔</block>
-  <block id="d44a2e308ec90ea99344ff3ca9a81883" category="cell">用於登入ScaleIO裝置的管理使用者名稱</block>
-  <block id="358e9f4d894beeefdde1369e74db160f" category="cell">用於登入ScaleIO裝置的密碼</block>
   <block id="fd4515531c9ce1d6eae38a306629e6eb" category="paragraph">按一下「Inventory」（資源清冊）核取方塊以啟用資源清冊。</block>
   <block id="f7130526f999ef4eed4ac1dbf86a0a03" category="cell">HTTPS連接埠</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443..</block>
@@ -12900,4 +12889,15 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">Checksum 檔案（結尾為 sho256.signed 或 sho256.ps1 ）</block>
   <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">驗證 Checksum</block>
   <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">從 Checksum 檔案擷取預期的 Checksum</block>
+  <block id="e399d76f82d333fa1c49eb069522e8ac" category="inline-link-macro">Dell EMC ScaleIO/PowerFlex </block>
+  <block id="f7ee83c5589aae26abcd6b7c1b853e5a" category="cell"><block ref="f7ee83c5589aae26abcd6b7c1b853e5a" category="inline-link-macro-rx"></block></block>
+  <block id="e3628e8ad35243dc8938a2b601a40729" category="summary">設定 Dell EMC ScaleIO/PowerFlex 資料收集器。</block>
+  <block id="b7cfbf9d7104ab3206a9e36e4f1cfed8" category="doc">Dell EMC ScaleIO / PowerFlex 資料收集器</block>
+  <block id="eb2970c74f4003234e24b8bb86f7f1b1" category="paragraph">ScaleIO/PowerFlex 資料收集器會從 ScaleIO 與 PowerFlex 儲存設備收集庫存資訊。對於組態、此資料收集器需要 ScaleIO/PowerFlex 閘道位址、以及管理員使用者名稱和密碼。</block>
+  <block id="0605f6ce75ae8707c23e729bfc341dd5" category="paragraph">Cloud Insights 從 ScaleIO/PowerFlex 資料收集器取得下列庫存資訊。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
+  <block id="1504819ba5c6757e9100d77628a826a2" category="cell">SDS （ ScaleIO/PowerFlex Data Server ）</block>
+  <block id="52775d60a5ff510b7b7db324e92a528a" category="cell">ScaleIO/PowerFlex 閘道</block>
+  <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlex 閘道的 IP 位址或 FQDN 、以逗號（、）或分號（；）分隔</block>
+  <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">用於登入 ScaleIO/PowerFlex 裝置的管理員使用者名稱</block>
+  <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用於登入 ScaleIO/PowerFlex 裝置的密碼</block>
 </blocks>
