@@ -4733,7 +4733,6 @@
   <block id="4789f23283b3a61f858b641a1bef19a3" category="cell">記憶體</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">可用磁碟空間</block>
-  <block id="474b549bf76599f904f9c951a609a127" category="cell">對於Linux、應以下列方式分配磁碟空間：/opp/netapp 10 GB /var/log/netapp 40 GB /tmp,安裝期間至少有1 GB可用空間</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">網路</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">權限</block>
@@ -12901,4 +12900,12 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用於登入 ScaleIO/PowerFlex 裝置的密碼</block>
   <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
 此外、還需要網域唯讀權限。</block>
+  <block id="dada9839975856f2fd06228d265fea07" category="list-text">網路監控：</block>
+  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">需要 Linux 核心版本 4.18.0 及更新版本</block>
+  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">不支援光子作業系統。</block>
+  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB （建議使用 100 GB ）
+對於 Linux 、應以下列方式分配磁碟空間：
+/opt/NetApp 10 GB （大型環境為 20 GB ）
+/var/log/NetApp 40 GB （大型環境為 80 GB ）
+/tmp 在安裝期間至少有 1 GB 可用空間</block>
 </blocks>
