@@ -5909,7 +5909,6 @@
   <block id="864914e40a7ee3d290b244de196d4f2e" category="cell">裝載作用中目錄之伺服器的IP位址或完整網域名稱（FQDN）</block>
   <block id="592b09bd3291d67037bc036b0c714470" category="cell">樹系名稱</block>
   <block id="7d29f1962bf2529a2067967e962ee3dd" category="cell">目錄結構的樹系層級。樹系名稱允許使用下列兩種格式：_x.y.z_=&gt;直接網域名稱、如同您在SVM上的名稱一樣。[範例：hq.companyname.com]_DC=x、DC=y、DC=z_=&gt;相對辨別名稱[範例：DC=HQ、DC=公司名稱、DC=com]、您也可以指定下列項目： _OU=Engineering、DC=HQ、DC=公司名稱、DC=com_[依特定OU工程篩選]_CN=UserName、OU=Engineering、DC=companyname、DC=NetApp、DC=com_[僅從OU &lt;Engineering取得特定使用者]_CN=acrooms使用者、CN=Users、DC=HQ、DC=companyname、DC=useals=公司名稱、DC=com、DC、DC、DC =公司名稱、DC =公司名稱、DC =公司名稱、DC =公司名稱、DC =、DC =、DC =公司名稱、DC =、DC =、DC、DC =、DC =公司名稱、DC =、DC =、</block>
-  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_</block>
   <block id="c916f7fd609e8e5f547cb1e93d5a81b8" category="paragraph">如果Active Directory中已修改預設屬性名稱、請輸入下列Directory Server必要屬性。在Active Directory中、這些屬性名稱通常是「_not」修改、在這種情況下、您只需繼續使用預設屬性名稱即可。</block>
   <block id="1c2684566717c78cd97248bd9b26c55b" category="cell">SID</block>
   <block id="6381c8768508bc58d1e5d1539f373995" category="cell">objectSid</block>
@@ -12900,4 +12899,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlex 閘道的 IP 位址或 FQDN 、以逗號（、）或分號（；）分隔</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">用於登入 ScaleIO/PowerFlex 裝置的管理員使用者名稱</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用於登入 ScaleIO/PowerFlex 裝置的密碼</block>
+  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
+此外、還需要網域唯讀權限。</block>
 </blocks>

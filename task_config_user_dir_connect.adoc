@@ -56,7 +56,8 @@ summary: 設定工作負載安全性Active Directory使用者目錄收集器
 | 樹系名稱 | 目錄結構的樹系層級。樹系名稱允許使用下列兩種格式：_x.y.z_=>直接網域名稱、如同您在SVM上的名稱一樣。[範例：hq.companyname.com]_DC=x、DC=y、DC=z_=>相對辨別名稱[範例：DC=HQ、DC=公司名稱、DC=com]、您也可以指定下列項目： _OU=Engineering、DC=HQ、DC=公司名稱、DC=com_[依特定OU工程篩選]_CN=UserName、OU=Engineering、DC=companyname、DC=NetApp、DC=com_[僅從OU <Engineering取得特定使用者]_CN=acrooms使用者、CN=Users、DC=HQ、DC=companyname、DC=useals=公司名稱、DC=com、DC、DC、DC =公司名稱、DC =公司名稱、DC =公司名稱、DC =公司名稱、DC =、DC =、DC =公司名稱、DC =、DC =、DC、DC =、DC =公司名稱、DC =、DC =、 
 
 
-| 連結DN | 允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_ 
+| 連結DN | 允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
+此外、還需要網域唯讀權限。 
 
 
 | 連結密碼 | 目錄伺服器密碼（即用於Bind DN的使用者名稱密碼） 
