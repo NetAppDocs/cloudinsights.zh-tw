@@ -12904,7 +12904,7 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="ce9b2cd4bcab7dbbf52b62cd18cb5c55" category="inline-link-macro">暫停收集器</block>
   <block id="3fc1bb029faccb362d05bb964b9a5532" category="admonition">建議選項為 <block ref="fab3704c9565365da788d72b33d2f55f" category="inline-link-macro-rx"></block> 建立檔案之前。 ]</block>
   <block id="77b868151a2234cc10d342f43b6cbb14" category="inline-link-macro">恢復收集器</block>
-  <block id="d7392010d6df617dd55d326f0d9bf442" category="list-text">如果您在執行這些步驟之前暫停了收集器 i的話 、請務必執行 <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>。</block>
   <block id="60d7b95e24d1ecfc57f6986cabb1871a" category="paragraph">在工作負載安全性中、如果收集器處於 _Running 狀態、您可以暫停資料收集器。開啟收集器的「三點」功能表、然後選取暫停。當收集器暫停時、不會從 ONTAP 收集任何資料、也不會將資料從收集器傳送至 ONTAP 。選取恢復以開始重新收集。</block>
   <block id="cb4cb59ec3d83f1c614ac2210509e260" category="paragraph">如果資料收集器處於 _Running 狀態、您可以暫停收集。開啟收集器的「三點」功能表、然後選取暫停。當收集器暫停時、不會從 ONTAP 收集任何資料、也不會將資料從收集器傳送至 ONTAP 。這表示任何 Fpolicy 事件都不會從 ONTAP 流向資料收集器、也不會從那裡流向 Cloud Insights 。</block>
+  <block id="7cf0ebff62dd478662f71d56cd0334d1" category="list-text">如果您在執行這些步驟之前暫停收集器、請務必執行 <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>。</block>
 </blocks>
