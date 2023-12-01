@@ -3319,7 +3319,6 @@
   <block id="d92b97b5bd045f3cc0dd423eb7aad931" category="cell">儀表板：建立/修改/刪除</block>
   <block id="cbffc03121243a64702f719493c2ece0" category="cell">儀表板：檢視</block>
   <block id="01cbff12e5be125caf82ae0d33bfcd0a" category="cell">資料收集器：新增/修改/輪詢/刪除</block>
-  <block id="e26fdd024e0e4577784142032ae3c526" category="cell">通知：檢視/修改</block>
   <block id="0483254ad19c81b5ce06edf6bbb31f88" category="cell">查詢：建立/修改/刪除</block>
   <block id="bc72661c311f958b42bb5e49bc8344a7" category="cell">查詢：檢視/執行</block>
   <block id="5dfc56f9cd6a0615db0ca10f1fbbfe79" category="cell">裝置解析度</block>
@@ -12914,4 +12913,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="36e30a439910e67f76754ab0874aef1b" category="inline-link">1479704.</block>
   <block id="7e18cc81c15bd72df03b7461c26d6e4a" category="inline-link">1354659.</block>
   <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">使用 ONTAP 搭配工作負載安全功能時、 ONTAP 有時會出現延遲問題。有幾個可能的原因、如下所述： <block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>、<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>、<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>、<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block>、<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。所有這些問題都已在 ONTAP 9.13.1 及更新版本中修正、強烈建議您使用這些更新版本之一。</block>
+  <block id="31f9d742d99e2999530fc9c1dfb9a6c3" category="cell">通知：檢視</block>
+  <block id="33a69926e89c1993d0f64ae85dde0a8a" category="cell">通知：修改</block>
 </blocks>
