@@ -2556,7 +2556,6 @@
   <block id="9c1397faec00b5e5c1414c787d14358e" category="cell">這通常發生在下列案例中：1.新增多個資料收集器。2.顯示這類行為的資料收集器、將會在這些資料收集器中新增1個SVM。表示2個以上的資料收集器連接至1個SVM。3.確保1個資料收集器只連接1個SVM。4.刪除其他連線至相同SVM的資料收集器。</block>
   <block id="2d964cb606454cdebb2ea12ed310dbab" category="cell">連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法設定（SVM svmname上的原則。原因：在'fpolicy.policy.scoe-modify:"felf"中為「res-to -include'元素指定的值無效</block>
   <block id="82e15291d012761eb5c9c9dc7f78a45f" category="cell">共用名稱必須在沒有任何報價的情況下提供。編輯ONTAP 「SVM DSC」組態以修正共用名稱。_包括和排除共享_不適用於長清單的共享區名稱。如果您要納入或排除大量共用、請改用依磁碟區篩選。</block>
-  <block id="5ba6c86df3ea77e978bb9c685d6bec25" category="cell">確保您使用Data ONTAP 的是版本不一致的版本 <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> 已修正。推薦使用的最低版本為9.8P7。ONTAP如果ONTAP 使用的是9.8p7之前的版本、而且發現此效能問題、ONTAP 則可以變更此版本的更新緩衝區大小、以改善ONTAP 不實的效能。如果您想要瀏覽此選項、但在新增新的資料收集器或編輯現有的資料收集器時卻看不到此設定、請聯絡NetApp支援部門。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「</block>
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">如果您仍遇到問題、請聯絡*「說明」&gt;「支援*」頁面中提及的支援連結。</block>
@@ -12909,4 +12908,10 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="7cf0ebff62dd478662f71d56cd0334d1" category="list-text">如果您在執行這些步驟之前暫停收集器、請務必執行 <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>。</block>
   <block id="17f6f686e23fbca9f92a7a9926136c2d" category="cell">效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。</block>
   <block id="212277044ae3f4c8673a76ebbe182cbd" category="cell">視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。  <block ref="0374e985eaa396deda9975ede578752d" category="inline-link-macro-rx"></block>。</block>
+  <block id="25de52ee95bc069e80aae94425213b53" category="inline-link-macro">1372994</block>
+  <block id="a23b44fdff4bcafe023f18c4c11815e0" category="inline-link">1415152</block>
+  <block id="1728bd23561a7ad8c0a5ece1af1fc9e1" category="inline-link">1438207.</block>
+  <block id="36e30a439910e67f76754ab0874aef1b" category="inline-link">1479704.</block>
+  <block id="7e18cc81c15bd72df03b7461c26d6e4a" category="inline-link">1354659.</block>
+  <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">使用 ONTAP 搭配工作負載安全功能時、 ONTAP 有時會出現延遲問題。有幾個可能的原因、如下所述： <block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>、<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>、<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>、<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block>、<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。所有這些問題都已在 ONTAP 9.13.1 及更新版本中修正、強烈建議您使用這些更新版本之一。</block>
 </blocks>

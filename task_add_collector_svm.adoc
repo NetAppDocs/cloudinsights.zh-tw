@@ -312,7 +312,7 @@ g ）在 ONTAP 中開啟防火牆、讓 ONTAP 能夠連線到代理程式方塊�
 | 叢集中有未使用的現有fPolicies。在安裝工作負載安全性之前、應該如何處理這些問題？ | 建議刪除所有現有未使用的fpolicy設定、即使它們處於中斷連線狀態。「工作負載安全性」會以「cloudseced_」開頭的字元建立fpolicy。可以刪除所有其他未使用的fpolicy組態。用於顯示fpolicy清單的CLI命令：_fpolicy show_刪除fpolicy組態的步驟：_fpolicy disable-vserver <svmname>-police-name <policy_name>_fpolicy刪除-vserver <svmname>-policy_name>-policy_name <policy_name_vpolicy <vmname -policy -vms_delete policy -policy <vpolicy -name_external policy -name> 
 
 
-| 啟用工作負載安全功能後ONTAP 、效能表現會受到影響：延遲偶爾會變得很高、IOP偶爾會變得很低。 | 確保您使用Data ONTAP 的是版本不一致的版本 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["此問題"] 已修正。推薦使用的最低版本為9.8P7。ONTAP如果ONTAP 使用的是9.8p7之前的版本、而且發現此效能問題、ONTAP 則可以變更此版本的更新緩衝區大小、以改善ONTAP 不實的效能。如果您想要瀏覽此選項、但在新增新的資料收集器或編輯現有的資料收集器時卻看不到此設定、請聯絡NetApp支援部門。 
+| 啟用工作負載安全功能後ONTAP 、效能表現會受到影響：延遲偶爾會變得很高、IOP偶爾會變得很低。 | 使用 ONTAP 搭配工作負載安全功能時、 ONTAP 有時會出現延遲問題。有幾個可能的原因、如下所述： link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["1372994"]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["1415152"]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1438207["1438207."]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1479704["1479704."]、 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1354659["1354659."]。所有這些問題都已在 ONTAP 9.13.1 及更新版本中修正、強烈建議您使用這些更新版本之一。 
 
 
 | 資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「 | 從只設定NFS服務的新SVM開始著手。在ONTAP 工作負載安全性中新增一個功能不全的SVM資料收集器。CIFS被設定為SVM允許的傳輸協定、同時在ONTAP 工作負載安全性中加入SVM Data Collector。等到工作負載安全性中的資料收集器顯示錯誤。由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。 
