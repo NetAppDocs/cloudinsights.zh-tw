@@ -12915,4 +12915,15 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">使用 ONTAP 搭配工作負載安全功能時、 ONTAP 有時會出現延遲問題。有幾個可能的原因、如下所述： <block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>、<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>、<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>、<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block>、<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。所有這些問題都已在 ONTAP 9.13.1 及更新版本中修正、強烈建議您使用這些更新版本之一。</block>
   <block id="31f9d742d99e2999530fc9c1dfb9a6c3" category="cell">通知：檢視</block>
   <block id="33a69926e89c1993d0f64ae85dde0a8a" category="cell">通知：修改</block>
+  <block id="e04ebf98a9012bb6a191a7804699c68b" category="summary">設定 Brocade FOS REST 資料收集器。</block>
+  <block id="706579d23b1ddf6c6ff6115a0f9271b4" category="doc">Brocade FOS REST Data Collector</block>
+  <block id="78803855559e90468b9778e0cfe3fb9d" category="paragraph">Cloud Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。</block>
+  <block id="2a8ee44741d591b5a5bbaeb9a53b8601" category="paragraph">根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。</block>
+  <block id="632dd9f1c3d874c126028ed203b0dd9f" category="paragraph">Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
+  <block id="de498d77f85838129d5e5e0244f3218d" category="list-text">網路中的所有交換器都必須具備IP連線能力。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Cloud Insights 會識別 Fabric 中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。</block>
+  <block id="52ee9cef67200578c869ec0a47f47d75" category="cell">要從輪詢中排除的裝置 ID 清單、以逗號分隔。</block>
+  <block id="809ecc8a9a52f55bd82e3c640ecb9190" category="cell">選取以探索 Fabric 中的所有交換器。</block>
+  <block id="5ed56420d721e3c99ed9cd5fe2bb84c1" category="cell">選擇是否偏好 HBA 或區域別名。</block>
+  <block id="42bf55c2417a1711c1eea84d1c100c52" category="cell">HTTP 或 HTTPS 。</block>
+  <block id="fd2660e8af5b6a90d0b853f19433e552" category="cell">如果未使用預設值、請指定連接埠。</block>
 </blocks>

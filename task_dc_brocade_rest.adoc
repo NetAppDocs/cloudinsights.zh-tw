@@ -1,0 +1,142 @@
+---
+sidebar: sidebar 
+permalink: task_dc_brocade_rest.html 
+keywords: data collector, Brocade, FC switch, FOS, Rest 
+summary: 設定 Brocade FOS REST 資料收集器。 
+---
+= Brocade FOS REST Data Collector
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Cloud Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。
+
+根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。
+
+
+
+== 術語
+
+Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+[cols="2*"]
+|===
+| 廠商/模型術語 | 詞彙Cloud Insights 
+
+
+| 交換器 | 交換器 
+
+
+| 連接埠 | 連接埠 
+
+
+| 虛擬架構、實體架構 | 網路 
+
+
+| 區域 | 區域 
+
+
+| 邏輯交換器 | 邏輯交換器 
+
+
+| 虛擬Volume | Volume 
+
+
+| LSAN區域 | IVR區域 
+|===
+附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
+
+
+
+== 需求
+
+* 網路中的所有交換器都必須具備IP連線能力。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Cloud Insights 會識別 Fabric 中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。
+* 網路中的所有交換器都需要相同的帳戶。您可以使用Putty（開放原始碼終端機模擬器）來確認存取。
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 交換器IP | EFC伺服器的IP位址或完整網域名稱 
+
+
+| 使用者名稱 | 交換器的使用者名稱 
+
+
+| 密碼 | 交換器的密碼 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 排除的裝置 | 要從輪詢中排除的裝置 ID 清單、以逗號分隔。 
+
+
+| 庫存輪詢時間間隔（分鐘） | 庫存輪詢之間的時間間隔。預設值為60。 
+
+
+| 探索網路中的所有交換器 | 選取以探索 Fabric 中的所有交換器。 
+
+
+| 選擇「偏好HBA、而不是」區域別名 | 選擇是否偏好 HBA 或區域別名。 
+
+
+| 連線類型 | HTTP 或 HTTPS 。 
+
+
+| 置換TCP連接埠 | 如果未使用預設值、請指定連接埠。 
+
+
+| 效能意見調查時間間隔（秒） | 效能輪詢之間的時間間隔。預設值為300。 
+|===
+
+
+== 疑難排解
+
+如果您在使用此資料收集器時遇到問題、請嘗試下列事項：
+
+
+
+=== 庫存
+
+[cols="2*"]
+|===
+| 問題： | 試用： 
+
+
+| Brocade資料來源的庫存擷取失敗、並顯示錯誤：<date><time>錯誤[com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource]錯誤2、共2：<資料來源名稱>[內部錯誤]-無法產生裝置<IP>的機型。偵測提示時發生錯誤（[Device name <name>：無法產生裝置<IP>的機型。偵測提示時發生錯誤） | 此問題可能是因為Brocade交換器需要太長時間才會以提示字元傳回、超過預設的逾時時間5秒。在資料收集器Cloud Insights 的「Advanced Configuration」（進階組態）設定中、嘗試將_SSH橫幅等待逾時（秒）_增加至更高的值。 
+
+
+| 錯誤：Cloud Insights 「收到無效的機箱角色」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
+
+
+| 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 
+
+
+| 收到一則訊息、指出有超過1個節點登入Access Gateway連接埠 | 請檢查NPV裝置是否正常運作、以及所有連接的WWN是否正常運作。請勿直接取得NPV裝置。相反地、取得核心Fabric交換器將會收集NPV裝置資料。 
+
+
+| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
+|===
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
