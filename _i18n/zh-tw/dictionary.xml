@@ -367,8 +367,6 @@
   <block id="3d569988d784be7b4a432df70e13153d" category="cell"><block ref="3d569988d784be7b4a432df70e13153d" category="inline-link-macro-rx"></block></block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">NetApp Cloud Connection ONTAP for NetApp 9.9以上版本</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor</block>
-  <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
   <block id="995d9995da501d3734932d95524f1a35" category="inline-link-macro">NetApp Data ONTAP 產品技術7-Mode</block>
   <block id="2e59af567907cf6ad1ae87c0cac8e6dd" category="cell"><block ref="2e59af567907cf6ad1ae87c0cac8e6dd" category="inline-link-macro-rx"></block></block>
   <block id="0311befd4f8a4eb64d5f02957a8b1d99" category="inline-link-macro">NetApp E系列</block>
@@ -3853,61 +3851,11 @@
   <block id="ef7830d32fe70ad0f843821a2a4f10e4" category="cell">用於與XC伺服器進行TCP通訊的連接埠</block>
   <block id="cb012b6dbcdc973d91bcab4bd8383bd2" category="cell">庫存輪詢之間的時間間隔。預設值為60分鐘。</block>
   <block id="42054f786674e20aa9631a649ac5f023" category="cell">效能意見調查時間間隔（分鐘）</block>
-  <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor 產品資料收集器</block>
-  <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">NetApp Config Advisor 資料收集器</block>
-  <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">此資料收集器會使用ONTAP 唯讀呼叫、從執行不完整功能和連接交換器的儲存系統取得組態資料。此資料收集器也會在ONTAP 整個堆疊的叢集組態上執行組態驗證和健全狀況檢查、以識別纜線、組態、恢復能力、可用度和安全性問題。</block>
-  <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">利用資料收集器、從不完整的資料中心和交換器取得組態資料。Cloud Insights ONTAP Config Advisor對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
-  <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">顯示configAdvisor度量標籤的下拉式清單</block>
-  <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">此外、Config Advisor 請注意、使用_NetApp_ONTAP.configt顧問_標籤的儀表板和其他查詢中、將會提供支援功能。<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="24b9e08fd1f7ee3ff738c574a84a91af" category="section-title">詞彙Config Advisor</block>
-  <block id="06d58427354787f0e6d7c893fe2243bc" category="paragraph">下列詞彙適用於Config Advisor 您可能在各個物件或參考儀表板上找到的物件或參考資料。</block>
-  <block id="30c7128fd20d47795972c28c056858e9" category="section-title">裝置摘要</block>
   <block id="cc11b922850db101190d37d22c19f028" category="list-text">模型–此叢集內唯一、獨立節點模型名稱的以逗號分隔的清單。如果叢集內的所有節點都是相同的模型類型、則只會顯示一個模型名稱。</block>
-  <block id="744d9871512feec9f51d65f3dd1c47ab" category="list-text">裝置類型/類型–資料來源中的裝置類型–儲存控制器/交換器</block>
-  <block id="624932da51cedff9d7ac173a91c610a1" category="list-text">廠商/子類型–如果您要設定新的資料來源、您會看到相同的廠商名稱。</block>
   <block id="026274d5ee2ad9b33db57cf294dc6388" category="list-text">序號–陣列序號。在叢集架構儲存系統（例如ONTAP 、《資料管理》）中、此序號可能不如個別的「儲存節點」序號所使用。</block>
-  <block id="7d43a6f99fa2a91e1af6d7d2c7c18f13" category="list-text">主機名稱–在資料來源中設定的主機名稱。</block>
-  <block id="cb46dd80b8d9a5b9d45de5e217aaa9df" category="list-text">版本–作業系統或韌體版本。</block>
-  <block id="b1fa038342539dd3908a11c162ea4c27" category="section-title">規則結果</block>
-  <block id="36dce5e2b74a110ae5a36da007cf06f5" category="list-text">規則：針對系統執行檢查、以分析組態與建議實務做法的差異、或找出已知問題。</block>
-  <block id="7f571e862fdd40095520423d149828d8" category="list-text">規則名稱–規則的簡短名稱、或檢查執行的規則。</block>
-  <block id="f742f640bcdf429ec002619c5b306bfb" category="list-text">規則ID–規則的識別碼。</block>
-  <block id="d5f2db6c184f1d03095ebed8fab38f6d" category="list-text">目標–套用規則的元件。它是叢集名稱、節點名稱或交換器名稱。</block>
-  <block id="07e9e3b11dbfe13fae2d6a989de1722c" category="list-text">影響：風險對系統的影響。影響層級分類如下</block>
-  <block id="f9465122ea451d5ec730ea7884c2879f" category="list-text">高影響：可能會遺失資料存取或延長節點備援</block>
-  <block id="59917e42806fa2d873b1567e2fab2ed8" category="list-text">中度影響：效能降低或短期中斷節點備援。</block>
-  <block id="0296cc1b8c1bba2993b2bf444d65e226" category="list-text">低影響：低影響情境</block>
-  <block id="35c28fe615929955e070ca34eea74a58" category="list-text">最佳實務做法：偏離已記錄的最佳實務做法</block>
-  <block id="da671d02becd0b448278c88d7cae5f0c" category="list-text">說明–錯誤的簡短說明。</block>
-  <block id="4684fb2fabd191161c08c96564158dfa" category="list-text">詳細資料–錯誤的詳細說明、列出受影響的元件</block>
-  <block id="107a9bd1e11fd68e05b0eca047c2d0a3" category="list-text">建議：知識庫文章或NetApp文件的連結、提供有關風險或補救措施的其他詳細資料。</block>
-  <block id="32e0e75cce51d9a86e3d9548e662cad3" category="list-text">您必須能夠存取設定為SSH和ONTAPi呼叫唯讀存取權限的系統管理員帳戶ONTAP 、才能在支援上執行。</block>
-  <block id="0a51523b7b104781f9276319d7728e78" category="list-text">如果交換器是集合的一部分、您必須擁有設定為只讀存取的管理員帳戶存取權限、才能在交換器上進行SSH通話</block>
-  <block id="905f005d189dfca41c588dfb3a86c577" category="list-text">帳戶詳細資料包括使用者名稱和密碼。如果ONTAP 將基於SSH金鑰的驗證或多因素驗證（MFA）設定為使用驗證、則可選擇性地傳遞SSH私密金鑰</block>
-  <block id="ccdc4e4e1923b0b16ce7eea299ea4163" category="list-text">連接埠需求：22、80或443</block>
   <block id="92592776b20216d0abb507fe0dfdf169" category="list-text">帳戶權限：</block>
-  <block id="6598e142ccb1746c77267497f22d951b" category="list-text">將SSH或/及ontapi應用程式的唯讀角色名稱、讀取至預設的Vserver</block>
-  <block id="3b8258085ea914c50770f05a8c8040cf" category="list-text">具有交換器至少唯讀權限的管理帳戶</block>
-  <block id="881e28667d3bfa6ea28cdd40ef5acdb4" category="cell">啟用MFA for ONTAP 支援</block>
-  <block id="892219065257846dd04f00fcdffe9e12" category="cell">核取此選項、即可在ONTAP 支援的情況下啟用「多因素驗證」</block>
-  <block id="fab1bac8f68d0e85c7d853e7cc89dee8" category="cell">SSH私密金鑰</block>
-  <block id="b243383d42c261781fda74277075a9bf" category="cell">如果ONTAP 使用SSH金鑰驗證或MFA、請貼上SSH私密金鑰內容</block>
   <block id="d0afed67605524c7117536fe92ce3da8" category="cell">連線類型</block>
   <block id="b7434e13870b1943dfbc5414a7b9146c" category="cell">選擇HTTP（預設連接埠80）或HTTPS（預設連接埠443）。預設值為HTTPS</block>
-  <block id="1ad2c997667844425cb79936e5d49437" category="cell">SSSH連接埠ONTAP</block>
-  <block id="043854f925a3ddec09321e61f0796cb1" category="cell">可指定自訂SSH連接埠ONTAP 以進行不中斷連線</block>
-  <block id="1e5fb47b2115f5fd80852bf2d19f9931" category="cell">交換器SSH連接埠</block>
-  <block id="3d56802b24eb9202180b8a5869ee4f5a" category="cell">可指定交換器連線的自訂SSH連接埠</block>
-  <block id="dfdfdc8cf35c1a03b11bc6b5c58e09f8" category="cell">輪詢時間間隔（分鐘）</block>
-  <block id="a0c828f2046ae9b82d4a8bcdc9c02147" category="cell">預設為1440分鐘或24小時。可設定最少60分鐘</block>
-  <block id="6cc75295aec583ed79034eb36a15cdae" category="section-title">支援的作業系統</block>
-  <block id="3c4d9416409219cf9622042be0436a75" category="paragraph">可在下列作業系統上執行。Config Advisor如果收集器安裝於未列在此清單中的作業系統擷取單元、則集合將會失敗。</block>
-  <block id="1c9b42d9cdad3e650c7fc63dfa544dd3" category="list-text">Windows 10（64位元）</block>
-  <block id="f943cc21622ce70821e7210ca18fa6dd" category="list-text">Windows 2012 R2伺服器（64位元）</block>
-  <block id="d58eb715e810c3f2ac46575a5aacd90b" category="list-text">Windows 2016伺服器（64位元）</block>
-  <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows 2019伺服器（64位元）</block>
-  <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux（RHEL）7.7及更新版本（64位元）</block>
-  <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0%及更新版本</block>
   <block id="8dc4e28c9ab949997514364957b2aa39" category="summary">鑑識活動歷程記錄資料</block>
   <block id="4bf5863c996526f74970c19dc17d7167" category="doc">鑑識-所有活動</block>
   <block id="33a203d3623a54e6d264ebf5af5db210" category="section-title">檢查所有活動資料</block>
@@ -7800,7 +7748,6 @@
   <block id="c5865855c43d734069987786177edd98" category="sidebar">Hyper-V</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="b81efc5684c71c82d1f7592812e5af66" category="sidebar">適用於AWS的Cloud Volumes Services</block>
-  <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
   <block id="9c58e11f96200548fd2f5932b391509a" category="sidebar">資料管理軟體ONTAP</block>
   <block id="7bb16842baaba3fd3ce157e27d9652f3" category="sidebar">流程7模式Data ONTAP</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="sidebar">E系列</block>
@@ -7831,12 +7778,6 @@
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">以_Preview_的方式強調新功能。Cloud Insights預覽功能可在有限的環境或有限容量下使用。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您有興趣預覽其中一項或多項功能、請聯絡您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="6e1238d84ff9d81dac586bf262a824f6" category="cell">此清單必須包含確切的字串相符項目、如果您想要依ESX_host篩選、則必須建立一份以英文分隔的清單、列出Cloud Insights 在VMware和vSphere中報告的ESX主機確切「名稱」。這些「名稱」可以是IP位址、簡單主機名稱或完整網域名稱（FQDN）、這取決於這些主機在最初新增至vSphere時的命名方式。當依叢集篩選時、 使用Hypervisor上CI所報告的Cloud Insights型叢集名稱- Cloud Insights 以vSphere資料中心名稱和正斜槓來預先輸入vSphere叢集名稱-「DC1/clusterA」是叢集名稱Cloud Insights 、而「VMware Data Center DC1」中叢集A中的Hypervisor則由叢集管理程式報告。</block>
-  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">支援與影片</block>
-  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">觀看以下影片、瞭解如何安裝資料收集器、以及如何使用儀表板來充分發揮Config Advisor 效益：Cloud Insights</block>
-  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">安裝及設定資料收集器：</block>
-  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">建立Config Advisor 一個功能豐富的儀表板：</block>
-  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支援</block>
-  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">如有Config Advisor 其他與「支援」相關的問題、Config Advisor 請按一下「說明」-&gt;「開啟支援」票證、從「支援工具」開啟票證。</block>
   <block id="d07e55df7f133c0213955a67c979d808" category="admonition">「資料收集器」通知的優先順序高於任何與叢集/資料收集器相關的特定「監視器」通知。ONTAP您為資料收集器本身設定的收件者清單將會收到資料收集器警示。如果沒有作用中的資料收集器警示、則會將監控產生的警示傳送給特定的監控收件者。</block>
   <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">記錄監視器</block>
   <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">Volume離線</block>
@@ -12920,10 +12861,15 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="78803855559e90468b9778e0cfe3fb9d" category="paragraph">Cloud Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。</block>
   <block id="2a8ee44741d591b5a5bbaeb9a53b8601" category="paragraph">根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。</block>
   <block id="632dd9f1c3d874c126028ed203b0dd9f" category="paragraph">Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
-  <block id="de498d77f85838129d5e5e0244f3218d" category="list-text">網路中的所有交換器都必須具備IP連線能力。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Cloud Insights 會識別 Fabric 中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。</block>
-  <block id="52ee9cef67200578c869ec0a47f47d75" category="cell">要從輪詢中排除的裝置 ID 清單、以逗號分隔。</block>
   <block id="809ecc8a9a52f55bd82e3c640ecb9190" category="cell">選取以探索 Fabric 中的所有交換器。</block>
   <block id="5ed56420d721e3c99ed9cd5fe2bb84c1" category="cell">選擇是否偏好 HBA 或區域別名。</block>
   <block id="42bf55c2417a1711c1eea84d1c100c52" category="cell">HTTP 或 HTTPS 。</block>
   <block id="fd2660e8af5b6a90d0b853f19433e552" category="cell">如果未使用預設值、請指定連接埠。</block>
+  <block id="fa54865ee3e5060e95de2db0939bb141" category="list-text">網路中的所有交換器都必須有 TCP 連線。這種資料收集器類型將無縫試用光纖網路中每個裝置的 HTTP 和 HTTPS 。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Cloud Insights 會識別 Fabric 中的所有交換器；不過、它需要 TCP 連線才能連線到這些額外的交換器來探索它們。</block>
+  <block id="0c5002d65cc5f10f6e18141ac2704b54" category="list-text">網路中的所有交換器都需要相同的帳戶。您可以使用裝置的 Web 介面來確認存取。</block>
+  <block id="bf05c9a08b659ee97017024af4c9309f" category="cell">FOS 交換器的 IP 位址或完整網域名稱</block>
+  <block id="e22e1a04d650adc7ca588d795e7461c2" category="cell">要從輪詢中排除的裝置 IPv4 位址清單、以逗號分隔。</block>
+  <block id="7339b2d54f0d972dcd8f403df7ed08df" category="cell">請注意、此設定僅會變更 CI 首先嘗試使用每個裝置的傳輸協定、如果預設失敗、 CI 會自動嘗試使用相反的傳輸協定</block>
+  <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">測試功能會警告我無法存取通訊協定</block>
+  <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。</block>
 </blocks>
