@@ -326,10 +326,10 @@ OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元�
 +
 ** 下載並安裝（預設）：
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download –-install
 ** 僅限下載：
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download
 
 
 
