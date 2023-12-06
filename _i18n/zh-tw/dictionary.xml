@@ -12872,4 +12872,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="7339b2d54f0d972dcd8f403df7ed08df" category="cell">請注意、此設定僅會變更 CI 首先嘗試使用每個裝置的傳輸協定、如果預設失敗、 CI 會自動嘗試使用相反的傳輸協定</block>
   <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">測試功能會警告我無法存取通訊協定</block>
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。</block>
+  <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
 </blocks>

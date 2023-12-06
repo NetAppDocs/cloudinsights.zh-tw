@@ -134,9 +134,12 @@ image:K8s_Modify_Deployment_Screen.png["「修改部署」畫面顯示「記錄�
 可使用下列命令解除安裝較新版本的監控操作員：
 
 ....
-kubectl delete agent -A -l installed-by=nkmo-<name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
+kubectl -n <NAMESPACE> delete agent -l installed-by=nkmo-<NAMESPACE>
+kubectl -n <NAMESPACE> delete clusterrole,clusterrolebinding,crd,svc,deploy,role,rolebinding,secret,sa -l installed-by=nkmo-<NAMESPACE>
 ....
+如果監控操作員部署在其專屬命名空間中、請刪除命名空間：
+
+ kubectl delete ns <NAMESPACE>
 如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。
 
 依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。
