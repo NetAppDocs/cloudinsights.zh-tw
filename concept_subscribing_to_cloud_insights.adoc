@@ -217,7 +217,7 @@ NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略�
 
 == 直接訂閱並跳過試用版
 
-您也Cloud Insights 可以直接從訂閱 link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["AWS Marketplace"]，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。
+您也Cloud Insights 可以直接從訂閱 https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。
 
 
 

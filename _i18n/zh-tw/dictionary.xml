@@ -7502,7 +7502,6 @@
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100%*</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接訂閱並跳過試用版</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
-  <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">您也Cloud Insights 可以直接從訂閱 <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。</block>
   <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">新增權益ID</block>
   <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">若要新增權利ID至Cloud Insights 您的訂閱、請在*管理&gt;訂閱*頁面上、按一下_+權利ID _。</block>
   <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">新增權利ID至您的訂閱</block>
@@ -12873,4 +12872,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
   <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">按一下 Amazon Marketplace 連結即可開啟 AWS<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
+  <block id="cf15bbe6cd227a924c3717e47e474a31" category="paragraph">您也Cloud Insights 可以直接從訂閱<block ref="eae66bec507f0b1bc5acf3fdd4b6a83b" category="inline-link-rx"></block>，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。</block>
 </blocks>
