@@ -151,7 +151,7 @@ image:Subscription_Cost_Calculators.png["訂閱頁面顯示基礎架構和 Kuber
 
 NOTE: 您必須是帳戶擁有者或管理員、才能將AWS Marketplace訂閱套用至現有Cloud Insights 的VMware試用帳戶。此外、您必須擁有Amazon Web Services（AWS）帳戶。
 
-按一下 Amazon Marketplace 連結即可開啟 AWS link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。
+按一下 Amazon Marketplace 連結即可開啟 AWS https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights"] 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。
 
 在您輸入管理單元總數並選擇12個月或36個月的訂閱期限之後、請按一下*設定您的帳戶*以完成訂閱程序。
 

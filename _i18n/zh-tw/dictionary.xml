@@ -10104,7 +10104,6 @@
 附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機</block>
   <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e45641d408ce7d31aa423768c5c36d43" category="paragraph">按一下 Amazon Marketplace 連結即可開啟 AWS <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">AWS訂購程序完成後、您將會被帶回Cloud Insights 您的作業系統環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入Cloud Insights 時、您的訂閱將會啟用。</block>
   <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">訂閱摘要索引標籤會顯示下列項目：</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">目前版本</block>
@@ -12873,4 +12872,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">測試功能會警告我無法存取通訊協定</block>
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
+  <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">按一下 Amazon Marketplace 連結即可開啟 AWS<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
 </blocks>
