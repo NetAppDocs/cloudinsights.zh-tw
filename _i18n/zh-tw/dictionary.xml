@@ -12873,4 +12873,53 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
   <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">按一下 Amazon Marketplace 連結即可開啟 AWS<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> 訂購頁面、您可以在其中完成訂購。請注意、您在計算機中輸入的值不會填入AWS訂閱頁面；您需要在此頁面上輸入管理單元總數。</block>
   <block id="cf15bbe6cd227a924c3717e47e474a31" category="paragraph">您也Cloud Insights 可以直接從訂閱<block ref="eae66bec507f0b1bc5acf3fdd4b6a83b" category="inline-link-rx"></block>，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。</block>
+  <block id="c33f6b520ad3c202db9ed1b825ac8b3d" category="section-title">2023 年 12 月</block>
+  <block id="e5c497adc9cc22e52e97b4b5e964a73a" category="section-title">變更分析概覽</block>
+  <block id="6af5d0d36d2880461f4a893b2fda8c49" category="inline-link-macro">變更分析</block>
+  <block id="9d47984568626758f79f59b8ab594e47" category="paragraph">Kubernetes <block ref="e15dca0da93b1f27987e351a6e71f29b" category="inline-link-macro-rx"></block> 提供您 Kubernetes 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
+  <block id="7096eb784c49db459b9e81d7144677b6" category="inline-image-macro">變更分析儀表板</block>
+  <block id="a00e9c277f678474cec2c7bb314fb3d9" category="paragraph"><block ref="a00e9c277f678474cec2c7bb314fb3d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1945d973cbf784106cf63f5c92dd03c" category="section-title">Kubernetes 工作負載效能儀表板</block>
+  <block id="0094a2cabaf94a50315415703ffad246" category="paragraph">完整的 Kubernetes 工作負載效能儀表板可讓您一眼掌握工作負載效能。快速檢視 Volume 、輸送量、延遲和重新傳輸趨勢的圖表、以及環境中每個命名空間的工作負載流量表。篩選器可讓您輕鬆專注於感興趣的領域。</block>
+  <block id="359764412be7b85d82a0fede6f294fd8" category="inline-image-macro">Workload Performance 功能表、寬度 =400</block>
+  <block id="6f0c6e70c5bdbec159d2aff314f95ca0" category="paragraph"><block ref="6f0c6e70c5bdbec159d2aff314f95ca0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23ba06ac0886515dd5b526ead5ff8ee9" category="inline-image-macro">工作負載效能儀表板</block>
+  <block id="ac4c1402903407a0a891f2bb0c81c5f1" category="paragraph"><block ref="ac4c1402903407a0a891f2bb0c81c5f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2054c9cef75769f02391e24b33913a1b" category="section-title">在單一畫面上查詢詳細資料</block>
+  <block id="2e7e5c9d39542249aa31c6133e40c262" category="paragraph">在查詢中、選取列會開啟側邊面板、顯示所選列的屬性、附註和度量詳細資料、提供實用資訊、而不需要深入物件的登陸頁面。列或側邊面板中的連結可讓您輕鬆瀏覽。</block>
+  <block id="62cdb0814cb6471da325b4d35d9a9201" category="inline-image-macro">用於度量查詢的投影片面板</block>
+  <block id="828a2733738238dd63a3e8997aefd019" category="paragraph"><block ref="828a2733738238dd63a3e8997aefd019" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5090ffe948a87ecbd0fec886d682a30a" category="section-title">資料收集器更新：</block>
+  <block id="b9fc953f4ecb0e9185cc45fc4d0d85c5" category="list-text">* Brocade FOS REST * ：此收集器已移出「預覽」、現在已普遍推出。注意事項：</block>
+  <block id="834136be905525d9d1bd5340e9f78870" category="list-text">FOS 推出其 REST API 搭配 FOS 8.2 。但有些功能（例如路由）只接收 9.0 版的 REST API 功能。</block>
+  <block id="6259752b8e7b6328c771bee6f8ad586c" category="list-text">如果您的架構包含高於 8.2 的混合式 FOS 資產、以及某些 &lt; 8.2 、則 Cloud Insights FOS REST 收集器將無法探索這些較舊的資產。您可以編輯 FOS REST 收集器、並建立以逗號分隔的清單、列出這些裝置的 IPv4 位址、以便從該收集器中排除。</block>
+  <block id="fd03b080e03c993770237986acf19dc1" category="list-text">* SELinux* ： Cloud Insights 包含 Linux 擷取單元初始安裝的增強功能、可確保啟用 SELinux 強制功能的 Linux 環境中運作更為穩健。這些增強功能只會影響 _new_ AU 部署；如果您有任何與 AU 升級相關的 SELinux 問題、請聯絡 NetApp 支援部門以修正您的 SELinux 組態。</block>
+  <block id="5142ab8747c5da1b5115ffa35bacd522" category="summary">追蹤 Kubernetes 變更比以往更容易。</block>
+  <block id="d75550072217b58f67a7216961c2bb8c" category="doc">Kubernetes 變更分析</block>
+  <block id="745bf0c93bc131f89ec736fc36e64da7" category="paragraph">Kubernetes 變更分析功能可讓您一體化檢視 Kubernetes 環境最近的變更。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
+  <block id="baa67b8c9085fb7f1ab7886843918360" category="list-text">在多租戶 Kubernetes 環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 可能無法正確追蹤所有變更。</block>
+  <block id="ee48ad51c38d1e68f90591ef3918ee29" category="list-text">變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態 Kubernetes 環境。</block>
+  <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">若要檢視 Kubernetes 變更分析、請瀏覽至 * Kubernetes &gt; 變更分析 * 。</block>
+  <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubernetes Change Analytics 主畫面顯示警告和關鍵警示、成功和失敗的部署、以及觸發警示的前 3 大工作負載</block>
+  <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="a9ac2dc1ccf01db5959d4e16563a6bba" category="paragraph">頁面會根據目前選取的 Cloud Insights 時間範圍自動重新整理。  時間範圍越短、畫面更新就越頻繁。</block>
+  <block id="11dc88e059709832ab0f8280cc54eecf" category="paragraph">如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、輸入或選取 Kubernetes 叢集、命名空間或工作負載的值、或是選取「 ｛ + 」按鈕來新增自己的篩選器。</block>
+  <block id="3dec7ee4035d7384095c6f5a0454b2a8" category="paragraph">當您篩選到特定叢集、命名空間和工作負載（以及您設定的任何其他篩選器）時、會在該叢集的該命名空間中顯示該工作負載的部署和警示時間表。在圖表中按一下並拖曳、即可進一步放大、以專注於更特定的時間範圍。</block>
+  <block id="aa8e7ddd32230c18cfcb5371423cb0d3" category="inline-image-macro">工作負載時間表範例</block>
+  <block id="b7cab2994bcbd4be950a067ce498791c" category="paragraph"><block ref="b7cab2994bcbd4be950a067ce498791c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d88cbd80f5b46f532c77eee8288f787b" category="section-title">快速狀態</block>
+  <block id="798426d7e0a7153e9595b4baf74e0077" category="paragraph">篩選區域下方有許多高階指標。左側是警示數量（警告和嚴重）。這個數字包括 _Active_ 和 _Resolved 警示。若要僅查看 _Active_ 警示、請設定「狀態」篩選條件、然後選擇「作用中」。</block>
+  <block id="37357e10649c59b80f8f74168d40b929" category="inline-image-macro">變更分析警示</block>
+  <block id="b58e9f19bc5a7e5d850afb7712dfc43b" category="paragraph"><block ref="b58e9f19bc5a7e5d850afb7712dfc43b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="184829ac15599f93f6a04572f14f760f" category="paragraph">此處也會顯示部署狀態。同樣地、預設值是顯示 _started_ 、 _Completed_ 和 _Failed_ 部署的計數。若要僅查看 _Failed_ 部署、請設定「狀態」篩選條件、然後選取「失敗」。</block>
+  <block id="9e6e0b4ddf1bd5bb169293dd8bdbbc91" category="inline-image-macro">變更分析部署</block>
+  <block id="515fe35177706f902d42aacba2cb3732" category="paragraph"><block ref="515fe35177706f902d42aacba2cb3732" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="73f4838ec94a4da6e87f88b514573adb" category="paragraph">接下來是警示最多的前 3 大工作負載。每個工作負載旁的紅色數字代表與該工作負載相關的警示數量。按一下工作負載連結、瀏覽基礎架構（ Kubernetes Explorer ）、相依性（工作負載對應）或記錄分析（事件記錄）。</block>
+  <block id="9178d83020e12a25e2fc67bcbf52cb10" category="inline-image-macro">變更分析工作負載探索選項</block>
+  <block id="1210a7f3bbc3fd1446c85109622a2bed" category="paragraph"><block ref="1210a7f3bbc3fd1446c85109622a2bed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4018bd0799cc93add471a8969cb9c41" category="section-title">詳細資料面板</block>
+  <block id="af8e06fb12f5fdcc5176850dfc46d65f" category="paragraph">在清單中選取變更會開啟一個面板、以更詳細地說明變更。例如、選取失敗的部署會顯示部署摘要、包括開始和結束時間、持續時間、以及觸發部署的位置、以及探索這些資源的連結。它也會顯示故障原因、任何相關變更、以及任何相關事件。</block>
+  <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">部署失敗詳細資料面板</block>
+  <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同樣地、選取警示也會提供警示的詳細資料、包括觸發警示的監視器、以及顯示警示視覺時間表的圖表。</block>
 </blocks>
