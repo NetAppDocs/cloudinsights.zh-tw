@@ -42,13 +42,10 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
 
-<<<<<< SELinux
 如果您使用 SELinux 執行、建議您在擷取單元系統上執行下列命令：
 
- _Sudo semanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)?"_
- _Sudo restorecon -R /opt/NetApp/cloudines_
-===
->>> 主 | 執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
+ Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
+ Sudo restorecon -R /opt/NetApp/cloudsights | 執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。 
 
 
 | CPU | 2個CPU核心 | 相同 

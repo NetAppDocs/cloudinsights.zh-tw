@@ -12914,7 +12914,7 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同樣地、選取警示也會提供警示的詳細資料、包括觸發警示的監視器、以及顯示警示視覺時間表的圖表。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhooks 清單頁面</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。</block>
-  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">執行下列其中一項授權版本的電腦：
+  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">執行下列其中一項授權版本的電腦：
 
 * CentOS （ 64 位元）： 7.2 至 7.9 、 Stream 8 、 Stream 9
 * Debian （ 64 位元）： 9 和 10
@@ -12925,11 +12925,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
 
-&lt;&lt;&lt;&lt;&lt;&lt; SELinux
 如果您使用 SELinux 執行、建議您在擷取單元系統上執行下列命令：
 
- _Sudo semanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)?"_
- _Sudo restorecon -R /opt/NetApp/cloudines_
-===
-&gt;&gt;&gt; 主</block>
+ Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
+ Sudo restorecon -R /opt/NetApp/cloudsights</block>
 </blocks>
