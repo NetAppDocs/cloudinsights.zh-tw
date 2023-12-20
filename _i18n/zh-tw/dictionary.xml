@@ -12922,4 +12922,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">部署失敗詳細資料面板</block>
   <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同樣地、選取警示也會提供警示的詳細資料、包括觸發警示的監視器、以及顯示警示視覺時間表的圖表。</block>
+  <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhooks 清單頁面</block>
+  <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。</block>
 </blocks>
