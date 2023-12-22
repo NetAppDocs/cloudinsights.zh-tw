@@ -28,7 +28,7 @@ summary: 新增工作負載安全資料收集器
 * 下列項目支援此資料收集器：
 +
 ** 更新版本。Data ONTAP若要獲得最佳效能、請在Data ONTAP 何處使用VMware版本 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["此問題"] 已修正。
-** SMB傳輸協定3.1版及更早版本。  請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。在使用 FlexCache 的系統中、從 ONTAP 9.7 開始、 Fpolicy 僅在 NFS 環境中支援。
+** SMB傳輸協定3.1版及更早版本。
 ** NFS傳輸協定4.0版及更早版本
 ** 支援從支援的更新版本為支援FlexGroup ONTAP
 ** 支援的支援ONTAP Select

@@ -10204,7 +10204,6 @@
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
-  <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB傳輸協定3.1版及更早版本。  請注意、工作負載安全功能無法搭配使用FlexCache 支援功能的SMB組態使用。在使用 FlexCache 的系統中、從 ONTAP 9.7 開始、 Fpolicy 僅在 NFS 環境中支援。</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">訂閱計算機可協助您根據所需的託管單元數量來估計 Cloud Insights 訂閱成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">管理單元使用率檢視</block>
@@ -12929,4 +12928,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
  Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
  Sudo restorecon -R /opt/NetApp/cloudsights</block>
+  <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB傳輸協定3.1版及更早版本。</block>
 </blocks>
