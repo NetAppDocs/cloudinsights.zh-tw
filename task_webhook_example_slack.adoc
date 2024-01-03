@@ -34,9 +34,6 @@ image:Webhooks_Slack_Create_Webhook.png["建立Slack Webhook"]
 
 * 移至傳入的Webhooks、按一下「啟動傳入的Webhooks_」、「Request to _Add New Webhook_」（要求新增Webhook_）、然後選取要張貼的通路。
 * 複製Webhook URL。您必須將此項目貼到Cloud Insights 「Webhook」組態中。
-+
-image:Webhook_Slack_Config.jpg["寬限時間Webhook URL"]
-
 
 
 
