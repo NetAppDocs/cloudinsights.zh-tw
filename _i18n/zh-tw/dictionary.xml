@@ -2754,8 +2754,6 @@
   <block id="1718403f08c32585848d7d3c2dcf311b" category="paragraph"><block ref="1718403f08c32585848d7d3c2dcf311b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad8a37e07ad3b700a99d9565d7a44843" category="list-text">移至傳入的Webhooks、按一下「啟動傳入的Webhooks_」、「Request to _Add New Webhook_」（要求新增Webhook_）、然後選取要張貼的通路。</block>
   <block id="0013ae9f410fbeff3ff135b116ef8a3d" category="list-text">複製Webhook URL。您必須將此項目貼到Cloud Insights 「Webhook」組態中。</block>
-  <block id="55077038253242c2be9a96af7725a814" category="inline-image-macro">寬限時間Webhook URL</block>
-  <block id="0c818f35934ac007c89967d7ee8faa3c" category="paragraph"><block ref="0c818f35934ac007c89967d7ee8faa3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6125c8823d9c9db8cca6dd37d20404c" category="section-title">建立Cloud Insights Webhook：</block>
   <block id="38aae62e48756f1502c56440fabd6129" category="list-text">在「還原」中、瀏覽至*管理&gt;通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。</block>
   <block id="703a2fff4ffc0a10f86335937d4af331" category="list-text">為網路勾提供有意義的名稱、例如「Slack Webhook」。</block>
@@ -12929,4 +12927,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
  Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
  Sudo restorecon -R /opt/NetApp/cloudsights</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB傳輸協定3.1版及更早版本。</block>
+  <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">您可以閱讀 Cloud Insights 安全性的相關資訊 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">瞭解 Cloud Insights 安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp 安全性摘要報告</block>
+  <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以檢視 NetApp 的可用安全性摘要報告 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
 </blocks>

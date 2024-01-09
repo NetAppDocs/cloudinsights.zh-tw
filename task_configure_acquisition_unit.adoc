@@ -26,6 +26,8 @@ summary: 採購單位在Windows和Linux上安裝、解除安裝、設定Proxy支
 
 NOTE: 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步擷取裝置機器上的時間。
 
+瞭解 Cloud Insights 安全性 link:security_overview.html["請按這裡"]。
+
 
 
 == 新增Linux擷取單元

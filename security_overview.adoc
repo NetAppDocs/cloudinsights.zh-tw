@@ -108,3 +108,9 @@ NetApp的產品安全事件回應團隊（PSIRT）程序整合了整個程序、
 === 法規遵循
 
 執行獨立的第三方稽核、並驗證外部授權CPA公司的安全性、程序和服務、包括完成SOC 2稽核。Cloud Insights
+
+
+
+=== NetApp 安全性摘要報告
+
+您可以檢視 NetApp 的可用安全性摘要報告 link:https://security.netapp.com/advisory/["請按這裡"]。
