@@ -12931,4 +12931,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">瞭解 Cloud Insights 安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp 安全性摘要報告</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以檢視 NetApp 的可用安全性摘要報告 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">安全登入 create -user-or -group-name CsUser -application ontapi -authmethod password -role csrole -vserver &lt;vservername&gt;</block>
 </blocks>

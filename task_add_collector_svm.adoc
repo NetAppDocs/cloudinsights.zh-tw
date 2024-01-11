@@ -89,12 +89,8 @@ summary: 新增工作負載安全資料收集器
 
 若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到功能表、然後在ONTAP 功能表伺服器上執行下列命令：
 
+ security login role create -role csrole -cmddirname DEFAULT -access readonly
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
-security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
 security login role create -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure_*"
 security login role create -role csrole -cmddirname "event catalog" -access all
@@ -102,6 +98,8 @@ security login role create -role csrole -cmddirname "event filter" -access all
 security login role create -role csrole -cmddirname "event notification destination" -access all
 security login role create -role csrole -cmddirname "event notification" -access all
 security login role create -role csrole -cmddirname "security certificate" -access all
+....
+....
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
@@ -113,12 +111,19 @@ security login create -user-or-group-name csuser -application ssh -authmethod pa
 
 若要建立新的使用者、ONTAP 請使用叢集管理管理員使用者名稱/密碼登入到位、然後在ONTAP 伺服器上執行下列命令。為了方便起見、請先將這些命令複製到文字編輯器、並在ONTAP 執行下列命令之前、以Vserver名稱取代<vservername>：
 
+ security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
+....
+....
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 ....
+安全登入 create -user-or -group-name CsUser -application ontapi -authmethod password -role csrole -vserver <vservername>
+
 
 
 == 設定資料收集器
