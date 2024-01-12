@@ -1163,7 +1163,6 @@
 <block ref="9606d230686b3a54ef0c843c6a8d06ee" category="inline-link-macro-rx"></block>
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
-  <block id="2837a19125070133e6e88f25d23f955b" category="summary">您可以建立附註規則、根據您定義的準則、自動將附註套用至多個資產。</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">建立應用程式</block>
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">若要追蹤與環境中執行的特定應用程式相關的資料、您可以在Cloud Insights 「資訊」中定義應用程式。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。</block>
@@ -12931,5 +12930,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">瞭解 Cloud Insights 安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp 安全性摘要報告</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以檢視 NetApp 的可用安全性摘要報告 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
-  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">安全登入 create -user-or -group-name CsUser -application ontapi -authmethod password -role csrole -vserver &lt;vservername&gt;</block>
+  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以視需要定義應用程式、然後套用至環境中的資產。</block>
 </blocks>

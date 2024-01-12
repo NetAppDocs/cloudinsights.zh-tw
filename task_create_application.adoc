@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: 您可以建立附註規則、根據您定義的準則、自動將附註套用至多個資產。 
+summary: 您可以視需要定義應用程式、然後套用至環境中的資產。 
 keywords: application, create application, 
 ---
 = 建立應用程式
