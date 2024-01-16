@@ -12680,19 +12680,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECS 的使用者 ID</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">解除安裝</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安裝</block>
-  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">擷取事件導出者 Pod 的名稱：
-
-<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
-
-應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」
-
-...
- - 機碼： log_file
-   價值：
-   - /var/log/containers/NetApp-CI-event-export/.log
-...
-
-或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
   <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">輸入 Cognos 報告排程時間時、有時我會在排程時間加上額外的「 m 」。例如、如果我輸入時間為「 02 ： 15 PM 」、可能會新增額外的字元：「 02 ： 15 PMM 」（或 PMM ）。當我按一下外部時、它會變更為「上午 2 ： 15 」。
 
 我可以儲存報告、但當我重新開啟儲存的報告時、排程時間會顯示為 AM （即晨間）、無論我是在排程時間中輸入 AM 或 PM 。</block>
@@ -12931,4 +12918,9 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp 安全性摘要報告</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以檢視 NetApp 的可用安全性摘要報告 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以視需要定義應用程式、然後套用至環境中的資產。</block>
+  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">擷取事件導出者 Pod 的名稱：</block>
+  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」</block>
+  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
+  <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">我看到 NetApp Kubernetes 監控營運者部署的 Pod 因為資源不足而當機。</block>
+  <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">請參閱 NetApp Kubernetes 監控操作員 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 視需要增加 CPU 和 / 或記憶體限制。</block>
 </blocks>

@@ -534,18 +534,26 @@ Telegraf ：
 | 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <<uninstalling,移除舊的運算子>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,安裝新的>>。 
 
 
-| 我的 Kubernetes 事件意外停止回報 Cloud Insights 。 | 擷取事件導出者 Pod 的名稱：
+| 我的 Kubernetes 事件意外停止回報 Cloud Insights 。  a| 
+擷取事件導出者 Pod 的名稱：
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/`
-
 應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式 `kubectl -n netapp-monitoring edit agent`，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」
 
+....
+fluent-bit:
 ...
- - 機碼： log_file
-   價值：
-   - /var/log/containers/NetApp-CI-event-export/.log
+- name: event-exporter-ci
+  substitutions:
+  - key: LOG_FILE
+    values:
+    - /var/log/containers/netapp-ci-event-exporter*.log
 ...
+....
+或者、您也可以 <<uninstalling,解除安裝>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安裝>> 代理程式。
 
-或者、您也可以 <<uninstalling,解除安裝>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安裝>> 代理程式。 
+
+
+| 我看到 NetApp Kubernetes 監控營運者部署的 Pod 因為資源不足而當機。 | 請參閱 NetApp Kubernetes 監控操作員 link:telegraf_agent_k8s_config_options.html["組態選項"] 視需要增加 CPU 和 / 或記憶體限制。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
