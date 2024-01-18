@@ -12923,4 +12923,8 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
   <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">我看到 NetApp Kubernetes 監控營運者部署的 Pod 因為資源不足而當機。</block>
   <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">請參閱 NetApp Kubernetes 監控操作員 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 視需要增加 CPU 和 / 或記憶體限制。</block>
+  <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">關於機密的備註</block>
+  <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">若要移除 NetApp Kubernetes 監控操作員檢視整個叢集機密的權限、請在安裝之前從 _operer-setup.yaml_ 檔案中刪除下列資源：</block>
+  <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
+  <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
 </blocks>

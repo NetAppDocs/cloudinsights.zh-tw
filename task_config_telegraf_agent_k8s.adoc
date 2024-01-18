@@ -309,7 +309,35 @@ runPrivileged: true
 ....
 OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。
 
- '''
+
+
+== 關於機密的備註
+
+若要移除 NetApp Kubernetes 監控操作員檢視整個叢集機密的權限、請在安裝之前從 _operer-setup.yaml_ 檔案中刪除下列資源：
+
+[listing]
+----
+ ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
+ ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
+----
+如果是升級、也請從叢集中刪除資源：
+
+[listing]
+----
+ kubectl delete ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
+ kubectl delete ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
+----
+如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。
+
+....
+# change-management:
+  ...
+  # # A comma separated list of kinds to ignore from watching from the default set of kinds watched by the collector
+  # # Each kind will have to be prefixed by its apigroup
+  # # Example: '"networking.k8s.io.networkpolicies,batch.jobs", "authorization.k8s.io.subjectaccessreviews"'
+  kindsToIgnoreFromWatch: '"secrets"'
+  ...
+....
 
 
 == 正在驗證Kubernetes Checksum
