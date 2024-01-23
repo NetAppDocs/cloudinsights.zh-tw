@@ -12927,4 +12927,9 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">若要移除 NetApp Kubernetes 監控操作員檢視整個叢集機密的權限、請在安裝之前從 _operer-setup.yaml_ 檔案中刪除下列資源：</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024 年 1 月</block>
+  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">改善工作負載安全性</block>
+  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">工作負載安全性包括下列改良功能：</block>
+  <block id="39d95be3c95b6807c34781066d955324" category="list-text">偵測演算法已增強、可減少誤報的次數。</block>
+  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">在載入、顯示及捲動 Forensics 頁面時、使用者介面效能已獲得改善。</block>
 </blocks>
