@@ -29,6 +29,45 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+=== 試用您尚未使用的 Cloud Insights 功能
+
+除了 Cloud Insights 的初始試用版之外、您也可以利用 link:/concept_subscribing_to_cloud_insights.html#module-trials["模組試用"]。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。
+
+
+
+=== 我的工作負載有多健全？
+
+工作負載健全狀況一覽 * Kubernetes > Explore > Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。
+
+image:WorkloadHealth.png["工作負載健全狀況概覽"]
+
+
+
+=== 資料收集器更新
+
+
+
+==== 資料網域識別
+
+Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保容錯移轉事件之間的耐用性。此變更將導致重新識別 HA 系統中的 Data Domain 應用裝置 * 一次 * 、進而移除這些資產上的任何註釋（因為這些陣列將重新識別）。您需要重新附加附註至 Data Domain 物件。
+
+
+
+=== 改善工作負載安全性
+
+工作負載安全性包括下列改良功能：
+
+* 偵測演算法已增強、可減少誤報的次數。
+* 在載入、顯示及捲動 Forensics 頁面時、使用者介面效能已獲得改善。
+
+
+'''
+
+
+== 2024 年 1 月
+
+
+
 === 改善工作負載安全性
 
 工作負載安全性包括下列改良功能：
