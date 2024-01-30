@@ -12933,11 +12933,11 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="39d95be3c95b6807c34781066d955324" category="list-text">偵測演算法已增強、可減少誤報的次數。</block>
   <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">在載入、顯示及捲動 Forensics 頁面時、使用者介面效能已獲得改善。</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">試用您尚未使用的 Cloud Insights 功能</block>
-  <block id="136e1a5570d9865595898fcb8d0bf787" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="0a393d5915f3031e3913a845dbcd9869" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">我的工作負載有多健全？</block>
   <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。</block>
   <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">工作負載健全狀況概覽</block>
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">資料網域識別</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保容錯移轉事件之間的耐用性。此變更將導致重新識別 HA 系統中的 Data Domain 應用裝置 * 一次 * 、進而移除這些資產上的任何註釋（因為這些陣列將重新識別）。您需要重新附加附註至 Data Domain 物件。</block>
+  <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
 </blocks>
