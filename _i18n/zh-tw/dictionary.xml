@@ -12941,4 +12941,20 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保容錯移轉事件之間的耐用性。此變更將導致重新識別 HA 系統中的 Data Domain 應用裝置 * 一次 * 、進而移除這些資產上的任何註釋（因為這些陣列將重新識別）。您需要重新附加附註至 Data Domain 物件。</block>
   <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
   <block id="3a16a434dce801908698971e622dd4d6" category="paragraph">新的工作負載安全 API 可用於管理資料收集器（新增 / 更新 / 刪除）和代理程式。瀏覽至 * 管理 &gt; API 存取 &gt; API 文件 * 、然後選取 _Workload Security_ API 類型以深入瞭解。</block>
+  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
+  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">與 ONTAP 存取整合遭拒</block>
+  <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAP 存取遭拒功能會在 NAS 環境（ NFS 和 SMB ）中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知（特別是在安全性相關失敗的情況下）將有助於在早期階段進一步封鎖內部攻擊。</block>
+  <block id="454eafdb8e7a9a5507e578af411d82d5" category="paragraph">Cloud Insights 工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
+  <block id="265cb660bad001dd1edf92723a8d4d4e" category="list-text">最低 ONTAP 版本： 9.13.0 。</block>
+  <block id="b125c8dabe7599cb2999397450c6d677" category="list-text">工作負載安全管理員在新增收集器或編輯現有收集器時、必須選取「進階組態」下的「監控存取遭拒事件」核取方塊、以啟用「拒絕存取」功能。</block>
+  <block id="1a4be5ca764787caaf41b91668c3ea9f" category="inline-image-macro">在 ONTAP 收集器進階組態中啟用拒絕存取</block>
+  <block id="6e0dfd81ddc34b1c1736fb0d236a55db" category="paragraph"><block ref="6e0dfd81ddc34b1c1736fb0d236a55db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e590479d69be0679e0d2b7c5a78d3ab" category="paragraph">如果使用叢集管理認證新增 Data Collector 、則不需要新的權限。</block>
+  <block id="a3fef797358352dd57f209719f4590ca" category="paragraph">如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。</block>
+  <block id="04b888e98eb37f7a0061538c4af0da8a" category="paragraph">若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrole_ 是自訂角色、而 _CsUser_ 是 ONTAP 自訂使用者。</block>
+  <block id="7a1aa4b5b013e91e379aedbfb6a633f3" category="paragraph">對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：</block>
+  <block id="6b112db6b76b4a3d519b727558f34cb6" category="section-title">存取遭拒事件</block>
+  <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">從 ONTAP 系統擷取事件後、工作負載安全性鑑識頁面會顯示存取遭拒事件。除了顯示的資訊外、您也可以從齒輪圖示將 _ 所需活動 _ 欄新增至表格、以檢視特定作業的遺失使用者權限。</block>
+  <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">存取遭拒事件範例</block>
+  <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
