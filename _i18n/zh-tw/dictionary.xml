@@ -12940,4 +12940,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">資料網域識別</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保容錯移轉事件之間的耐用性。此變更將導致重新識別 HA 系統中的 Data Domain 應用裝置 * 一次 * 、進而移除這些資產上的任何註釋（因為這些陣列將重新識別）。您需要重新附加附註至 Data Domain 物件。</block>
   <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
+  <block id="3a16a434dce801908698971e622dd4d6" category="paragraph">新的工作負載安全 API 可用於管理資料收集器（新增 / 更新 / 刪除）和代理程式。瀏覽至 * 管理 &gt; API 存取 &gt; API 文件 * 、然後選取 _Workload Security_ API 類型以深入瞭解。</block>
 </blocks>
