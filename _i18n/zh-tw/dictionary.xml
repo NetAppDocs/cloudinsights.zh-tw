@@ -12599,7 +12599,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">顯示檢查的列為作用中。「 x 」表示非使用中的裝置。</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">庫存最近狀態：擷取非預期的資料 - 陣列報告的 0 磁碟區</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常表示授權（非驗證）問題。請確定您的認證正確無誤、而且使用者名稱有權列出所有磁碟區並查看其屬性。</block>
-  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 &gt; + 「擷取單位」 *</block>
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 * 來檢查擷取單位的狀態。</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">單擊 *Observe （可觀察） &gt; Collectors （收集器） &gt; Acquisition Units （採集單元） &gt;+Acquisition Unit* （採集單元）。</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">按一下 * &gt; 可服務性 &gt; 收集器 &gt; 擷取單位 * 來檢查擷取單位的狀態。</block>
@@ -12957,4 +12956,5 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">從 ONTAP 系統擷取事件後、工作負載安全性鑑識頁面會顯示存取遭拒事件。除了顯示的資訊外、您也可以從齒輪圖示將 _ 所需活動 _ 欄新增至表格、以檢視特定作業的遺失使用者權限。</block>
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">存取遭拒事件範例</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 &gt; + 「擷取單位」 *</block>
 </blocks>
