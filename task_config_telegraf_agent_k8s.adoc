@@ -517,7 +517,7 @@ kubectl Get all -n <namespace> | grep -i PSP （應顯示找不到任何項目�
 | 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。 
 
 
-| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 在 _AgentConfiguration_ 中編輯 NetApp-monitoring 組態區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的 link:telegraf_agent_k8s_config_options.html["組態選項"]。
+| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  link:telegraf_agent_k8s_config_options.html["組態選項"]。
 
 附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
 
@@ -538,22 +538,7 @@ Telegraf ：
 
 | 我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
 
- 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 已超過內容期限（等待標頭時超過 Client.Timeout ） | 編輯每個 Telegraf 組態檔案（例如 /etc/telegraf/telegraf.d/ * 。 conf ）、並增加 Telegraf 輸出外掛程式的逾時時間。  例如、在每個 .conf 檔案中、取代 ... 的所有執行個體。
-
-[[outputs.http]]
-...
-逾時 = 「 5s 」
-...
-
-
-... 包含下列項目：
-
-[[outputs.http]]
-...
-逾時 = 「 10s 」
-...
-
-然後重新啟動 Telegraf 。 
+ 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 已超過內容期限（等待標頭時超過 Client.Timeout ） | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  link:telegraf_agent_k8s_config_options.html["組態選項"]。 
 
 
 | 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循中的步驟 link:pre-requisites_for_k8s_operator.html["權限"] 上一節。 

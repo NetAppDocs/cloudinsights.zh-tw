@@ -12490,42 +12490,9 @@ kubectl Get all -n &lt;namespace&gt; | grep -i PSP （應顯示找不到任何�
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
-  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">在 _AgentConfiguration_ 中編輯 NetApp-monitoring 組態區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
-
-附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
-
-...
-規格：
-...
-Telegraf ：
-    ...
-     - 名稱： Docker
-            執行模式：
-              –示範
-            替代：
-              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder
-                值： UNIX ： //RUN / Docker 。 sock
-    ...
-...</block>
   <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
 
  好！[agent] 寫入 outputs.http ： POST 時發生錯誤 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 已超過內容期限（等待標頭時超過 Client.Timeout ）</block>
-  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">編輯每個 Telegraf 組態檔案（例如 /etc/telegraf/telegraf.d/ * 。 conf ）、並增加 Telegraf 輸出外掛程式的逾時時間。  例如、在每個 .conf 檔案中、取代 ... 的所有執行個體。
-
-[[outputs.http]]
-...
-逾時 = 「 5s 」
-...
-
-
-... 包含下列項目：
-
-[[outputs.http]]
-...
-逾時 = 「 10s 」
-...
-
-然後重新啟動 Telegraf 。</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安裝或升級操作員之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安裝監控操作員</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggergationInterval.</block>
@@ -12958,4 +12925,22 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 &gt; + 「擷取單位」 *</block>
   <block id="f76b3457c69f53525d8080927e20d41d" category="section-title">2024 年 2 月</block>
+  <block id="80423bf256c338862372efdf1e8a1473" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
+
+...
+規格：
+...
+Telegraf ：
+    ...
+     - 名稱： Docker
+            執行模式：
+              –示範
+            替代：
+              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder
+                值： UNIX ： //RUN / Docker 。 sock
+    ...
+...</block>
+  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
