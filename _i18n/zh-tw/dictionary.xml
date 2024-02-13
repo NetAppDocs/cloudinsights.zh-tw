@@ -12944,4 +12944,6 @@ Telegraf ：
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">「存取遭拒」事件</block>
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合以接收 <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> 並提供額外的分析和自動回應層。</block>
+  <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">使用路徑篩選器時、我遇到「要求失敗、狀態碼 500/503 」錯誤。</block>
+  <block id="62ce499553ccf0270c3a01cc146e46fd" category="cell">請嘗試使用較小的日期範圍來篩選記錄。</block>
 </blocks>
