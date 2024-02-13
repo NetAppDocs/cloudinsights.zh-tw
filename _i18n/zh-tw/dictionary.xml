@@ -12636,7 +12636,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777 提供「湯糰效能服務」</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">增強工作負載安全性</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作負載安全性已透過下列方式獲得改善：</block>
-  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合、可接收「拒絕存取」事件、並提供額外的分析和自動回應層。</block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的 Kubernetes 事件意外停止回報 Cloud Insights 。</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此資料收集器會從EMC ECS儲存系統取得庫存和效能資料。對於組態、資料收集器需要 ECS 叢集的 IP 位址或主機名稱、以及使用者名稱和密碼。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS 叢集的 IP 位址或主機名稱</block>
@@ -12943,4 +12942,6 @@ Telegraf ：
     ...
 ...</block>
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">「存取遭拒」事件</block>
+  <block id="f6682194485ec630bf22981ff1031e29" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合以接收 <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> 並提供額外的分析和自動回應層。</block>
 </blocks>

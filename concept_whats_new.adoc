@@ -160,7 +160,7 @@ image:StorageNodeSupportData.png["儲存節點支援資訊"]
 
 工作負載安全性已透過下列方式獲得改善：
 
-* * 拒絕存取 * ：工作負載安全性與 ONTAP 整合、可接收「拒絕存取」事件、並提供額外的分析和自動回應層。
+* * 拒絕存取 * ：工作負載安全性與 ONTAP 整合以接收 link:concept_ws_integration_with_ontap_access_denied.html["「存取遭拒」事件"] 並提供額外的分析和自動回應層。
 * * 允許的檔案類型 * ：如果偵測到已知副檔名的勒索軟體攻擊、則可以將該副檔名新增至 link:ws_allowed_file_types.html["允許的檔案類型"] 避免不必要警示的清單。
 
 
