@@ -12893,10 +12893,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024 年 1 月</block>
-  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">改善工作負載安全性</block>
-  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">工作負載安全性包括下列改良功能：</block>
-  <block id="39d95be3c95b6807c34781066d955324" category="list-text">偵測演算法已增強、可減少誤報的次數。</block>
-  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">在載入、顯示及捲動 Forensics 頁面時、使用者介面效能已獲得改善。</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">試用您尚未使用的 Cloud Insights 功能</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">我的工作負載有多健全？</block>
   <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。</block>
@@ -12905,7 +12901,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">資料網域識別</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保容錯移轉事件之間的耐用性。此變更將導致重新識別 HA 系統中的 Data Domain 應用裝置 * 一次 * 、進而移除這些資產上的任何註釋（因為這些陣列將重新識別）。您需要重新附加附註至 Data Domain 物件。</block>
   <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
-  <block id="3a16a434dce801908698971e622dd4d6" category="paragraph">新的工作負載安全 API 可用於管理資料收集器（新增 / 更新 / 刪除）和代理程式。瀏覽至 * 管理 &gt; API 存取 &gt; API 文件 * 、然後選取 _Workload Security_ API 類型以深入瞭解。</block>
   <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
   <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">與 ONTAP 存取整合遭拒</block>
   <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAP 存取遭拒功能會在 NAS 環境（ NFS 和 SMB ）中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知（特別是在安全性相關失敗的情況下）將有助於在早期階段進一步封鎖內部攻擊。</block>
@@ -12946,4 +12941,9 @@ Telegraf ：
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">* 拒絕存取 * ：工作負載安全性與 ONTAP 整合以接收 <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> 並提供額外的分析和自動回應層。</block>
   <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">使用路徑篩選器時、我遇到「要求失敗、狀態碼 500/503 」錯誤。</block>
   <block id="62ce499553ccf0270c3a01cc146e46fd" category="cell">請嘗試使用較小的日期範圍來篩選記錄。</block>
+  <block id="0cf476fa861dbe86c3426536da9f3734" category="section-title">工作負載安全資料收集器 API</block>
+  <block id="a9db33e90d7bc84178320a82514d183b" category="paragraph">在大型環境中、您可以使用新的 Data Collectorors API 、將工作負載安全收集器的建立作業自動化。瀏覽至 * 管理 &gt; API 存取 &gt; API 文件 * 、然後選取 _Workload Security_ API 類型以深入瞭解。</block>
+  <block id="f3f66b8b59d9644a598941acf89639a4" category="section-title">增強的勒索軟體偵測 ML 演算法</block>
+  <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">工作負載安全性包括新的第二代勒索軟體偵測 ML 演算法、可更快更準確地偵測最複雜的攻擊。</block>
+  <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行為的「季節性」：週末行為可能會遵循不同的模式、從平日或從下午開始的早晨行為。工作負載安全演算法會將這種季節性因素納入考量。</block>
 </blocks>
