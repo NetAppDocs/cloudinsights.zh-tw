@@ -95,6 +95,8 @@ sidebar:
       url: "/kubernetes_cluster_detail.html"
     - title: 網路監控與地圖
       url: "/concept_kubernetes_network_monitoring_and_map.html"
+    - title: 變更分析
+      url: "/kubernetes_change_analytics.html"
   - title: 洞見
     entries:
     - title: 總覽
