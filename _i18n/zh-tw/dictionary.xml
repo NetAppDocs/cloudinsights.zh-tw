@@ -12946,4 +12946,5 @@ Telegraf ：
   <block id="f3f66b8b59d9644a598941acf89639a4" category="section-title">增強的勒索軟體偵測 ML 演算法</block>
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">工作負載安全性包括新的第二代勒索軟體偵測 ML 演算法、可更快更準確地偵測最複雜的攻擊。</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行為的「季節性」：週末行為可能會遵循不同的模式、從平日或從下午開始的早晨行為。工作負載安全演算法會將這種季節性因素納入考量。</block>
+  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP 存取遭拒整合</block>
 </blocks>
