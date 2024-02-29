@@ -79,7 +79,7 @@ summary: 支援Telegraf做為其代理程式、可在Kubernetes上收集整合�
 
 如果您使用執行 <<configuring-proxy-support,Proxy>>、請提供 <<using-a-custom-or-private-docker-repository,自訂儲存庫>>或正在使用 <<openshift-instructions,OpenShift>>請仔細閱讀以下各節。
 
-另請參閱 <<permissions,權限>>。
+另請參閱 <<權限,權限>>。
 
 如果您是從先前的安裝升級、請閱讀 <<升級,升級>> 資訊：
 

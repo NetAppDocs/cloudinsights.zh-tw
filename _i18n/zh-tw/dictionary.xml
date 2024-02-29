@@ -7549,10 +7549,6 @@
   <block id="03a2f43be2bb9fe29ee41afceec0ffcd" category="cell">MongoDB資料庫</block>
   <block id="53de6191c5a3773a175198e9140b6c2b" category="cell">命名空間主機名稱資料庫名稱</block>
   <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">如需相關資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
-  <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">本主題尚未就緒。</block>
-  <block id="4a00b82df023b0f0fb303ec1d7a1ebfc" category="doc">此主題正在建置中</block>
-  <block id="27871ea7cd2bc4814101455654163190" category="paragraph">請原諒Cloud Insights 我們在「看不出」期間的表現。許多主題仍在進行中、這似乎是其中的一項。請隨時與我們聯絡、並經常回來查看文件更新。</block>
-  <block id="ba94b4c8120f35a3763a9a410b2b6647" category="image-alt">正在建置中</block>
   <block id="86afb40fc9bbcc4cc0e8479077f8544f" category="summary">裝置解決方案可協助您準確追蹤環境中的效能與庫存。</block>
   <block id="8123ff51cbfc7a2239546029a7501579" category="doc">裝置解決規則</block>
   <block id="55f00e3a5c97bfc6881b5ab7d0599c78" category="paragraph">您可以建立裝置解析規則、以識別Cloud Insights 目前無法自動識別的主機、儲存設備和磁帶。您所建立的規則可識別環境中目前的裝置、並可識別新增至環境中的類似裝置。</block>
@@ -12947,4 +12943,32 @@ Telegraf ：
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">工作負載安全性包括新的第二代勒索軟體偵測 ML 演算法、可更快更準確地偵測最複雜的攻擊。</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行為的「季節性」：週末行為可能會遵循不同的模式、從平日或從下午開始的早晨行為。工作負載安全演算法會將這種季節性因素納入考量。</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP 存取遭拒整合</block>
+  <block id="2b954573bdfbf3e6f7cd041ebd3f3682" category="section-title">可用性改善</block>
+  <block id="dd02e3f2ac2d39316775658f3f6fef9c" category="paragraph">從右下拉式清單中選取「匯出為影像」、即可儲存目前儀表板的 * 快照 * 。Cloud Insights 會建立目前 Widget 狀態的 .PNG 。</block>
+  <block id="d53957f8a1aee068b3b3326766554570" category="inline-image-macro">匯出為影像下拉式清單</block>
+  <block id="37cada8c4f46b21c02df2939356a5c89" category="paragraph"><block ref="37cada8c4f46b21c02df2939356a5c89" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d2a24755cf47ed77e9e34a1df4ef815" category="paragraph">* 物件和度量選擇 * 比以往更容易用於 Widget 、監視器等 選擇您要的物件類型、然後在個別的下拉式清單中選取與該物件相關的度量。</block>
+  <block id="2f4107aef619081a1d89d75c6a93321e" category="inline-image-macro">物件和度量選取器是分開的</block>
+  <block id="ea67434ac421e1de9d939a1647e74e51" category="paragraph"><block ref="ea67434ac421e1de9d939a1647e74e51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cda669774eba29c91f639af08adb1a4a" category="paragraph">* 選取這些頁面頂端的圖示、將資料收集器與擷取裝置 * 清單匯出至 .CSV 。</block>
+  <block id="6be2ffb5d4b79f5272ab1074fc6603b6" category="inline-image-macro">匯出信用證和 AU 清單至 .csv</block>
+  <block id="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="paragraph"><block ref="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d480fd0b5ff9d58e0bc8785e82c7eb5b" category="paragraph">我們已重新組織「說明」 &gt; 「支援」頁面、讓您更容易找到所需內容、而且因為您有要求、我們在本頁新增了指向 * API Swagger* 和使用者文件的直接連結。</block>
+  <block id="6b2eef8adc0e95db95014a8b08724379" category="inline-image-macro">說明 &amp;gt; 支援頁面上的 API 連結</block>
+  <block id="4c976a75386e11bb66ac24e8ee6af999" category="paragraph"><block ref="e8dee020306df51938caf982452d1304" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95489108ef80ef1f702494f344d95ea2" category="paragraph">如果「警示」清單頁面上的「觸發開啟」欄位中的 * 連結 * 可用於該物件的登陸頁面、則會瀏覽至適當的登陸頁面。</block>
+  <block id="c032f8e7ba44d91d7b9c57d652e0a033" category="inline-image-macro">TriggeredOn 警示欄位中的連結</block>
+  <block id="fffe3fe21c35b168a145c010bce26160" category="paragraph"><block ref="fffe3fe21c35b168a145c010bce26160" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="139836acf897f8ef3c4fb19d21c35155" category="section-title">查看命名空間中的所有變更</block>
+  <block id="9143a0f1ce37b1e53b957a49833f9322" category="paragraph">Kubernetes 變更分析現在可讓您在選取叢集和命名空間時查看變更時間表。之前、也必須選取工作負載。  在叢集和命名空間上篩選時、該命名空間中所有工作負載變更的時間表會顯示在一行中。</block>
+  <block id="5ed610ab86efcfb43954fb9ef0b7a72e" category="inline-image-macro">命名空間時間表</block>
+  <block id="0b0562ef30238191f797d9225f3024c0" category="paragraph"><block ref="0b0562ef30238191f797d9225f3024c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c91be2a24e6b73c8e2a2275adc2bef10" category="section-title">警示的相關記錄</block>
+  <block id="5c5683919f4c326b9a4d4e83bff8dd91" category="paragraph">檢視記錄警示時、相關記錄項目會顯示在新表格中。  如果記錄項目發生在與警示相同的來源和時間範圍內、且受到相同條件的約束、則記錄項目會有所關聯。選取「分析記錄」以進一步探索。</block>
+  <block id="cf7dab299bf1390e2d44ac5a3f5aef74" category="inline-image-macro">記錄警示登陸頁面上的相關記錄</block>
+  <block id="29869d564dea811db493659e276c4afb" category="paragraph"><block ref="29869d564dea811db493659e276c4afb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">收集 ONTAP 交換器資料</block>
+  <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">交換器資訊</block>
+  <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">權限</block>
+  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 設定。</block>
 </blocks>

@@ -5,17 +5,14 @@ summary: 更新功能Cloud Insights 。
 keywords: features 
 ---
 = Cloud Insights 的新功能
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。
@@ -26,6 +23,52 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 == 2024 年 2 月
+
+
+
+=== 可用性改善
+
+從右下拉式清單中選取「匯出為影像」、即可儲存目前儀表板的 * 快照 * 。Cloud Insights 會建立目前 Widget 狀態的 .PNG 。
+
+image:ExportAsImage.png["匯出為影像下拉式清單"]
+
+* 物件和度量選擇 * 比以往更容易用於 Widget 、監視器等 選擇您要的物件類型、然後在個別的下拉式清單中選取與該物件相關的度量。
+
+image:ObjectAndMetricSelection.png["物件和度量選取器是分開的"]
+
+* 選取這些頁面頂端的圖示、將資料收集器與擷取裝置 * 清單匯出至 .CSV 。
+
+image:ExportDCList.png["匯出信用證和 AU 清單至 .csv"]
+
+我們已重新組織「說明」 > 「支援」頁面、讓您更容易找到所需內容、而且因為您有要求、我們在本頁新增了指向 * API Swagger* 和使用者文件的直接連結。
+
+image:Support_APIAccess.png["說明 > 支援頁面上的 API 連結"]
+
+如果「警示」清單頁面上的「觸發開啟」欄位中的 * 連結 * 可用於該物件的登陸頁面、則會瀏覽至適當的登陸頁面。
+
+image:TriggeredOnLink.png["TriggeredOn 警示欄位中的連結"]
+
+
+
+=== 查看命名空間中的所有變更
+
+Kubernetes 變更分析現在可讓您在選取叢集和命名空間時查看變更時間表。之前、也必須選取工作負載。  在叢集和命名空間上篩選時、該命名空間中所有工作負載變更的時間表會顯示在一行中。
+
+image:NamespaceTimeline.png["命名空間時間表"]
+
+
+
+=== 警示的相關記錄
+
+檢視記錄警示時、相關記錄項目會顯示在新表格中。  如果記錄項目發生在與警示相同的來源和時間範圍內、且受到相同條件的約束、則記錄項目會有所關聯。選取「分析記錄」以進一步探索。
+
+image:RelatedLogsTable.png["記錄警示登陸頁面上的相關記錄"]
+
+
+
+=== 收集 ONTAP 交換器資料
+
+Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"] 並擁有適當的 link:["權限"] 設定。
 
 
 
