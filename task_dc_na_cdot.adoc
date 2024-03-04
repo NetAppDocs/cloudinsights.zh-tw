@@ -182,6 +182,9 @@ summary: 資料收集器ONTAP
 
 
 | 進階計數器資料收集 | 實現ONTAP 整合。選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。從清單中選擇所需的計數器。 
+
+
+| 叢集交換器度量 | 允許 Cloud Insights 收集叢集交換器資料。請注意、除了在 Cloud Insights 端啟用此功能外、您還必須設定 ONTAP 系統以提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]、並確保正確 <<a-note-about-permissions,權限>> 已設定、以便將交換器資料傳送至 Cloud Insights 。請參閱下方的「權限注意事項」。 
 |===
 
 
@@ -250,6 +253,9 @@ security login role create -role ci_readonly -access all -cmddirname {cluster ap
 如果使用AD/LDAP帳戶、則命令應該是
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+如果您正在收集叢集交換器資料：
+
+ security login rest-role create -role ci_readonly -api /api/network/ethernet -access readonly
 產生的角色和使用者登入內容如下。實際輸出可能有所不同：
 
 ....
@@ -267,6 +273,9 @@ UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
 ci_user     ontapi      password    ci_readonly   no
 ....
+
+NOTE: 如果未正確設定 ONTAP 存取控制、則 Cloud Insights REST 呼叫可能會失敗、導致裝置的資料缺口。  例如、如果您已在 Cloud Insights 收集器上啟用、但尚未在 ONTAP 上設定權限、則擷取將會失敗。  此外、如果先前在 ONTAP 上定義角色、而您正在新增其餘 API 功能、請確定已將 _http_ 新增至角色。
+
 
 
 == 疑難排解

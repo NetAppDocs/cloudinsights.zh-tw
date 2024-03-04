@@ -12971,4 +12971,8 @@ Telegraf ：
   <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">交換器資訊</block>
   <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">權限</block>
   <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 設定。</block>
+  <block id="cce3c9f8c5193ee861459b69a1aed6b4" category="cell">叢集交換器度量</block>
+  <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">允許 Cloud Insights 收集叢集交換器資料。請注意、除了在 Cloud Insights 端啟用此功能外、您還必須設定 ONTAP 系統以提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、並確保正確 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 已設定、以便將交換器資料傳送至 Cloud Insights 。請參閱下方的「權限注意事項」。</block>
+  <block id="466b14af7b02408eac035880aecf9915" category="paragraph">如果您正在收集叢集交換器資料：</block>
+  <block id="4ba371a33d0081d06951a5868ba9b9f6" category="admonition">如果未正確設定 ONTAP 存取控制、則 Cloud Insights REST 呼叫可能會失敗、導致裝置的資料缺口。  例如、如果您已在 Cloud Insights 收集器上啟用、但尚未在 ONTAP 上設定權限、則擷取將會失敗。  此外、如果先前在 ONTAP 上定義角色、而您正在新增其餘 API 功能、請確定已將 _http_ 新增至角色。</block>
 </blocks>
