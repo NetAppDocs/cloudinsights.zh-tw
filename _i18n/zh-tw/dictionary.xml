@@ -7969,7 +7969,6 @@
   <block id="7b007d3b8d88462a6ae312862d2e1a99" category="list-text">當沒有資料點且等待時間已足夠長時、定時器就會啟動</block>
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">如同資料到達速度緩慢（或沒有資料到達）的情況、由於資料到達率不足以「即時」觸發警示、因此需要接管定時器機制。 因此問題通常會變成「我需要等多久才能關閉分析視窗、看看我的現況？」 如果等待時間過長、就表示您產生警示的速度不夠快、無法使用。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的監視器有30分鐘的時間範圍、通知在長期資料遺失之前、某個條件已被最後一個資料點違反、 由於監控器未收到任何其他資訊、無法用來確認是否恢復了度量、或注意到該條件持續存在、因此將產生警示。</block>
-  <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps乙太網路連線、靜態IP位址、以及連接埠80或443、可從擷取裝置連線至*.cloudinsights.netapp.com或Cloud Insights 您的支援環境（例如 https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com）為必填項目。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：*.cloudinsights.netapp.com以取得更多資訊、準備好瞭解代理 <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
   <block id="d429655e140835b91db45b4324358975" category="list-text">使用ONTAP 叢集_admin_認證登入到32個叢集（您想要解除封鎖使用者的位置）。（若為Amazon FSX、請使用FSX認證登入）。</block>
   <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述輸出中、有2位使用者被網域CSLAB封鎖（US030、US040）。</block>
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">當我們從上述輸出中找出位置後、請執行下列命令以解除封鎖使用者：</block>
@@ -12975,4 +12974,13 @@ Telegraf ：
   <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">允許 Cloud Insights 收集叢集交換器資料。請注意、除了在 Cloud Insights 端啟用此功能外、您還必須設定 ONTAP 系統以提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、並確保正確 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 已設定、以便將交換器資料傳送至 Cloud Insights 。請參閱下方的「權限注意事項」。</block>
   <block id="466b14af7b02408eac035880aecf9915" category="paragraph">如果您正在收集叢集交換器資料：</block>
   <block id="4ba371a33d0081d06951a5868ba9b9f6" category="admonition">如果未正確設定 ONTAP 存取控制、則 Cloud Insights REST 呼叫可能會失敗、導致裝置的資料缺口。  例如、如果您已在 Cloud Insights 收集器上啟用、但尚未在 ONTAP 上設定權限、則擷取將會失敗。  此外、如果先前在 ONTAP 上定義角色、而您正在新增其餘 API 功能、請確定已將 _http_ 新增至角色。</block>
+  <block id="fcf3c8b7073234871f47a3a68559837a" category="inline-link-macro">這裡（ Linux ）</block>
+  <block id="5543adb6f73fddb3a3944d6d35b0de3e" category="inline-link-macro">這裡（ Windows ）</block>
+  <block id="a619708c636cd548a93f5ec4dde89bb3" category="cell">需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 的連線能力、從擷取單元連線至 * .cloudinsights.netapp.com 或您的 Cloud Insights 環境（例如： https ： &lt;environment_id&gt;.c01.cloudinsights.netapp.com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。
+
+如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：
+
+* .cloudinsights.netapp.com
+
+如需詳細資訊、請參閱關於代理 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> 或 <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>
