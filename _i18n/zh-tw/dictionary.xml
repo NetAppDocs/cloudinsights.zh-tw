@@ -12906,7 +12906,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="6e0dfd81ddc34b1c1736fb0d236a55db" category="paragraph"><block ref="6e0dfd81ddc34b1c1736fb0d236a55db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e590479d69be0679e0d2b7c5a78d3ab" category="paragraph">如果使用叢集管理認證新增 Data Collector 、則不需要新的權限。</block>
   <block id="a3fef797358352dd57f209719f4590ca" category="paragraph">如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。</block>
-  <block id="04b888e98eb37f7a0061538c4af0da8a" category="paragraph">若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrole_ 是自訂角色、而 _CsUser_ 是 ONTAP 自訂使用者。</block>
   <block id="7a1aa4b5b013e91e379aedbfb6a633f3" category="paragraph">對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：</block>
   <block id="6b112db6b76b4a3d519b727558f34cb6" category="section-title">存取遭拒事件</block>
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">從 ONTAP 系統擷取事件後、工作負載安全性鑑識頁面會顯示存取遭拒事件。除了顯示的資訊外、您也可以從齒輪圖示將 _ 所需活動 _ 欄新增至表格、以檢視特定作業的遺失使用者權限。</block>
@@ -12983,4 +12982,5 @@ Telegraf ：
 * .cloudinsights.netapp.com
 
 如需詳細資訊、請參閱關於代理 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> 或 <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrestrole_ 是自訂角色、而 _csUser_ 是 ONTAP 自訂使用者。</block>
 </blocks>

@@ -39,23 +39,19 @@ image:WS_Access_Denied_Enable_in_Collector.png["在 ONTAP 收集器進階組態�
 
 如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。
 
-若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrole_ 是自訂角色、而 _CsUser_ 是 ONTAP 自訂使用者。
+若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrestrole_ 是自訂角色、而 _csUser_ 是 ONTAP 自訂使用者。
 
 [listing]
 ----
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
-
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
 ----
 對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：
 
 [listing]
 ----
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
-security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
 
 
