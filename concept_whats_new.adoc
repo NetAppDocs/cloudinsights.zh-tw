@@ -22,6 +22,31 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+== 2024 年 3 月
+
+
+
+=== 工作負載安全代理程式詳細資料
+
+每個工作負載安全代理程式都有自己的登陸頁面、您可以在其中輕鬆查看代理程式的摘要資訊、以及與該代理程式相關聯的已安裝資料和使用者目錄收集器。
+
+image:Agent_Detail_Page.png["值機員詳細資料登陸頁範例"]
+
+
+
+=== 更快速地記錄更多資料
+
+分析資產登錄頁面上的資料時、只要將其他資料新增至 Expert View 圖表、就能輕鬆完成。對於登陸頁面上的每個資料表、如果物件類型有相關資料、請將游標移到該物件上、以顯示「 Add to Expert View 」（新增至專家檢視）圖示。選取此圖示會將該物件新增至「其他資源」、並顯示在「專家檢視」圖表中。
+
+image:AddToChartIcon.png["新增表格資料至專家檢視"]
+
+或者、您可能想要在自己的圖表中查看登陸頁表的資料。只要選取 _ 顯示圖表 _ 圖示、即可開啟表格下方的圖表：
+
+image:LPTableShowChartIcon.png["顯示圖表圖示"]
+
+'''
+
+
 == 2024 年 2 月
 
 
@@ -68,7 +93,7 @@ image:RelatedLogsTable.png["記錄警示登陸頁面上的相關記錄"]
 
 === 收集 ONTAP 交換器資料
 
-Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"] 並擁有適當的 link:["權限"] 設定。
+Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"] 並擁有適當的 <<a-note-about-permissions,權限>> 設定。
 
 
 
