@@ -62,7 +62,7 @@ security login rest-role create -role arwrole -api /api/storage/volumes -access 
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
 ....
-深入瞭解如何設定其他 link:\task_add_collector_svm.html["權限ONTAP"]。
+深入瞭解如何設定其他 link:task_add_collector_svm.html["權限ONTAP"]。
 
 
 

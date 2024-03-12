@@ -2474,8 +2474,6 @@
   <block id="aca759ec023e2e4c6156b1c2ced1b16b" category="summary">新增資料收集器</block>
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">設定ONTAP SVM Data Collector</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">下列項目支援此資料收集器：</block>
-  <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此問題</block>
-  <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">更新版本。Data ONTAP若要獲得最佳效能、請在Data ONTAP 何處使用VMware版本 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修正。</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS傳輸協定4.0版及更早版本</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">支援從支援的更新版本為支援FlexGroup ONTAP</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">僅支援資料類型SVM。不支援具有無限磁碟區的SVM。</block>
@@ -12963,8 +12961,9 @@ Telegraf ：
   <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 設定。</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">權限ONTAP</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP 自主勒索軟體保護的權限</block>
-  <block id="b015c01a5cd691f38c07727636f5e429" category="paragraph">如需詳細資訊、請參閱 <block ref="619ffa717a0c9eee469ccc9f3ce569e2" category="inline-xref-macro-rx"></block></block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP 存取權限遭拒</block>
-  <block id="c6c97bd1479ffe465a30e57bf1ff7581" category="paragraph">深入瞭解如何設定其他 <block ref="3990874aa220042887a75572ad807b54" category="inline-link-macro-rx"></block>。</block>
-  <block id="1200ae7d3913c7aad712f5d03b78b8b3" category="paragraph">如需詳細資訊、請參閱 <block ref="b67f08aa6844c92496ffea9c366ea7ee" category="inline-link-macro-rx"></block></block>
+  <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">深入瞭解如何設定其他 <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">更新版本。Data ONTAP為獲得最佳效能、請使用高於 9.13.1 的 Data ONTAP 版本。</block>
+  <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">如需詳細資訊、請參閱 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
+  <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">如需詳細資訊、請參閱 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
 </blocks>
