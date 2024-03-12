@@ -125,6 +125,47 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 
 
+=== ONTAP 自主勒索軟體保護的權限
+
+如果您使用叢集管理認證、則不需要新的權限。
+
+如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以便從ONTAP Sfor收集與Arp相關的資訊。
+
+對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：
+
+....
+security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+....
+如需詳細資訊、請參閱 <<concept_cs_integration_with_ontap_arp.html,整合ONTAP 了功能完善的勒索軟體保護功能>>
+
+
+
+=== ONTAP 存取權限遭拒
+
+如果使用叢集管理認證新增 Data Collector 、則不需要新的權限。
+
+如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。
+
+若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrestrole_ 是自訂角色、而 _csUser_ 是 ONTAP 自訂使用者。
+
+[listing]
+----
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
+----
+對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：
+
+[listing]
+----
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
+----
+如需詳細資訊、請參閱 <<concept_ws_integration_with_ontap_access_denied.html,與 ONTAP 存取整合遭拒>>
+
+
+
 == 設定資料收集器
 
 .組態步驟

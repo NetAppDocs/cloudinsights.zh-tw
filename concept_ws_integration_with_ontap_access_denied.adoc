@@ -53,6 +53,8 @@ image:WS_Access_Denied_Enable_in_Collector.png["在 ONTAP 收集器進階組態�
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
+深入瞭解如何設定其他 <<task_add_collector_svm.html,權限ONTAP>>。
+
 
 
 == 存取遭拒事件
