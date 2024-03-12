@@ -12962,9 +12962,9 @@ Telegraf ：
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 設定。</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">權限ONTAP</block>
-  <block id="b4adf3d9e051be6ec8f7f311fd08d8dc" category="paragraph">深入瞭解如何設定其他 <block ref="364cb0af9008be29fffbb0635783d098" category="inline-xref-macro-rx"></block>。</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP 自主勒索軟體保護的權限</block>
   <block id="b015c01a5cd691f38c07727636f5e429" category="paragraph">如需詳細資訊、請參閱 <block ref="619ffa717a0c9eee469ccc9f3ce569e2" category="inline-xref-macro-rx"></block></block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP 存取權限遭拒</block>
-  <block id="2bf48db6b4ef5793137bd23562d2759b" category="paragraph">如需詳細資訊、請參閱 <block ref="56f4e785b0c10fe49372cccb28182a22" category="inline-xref-macro-rx"></block></block>
+  <block id="c6c97bd1479ffe465a30e57bf1ff7581" category="paragraph">深入瞭解如何設定其他 <block ref="3990874aa220042887a75572ad807b54" category="inline-link-macro-rx"></block>。</block>
+  <block id="1200ae7d3913c7aad712f5d03b78b8b3" category="paragraph">如需詳細資訊、請參閱 <block ref="b67f08aa6844c92496ffea9c366ea7ee" category="inline-link-macro-rx"></block></block>
 </blocks>
