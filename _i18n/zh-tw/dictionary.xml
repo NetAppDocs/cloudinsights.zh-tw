@@ -12966,4 +12966,31 @@ Telegraf ：
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">更新版本。Data ONTAP為獲得最佳效能、請使用高於 9.13.1 的 Data ONTAP 版本。</block>
   <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">如需詳細資訊、請參閱 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">如需詳細資訊、請參閱 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
+  <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST Data Collector</block>
+  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST 資料收集器</block>
+  <block id="51c8777ccbe8cbbe060fa364f308995c" category="paragraph">此資料收集器會使用 ONTAP 帳戶的唯讀 REST API 呼叫、從執行 ONTAP 的儲存系統擷取庫存和效能資料。此資料收集器也會在叢集應用程式登錄中建立記錄、以加速支援。</block>
+  <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS –直接衍生自節點物件上的 ONTAP REST 通話。</block>
+  <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">延遲–直接衍生自節點物件上的 ONTAP REST 通話。</block>
+  <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">處理量–直接衍生自節點物件上的 ONTAP REST 通話。</block>
+  <block id="4493cd6343183bf0a790cf01a53cddd1" category="list-text">您必須擁有設定為唯讀 REST API 呼叫的管理員帳戶存取權。</block>
+  <block id="cc5802bcc5281dcb68264fed31e4a4a1" category="cell">ONTAP 管理 IP 位址</block>
+  <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP REST 使用者名稱</block>
+  <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP REST 密碼</block>
+  <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">預設為 60 秒。</block>
+  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。</block>
+  <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">啟用 EMS 事件收集</block>
+  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">選取此選項以納入 ONTAP EMS 記錄事件資料。</block>
+  <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS 輪詢時間間隔（秒）</block>
+  <block id="961f9cd0cfe447f73a20455c4f8f7973" category="paragraph">您也應該確定已啟用 ONTAP REST API 的寫入權限。這通常需要具有必要權限的叢集層級帳戶。</block>
+  <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用下列命令建立角色：</block>
+  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">安全登入 REST 角色建立角色 ｛ role name ｝ -API /API -access readonly
+安全登入 REST 角色建立角色 ｛ role name ｝ -API /API/cluster / agents -access all</block>
+  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver 服務 Web 存取 create -name spi -role ｛ role name ｝ -vserver ｛ name from 上述命令 ｝
+安全登入 create -user-or -group-name ｛ userName ｝ -application http -authent驗 證方法密碼 -role ｛ role name ｝</block>
+  <block id="7483de82186016bc69ffb8a75489f338" category="cell">嘗試建立 ONTAP REST 資料收集器時、會出現如下錯誤：
+組態： 10.193.70.14 ： ONTAP REST API 於 10.193.70.14 不可用： 10.193.70.14 無法取得 /API/cluster ： 400 錯誤要求</block>
+  <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">這可能是因為使用了一種老舊的 ONTAP 陣列、例如 ONTAP 9.6 ）、而該陣列沒有 REST API 功能。ONTAP 9.14.1 是 ONTAP REST 收集器支援的最低 ONTAP 版本。在預先休息的 ONTAP 版本中、應會有「 400 不良要求」回應。
+
+對於支援 REST 但非 9.14.1 或更新版本的 ONTAP 版本、您可能會看到下列訊息：
+組態： 10.193.98.84 ： ONTAP REST API 於 10.193.98.84 不可用： 10.193.98.84 ： ONTAP REST API 於 10.193.98.84 提供： cheryl5-cluster 2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 、但不是最低版本 9.14.1 。</block>
 </blocks>
