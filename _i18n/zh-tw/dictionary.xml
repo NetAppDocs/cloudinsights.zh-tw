@@ -5570,7 +5570,6 @@
   <block id="ac60c998c7a8dc4dde987fedb05c0f55" category="paragraph">延遲線現在會以自己的比例繪製、顯示在圖表右側。</block>
   <block id="7dbc268ba4014394e1084d227d3b8b49" category="image-alt">次要軸範例</block>
   <block id="05e5b67cad098092f46a63799fe75cca" category="section-title">小工具中的運算式</block>
-  <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">在儀表板中、任何時間序列小工具（線路、不規則曲線、區域、堆疊區域）、單值、 或Gauge Widget可讓您從所選的度量建立運算式、並在單一圖表中顯示這些運算式的結果。下列範例使用運算式來解決特定問題。在第一個範例中、我們要將環境中所有儲存資產的讀取IOPS顯示為總IOPS的百分比。第二個範例可讓您清楚掌握環境中發生的「系統」或「負荷」IOPS、這些IOPS並非直接來自讀取或寫入資料。</block>
   <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">您可以在運算式中使用變數（例如：_$VAR1 * 100_）</block>
   <block id="dba748e01f6c17fbbaa14a2441a39cb7" category="section-title">運算式範例：讀取IOPS百分比</block>
   <block id="ce28af985b1b52bd86ddbc97a3281b27" category="paragraph">在此範例中、我們要將讀取IOPS顯示為總IOPS的百分比。您可以將此視為下列公式：</block>
@@ -5588,7 +5587,6 @@
   <block id="a03c76235dfe1278dd742bbf81c45283" category="list-text">將*單位*欄位變更為「%」或「%」。</block>
   <block id="296ee886ac2db46f818124c2c72ace21" category="paragraph">此圖表顯示所選儲存裝置隨時間變化的IOPS讀取百分比。如果需要、您可以設定篩選器、或選擇不同的彙總方法。請注意、如果您選取Sum作為彙總方法、所有百分比值都會一起新增、可能會高於100%。</block>
   <block id="8cc1f1662d28c12dd361aa641ce8a9de" category="list-text">按一下「*儲存*」將圖表儲存至儀表板。</block>
-  <block id="ff66fe277c0c407bea9d4ee21c5148f3" category="paragraph">您也可以在折線圖、不規則曲線圖或堆疊區域圖小工具中使用運算式。</block>
   <block id="2164661e44bb6d157bb0697319a902cb" category="section-title">運算式範例：「系統」I/O</block>
   <block id="247041ff979b61cd999f4f2c24a31eb9" category="paragraph">範例2：從資料來源收集的度量包括讀取、寫入和總IOPS。然而、資料來源所報告的IOPS總數有時會包含「系統」IOPS、這些IO作業並非資料讀取或寫入的直接部分。此系統I/O也可視為「例行性」I/O、這是正常系統作業所需的、但與資料作業並無直接關係。</block>
   <block id="423d1df3523f2a34cef35f332f00c002" category="paragraph">若要顯示這些系統I/O、您可以從擷取報告的IOPS總計中減去讀取和寫入IOPS。公式可能如下所示：</block>
@@ -12997,4 +12995,10 @@ Telegraf ：
   <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">在功能上、 Cloud Insights 正在提出讀取要求、但 Cloud Insights 必須具備一些寫入權限、才能向 ONTAP 陣列註冊。請參閱 <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 以下。</block>
   <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。預設為啟用。</block>
   <block id="19decc8950209e44f521507a99ab0792" category="cell">選取此選項以納入 ONTAP EMS 記錄事件資料。預設為啟用。</block>
+  <block id="b8da12392eaf9647590629afc8e5e321" category="inline-xref">表格 Widget</block>
+  <block id="c886b395cb0cef3864cbd88d54b558b3" category="paragraph">在儀表板中、任何時間序列 Widget （折線、不規則曲線、區域、堆疊區域）橫條圖、直條圖、圓形圖或表格 Widget 可讓您根據所選的度量建立運算式、並在單一圖表（或是單欄）中顯示這些運算式的結果 <block ref="71a5b5d38cba985f9b4b8f746073d5cb" category="inline-xref-macro-rx"></block>）。下列範例使用運算式來解決特定問題。在第一個範例中、我們要將環境中所有儲存資產的讀取IOPS顯示為總IOPS的百分比。第二個範例可讓您清楚掌握環境中發生的「系統」或「負荷」IOPS、這些IOPS並非直接來自讀取或寫入資料。</block>
+  <block id="4b10d5d55ab9803778e910ea6ce31bf3" category="section-title">表格 Widget 中的運算式</block>
+  <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">表格 Widget 處理運算式的方式略有不同。單一表格 Widget 最多可包含五個運算式、每個運算式都會新增為表格的新欄。每個運算式最多可包含五個值、用於執行其計算。您可以輕鬆地將欄命名為有意義的項目。</block>
+  <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">表格 Widget 中的運算式</block>
+  <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
