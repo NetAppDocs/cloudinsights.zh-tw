@@ -12975,9 +12975,7 @@ Telegraf ：
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP REST 使用者名稱</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP REST 密碼</block>
   <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">預設為 60 秒。</block>
-  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。</block>
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">啟用 EMS 事件收集</block>
-  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">選取此選項以納入 ONTAP EMS 記錄事件資料。</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS 輪詢時間間隔（秒）</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用下列命令建立角色：</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">安全登入 REST 角色建立角色 ｛ role name ｝ -API /API -access readonly
@@ -12993,7 +12991,10 @@ Telegraf ：
   <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">此資料收集器會使用 REST API 呼叫、從執行 ONTAP 9.14.1 及更高版本的儲存系統擷取庫存、 EMS 記錄和效能資料。對於舊版 ONTAP 系統、請使用 ZAPI 型的「 NetApp ONTAP 資料管理軟體」收集器類型。</block>
   <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insights 會從 ONTAP 資料收集器取得庫存、記錄和效能資料。對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">序號–陣列 UUID</block>
-  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">您必須具有必要存取層級的使用者帳戶存取權</block>
-  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">在功能上、 Cloud Insights 正在提出讀取要求、但 CI 必須具備一些寫入權限才能向 ONTAP 陣列註冊。請參閱下方「權限相關注意事項」。</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">由於許多 Cloud Insights 的 ONTAP 儀表板都仰賴進階 ONTAP 計數器、因此您應該在資料收集器進階組態區段中保持啟用 * 啟用進階計數器資料收集 * 。</block>
+  <block id="992ec6f152c405f64da205561d5810c3" category="list-text">您必須具有所需存取層級的使用者帳戶存取權。請注意、如果建立新的 REST 使用者 / 角色、則需要管理員權限。</block>
+  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">權限注意事項</block>
+  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">在功能上、 Cloud Insights 正在提出讀取要求、但 Cloud Insights 必須具備一些寫入權限、才能向 ONTAP 陣列註冊。請參閱 <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 以下。</block>
+  <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。預設為啟用。</block>
+  <block id="19decc8950209e44f521507a99ab0792" category="cell">選取此選項以納入 ONTAP EMS 記錄事件資料。預設為啟用。</block>
 </blocks>

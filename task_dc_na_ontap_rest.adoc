@@ -109,12 +109,12 @@ Cloud Insights 會從 ONTAP 資料收集器取得庫存、記錄和效能資料�
 
 以下是設定及使用此資料收集器的需求：
 
-* 您必須具有必要存取層級的使用者帳戶存取權
+* 您必須具有所需存取層級的使用者帳戶存取權。請注意、如果建立新的 REST 使用者 / 角色、則需要管理員權限。
 * 帳戶詳細資料包括使用者名稱和密碼。
 * 連接埠需求： 443
 * 帳戶權限：
 +
-** 在功能上、 Cloud Insights 正在提出讀取要求、但 CI 必須具備一些寫入權限才能向 ONTAP 陣列註冊。請參閱下方「權限相關注意事項」。
+** 在功能上、 Cloud Insights 正在提出讀取要求、但 Cloud Insights 必須具備一些寫入權限、才能向 ONTAP 陣列註冊。請參閱 <<a-note-about-permissions,權限注意事項>> 以下。
 
 
 
@@ -151,10 +151,10 @@ Cloud Insights 會從 ONTAP 資料收集器取得庫存、記錄和效能資料�
 | 效能意見調查時間間隔（秒） | 預設為 60 秒。 
 
 
-| 進階計數器資料收集 | 選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。 
+| 進階計數器資料收集 | 選取此選項可在ONTAP 輪詢中包含「功能先進的計數器」資料。預設為啟用。 
 
 
-| 啟用 EMS 事件收集 | 選取此選項以納入 ONTAP EMS 記錄事件資料。 
+| 啟用 EMS 事件收集 | 選取此選項以納入 ONTAP EMS 記錄事件資料。預設為啟用。 
 
 
 | EMS 輪詢時間間隔（秒） | 預設為 60 秒。 
@@ -239,8 +239,8 @@ security login role create -role ci_readonly -cmddirname DEFAULT -access readonl
 Role Command/ Access
 Vserver Name Directory Query Level
 ---------- ------------- --------- ------------------ --------
-cluster1 ci_readonly DEFAULT read only
-cluster1 ci_readonly security readonly
+cluster1   ci_readonly   DEFAULT   read only
+cluster1   ci_readonly   security  read only
 ....
 ....
 cluster1::security login> show
@@ -248,7 +248,7 @@ Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
-ci_user     ontapi      password    ci_readonly   no
+ci_user     ontapi       password    ci_readonly    no
 ....
 
 
