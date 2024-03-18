@@ -170,7 +170,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 .組態步驟
 . 以系統管理員或帳戶擁有者身分登入Cloud Insights 您的支援環境。
-. 按一下 * 「可服務性」 > 「收集器」 > 「 + 資料收集器」 *
+. 按一下 * 工作負載安全性 > 收集器 > + 資料收集器 *
 +
 系統會顯示可用的資料收集器。
 

@@ -13003,4 +13003,5 @@ Telegraf ：
   <block id="865ccb9e69aad9a527770df196a2c282" category="list-text">作業系統（例如 VMware 或 Windows ）</block>
   <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">一般 iSCSI 區塊資訊、 VMware VMFS</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
+  <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">按一下 * 工作負載安全性 &gt; 收集器 &gt; + 資料收集器 *</block>
 </blocks>
