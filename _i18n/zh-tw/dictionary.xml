@@ -7904,7 +7904,6 @@
   <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">使用者存取封鎖的先決條件</block>
   <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">此功能需要叢集層級認證、才能正常運作。</block>
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">如果您使用叢集管理認證、則不需要新的權限。</block>
-  <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">將「Enable Block User Access（啟用區塊使用者存取）」設為_enabled（啟用）。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">如何設定自動使用者存取封鎖？</block>
   <block id="83fce3228306e4223f72e5a98ed7923e" category="list-text">按一下「封鎖使用者檔案存取」核取方塊。此功能會在選取時啟用。</block>
   <block id="982ff1f57d1f125e6f9bb1f94dcef71e" category="list-text">在「Time Period」（時間期間）下、選取應套用封鎖的時間。</block>
@@ -7916,7 +7915,6 @@
   <block id="f169ac98d63faf28e5387c7068cdc42d" category="list-text">您可以前往警示詳細資料或使用者詳細資料畫面、然後從這些畫面手動封鎖或還原使用者。</block>
   <block id="f21a59e38c0c86324abe189f2666efd8" category="section-title">使用者存取限制歷程記錄</block>
   <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">在警示詳細資料與使用者詳細資料頁面的使用者面板中、您可以檢視使用者存取限制歷程記錄的稽核：時間、動作（區塊、取消區塊）、持續時間、採取的行動、 NFS的手動/自動及受影響IP。</block>
-  <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">取消選取「Enable Block User Access（啟用區塊使用者存取）」以停用。</block>
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">手動還原NFS的IP</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">無法修改原則。原因：未授權使用該命令。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">請檢查是否使用CsUser、是否會如上所述授予使用者權限。</block>
@@ -9330,8 +9328,6 @@
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">直接封鎖使用者的SMB位址、導致NFS封鎖攻擊的主機機器IP位址。這些機器IP位址將會遭到封鎖、無法存取工作負載安全性所監控的任何儲存虛擬機器（SVM）。</block>
   <block id="f19379ce165a902f81548ae9d7b2e07c" category="paragraph">例如、假設工作負載安全性管理10個SVM、而自動回應原則則是針對其中四個SVM進行設定。如果攻擊源自四個SVM之一、則使用者的存取將會在所有10個SVM中遭到封鎖。仍會在原始SVM上執行Snapshot。</block>
   <block id="4965f6590d5121fa73cf823f64ef219b" category="paragraph">如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以封鎖使用者。</block>
-  <block id="8e0c9f34f42be5c07c87ecae239a8823" category="list-text">在工作負載安全性中、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;封鎖使用者存取*。</block>
-  <block id="d9c1a964d322cb7ed68da85eaa8a06b0" category="list-text">在工作負載安全性中、瀏覽至*管理&gt;自動回應原則&gt;回應原則設定&gt;封鎖使用者存取*</block>
   <block id="ef3c0a55c240483a8b3ffe2b395d514d" category="paragraph">如果您的工作負載安全性試用期到期、或代理程式/收集器當機、請使用下列步驟手動還原ONTAP 任何來自VMware的IP。</block>
   <block id="1b0bdf15231b05a92c86cf44b6c5280e" category="list-text">在SVM上、將「cloudsecure_rRule」做為用戶端比對的所有原則中刪除規則、方法是指定其各自的規則索引。工作負載安全性規則通常為1。</block>
   <block id="a117ae2a490977bedd4a55878386b06c" category="list-text">確保工作負載安全規則已刪除（可選步驟確認）。</block>
@@ -12721,8 +12717,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlex 閘道的 IP 位址或 FQDN 、以逗號（、）或分號（；）分隔</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">用於登入 ScaleIO/PowerFlex 裝置的管理員使用者名稱</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用於登入 ScaleIO/PowerFlex 裝置的密碼</block>
-  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
-此外、還需要網域唯讀權限。</block>
   <block id="dada9839975856f2fd06228d265fea07" category="list-text">網路監控：</block>
   <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">需要 Linux 核心版本 4.18.0 及更新版本</block>
   <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">不支援光子作業系統。</block>
@@ -13001,4 +12995,11 @@ Telegraf ：
   <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">表格 Widget 處理運算式的方式略有不同。單一表格 Widget 最多可包含五個運算式、每個運算式都會新增為表格的新欄。每個運算式最多可包含五個值、用於執行其計算。您可以輕鬆地將欄命名為有意義的項目。</block>
   <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">表格 Widget 中的運算式</block>
   <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
+此外、還需要網域唯讀權限。
+使用者必須是安全性群組 _ 唯讀網域控制站 _ 的成員。</block>
+  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">連結： task_dc_brocade_rest.html</block>
+  <block id="690b59689f385d15b45ee131216725c7" category="list-text">在工作負載安全性中、瀏覽至 * 工作負載安全性 &gt; 原則 &gt; 自動回應原則 * 。  選擇 *+ 攻擊政策 * 。</block>
+  <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">選取（勾選） _ 封鎖使用者檔案存取 _ 。</block>
+  <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">取消選取（取消勾選） _ 封鎖使用者檔案存取 _ 。</block>
 </blocks>

@@ -50,8 +50,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == 如何啟用此功能？
 
-* 在工作負載安全性中、瀏覽至*管理>自動回應原則>回應原則設定>封鎖使用者存取*。
-* 將「Enable Block User Access（啟用區塊使用者存取）」設為_enabled（啟用）。
+* 在工作負載安全性中、瀏覽至 * 工作負載安全性 > 原則 > 自動回應原則 * 。  選擇 *+ 攻擊政策 * 。
+* 選取（勾選） _ 封鎖使用者檔案存取 _ 。
 
 
 
@@ -93,8 +93,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 您可以隨時停用此功能。如果系統中有受限的使用者、您必須先還原他們的存取權限。
 
-* 在工作負載安全性中、瀏覽至*管理>自動回應原則>回應原則設定>封鎖使用者存取*
-* 取消選取「Enable Block User Access（啟用區塊使用者存取）」以停用。
+* 在工作負載安全性中、瀏覽至 * 工作負載安全性 > 原則 > 自動回應原則 * 。  選擇 *+ 攻擊政策 * 。
+* 取消選取（取消勾選） _ 封鎖使用者檔案存取 _ 。
 
 
 所有頁面都會隱藏此功能。

@@ -57,7 +57,8 @@ summary: 設定工作負載安全性Active Directory使用者目錄收集器
 
 
 | 連結DN | 允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
-此外、還需要網域唯讀權限。 
+此外、還需要網域唯讀權限。
+使用者必須是安全性群組 _ 唯讀網域控制站 _ 的成員。 
 
 
 | 連結密碼 | 目錄伺服器密碼（即用於Bind DN的使用者名稱密碼） 
