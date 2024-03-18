@@ -26,7 +26,7 @@ keywords: invite, roles, data collector, acquisition unit, AU
 支援下列三種資料收集器Cloud Insights ：
 
 * 基礎架構（儲存設備、網路交換器、運算基礎架構）
-* 作業系統（例如VMware或Windows）
+* 作業系統（例如 VMware 或 Windows ）
 * 服務（例如Kafka）
 
 

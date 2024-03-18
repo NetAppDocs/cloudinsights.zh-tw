@@ -7165,7 +7165,6 @@
   <block id="ada50db1408dec13820898d804a4f56f" category="list-text">連接埠443需要HTTPS</block>
   <block id="17bd2c44c34a8a609dc17702d5a497ae" category="list-text">EMC VNXe資料收集器提供NAS與iSCSI的庫存支援；光纖通道磁碟區將會被發現、Cloud Insights 但無法報告FC對應、遮罩或儲存連接埠。</block>
   <block id="1c53dd7e07f75f42d5053d830e23cf8a" category="paragraph">從VNXe資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
-  <block id="34c07cab78ed0e865a0f65e8c93c21fb" category="cell">一般iSCSI區塊資訊、VMware VMFS</block>
   <block id="823c34885b0ed3470261b5a7d915fc12" category="cell">複寫遠端系統</block>
   <block id="454c65346b592d2a6ddcf6e6cd91d9b3" category="cell">同步</block>
   <block id="1b5c8b57673db23e69bf32b928fab1da" category="cell">iSCSI節點</block>
@@ -9075,7 +9074,6 @@
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已過時</block>
   <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">支援下列三種資料收集器Cloud Insights ：</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基礎架構（儲存設備、網路交換器、運算基礎架構）</block>
-  <block id="31b29af38563f95fcd16900aef967adf" category="list-text">作業系統（例如VMware或Windows）</block>
   <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">服務（例如Kafka）</block>
   <block id="3e3d1f4256fe73b88a0ea758b3951eb9" category="paragraph">如果您選擇_Infrastructure_資料收集器、則需要擷取單元才能將資料注入Cloud Insights 到SURO。您必須在要從中收集資料的伺服器或VM上下載並安裝擷取設備軟體。單一擷取單元可用於多個資料收集器。</block>
   <block id="344ab1c74a04a4daec201f19f0c5e693" category="list-text">視需要輸入認證（使用者名稱和密碼）以連線至裝置。</block>
@@ -12646,9 +12644,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="02892541231ed9b9797890da851659d1" category="section-title">適用於 FOS 9.1.1 c 及更高版本韌體的 Brocade CLI 收集器可靠性增強功能</block>
   <block id="f451a3db1d946e0e6f7a6faff75241f4" category="paragraph">在某些執行 9.1.1c 韌體的 Brocade Fibre Channel 交換器上、某些 CLI 命令的輸出可能會以「 motd 」登入橫幅文字作為前置字元、或是使用者變更預設密碼的警告。Brocade CLI 收集器已經過強化、可忽略這兩種無關文字類型。</block>
   <block id="08cc9fe40f6d675ceb9852acf6cb4d2d" category="paragraph">在此增強之前、只有沒有虛擬架構的 FOS 9.1.1 交換器可能會在此收集器類型中被發現。</block>
-  <block id="fdbc837080bf746694718923941b3ca6" category="section-title">將 VMware 標籤對應至 Cloud Insights 標註</block>
-  <block id="556f5b9e77a7546a1dbeab74aa1190e0" category="paragraph">VMware 資料收集器可讓您在 Cloud Insights 標註中填入 VMware 上設定的標籤。註釋的名稱必須與 VMware 標籤完全相同。將一律填入相同名稱的文字類型註釋、並「最佳」嘗試填入其他類型（數字、布林等）的註釋。Cloud Insights如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。</block>
-  <block id="8354fa58be11dc6519c7b2d92ba17795" category="paragraph">請注意、 VMware 標籤可能區分大小寫、而 Cloud Insights 標籤則不區分大小寫。因此、如果您在 Cloud Insights 中建立名為「擁有者」的註釋、並在 VMware 中建立名為「擁有者」、「擁有者」和「擁有者」的標記、則所有這些「擁有者」的變化都會對應至 Cloud Insight 的「擁有者」註釋。</block>
   <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Cloud Insights 目前僅自動發佈 NetApp 裝置的支援資訊。</block>
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">由於此支援資訊是以附註形式保存、因此您可以查詢或在儀表板中使用。</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">如果使用者覆寫或清空附註值、則當 Cloud Insights 每天更新附註時、該值會再次自動填入、</block>
@@ -13002,4 +12997,10 @@ Telegraf ：
   <block id="690b59689f385d15b45ee131216725c7" category="list-text">在工作負載安全性中、瀏覽至 * 工作負載安全性 &gt; 原則 &gt; 自動回應原則 * 。  選擇 *+ 攻擊政策 * 。</block>
   <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">選取（勾選） _ 封鎖使用者檔案存取 _ 。</block>
   <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">取消選取（取消勾選） _ 封鎖使用者檔案存取 _ 。</block>
+  <block id="b1a9e545f7d7952c0575fd3c825b523c" category="section-title">將 VMware 標籤對應至 Cloud Insights 標註</block>
+  <block id="98d5008742fe1974f056048f2891c18d" category="paragraph">VMware 資料收集器可讓您在 Cloud Insights 標註中填入 VMware 上設定的標籤。註釋的名稱必須與 VMware 標籤完全相同。將一律填入相同名稱的文字類型註釋、並「最佳」嘗試填入其他類型（數字、布林等）的註釋。Cloud Insights如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。</block>
+  <block id="8d1b85d225aca014c162676a1f06f465" category="paragraph">請注意、 VMware 標籤可能區分大小寫、而 Cloud Insights 標籤則不區分大小寫。因此、如果您在 Cloud Insights 中建立名為「擁有者」的註釋、並在 VMware 中建立名為「擁有者」、「擁有者」和「擁有者」的標記、則所有這些「擁有者」的變化都會對應至 Cloud Insight 的「擁有者」註釋。</block>
+  <block id="865ccb9e69aad9a527770df196a2c282" category="list-text">作業系統（例如 VMware 或 Windows ）</block>
+  <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">一般 iSCSI 區塊資訊、 VMware VMFS</block>
+  <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
 </blocks>

@@ -56,7 +56,7 @@ Dell EMC Unity（前身為VNXe）資料收集器可為VNXe統一化儲存陣列�
 | 儲存資源池 | 儲存資源池 
 
 
-| 一般iSCSI區塊資訊、VMware VMFS | 分享 
+| 一般 iSCSI 區塊資訊、 VMware VMFS | 分享 
 
 
 | 複寫遠端系統 | 同步 

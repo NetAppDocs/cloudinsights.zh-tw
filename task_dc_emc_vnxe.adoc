@@ -57,7 +57,7 @@ Dell EMC VNXe資料收集器可為VNXe統一化儲存陣列提供庫存支援。
 | 儲存資源池 | 儲存資源池 
 
 
-| 一般iSCSI區塊資訊、VMware VMFS | 分享 
+| 一般 iSCSI 區塊資訊、 VMware VMFS | 分享 
 
 
 | 複寫遠端系統 | 同步 
