@@ -50,7 +50,13 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 | 記憶體 | 16 GB RAM 
 
 
-| 可用磁碟空間 | 磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小）如果/opt是NAS儲存設備的掛載資料夾、請確定本機使用者具有此資料夾的存取權。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 link:task_cs_add_agent.html#troubleshooting-agent-errors["疑難排解"] 一節以取得更多詳細資料。 
+| 可用磁碟空間 | 應以下列方式分配磁碟空間：
+/opt/NetApp 35 GB （最低）
+
+附註：建議您分配額外的磁碟空間、以便建立檔案系統。確定檔案系統中至少有 35 GB 可用空間。
+
+
+如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 link:task_cs_add_agent.html#troubleshooting-agent-errors["疑難排解"] 一節以取得更多詳細資料。 
 
 
 | 網路 | 100 Mbps至1 Gbps乙太網路連線、靜態IP位址、所有裝置的IP連線、以及工作負載安全性執行個體（80或443）所需的連接埠。 

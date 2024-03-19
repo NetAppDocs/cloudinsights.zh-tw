@@ -8052,7 +8052,6 @@
   <block id="a1667a4627338ab4bba192e79668af02" category="paragraph"><block ref="a1667a4627338ab4bba192e79668af02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">當您嘗試在不受支援的系統上安裝代理程式時、就會出現此錯誤。請參閱 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
   <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">疑難排解</block>
-  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">磁碟空間應以下列方式分配：/opp/netapp 35 GB（最小）如果/opt是NAS儲存設備的掛載資料夾、請確定本機使用者具有此資料夾的存取權。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">設定Cloud Volumes ONTAP 適用於NetApp ONTAP 的支援NetApp的支援功能、包括支援功能</block>
   <block id="4aa02491d3ee690a6a014b190a75060e" category="section-title">支援的平台</block>
   <block id="bf6a182a4bf96601e8aa50ed356b9b9f" category="list-text">支援所有雲端服務供應商（無論有何種情況）Cloud Volumes ONTAP 。例如：Amazon、Azure、Google Cloud。</block>
@@ -13019,4 +13018,11 @@ Telegraf ：
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">與 ONTAP 進行 Fpolicy 活動的通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI- 對 REST 的對應</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此、收集或報告的計量可能會有所差異。如需關於 ONTAPI 與 REST 之間差異的詳細資訊、請參閱 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文件。</block>
+  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">應以下列方式分配磁碟空間：
+/opt/NetApp 35 GB （最低）
+
+附註：建議您分配額外的磁碟空間、以便建立檔案系統。確定檔案系統中至少有 35 GB 可用空間。
+
+
+如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
 </blocks>
