@@ -7085,7 +7085,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API與ONTAP NetApp通訊</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM資料LIF IP位址</block>
-  <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">與ONTAP 適用於Fpolicy活動的功能溝通</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件率檢查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">請參閱 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 規模調整的相關資訊文件。</block>
@@ -13021,4 +13020,5 @@ Telegraf ：
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">選取以啟用透過 SSL 連線</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">報告 WWN 別名</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">選取以報告 WWN 別名</block>
+  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">與 ONTAP 進行 Fpolicy 活動的通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
 </blocks>
