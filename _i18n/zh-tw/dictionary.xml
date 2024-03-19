@@ -7069,10 +7069,8 @@
   <block id="d35391dc3c80304f928b511837b6f6a5" category="list-text">強烈建議ONTAP 您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*、同步化支援系統和代理機器上的時間。</block>
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">雲端網路存取規則</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目的地</block>
-  <block id="02674a4ef33e11c879283629996c8ff8" category="cell">方向</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="1e5d29d467aa39ff7343d30dc2f8de5b" category="cell">&lt;site_name&gt;.cs01.cloudinsights.netapp.com &lt;site_name&gt;.c01.cloudinsights.netapp.com &lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
-  <block id="4c32be4a0b4f48cdd593aef35fd69e44" category="cell">傳出</block>
   <block id="800d899720a1567094af6346ee35787a" category="cell">存取Cloud Insights 功能</block>
   <block id="4ce4e8664144d2ca2f89818a65da41cc" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">存取驗證服務</block>
@@ -9724,7 +9722,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 聯邦版不提供儲存工作負載安全功能。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">傳入</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
@@ -13004,4 +13001,5 @@ Telegraf ：
   <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">一般 iSCSI 區塊資訊、 VMware VMFS</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">按一下 * 工作負載安全性 &gt; 收集器 &gt; + 資料收集器 *</block>
+  <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">工作負載安全代理程式</block>
 </blocks>

@@ -77,37 +77,37 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 [cols="5*"]
 |===
-| 傳輸協定 | 連接埠 | 目的地 | 方向 | 說明 
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
 
 
-| TCP | 443.. | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | 傳出 | 存取Cloud Insights 功能 
+| TCP | 443.. | 工作負載安全代理程式 | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | 存取Cloud Insights 功能 
 
 
-| TCP | 443.. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | 傳出 | 存取驗證服務 
+| TCP | 443.. | 工作負載安全代理程式 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | 存取驗證服務 
 |===
 對於*歐洲型*工作負載安全環境：
 
 [cols="5*"]
 |===
-| 傳輸協定 | 連接埠 | 目的地 | 方向 | 說明 
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
 
 
-| TCP | 443.. | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | 傳出 | 存取Cloud Insights 功能 
+| TCP | 443.. | 工作負載安全代理程式 | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | 存取Cloud Insights 功能 
 
 
-| TCP | 443.. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | 傳出 | 存取驗證服務 
+| TCP | 443.. | 工作負載安全代理程式 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | 存取驗證服務 
 |===
 對於* APAC型*工作負載安全環境：
 
 [cols="5*"]
 |===
-| 傳輸協定 | 連接埠 | 目的地 | 方向 | 說明 
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
 
 
-| TCP | 443.. | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | 傳出 | 存取Cloud Insights 功能 
+| TCP | 443.. | 工作負載安全代理程式 | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | 存取Cloud Insights 功能 
 
 
-| TCP | 443.. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | 傳出 | 存取驗證服務 
+| TCP | 443.. | 工作負載安全代理程式 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | 存取驗證服務 
 |===
 
 
@@ -117,22 +117,22 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 [cols="5*"]
 |===
-| 傳輸協定 | 連接埠 | 目的地 | 方向 | 說明 
+| 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
 
 
-| TCP | 389（LDAP）636（LDAPS / start-TLS） | LDAP伺服器URL | 傳出 | 連線至LDAP 
+| TCP | 389（LDAP）636（LDAPS / start-TLS） | 工作負載安全代理程式 | LDAP伺服器URL | 連線至LDAP 
 
 
-| TCP | 443.. | 叢集或SVM管理IP位址（視SVM收集器組態而定） | 傳出 | API與ONTAP NetApp通訊 
+| TCP | 443.. | 工作負載安全代理程式 | 叢集或SVM管理IP位址（視SVM收集器組態而定） | API與ONTAP NetApp通訊 
 
 
-| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 傳入 | 與ONTAP 適用於Fpolicy活動的功能溝通 
+| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 工作負載安全代理程式 | 與ONTAP 適用於Fpolicy活動的功能溝通 
 
 
-| TCP | 7. | SVM資料LIF IP位址 | 傳出 | ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。 
+| TCP | 7. | 工作負載安全代理程式 | SVM資料LIF IP位址 | ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。 
 
 
-| SSH | 22 | 叢集管理 | 傳出 | CIFS/SMB 使用者封鎖所需。 
+| SSH | 22 | 工作負載安全代理程式 | 叢集管理 | CIFS/SMB 使用者封鎖所需。 
 |===
 
 
