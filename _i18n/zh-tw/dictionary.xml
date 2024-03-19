@@ -12961,10 +12961,6 @@ Telegraf ：
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">啟用 EMS 事件收集</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS 輪詢時間間隔（秒）</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用下列命令建立角色：</block>
-  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">安全登入 REST 角色建立角色 ｛ role name ｝ -API /API -access readonly
-安全登入 REST 角色建立角色 ｛ role name ｝ -API /API/cluster / agents -access all</block>
-  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver 服務 Web 存取 create -name spi -role ｛ role name ｝ -vserver ｛ name from 上述命令 ｝
-安全登入 create -user-or -group-name ｛ userName ｝ -application http -authent驗 證方法密碼 -role ｛ role name ｝</block>
   <block id="7483de82186016bc69ffb8a75489f338" category="cell">嘗試建立 ONTAP REST 資料收集器時、會出現如下錯誤：
 組態： 10.193.70.14 ： ONTAP REST API 於 10.193.70.14 不可用： 10.193.70.14 無法取得 /API/cluster ： 400 錯誤要求</block>
   <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">這可能是因為使用了一種老舊的 ONTAP 陣列、例如 ONTAP 9.6 ）、而該陣列沒有 REST API 功能。ONTAP 9.14.1 是 ONTAP REST 收集器支援的最低 ONTAP 版本。在預先休息的 ONTAP 版本中、應會有「 400 不良要求」回應。
@@ -13021,4 +13017,6 @@ Telegraf ：
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">報告 WWN 別名</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">選取以報告 WWN 別名</block>
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">與 ONTAP 進行 Fpolicy 活動的通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
+  <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI- 對 REST 的對應</block>
+  <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此、收集或報告的計量可能會有所差異。如需關於 ONTAPI 與 REST 之間差異的詳細資訊、請參閱 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文件。</block>
 </blocks>

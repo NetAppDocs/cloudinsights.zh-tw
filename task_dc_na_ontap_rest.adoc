@@ -19,6 +19,9 @@ summary: ONTAP REST Data Collector
 此資料收集器會使用 REST API 呼叫、從執行 ONTAP 9.14.1 及更高版本的儲存系統擷取庫存、 EMS 記錄和效能資料。對於舊版 ONTAP 系統、請使用 ZAPI 型的「 NetApp ONTAP 資料管理軟體」收集器類型。
 
 
+NOTE: ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此、收集或報告的計量可能會有所差異。如需關於 ONTAPI 與 REST 之間差異的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/ontap-restmap-9141/index.html["ONTAP 9.14.1 ONTAPI- 對 REST 的對應"] 文件。
+
+
 
 == 術語
 
@@ -210,21 +213,15 @@ FAS / AFF 8080
 
 . 開始之前、您必須先以ONTAP _Administrator帳戶登入到VMware、然後才能啟用_diagnostic-level命令_。
 . 使用下列命令建立角色：
-
-
-安全登入 REST 角色建立角色 ｛ role name ｝ -API /API -access readonly
-安全登入 REST 角色建立角色 ｛ role name ｝ -API /API/cluster / agents -access all
-
-vserver 服務 Web 存取 create -name spi -role ｛ role name ｝ -vserver ｛ name from 上述命令 ｝
-安全登入 create -user-or -group-name ｛ userName ｝ -application http -authent驗 證方法密碼 -role ｛ role name ｝
-
++
 ....
- ////
-security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
- security login role create -role ci_readonly -cmddirname security -access readonly
- security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
- ////
+security login rest-role create -role {role name} -api /api -access readonly
+security login rest-role create -role {role name} -api /api/cluster/agents -access all
+vserver services web access create -name spi -role {role name} -vserver {name from above command}
+security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
+
+
 . 使用下列命令建立唯讀使用者。執行create命令後、系統會提示您輸入此使用者的密碼。
 +
  security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
