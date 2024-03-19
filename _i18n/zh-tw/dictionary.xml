@@ -13002,4 +13002,23 @@ Telegraf ：
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">按一下 * 工作負載安全性 &gt; 收集器 &gt; + 資料收集器 *</block>
   <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">工作負載安全代理程式</block>
+  <block id="13dc8fdf158db5a2d5b4333f157d56f1" category="summary">一般 DB 主機解析程式收集器</block>
+  <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp 通用 DB 主機解析程式</block>
+  <block id="bf69c00bf7c53458f130b812692fec27" category="paragraph">此資料收集器會取得庫存</block>
+  <block id="cf6810c807663f7e67a6dad9b4e3f30d" category="paragraph">Cloud Insights 從這個收集器取得庫存。</block>
+  <block id="7cfb24a71b3d4346f06e58f1c56504c4" category="cell">DB 伺服器 IP 位址</block>
+  <block id="fc0adf601bb47f61aeb001d2ca0fd014" category="cell">DB 伺服器的 IP 位址</block>
+  <block id="44265ee9a4e77507b46127bd8bb9410e" category="cell">DB 伺服器連接埠</block>
+  <block id="8bffa07e351ddd5d04e99bb6b9da0978" category="cell">預設值為 3306</block>
+  <block id="6ed1c3c7709b624446439652394447b6" category="cell">合格的驅動程式類別名稱</block>
+  <block id="b39e9ab46f4a173d584dd68f9f196576" category="cell">驅動程式的類別名稱。</block>
+  <block id="8fb99cf573d4a413b2e37c63794eb3e0" category="cell">JDBC 驅動程式 URL</block>
+  <block id="b89af963baa6e82f8621a668c14fbcd4" category="cell">驅動程式的 URL</block>
+  <block id="81658e723498b806a42aa7f578056dcf" category="cell">SQL 查詢</block>
+  <block id="ce3d730f469529eeaf2c008d233c540b" category="cell">用於從資料表傳回資料的查詢</block>
+  <block id="0405664c8ac697fdc068d704ac81f69f" category="cell">庫存輪詢時間間隔（分鐘）</block>
+  <block id="63c34e2f1175f732874e4e180adeffd2" category="cell">啟用 SSL 連線</block>
+  <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">選取以啟用透過 SSL 連線</block>
+  <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">報告 WWN 別名</block>
+  <block id="2d97586297f1c09c58d04825a03405cf" category="cell">選取以報告 WWN 別名</block>
 </blocks>
