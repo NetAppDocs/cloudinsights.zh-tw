@@ -12984,7 +12984,6 @@ Telegraf ：
   <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">允許使用者搜尋目錄。例如：_username@companyname.com_或_username@domainname.com_
 此外、還需要網域唯讀權限。
 使用者必須是安全性群組 _ 唯讀網域控制站 _ 的成員。</block>
-  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">連結： task_dc_brocade_rest.html</block>
   <block id="690b59689f385d15b45ee131216725c7" category="list-text">在工作負載安全性中、瀏覽至 * 工作負載安全性 &gt; 原則 &gt; 自動回應原則 * 。  選擇 *+ 攻擊政策 * 。</block>
   <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">選取（勾選） _ 封鎖使用者檔案存取 _ 。</block>
   <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">取消選取（取消勾選） _ 封鎖使用者檔案存取 _ 。</block>
@@ -13025,4 +13024,6 @@ Telegraf ：
 
 
 如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
+  <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
+  <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
 </blocks>
