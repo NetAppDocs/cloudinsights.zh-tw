@@ -79,6 +79,27 @@ summary: 新增工作負載安全資料收集器
 
 
 
+== 使用者存取封鎖的先決條件
+
+請謹記下列事項 link:/cloudinsights/cs_restrict_user_access.html["使用者存取封鎖"]：
+
+此功能需要叢集層級認證、才能正常運作。
+
+如果您使用叢集管理認證、則不需要新的權限。
+
+如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以封鎖使用者。
+
+對於具有叢集認證的CsUser、請從ONTAP 下列功能執行：
+
+....
+security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+security login role create -role csrole -cmddirname set -access all
+security login role create -role csrole -cmddirname "vserver cifs session" -access all
+security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
+security login role create -role csrole -cmddirname "vserver name-mapping" -access all
+....
+
+
 == 權限相關注意事項
 
 

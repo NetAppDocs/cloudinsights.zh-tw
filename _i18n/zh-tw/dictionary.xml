@@ -13026,4 +13026,7 @@ Telegraf ：
 如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
+  <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">使用者存取封鎖</block>
+  <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">請謹記下列事項 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
+  <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">請務必檢閱的「權限」區段 <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> 頁面。</block>
 </blocks>
