@@ -13029,4 +13029,17 @@ Telegraf ：
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">使用者存取封鎖</block>
   <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">請謹記下列事項 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
   <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">請務必檢閱的「權限」區段 <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">移轉</block>
+  <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">若要從先前的 ONTAP （ ontapi ）資料收集器移轉至較新的 ONTAP REST 收集器、請執行下列步驟：</block>
+  <block id="4c6f28d201414a07e1d049d75ef07ba7" category="list-text">新增 REST Collector 、輸入所有相同的使用者 / 權限等 您擁有先前的收集器。</block>
+  <block id="7aa31458c5152c5d27f8fbb18c369015" category="list-text">暫停前一個收集器。</block>
+  <block id="36c201f32e3f02bd95c1dd1ccdbc73dc" category="list-text">讓系統收集資料約 30 分鐘。在此期間忽略任何資料問題。</block>
+  <block id="dede93f696efdb5fb1be1cde69b231cb" category="list-text">休息期間過後、您會看到 REST 收集器上的資料穩定繼續。</block>
+  <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">儲存虛擬機器 /Vserver</block>
+  <block id="40a9aa8d8be93bdef25a488011f71fcb" category="cell">儲存虛擬機器</block>
+  <block id="b34043f2adcaed7afb95502f8e304bd7" category="list-text">ONTAP 9.14.1 版或更新版本。</block>
+  <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">NetApp 叢集的 IP 位址或完整網域名稱。必須是叢集管理 IP/FQDN 。</block>
+  <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">擷取類型為 _admin_ 的虛擬伺服器名稱。您將在後續命令中使用此名稱。</block>
+  <block id="01489ea97f62d455d744d92e643e44a9" category="cell">我看到 ONTAP ontapi 收集器顯示資料的空白或「 0 」指標。</block>
+  <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST 不會報告僅在 ONTAP 系統內部使用的度量。例如、 ONTAP REST 不會收集系統集合體、只會收集 SVM 的「資料」類型。</block>
 </blocks>
