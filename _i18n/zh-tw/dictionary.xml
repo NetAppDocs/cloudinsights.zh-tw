@@ -9719,7 +9719,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 聯邦版不提供儲存工作負載安全功能。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以按一下「活動記錄」表格上方的「_Export」（匯出）按鈕、將活動記錄匯出至.CSV檔案。請注意、只會匯出前 100 、 000 筆記錄。視資料量而定、匯出作業可能需要幾秒鐘到幾分鐘的時間才能完成。</block>
@@ -13013,7 +13012,6 @@ Telegraf ：
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">選取以啟用透過 SSL 連線</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">報告 WWN 別名</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">選取以報告 WWN 別名</block>
-  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">與 ONTAP 進行 Fpolicy 活動的通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI- 對 REST 的對應</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此、收集或報告的計量可能會有所差異。如需關於 ONTAPI 與 REST 之間差異的詳細資訊、請參閱 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文件。</block>
   <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">應以下列方式分配磁碟空間：
@@ -13041,4 +13039,6 @@ Telegraf ：
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">我看到 ONTAP ontapi 收集器顯示資料的空白或「 0 」指標。</block>
   <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST 不會報告僅在 ONTAP 系統內部使用的度量。例如、 ONTAP REST 不會收集系統集合體、只會收集 SVM 的「資料」類型。</block>
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">新增 REST Collector 、輸入所有相同的使用者 / 權限等 您擁有先前的收集器。</block>
+  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。  這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
+  <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">從 Agent 回應至 SVM Data 生命</block>
 </blocks>

@@ -132,10 +132,10 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 | TCP | 443.. | 工作負載安全代理程式 | 叢集或SVM管理IP位址（視SVM收集器組態而定） | API與ONTAP NetApp通訊 
 
 
-| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 工作負載安全代理程式 | 與 ONTAP 進行 Fpolicy 活動的通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。 
+| TCP | 35000 - 55000 | SVM資料LIF IP位址 | 工作負載安全代理程式 | 從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。  這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。 
 
 
-| TCP | 7. | 工作負載安全代理程式 | SVM資料LIF IP位址 | ONTAP 與工作負載安全性之間的單向性。代理程式Ping SVM LIF。 
+| TCP | 7. | 工作負載安全代理程式 | SVM資料LIF IP位址 | 從 Agent 回應至 SVM Data 生命 
 
 
 | SSH | 22 | 工作負載安全代理程式 | 叢集管理 | CIFS/SMB 使用者封鎖所需。 
