@@ -260,16 +260,16 @@ agent:
 核心營運者功能與 Kubernetes 監控
 
 * NetApp 監控
-* Kube-RBAC 代理程式
-* Kube-state 指標
-* Telegraf
+* CI-KRBA-Proxy
+* CI-ksm
+* CI-Telegraf
 * 無 distrouse-root 使用者
 
 
 事件記錄
 
-* Fluent 位元
-* Kubernetes-event-Exporter
+* CI-Fluent 位元
+* CI-Kubernetes-event-Exporter
 
 
 網路效能與地圖
@@ -282,7 +282,7 @@ agent:
 在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。
 
 ....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
 在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_

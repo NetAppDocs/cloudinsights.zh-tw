@@ -10209,7 +10209,6 @@
   <block id="d43e029b6a4626717198326d15889721" category="list-text">主動偵測顯示器的後端效能問題</block>
   <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">公差和污染</block>
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在 _AgentConfiguration_ 中</block>
-  <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">_telegraf_ 、 _Fluent-bit_ 和 _net-觀察者 示範示範必須在叢集中的每個節點上排程 Pod 、才能正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">污染與容許</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">深入瞭解 Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
@@ -13041,4 +13040,10 @@ Telegraf ：
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">新增 REST Collector 、輸入所有相同的使用者 / 權限等 您擁有先前的收集器。</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。  這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">從 Agent 回應至 SVM Data 生命</block>
+  <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
+  <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">CI-KRBA-Proxy</block>
+  <block id="67efe5df179f0f50a5a5e82fd46a07fc" category="list-text">CI-ksm</block>
+  <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">CI-Telegraf</block>
+  <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">CI-Fluent 位元</block>
+  <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">CI-Kubernetes-event-Exporter</block>
 </blocks>

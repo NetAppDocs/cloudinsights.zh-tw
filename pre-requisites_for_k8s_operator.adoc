@@ -212,7 +212,7 @@ OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元�
 
 === 公差和污染
 
-_telegraf_ 、 _Fluent-bit_ 和 _net-觀察者 示範示範必須在叢集中的每個節點上排程 Pod 、才能正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * link:telegraf_agent_k8s_config_options.html["在 _AgentConfiguration_ 中"]。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。
+_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * link:telegraf_agent_k8s_config_options.html["在 _AgentConfiguration_ 中"]。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。
 
 深入瞭解 Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["污染與容許"]。
 
