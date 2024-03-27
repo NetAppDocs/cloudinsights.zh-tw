@@ -1,0 +1,5041 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>設定NetApp Kubernetes監控操作員</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="設定NetApp Kubernetes監控操作員" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html" />
+	<meta property="og:description" content="支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/cloudinsights/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights">
+  <meta name="keywords" content=" telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/cloudinsights/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/cloudinsights/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/cloudinsights/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloudinsights/task_config_telegraf_agent_k8s.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/cloudinsights/js/na-search.js'></script><script src='/zh-tw/cloudinsights/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/cloudinsights/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/cloudinsights/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/cloudinsights/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/cloudinsights/js/jszip.min.js'></script><script src='/zh-tw/cloudinsights/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/cloudinsights/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/cloudinsights/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/cloudinsights/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/cloudinsights/task_config_telegraf_agent_k8s.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/cloudinsights/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/cloudinsights/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/cloudinsights/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/cloudinsights/">-->
+      Cloud Insights
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/cloudinsights/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/cloudinsights/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="本文檔 Cloud Insights"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/index.html">
+        本文檔 Cloud Insights
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_whats_new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/concept_whats_new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊Cloud Insights 以供使用"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_cloud_insights_onboarding_1.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/task_cloud_insights_onboarding_1.html">
+        註冊Cloud Insights 以供使用
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全性"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 安全性</div>-->
+         安全性
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全實務做法"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/security_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/security_overview.html">
+        安全實務做法
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="我們儲存的內容和地點"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/security_information_and_region.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/security_information_and_region.html">
+        我們儲存的內容和地點
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全性管理工具"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/security_admin_tool.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/security_admin_tool.html">
+        安全性管理工具
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 快速入門</div>-->
+         快速入門
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="功能教學課程"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_feature_tutorials.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_feature_tutorials.html">
+        功能教學課程
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="收集資料"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 收集資料</div>-->
+         收集資料
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="總覽"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_getting_started_with_cloud_insights.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_getting_started_with_cloud_insights.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="採購單位需求"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_acquisition_unit_requirements.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/concept_acquisition_unit_requirements.html">
+        採購單位需求
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定擷取單位"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_configure_acquisition_unit.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_configure_acquisition_unit.html">
+        設定擷取單位
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在 Windows/Linux 上設定代理程式"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_agent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_agent.html">
+        在 Windows/Linux 上設定代理程式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定資料收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_configure_data_collectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_configure_data_collectors.html">
+        設定資料收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="判斷資料收集器擷取狀態"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_determining_data_collector_acq_status.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/concept_determining_data_collector_acq_status.html">
+        判斷資料收集器擷取狀態
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理已設定的資料收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_view_configured_data_collectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_view_configured_data_collectors.html">
+        管理已設定的資料收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="研究資料收集器錯誤"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_research_failed_collector.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_research_failed_collector.html">
+        研究資料收集器錯誤
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="匯入建議的儀表板"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_import_from_dashboard_gallery.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_import_from_dashboard_gallery.html">
+        匯入建議的儀表板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用者帳戶與角色"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_user_roles.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_user_roles.html">
+        使用者帳戶與角色
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料收集器清單"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/data_collector_list.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/data_collector_list.html">
+        資料收集器清單
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="訂閱Cloud Insights 此功能"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_subscribing_to_cloud_insights.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/concept_subscribing_to_cloud_insights.html">
+        訂閱Cloud Insights 此功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自動裝置解析"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 自動裝置解析</div>-->
+         自動裝置解析
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="裝置解析度總覽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_device_resolution_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_device_resolution_overview.html">
+        裝置解析度總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="裝置解決規則"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_device_resolution_rules.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_device_resolution_rules.html">
+        裝置解決規則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fibre Channel裝置解析度"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_device_resolution_fibre_channel.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_device_resolution_fibre_channel.html">
+        Fibre Channel裝置解析度
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="IP裝置解析度"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_device_resolution_ip.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_device_resolution_ip.html">
+        IP裝置解析度
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定裝置解析度偏好設定"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_device_resolution_preferences.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_device_resolution_preferences.html">
+        設定裝置解析度偏好設定
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="規則運算式範例"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_device_resolution_regex_examples.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_device_resolution_regex_examples.html">
+        規則運算式範例
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立儀表板"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 建立儀表板</div>-->
+         建立儀表板
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儀表板總覽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_dashboards_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_dashboards_overview.html">
+        儀表板總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儀表板功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_dashboard_features.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_dashboard_features.html">
+        儀表板功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="範例儀表板"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 範例儀表板</div>-->
+         範例儀表板
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="虛擬機器效能"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dashboard_example_VM_performance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dashboard_example_VM_performance.html">
+        虛擬機器效能
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儀表板最佳實務做法"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_dashboard_best_practices.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_dashboard_best_practices.html">
+        儀表板最佳實務做法
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Kubernetes</div>-->
+         Kubernetes
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes總覽頁面"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/kubernetes_landing_page.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/kubernetes_landing_page.html">
+        Kubernetes總覽頁面
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝或升級操作員之前"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/pre-requisites_for_k8s_operator.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/pre-requisites_for_k8s_operator.html">
+        安裝或升級操作員之前
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝監控操作員"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_agent_k8s.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html">
+        安裝監控操作員
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="監控話務員選項"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/telegraf_agent_k8s_config_options.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/telegraf_agent_k8s_config_options.html">
+        監控話務員選項
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes叢集頁面"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/kubernetes_cluster_detail.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/kubernetes_cluster_detail.html">
+        Kubernetes叢集頁面
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="網路監控與地圖"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_kubernetes_network_monitoring_and_map.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_kubernetes_network_monitoring_and_map.html">
+        網路監控與地圖
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更分析"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/kubernetes_change_analytics.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/kubernetes_change_analytics.html">
+        變更分析
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="洞見"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 洞見</div>-->
+         洞見
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="總覽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/insights_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/insights_overview.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="共享的資源正承受壓力"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/insights_shared_resources_under_stress.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/insights_shared_resources_under_stress.html">
+        共享的資源正承受壓力
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes命名空間不足"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/insights_k8s_namespaces_running_out_of_space.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/insights_k8s_namespaces_running_out_of_space.html">
+        Kubernetes命名空間不足
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="回收 ONTAP Cold Storage"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/insights_reclaim_ontap_cold_storage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/insights_reclaim_ontap_cold_storage.html">
+        回收 ONTAP Cold Storage
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="精選資訊ONTAP"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_ontap_essentials.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/concept_ontap_essentials.html">
+        精選資訊ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用查詢"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用查詢</div>-->
+         使用查詢
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="查詢資產"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_querying_assets.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_querying_assets.html">
+        查詢資產
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立查詢"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_create_query.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_create_query.html">
+        建立查詢
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="檢視可用的查詢"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_view_queries.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_view_queries.html">
+        檢視可用的查詢
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將查詢結果匯出至.CSV"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_export_query_results.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_export_query_results.html">
+        將查詢結果匯出至.CSV
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="修改或刪除查詢"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_modify_delete_query.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_modify_delete_query.html">
+        修改或刪除查詢
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="為物件指派多個應用程式/註釋"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_query_assign_multiple_applicationss.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_query_assign_multiple_applicationss.html">
+        為物件指派多個應用程式/註釋
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將表格值複製到剪貼簿"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_query_copy_table_values.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_query_copy_table_values.html">
+        將表格值複製到剪貼簿
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="查詢記錄"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_log_explorer.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_log_explorer.html">
+        查詢記錄
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用註釋"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用註釋</div>-->
+         使用註釋
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="定義註釋"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_defining_annotations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_defining_annotations.html">
+        定義註釋
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用註釋"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_create_annotation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_create_annotation.html">
+        使用註釋
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用註釋規則"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_create_annotation_rules.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_create_annotation_rules.html">
+        使用註釋規則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用API匯入附註"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_annotation_import.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_annotation_import.html">
+        使用API匯入附註
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用應用程式"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用應用程式</div>-->
+         使用應用程式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="應用程式概念"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_about_applications.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_about_applications.html">
+        應用程式概念
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定應用程式"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_create_application.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_create_application.html">
+        設定應用程式
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="監控與警示"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 監控與警示</div>-->
+         監控與警示
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立監視器"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_create_monitor.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_create_monitor.html">
+        建立監視器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="檢視及管理警示"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_view_and_manage_alerts.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_view_and_manage_alerts.html">
+        檢視及管理警示
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定通知收件者"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_notifications_email.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_notifications_email.html">
+        設定通知收件者
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系統定義的監視器"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_system_monitors.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_system_monitors.html">
+        系統定義的監視器
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用API"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/API_Overview.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/API_Overview.html">
+        使用API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Webhook通知"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_create_webhook.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/task_create_webhook.html">
+        Webhook通知
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="監控環境"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 監控環境</div>-->
+         監控環境
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="稽核事件"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_audit.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_audit.html">
+        稽核事件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="TTL和減取樣"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="concept_ttl_and_downsampling.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_ttl_and_downsampling.html">
+        TTL和減取樣
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資產頁面資訊"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 資產頁面資訊</div>-->
+         資產頁面資訊
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資產頁面總覽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_asset_page_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_asset_page_overview.html">
+        資產頁面總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="物件的關聯中篩選"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_in_context_filters.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_in_context_filters.html">
+        物件的關聯中篩選
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="摘要拓撲區段"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_asset_summary_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_asset_summary_section.html">
+        摘要拓撲區段
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="專家檢視區段"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_asset_expert_view_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_asset_expert_view_section.html">
+        專家檢視區段
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用者資料區段"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_asset_user_data_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_asset_user_data_section.html">
+        使用者資料區段
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="相關警示區段"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_asset_alerts_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_asset_alerts_section.html">
+        相關警示區段
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="儲存虛擬化"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_storage_virtualization.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_storage_virtualization.html">
+        儲存虛擬化
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="搜尋資產的提示與秘訣"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_searching_assets.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_searching_assets.html">
+        搜尋資產的提示與秘訣
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="報告"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 報告</div>-->
+         報告
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="報告總覽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_overview.html">
+        報告總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="報告使用者角色"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_user_roles.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_user_roles.html">
+        報告使用者角色
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用預先定義的報告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_predefined_reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_predefined_reports.html">
+        使用預先定義的報告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Storage Manager儀表板"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_storage_manager_dashboard.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_storage_manager_dashboard.html">
+        Storage Manager儀表板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立範例報告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_create_example.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_create_example.html">
+        建立範例報告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理報告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_managing_reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_managing_reports.html">
+        管理報告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自訂報告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_creating_custom_reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_creating_custom_reports.html">
+        自訂報告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料模型"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_creating_custom_reports.html#reporting-data-models" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_creating_custom_reports.html#reporting-data-models">
+        資料模型
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="報告資料庫API"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_querying_database.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_querying_database.html">
+        報告資料庫API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料保留"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_data_retention.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_data_retention.html">
+        資料保留
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="架構圖表"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reporting_schema_diagrams.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reporting_schema_diagrams.html">
+        架構圖表
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="架構表格"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reference_schemas.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reference_schemas.html">
+        架構表格
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作負載安全"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 工作負載安全</div>-->
+         工作負載安全
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="關於工作負載安全性"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/cs_intro.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/cs_intro.html">
+        關於工作負載安全性
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 快速入門</div>-->
+         快速入門
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作負載安全入門"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_cs_getting_started.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_cs_getting_started.html">
+        工作負載安全入門
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作負載安全代理程式需求"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_cs_agent_requirements.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/concept_cs_agent_requirements.html">
+        工作負載安全代理程式需求
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定工作負載安全代理程式"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_cs_add_agent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_cs_add_agent.html">
+        設定工作負載安全代理程式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="刪除工作負載安全代理程式"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_cs_delete_agent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_cs_delete_agent.html">
+        刪除工作負載安全代理程式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定AD目錄收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_user_dir_connect.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_user_dir_connect.html">
+        設定AD目錄收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定LDAP目錄收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_user_dir_connect_ldap.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_user_dir_connect_ldap.html">
+        設定LDAP目錄收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定ONTAP SVM Data Collector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_add_collector_svm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_add_collector_svm.html">
+        設定ONTAP SVM Data Collector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定Cloud ONTAP Data Collector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_cs_incloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_cs_incloud.html">
+        設定Cloud ONTAP Data Collector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作負載安全性使用者管理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_cs_user_management.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_cs_user_management.html">
+        工作負載安全性使用者管理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="事件率檢查器（代理程式規模調整指南）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_cs_event_rate_checker.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/concept_cs_event_rate_checker.html">
+        事件率檢查器（代理程式規模調整指南）
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="警示"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/cs_alert_data.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/cs_alert_data.html">
+        警示
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="鑑識"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 鑑識</div>-->
+         鑑識
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="活動鑑識：所有活動"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/forensic_activity_history.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/forensic_activity_history.html">
+        活動鑑識：所有活動
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="活動鑑識：實體"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/forensic_entity_detail.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/forensic_entity_detail.html">
+        活動鑑識：實體
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用者"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/forensic_user_overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/forensic_user_overview.html">
+        使用者
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自動化回應原則"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/cs_automated_response_policies.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/cs_automated_response_policies.html">
+        自動化回應原則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="允許的檔案類型原則"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/ws_allowed_file_types.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/ws_allowed_file_types.html">
+        允許的檔案類型原則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="不受依賴的勒索軟體保護整合ONTAP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_cs_integration_with_ontap_arp.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_cs_integration_with_ontap_arp.html">
+        不受依賴的勒索軟體保護整合ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP 存取遭拒整合"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_ws_integration_with_ontap_access_denied.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_ws_integration_with_ontap_access_denied.html">
+        ONTAP 存取遭拒整合
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="封鎖使用者存取"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/cs_restrict_user_access.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/cs_restrict_user_access.html">
+        封鎖使用者存取
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="模擬勒索軟體攻擊"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_cs_attack_simulator.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_cs_attack_simulator.html">
+        模擬勒索軟體攻擊
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="通知"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/cs_notifications_email.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/cs_notifications_email.html">
+        通知
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作負載安全API"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_cs_api.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_cs_api.html">
+        工作負載安全API
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Active IQ"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_activeiq.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/concept_activeiq.html">
+        Active IQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="疑難排解"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 疑難排解</div>-->
+         疑難排解
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="一般疑難排解"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_troubleshooting_general_problems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_troubleshooting_general_problems.html">
+        一般疑難排解
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="疑難排解Linux擷取單元問題"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_troubleshooting_linux_acquisition_unit_problems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_troubleshooting_linux_acquisition_unit_problems.html">
+        疑難排解Linux擷取單元問題
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="疑難排解Windows接收單元問題"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_troubleshooting_windows_acquisition_unit_problems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_troubleshooting_windows_acquisition_unit_problems.html">
+        疑難排解Windows接收單元問題
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="研究資料收集器錯誤"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_research_failed_collector.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/task_research_failed_collector.html">
+        研究資料收集器錯誤
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料收集器支援對照表"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reference_data_collector_support_matrix.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/reference_data_collector_support_matrix.html">
+        資料收集器支援對照表
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="參考支援"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 參考支援</div>-->
+         參考支援
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="正在申請支援"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_requesting_support.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/concept_requesting_support.html">
+        正在申請支援
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料收集器參考資料-基礎架構"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 資料收集器參考資料-基礎架構</div>-->
+         資料收集器參考資料-基礎架構
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="廠商參考總覽"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/concept_data_collector_reference.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/concept_data_collector_reference.html">
+        廠商參考總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_amazon_ec2.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_amazon_ec2.html">
+        AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Amazon FSX for NetApp ONTAP 產品"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_amazon_fsx.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_na_amazon_fsx.html">
+        Amazon FSX for NetApp ONTAP 產品
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ms_azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_ms_azure.html">
+        Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Broadcom"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Broadcom</div>-->
+         Broadcom
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Brocade網路顧問"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_brocade_bna.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_brocade_bna.html">
+        Brocade網路顧問
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fibre Channel交換器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_brocade_fc_switch.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_brocade_fc_switch.html">
+        Fibre Channel交換器
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cisco"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_cisco_fc_switch.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_cisco_fc_switch.html">
+        Cisco
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cohesity SmartfFiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_cohesity_smartfiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_cohesity_smartfiles.html">
+        Cohesity SmartfFiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Dell"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Dell</div>-->
+         Dell
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="XC系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_dell_xc_series.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_dell_xc_series.html">
+        XC系列
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Dell EMC"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Dell EMC</div>-->
+         Dell EMC
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料網域"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_datadomain.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_datadomain.html">
+        資料網域
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ECS"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_ecs.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_ecs.html">
+        ECS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PowerScale"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_isilon.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_isilon.html">
+        PowerScale
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Isilon / PowerScale REST"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_isilon_rest.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_isilon_rest.html">
+        Isilon / PowerScale REST
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PowerStore"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_powerstore.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_powerstore.html">
+        PowerStore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="RecoverPoint"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_recoverpoint.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_recoverpoint.html">
+        RecoverPoint
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ScaleIO"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_scaleio.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_scaleio.html">
+        ScaleIO
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Unity（VNXe）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_unity.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_unity.html">
+        Unity（VNXe）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Vmax /最大PowerMax"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_vmax_powermax.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_vmax_powermax.html">
+        Vmax /最大PowerMax
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VNX區塊（Clariion）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_vnx_block.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_vnx_block.html">
+        VNX區塊（Clariion）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VNX檔案（Celerra）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_vnx_file.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_vnx_file.html">
+        VNX檔案（Celerra）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VNX統一化"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_vnx_unified.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_vnx_unified.html">
+        VNX統一化
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VPLEX"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_vplex.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_vplex.html">
+        VPLEX
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="XtremIO"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_emc_xio.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_emc_xio.html">
+        XtremIO
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fujitsu"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_fujitsu_eternus.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_fujitsu_eternus.html">
+        Fujitsu
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_google_cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_google_cloud.html">
+        Google
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HP企業"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> HP企業</div>-->
+         HP企業
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HP Alletra 9000與Primera"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_hp_3par.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_hp_3par.html">
+        HP Alletra 9000與Primera
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HP Command View AE"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_hpe_commandview.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_hpe_commandview.html">
+        HP Command View AE
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HPE Alletra 6000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_hpe_nimble.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_hpe_nimble.html">
+        HPE Alletra 6000
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hitachi Data Systems"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Hitachi Data Systems</div>-->
+         Hitachi Data Systems
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HDS Command Suite"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_hds_commandsuite.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_hds_commandsuite.html">
+        HDS Command Suite
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HDS HNAS"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_hds_nas.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_hds_nas.html">
+        HDS HNAS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HDS Ops Center"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_hds_ops_center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_hds_ops_center.html">
+        HDS Ops Center
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Infinidat"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_infinidat_infinibox.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_infinidat_infinibox.html">
+        Infinidat
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Huawei"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_huawei_oceanstor.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_huawei_oceanstor.html">
+        Huawei
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="IBM"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> IBM</div>-->
+         IBM
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="無所不安全"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ibm_cleversafe.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ibm_cleversafe.html">
+        無所不安全
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CS系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ibm_cs.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ibm_cs.html">
+        CS系列
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系統儲存設備DS8000系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ibm_ds.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ibm_ds.html">
+        系統儲存設備DS8000系列
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PowerVM"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ibm_powervm.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ibm_powervm.html">
+        PowerVM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SAN Volume控制器（SVC）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ibm_svc.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ibm_svc.html">
+        SAN Volume控制器（SVC）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="XIV/A9000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ibm_xiv.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ibm_xiv.html">
+        XIV/A9000
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="聯想"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_lenovo.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_lenovo.html">
+        聯想
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Microsoft"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Microsoft</div>-->
+         Microsoft
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure NetApp Files"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ms_anf.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ms_anf.html">
+        Azure NetApp Files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hyper-V"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_ms_hyperv.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_ms_hyperv.html">
+        Hyper-V
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> NetApp</div>-->
+         NetApp
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Connection for ONTAP 39"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_cloud_connection.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_cloud_connection.html">
+        Cloud Connection for ONTAP 39
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_cloud_volumes_ontap.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_cloud_volumes_ontap.html">
+        Cloud Volumes ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="適用於AWS的Cloud Volumes Services"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_cloud_volumes.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_cloud_volumes.html">
+        適用於AWS的Cloud Volumes Services
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料管理軟體ONTAP"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_cdot.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_cdot.html">
+        資料管理軟體ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="流程7模式Data ONTAP"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_7mode.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_7mode.html">
+        流程7模式Data ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_eseries.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_eseries.html">
+        E系列
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="解決方案管理伺服器的問題NetApp HCI"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_hci.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_hci.html">
+        解決方案管理伺服器的問題NetApp HCI
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SolidFire"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_solidfire.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_solidfire.html">
+        SolidFire
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_na_storagegrid.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/cloudinsights/task_dc_na_storagegrid.html">
+        StorageGRID
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Nutanix"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_nutanix.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_nutanix.html">
+        Nutanix
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="OpenStack"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_openstack.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_openstack.html">
+        OpenStack
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Oracle"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_oracle_zfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_oracle_zfs.html">
+        Oracle
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="純"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_pure_flasharray.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_pure_flasharray.html">
+        純
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Red Hat"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_redhat_virtualization.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_redhat_virtualization.html">
+        Red Hat
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="RRubrik CDM"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_rubrik_cdm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_rubrik_cdm.html">
+        RRubrik CDM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_dc_vmware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_dc_vmware.html">
+        VMware
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料收集器參考資料-服務"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 資料收集器參考資料-服務</div>-->
+         資料收集器參考資料-服務
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="主機/節點"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_node.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_node.html">
+        主機/節點
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ActiveMQ"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_activemq.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_activemq.html">
+        ActiveMQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Apache"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_apache.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_apache.html">
+        Apache
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="駐港總領事"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_consul.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_consul.html">
+        駐港總領事
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Couchbase"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_couchbase.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_couchbase.html">
+        Couchbase
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CouchDB"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_couchdb.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_couchdb.html">
+        CouchDB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Docker"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_docker.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_docker.html">
+        Docker
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="彈性搜尋"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_elasticsearch.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_elasticsearch.html">
+        彈性搜尋
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flink"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_flink.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_flink.html">
+        Flink
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hadoop"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_hadoop.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_hadoop.html">
+        Hadoop
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HAProxy"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_haproxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_haproxy.html">
+        HAProxy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Java"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_jvm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_jvm.html">
+        Java
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="卡夫卡"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_kafka.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_kafka.html">
+        卡夫卡
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kapacitor"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="task_config_telegraf_kapacitor.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_kapacitor.html">
+        Kapacitor
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kibana"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_kibana.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_kibana.html">
+        Kibana
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_agent.html#kubernetes" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_agent.html#kubernetes">
+        Kubernetes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="memcached"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_memcached.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_memcached.html">
+        memcached
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MongoDB"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_mongodb.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_mongodb.html">
+        MongoDB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MySQL"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_mysql.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_mysql.html">
+        MySQL
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Netstat"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_netstat.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_netstat.html">
+        Netstat
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="恩靈思"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_nginx.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_nginx.html">
+        恩靈思
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="OpenZFS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="task_config_telegraf_openzfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_openzfs.html">
+        OpenZFS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PostgreSQL"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_postgresql.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_postgresql.html">
+        PostgreSQL
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Puppet"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_puppetagent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_puppetagent.html">
+        Puppet
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="紅皮"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/task_config_telegraf_redis.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_redis.html">
+        紅皮
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="RethinkDB"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="task_config_telegraf_rethinkdb.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_rethinkdb.html">
+        RethinkDB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Zookkeeper"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="task_config_telegraf_zookeeper.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/cloudinsights/task_config_telegraf_zookeeper.html">
+        Zookkeeper
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="物件圖示參考"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reference_object_icons.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/cloudinsights/reference_object_icons.html">
+        物件圖示參考
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_config_telegraf_agent_k8s.html" 
+      dale-entry-url="/reference_legal_notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/cloudinsights/reference_legal_notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/cloudinsights"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/cloudinsights"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/cloudinsights/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">設定NetApp Kubernetes監控操作員</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-27 14:37:03 +0000">03/27/2024</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/cloudinsights/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/cloudinsights/task_config_telegraf_agent_k8s.html&page-title=設定NetApp Kubernetes監控操作員" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_config_telegraf_agent_k8s.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/cloudinsights/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/cloudinsights/pdfs/fullsite-sidebar/本文檔_Cloud_Insights.pdf" >
+                    <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/安全性.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            安全性
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/快速入門.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            快速入門
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/收集資料.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            收集資料
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/自動裝置解析.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            自動裝置解析
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/建立儀表板.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            建立儀表板
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/範例儀表板.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            範例儀表板
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Kubernetes.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Kubernetes
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/洞見.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            洞見
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/使用查詢.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用查詢
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/使用註釋.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用註釋
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/使用應用程式.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用應用程式
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/監控與警示.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            監控與警示
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/監控環境.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            監控環境
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/資產頁面資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            資產頁面資訊
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/報告.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            報告
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/工作負載安全.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            工作負載安全
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/快速入門.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            快速入門
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/鑑識.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            鑑識
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/疑難排解.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            疑難排解
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/參考支援.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            參考支援
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/資料收集器參考資料_基礎架構.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            資料收集器參考資料-基礎架構
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Broadcom.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Broadcom
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Dell.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Dell
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Dell_EMC.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Dell EMC
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/HP企業.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            HP企業
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Hitachi_Data_Systems.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Hitachi Data Systems
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/IBM.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            IBM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/Microsoft.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Microsoft
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/NetApp.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            NetApp
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/cloudinsights/pdfs/sidebar/資料收集器參考資料_服務.pdf" 
+            
+          >
+            <img src="/zh-tw/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            資料收集器參考資料-服務
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/cloudinsights/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="toc" class="toc">
+<div id="toctitle">目錄</div>
+<ul class="sectlevel1">
+<li><a href="#安裝netapp-kubernetes監控操作員之前">安裝NetApp Kubernetes監控操作員之前</a></li>
+<li><a href="#安裝netapp-kubernetes監控操作員">安裝NetApp Kubernetes監控操作員</a></li>
+<li><a href="#升級">升級</a>
+<ul class="sectlevel2">
+<li><a href="#升級至最新的netapp-kubernetes監控操作員">升級至最新的NetApp Kubernetes監控操作員</a></li>
+</ul>
+</li>
+<li><a href="#停止並啟動netapp-kubernetes監控操作員">停止並啟動NetApp Kubernetes監控操作員</a></li>
+<li><a href="#正在解除安裝">正在解除安裝</a>
+<ul class="sectlevel2">
+<li><a href="#移除netapp-kubernetes監控操作員">移除NetApp Kubernetes監控操作員</a></li>
+</ul>
+</li>
+<li><a href="#關於kube-state指標">關於Kube-state指標</a>
+<ul class="sectlevel2">
+<li><a href="#kube-state指標計數器">Kube-state指標計數器</a></li>
+<li><a href="#設定proxy支援">設定Proxy支援</a></li>
+<li><a href="#使用自訂或私有泊塢視窗儲存庫">使用自訂或私有泊塢視窗儲存庫</a></li>
+<li><a href="#openshift指示">OpenShift指示</a></li>
+</ul>
+</li>
+<li><a href="#關於機密的備註">關於機密的備註</a></li>
+<li><a href="#正在驗證kubernetes-checksum">正在驗證Kubernetes Checksum</a></li>
+<li><a href="#疑難排解">疑難排解</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="註">
+</td>
+<td class="content">
+如果您有 Cloud Insights 聯邦版、您的安裝和組態指示可能與本頁的指示不同。依照 Cloud Insights 中的指示安裝 NetApp Kubernetes 監控操作員。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/kubernetes_tile.png" alt="Kubernetes資料收集器Tile"></span></p>
+</div>
+<!-- toc disabled -->
+<div class="paragraph">
+<p>從 Cloud Insights Docker 登錄下載操作員和資料收集器。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="安裝netapp-kubernetes監控操作員之前">安裝NetApp Kubernetes監控操作員之前</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/important.svg" alt="重要">
+</td>
+<td class="content">
+閱讀 <a href="pre-requisites_for_k8s_operator.html">"* 安裝或升級之前 *"</a> 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="安裝netapp-kubernetes監控操作員">安裝NetApp Kubernetes監控操作員</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="./media/NKMO-Instructions-1.png" alt=""></span><br>
+<span class="image"><img src="./media/NKMO-Instructions-2.png" alt=""></span></p>
+</div>
+<div class="olist arabic">
+<div class="title">在Kubernetes上安裝NetApp Kubernetes監控操作員代理程式的步驟：</div>
+<ol class="arabic">
+<li>
+<p>輸入唯一的叢集名稱和命名空間。如果您是 <a href="#升級">升級</a> 從先前的 Kubernetes 運算子中、使用相同的叢集名稱和命名空間。</p>
+</li>
+<li>
+<p>一旦輸入這些指令碼、您就可以將 Download Command 片段複製到剪貼簿。</p>
+</li>
+<li>
+<p>將程式碼片段貼到_bash_視窗中並執行。將下載操作員安裝檔案。請注意、程式碼片段具有獨特的金鑰、有效時間為24小時。</p>
+</li>
+<li>
+<p>如果您有自訂或私有儲存庫、請複製選用的「影像」抽取片段、將其貼入 <em>bash</em> Shell 並加以執行。影像擷取完成後、請將其複製到您的私有儲存庫。請務必維持相同的標記和資料夾結構。更新 <em>operer-deployment.yaml</em> 中的路徑、以及 <em>operer-config.yaml</em> 中的泊塢視窗儲存庫設定。</p>
+</li>
+<li>
+<p>如有需要、請檢閱可用的組態選項、例如 Proxy 或私有儲存庫設定。您可以深入瞭解 <a href="telegraf_agent_k8s_config_options.html">"組態選項"</a>。</p>
+</li>
+<li>
+<p>準備好之後、請複製 KUBECtl 套用程式碼片段、下載並執行、以部署操作員。</p>
+</li>
+<li>
+<p>安裝會自動繼續進行。完成後、按一下 _ 下一步 _ 按鈕。</p>
+</li>
+<li>
+<p>安裝完成後、按一下 _ 下一步 _ 按鈕。請務必刪除或安全儲存 <em>operer-Secrets 。 yaml</em> 檔案。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>深入瞭解 <a href="#configuring-proxy-support">設定 Proxy</a>。</p>
+</div>
+<div class="paragraph">
+<p>深入瞭解 <a href="#using-a-custom-or-private-docker-repository">使用自訂 / 私有泊塢視窗儲存庫</a>。</p>
+</div>
+<div class="paragraph">
+<p>安裝 NetApp Kubernetes Monitoring Operator 時、依預設會啟用 Kubernetes EMS 記錄收集。若要在安裝後停用此集合、請按一下 Kubernetes 叢集詳細資料頁面頂端的 * 修改部署 * 按鈕、然後取消選取「記錄集合」。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/K8s_Modify_Deployment_Screen.png" alt="「修改部署」畫面顯示「記錄集合」核取方塊"></span></p>
+</div>
+<div class="paragraph">
+<p>此畫面也會顯示目前的記錄收集狀態。以下是可能的狀態：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>已停用</p>
+</li>
+<li>
+<p>已啟用</p>
+</li>
+<li>
+<p>啟用 - 安裝進行中</p>
+</li>
+<li>
+<p>已啟用 - 離線</p>
+</li>
+<li>
+<p>已啟用 - 線上</p>
+</li>
+<li>
+<p>錯誤 - API 金鑰權限不足</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="升級">升級</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="升級至最新的netapp-kubernetes監控操作員">升級至最新的NetApp Kubernetes監控操作員</h3>
+<div class="paragraph">
+<p>判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
+如果存在 AgentConfiguration ：</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#installing-the-netapp-kubernetes-monitoring-operator">安裝</a> 現有運算子的最新運算子。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>確保您是 <a href="#using-a-custom-or-private-docker-repository">擷取最新的容器映像</a> 如果您使用的是自訂儲存庫。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果 AgentConfiguration 不存在：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：</p>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
+* 建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get agent -o yaml &gt; agent_backup.yaml
+* &lt;&lt;to-remove-the-netapp-kubernetes-monitoring-operator,解除安裝&gt;&gt; 現有的運算子。
+* &lt;&lt;installing-the-netapp-kubernetes-monitoring-operator,安裝&gt;&gt; 最新的運算子。</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>請使用相同的叢集名稱。</p>
+</li>
+<li>
+<p>下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。</p>
+</li>
+<li>
+<p>確保您是 <a href="#using-a-custom-or-private-docker-repository">擷取最新的容器映像</a> 如果您使用的是自訂儲存庫。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="停止並啟動netapp-kubernetes監控操作員">停止並啟動NetApp Kubernetes監控操作員</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>若要停止NetApp Kubernetes監控操作員：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=0
+若要啟動NetApp Kubernetes監控操作員：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="正在解除安裝">正在解除安裝</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="移除netapp-kubernetes監控操作員">移除NetApp Kubernetes監控操作員</h3>
+<div class="paragraph">
+<p>請注意、NetApp Kubernetes監控操作員的預設命名空間為「NetApp監控」。  如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</p>
+</div>
+<div class="paragraph">
+<p>可使用下列命令解除安裝較新版本的監控操作員：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl -n &lt;NAMESPACE&gt; delete agent -l installed-by=nkmo-&lt;NAMESPACE&gt;
+kubectl -n &lt;NAMESPACE&gt; delete clusterrole,clusterrolebinding,crd,svc,deploy,role,rolebinding,secret,sa -l installed-by=nkmo-&lt;NAMESPACE&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl delete ns &lt;NAMESPACE&gt;
+如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl -n &lt;NAMESPACE&gt; delete agent agent-monitoring-netapp
+kubectl delete crd agents.monitoring.netapp.com
+kubectl -n &lt;NAMESPACE&gt; delete role agent-leader-election-role
+kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader &lt;NAMESPACE&gt;-agent-manager-role &lt;NAMESPACE&gt;-agent-proxy-role &lt;NAMESPACE&gt;-cluster-role-privileged
+kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding &lt;NAMESPACE&gt;-agent-manager-rolebinding &lt;NAMESPACE&gt;-agent-proxy-rolebinding &lt;NAMESPACE&gt;-cluster-role-binding-privileged
+kubectl delete &lt;NAMESPACE&gt;-psp-nkmo
+kubectl delete ns &lt;NAMESPACE&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果先前已建立安全性內容限制：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl delete scc telegraf-hostaccess</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="關於kube-state指標">關於Kube-state指標</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使用者互動。</p>
+</div>
+<div class="sect2">
+<h3 id="kube-state指標計數器">Kube-state指標計數器</h3>
+<div class="paragraph">
+<p>請使用下列連結來存取這些kube狀態度量計數器的資訊：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md">"ConfigMap指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md">"示範設定指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md">"部署指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md">"入口指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md">"命名空間度量"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md">"節點度量"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md">"持續Volume指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md">"持續Volume報銷標準"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md">"Pod指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md">"ReplicaSet度量"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md">"機密數據"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md">"服務指標"</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md">"StatefulSet指標"</a></p>
+</li>
+</ol>
+</div>
+<hr>
+<div class="literalblock">
+<div class="content">
+<pre> == Configuring the Operator
+在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含一些設定的註解範例。請參閱清單 link:telegraf_agent_k8s_config_options.html["可用的設定"] 適用於最新版的運算子。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您也可以使用下列命令在部署運算子之後編輯此資源：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring edit AgentConfiguration
+若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl get crd agentconfigurations.monitoring.netapp.com
+如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="設定proxy支援">設定Proxy支援</h3>
+<div class="paragraph">
+<p>您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境</p>
+</li>
+<li>
+<p>目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果您使用其中一種或兩種Proxy、為了安裝NetApp Kubernetes作業監視器、您必須先確定您的Proxy已設定為允許與Cloud Insights 您的點菜環境進行良好的通訊。如果您有Proxy、而且可以Cloud Insights 從要安裝該運算子的伺服器/ VM存取功能、則您的Proxy可能設定正確。</p>
+</div>
+<div class="paragraph">
+<p>對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</p>
+</div>
+<div class="paragraph">
+<p>若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>為目前使用者設定_https_proxy_和/或_https_proxy_環境變數：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：</p>
+<div class="literalblock">
+<div class="content">
+<pre> export https_proxy=&lt;proxy_server&gt;:&lt;proxy_port&gt;
+.. 如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>export http_proxy=&lt;proxy_username&gt;:&lt;proxy_password&gt;@&lt;proxy_server&gt;:&lt;proxy_port&gt;</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。</p>
+</div>
+<div class="paragraph">
+<p>在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>agent:
+  ...
+  proxy:
+    server: &lt;server for proxy&gt;
+    port: &lt;port for proxy&gt;
+    username: &lt;username for proxy&gt;
+    password: &lt;password for proxy&gt;
+
+    # In the noproxy section, enter a comma-separated list of
+    # IP addresses and/or resolvable hostnames that should bypass
+    # the proxy
+    noproxy: &lt;comma separated list&gt;
+
+    isTelegrafProxyEnabled: true
+    isFluentbitProxyEnabled: &lt;true or false&gt; # true if Events Log enabled
+    isCollectorsProxyEnabled: &lt;true or false&gt; # true if Network Performance and Map enabled
+    isAuProxyEnabled: &lt;true or false&gt; # true if AU enabled
+  ...
+...</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="使用自訂或私有泊塢視窗儲存庫">使用自訂或私有泊塢視窗儲存庫</h3>
+<div class="paragraph">
+<p>根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。</p>
+</div>
+<div class="paragraph">
+<p>從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。</p>
+</div>
+<div class="paragraph">
+<p>核心營運者功能與 Kubernetes 監控</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp 監控</p>
+</li>
+<li>
+<p>CI-KRBA-Proxy</p>
+</li>
+<li>
+<p>CI-ksm</p>
+</li>
+<li>
+<p>CI-Telegraf</p>
+</li>
+<li>
+<p>無 distrouse-root 使用者</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>事件記錄</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CI-Fluent 位元</p>
+</li>
+<li>
+<p>CI-Kubernetes-event-Exporter</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>網路效能與地圖</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CI-net-觀察者</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。</p>
+</div>
+<div class="paragraph">
+<p>在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>image: &lt;docker repo of the enterprise/corp docker repo&gt;/kube-rbac-proxy:&lt;ci-kube-rbac-proxy version&gt;
+image: &lt;docker repo of the enterprise/corp docker repo&gt;/netapp-monitoring:&lt;version&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 <em><a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/" class="bare">https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/</a></em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>agent:
+  ...
+  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  dockerRepo: your.docker.repo/long/path/to/test
+  # Optional: A docker image pull secret that maybe needed for your private docker registry
+  dockerImagePullSecret: docker-secret-name</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="openshift指示">OpenShift指示</h3>
+<div class="paragraph">
+<p>如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 <em>operer-config.yaml</em> 中編輯 AgentConfiguration 、才能啟用 <em>runPrivileged</em> 設定：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># Set runPrivileged to true SELinux is enabled on your kubernetes nodes
+runPrivileged: true</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="關於機密的備註">關於機密的備註</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>若要移除 NetApp Kubernetes 監控操作員檢視整個叢集機密的權限、請在安裝之前從 <em>operer-setup.yaml</em> 檔案中刪除下列資源：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> ClusterRole/netapp-ci-&lt;namespace&gt;-agent-secret-clusterrole
+ ClusterRoleBinding/netapp-ci-&lt;namespace&gt;-agent-secret-clusterrolebinding</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果是升級、也請從叢集中刪除資源：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> kubectl delete ClusterRole/netapp-ci-&lt;namespace&gt;-agent-secret-clusterrole
+ kubectl delete ClusterRoleBinding/netapp-ci-&lt;namespace&gt;-agent-secret-clusterrolebinding</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果啟用變更分析、請修改 <em>AgentConfiguration</em> 或 <em>operer-config.yaml</em> 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># change-management:
+  ...
+  # # A comma separated list of kinds to ignore from watching from the default set of kinds watched by the collector
+  # # Each kind will have to be prefixed by its apigroup
+  # # Example: '"networking.k8s.io.networkpolicies,batch.jobs", "authorization.k8s.io.subjectaccessreviews"'
+  kindsToIgnoreFromWatch: '"secrets"'
+  ...</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="正在驗證kubernetes-checksum">正在驗證Kubernetes Checksum</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。</p>
+</div>
+<div class="paragraph">
+<p>請遵循下列步驟：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>依照指示複製代理程式安裝程式程式片段。</p>
+</li>
+<li>
+<p>不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。</p>
+</li>
+<li>
+<p>從命令中刪除後端"--install"。</p>
+</li>
+<li>
+<p>從文字編輯器複製整個命令。</p>
+</li>
+<li>
+<p>現在請將其貼到命令視窗（工作目錄）中、然後執行。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>下載並安裝（預設）：</p>
+<div class="literalblock">
+<div class="content">
+<pre> installerName=cloudinsights-rhel_centos.sh … &amp;&amp; sudo -E -H ./$installerName --download –-install
+** 僅限下載：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>installerName=cloudinsights-rhel_centos.sh … &amp;&amp; sudo -E -H ./$installerName --download</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。  這些成品包括但不限於：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>安裝指令碼</p>
+</li>
+<li>
+<p>環境檔案</p>
+</li>
+<li>
+<p>Y反 洗錢檔案</p>
+</li>
+<li>
+<p>簽署的Checksum檔案（sh256.signed）</p>
+</li>
+<li>
+<p>用於簽名驗證的一個PES檔案（NetApp_CERT.pem）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。</p>
+</div>
+<div class="paragraph">
+<p>您可以確認其指紋為下列項目、以驗證該PEM檔案：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> 1A918038E8E127BB5C87A202DF173B97A05B4996
+更具體地說、</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
+簽署的Checksum檔案可以使用PEM檔案進行驗證：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>sudo -E -H ./&lt;installation_script_name&gt; --install</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="疑難排解">疑難排解</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">問題：</th>
+<th class="tableblock halign-left valign-top">試用：</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我在記錄中看到類似下列內容的訊息：<br>
+<br>
+E0901 15 ： 21 ： 39.962145 1 個反射器。前往： 178 ） k8s.io/kube-state 指標 / 內部 / 儲存 / 建置器。前往： 352 ：無法列出 * v1.MutatingWebhookConfiguration ：伺服器找不到要求的資源<br>
+E0901 15 ： 21 ： 43.168161 1 個反射器。前往： 178 ： k8s.io/kube-state - 規格 / 內部 / 儲存 / 建置器。前往： 352 ：無法列出 * v1. 租用：伺服器找不到要求的資源（ Get scales.calation.k8s.io ）<br>
+等等</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。<br>
+<br>
+<br>
+若要取得 Kubernetes 版本：<br>
+<br>
+ <em>kubectl 版本 _<br>
+<br>
+若要取得 kube 狀態度量版本：<br>
+<br>
+ _kubectl Get deploy/kube-state-metabs -o jsonpath='{.image}'</em><br>
+<br>
+為了防止這些訊息發生、使用者可以修改其 kube 狀態度量部署、以停用下列簡化：<br>
+<br>
+_ 互斥網路連帽組態 _<br>
+_validatingwebhookconfigurations _<br>
+_vole附件 資源 _<br>
+<br>
+更具體地說、他們可以使用下列 CLI 引數：<br>
+<br>
+resources= 憑證命名查詢、組態對應、可頌工作、取消設定、部署、端點、水平播客自動轉接器、擷取、工作、限制範圍、命名空間、網路原則、節點、持續不斷的卷冊、持續不斷的預算、群組、複製集、控制器、資源等量、機密、服務、狀態集<br>
+<br>
+預設資源清單為：<br>
+<br>
+" 憑證命名查詢、組態對應、可頌工作、取消設定集、部署、端點、水平播客自動轉接器、擷取、工作、租用、限制範圍、互動式網路連線組態、命名空間、網路原則、節點、持續不斷的磁碟區、持續不斷的預算、群組、複製控制器、資源集、資源等狀態服務、 驗證 webhookconfigurations 、 volume附件 "</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我看到 Telegraf 的錯誤訊息類似下列內容、但 Telegraf 確實啟動並執行：<br>
+<br>
+10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 系統 d[1] ：啟動外掛程式導向的伺服器代理程式、將計量標準回報至影響資料庫。<br>
+10月11日14：23：41 IP-172-31-39-47 Telewraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg="failed to create cache directory./etc/telegraf/.cache/snowflake 、 err: mkdir /etc/telegraf/.ca<br>
+Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"<br>
+10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 Teledraf[1827] ： Time="2021-10-11T14:23:41Z" Level=error msg=" 無法開啟。忽略。開啟 /etc/telegraf/.cache/snowflake/OCSP 回應 _cache.json ：否<br>
+檔案或目錄 \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"<br>
+10 月 11 日 14 ： 23 ： 41 《 IP-172-31-39-47 電臺》 [1827] ： 2021-10-11T14 ： 23 ： 41Z I ！啟動Telegraf 1.19.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">這是已知的問題。  請參閱 <a href="https://github.com/influxdata/telegraf/issues/9407">"這篇GitHub文章"</a> 以取得更多詳細資料。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在 Kubernetes 上、我的 Telegraf Pod 回報下列錯誤：<br>
+" 處理 mountstats 時發生錯誤資訊：無法開啟 mountstats 檔案： /hostfs/proc/1/mountstats 、錯誤：開啟 /hostfs/proc/1/mountstats ：權限遭拒 "</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱： <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions" class="bare">https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions</a>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在 Kubernetes 上、我的 Telegraf ReplicicaSet Pod 回報下列錯誤：<br>
+<br>
+ [ 外掛程式中的 inputs.prometheus] 錯誤：無法載入 keypair /etc/kubernetes/pi/etcd/server.crt ： /etc/kubernetes/pi/etcd/server.key ：開啟 /etc/kubernetes/pi/etcd/server.crt ：無此類檔案或目錄</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。<br>
+<br>
+例如、編輯 ReplicaSet&#8230;&#8203;<br>
+<br>
+ Kubectl 編輯 RS telegraf-RS<br>
+<br>
+並在規格中加入適當的公差。然後重新啟動ReplicaSet Pod。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我有PSP/PSA.環境。這是否會影響我的監控操作員？</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前支援 PP/PSA 的 NKMO ：<br>
+<br>
+1. <a href="#uninstalling">解除安裝</a> 先前的監控業者：<br>
+<br>
+ kubectl delete agent agent-monitoring （ kubectl 刪除代理代理監視） -netapp -n netapp 監控<br>
+ kubectl delete ns netapp 監控<br>
+ kubectl delete crd agents.monitoring.netapp.com<br>
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-eterms-reader<br>
+ kebectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding<br>
+<br>
+2. <a href="#installing-the-netapp-kubernetes-monitoring-operator">安裝</a> 監控操作員的最新版本。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我在嘗試部署NKMO時遇到問題、我使用PP/PSA.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. 使用下列命令編輯代理程式：<br>
+<br>
+kubectl -n &lt;name-space&gt; 編輯代理程式<br>
+<br>
+2. 將「安全性原則啟用」標示為「假」。這會停用Pod安全政策和Pod安全許可、並允許NKMO部署。使用下列命令確認：<br>
+<br>
+Kubectl Get PSP （應顯示 Pod 安全政策已移除）<br>
+kubectl Get all -n &lt;namespace&gt;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grep -i PSP （應顯示找不到任何項目）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">出現「ImagePullBackOff」錯誤</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。  <a href="#using-a-custom-or-private-docker-repository">瞭解更多資訊</a> 關於設定自訂/私有repo。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我的監控操作員部署有問題、目前的文件無法協助我解決問題。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>擷取或記下下列命令的輸出、然後聯絡技術支援團隊。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs &lt;monitoring-operator-pod&gt; --all-containers=true
+ kubectl -n netapp-monitoring logs &lt;telegraf-pod&gt; --all-containers=true</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NKMO 命名空間中的網路觀察者（工作負載對應） Pod 位於 CrashLoopBackOff</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">這些 Pod 對應於網路可觀察性的工作負載對應資料收集器。請嘗試下列項目：<br>
+•檢查其中一個 Pod 的記錄、確認最低核心版本。例如：<br>
+<br>
+---<br>
+｛ "CI-租 戶 -id" ： "your －租戶 -id" 、 "collector － cluster " ： "your － k8s-cluster － name" 、 "Environment ： "prod" 、 "Level" ： "error" 、 "msg" ：驗證失敗。原因：核心版本 3.10.0 低於最低核心版本 4.18.0 、 "Time" ： "2022-11-09T08:23:08Z"}<br>
+---<br>
+<br>
+• Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 &gt;=4.18.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pod 在 NKMO 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。<br>
+•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">安裝 NetApp Kubernetes 監控操作員之後、我會立即在記錄中看到下列內容：<br>
+<br>
+[inputs.prometheus] 外掛程式錯誤：向發出 HTTP 要求時發生錯誤 <a href="http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:" class="bare">http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:</a> 取得 <a href="http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:" class="bare">http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:</a> 撥號 TCP ： LOOKUP kube-state - 規格。 &lt;namespace&gt; 。 Svc.cluster 。本機：無這類主機</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">驗證 Kubernetes 版本（即 <code>kubectl version</code>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">編輯 <em>AgentConfiguration</em> 中的 Teledraf 區段、並將 <em>dockerMetricCollectionEnabled</em> 設為 false 。如需詳細資訊、請參閱操作員的  <a href="telegraf_agent_k8s_config_options.html">"組態選項"</a>。<br>
+<br>
+附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 <em>su</em> 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 <em>su</em> 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 <em>su</em> 預設為啟用；若要停用兩者、請移除 <em>AgentConfiguration</em> 檔案中的 _telegraf.泊 塢視窗項目：<br>
+<br>
+&#8230;&#8203;<br>
+規格：<br>
+&#8230;&#8203;<br>
+Telegraf ：<br>
+    &#8230;&#8203;<br>
+     - 名稱： Docker<br>
+            執行模式：<br>
+              –示範<br>
+            替代：<br>
+              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder<br>
+                值： UNIX ： //RUN / Docker 。 sock<br>
+    &#8230;&#8203;<br>
+&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：<br>
+<br>
+ 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 "<a href="https://&lt;tenant_url&gt;/rest/v1/lake/ingest/influxdb":" class="bare">https://&lt;tenant_url&gt;/rest/v1/lake/ingest/influxdb":</a> 已超過內容期限（等待標頭時超過 Client.Timeout ）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">編輯 <em>AgentConfiguration</em> 中的 Teledraf 區段、並將 <em>dockerMetricCollectionEnabled</em> 設為 false 。如需詳細資訊、請參閱操作員的  <a href="telegraf_agent_k8s_config_options.html">"組態選項"</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我遺失某些事件記錄的 _ 參與物件 _ 資料。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">請務必遵循中的步驟 <a href="pre-requisites_for_k8s_operator.html">"權限"</a> 上一節。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 &lt;pod&gt; 、另一個名為 monitoring 、 &lt;pod&gt; ？</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <a href="#uninstalling">移除舊的運算子</a> 和 <a href="#installing-the-netapp-kubernetes-monitoring-operator">安裝新的</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我的 Kubernetes 事件意外停止回報 Cloud Insights 。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>擷取事件導出者 Pod 的名稱：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>`kubectl -n netapp-monitoring get pods</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grep event-exporter</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">awk '{print $1}'</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sed 's/event-exporter./event-exporter/'`<br>
+應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式 <code>kubectl -n netapp-monitoring edit agent</code>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」<br>
+<br>
+&#8230;&#8203;.<br>
+fluent-bit:<br>
+&#8230;&#8203;<br>
+- name: event-exporter-ci<br>
+  substitutions:<br>
+  - key: LOG_FILE<br>
+    values:<br>
+    - /var/log/containers/netapp-ci-event-exporter*.log<br>
+&#8230;&#8203;<br>
+&#8230;&#8203;.<br>
+或者、您也可以 <a href="#uninstalling">解除安裝</a> 和 <a href="#installing-the-netapp-kubernetes-monitoring-operator">重新安裝</a> 代理程式。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我看到 NetApp Kubernetes 監控營運者部署的 Pod 因為資源不足而當機。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">請參閱 NetApp Kubernetes 監控操作員 <a href="telegraf_agent_k8s_config_options.html">"組態選項"</a> 視需要增加 CPU 和 / 或記憶體限制。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>如需其他資訊、請參閱 <a href="concept_requesting_support.html">"支援"</a> 頁面或中的 <a href="reference_data_collector_support_matrix.html">"資料收集器支援對照表"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/cloudinsights/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/cloudinsights/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/cloudinsights/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/cloudinsights/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/cloudinsights/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/cloudinsights/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloudinsights/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
