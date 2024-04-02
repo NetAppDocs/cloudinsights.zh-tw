@@ -38,7 +38,7 @@ toc::[]
 
 
 
-=== 如果我已經登入NetApp Cloud、該怎麼辦？
+=== 如果我已經登入 NetApp BlueXP 、該怎麼辦？
 
 擁有 NetApp BlueXP 帳戶後、只要在上選擇 * 登入 * 即可 https://cloud.netapp.com["* NetApp BlueXPl*"^] 入口網站頁面。
 
@@ -78,7 +78,7 @@ NOTE: 新使用者必須先註冊以存取 BlueXP 、才能存取其環境 URL �
 
 == 登出
 
-若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將返回 BlueXP 登入畫面。
+若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將被帶回 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["BlueXP 登入"] 畫面。
 
 
 NOTE: 登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。
