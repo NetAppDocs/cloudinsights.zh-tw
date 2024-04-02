@@ -34,9 +34,6 @@ keywords: data collector, vendor, infrastructure, integration, service
 | 資料收集器 | 類型 
 
 
-| link:task_config_telegraf_activemq.html["ActiveMQ"] | 服務 
-
-
 | link:task_dc_amazon_ec2.html["Amazon EC2和EBS"] | 基礎架構 
 
 
