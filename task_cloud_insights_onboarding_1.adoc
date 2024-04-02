@@ -19,13 +19,13 @@ summary: 註冊Cloud Insights 以利執行功能、並創造您的環境。
 
 
 [role="lead"]
-在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* （前身為 Cloud Central ）入口網站。如果您已經登入NetApp Cloud Central、您可以透過Cloud Insights 幾個快速步驟、開始免費試用版的VMware。
+在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* 入口網站。如果您已經登入 BlueXP 、您可以透過幾個快速步驟、開始免費試用 Cloud Insights 。
 
 
 toc::[]
 
 
-== 建立您的NetApp Cloud Central帳戶
+== 建立您的 NetApp BlueXP 帳戶
 
 若要開始使用 NetApp 的雲端服務、請前往 https://cloud.netapp.com["* NetApp BlueXP*"^] 然後按一下 * 開始使用 * 。
 
@@ -54,7 +54,7 @@ image:BlueXP_CloudInsights.png["BlueXP 上的 Cloud Insights 免費試用版"]
 
 如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您完成公司環境的建立。
 
-環境建立完成後、您可以使用Cloud Central認證登入Cloud Insights 、並開始免費試用30天的VMware。在此試用期間、您可以探索 Cloud Insights 提供的功能。
+一旦您的環境建立完成、您就可以使用 BlueXP 認證登入並開始免費的 30 天 Cloud Insights 試用版。在此試用期間、您可以探索 Cloud Insights 提供的功能。
 
 在免費試用期間、您可以 link:concept_subscribing_to_cloud_insights.html["開始訂購"] 隨時都能Cloud Insights 實現。訂閱後、Cloud Insights 您可以根據目前的訂閱內容來使用功能不完整的功能。
 
@@ -62,15 +62,15 @@ image:BlueXP_CloudInsights.png["BlueXP 上的 Cloud Insights 免費試用版"]
 
 == 登入後立即使用
 
-一旦您的環境建立完成、您可以隨時登入NetApp Cloud Portal、然後按一下*移至Cloud Insights 瑞奇*。您將被直接帶到Cloud Insights 您的自然環境中。
+一旦您的環境建立完成、您可以隨時登入 NetApp BlueXP 入口網站、然後按一下 * 前往 Cloud Insights * 。您將被直接帶到Cloud Insights 您的自然環境中。
 
 您也可以直接開啟瀏覽器至Cloud Insights 您的URL環境、例如：
 
  https://<environment-prefix>.c01.cloudinsights.netapp.com/
-每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入Cloud Central、系統會提示他們登入。
+每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入 BlueXP 、系統會提示使用者登入。
 
 
-NOTE: 新使用者仍必須先註冊以存取Cloud Central、才能存取其環境URL。
+NOTE: 新使用者必須先註冊以存取 BlueXP 、才能存取其環境 URL 。
 
 第一次登入新環境時、系統會引導您完成設定 link:task_getting_started_with_cloud_insights.html["*開始收集資料*"]。
 
@@ -78,7 +78,13 @@ NOTE: 新使用者仍必須先註冊以存取Cloud Central、才能存取其環�
 
 == 登出
 
-若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。系統會將您帶回Cloud Central登入畫面。
+若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將返回 BlueXP 登入畫面。
 
 
-NOTE: 登出Cloud Insights 功能可讓您登出Cloud Central。您也會登出使用Cloud Central登入的其他NetApp Cloud服務。
+NOTE: 登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。
+
+
+
+=== 閒置逾時
+
+根據預設、如果六小時（ 360 分鐘）內沒有活動、 BlueXP 會將使用者登出。無論活動為何、使用者都會在七天後登出。
