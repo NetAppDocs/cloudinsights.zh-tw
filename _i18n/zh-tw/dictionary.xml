@@ -9805,7 +9805,6 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">enabledDNSookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">是非題、啟用 DNS 查詢</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">AgentConfiguration 檔案範例</block>
-  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">以下是 AgentConfiguration 檔案範例。請注意、此處並未擷取所有選項：</block>
   <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">如果您使用自訂或私有泊塢視窗儲存庫、請遵循使用自訂或私有泊塢視窗儲存庫一節中的指示進行</block>
   <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">自2022年8月起、NetApp Kubernetes監控營運者將支援Pod安全政策（PSP）。如果您的環境使用 PSP 、則必須升級至最新的 NetApp Kubernetes Monitoring Operator 。</block>
   <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">如果您是在 OpenShift 4.6 或更新版本上執行、則除了確保符合這些先決條件之外、還必須遵循下列 OpenShift 指示。</block>
@@ -13047,4 +13046,6 @@ Telegraf ：
   <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXP 登入</block>
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將被帶回 <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 畫面。</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
+  <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">是非題：如果在 Kubernetes 節點上啟用 SELinux 、請將 RunPrivileged 設為 true 。</block>
+  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">以下是 AgentConfiguration 檔案範例。</block>
 </blocks>
