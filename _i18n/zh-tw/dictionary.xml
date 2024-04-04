@@ -9736,8 +9736,6 @@
   <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">選用：客戶的秘密私人回購</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">叢集名稱</block>
   <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Cloud Insights 租戶中應該是唯一的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
-  <block id="b5249bb082b669e275606cdef10879b6" category="cell">Proxy 格式： Proxy ：伺服器：連接埠：使用者名稱：密碼： NoProxy ：啟用 ISTelegrafProxy: 啟用 isAuProxy: 啟用 isFluentbitProxy: 啟用 isCollectorProxy: 啟用 isCollectorProxy:</block>
-  <block id="f430d84b3603b6c921d2a45741baab1e" category="cell">客戶可選擇設定 Proxy 。這通常是客戶的公司代理。</block>
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">Telegraf</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">可自訂電信業者安裝的組態選項</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">CollectionInterval</block>
@@ -9794,9 +9792,7 @@
   <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">工作負載對應</block>
   <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">可自訂工作負載對應集合及安裝 Operator 的組態選項</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
-  <block id="3a8e375aaa03d4b48cdd1a1758a69d81" category="cell">Net 觀察者 DS 的 CPU 上限</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">MemLimit</block>
-  <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">net 觀察者 DS 的記憶體限制</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">CPU 要求取得 Net 觀察者 DS</block>
   <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">net 觀察者 DS 的記憶體要求</block>
   <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">度量集合時間間隔（以秒為單位）</block>
@@ -13048,4 +13044,46 @@ Telegraf ：
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
   <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">是非題：如果在 Kubernetes 節點上啟用 SELinux 、請將 RunPrivileged 設為 true 。</block>
   <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">以下是 AgentConfiguration 檔案範例。</block>
+  <block id="5c7af4a6b686285084e62f255503c141" category="cell">Proxy
+
+格式：
+
+Proxy ：
+
+  伺服器：
+  連接埠：
+  使用者名稱：
+  密碼：
+  NoProxy ：
+  啟用 ISTelegrafProxy: 
+  已啟用的 isAuProxy: 
+  已啟用 isFluentbitProxy: 
+  啟用的 isCollectorProxy:</block>
+  <block id="f8ac74d8a3668ddf89efeb8e806ca908" category="cell">可選擇設定 Proxy 。這通常是客戶的公司代理。</block>
+  <block id="27f8013ee549a9c4b57f90e2187cfe5f" category="cell">Net 觀察者 DS 的 CPU 上限</block>
+  <block id="579e696b8054af08af33dfd55dfad78b" category="cell">net 觀察者 DS 的記憶體限制</block>
+  <block id="78835e1c315b219e4c62fc613fdfd311" category="cell">變更管理</block>
+  <block id="02b609b32da65dbc17b9446c8542f3dd" category="cell">Kubernetes 變更管理與分析的組態選項</block>
+  <block id="75f551b07991fea9589bce25b6abb363" category="cell">change-觀察者 water-RS 的 CPU 上限</block>
+  <block id="6e753299d008aca89690ad5b5c6b784f" category="cell">change-觀察者 water-RS 的記憶體限制</block>
+  <block id="582e83d73d36aa6674624867468704da" category="cell">CPU 要求變更觀察者手錶 -RS</block>
+  <block id="d73c96f8e69fcf08ffd440cc16f573af" category="cell">mem 要求 change-觀察者 water-RS</block>
+  <block id="5190879b0edfb4a53603a0ab23ab40e8" category="cell">Failure宣言 IntermalMins</block>
+  <block id="6e18e5efc4d170de4ac66b784ca443b6" category="cell">未成功部署工作負載的時間間隔（以分鐘為單位）將標示為失敗</block>
+  <block id="c055d40d7bbe856522ad8c59006f6754" category="cell">deployAggrIntervalSeconds</block>
+  <block id="e06e4cc3c2b6796e0850387e7147734e" category="cell">工作負載部署進行中事件的傳送頻率</block>
+  <block id="43aa9b44901fa9982cd6c7faf3f97402" category="cell">NonWorkloadAggrIntervalSeconds</block>
+  <block id="cff422cbad1df823699a6830f754d451" category="cell">非工作負載部署的組合與傳送頻率</block>
+  <block id="6d53bc2f7711e2d9a24631defb23b18f" category="cell">termsToRedact</block>
+  <block id="532aa006f97c495d1734618405645779" category="cell">用於 env 名稱和資料對應的一組規則運算式、其值將會被編修
+範例詞彙：「 pwd 」、「 password 」、「 token 」、「 apikey 」、「 apikey 」、 "JWT)</block>
+  <block id="44011a6b8af68cc46d2d0dfb669fd887" category="cell">其他 KindsToWatch</block>
+  <block id="ac3fd52049b8a2c3ba2e8b8a5eff74e0" category="cell">以逗號分隔的其他種類清單、可從收集器所監控的預設種類集觀看</block>
+  <block id="20e3bce2d07b4e6d70959f7793b18bc9" category="cell">KindsToIgnoreFromWatch</block>
+  <block id="003936f0b815c468a99ed57f900f3d8a" category="cell">從收集器所監控的預設種類集中、忽略的種類清單、以逗號分隔</block>
+  <block id="eee9690c1174453d706353a8a678c8a1" category="cell">LogRecordAggrIntervalSeconds</block>
+  <block id="284d60e68534479175e5c3f018cecc45" category="cell">從收集器傳送記錄至 CI 的頻率</block>
+  <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">監看容忍度</block>
+  <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-觀察者 water-DS 額外容忍度。僅限精簡單行格式。
+範例： ' ｛ key ： tint1 、 operator ： Exists 、 effect ： NoSchedule ｝ 、 ｛ key ： tint2 、 operator ： Exists 、 effect ： NoExecute ｝ '</block>
 </blocks>

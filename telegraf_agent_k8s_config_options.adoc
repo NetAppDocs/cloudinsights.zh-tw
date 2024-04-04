@@ -40,7 +40,21 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 |  | 叢集名稱 | 可唯一識別所有客戶叢集的任意文字欄位。這在 Cloud Insights 租戶中應該是唯一的。預設是客戶在 UI 中輸入的「叢集名稱」欄位 
 
 
-|  | Proxy 格式： Proxy ：伺服器：連接埠：使用者名稱：密碼： NoProxy ：啟用 ISTelegrafProxy: 啟用 isAuProxy: 啟用 isFluentbitProxy: 啟用 isCollectorProxy: 啟用 isCollectorProxy: | 客戶可選擇設定 Proxy 。這通常是客戶的公司代理。 
+|  | Proxy
+
+格式：
+
+Proxy ：
+
+  伺服器：
+  連接埠：
+  使用者名稱：
+  密碼：
+  NoProxy ：
+  啟用 ISTelegrafProxy: 
+  已啟用的 isAuProxy: 
+  已啟用 isFluentbitProxy: 
+  啟用的 isCollectorProxy: | 可選擇設定 Proxy 。這通常是客戶的公司代理。 
 
 
 | Telegraf |  | 可自訂電信業者安裝的組態選項 
@@ -193,6 +207,47 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 
 
 |  | RunPrivileged | 是非題：如果在 Kubernetes 節點上啟用 SELinux 、請將 RunPrivileged 設為 true 。 
+
+
+| 變更管理 |  | Kubernetes 變更管理與分析的組態選項 
+
+
+|  | cpuLimit | change-觀察者 water-RS 的 CPU 上限 
+
+
+|  | MemLimit | change-觀察者 water-RS 的記憶體限制 
+
+
+|  | cpuRequest | CPU 要求變更觀察者手錶 -RS 
+
+
+|  | MemRequest | mem 要求 change-觀察者 water-RS 
+
+
+|  | Failure宣言 IntermalMins | 未成功部署工作負載的時間間隔（以分鐘為單位）將標示為失敗 
+
+
+|  | deployAggrIntervalSeconds | 工作負載部署進行中事件的傳送頻率 
+
+
+|  | NonWorkloadAggrIntervalSeconds | 非工作負載部署的組合與傳送頻率 
+
+
+|  | termsToRedact | 用於 env 名稱和資料對應的一組規則運算式、其值將會被編修
+範例詞彙：「 pwd 」、「 password 」、「 token 」、「 apikey 」、「 apikey 」、 "JWT) 
+
+
+|  | 其他 KindsToWatch | 以逗號分隔的其他種類清單、可從收集器所監控的預設種類集觀看 
+
+
+|  | KindsToIgnoreFromWatch | 從收集器所監控的預設種類集中、忽略的種類清單、以逗號分隔 
+
+
+|  | LogRecordAggrIntervalSeconds | 從收集器傳送記錄至 CI 的頻率 
+
+
+|  | 監看容忍度 | change-觀察者 water-DS 額外容忍度。僅限精簡單行格式。
+範例： ' ｛ key ： tint1 、 operator ： Exists 、 effect ： NoSchedule ｝ 、 ｛ key ： tint2 、 operator ： Exists 、 effect ： NoExecute ｝ ' 
 |===
 
 
