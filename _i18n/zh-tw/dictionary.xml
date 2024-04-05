@@ -4618,7 +4618,6 @@
   <block id="31be054ef32957d0b09e260052ca7194" category="paragraph"><block ref="31be054ef32957d0b09e260052ca7194" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a16ab7a0e2729553abea3c5bef941286" category="paragraph">對於每個資料收集器、您可以按一下「三點」功能表來複製、編輯、輪詢或刪除資料收集器。您也可以在此清單中選取多個資料收集器、以便對其執行大量動作。</block>
   <block id="ea88145436c3d93ffad8cb3aaa3f29d2" category="paragraph">若要重新啟動擷取設備、請按一下頁面頂端的*重新啟動*按鈕。下拉此按鈕可在連線發生問題時、嘗試*將連線*還原至AU。</block>
-  <block id="961208029de208a5d667bc4557cd4628" category="summary">您作為擷取單位使用的伺服器或VM必須符合最低需求</block>
   <block id="1e6f2d5fb7c78a27ba0dc78e9cc7c9b5" category="doc">採購單位需求</block>
   <block id="15948ad6c9474a20f044eee0ea809fda" category="paragraph">您必須安裝擷取單元（AU）、才能從基礎架構資料收集器（儲存設備、VM、連接埠、EC2等）取得資訊。安裝擷取單元之前、您應確保環境符合作業系統、CPU、記憶體及磁碟空間需求。</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">元件</block>
@@ -12757,21 +12756,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同樣地、選取警示也會提供警示的詳細資料、包括觸發警示的監視器、以及顯示警示視覺時間表的圖表。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhooks 清單頁面</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。</block>
-  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">執行下列其中一項授權版本的電腦：
-
-* CentOS （ 64 位元）： 7.2 至 7.9 、 Stream 8 、 Stream 9
-* Debian （ 64 位元）： 9 和 10
-* Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 、 8.1 至 8.4
-* Red Hat Enterprise Linux （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.7 、 9.1
-* Rocky 9.0 、 9.1
-* Ubuntu 伺服器： 18.04 和 20.04 LTS
-
-此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
-
-如果您使用 SELinux 執行、建議您在擷取單元系統上執行下列命令：
-
- Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
- Sudo restorecon -R /opt/NetApp/cloudsights</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB傳輸協定3.1版及更早版本。</block>
   <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">您可以閱讀 Cloud Insights 安全性的相關資訊 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">瞭解 Cloud Insights 安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
@@ -13086,4 +13070,23 @@ Proxy ：
   <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">監看容忍度</block>
   <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-觀察者 water-DS 額外容忍度。僅限精簡單行格式。
 範例： ' ｛ key ： tint1 、 operator ： Exists 、 effect ： NoSchedule ｝ 、 ｛ key ： tint2 、 operator ： Exists 、 effect ： NoExecute ｝ '</block>
+  <block id="ab8e405c19b7905ee11081815f3188e8" category="summary">作為採購單位的伺服器或 VM 必須符合最低需求。</block>
+  <block id="a09b5775576e1f992d4b31384ff11e67" category="cell">執行下列其中一項授權版本的電腦：
+
+* CentOS （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.4 、 Stream 8 、 Stream 9
+* Debian （ 64 位元）： 9 和 10
+* openSUSE Leap 15.1 到 15.5
+* Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 、 8.1 至 8.8
+* Red Hat Enterprise Linux （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.8 、 9.1 、 9.2
+* Rocky 9.0 、 9.1 、 9.3
+* SUSE Enterprise Linux Server 15 、 15 SP2 至 15 SP5
+* Ubuntu 伺服器： 18.04 、 20.04 、 22.04 LTS
+* 上述平台上的 SELinux
+
+此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
+
+如果您使用 SELinux 執行、建議您在擷取單元系統上執行下列命令：
+
+ Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
+ Sudo restorecon -R /opt/NetApp/cloudsights</block>
 </blocks>
