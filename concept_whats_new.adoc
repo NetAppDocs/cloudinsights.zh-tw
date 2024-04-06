@@ -22,6 +22,30 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
+== 2024 年 4 月
+
+
+
+=== iSCSI Volume 延遲
+
+iSCSI Volume 延遲的度量可用於儀表板、警示等。若要收集 iSCSI 延遲度量、請從 Kubernetes Collector 「修改部署」功能表項目中開啟 _Network Performance 和 Map_ 。
+
+
+
+=== 作業系統支援
+
+下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
+
+* Oracle Enterprise Linux 8.8
+* Red Hat Enterprise Linux 8.8
+* 岩石 9.3
+* openSUSE Leap 15.1 至 15.5
+* SUSE Enterprise Linux Server 15 、 15 SP2 至 15 SP5
+
+
+'''
+
+
 == 2024 年 3 月
 
 
@@ -93,7 +117,7 @@ image:RelatedLogsTable.png["記錄警示登陸頁面上的相關記錄"]
 
 === 收集 ONTAP 交換器資料
 
-Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"] 並擁有適當的 <<a-note-about-permissions,權限>> 設定。
+Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"] 並擁有適當的 link:task_dc_na_cdot.html#a-note-about-permissions["權限"] 設定。
 
 
 
@@ -116,7 +140,7 @@ Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在�
 
 === 我的工作負載有多健全？
 
-工作負載健全狀況一覽 * Kubernetes > Explore > Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。
+工作負載健全狀況一覽 * Kubernetes > Explore > Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。輕鬆識別健全狀況問題是否與基礎架構、網路或組態變更有關、並深入分析根本原因。
 
 image:WorkloadHealth.png["工作負載健全狀況概覽"]
 

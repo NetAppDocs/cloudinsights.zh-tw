@@ -12774,7 +12774,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024 年 1 月</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">試用您尚未使用的 Cloud Insights 功能</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">我的工作負載有多健全？</block>
-  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。</block>
   <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">工作負載健全狀況概覽</block>
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">資料網域識別</block>
@@ -12878,7 +12877,6 @@ Telegraf ：
   <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">或者、您可能想要在自己的圖表中查看登陸頁表的資料。只要選取 _ 顯示圖表 _ 圖示、即可開啟表格下方的圖表：</block>
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">顯示圖表圖示</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 設定。</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">權限ONTAP</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP 自主勒索軟體保護的權限</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP 存取權限遭拒</block>
@@ -13089,4 +13087,14 @@ Proxy ：
 
  Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
  Sudo restorecon -R /opt/NetApp/cloudsights</block>
+  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024 年 4 月</block>
+  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">iSCSI Volume 延遲</block>
+  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">iSCSI Volume 延遲的度量可用於儀表板、警示等。若要收集 iSCSI 延遲度量、請從 Kubernetes Collector 「修改部署」功能表項目中開啟 _Network Performance 和 Map_ 。</block>
+  <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
+  <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
+  <block id="c3571084e6793888922121d12a2dca13" category="list-text">岩石 9.3</block>
+  <block id="7c5f962bedfb419a0baae6396bf5594d" category="list-text">openSUSE Leap 15.1 至 15.5</block>
+  <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15 、 15 SP2 至 15 SP5</block>
+  <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 設定。</block>
+  <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。輕鬆識別健全狀況問題是否與基礎架構、網路或組態變更有關、並深入分析根本原因。</block>
 </blocks>
