@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_kubernetes.html 
-keywords: telegraf, installation, install, kubernetes 
+keywords: telegraf, kubernetes 
 summary: Kubernetes資料收集器組態 
 ---
 = Kubernetes資料收集器
@@ -25,10 +25,7 @@ summary: Kubernetes資料收集器組態
 
 == 安裝
 
-如需Kubernetes安裝說明、請參閱 link:task_config_telegraf_agent.html#kubernetes["代理程式安裝"] 頁面。
-
-
-NOTE: 關於* kube狀態指標*的資訊已移至 link:task_config_telegraf_agent.html#kubernetes["代理程式安裝"] 頁面。
+如需Kubernetes安裝說明、請參閱 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 頁面。
 
 
 

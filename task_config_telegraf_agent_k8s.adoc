@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
-summary: 支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights 
+summary: NetApp Kubernetes 監控營運者會收集 Kubernetes 資料、以供 Cloud Insights 使用。 
 ---
 = 設定NetApp Kubernetes監控操作員
 :toc: macro
