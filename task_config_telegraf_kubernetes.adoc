@@ -1,21 +1,18 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_kubernetes.html 
-keywords: telegraf, kubernetes 
-summary: Kubernetes資料收集器組態 
+keywords: telegraf 
+summary: Kubernetes 的資料收集器 
 ---
-= Kubernetes資料收集器
-:toc: macro
+= 資料收集器： Kubernetes
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

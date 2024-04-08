@@ -2156,7 +2156,6 @@
   <block id="bbef21bde58ce5660bf49b595ad948a3" category="cell">檢查IP並將IP變更為7模式叢集。</block>
   <block id="4f2490c45ca71d6ad32a37be2b36a67c" category="cell">「無法連線至vFiler」錯誤</block>
   <block id="4b728fe0674da6a6020b7dfe0a399d2a" category="cell">請檢查取得的使用者功能至少包括下列項目：API-* SECNTIA-API-VFiler login-http-admin確認檔案管理器執行的是最小ONTAPI 1.7版。</block>
-  <block id="ccb06b64aa7e8cb6a869d22deb1de8bd" category="summary">Kubernetes資料收集器組態</block>
   <block id="5c7f848c8021f50b6420b0c983ceafd0" category="doc">Kubernetes資料收集器</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">使用此資料收集器來收集Kubernetes Pod、Node和Container指標。Cloud Insights</block>
   <block id="9a3185d3dd699a74f8c315584250a80c" category="inline-link-macro">代理程式安裝</block>
@@ -8159,7 +8158,6 @@
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">透過AWS Marketplace試用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。</block>
-  <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">設定NetApp Kubernetes監控操作員</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。</block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安裝NetApp Kubernetes監控操作員之前</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes版本1.20或更新版本支援NetApp Kubernetes監控操作員安裝。</block>
@@ -12434,7 +12432,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 &lt;namespace&gt; 附加權限 _</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
-  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">閱讀 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">請務必遵循中的步驟 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 上一節。</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">模組試用</block>
@@ -13097,4 +13094,8 @@ Proxy ：
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">如需Kubernetes安裝說明、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="9475d89ab72707a841c177322d6462fa" category="summary">NetApp Kubernetes 監控營運者會收集 Kubernetes 資料、以供 Cloud Insights 使用。</block>
+  <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes 的資料收集器</block>
+  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器： Kubernetes</block>
+  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes 監控營運商的安裝與組態</block>
+  <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">閱讀 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安裝或升級 NetApp Kubernetes 監控操作員之前的先決條件文件。</block>
 </blocks>
