@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_kubernetes_network_monitoring_and_map.html 
-keywords: service map, workloads, Kubernetes, 
+keywords: service map, workloads, 
 summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路和效能問題 
 ---
 = Kubernetes 網路效能監控與地圖
@@ -19,10 +19,8 @@ summary: 介紹 Kubernetes 的工作負載相依性和流程、並強調網路�
 
 
 [role="lead"]
-Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 服務（也稱為工作負載）之間的相依性、進而簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
-
-
-NOTE: Kubernetes 網路效能監控與地圖是一種 link:concept_preview_features.html["預覽"] 功能、可能會有所變更。
+Kubernetes 網路效能監控與地圖功能可對應服務之間的相依性（也稱為工作負載）、藉此簡化疑難排解程序、並即時掌握網路效能延遲和異常狀況、以便在影響使用者之前先識別效能問題。
+此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。
 
 主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。
 

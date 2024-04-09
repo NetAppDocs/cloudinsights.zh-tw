@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference_object_icons.html 
 summary: 物件圖示參考。Cloud Insights 
-keywords: icons, assets, objects, reference, kubernetes, map 
+keywords: icons, assets, objects, reference, map 
 ---
 = 物件圖示參考
 :toc: macro

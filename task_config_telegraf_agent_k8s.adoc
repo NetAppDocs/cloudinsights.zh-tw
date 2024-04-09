@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
-keywords: kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
-summary: NetApp Kubernetes 監控營運者會收集 Kubernetes 資料、以供 Cloud Insights 使用。 
+keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
+summary: Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud Insights 中使用。 
 ---
 = Kubernetes 監控營運商的安裝與組態
 :hardbreaks:
@@ -25,7 +25,7 @@ image:kubernetes_tile.png["Kubernetes資料收集器Tile"]
 
 
 toc::[]
-從 Cloud Insights Docker 登錄下載操作員和資料收集器。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights
+Kubernetes 運算子和資料收集器都是從 Cloud Insights Docker 登錄下載。安裝之後、操作員便會管理部署在 Kubernetes 叢集節點中的任何與操作員相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights
 
 
 

@@ -9718,7 +9718,6 @@
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">工作負載對應範例</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubernetes 網路效能監控與地圖</block>
-  <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubernetes 網路效能監控與地圖是一種 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能會有所變更。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">您必須先設定、才能使用 Kubernetes 網路效能監控和地圖 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以啟用此選項。在部署操作員期間、選取「網路效能與地圖」核取方塊以啟用。您也可以瀏覽至 Kubernetes 登陸頁面、然後選取「修改部署」來啟用此選項。</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubernetes 監控營運者有許多可設定的選項。</block>
   <block id="57e4cf9437210e6248eb8a2137609c4e" category="doc">NetApp Kubernetes 監控營運者組態選項</block>
@@ -9971,7 +9970,6 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同樣地、在 _Find_ 欄位中鍵入字串、也會醒目提示相符的工作負載。</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在「尋找」方塊中鍵入會強調工作負載</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應 Kubernetes 服務（也稱為工作負載）之間的相依性、進而簡化疑難排解程序。它可即時查看 Kubernetes 網路效能延遲和異常狀況、在效能問題影響使用者之前先找出問題。此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
   <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">Kubernetes.Workload</block>
   <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">Kubernetes.daemonset</block>
   <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
@@ -12247,7 +12245,6 @@ v9.2.4.2</block>
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">返回 <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes資料收集器Tile</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">從 Cloud Insights Docker 登錄下載操作員和資料收集器。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">* 安裝或升級之前 *</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升級至最新的NetApp Kubernetes監控操作員</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
@@ -12722,9 +12719,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="fd03b080e03c993770237986acf19dc1" category="list-text">* SELinux* ： Cloud Insights 包含 Linux 擷取單元初始安裝的增強功能、可確保啟用 SELinux 強制功能的 Linux 環境中運作更為穩健。這些增強功能只會影響 _new_ AU 部署；如果您有任何與 AU 升級相關的 SELinux 問題、請聯絡 NetApp 支援部門以修正您的 SELinux 組態。</block>
   <block id="5142ab8747c5da1b5115ffa35bacd522" category="summary">追蹤 Kubernetes 變更比以往更容易。</block>
   <block id="d75550072217b58f67a7216961c2bb8c" category="doc">Kubernetes 變更分析</block>
-  <block id="745bf0c93bc131f89ec736fc36e64da7" category="paragraph">Kubernetes 變更分析功能可讓您一體化檢視 Kubernetes 環境最近的變更。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
-  <block id="baa67b8c9085fb7f1ab7886843918360" category="list-text">在多租戶 Kubernetes 環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 可能無法正確追蹤所有變更。</block>
-  <block id="ee48ad51c38d1e68f90591ef3918ee29" category="list-text">變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態 Kubernetes 環境。</block>
   <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">若要檢視 Kubernetes 變更分析、請瀏覽至 * Kubernetes &gt; 變更分析 * 。</block>
   <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubernetes Change Analytics 主畫面顯示警告和關鍵警示、成功和失敗的部署、以及觸發警示的前 3 大工作負載</block>
   <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
@@ -13091,7 +13085,6 @@ Proxy ：
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。輕鬆識別健全狀況問題是否與基礎架構、網路或組態變更有關、並深入分析根本原因。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">如需Kubernetes安裝說明、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
-  <block id="9475d89ab72707a841c177322d6462fa" category="summary">NetApp Kubernetes 監控營運者會收集 Kubernetes 資料、以供 Cloud Insights 使用。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes 的資料收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器： Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes 監控營運商的安裝與組態</block>
@@ -13101,4 +13094,11 @@ Proxy ：
 深入瞭解 Kubernetes 應用程式的儲存網路活動和未界定的儲存指標、以加速解決問題。瞭解 Kubernetes 應用程式如何使用儲存基礎架構來進行計費和回報報告。</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Pod 對儲存裝置的範例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
+  <block id="4b4f5197cba63052758601b418b4cd40" category="list-text">在多租戶環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 可能無法正確追蹤所有變更。</block>
+  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態環境。</block>
+  <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應服務之間的相依性（也稱為工作負載）、藉此簡化疑難排解程序、並即時掌握網路效能延遲和異常狀況、以便在影響使用者之前先識別效能問題。
+此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
+  <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud Insights 中使用。</block>
+  <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes 運算子和資料收集器都是從 Cloud Insights Docker 登錄下載。安裝之後、操作員便會管理部署在 Kubernetes 叢集節點中的任何與操作員相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
 </blocks>

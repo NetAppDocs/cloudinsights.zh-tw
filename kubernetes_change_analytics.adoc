@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_change_analytics.html 
-keywords: changes, management, analysis, kubernetes, k8s 
+keywords: changes, management, analysis 
 summary: 追蹤 Kubernetes 變更比以往更容易。 
 ---
 = Kubernetes 變更分析
@@ -19,12 +19,12 @@ summary: 追蹤 Kubernetes 變更比以往更容易。
 
 
 [role="lead"]
-Kubernetes 變更分析功能可讓您一體化檢視 Kubernetes 環境最近的變更。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。
+Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。
 
 請謹記下列事項：
 
-* 在多租戶 Kubernetes 環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 可能無法正確追蹤所有變更。
-* 變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態 Kubernetes 環境。
+* 在多租戶環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 可能無法正確追蹤所有變更。
+* 變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態環境。
 
 
 若要檢視 Kubernetes 變更分析、請瀏覽至 * Kubernetes > 變更分析 * 。

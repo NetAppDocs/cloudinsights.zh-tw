@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_node_detail.html 
-keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning 
+keywords: k8s, pods, clusters, nodes. troubleshooting, planning 
 summary: Kubernetes節點詳細資料頁面可深入瞭解後端PV和Pod儲存設備。 
 ---
 = Kubernetes節點詳細資料頁面
