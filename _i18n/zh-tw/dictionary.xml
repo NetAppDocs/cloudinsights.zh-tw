@@ -13082,8 +13082,6 @@ Proxy ：
  Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
  Sudo restorecon -R /opt/NetApp/cloudsights</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024 年 4 月</block>
-  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">iSCSI Volume 延遲</block>
-  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">iSCSI Volume 延遲的度量可用於儀表板、警示等。若要收集 iSCSI 延遲度量、請從 Kubernetes Collector 「修改部署」功能表項目中開啟 _Network Performance 和 Map_ 。</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
   <block id="c3571084e6793888922121d12a2dca13" category="list-text">岩石 9.3</block>
@@ -13098,4 +13096,9 @@ Proxy ：
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器： Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes 監控營運商的安裝與組態</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">閱讀 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安裝或升級 NetApp Kubernetes 監控操作員之前的先決條件文件。</block>
+  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">Kubernetes 網路地圖的 iSCSI SAN 支援</block>
+  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">識別 Kubernetes 基礎的 NFS 儲存相依性、現在是 iSCSI 。
+深入瞭解 Kubernetes 應用程式的儲存網路活動和未界定的儲存指標、以加速解決問題。瞭解 Kubernetes 應用程式如何使用儲存基礎架構來進行計費和回報報告。</block>
+  <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Pod 對儲存裝置的範例</block>
+  <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

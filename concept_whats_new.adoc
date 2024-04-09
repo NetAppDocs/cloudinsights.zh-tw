@@ -26,9 +26,12 @@ NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少�
 
 
 
-=== iSCSI Volume 延遲
+=== Kubernetes 網路地圖的 iSCSI SAN 支援
 
-iSCSI Volume 延遲的度量可用於儀表板、警示等。若要收集 iSCSI 延遲度量、請從 Kubernetes Collector 「修改部署」功能表項目中開啟 _Network Performance 和 Map_ 。
+識別 Kubernetes 基礎的 NFS 儲存相依性、現在是 iSCSI 。
+深入瞭解 Kubernetes 應用程式的儲存網路活動和未界定的儲存指標、以加速解決問題。瞭解 Kubernetes 應用程式如何使用儲存基礎架構來進行計費和回報報告。
+
+image:pod-to-storage.png["Pod 對儲存裝置的範例"]
 
 
 
