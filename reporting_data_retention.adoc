@@ -51,7 +51,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 | 效能目標 | 儲存節點 | 每日 | 13個月 
 
 
-| 效能目標 | VM效能 | 每小時 | 35天 
+| 效能目標 | VM效能 | 每小時 | 14天 
 
 
 | 效能目標 | VM效能 | 每日 | 13個月 
