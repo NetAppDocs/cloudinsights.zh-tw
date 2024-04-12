@@ -13095,10 +13095,10 @@ Proxy ：
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Pod 對儲存裝置的範例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
-  <block id="4b4f5197cba63052758601b418b4cd40" category="list-text">在多租戶環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 可能無法正確追蹤所有變更。</block>
   <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態環境。</block>
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應服務之間的相依性（也稱為工作負載）、藉此簡化疑難排解程序、並即時掌握網路效能延遲和異常狀況、以便在影響使用者之前先識別效能問題。
 此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud Insights 中使用。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes 運算子和資料收集器都是從 Cloud Insights Docker 登錄下載。安裝之後、操作員便會管理部署在 Kubernetes 叢集節點中的任何與操作員相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
+  <block id="99caa80e6c446108c367beb2add705b3" category="list-text">在多租戶環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 變更分析可能無法正確追蹤所有變更。</block>
 </blocks>
