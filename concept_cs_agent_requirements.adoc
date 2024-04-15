@@ -119,8 +119,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 == 網路內規則
 
-請注意、新增_時link:task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip["CsUser"]_、該使用者需要SSH存取ONTAP 才能存取《The SF-Management LIF》。
-
 [cols="5*"]
 |===
 | 傳輸協定 | 連接埠 | 來源 | 目的地 | 說明 
