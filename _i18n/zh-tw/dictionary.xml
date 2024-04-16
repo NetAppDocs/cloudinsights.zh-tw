@@ -8392,8 +8392,6 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
-  <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">CsUser</block>
-  <block id="a8f52a9563e47eb33fbdc4c48dfcf8f5" category="paragraph">請注意、新增_時<block ref="d95c3cfe38a15370491721a373f38df2" category="inline-link-macro-rx"></block>_、該使用者需要SSH存取ONTAP 才能存取《The SF-Management LIF》。</block>
   <block id="dea5f9ab95bb253b826201d228922448" category="paragraph">資料收集器支援對照表提供Cloud Insights 支援的資料收集器參考資料、包括廠商與機型資訊。</block>
   <block id="3337a607cd5a33d6b8d3f27ce7da458d" category="cell">API版本</block>
   <block id="25ac429f9072293d27a836ee2a148f47" category="cell">模型</block>
@@ -13101,4 +13099,8 @@ Proxy ：
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud Insights 中使用。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes 運算子和資料收集器都是從 Cloud Insights Docker 登錄下載。安裝之後、操作員便會管理部署在 Kubernetes 叢集節點中的任何與操作員相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
   <block id="99caa80e6c446108c367beb2add705b3" category="list-text">在多租戶環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 變更分析可能無法正確追蹤所有變更。</block>
+  <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP 整合權限：</block>
+  <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">拒絕 ONTAP 存取的權限：</block>
+  <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">附註：如果已新增一個 REST 角色（ _arwrole_ 或 _csrestrole_ ）、則不需要新增第二個 REST 角色。您只需新增 API 權限、如下例所示。</block>
+  <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">範例： _csrestrole_ 已經存在、因此我們只需啟用反勒索軟體保護、並將 API 權限授予現有的 _csrestrole_ ：</block>
 </blocks>

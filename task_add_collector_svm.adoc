@@ -124,6 +124,27 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
+ONTAP ARP 整合權限：
+
+....
+security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+....
+拒絕 ONTAP 存取的權限：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
+....
+附註：如果已新增一個 REST 角色（ _arwrole_ 或 _csrestrole_ ）、則不需要新增第二個 REST 角色。您只需新增 API 權限、如下例所示。
+
+範例： _csrestrole_ 已經存在、因此我們只需啟用反勒索軟體保護、並將 API 權限授予現有的 _csrestrole_ ：
+
+....
+security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+....
 
 
 === 透過* vserver管理IP*新增權限：
@@ -144,6 +165,12 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+拒絕 ONTAP 存取的權限：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
+....
 
 
 === ONTAP 自主勒索軟體保護的權限
