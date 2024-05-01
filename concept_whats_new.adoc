@@ -165,6 +165,49 @@ Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保�
 
 行為的「季節性」：週末行為可能會遵循不同的模式、從平日或從下午開始的早晨行為。工作負載安全演算法會將這種季節性因素納入考量。
 
+
+
+=== 過時的功能
+
+功能有時會隨著功能的演進而過時。以下是一些在 Cloud Insights 中已被淘汰的功能：
+
+
+
+==== Workload Secure REST cloudsecure_forensics 。 Activations.v1 API 已過時
+
+_cloudsecure_forensics 。 Activities 。 v1_API 已過時。此 API 會傳回與 Storage Workload Security 環境中實體相關的活動資訊。此 API 已被 cloudsecure_forensics ． Activities ． * v2*_ 取代。
+
+此 API 的 Get 先前傳回下列項目：
+
+[listing]
+----
+{
+  "count": 24594,
+  "limit": 1000,
+  "offset": 0,
+  "results": [
+    {
+      "accessLocation":
+----
+此 API 現在會傳回：
+
+[listing]
+----
+{
+  "limit": 1000,
+  "meta": {
+    "page": {
+      "after": "lvlvk3pp.4cpzcg4kpybl",
+      "before": "lvlxy3dz.4cq5ajdnl9fk",
+      "size": 1000
+    }
+  },
+  "results": [
+    {
+      "accessLocation": "10.249.6.220",
+----
+如需更多詳細資料、請參閱 Swagger 文件、網址為「 Admin > API Access > API Documentation > Workload Security 」。
+
 '''
 
 

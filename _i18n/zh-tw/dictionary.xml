@@ -13106,4 +13106,11 @@ Proxy ：
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">我看到「心跳錯誤：」訊息</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">重新安裝擷取單元時、我看到「 ValueError: File context for /opt/NetApp/cloudimses//.* 」？已定義」。</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">在使用 SELinux 的系統上、之後可能會出現此錯誤訊息<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> 已執行、將重新安裝擷取裝置。執行命令<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> 應修正問題並移除訊息。</block>
+  <block id="ae2e91be06ba70b73fa6c74eeeb93115" category="section-title">過時的功能</block>
+  <block id="4b19ce62e1686c6b02dce6a6a618fab8" category="paragraph">功能有時會隨著功能的演進而過時。以下是一些在 Cloud Insights 中已被淘汰的功能：</block>
+  <block id="f10826ff9826bc53b76b340699d7486c" category="section-title">Workload Secure REST cloudsecure_forensics 。 Activations.v1 API 已過時</block>
+  <block id="22e1977c2373212d5a86d5500fb987b6" category="paragraph">_cloudsecure_forensics 。 Activities 。 v1_API 已過時。此 API 會傳回與 Storage Workload Security 環境中實體相關的活動資訊。此 API 已被 cloudsecure_forensics ． Activities ． * v2*_ 取代。</block>
+  <block id="2f536f055cc49f30b2b045622c25fdbc" category="paragraph">此 API 的 Get 先前傳回下列項目：</block>
+  <block id="4d50bab3a705e7ae04c75813a7d22ad2" category="paragraph">此 API 現在會傳回：</block>
+  <block id="c124771302bfe76ccd178d7854d906f5" category="paragraph">如需更多詳細資料、請參閱 Swagger 文件、網址為「 Admin &gt; API Access &gt; API Documentation &gt; Workload Security 」。</block>
 </blocks>
