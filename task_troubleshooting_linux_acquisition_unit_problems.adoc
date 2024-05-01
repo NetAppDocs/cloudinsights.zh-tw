@@ -60,7 +60,10 @@ keywords: AU, acquisition unit, trioubleshooting
 | 狀態：活動訊號失敗 | 擷取單元（AU）Cloud Insights 每60秒會傳送一次活動訊號至更新租約。如果因網路問題或Cloud Insights 不回應的故障而導致活動訊號呼叫失敗、則不會更新AU的租用時間。當AU的租用時間到期時Cloud Insights 、功能表會顯示「活動訊號故障」狀態。疑難排解步驟：檢查擷取單元伺服器與CloudInsights之間的網路連線。檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。查看擷取設備記錄（/var/log/NetApp/cloudinss/acq/acq.log）、查看是否有任何錯誤。 
 
 
-| 我看到「活動訊號錯誤：訊息 | 如果網路中斷導致擷取裝置與Cloud Insights 該環境之間的通訊中斷超過一分鐘、就可能發生此錯誤。驗證AU與Cloud Insights 恆速鏈之間的連線是否穩定且有效。 
+| 我看到「心跳錯誤：」訊息 | 如果網路中斷導致擷取裝置與Cloud Insights 該環境之間的通訊中斷超過一分鐘、就可能發生此錯誤。驗證AU與Cloud Insights 恆速鏈之間的連線是否穩定且有效。 
+
+
+| 重新安裝擷取單元時、我看到「 ValueError: File context for /opt/NetApp/cloudimses//.* 」？已定義」。 | 在使用 SELinux 的系統上、之後可能會出現此錯誤訊息 `cloudinsights-uninstall.sh -p` 已執行、將重新安裝擷取裝置。執行命令 `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"` 應修正問題並移除訊息。 
 |===
 
 

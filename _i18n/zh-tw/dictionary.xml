@@ -13103,4 +13103,7 @@ Proxy ：
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">拒絕 ONTAP 存取的權限：</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">附註：如果已新增一個 REST 角色（ _arwrole_ 或 _csrestrole_ ）、則不需要新增第二個 REST 角色。您只需新增 API 權限、如下例所示。</block>
   <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">範例： _csrestrole_ 已經存在、因此我們只需啟用反勒索軟體保護、並將 API 權限授予現有的 _csrestrole_ ：</block>
+  <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">我看到「心跳錯誤：」訊息</block>
+  <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">重新安裝擷取單元時、我看到「 ValueError: File context for /opt/NetApp/cloudimses//.* 」？已定義」。</block>
+  <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">在使用 SELinux 的系統上、之後可能會出現此錯誤訊息<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> 已執行、將重新安裝擷取裝置。執行命令<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> 應修正問題並移除訊息。</block>
 </blocks>
