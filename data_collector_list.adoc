@@ -247,6 +247,9 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_dc_na_cdot.html["NetApp ONTAP 資料管理軟體"] | 基礎架構 
 
 
+| link:task_dc_na_ontap_rest.html["NetApp ONTAP REST 收集器 "] | 基礎架構 
+
+
 | link:task_dc_na_cdot.html["NetApp ONTAP Select"] | 基礎架構 
 
 
