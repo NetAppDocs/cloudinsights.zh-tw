@@ -179,6 +179,9 @@ Proxy ：
 |  | 事件導出者容忍度 | 事件導出者額外容忍度。 
 
 
+|  | 事件導出者 -maxEventAgeSeconds | 事件導出者最大事件發生時間。  請參閱 https://github.com/jkroepke/resmoio-kubernetes-event-exporter[] 
+
+
 | 工作負載對應 |  | 可自訂工作負載對應集合及安裝 Operator 的組態選項 
 
 
@@ -391,6 +394,10 @@ spec:
     # # Example: '{key: taint1, operator: Exists, effect: NoSchedule},{key: taint2, operator: Exists, effect: NoExecute}'
     # fluent-bit-tolerations: ''
     # event-exporter-tolerations: ''
+
+    # # event-exporter max event age.
+    # # See https://github.com/jkroepke/resmoio-kubernetes-event-exporter
+    # event-exporter-maxEventAgeSeconds: '10'
 
   # # Settings for the Network Performance and Map feature.
   # workload-map:
