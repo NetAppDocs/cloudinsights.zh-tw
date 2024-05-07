@@ -87,15 +87,6 @@ Proxy ：
 |  | rsMemRequest | 對 Telegraf RS 的記憶體要求 
 
 
-|  | dockerMountPoint | dockerMountPoint 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗 
-
-
-|  | dockerUnixSocket | dockerUnixSocket 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。 
-
-
-|  | CrioSockPath | crioSockPath 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。 
-
-
 |  | RunPrivileged | 以特殊權限模式執行 Telegraf 容器。如果您的 k8s 節點上已啟用 SELinux 、請將此設定為 True 
 
 
@@ -121,9 +112,6 @@ Proxy ：
 
 
 |  | 輸出逾時 | 請參閱 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf 組態文件"] 
-
-
-|  | 啟用 DockerMetricCollection | 收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。 
 
 
 |  | dsTolerations | Telegraf-DS 額外的容忍度。 
