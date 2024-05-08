@@ -9747,12 +9747,6 @@
   <block id="76b9e3aaffb44c3c4a7084bd7430088d" category="cell">適用於 Telegraf RS 的 CPU 要求</block>
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">對 Telegraf RS 的記憶體要求</block>
-  <block id="04808c0fd1505eb55198b91e2910694e" category="cell">dockerMountPoint</block>
-  <block id="8b4f648381c209aa11d7baaf654c5f90" category="cell">dockerMountPoint 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗</block>
-  <block id="986b967d4a19de83ed59389872e2eb46" category="cell">dockerUnixSocket</block>
-  <block id="4dccb3941fc9760d547f9ae348685ad3" category="cell">dockerUnixSocket 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。</block>
-  <block id="6ae45dc429d1f96b8c63fba54419b0f7" category="cell">CrioSockPath</block>
-  <block id="eeec0978474a40f056df3ffd9acfa360" category="cell">crioSockPath 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">RunPrivileged</block>
   <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">以特殊權限模式執行 Telegraf 容器。如果您的 k8s 節點上已啟用 SELinux 、請將此設定為 True</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">批次大小</block>
@@ -10185,8 +10179,6 @@
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在 _AgentConfiguration_ 中</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">污染與容許</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">深入瞭解 Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
   <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS 額外的容忍度。</block>
   <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">RsTolerations</block>
@@ -13093,12 +13085,10 @@ Proxy ：
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Pod 對儲存裝置的範例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
-  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">變更分析提供單一窗格、可檢視及關聯工作負載和組態變更的健全狀況。這有助於疑難排解動態環境。</block>
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes 網路效能監控與地圖功能可對應服務之間的相依性（也稱為工作負載）、藉此簡化疑難排解程序、並即時掌握網路效能延遲和異常狀況、以便在影響使用者之前先識別效能問題。
 此功能可分析及稽核 Kubernetes 流量、協助組織降低整體成本。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud Insights 中使用。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Kubernetes 運算子和資料收集器都是從 Cloud Insights Docker 登錄下載。安裝之後、操作員便會管理部署在 Kubernetes 叢集節點中的任何與操作員相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
-  <block id="99caa80e6c446108c367beb2add705b3" category="list-text">在多租戶環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 變更分析可能無法正確追蹤所有變更。</block>
   <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP 整合權限：</block>
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">拒絕 ONTAP 存取的權限：</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">附註：如果已新增一個 REST 角色（ _arwrole_ 或 _csrestrole_ ）、則不需要新增第二個 REST 角色。您只需新增 API 權限、如下例所示。</block>
@@ -13118,4 +13108,7 @@ Proxy ：
   <block id="bf9973f393dbc9824e3e96f831e12c25" category="sidebar">ONTAP REST 收集器</block>
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">事件導出者 -maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">事件導出者最大事件發生時間。  請參閱<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
+  <block id="639bed0f86ee37975166505f25500f59" category="paragraph">變更分析有何幫助？</block>
+  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">在多租戶 Kubernetes 環境中、可能會因為設定不當而導致停機。在非常動態的環境中、 Cloud Insights 基礎架構監控可能無法正確追蹤所有變更。</block>
+  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">變更分析可提供單一窗格來檢視及關聯工作負載和組態變更的健全狀況、藉此協助解決此問題。這有助於疑難排解動態 Kubernetes 環境。</block>
 </blocks>
