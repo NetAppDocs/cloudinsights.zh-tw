@@ -4,7 +4,7 @@ permalink: telegraf_agent_k8s_config_options.html
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s, options, configuration 
 summary: NetApp Kubernetes 監控營運者有許多可設定的選項。 
 ---
-= NetApp Kubernetes 監控營運者組態選項
+= Kubernetes 監控操作員組態選項
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,9 +19,9 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 
 
 [role="lead"]
-。 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 您可以自訂安裝與組態。
+。 link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Kubernetes 監控營運者"] 您可以自訂組態。
 
-下表列出 AgentConfiguration 檔案的可能選項：
+下表列出 _AgentConfiguration_ 檔案的可能選項：
 
 [cols="1,1,2"]
 |===
@@ -244,7 +244,7 @@ Proxy ：
 
 == AgentConfiguration 檔案範例
 
-以下是 AgentConfiguration 檔案範例。
+以下是 _AgentConfiguration_ 檔案範例。
 
 [listing]
 ----
