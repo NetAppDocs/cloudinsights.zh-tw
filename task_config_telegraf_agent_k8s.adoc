@@ -165,7 +165,11 @@ NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與
 
 這些區段包含自訂運算子組態、使用 Proxy 、使用自訂或私有泊塢視窗儲存庫或使用 OpenShift 的相關資訊。
 
-在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。請參閱清單 link:telegraf_agent_k8s_config_options.html["可用的設定"] 適用於最新版的運算子。
+
+
+=== 組態選項
+
+最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。請參閱清單 link:telegraf_agent_k8s_config_options.html["可用的設定"] 適用於最新版的運算子。
 
 您也可以使用下列命令在部署運算子之後編輯此資源：
 

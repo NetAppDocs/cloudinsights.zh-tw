@@ -13044,7 +13044,6 @@ Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux</
   <block id="807c67eb6796ba389d19bd183fc2b317" category="paragraph">如需有關 Kube-State-Metrics 的資訊、請參閱 <block ref="73f7e5446269af2d39c747140597d176" category="inline-link-macro-rx"></block>。</block>
   <block id="4f20cb3e8959a7865ba5aaa5af540ddb" category="section-title">設定 / 自訂操作員</block>
   <block id="67dea165315ff79ce5620f051688d07c" category="paragraph">這些區段包含自訂運算子組態、使用 Proxy 、使用自訂或私有泊塢視窗儲存庫或使用 OpenShift 的相關資訊。</block>
-  <block id="039369597a340d41c2e4a9df62b375fb" category="paragraph">在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。請參閱清單 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 適用於最新版的運算子。</block>
   <block id="27aa502b8f8f23143b77f0800d6dd42f" category="paragraph">您也可以使用下列命令在部署運算子之後編輯此資源：</block>
   <block id="c8cb2db38f5ff99219b7338226473fd2" category="paragraph">您可以在兩個地方使用環境中的 Proxy 來安裝 Kubernetes Monitoring Operator 。這些可能是相同或獨立的Proxy系統：</block>
   <block id="a7f189b94dda98958771dc1a3345eb8f" category="paragraph">如果您使用任一或兩個代理程式、為了安裝 Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。如果您有Proxy、而且可以Cloud Insights 從要安裝該運算子的伺服器/ VM存取功能、則您的Proxy可能設定正確。</block>
@@ -13085,4 +13084,6 @@ kubectl Get all -n &lt;namespace&gt; | grep -i PSP （應顯示找不到任何�
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">我看到 Kubernetes Monitoring Operator 部署的 Pod 因為資源不足而當機。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">請參閱 Kubernetes Monitoring Operator <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 視需要增加 CPU 和 / 或記憶體限制。</block>
+  <block id="d9a52817194c8be56b59a9d57114278a" category="section-title">組態選項</block>
+  <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。請參閱清單 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 適用於最新版的運算子。</block>
 </blocks>
