@@ -130,6 +130,12 @@ summary: 資料收集器ONTAP
 
 
 
+=== 收集 ONTAP 交換器度量的權限需求
+
+Cloud Insights 可以在收集器中選擇收集 ONTAP 叢集交換器資料 <<advanced-configuration,進階組態>> 設定：除了在 Cloud Insights 收集器上啟用此功能外、您還必須 * 設定 ONTAP 系統 * 本身以提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交換器資訊"]、並確保正確 <<a-note-about-permissions,權限>> 已設定、以便將交換器資料傳送至 Cloud Insights 。
+
+
+
 == 組態
 
 [cols="2*"]
