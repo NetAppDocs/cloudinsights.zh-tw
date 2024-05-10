@@ -13088,4 +13088,6 @@ kubectl Get all -n &lt;namespace&gt; | grep -i PSP （應顯示找不到任何�
   <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含設定的註解範例。請參閱清單 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 適用於最新版的運算子。</block>
   <block id="55daf72da742e811f565e4ab709d3c49" category="section-title">收集 ONTAP 交換器度量的權限需求</block>
   <block id="1a565d9a88c6cc1a17ed9ec577431947" category="paragraph">Cloud Insights 可以在收集器中選擇收集 ONTAP 叢集交換器資料 <block ref="0a74ef7985c5cbe5eb3ab6c199d26582" category="inline-xref-macro-rx"></block> 設定：除了在 Cloud Insights 收集器上啟用此功能外、您還必須 * 設定 ONTAP 系統 * 本身以提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、並確保正確 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 已設定、以便將交換器資料傳送至 Cloud Insights 。</block>
+  <block id="e77307796c2832560f84fa94d82cd573" category="list-text">Rubrik 叢集 IP 位址或主機名稱。</block>
+  <block id="fb36183a15285a9f1f23d79072c763f7" category="list-text">對於「基本驗證」、為叢集的使用者名稱和密碼。如果您偏好使用服務帳戶型驗證、則需要服務帳戶、秘密和組織 ID</block>
 </blocks>
