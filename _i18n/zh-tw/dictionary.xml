@@ -2265,7 +2265,6 @@
   <block id="b035f264e2d66667aac580634dbe607d" category="list-text">將權限設為讀取/寫入。</block>
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">設定期望到期日。</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">按一下「Save（儲存）」、然後*複製金鑰並將其儲存*到安全的地方。您稍後將無法存取完整金鑰。</block>
-  <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">APIkeys適用於_Sync_或_AsynSync_。</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">直接查詢資料表</block>
   <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">有了API金鑰、現在就能直接查詢報告資料庫。長URL可簡化為\https://.../odata/以供顯示、而非完整的\https://&lt;Cloud Insights url&gt;/rest / v1/dwh管理/OData/</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">請嘗試類似的簡單查詢</block>
@@ -2372,16 +2371,10 @@
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">疑難排解Windows接收單元問題</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">另請參閱 <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> 和 <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">每5分鐘登出一次Cloud Insights</block>
-  <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">我有Cloud Central帳戶、但無法登入Cloud Central。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp支援</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀參加Cloud Insights 這個項目、但我收到「未經授權」的訊息。</block>
-  <block id="199017f1d912993f091b6b969d3442ad" category="cell">確認您已註冊Cloud Central帳戶、或貴組織使用Cloud Central的SSO登入。驗證您的Cloud Central設定檔電子郵件地址是否與Cloud Insights 您的歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
-  <block id="176f8c6fa466059df49f2717c021d306" category="cell">我從Cloud Central或Cloud Secure 是不知道資料的地方登出、並自動從Cloud Insights 這個地方登出。</block>
-  <block id="7a8624fb56224e907698f45ef2e4cc47" category="cell">NetApp Cloud上的單一登入（SSO）會登出所有Cloud Insights 的「畫面」、Cloud Secure 「畫面」和「報告」工作階段。如果您有多Cloud Insights 個支援帳戶的存取權限、請從任何一個帳戶登出、登出所有使用中的工作階段。重新登入以存取您的帳戶。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">我在數天後自動登出。</block>
-  <block id="ed6e79e2f9b9c201ed834c6efeb7f356" category="cell">NetApp Cloud帳戶需要每隔幾天重新驗證一次（目前的Cloud Central設定為7天）。重新登入以存取您的帳戶。</block>
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">我收到錯誤訊息「不再授權登入」。</block>
-  <block id="acf29dcaa06698c29122cba5402e3145" category="cell">請聯絡您的帳戶管理員、確認是否有權限存取Cloud Insights 功能。驗證您的Cloud Central設定檔電子郵件地址是否與Cloud Insights 您的歡迎電子郵件中顯示的電子郵件地址相符</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">其他登入錯誤</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">請在Chrome中嘗試無痕式模式、或清除瀏覽器記錄、Cookie和快取。嘗試使用不同的瀏覽器設定檔（例如 Chrome -新增人員）。</block>
   <block id="8e4250e46b39cafa83925c4406214353" category="paragraph">如果您使用Cloud Insights 的是動態的支援功能、您可以使用下列支援選項：</block>
@@ -3277,7 +3270,6 @@
   <block id="19afc2b6de08730341fe43a49d74b17f" category="cell">使用者管理：邀請/新增/修改/停用</block>
   <block id="99fb7036d3e93ba3319d093dfe84cd02" category="paragraph">*需要Premium Edition</block>
   <block id="c6050a6ee22484e6d99c05b9079a54e6" category="section-title">邀請使用者建立帳戶</block>
-  <block id="577ad4d536287e761cfcca07c709967a" category="paragraph">透過Cloud Central建立新的使用者帳戶。使用者可以回覆透過電子郵件傳送的邀請函、但如果使用者沒有Cloud Central帳戶、則使用者必須向Cloud Central註冊、才能接受邀請。</block>
   <block id="2261218e5eda0b1a833ad7434d235af5" category="list-text">使用者名稱是邀請函的電子郵件地址。</block>
   <block id="ee878f787b1f1f1d4994736d075986bd" category="list-text">瞭解您要指派的使用者角色。</block>
   <block id="b9d905aec198b1e4b3ae4b7e048ef2e4" category="list-text">密碼由使用者在註冊程序中定義。</block>
@@ -3308,26 +3300,13 @@
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理員角色的使用者可以按一下使用者名稱、然後按一下對話方塊中的「_Delete User_（刪除使用者_）」、刪除使用者（例如不再與公司合作的人）。使用者將會從Cloud Insights 整個環境中移除。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">請注意、使用者所建立的任何儀表板、查詢等、Cloud Insights 即使在使用者移除之後、仍可繼續在這個環境中使用。</block>
   <block id="ae34cecb877a210f81bf4d446541e619" category="section-title">單一登入（SSO）和身分識別聯盟</block>
-  <block id="4743b9c396b4a51215bcc90cb20ea986" category="section-title">啟用Cloud Insights 身分識別聯盟以利執行SSO</block>
   <block id="3c55703ac1b754437c4ca4d09b9083c0" category="paragraph">使用身分識別聯盟：</block>
   <block id="1fa3ec89d7b92a55ab22349de75a4680" category="list-text">驗證會委派給客戶的身分識別管理系統、使用客戶在公司目錄中的認證資料、以及多因素驗證（MFA）等自動化原則。</block>
-  <block id="5a31a45adb468f47c1f0b1e80f5171f7" category="list-text">使用者一次登入所有NetApp雲端服務（單一登入）。</block>
-  <block id="192320e6f55720b5664a47f5c666baca" category="paragraph">使用者帳戶是在所有雲端服務的NetApp Cloud Central中管理。根據預設、驗證是使用Cloud Central本機使用者設定檔來完成。以下是此程序的簡化概觀：</block>
-  <block id="56450eba64c0d00cde410611439dc78c" category="inline-image-macro">Cloud Central驗證</block>
-  <block id="9ab07284bc5b71a2d5cea4881836c513" category="paragraph"><block ref="9ab07284bc5b71a2d5cea4881836c513" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4e2be1ac16d688153b9bf995c933023c" category="paragraph">不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者Cloud Insights 的身份、以利執行支援功能、並驗證其他NetApp Cloud Central Services的使用者身分。透過身分識別聯盟、NetApp Cloud Central帳戶會使用公司目錄的認證資料進行驗證。</block>
   <block id="5bdf50c3632df05e809cd15e1fcb4ca9" category="paragraph">以下是此程序的簡化範例：</block>
-  <block id="456ec3716eb5484d780f58629b9d6b71" category="inline-image-macro">圖示為身分識別聯盟</block>
-  <block id="da667ed7886fe1fad31ff9dd3c806a5d" category="paragraph"><block ref="da667ed7886fe1fad31ff9dd3c806a5d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8922583597ff9f65c02b62c61bfa22a" category="paragraph">在上圖中、當使用者存取Cloud Insights E塊 時、該使用者會被導向客戶的身分識別管理系統進行驗證。一旦帳戶通過驗證、使用者就會被導向Cloud Insights 到這個URL。</block>
   <block id="fa8a297cebb990edca45e0364e7e6b45" category="inline-link-macro">身分識別聯盟</block>
-  <block id="e0272c481804e7b56f3bd750203259b0" category="paragraph">Cloud Central使用驗證0來實作身分識別聯盟、並與Active Directory Federation Services（ADFS）和Microsoft Azure Active Directory（AD）等服務整合。如需身分識別聯盟設定與組態的詳細資訊、請參閱上的Cloud Central文件 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block>。</block>
-  <block id="2dca6320aaa2ae28cf6938308c945311" category="paragraph">請務必瞭解、在Cloud Central中不斷變動的身分識別聯盟不僅適用於Cloud Insights 整個NetApp Cloud Services、也適用於整個NetApp Cloud Services。客戶應與NetApp團隊討論這項變更、討論他們擁有的每個Cloud Central產品、以確保他們所使用的組態可與身分識別聯盟搭配使用、或是需要調整任何帳戶。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。</block>
-  <block id="005faded672314bc475a7800de0ef460" category="paragraph">此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別供應商的任何變更（例如從SAML移轉至Microsoft AD）都可能需要在Cloud Central中進行疑難排解/變更/注意、才能更新使用者的設定檔。</block>
   <block id="d6034d333b0966edaeeea729724c4988" category="section-title">單一登入（SSO）使用者自動資源配置</block>
   <block id="6c59be6231105da08319ced12f4e659b" category="paragraph">除了邀請使用者外、系統管理員還能為Cloud Insights 公司網域中的所有使用者啟用*單一登入（SSO）使用者自動資源配置（User Auto-Provisioning）*存取功能、而不需要個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。</block>
-  <block id="a4e769bbaabeca7372ca6634d43bf1a5" category="admonition">_SSO使用者自動資源配置_可在Cloud Insights 支援Cloud Insights 以供使用時使用、必須先設定才能啟用。SSO使用者自動設定包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 如以上章節所述、透過NetApp Cloud Central。聯盟允許單一登入使用者使用公司目錄的認證資料、存取您的NetApp Cloud Central帳戶、並使用安全聲明標記語言2.0（SAML）和OpenID Connect（OIDC）等開放式標準。</block>
-  <block id="8454d6429fbbbb85edb89463f6d1f0a6" category="paragraph">若要設定_SSO使用者自動資源配置_、請在「*管理&gt;使用者管理*」頁面上、按一下「*要求聯盟*」按鈕。設定完成後、系統管理員即可啟用SSO使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。</block>
   <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">使用者管理與聯盟</block>
   <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8180ff7e185bcd2693971907be3065b6" category="paragraph">有時、系統管理員會想要將單一使用者提升為預設SSO角色（例如、讓他們成為系統管理員）。他們可以在「*管理&gt;使用者管理*」頁面上、按一下使用者的右側功能表、然後選取「_assign role_」。以這種方式指派明確角色的使用者、即使Cloud Insights _ SSO使用者自動資源配置_後來停用、仍可繼續存取功能。</block>
@@ -5251,7 +5230,6 @@
   <block id="e79313bfe03c4561628e01c7102ba5fb" category="section-title">稽核事件與行動</block>
   <block id="6fffa02826aca9a14ee11d85609b3e25" category="paragraph">由NetApp稽核的事件和行動Cloud Insights 可分為下列幾大類：</block>
   <block id="c5c594e685367681b202d84ba0c87407" category="list-text">*使用者帳戶*：登入、登出、角色變更等</block>
-  <block id="5a3b3866ed7beab8b728614f1d33c0b5" category="paragraph">範例：_使用者* Tony Laoi*從* 10.1.120.15*登入、使用者代理程式* Mozilla / 5.0（Windows NT 10.0；Win64；x64）Apple WebKit / 537.36（KHTML、例如Gecko）Chrome / 85.0.4183.121Safari / 537.36*、登入方法* Cloud Central Portal Login_*</block>
   <block id="f8c4f6c2455f59fa0c1cc9fed5a8c6c1" category="list-text">*擷取單位*：建立、刪除等</block>
   <block id="c1e8e78730ec648eeb7339e916d33231" category="paragraph">範例：_擷取單元* AU波士頓1 *移除_。</block>
   <block id="fa421109b9971a24c53c504a4c5ef88d" category="list-text">*資料收集器*：新增、移除、修改、延遲/恢復、變更擷取單位、 開始/停止等</block>
@@ -5701,7 +5679,6 @@
   <block id="b7ead3a19a9e810bd9a56c2d0ba0970d" category="paragraph">每個Widget會在Widget的右上角顯示其自動重新整理時間間隔。</block>
   <block id="2d5591e725889a349c977cc4e7cae6db" category="paragraph">自訂儀表板時間範圍無法使用自動重新整理。</block>
   <block id="b9aa7ebd34479fa35d4742937dc6d82d" category="paragraph">結合*電視模式*之後、自動重新整理功能可在儀表板或資產頁面上近乎即時地顯示資料。TV模式提供簡潔的顯示；導覽功能表會隱藏、提供更多螢幕空間供您顯示資料、如同編輯按鈕。TV模式會忽略典型Cloud Insights 的畫面顯示逾時、直到手動或透過授權安全性傳輸協定自動登出為止。</block>
-  <block id="9fd11a00d0217c79c8723171888d8b89" category="admonition">由於NetApp Cloud Central本身的使用者登入逾時時間為7天、Cloud Insights 因此必須同時登出該事件。您只要重新登入、儀表板就會繼續顯示。</block>
   <block id="a5c9402f6bc75dd26f443654668a4a43" category="inline-image-macro">電視模式</block>
   <block id="03d1874e32a13bf5497f4e8dffa69f6f" category="list-text">若要啟動電視模式、請按一下 <block ref="72428a0fd2f81e10aeae46bebf0ee590" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
   <block id="071f107bd9f41c0ac7ee5100c0d752b8" category="inline-image-macro">結束按鈕</block>
@@ -6557,7 +6534,6 @@
   <block id="6bf565eb0af1d9c4319c14b7f1ed3b40" category="list-text">功能資料</block>
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">這是NetApp提供雲端資料服務所產生的資料、可讓NetApp在雲端資料服務的開發、部署、營運、維護及安全方面、掌握最新資訊。功能資料不包含客戶資訊或個人資訊。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">使用者存取資料</block>
-  <block id="a020ee54398cbdbb6220eb6dbbb2eea3" category="paragraph">驗證與存取資訊、讓NetApp Cloud Central能夠與區域性Cloud Insights 的支援網站通訊、包括與使用者授權相關的資料。</block>
   <block id="56843f14a5fd059011e157622d7a2db2" category="paragraph">*不會從基礎架構和服務資源收集明確的個人資料*。收集的資訊僅包含效能指標、組態資訊和基礎架構中繼資料、與許多廠商的電話公司（包括NetApp自動支援和ActiveIQ）非常相似。不過、視客戶的命名慣例而定、共享區、磁碟區、VM、qtree、 應用程式等可能包含個人識別資訊。</block>
   <block id="0848bc91e44ee86e5df6e2c72cf1fe7a" category="paragraph">此外Cloud Insights 、系統也會維護對功能不完整的存取記錄、並包含使用者用來登入服務的IP和電子郵件地址。</block>
   <block id="eda5bd9f930c539c1e3a13adfdf11fcb" category="section-title">我的資訊儲存在何處？</block>
@@ -6569,7 +6545,6 @@
   <block id="18a0eda54a9f6bb830d8c84899c0ac27" category="list-text">稽核Cloud Insights 有關使用者活動的資訊</block>
   <block id="1a8b073d683b352fc06cc3bc800bc823" category="paragraph">下列資訊位於美國、無論您Cloud Insights 的VMware環境所在的地區為何：</block>
   <block id="2a56580b4f73dbbdeb1ee18d500fa3e8" category="list-text">環境網站（有時稱為「租戶」）資訊、例如網站/帳戶擁有者。</block>
-  <block id="477495be48e10387478849fdda012566" category="list-text">可讓NetApp Cloud Central與區域性Cloud Insights 的不二網站通訊的資訊、包括與使用者授權有關的任何資訊。</block>
   <block id="ca5794f9a5913506d29b3ae1d97f5871" category="list-text">關於使用者與租戶之間關係的資訊Cloud Insights 。</block>
   <block id="71071f9eeb8b3ff7f4a52f9927b52da4" category="section-title">主機區域</block>
   <block id="2c5e620943b15b31c38df4433ca50af9" category="paragraph">主機區域包括：</block>
@@ -7868,7 +7843,6 @@
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">手動還原NFS的IP</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">無法修改原則。原因：未授權使用該命令。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">請檢查是否使用CsUser、是否會如上所述授予使用者權限。</block>
-  <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選取「cloud.netapp.com &gt;帳戶/登入問題」或「cloud.netapp.com &gt;聯盟問題」類別。這是專為Cloud Central問題或疑問所設計。如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">雙向</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
   <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的規模調整指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
@@ -8063,7 +8037,6 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">請注意、AWS區分大小寫、Cloud Insights 而不區分大小寫。因此、如果您在Cloud Insights 不支援的情況下建立名為「Owner"的附註、並在S3上建立名為「Owner"、「Owner"和「Owner"的標籤、則「Owner"的所有S3版本都會對應至Cloud Insight的「擁有者」附註。</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必須將每個子帳戶設定為使用AWS角色、讓主帳戶ID從子帳戶存取S3詳細資料。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳實務做法：強烈建議將AWS預先定義的_Amazon S3ReadOnlyAccess_原則指派給S3主要帳戶。此外、在資料來源中設定的使用者應至少指派預先定義的_AWSOrganizationsReadOnlyAccess_原則、以便查詢AWS。</block>
-  <block id="396149d67edd166e53b49c38f4b707ba" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。範例：在Chrome中、在瀏覽器URL中輸入「chrome：//settings / Cookie」。選取「允許所有Cookie」選項。*或*選取「封鎖協力廠商Cookie」、並新增[*。] auth0.com和[*。] netapp.com的例外項目。附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。</block>
   <block id="b6679962f8c42c1ba1776113605353b7" category="section-title">必要的效能指標</block>
   <block id="024e28f9b56c22af28ebfa120fdb57f0" category="paragraph">Oracle ZFS設備可讓儲存管理員靈活擷取效能統計資料。此功能可讓您在高可用度配對中設定_each控制器、以擷取下列指標：Cloud Insights</block>
@@ -9348,7 +9321,6 @@
   <block id="575b95a19de7e191bf400580ceab0b27" category="cell">如果Solutions Enabler伺服器的精靈組態檔未聲明權限、您可能會看到此訊息（請參閱 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> 以上。）這會假設您的SE用戶端版本符合SE伺服器版本。如果未在/var/symapi/config/daema_users_USERS組態檔中設定_cisys使用者（執行Solutions Enabler命令）所需的精靈權限、也可能會發生此錯誤。若要修正此問題、請編輯/var/symapi/config/daema_userss檔案、並確定cisys使用者具有&lt;all&gt; 為storapid精靈指定的支援權限。範例：14：11：25 # tail /var/symapi/config/daema_users... cisys storapid &lt;all&gt;</block>
   <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知識庫</block>
   <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">如需Proxy組態的詳細資訊、請參閱NetApp <block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>。</block>
-  <block id="21495a8ea3304b589e7d69a7ec0ce1cc" category="paragraph">支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。使用者也是 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> 提供特定角色、或是透過登入Cloud Insights <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。</block>
   <block id="b83a60c5de546ea3d085bb1ce6636d9a" category="inline-image-macro">勒索軟體警示頂端區段</block>
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
 <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
@@ -12818,7 +12790,6 @@ Telegraf ：
   <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">NetApp 叢集的 IP 位址或完整網域名稱。必須是叢集管理 IP/FQDN 。</block>
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">擷取類型為 _admin_ 的虛擬伺服器名稱。您將在後續命令中使用此名稱。</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">我看到 ONTAP ontapi 收集器顯示資料的空白或「 0 」指標。</block>
-  <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST 不會報告僅在 ONTAP 系統內部使用的度量。例如、 ONTAP REST 不會收集系統集合體、只會收集 SVM 的「資料」類型。</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。  這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">從 Agent 回應至 SVM Data 生命</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
@@ -12860,7 +12831,6 @@ Telegraf ：
   <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 收集器 * 、然後按一下 *+ 資料收集器 * 按鈕。</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Kibana 。</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 MongoDB 。</block>
-  <block id="2e95a4622d16ffb729672b5838f5732b" category="paragraph">在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* 入口網站。如果您已經登入 BlueXP 、您可以透過幾個快速步驟、開始免費試用 Cloud Insights 。</block>
   <block id="5bff30d13ce98c505187872963af1f25" category="section-title">建立您的 NetApp BlueXP 帳戶</block>
   <block id="f21c4669cdc7c8b69bb7b9e4f65412b9" category="paragraph">一旦您的環境建立完成、您就可以使用 BlueXP 認證登入並開始免費的 30 天 Cloud Insights 試用版。在此試用期間、您可以探索 Cloud Insights 提供的功能。</block>
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">一旦您的環境建立完成、您可以隨時登入 NetApp BlueXP 入口網站、然後按一下 * 前往 Cloud Insights * 。您將被直接帶到Cloud Insights 您的自然環境中。</block>
@@ -12869,9 +12839,6 @@ Telegraf ：
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">閒置逾時</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">根據預設、如果六小時（ 360 分鐘）內沒有活動、 BlueXP 會將使用者登出。無論活動為何、使用者都會在七天後登出。</block>
   <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">如果我已經登入 NetApp BlueXP 、該怎麼辦？</block>
-  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXP 登入</block>
-  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將被帶回 <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 畫面。</block>
-  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
   <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">是非題：如果在 Kubernetes 節點上啟用 SELinux 、請將 RunPrivileged 設為 true 。</block>
   <block id="5c7af4a6b686285084e62f255503c141" category="cell">Proxy
 
@@ -13090,4 +13057,70 @@ kubectl Get all -n &lt;namespace&gt; | grep -i PSP （應顯示找不到任何�
   <block id="1a565d9a88c6cc1a17ed9ec577431947" category="paragraph">Cloud Insights 可以在收集器中選擇收集 ONTAP 叢集交換器資料 <block ref="0a74ef7985c5cbe5eb3ab6c199d26582" category="inline-xref-macro-rx"></block> 設定：除了在 Cloud Insights 收集器上啟用此功能外、您還必須 * 設定 ONTAP 系統 * 本身以提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>、並確保正確 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 已設定、以便將交換器資料傳送至 Cloud Insights 。</block>
   <block id="e77307796c2832560f84fa94d82cd573" category="list-text">Rubrik 叢集 IP 位址或主機名稱。</block>
   <block id="fb36183a15285a9f1f23d79072c763f7" category="list-text">對於「基本驗證」、為叢集的使用者名稱和密碼。如果您偏好使用服務帳戶型驗證、則需要服務帳戶、秘密和組織 ID</block>
+  <block id="07564ad1af1bd4ed017ae241054bd345" category="paragraph">支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。  使用者也是 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> 提供特定角色、或是透過登入Cloud Insights <block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block> 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。</block>
+  <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">透過 BlueXP 建立新的使用者帳戶。使用者可以回應透過電子郵件傳送的邀請、但如果使用者沒有 BlueXP 帳戶、則使用者必須註冊 BlueXP 、才能接受邀請。</block>
+  <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">什麼是身分識別聯盟？</block>
+  <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">使用者登入一次所有 NetApp BlueXP 服務（單一登入）。</block>
+  <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">使用者帳戶是在適用於所有雲端服務的 NetApp BlueXP 中進行管理。依預設、驗證是使用 BlueXP 本機使用者設定檔完成。以下是此程序的簡化概觀：</block>
+  <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">使用本機的 BlueXP 驗證</block>
+  <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1efb7531b4ff57cf7e5dad319f452ce8" category="paragraph">不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者的 Cloud Insights 及其他 NetApp BlueXP 服務。透過身分識別聯盟、 NetApp BlueXP 帳戶會使用公司目錄中的認證進行驗證。</block>
+  <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">使用同盟的 BlueXP 驗證</block>
+  <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">啟用身分識別聯盟</block>
+  <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXP 聯合指令</block>
+  <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXP 使用 Auth0 實作身分識別聯盟、並與 Active Directory Federation Services （ ADFS ）和 Microsoft Azure Active Directory （ AD ）等服務整合。若要設定身分識別聯盟、請參閱 <block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
+  <block id="e806ab1149571cd13505dfbc97c18648" category="admonition">您必須先設定 BlueXP 身分識別聯盟、才能搭配 Cloud Insights 使用 SSO 。</block>
+  <block id="3d447ee9850a212906099a2f2e71dd7b" category="paragraph">請務必瞭解、 BlueXP 中變更的身分識別聯盟不僅適用於 Cloud Insights 、也適用於所有 NetApp BlueXP 服務。客戶應與他們擁有的每個 BlueXP 產品的 NetApp 團隊討論此變更、以確保他們所使用的組態能與身分識別聯盟搭配運作、或是需要對任何帳戶進行調整。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。</block>
+  <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別提供者的任何變更（例如從 SAML 移轉至 Microsoft AD ）都可能需要 BlueXP 中的疑難排解 / 變更 / 注意、才能更新使用者的設定檔。</block>
+  <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">對於這類或任何其他聯盟問題、您可以在開啟支援票證<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> 然後選擇類別「 bluexp.netapp.com &gt; 聯盟問題」。</block>
+  <block id="1290a9c844484dfb0ecb66679bb02236" category="admonition">_SSO使用者自動資源配置_可在Cloud Insights 支援Cloud Insights 以供使用時使用、必須先設定才能啟用。SSO 使用者自動佈建組態包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 透過 NetApp BlueXP 、如前節所述。聯盟允許單一登入使用者使用公司目錄中的認證來存取您的 NetApp BlueXP 帳戶、使用開放式標準、例如安全聲明標記語言 2.0 （ SAML ）和 OpenID 連線（ OIDC ）。</block>
+  <block id="5f47dcd3204dc1bc6c36abf1ce4be4cc" category="paragraph">若要設定 _SSO 使用者自動資源配置 _ 、您必須先在 * 管理 &gt; 使用者管理 * 頁面上設定 BlueXP 身分識別聯盟。選取橫幅中的 * 設定聯盟 * 連結以繼續執行 BlueXP 聯盟。設定完成後、 Cloud Insights 管理員即可啟用 SSO 使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。</block>
+  <block id="bbeb55e7d4d240b66f4ca24218cf7de0" category="admonition">由於 NetApp BlueXP 本身的使用者登入逾時時間為 7 天、因此 Cloud Insights 也必須使用該事件登出。您只要重新登入、儀表板就會繼續顯示。</block>
+  <block id="10c296499c1a789621926ca2df89bad4" category="paragraph">驗證與存取資訊、可讓 NetApp BlueXP 與區域 Cloud Insights 站台通訊、包括與使用者授權相關的資料。</block>
+  <block id="32b8c42dbc2b21fb7881d9a36bb2727a" category="list-text">可讓 NetApp BlueXP 與地區 Cloud Insights 網站通訊的資訊、包括與使用者授權相關的任何資訊。</block>
+  <block id="c8c46afa6f003113c7d643310bade896" category="inline-xref">_Sync_ 或 _AsynSync_</block>
+  <block id="54ebec075b0ae24d1fe36b1a78b7014f" category="paragraph">APIkeys 很適合 <block ref="9966ea080d2324311c0da20a04f19491" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c545b4af283ca5836cafe431d1ea06a" category="section-title">同步或非同步？</block>
+  <block id="1f5c701838fc1e9c08d402a2d3562c8c" category="paragraph">根據預設、 API 命令會以 _Synchronity_ 模式運作、這表示您傳送要求、並立即傳回回應。不過、有時候查詢可能需要很長時間才能執行、這可能會導致要求逾時。若要解決此問題、您可以執行要求 _ 非同步 _ 。在非同步模式中、要求會傳回可監控執行的 URL 。URL 會在準備好時傳回結果。</block>
+  <block id="3559171ac28b17714bc92816d17b2a17" category="paragraph">若要以非同步模式執行查詢、請新增標頭<block ref="1f82ebaa5a99226ba28d8d76ae41a3f8" prefix=" " category="inline-code"></block> 以達成此要求。成功執行後、回應將包含下列標頭：</block>
+  <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">如果回應尚未就緒、查詢位置 URL 會傳回相同的標頭、如果回應準備好、則會傳回狀態 200 。回應內容將為文字類型、包含原始查詢的 http 狀態和部分中繼資料、然後是原始查詢的結果。</block>
+  <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：</block>
+  <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">回應的格式如下：</block>
+  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。
+
+範例：
+在 Chrome 的瀏覽器 URL 中輸入「 chrome://settings/Cookie 」。
+
+選取「允許所有Cookie」選項。
+*或*
+選取「封鎖協力廠商 Cookie 」、並新增 [\*.]auth0.com 和 [*.]netapp.com 的例外。
+
+附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
+  <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有 BlueXP 帳戶、但無法登入 BlueXP 。</block>
+  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選擇類別「 blueXP.netapp.com &gt; 帳戶 / 登入問題」或「 bluexp.netapp.com &gt; 聯盟問題」。  這些是專為 BlueXP 問題所設計。
+如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。
+
+確認 BlueXP 設定檔電子郵件地址與 Cloud Insights 歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
+  <block id="1b58998adf7a89d496bd43804045852f" category="cell">我已從 BlueXP 登出、並自動從 Cloud Insights 登出。</block>
+  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有 Cloud Insights 工作階段。如果您有多Cloud Insights 個支援帳戶的存取權限、請從任何一個帳戶登出、登出所有使用中的工作階段。重新登入以存取您的帳戶。</block>
+  <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloud 帳戶每隔幾天就需要重新驗證（目前的 BlueXP 設定是 7 天）。重新登入以存取您的帳戶。</block>
+  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">請聯絡您的帳戶管理員、確認是否有權限存取Cloud Insights 功能。
+確認 BlueXP 設定檔電子郵件地址與 Cloud Insights 歡迎電子郵件中顯示的電子郵件地址相符</block>
+  <block id="d5d48d5f4dfc82bc722dda03c00023b2" category="cell">ONTAP REST 不會報告僅在 ONTAP 系統內部使用的度量。例如、 ONTAP REST 不會收集系統集合體、只會收集 SVM 的「資料」類型。
+
+可能報告零或空白資料的其他 ONTAP REST 計量範例：
+
+InternalVolumes ： REST 不再報告 vol0 。
+Aggregate ： REST 不再報告 aggr0 。
+儲存設備：大部分的指標都是內部 Volume 指標的彙總套件、因此會受到上述影響。
+儲存虛擬機器： REST 不再報告除 'data' 以外的 SVM 類型（例如「叢集」、「 GMT 」、「節點」）。
+
+您也可能會注意到、由於預設效能輪詢期間從 15 分鐘變更為 5 分鐘、因此具有資料的圖形外觀也會有所變更。  更頻繁的輪詢意味著需要繪製更多資料點。</block>
+  <block id="fa3c2d77fbba0d391ebafed4f6bf2cb1" category="paragraph">在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* 入口網站。如果您已經登入 NetApp BlueXP 、您可以透過幾個快速步驟、開始免費試用 Cloud Insights 。</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將返回 BlueXP 登入畫面。</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
+  <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *</block>
+  <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理和其他工作</block>
 </blocks>

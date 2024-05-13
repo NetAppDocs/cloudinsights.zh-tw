@@ -287,6 +287,15 @@ FAS / AFF 8080
 組態： 10.193.98.84 ： ONTAP REST API 於 10.193.98.84 不可用： 10.193.98.84 ： ONTAP REST API 於 10.193.98.84 提供： cheryl5-cluster 2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 、但不是最低版本 9.14.1 。 
 
 
-| 我看到 ONTAP ontapi 收集器顯示資料的空白或「 0 」指標。 | ONTAP REST 不會報告僅在 ONTAP 系統內部使用的度量。例如、 ONTAP REST 不會收集系統集合體、只會收集 SVM 的「資料」類型。 
+| 我看到 ONTAP ontapi 收集器顯示資料的空白或「 0 」指標。 | ONTAP REST 不會報告僅在 ONTAP 系統內部使用的度量。例如、 ONTAP REST 不會收集系統集合體、只會收集 SVM 的「資料」類型。
+
+可能報告零或空白資料的其他 ONTAP REST 計量範例：
+
+InternalVolumes ： REST 不再報告 vol0 。
+Aggregate ： REST 不再報告 aggr0 。
+儲存設備：大部分的指標都是內部 Volume 指標的彙總套件、因此會受到上述影響。
+儲存虛擬機器： REST 不再報告除 'data' 以外的 SVM 類型（例如「叢集」、「 GMT 」、「節點」）。
+
+您也可能會注意到、由於預設效能輪詢期間從 15 分鐘變更為 5 分鐘、因此具有資料的圖形外觀也會有所變更。  更頻繁的輪詢意味著需要繪製更多資料點。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

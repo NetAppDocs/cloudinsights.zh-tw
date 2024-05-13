@@ -49,7 +49,7 @@ NetApp非常重視客戶資訊的安全性。以下是Cloud Insights 介紹如�
 
 * 使用者存取資料
 +
-驗證與存取資訊、讓NetApp Cloud Central能夠與區域性Cloud Insights 的支援網站通訊、包括與使用者授權相關的資料。
+驗證與存取資訊、可讓 NetApp BlueXP 與區域 Cloud Insights 站台通訊、包括與使用者授權相關的資料。
 
 * 儲存工作負載安全性使用者目錄資料
 +
@@ -85,7 +85,7 @@ NOTE: 使用者目錄資料是指工作負載安全性使用者目錄資料收�
 下列資訊位於美國、無論您Cloud Insights 的VMware環境所在的地區為何：
 
 * 環境網站（有時稱為「租戶」）資訊、例如網站/帳戶擁有者。
-* 可讓NetApp Cloud Central與區域性Cloud Insights 的不二網站通訊的資訊、包括與使用者授權有關的任何資訊。
+* 可讓 NetApp BlueXP 與地區 Cloud Insights 網站通訊的資訊、包括與使用者授權相關的任何資訊。
 * 關於使用者與租戶之間關係的資訊Cloud Insights 。
 
 
