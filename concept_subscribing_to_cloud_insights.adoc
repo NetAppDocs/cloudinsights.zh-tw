@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: 在免費試用期間、您可以隨時訂閱Cloud Insights 。 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
 ---
 = 訂閱Cloud Insights 此功能
 :toc: macro
@@ -69,27 +69,25 @@ AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降�
 
 
 
-== 模組試用
+== 模組評估
 
-即將推出！
-
-
-NOTE: 模組試用視為預覽功能、因此可能會有所變更。
-
-除了 Cloud Insights 的初始試用之外、您也可以利用 * 模組試用 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進入 Kubernetes 可服務性的 30 天試用版。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。
+您也可以利用 * 模組評估 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進行 Kubernetes 可服務性的 30 天評估。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。
 
 
-NOTE: 請記住、在試用期過後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當您的模組試用結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。
+NOTE: 請記住、評估後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當模組評估結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。
 
 您可以在 *Usage* 標籤的 *Admin > Subscription* 頁面上監控受管理單元的使用情況。
 
 image:Module_Trials_UsageTab.png["MU 使用量畫面"]
 
 
+NOTE: _ 模組評估 _ 並非 _ 試用 _ - 當我們提供客戶免費試用期、以確認是否符合並啟用購買時、我們會使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。
+
+
 
 === 評估者
 
-在模組試用期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看試用後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。
+在模組評估期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看評估後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。
 
 image:Module_Trials_Estimator.png["評估者"]
 
@@ -97,7 +95,7 @@ image:Module_Trials_Estimator.png["評估者"]
 
 您也可以使用 Estimator 來查看加載項目的編號堆疊方式、也就是保留目前訂閱期限並增加授權託管單位的數量、或是在目前訂閱時購買續約訂閱的續約選項 學期結束。
 
-請注意、每次訂閱只能參加一次模組試用。
+請注意、每次訂閱只能進行一次模組評估。
 
 
 

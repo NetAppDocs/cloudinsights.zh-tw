@@ -12266,19 +12266,13 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">請務必遵循中的步驟 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 上一節。</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">模組試用</block>
-  <block id="7f82331674ae138af79c9ab94e1fac67" category="paragraph">即將推出！</block>
-  <block id="5ed0b3b1884385a11f0ddcb69c41afbf" category="admonition">模組試用視為預覽功能、因此可能會有所變更。</block>
-  <block id="2b8d4048177d738d1e55b5d352a76442" category="paragraph">除了 Cloud Insights 的初始試用之外、您也可以利用 * 模組試用 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進入 Kubernetes 可服務性的 30 天試用版。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
-  <block id="c8ff921ed8862475c3fbdfc6e58cbc82" category="admonition">請記住、在試用期過後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當您的模組試用結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。</block>
   <block id="49ebde544abc61604ad7c6c491131bf2" category="paragraph">您可以在 *Usage* 標籤的 *Admin &gt; Subscription* 頁面上監控受管理單元的使用情況。</block>
   <block id="522299d35366d8b59cb57f013ff640aa" category="inline-image-macro">MU 使用量畫面</block>
   <block id="aa0083acb9559c9abfc7553890f8f78e" category="paragraph"><block ref="aa0083acb9559c9abfc7553890f8f78e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="da2a1b654dd8965375b17b81a0874e1d" category="section-title">評估者</block>
-  <block id="12b403caef8918465c7ebf1024a4ee26" category="paragraph">在模組試用期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看試用後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。</block>
   <block id="de81da28c1db344902ce9fbb40bd9e3a" category="paragraph"><block ref="de81da28c1db344902ce9fbb40bd9e3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="23639e5972e5f3878de9fd64c5a01f73" category="paragraph">選取模組旁的核取方塊、即可從預估成本中新增或移除整個模組的 MU 。</block>
   <block id="3406a9b7847cf7a53e580c01031639d0" category="paragraph">您也可以使用 Estimator 來查看加載項目的編號堆疊方式、也就是保留目前訂閱期限並增加授權託管單位的數量、或是在目前訂閱時購買續約訂閱的續約選項 學期結束。</block>
-  <block id="e88abbac5caee1a1c8d8af2d838a7e97" category="paragraph">請注意、每次訂閱只能參加一次模組試用。</block>
   <block id="51551d892e3008a0a15372506e7c3778" category="section-title">依網域限制存取</block>
   <block id="3a61360418d262f9d84cc867c9f6dafd" category="paragraph">Cloud Insights 只能限制使用者存取您指定的網域。在 * 管理 &gt; 使用者管理 * 頁面上、選取「限制網域」。</block>
   <block id="c55e947bf98f22cc4e8f7588d8766267" category="inline-image-macro">將網域限制為只有預設網域、預設值加上您指定的其他網域、或不受任何限制</block>
@@ -13132,4 +13126,10 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="d3b55f9a8374f81f85e7606ece767371" category="paragraph">「 * 歷史記錄 * 」標籤可讓您深入瞭解過去 7 至 90 天的 MU 使用情形。將游標移至圖表中的某一欄上方、即可依模組（即 Observc度 、 Kubernetes ）提供詳細資料。</block>
   <block id="fbc13ba96b933d65afd4caf522ab96b6" category="inline-image-macro">MU 使用記錄</block>
   <block id="2319aa26c375ca721d328685f3585394" category="paragraph"><block ref="2319aa26c375ca721d328685f3585394" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">模組評估</block>
+  <block id="76064df620f99261dce25de296d7e769" category="paragraph">您也可以利用 * 模組評估 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進行 Kubernetes 可服務性的 30 天評估。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。</block>
+  <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">請記住、評估後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當模組評估結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。</block>
+  <block id="9c420799ef765483eddc7865804e6371" category="admonition">_ 模組評估 _ 並非 _ 試用 _ - 當我們提供客戶免費試用期、以確認是否符合並啟用購買時、我們會使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。</block>
+  <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模組評估期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看評估後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。</block>
+  <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">請注意、每次訂閱只能進行一次模組評估。</block>
 </blocks>
