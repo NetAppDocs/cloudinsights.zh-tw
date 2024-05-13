@@ -19,7 +19,7 @@ summary: 支援不同權限等級的多個使用者帳戶。Cloud Insights
 
 
 [role="lead"]
-支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。  使用者也是 link:#creating-accounts-by-inviting-users["已邀請"] 提供特定角色、或是透過登入Cloud Insights link:#single-sign-on-sso-and-identity-federation["單一登入（SSO）授權"] 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。
+21495a8ea3304b589e7d69a7ec0ce1cc
 
 
 NOTE: Cloud Insights 聯邦版中的使用者登入僅限於已設定的身分識別供應商（使用其指定的電子郵件網域）。當新使用者被邀請進入 Cloud Insights 聯邦環境時、其電子郵件地址必須符合為該環境所設定的網域。
@@ -136,7 +136,7 @@ NOTE: Cloud Insights 聯邦版中的使用者登入僅限於已設定的身分�
 
 == 邀請使用者建立帳戶
 
-透過 BlueXP 建立新的使用者帳戶。使用者可以回應透過電子郵件傳送的邀請、但如果使用者沒有 BlueXP 帳戶、則使用者必須註冊 BlueXP 、才能接受邀請。
+577ad4d536287e761cfcca07c709967a
 
 .開始之前
 * 使用者名稱是邀請函的電子郵件地址。
@@ -216,40 +216,31 @@ image:Assign_Account_Owner.png["顯示帳戶擁有者選擇的使用者變更對
 
 
 
-=== 什麼是身分識別聯盟？
+=== 4743b9c396b4a51215bcc90cb20ea986
 
 使用身分識別聯盟：
 
 * 驗證會委派給客戶的身分識別管理系統、使用客戶在公司目錄中的認證資料、以及多因素驗證（MFA）等自動化原則。
-* 使用者登入一次所有 NetApp BlueXP 服務（單一登入）。
+* 5a31a45adb468f47c1f0b1e80f5171f7
 
 
-使用者帳戶是在適用於所有雲端服務的 NetApp BlueXP 中進行管理。依預設、驗證是使用 BlueXP 本機使用者設定檔完成。以下是此程序的簡化概觀：
+192320e6f55720b5664a47f5c666baca
 
-image:BlueXP_Authentication_Local.png["使用本機的 BlueXP 驗證"]
+9ab07284bc5b71a2d5cea4881836c513
 
-不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者的 Cloud Insights 及其他 NetApp BlueXP 服務。透過身分識別聯盟、 NetApp BlueXP 帳戶會使用公司目錄中的認證進行驗證。
+4e2be1ac16d688153b9bf995c933023c
 
 以下是此程序的簡化範例：
 
-image:BlueXP_Authentication_Federated.png["使用同盟的 BlueXP 驗證"]
+da667ed7886fe1fad31ff9dd3c806a5d
 
 在上圖中、當使用者存取Cloud Insights E塊 時、該使用者會被導向客戶的身分識別管理系統進行驗證。一旦帳戶通過驗證、使用者就會被導向Cloud Insights 到這個URL。
 
+e0272c481804e7b56f3bd750203259b0
 
+2dca6320aaa2ae28cf6938308c945311
 
-=== 啟用身分識別聯盟
-
-BlueXP 使用 Auth0 實作身分識別聯盟、並與 Active Directory Federation Services （ ADFS ）和 Microsoft Azure Active Directory （ AD ）等服務整合。若要設定身分識別聯盟、請參閱 link:https://services.cloud.netapp.com/misc/federation-support["BlueXP 聯合指令"]。
-
-
-NOTE: 您必須先設定 BlueXP 身分識別聯盟、才能搭配 Cloud Insights 使用 SSO 。
-
-請務必瞭解、 BlueXP 中變更的身分識別聯盟不僅適用於 Cloud Insights 、也適用於所有 NetApp BlueXP 服務。客戶應與他們擁有的每個 BlueXP 產品的 NetApp 團隊討論此變更、以確保他們所使用的組態能與身分識別聯盟搭配運作、或是需要對任何帳戶進行調整。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。
-
-此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別提供者的任何變更（例如從 SAML 移轉至 Microsoft AD ）都可能需要 BlueXP 中的疑難排解 / 變更 / 注意、才能更新使用者的設定檔。
-
-對於這類或任何其他聯盟問題、您可以在開啟支援票證 https://mysupport.netapp.com/site/help[] 然後選擇類別「 bluexp.netapp.com > 聯盟問題」。
+005faded672314bc475a7800de0ef460
 
 
 
@@ -258,9 +249,9 @@ NOTE: 您必須先設定 BlueXP 身分識別聯盟、才能搭配 Cloud Insights
 除了邀請使用者外、系統管理員還能為Cloud Insights 公司網域中的所有使用者啟用*單一登入（SSO）使用者自動資源配置（User Auto-Provisioning）*存取功能、而不需要個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。
 
 
-NOTE: _SSO使用者自動資源配置_可在Cloud Insights 支援Cloud Insights 以供使用時使用、必須先設定才能啟用。SSO 使用者自動佈建組態包括 link:https://services.cloud.netapp.com/misc/federation-support["身分識別聯盟"] 透過 NetApp BlueXP 、如前節所述。聯盟允許單一登入使用者使用公司目錄中的認證來存取您的 NetApp BlueXP 帳戶、使用開放式標準、例如安全聲明標記語言 2.0 （ SAML ）和 OpenID 連線（ OIDC ）。
+NOTE: a4e769bbaabeca7372ca6634d43bf1a5
 
-若要設定 _SSO 使用者自動資源配置 _ 、您必須先在 * 管理 > 使用者管理 * 頁面上設定 BlueXP 身分識別聯盟。選取橫幅中的 * 設定聯盟 * 連結以繼續執行 BlueXP 聯盟。設定完成後、 Cloud Insights 管理員即可啟用 SSO 使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。
+8454d6429fbbbb85edb89463f6d1f0a6
 
 image:Roles_federation_Banner.png["使用者管理與聯盟"]
 

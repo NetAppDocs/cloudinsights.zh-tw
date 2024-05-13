@@ -95,7 +95,7 @@ image:Audit_Filters.png["稽核篩選器"]
 
 * *使用者帳戶*：登入、登出、角色變更等
 +
-範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *
+5a3b3866ed7beab8b728614f1d33c0b5
 
 * *擷取單位*：建立、刪除等
 +

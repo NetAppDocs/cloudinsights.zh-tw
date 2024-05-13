@@ -4,19 +4,22 @@ permalink: task_cloud_insights_onboarding_1.html
 summary: 註冊Cloud Insights 以利執行功能、並創造您的環境。 
 ---
 = NetApp新進人員Cloud Insights
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
 :keywords: Cloud Insights, documentation, help, onboarding, getting started,
+:toc-position: content
 
 
 [role="lead"]
-在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* 入口網站。如果您已經登入 NetApp BlueXP 、您可以透過幾個快速步驟、開始免費試用 Cloud Insights 。
+2e95a4622d16ffb729672b5838f5732b
 
 
 toc::[]
@@ -75,10 +78,10 @@ NOTE: 新使用者必須先註冊以存取 BlueXP 、才能存取其環境 URL �
 
 == 登出
 
-若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將返回 BlueXP 登入畫面。
+b00323e3fc84f69070c5dc2be8e5ce9e
 
 
-NOTE: 登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。
+NOTE: 4405c285662a5ac6f84ad517037907a7
 
 
 
