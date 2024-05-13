@@ -49,7 +49,7 @@ NOTE: 本文件是指Cloud Insights 《不收集資料》功能、可在中取�
 * 按一下「Save（儲存）」、然後*複製金鑰並將其儲存*到安全的地方。您稍後將無法存取完整金鑰。
 
 
-a60abfe03b8079f9f0eac07879fdf93b
+APIkeys 很適合 <<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
 
 
 
@@ -135,3 +135,43 @@ a60abfe03b8079f9f0eac07879fdf93b
 
 
 您的API金鑰將專屬於Cloud Insights 您的整個環境。
+
+
+
+== 同步或非同步？
+
+根據預設、 API 命令會以 _Synchronity_ 模式運作、這表示您傳送要求、並立即傳回回應。不過、有時候查詢可能需要很長時間才能執行、這可能會導致要求逾時。若要解決此問題、您可以執行要求 _ 非同步 _ 。在非同步模式中、要求會傳回可監控執行的 URL 。URL 會在準備好時傳回結果。
+
+若要以非同步模式執行查詢、請新增標頭 `*Prefer: respond-async*` 以達成此要求。成功執行後、回應將包含下列標頭：
+
+....
+Status Code: 202 (which means ACCEPTED)
+preference-applied: respond-async
+location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
+....
+如果回應尚未就緒、查詢位置 URL 會傳回相同的標頭、如果回應準備好、則會傳回狀態 200 。回應內容將為文字類型、包含原始查詢的 http 狀態和部分中繼資料、然後是原始查詢的結果。
+
+....
+HTTP/1.1 200 OK
+ OData-Version: 4.0
+ Content-Type: application/json;odata.metadata=minimal
+ oDataResponseSizeCounted: true
+
+ { <JSON_RESPONSE> }
+....
+若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：
+
+ GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
+回應的格式如下：
+
+....
+{
+   "queries" : [
+       {
+           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
+           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
+           "Finished": false
+       }
+   ]
+}
+....

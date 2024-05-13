@@ -562,5 +562,8 @@ fluent-bit:
 
 
 | 我看到 Kubernetes Monitoring Operator 部署的 Pod 因為資源不足而當機。 | 請參閱 Kubernetes Monitoring Operator link:telegraf_agent_k8s_config_options.html["組態選項"] 視需要增加 CPU 和 / 或記憶體限制。 
+
+
+| 遺失影像或組態無效、導致 NetApp-CI-kube 狀態指標 Pod 無法啟動或準備就緒。目前狀況集已停滯、組態變更並未套用至 NetApp-CI-kube 狀態指標群。 | StatefulSet 位於 A 中 link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["毀損"] 州/省。在修正任何組態問題之後、 NetApp-CI-kube 狀態指標 Pod 就會恢復運作。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

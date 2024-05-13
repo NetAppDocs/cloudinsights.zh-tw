@@ -13067,4 +13067,63 @@ Aggregate ： REST 不再報告 aggr0 。
 儲存虛擬機器： REST 不再報告除 'data' 以外的 SVM 類型（例如「叢集」、「 GMT 」、「節點」）。
 
 您也可能會注意到、由於預設效能輪詢期間從 15 分鐘變更為 5 分鐘、因此具有資料的圖形外觀也會有所變更。  更頻繁的輪詢意味著需要繪製更多資料點。</block>
+  <block id="07564ad1af1bd4ed017ae241054bd345" category="paragraph">支援多達四種使用者帳戶角色：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級、如下表所示。  使用者也是 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> 提供特定角色、或是透過登入Cloud Insights <block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block> 使用預設角色。SSO授權功能可在Cloud Insights 支援功能方面取得。</block>
+  <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">透過 BlueXP 建立新的使用者帳戶。使用者可以回應透過電子郵件傳送的邀請、但如果使用者沒有 BlueXP 帳戶、則使用者必須註冊 BlueXP 、才能接受邀請。</block>
+  <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">什麼是身分識別聯盟？</block>
+  <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">使用者登入一次所有 NetApp BlueXP 服務（單一登入）。</block>
+  <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">使用者帳戶是在適用於所有雲端服務的 NetApp BlueXP 中進行管理。依預設、驗證是使用 BlueXP 本機使用者設定檔完成。以下是此程序的簡化概觀：</block>
+  <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">使用本機的 BlueXP 驗證</block>
+  <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1efb7531b4ff57cf7e5dad319f452ce8" category="paragraph">不過、有些客戶想要使用自己的身分識別供應商來驗證其使用者的 Cloud Insights 及其他 NetApp BlueXP 服務。透過身分識別聯盟、 NetApp BlueXP 帳戶會使用公司目錄中的認證進行驗證。</block>
+  <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">使用同盟的 BlueXP 驗證</block>
+  <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">啟用身分識別聯盟</block>
+  <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXP 聯合指令</block>
+  <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXP 使用 Auth0 實作身分識別聯盟、並與 Active Directory Federation Services （ ADFS ）和 Microsoft Azure Active Directory （ AD ）等服務整合。若要設定身分識別聯盟、請參閱 <block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
+  <block id="e806ab1149571cd13505dfbc97c18648" category="admonition">您必須先設定 BlueXP 身分識別聯盟、才能搭配 Cloud Insights 使用 SSO 。</block>
+  <block id="3d447ee9850a212906099a2f2e71dd7b" category="paragraph">請務必瞭解、 BlueXP 中變更的身分識別聯盟不僅適用於 Cloud Insights 、也適用於所有 NetApp BlueXP 服務。客戶應與他們擁有的每個 BlueXP 產品的 NetApp 團隊討論此變更、以確保他們所使用的組態能與身分識別聯盟搭配運作、或是需要對任何帳戶進行調整。客戶也必須讓內部SSO團隊參與身分識別聯盟的變更。</block>
+  <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">此外、請務必瞭解、一旦啟用身分識別聯盟、公司身分識別提供者的任何變更（例如從 SAML 移轉至 Microsoft AD ）都可能需要 BlueXP 中的疑難排解 / 變更 / 注意、才能更新使用者的設定檔。</block>
+  <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">對於這類或任何其他聯盟問題、您可以在開啟支援票證<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> 然後選擇類別「 bluexp.netapp.com &gt; 聯盟問題」。</block>
+  <block id="1290a9c844484dfb0ecb66679bb02236" category="admonition">_SSO使用者自動資源配置_可在Cloud Insights 支援Cloud Insights 以供使用時使用、必須先設定才能啟用。SSO 使用者自動佈建組態包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 透過 NetApp BlueXP 、如前節所述。聯盟允許單一登入使用者使用公司目錄中的認證來存取您的 NetApp BlueXP 帳戶、使用開放式標準、例如安全聲明標記語言 2.0 （ SAML ）和 OpenID 連線（ OIDC ）。</block>
+  <block id="5f47dcd3204dc1bc6c36abf1ce4be4cc" category="paragraph">若要設定 _SSO 使用者自動資源配置 _ 、您必須先在 * 管理 &gt; 使用者管理 * 頁面上設定 BlueXP 身分識別聯盟。選取橫幅中的 * 設定聯盟 * 連結以繼續執行 BlueXP 聯盟。設定完成後、 Cloud Insights 管理員即可啟用 SSO 使用者登入。當系統管理員啟用_SSO使用者自動資源配置_時、他們會為所有SSO使用者（例如來賓或使用者）選擇預設角色。透過SSO登入的使用者將擁有該預設角色。</block>
+  <block id="bbeb55e7d4d240b66f4ca24218cf7de0" category="admonition">由於 NetApp BlueXP 本身的使用者登入逾時時間為 7 天、因此 Cloud Insights 也必須使用該事件登出。您只要重新登入、儀表板就會繼續顯示。</block>
+  <block id="d30a0cd77a13a9c540651e05cf93b85c" category="cell">遺失影像或組態無效、導致 NetApp-CI-kube 狀態指標 Pod 無法啟動或準備就緒。目前狀況集已停滯、組態變更並未套用至 NetApp-CI-kube 狀態指標群。</block>
+  <block id="54ddc3c7d064822eed932015d8740336" category="inline-link-macro">毀損</block>
+  <block id="24842c3920322c32befcba0bfb6c67b4" category="cell">StatefulSet 位於 A 中 <block ref="01cb4c066842f659530df33ef9ef5308" category="inline-link-macro-rx"></block> 州/省。在修正任何組態問題之後、 NetApp-CI-kube 狀態指標 Pod 就會恢復運作。</block>
+  <block id="10c296499c1a789621926ca2df89bad4" category="paragraph">驗證與存取資訊、可讓 NetApp BlueXP 與區域 Cloud Insights 站台通訊、包括與使用者授權相關的資料。</block>
+  <block id="32b8c42dbc2b21fb7881d9a36bb2727a" category="list-text">可讓 NetApp BlueXP 與地區 Cloud Insights 網站通訊的資訊、包括與使用者授權相關的任何資訊。</block>
+  <block id="c8c46afa6f003113c7d643310bade896" category="inline-xref">_Sync_ 或 _AsynSync_</block>
+  <block id="54ebec075b0ae24d1fe36b1a78b7014f" category="paragraph">APIkeys 很適合 <block ref="9966ea080d2324311c0da20a04f19491" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c545b4af283ca5836cafe431d1ea06a" category="section-title">同步或非同步？</block>
+  <block id="1f5c701838fc1e9c08d402a2d3562c8c" category="paragraph">根據預設、 API 命令會以 _Synchronity_ 模式運作、這表示您傳送要求、並立即傳回回應。不過、有時候查詢可能需要很長時間才能執行、這可能會導致要求逾時。若要解決此問題、您可以執行要求 _ 非同步 _ 。在非同步模式中、要求會傳回可監控執行的 URL 。URL 會在準備好時傳回結果。</block>
+  <block id="3559171ac28b17714bc92816d17b2a17" category="paragraph">若要以非同步模式執行查詢、請新增標頭<block ref="1f82ebaa5a99226ba28d8d76ae41a3f8" prefix=" " category="inline-code"></block> 以達成此要求。成功執行後、回應將包含下列標頭：</block>
+  <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">如果回應尚未就緒、查詢位置 URL 會傳回相同的標頭、如果回應準備好、則會傳回狀態 200 。回應內容將為文字類型、包含原始查詢的 http 狀態和部分中繼資料、然後是原始查詢的結果。</block>
+  <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：</block>
+  <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">回應的格式如下：</block>
+  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。
+
+範例：
+在 Chrome 的瀏覽器 URL 中輸入「 chrome://settings/Cookie 」。
+
+選取「允許所有Cookie」選項。
+*或*
+選取「封鎖協力廠商 Cookie 」、並新增 [\*.]auth0.com 和 [*.]netapp.com 的例外。
+
+附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
+  <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有 BlueXP 帳戶、但無法登入 BlueXP 。</block>
+  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選擇類別「 blueXP.netapp.com &gt; 帳戶 / 登入問題」或「 bluexp.netapp.com &gt; 聯盟問題」。  這些是專為 BlueXP 問題所設計。
+如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。
+
+確認 BlueXP 設定檔電子郵件地址與 Cloud Insights 歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
+  <block id="1b58998adf7a89d496bd43804045852f" category="cell">我已從 BlueXP 登出、並自動從 Cloud Insights 登出。</block>
+  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有 Cloud Insights 工作階段。如果您有多Cloud Insights 個支援帳戶的存取權限、請從任何一個帳戶登出、登出所有使用中的工作階段。重新登入以存取您的帳戶。</block>
+  <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloud 帳戶每隔幾天就需要重新驗證（目前的 BlueXP 設定是 7 天）。重新登入以存取您的帳戶。</block>
+  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">請聯絡您的帳戶管理員、確認是否有權限存取Cloud Insights 功能。
+確認 BlueXP 設定檔電子郵件地址與 Cloud Insights 歡迎電子郵件中顯示的電子郵件地址相符</block>
+  <block id="fa3c2d77fbba0d391ebafed4f6bf2cb1" category="paragraph">在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* 入口網站。如果您已經登入 NetApp BlueXP 、您可以透過幾個快速步驟、開始免費試用 Cloud Insights 。</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將返回 BlueXP 登入畫面。</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
+  <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *</block>
+  <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理和其他工作</block>
 </blocks>
