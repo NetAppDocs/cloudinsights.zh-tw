@@ -5357,7 +5357,6 @@
   <block id="554c387b4cc54e5b15b7b9ce27d28df0" category="section-title">Widget命名</block>
   <block id="59f8ad2450d81d69bb7178de28870ace" category="paragraph">Widget會根據第一個Widget查詢所選的物件、度量或屬性自動命名。如果您也選擇Widget的群組、則「Group By」（群組依據）屬性會包含在自動命名中（集合方法和度量）。</block>
   <block id="f311dd325e3f7f8553f9d8fda43458a7" category="inline-image-macro">Widget命名範例</block>
-  <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">選取新的物件或群組屬性會更新自動名稱。</block>
   <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">如果您不想使用自動小工具名稱、只要輸入新名稱即可。</block>
   <block id="d15f90fbf11bb930e4311a597bd577da" category="section-title">小工具放置與大小</block>
@@ -5435,7 +5434,6 @@
   <block id="c4006c924bdf8bc80ddcd09bd46d0666" category="list-text">*最大*：將每一行顯示為基礎資料的_maximum。</block>
   <block id="fdf509d52d13201cead39e938712c689" category="list-text">*最小*：將每一行顯示為基礎資料的_minimum_。</block>
   <block id="1a284984e082a2cc2ceecd12b5c25e50" category="list-text">* Sum *：將每一行顯示為基礎資料的_sum_。</block>
-  <block id="419981855bdd80d78c67ae74ed237d6c" category="list-text">* Count*：顯示已在指定時間範圍內報告資料的物件_count_。您可以選擇由儀表板時間範圍（或是設為覆寫儀表板時間的Widget時間範圍）或您選取的_自訂時間範圍_決定的整個時間範圍_。</block>
   <block id="d186cba97a995601fc12d97defd879c7" category="paragraph">若要設定群組方法、請執行下列步驟。</block>
   <block id="0886591e8bd637066947802b2c681da8" category="list-text">在您的小工具查詢中、選擇資產類型、度量（例如_Storage_）和度量（例如_Performance IOPS Total）。</block>
   <block id="843784684ad8439aa0ddfe813cac8e16" category="list-text">對於* Group*、請選擇彙總方法（例如_average）、然後選取要彙總資料的屬性或度量（例如、_Data Center_）。</block>
@@ -5486,7 +5484,6 @@
   <block id="f23403e4c909f91a6bbdedfd4c63a940" category="paragraph">自訂時間範圍可讓您選擇最多連續31天。您也可以設定此範圍的開始時間和結束時間。預設的開始時間為所選第一天的上午12：00、預設的結束時間為所選最後一天的下午11：59。按一下「*套用*」將會將自訂時間範圍套用至儀表板。</block>
   <block id="82c286e5c07573df31c7da74d9781c0b" category="section-title">在個別小工具中覆寫儀表板時間</block>
   <block id="2234ef4841bda451602966ff52e300f5" category="paragraph">您可以覆寫個別Widget中的主儀表板時間範圍設定。這些小工具會根據設定的時間範圍顯示資料、而非儀表板時間範圍。</block>
-  <block id="284bed60740c7fa22f92630c7d8768d8" category="paragraph">若要覆寫儀表板時間並強制Widget使用自己的時間範圍、請在Widget的編輯模式中、將*置換儀表板時間*設為*開啟*（核取方塊）、然後選取Widget的時間範圍。*將小工具儲存至儀表板。</block>
   <block id="86d95d157786463201d03f8cdf84019b" category="paragraph">無論您在儀表板上選取的時間範圍為何、小工具都會根據其設定的時間範圍來顯示其資料。</block>
   <block id="00eb21356b96cac7e56ee66948f7292e" category="paragraph">您為一個小工具設定的時間範圍不會影響儀表板上的任何其他小工具。</block>
   <block id="499df5a235e391725a79f411742e8626" category="section-title">主軸和次軸</block>
@@ -5661,7 +5658,6 @@
   <block id="0b85467ebafa7ca3c47e82dc38184484" category="cell">處理量</block>
   <block id="13a7932e1c9548786b77fba7d6a94a48" category="cell">I/O作業/秒作業/秒要求/秒讀取/秒寫入/秒作業/分鐘讀取/分鐘寫入/分鐘</block>
   <block id="4e340c0d87903026e177d2f5b903167f" category="section-title">TV模式和自動重新整理</block>
-  <block id="e8262a129757d59390413661a0f53d16" category="paragraph">儀表板和資產登陸頁上小工具中的資料會根據所選儀表板時間範圍所決定的重新整理時間間隔自動重新整理（如果設定為覆寫儀表板時間、則為小工具時間範圍）。重新整理時間間隔取決於Widget是時間序列（折線、不規則曲線、區域、堆疊區域圖）、還是非時間序列（所有其他圖表）。</block>
   <block id="a311182bfffa770574efa58415204e5e" category="cell">儀表板時間範圍</block>
   <block id="a381288575a9ee2b7d6fbee5abc730ee" category="cell">時間序列重新整理時間間隔</block>
   <block id="696496081bb055864a75308dfe96791e" category="cell">非時間序列重新整理時間間隔</block>
@@ -13132,4 +13128,10 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="9c420799ef765483eddc7865804e6371" category="admonition">_ 模組評估 _ 並非 _ 試用 _ - 當我們提供客戶免費試用期、以確認是否符合並啟用購買時、我們會使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。</block>
   <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模組評估期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看評估後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">請注意、每次訂閱只能進行一次模組評估。</block>
+  <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">* Count*：顯示已在指定時間範圍內報告資料的物件_count_。您可以選擇由儀表板時間範圍決定的 _ 整個時間範圍 _ 。</block>
+  <block id="9bd256c4a0f18dc34f706a5b2ffde80a" category="paragraph">若要覆寫儀表板時間並強制 Widget 使用自己的時間範圍、請在 Widget 的編輯模式中選擇所需的時間範圍、然後將 Widget 儲存至儀表板。</block>
+  <block id="3b1dbe846304b427475d6a670fb96413" category="inline-image-macro">覆寫 Widget 的儀表板時間範圍</block>
+  <block id="c9b0370dc5d789bfc283022e4c0d9d9e" category="paragraph"><block ref="c9b0370dc5d789bfc283022e4c0d9d9e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="776202c829612e565a462d31af745afd" category="paragraph">儀表板和資產登陸頁上 Widget 中的資料會根據所選儀表板時間範圍所決定的重新整理時間間隔、自動重新整理。重新整理時間間隔取決於Widget是時間序列（折線、不規則曲線、區域、堆疊區域圖）、還是非時間序列（所有其他圖表）。</block>
 </blocks>
