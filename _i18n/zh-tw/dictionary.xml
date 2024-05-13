@@ -2370,7 +2370,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">疑難排解Linux擷取單元問題</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">疑難排解Windows接收單元問題</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">另請參閱 <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> 和 <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
-  <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">每5分鐘登出一次Cloud Insights</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp支援</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀參加Cloud Insights 這個項目、但我收到「未經授權」的訊息。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">我在數天後自動登出。</block>
@@ -13100,16 +13099,6 @@ Aggregate ： REST 不再報告 aggr0 。
   <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">如果回應尚未就緒、查詢位置 URL 會傳回相同的標頭、如果回應準備好、則會傳回狀態 200 。回應內容將為文字類型、包含原始查詢的 http 狀態和部分中繼資料、然後是原始查詢的結果。</block>
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">回應的格式如下：</block>
-  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">讓第三方接受必要的NetApp和auth0 Cookie。
-
-範例：
-在 Chrome 的瀏覽器 URL 中輸入「 chrome://settings/Cookie 」。
-
-選取「允許所有Cookie」選項。
-*或*
-選取「封鎖協力廠商 Cookie 」、並新增 [\*.]auth0.com 和 [*.]netapp.com 的例外。
-
-附註：建立例外狀況時、請務必選取「在此網站上包含第三方Cookie」選項。</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有 BlueXP 帳戶、但無法登入 BlueXP 。</block>
   <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選擇類別「 blueXP.netapp.com &gt; 帳戶 / 登入問題」或「 bluexp.netapp.com &gt; 聯盟問題」。  這些是專為 BlueXP 問題所設計。
 如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
@@ -13126,4 +13115,17 @@ Aggregate ： REST 不再報告 aggr0 。
   <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理和其他工作</block>
+  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insights 每 6 小時自動登出一次</block>
+  <block id="125d2f260a38158435c7e7d5900894da" category="cell">這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定其瀏覽器以啟用所有第三方 Cookie 、或使用較窄的例外清單來僅啟用 Cloud Insights 的例外清單。
+
+範例：
+開啟瀏覽器的設定
+
+選取「允許所有Cookie」選項。
+*或*
+選取「封鎖第三方 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 __[*.]netapp.com 。
+
+Microsoft Edge 提供與 Chrome 相同的例外格式。
+
+在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。</block>
 </blocks>
