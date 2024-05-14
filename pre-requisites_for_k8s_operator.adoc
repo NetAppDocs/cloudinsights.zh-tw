@@ -21,10 +21,6 @@ summary: 支援Telegraf做為其代理程式、可在Kubernetes上收集整合�
 [role="lead"]
 在安裝或升級之前、請先閱讀此資訊 link:task_config_telegraf_agent_k8s.html["Kubernetes 監控營運者"]。
 
-
-
-=== 先決條件：
-
 |===
 | 元件 | 需求 
 
@@ -68,24 +64,135 @@ Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux
 |===
 
 
-=== 設定操作員
+== 開始之前要注意的重要事項
 
-在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含一些設定的註解範例。請參閱清單 link:telegraf_agent_k8s_config_options.html["可用的設定"] 適用於最新版的運算子。
+如果您使用執行 <<configuring-proxy-support,Proxy>>、請提供 <<using-a-custom-or-private-docker-repository,自訂儲存庫>>或正在使用 <<openshift-instructions,OpenShift>>請仔細閱讀以下各節。
 
-您也可以使用下列命令在部署運算子之後編輯此資源：
+另請參閱 <<權限,權限>>。
 
- kubectl -n netapp-monitoring edit AgentConfiguration
-若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：
-
- kubectl get crd agentconfigurations.monitoring.netapp.com
-如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。
+如果您是從先前的安裝升級、請閱讀 <<升級,升級>> 資訊：
 
 
 
-=== 公差和污染
+=== 設定Proxy支援
 
-_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * link:telegraf_agent_k8s_config_options.html["在 _AgentConfiguration_ 中"]。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。
+您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：
 
-深入瞭解 Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["污染與容許"]。
+* 在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境
+* 目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊
 
-返回 link:task_config_telegraf_agent_k8s.html["* NetApp Kubernetes 監控操作員安裝 * 頁面"]
+
+如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。例如、從您想要安裝操作員的伺服器 / 虛擬機器、您必須能夠存取 Cloud Insights 、並能從 Cloud Insights 下載二進位檔。
+
+對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。
+
+若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：
+
+. 為目前使用者設定_https_proxy_和/或_https_proxy_環境變數：
++
+.. 如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export https_proxy=<proxy_server>:<proxy_port>
+.. 如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：
++
+ export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
+
+
+若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。
+
+在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。
+
+[listing]
+----
+agent:
+  ...
+  proxy:
+    server: <server for proxy>
+    port: <port for proxy>
+    username: <username for proxy>
+    password: <password for proxy>
+
+    # In the noproxy section, enter a comma-separated list of
+    # IP addresses and/or resolvable hostnames that should bypass
+    # the proxy
+    noproxy: <comma separated list>
+
+    isTelegrafProxyEnabled: true
+    isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
+    isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
+    isAuProxyEnabled: <true or false> # true if AU enabled
+  ...
+...
+----
+
+
+=== 使用自訂或私有泊塢視窗儲存庫
+
+根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。
+
+從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。
+
+核心營運者功能與 Kubernetes 監控
+
+* NetApp 監控
+* Kube-RBAC 代理程式
+* Kube-state 指標
+* Telegraf
+* 無 distrouse-root 使用者
+
+
+事件記錄
+
+* Fluent 位元
+* Kubernetes-event-Exporter
+
+
+網路效能與地圖
+
+* CI-net-觀察者
+
+
+根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。
+
+在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。
+
+....
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
+....
+在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
+
+[listing]
+----
+agent:
+  ...
+  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  dockerRepo: your.docker.repo/long/path/to/test
+  # Optional: A docker image pull secret that maybe needed for your private docker registry
+  dockerImagePullSecret: docker-secret-name
+----
+
+
+=== OpenShift指示
+
+如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：
+
+....
+# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
+runPrivileged: true
+....
+OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。
+
+
+
+=== 權限
+
+如果您所監控的叢集包含的自訂資源沒有 ClusterRole link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["要檢視的集合體"]，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。
+
+. 在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 <namespace> 附加權限 _
+. 使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. 將變更套用至叢集
+

@@ -505,7 +505,7 @@ kubectl Get all -n <namespace> | grep -i PSP （應顯示找不到任何項目�
 
 | 安裝 Kubernetes Monitoring Operator 後、我立即在記錄中看到下列內容：
 
-[inputs.prometheus] 外掛程式錯誤：向發出 HTTP 要求時發生錯誤 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 取得 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 撥號 TCP ： LOOKUP kube-state - 規格。 <namespace> 。 Svc.cluster 。本機：無這類主機 | 此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。 
+[ 外掛程式中的 inputs.prometheus] 錯誤：向 \http://kube-state-metrics 提出 HTTP 要求時發生錯誤。 <namespace> 。 svc.cluster 。本機： 8080 / 指標： Get \http://kube-state-metrics 。 <namespace> 。 svc.cluster 。本機： 8080 / 指標：撥號 TCP ： LOOKUP kube-state - 度量。 <namespace> 。 svc.cluster 。本機：無此類主機 | 此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。 
 
 
 | 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。  如果是 v1.2.x 或更低版本、這是預期的限制。  Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。 

@@ -22,7 +22,7 @@ summary: Kubernetes 的資料收集器
 
 == 安裝
 
-如需Kubernetes安裝說明、請參閱 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 頁面。
+如需Kubernetes安裝說明、請參閱 link:task_config_telegraf_agent_k8s.html["Kubernetes 監控營運者"] 頁面。
 
 
 

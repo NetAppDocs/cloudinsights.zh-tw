@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_isolate_root_volume.html 
+permalink: task_io_density_report_no_root.html 
 summary: 查詢高I/O密度時、您想要排除根磁碟區。 
 keywords: NetApp, root volume, high I/O, 
 ---

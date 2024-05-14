@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_query_assign_multiple_applicationss.html 
+permalink: task_query_assign_multiple_applications.html 
 summary: 使用查詢來指派多個應用程式或註釋給物件、或從物件移除多個應用程式或註釋。 
 keywords: query, queries, application, annotation, multiple 
 ---

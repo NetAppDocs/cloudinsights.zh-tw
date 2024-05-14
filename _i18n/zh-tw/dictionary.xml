@@ -2554,29 +2554,7 @@
   <block id="da115c4fc9cae6fc87764395ef9ff331" category="inline-link-macro">*開始收集資料*</block>
   <block id="8308d29f13c3d3cc69f506dfead0a733" category="paragraph">第一次登入新環境時、系統會引導您完成設定 <block ref="2949f1254245e371c2d697f481723a7e" category="inline-link-macro-rx"></block>。</block>
   <block id="cc580c5eecd9c28053db6de1830561ee" category="section-title">登出</block>
-  <block id="e5f2463f379aba48a0f9ca6c913203cc" category="summary">IO密度</block>
-  <block id="169c132355ddfd9b9cf9d499b71aeb68" category="doc">確保IO密度資料僅說明內部資料磁碟區</block>
-  <block id="7bb98d35c109da2ebbaa1c7a65d3f399" category="paragraph">在NetApp儲存系統中、根Aggregate包含根磁碟區、其中包含用於管理和控制儲存系統的特殊目錄和組態檔案。這些作業可能會在根集合體中產生大量活動。當您查詢Cloud Insights IO密度最高的前10大內部磁碟區時、您的結果可能包括NetApp根集合體為前10名的成員。</block>
-  <block id="46b224de326ea16a55f2530720d59843" category="paragraph">本指南說明如何輕鬆識別NetApp根集合體、將其與內部Volume查詢結果區隔、以及建立規則、以在新增至系統時排除任何新的NetApp根集合體。下列功能可確保您的I/O密度報告是從內部資料磁碟區衍生而來。Cloud Insights</block>
-  <block id="ea13f09d1bfd316504e8a7c0dfcf2fb4" category="list-text">系統會建立一個查詢、以識別Cloud Insights 所有由NetApp監控的NetApp根集合體。</block>
-  <block id="289afca30f86dfd5f20fe4a89589b1db" category="list-text">建立註釋規則以排除NetApp根Aggregate。</block>
-  <block id="c0bea941d1547f078dda6774ee69c9dd" category="list-text">在本報告中Cloud Insights 、建立查詢以識別您環境中的NetApp根集合體：*查詢&gt;+新查詢&gt;儲存資源池*</block>
-  <block id="68eef2c4bf0c1205a9d57f62ff34da2c" category="paragraph">此範例使用"aggr0"做為名稱。建立Aggregate時、只能遵循下列名稱需求：</block>
-  <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">必須以字母或底線開頭（_）。</block>
-  <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">它只能包含字母、數字和底線。</block>
-  <block id="7ce969a0dacdf30d2053f97537327dfe" category="list-text">可以少於250個字元。</block>
-  <block id="ddc5fe45a1f8c76f3176ef59297915a5" category="paragraph">在大多數情況下、Aggr0、aggr_0或類似名稱。可能需要迭代程序來識別環境中的所有NetApp根集合體。</block>
-  <block id="36460e710952fbc968c76ef4e9f3d51e" category="paragraph">附註是您指派給資產的專屬附註、可讓您根據資產附註來篩選資產。您所建立的註釋將用於識別環境中的NetApp根集合體、並確保它們不會包含在IO密度最高的內部磁碟區清單中。</block>
-  <block id="019f9302ad1b005fa5fa6e0bdda042c7" category="list-text">建立附註、以關聯您使用查詢所識別的所有NetApp根集合體：*管理&gt;附註*</block>
-  <block id="554a808ec0af233c17e7e70b43072e1f" category="list-text">輸入註釋說明：*從「高I/O密度」清單中移除根Aggregate *</block>
-  <block id="146fab5bc96cd6aa587f1c2a260a7b70" category="paragraph">您可以使用註釋規則、自動將註釋套用至多個資產、作為手動套用註釋至個別資產的替代方法。附註規則是根據您建立的查詢而定、當在系統上執行時、會將新資產新增至現有的資產集。當這些資產組合排除在納入範圍之外時、新資產也會自動排除在外。</block>
-  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">您必須建立並儲存查詢、以識別您在環境中識別的NetApp根集合體。</block>
-  <block id="21611fc590adaaf65bfbe5d847c57bdd" category="list-text">在功能表中、按一下*管理&gt;註釋* Cloud Insights</block>
   <block id="5382046ea385cbcd7367b36d70b4decb" category="list-text">請執行下列動作：</block>
-  <block id="d6bed7bad1624af0fa9be87684edae09" category="list-text">在「名稱」方塊中、輸入描述規則* RootAggrExclud*的唯一名稱</block>
-  <block id="d5e6634ae4019ea4993c5fee3a276807" category="list-text">按一下「查詢」、然後選取Cloud Insights 「查詢」、以套用註釋規則至：* Aggregate0*</block>
-  <block id="a8297ead7d4d1f0590bf46a98e70b494" category="list-text">按一下「註釋」、然後選取「*根目錄agg exclude *」</block>
-  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">按一下*值*並輸入*真*</block>
   <block id="1914b55914b6ee44bc0dcd84cc7caeb3" category="summary">Apache資料收集器組態</block>
   <block id="a2c447b19901c50472d86c46b78e4269" category="doc">Apache Data Collector</block>
   <block id="7f9a66bbf7786386f3da129eb0ca4ce8" category="paragraph">此資料收集器可從您環境中的Apache伺服器收集資料。</block>
@@ -3953,30 +3931,7 @@
   <block id="820d47e555604a3201080c1d157aa94d" category="cell">標記要篩選虛擬機器的金鑰和值</block>
   <block id="05922526004ceb56027a07d530619935" category="cell">按一下「*+ Filter Tag*（*+篩選標籤*）」、選擇要納入/排除的VM（及相關磁碟）、方法是篩選符合VM上標籤的機碼和值。標記金鑰為必填、標記值為選用項目。當標記值為空白時、只要VM符合標記金鑰、就會進行篩選。</block>
   <block id="8e6eb3c8ff00ab06bab7e82986c7e1e5" category="cell">預設值為300</block>
-  <block id="de2080ec5e0e147976f00793ebd67db1" category="summary">鑑識實體詳細資料</block>
-  <block id="ab440e736c2d9e3403efa72117388494" category="doc">鑑識實體詳細資料</block>
-  <block id="0759459fd7984031945fba78588c75bb" category="paragraph">使用「實體詳細資料」頁面可存取實體的詳細資訊。</block>
-  <block id="f8db4b534ba055c3a01a896220cf7409" category="paragraph">您可以存取</block>
-  <block id="153bbbe3830b008df288fad38c0b3a83" category="list-text">實體設定檔</block>
-  <block id="4a4a73d66611aace8d92f097448ce81b" category="list-text">詳細說明包括：</block>
-  <block id="8947a09168ba764c52eb7b93be315a8f" category="list-text">按一下以存取[實體總覽]</block>
-  <block id="14526abd8bda5af347775025cd5342cf" category="list-text">社群</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">路徑</block>
-  <block id="54bc6f9dec592e510fe90ddcb5c6e572" category="list-text">上次存取</block>
-  <block id="22936c219b9fad247df75a21ff0a7b0e" category="list-text">按一下使用者以存取[使用者總覽]</block>
-  <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">尺寸</block>
-  <block id="85525c565d3741d72d4f4f86d783bd00" category="list-text">使用者與社群</block>
-  <block id="c1e735eead256ce16dddd5709aaef387" category="list-text">使用者存取實體的次數</block>
-  <block id="0e24ee04bc9ce222c893aba101ef6d43" category="list-text">社群存取實體的次數。</block>
-  <block id="5679e71f2012621385ed2e7789f3207b" category="list-text">實體Baavor</block>
-  <block id="40926e069052929a1c74d824a8e32295" category="list-text">近期活動：</block>
-  <block id="a1f6abd56494e8f8aa2dd028fe6e8327" category="list-text">上次存取日期</block>
-  <block id="d31527e48f3e267b31ebf68a8452a926" category="list-text">上次存取實體的使用者</block>
-  <block id="282662c8bc8f4ccffd063bc4179b8d94" category="list-text">存取實體的位置</block>
-  <block id="456d0deba6a86c9585590550c797502d" category="list-text">營運</block>
-  <block id="e1796f873ff8ad4bc99c1496e6eb7f87" category="list-text">寫入作業數</block>
-  <block id="740155e144f4a52eaeb72a9385ed0d33" category="list-text">讀取作業數</block>
-  <block id="c1e108c2f999f00f38cf1ce52cc8164f" category="list-text">存取中繼資料的次數</block>
   <block id="2e53ab1058488a0772ce188b1b120797" category="summary">整個發行生命週期中、均遵循安全最佳實務做法。Cloud Insights</block>
   <block id="eb40b6df6ae78b4eec6db5389f8dfd14" category="doc">安全性Cloud Insights</block>
   <block id="5d0f5518e1d9ad290a067464a132a469" category="paragraph">產品與客戶資料安全在NetApp是最重要的。整個發行生命週期均遵循安全最佳實務做法、確保以最佳方式保護客戶資訊與資料。Cloud Insights</block>
@@ -4645,52 +4600,7 @@
   <block id="123d317d6377a1184be4f3542b76e7fc" category="paragraph">如果您在步驟1中停用資料收集器、請編輯資料收集器、輸入正確的密碼並儲存。請確定資料收集器已恢復執行狀態。</block>
   <block id="6e043661fa5856f26501d44b41838596" category="summary">設定資料收集器</block>
   <block id="96633c4bbe4066df6cca5184b0c3138c" category="doc">設定資料收集器</block>
-  <block id="f2c00107b5158d2563b78a7e2ec3a970" category="paragraph">您可在Cloud Insights 您的支援環境中設定資料收集器、以便從資料中心的主機、服務或裝置收集資料。</block>
-  <block id="22265760d3379d0bb5a64374d95aa587" category="list-text">您必須擁有帳戶擁有者或管理權限、才能設定資料收集器。</block>
-  <block id="b8ad8b1d3e73e72eeba197fe8cfed4ef" category="list-text">您必須先設定擷取單元（適用於Infrastrstructure）或代理程式（適用於服務或主機）、才能開始收集資料。</block>
-  <block id="b776d95fcadabfbede1f04ed42e70b38" category="list-text">您需要用來收集資料的基礎架構裝置的認證資料。</block>
-  <block id="46b64733605b7642b18a0bb2d586bd5c" category="paragraph">您想要從中收集資料的所有裝置都需要裝置網路位址、帳戶資訊和密碼。</block>
-  <block id="f4b59a337513071e6d4843f553d49bc6" category="section-title">認證安全性</block>
-  <block id="4a2fd5083496ddce3be60eef8073b637" category="paragraph">資料收集器認證資料會在輸入Cloud Insights 到SURITY時加密、並先由AU的公開金鑰加密傳送至擷取單位（AU）、然後再透過HTTPS加密。當AU使用加密值與裝置和軟體通訊時、會將其解密。</block>
-  <block id="ca28d4c52bb2a654a2678ff8d3dcefa2" category="section-title">設定資料收集器</block>
-  <block id="c339d1a32a95310d9e4a053f77cad28b" category="list-text">視您選擇的資料收集器類型而定、安裝步驟可能有所不同。</block>
-  <block id="13762a4c9e8fa47d574db722fc1b3fa2" category="section-title">作業系統：</block>
-  <block id="b00d7c7ac92f4aaddc21f00ae51e9ffb" category="paragraph">您必須安裝至少一個Cloud Insights 支援程序才能開始從環境中收集作業系統或服務資料。您可以安裝任意數量的代理程式。每個代理程式都能從多個服務收集資料。</block>
-  <block id="6caa4b361faebcb803a409db1b88d8a6" category="paragraph">除了從服務收集資料之外、每個代理程式也會做為安裝該代理程式的VM /主機的資料收集器。收集的資料會以儀表板小工具或查詢中的「節點」資料呈現。</block>
-  <block id="78ace3389e374f5f298be8d67bfa4a58" category="list-text">按一下您存取Cloud Insights 的VM或主機（即Node）平台類型或作業系統。</block>
-  <block id="c2bfe2eaf58eb4609047a3e1eea65778" category="list-text">將顯示的命令複製到剪貼簿。您可以按一下剪貼簿圖示、快速複製命令。</block>
-  <block id="a53af23d658a9535fc02012c55ef38c8" category="list-text">在代理VM/主機上開啟終端機/命令視窗、然後貼上命令。按Enter鍵執行命令。</block>
-  <block id="c3b9d0200b01f416076842501c9ae206" category="list-text">安裝代理程式之後、按一下*「Finish」（完成）*。代理程式開始收集資料。</block>
-  <block id="5010b1ac42dba70893a9d0885fbe6153" category="paragraph">在儀表板中顯示節點資料或可供查詢之前、最多可能需要兩個輪詢期間。</block>
-  <block id="0e5b9bfd33de4aacc0a1ca8f5719168a" category="paragraph">服務資料收集器是以Telewraf代理程式為基礎的收集器、例如Docker或Kibana。</block>
-  <block id="95237aad105439410978d832422ec5f8" category="list-text">您必須至少有一個Cloud Insights 支援程序才能從您的環境中收集服務資料。如果您尚未安裝代理程式、則在設定服務資料收集器時、系統會提示您安裝代理程式。</block>
-  <block id="9d1d946c56f906fe4eda196507962e75" category="list-text">您要從中收集資料的服務必須在您的環境中安裝並執行。</block>
-  <block id="f5b3a38421e3564dc407081a58490b3b" category="list-text">按一下服務資料收集器。</block>
-  <block id="7aaf5cf369a105094116ca809d0cc0c2" category="list-text">選擇代理程式作業系統或平台。如果您尚未安裝平台的代理程式、請依照指示進行。</block>
-  <block id="26983a904e0717c520032a2178795368" category="list-text">按一下 * 繼續 * 。</block>
-  <block id="04d6e043600695763216a74149b824d0" category="list-text">請依照指示設定資料收集器。您可以按一下剪貼簿圖示、快速複製顯示的命令或程式碼片段。</block>
-  <block id="33365fcfbdf45a4d9ec1761cc9bb43e2" category="list-text">正確設定資料收集器之後、按一下*完成*。</block>
   <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">在儀表板中顯示服務資料或可供查詢之前、可能需要兩個輪詢期間。</block>
-  <block id="cfd3e8ee788479f95905fd7f4ae27be6" category="section-title">基礎架構：</block>
-  <block id="7b7102b6e1f4866e3babe053b86b90ac" category="paragraph">基礎架構資料收集器包括儲存設備或交換器等項目。</block>
-  <block id="ac637daa3ccd1254a990c56b13cbf3e9" category="list-text">您必須設定至少一個擷取單位、才能開始收集基礎架構資料。</block>
-  <block id="c050d9221193610ab179db826d0ebe03" category="list-text">按一下基礎架構資料收集器。</block>
-  <block id="211512ec77b8c6e0ce1dab5a4bb593aa" category="list-text">輸入資料收集器的名稱。名稱可以包含下列字元：</block>
-  <block id="3fd760f5a5dc71312ce1dd808d747265" category="list-text">字母（a到z）</block>
-  <block id="c941c7696194a60a16e5962a0d5dbb37" category="list-text">編號（0-9）</block>
-  <block id="e5e058c4eece6b2f44372f1be024219c" category="list-text">連字號（-）</block>
-  <block id="7d36ba9acc13f7a9d2fc56dcb952101b" category="list-text">底線（_）</block>
-  <block id="ec69cea1e605a2ea754da699ed4b967b" category="list-text">期間（.）</block>
-  <block id="35f7e769e75dabc896b7969ce411cfaa" category="list-text">空間（）</block>
-  <block id="ab36095ea637c9091ba22ae50c85cc76" category="paragraph">名稱不得以空格、句點或連字號開頭或結尾。</block>
-  <block id="13ea58a04825bf78b2f2da7f3b0831b5" category="list-text">輸入要與此資料收集器建立關聯的擷取單位。</block>
-  <block id="82f142e6d7380c3d45f29c8550f338a3" category="list-text">在「組態」畫面中輸入必填欄位。</block>
-  <block id="19110098d937705ce65c4bb5ad97a475" category="list-text">按一下*進階組態*以輸入其他組態欄位。並非所有的資料收集器都需要進階組態。</block>
-  <block id="4279b596662924e6b4010f919f84d17c" category="list-text">按一下「*測試組態*」以確認資料收集器已正確設定。</block>
-  <block id="618758304f92b490c243390d7a43774d" category="list-text">完成後、按一下*新增Collector *。</block>
-  <block id="644b4fa94e97c40a6df4575a32bdb388" category="inline-link-macro">設定擷取單位</block>
-  <block id="0d72fee8b671c19a26656d7fb11ab5c7" category="paragraph">如需新增擷取單位的說明、請參閱 <block ref="f6d6d1d8bb58f56bfd9166104e49bf6e" category="inline-link-macro-rx"></block></block>
-  <block id="03600e14e8c249775af21bb69579dc2c" category="paragraph">+在儀表板顯示環境資料或可供查詢之前、可能需要兩個輪詢期間。</block>
   <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">您可以針對潛在攻擊（例如勒索軟體）和/或活動警告、設定自動回應原則</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自動化回應原則</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">回應原則會觸發動作、例如在發生攻擊或異常使用者行為時、拍攝快照或限制使用者存取。</block>
@@ -4869,15 +4779,6 @@
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">系統會顯示廠商所安排的可用資料收集器。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">在對話方塊中、您可以設定資料收集器並新增擷取單位。</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">輸入資料收集器的名稱。</block>
-  <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">名稱可以包含字母（a到z）、數字（0到9）、破折號（-）、底線（_）、撇號（'）、 和句點（.）。</block>
-  <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">當系統提示您設定通知時、請選擇依電子郵件、Webhook或兩者發出警示、然後選擇要通知的警示類型（「嚴重」、「警告」、「資訊」及/或「已解決」）。您可以選擇通知全域監控收件者清單（在*管理&gt;通知*中設定）、或指定其他收件者。準備好繼續時、請按一下*完成設定*。</block>
-  <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">收集器通知</block>
-  <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">編輯收集器通知</block>
-  <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">按一下*進階組態*以新增其他組態欄位。（並非所有的資料收集器都需要進階組態。）</block>
-  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">按一下「*新增收集器*」以儲存組態、並將資料收集器新增至Cloud Insights 您的共享用戶。</block>
-  <block id="62ab4599363ab12f861dc69c2a905582" category="paragraph">在新增資料收集器之後Cloud Insights 、此功能會啟動三次輪詢：</block>
   <block id="98be204914713a1fd39ff19bbc956666" category="list-text">第一次庫存調查：立即</block>
   <block id="f8be5685f8c7c5768bbc90c8ce7fb95d" category="list-text">第一次效能資料輪詢以建立基準：庫存輪詢後立即進行</block>
   <block id="9baa8b33ea662dffa7faa1d9b47e5e8d" category="list-text">第二次效能意見調查：完成第一次效能意見調查後15秒內完成</block>
@@ -7699,7 +7600,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetes命名空間不足</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">Kubernetes命名空間不足空間Insight可讓您檢視Kubernetes命名空間中可能會耗盡空間的工作負載、並預估每個空間將滿之前的剩餘天數。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
-  <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">檢視* ONTAP 《資料收集器*》登陸頁面時、您可以按一下資料收集器摘要區段「通知」欄位中的鉛筆圖示來修改通知。</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">Insights可協助您預測Kubernetes空間何時會滿。</block>
   <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">洞見：Kubernetes命名空間不足</block>
   <block id="8754218641c0cb64c48e8a8cc68703c4" category="paragraph">在您的環境中、空間不足的情況絕不是好現象。協助您預測Kubernetes持續磁碟區已滿之前的時間。Cloud Insights</block>
@@ -9707,10 +9607,7 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">enabledDNSookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">是非題、啟用 DNS 查詢</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">AgentConfiguration 檔案範例</block>
-  <block id="44df9c10959f57dfdf2dd50f7591a9c9" category="section-title">設定操作員</block>
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用的設定</block>
-  <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含一些設定的註解範例。請參閱清單 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 適用於最新版的運算子。</block>
-  <block id="342414165099895140bbfbd3ffb613ca" category="paragraph">您也可以使用下列命令在部署運算子之後編輯此資源：</block>
   <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。</block>
   <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。</block>
@@ -10182,7 +10079,6 @@ FAS / AFF 8080</block>
   <block id="29dc284dcf38e4fe32feb8a0fd5c0b4b" category="cell">AWS Cloud Volumes</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="cell">FSX ONTAP</block>
   <block id="13816363e2eaa66d7be294be0dbaef8c" category="cell">Data ONTAP</block>
-  <block id="64b14a7e6bb27e2b2b4b1397266f46b8" category="cell">qtree 1 以上</block>
   <block id="341a7ed392b3acf42503f54b89dd0954" category="cell">使用授權百分比</block>
   <block id="88bf89db528a107f9dcf9d0ab7b1203b" category="cell">內部 Volume 限制</block>
   <block id="7212522e5e7c1b74429f93734919f229" category="cell">完整複製儲存容量總計</block>
@@ -12813,7 +12709,6 @@ Telegraf ：
   <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Couchbase 。</block>
   <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Flink 。</block>
   <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 MySQL 。</block>
-  <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 收集器 * 、然後按一下 *+ 資料收集器 * 按鈕。</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Kibana 。</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 MongoDB 。</block>
   <block id="5bff30d13ce98c505187872963af1f25" category="section-title">建立您的 NetApp BlueXP 帳戶</block>
@@ -12895,7 +12790,6 @@ Proxy ：
   <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights 可以從 ONTAP 系統的後端交換器收集資料、只要在資料收集器的「進階組態」區段中啟用收集、並確保 ONTAP 系統已設定為提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 並擁有適當的 <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 設定。</block>
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。輕鬆識別健全狀況問題是否與基礎架構、網路或組態變更有關、並深入分析根本原因。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
-  <block id="ed300e62408d01715c593931df6a2352" category="paragraph">如需Kubernetes安裝說明、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes 的資料收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器： Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes 監控營運商的安裝與組態</block>
@@ -13030,9 +12924,6 @@ kubectl Get all -n &lt;namespace&gt; | grep -i PSP （應顯示找不到任何�
   <block id="70d79a6ca6098037988336f11346dce8" category="cell">Operator 命名空間中的 Net-Oborative （工作負載對應） Pod 位於 CrashLoopBackOff</block>
   <block id="e49c236734fe2ea50ae36fcb5353eed9" category="cell">Pod 在 Operator 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料</block>
   <block id="665dddc2adb2f34c745ef47345ee5e93" category="cell">運算子命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
-  <block id="a5ecb374e5b37ce04e31d68dc3716305" category="cell">安裝 Kubernetes Monitoring Operator 後、我立即在記錄中看到下列內容：
-
-[inputs.prometheus] 外掛程式錯誤：向發出 HTTP 要求時發生錯誤<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 取得<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 撥號 TCP ： LOOKUP kube-state - 規格。 &lt;namespace&gt; 。 Svc.cluster 。本機：無這類主機</block>
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">我看到 Kubernetes Monitoring Operator 部署的 Pod 因為資源不足而當機。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">請參閱 Kubernetes Monitoring Operator <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 視需要增加 CPU 和 / 或記憶體限制。</block>
@@ -13134,4 +13025,29 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="3b1dbe846304b427475d6a670fb96413" category="inline-image-macro">覆寫 Widget 的儀表板時間範圍</block>
   <block id="c9b0370dc5d789bfc283022e4c0d9d9e" category="paragraph"><block ref="c9b0370dc5d789bfc283022e4c0d9d9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="776202c829612e565a462d31af745afd" category="paragraph">儀表板和資產登陸頁上 Widget 中的資料會根據所選儀表板時間範圍所決定的重新整理時間間隔、自動重新整理。重新整理時間間隔取決於Widget是時間序列（折線、不規則曲線、區域、堆疊區域圖）、還是非時間序列（所有其他圖表）。</block>
+  <block id="16a53ba18c619dcf3d471d85becaeee6" category="section-title">開始之前要注意的重要事項</block>
+  <block id="ef2fbd69b6e60cf6860a0466960c15a2" category="inline-xref">自訂儲存庫</block>
+  <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
+  <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用執行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、請提供 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>請仔細閱讀以下各節。</block>
+  <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">另請參閱 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
+  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">如果您是從先前的安裝升級、請閱讀 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 資訊：</block>
+  <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</block>
+  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。例如、從您想要安裝操作員的伺服器 / 虛擬機器、您必須能夠存取 Cloud Insights 、並能從 Cloud Insights 下載二進位檔。</block>
+  <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</block>
+  <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：</block>
+  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。</block>
+  <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。</block>
+  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。</block>
+  <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">Kube-RBAC 代理程式</block>
+  <block id="bb84790255aac66744320e4417143dd8" category="list-text">Fluent 位元</block>
+  <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">Kubernetes-event-Exporter</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要檢視的集合體</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您所監控的叢集包含的自訂資源沒有 ClusterRole <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，您需要手動授予操作員對這些資源的存取權，以便使用事件日誌來監控這些資源。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安裝之前或安裝之後、請先編輯 _operer-adder-permissions.yaml_ 、然後編輯資源 &lt;namespace&gt; 附加權限 _</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用動詞 ["Get" 、 "watch " 、 "list" 建立所需的組和資源的新規則。請參閱 \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">將變更套用至叢集</block>
+  <block id="0b681475d547cee4e6a8aa2975d2a6ad" category="cell">安裝 Kubernetes Monitoring Operator 後、我立即在記錄中看到下列內容：
+
+[ 外掛程式中的 inputs.prometheus] 錯誤：向 \http://kube-state-metrics 提出 HTTP 要求時發生錯誤。 &lt;namespace&gt; 。 svc.cluster 。本機： 8080 / 指標： Get \http://kube-state-metrics 。 &lt;namespace&gt; 。 svc.cluster 。本機： 8080 / 指標：撥號 TCP ： LOOKUP kube-state - 度量。 &lt;namespace&gt; 。 svc.cluster 。本機：無此類主機</block>
+  <block id="079771aecc679d555303419cd98137ca" category="paragraph">如需Kubernetes安裝說明、請參閱 <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> 頁面。</block>
 </blocks>
