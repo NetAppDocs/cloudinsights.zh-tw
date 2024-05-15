@@ -2,6 +2,7 @@
 sidebar: sidebar 
 permalink: index.html 
 summary: 歡迎使用Cloud Insights 適用於此的文件入口網站。 
+keywords:  
 ---
 = 本文檔 Cloud Insights
 :toc: macro

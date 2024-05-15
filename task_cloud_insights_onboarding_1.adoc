@@ -2,6 +2,7 @@
 sidebar: sidebar 
 permalink: task_cloud_insights_onboarding_1.html 
 summary: 註冊Cloud Insights 以利執行功能、並創造您的環境。 
+keywords: onboarding, new user 
 ---
 = NetApp新進人員Cloud Insights
 :hardbreaks:
@@ -24,7 +25,7 @@ toc::[]
 
 == 建立您的 NetApp BlueXP 帳戶
 
-若要開始使用 NetApp 的雲端服務、請前往 https://cloud.netapp.com["* NetApp BlueXP*"^] 然後按一下 * 開始使用 * 。
+若要開始使用 NetApp 的雲端服務、請前往 link:https://cloud.netapp.com["* NetApp BlueXP*"^] 然後按一下 * 開始使用 * 。
 
 * 如果您尚未註冊、請選取 * 註冊 *
 * 輸入有效的商業電子郵件地址、然後選擇密碼。
@@ -37,7 +38,7 @@ toc::[]
 
 === 如果我已經登入 NetApp BlueXP 、該怎麼辦？
 
-擁有 NetApp BlueXP 帳戶後、只要在上選擇 * 登入 * 即可 https://cloud.netapp.com["* NetApp BlueXPl*"^] 入口網站頁面。
+擁有 NetApp BlueXP 帳戶後、只要在上選擇 * 登入 * 即可 link:https://cloud.netapp.com["* NetApp BlueXP*"^] 入口網站頁面。
 
 輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。
 
@@ -49,7 +50,9 @@ image:BlueXP_CloudInsights.png["BlueXP 上的 Cloud Insights 免費試用版"]
 
 == 開始Cloud Insights 免費試用
 
-如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您完成公司環境的建立。
+如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您建立公司環境、包括選擇您希望環境所在的地區。
+
+image:trial_region_selector.png["選取要裝載 Cloud Insights 環境的區域"]
 
 一旦您的環境建立完成、您就可以使用 BlueXP 認證登入並開始免費的 30 天 Cloud Insights 試用版。在此試用期間、您可以探索 Cloud Insights 提供的功能。
 
@@ -63,7 +66,7 @@ image:BlueXP_CloudInsights.png["BlueXP 上的 Cloud Insights 免費試用版"]
 
 您也可以直接開啟瀏覽器至Cloud Insights 您的URL環境、例如：
 
- https://<environment-prefix>.c01.cloudinsights.netapp.com/
+ \https://<environment-prefix>.c01.cloudinsights.netapp.com/
 每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入 BlueXP 、系統會提示使用者登入。
 
 

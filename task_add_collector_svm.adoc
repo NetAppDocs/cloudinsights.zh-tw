@@ -124,6 +124,10 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
+<<<<<<<<標題
+
+[]
+====
 ONTAP ARP 整合權限：
 
 ....
@@ -145,9 +149,8 @@ security login create -user-or-group-name csuser -application http -authmethod p
 security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 ....
-
-
-=== 透過* vserver管理IP*新增權限：
+>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
+=== 透過 * 虛擬伺服器管理 IP* 新增時的權限：
 
 如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用Vserver Management IP時、請使用「CsUser」的使用者名稱和密碼。
 
@@ -165,14 +168,16 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+<<<<<<<<標題
+
+====
 拒絕 ONTAP 存取的權限：
 
 ....
 security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ....
-
-
+>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
 === ONTAP 自主勒索軟體保護的權限
 
 如果您使用叢集管理認證、則不需要新的權限。
@@ -334,7 +339,7 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 
 發生錯誤時、請按一下「_Status」（狀態）欄中的「_Mor詳細 資料」、以取得錯誤的詳細資料。
 
-image:CS_Data_Collector_Error.png[""]
+image:CS_Data_Collector_Error.png["工作負載安全性收集器錯誤更多詳細資料連結"]
 
 [cols="2*"]
 |===

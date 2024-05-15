@@ -45,7 +45,7 @@ summary: Cloud Insights 可設定為手動更新 AU 軟體、讓您更能掌控�
 
 
 
-image:Manual_AU_Create_API_Token.png[""]
+image:Manual_AU_Create_API_Token.png["建立 API Token"]
 
 . 在 Swagger （管理 > API 存取 > API 文件）中、使用 Token 授權 Cloud Insights API
 +
@@ -57,7 +57,7 @@ image:Manual_AU_Create_API_Token.png[""]
 
 
 
-image:Manual_AU_Authorization.png[""]
+image:Manual_AU_Authorization.png["授權 API 權杖"]
 
 . 使用 //au/installer/｛ platform ｝ / latest 或 //au/installer/｛ platform ｝ / ｛ version ｝ _ API 下載 AU 安裝程式：
 +
@@ -89,8 +89,8 @@ IMPORTANT: 接下來的步驟需要使用暫存權杖。請勿使用您在上述
 
 
 
-image:Manual_AU_one_time_token.png[""]
-image:Manual_AU_one_time_token_response.png[""]
+image:Manual_AU_one_time_token.png["建立一次性使用 API 權杖"]
+image:Manual_AU_one_time_token_response.png["一次性使用 API 權杖範例的回應"]
 
 . 在要安裝 AU 的機器上、瀏覽至包含下載安裝程式檔案的資料夾。下列命令要求使用者擁有 root 權限。
 +

@@ -18,7 +18,7 @@ keywords: query, queries, modify, edit, delete, remove
 :toc-position: content
 
 
-[role="lead]"]
+[role="lead"]
 當您想要變更查詢資產的搜尋準則時、可以變更與查詢相關的準則。
 
 

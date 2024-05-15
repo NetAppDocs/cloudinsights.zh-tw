@@ -120,7 +120,7 @@ NOTE: 最佳實務做法是先將Fibre Channel識別資訊匯出至.CSV檔案、
 . 按一下「*管理>裝置解析度*」
 . 選擇* Fibre Channel identi*（光纖通道識別）選項卡。
 . 選取您要匯出其識別碼的光纖通道裝置。
-. 按一下*匯出* image:ExportButton.png[""] 按鈕。
+. 按一下*匯出* image:ExportButton.png["匯出按鈕"] 按鈕。
 +
 選取是要開啟.CSV檔案或儲存檔案。
 

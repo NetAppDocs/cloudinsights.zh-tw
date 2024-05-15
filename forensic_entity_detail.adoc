@@ -16,6 +16,7 @@ summary: 「鑑識實體」頁面
 :toc-position: content
 
 
+[role="lead"]
 「鑑識實體」頁面提供您環境中實體活動的詳細資訊。
 
 

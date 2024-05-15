@@ -28,22 +28,22 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 | API類型 | 基本 | 標準 | 優質 
 
 
-| 擷取單位 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 擷取單位 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資料收集 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 警示 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 警示 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資產 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資產 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資料擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 記錄擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 記錄擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 |===
 此外Cloud Insights 、您的技術也很出色 link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 將決定您可以存取哪些API。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
 

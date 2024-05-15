@@ -23,7 +23,7 @@ keywords: asset, summary, landing page, topology, auto, refresh
 
 摘要區段中的資訊、以及資產頁面上的任何表格或自訂 Widget 中的資訊、會根據所選的時間範圍自動重新整理。您可以在「摘要」區段右上角看到目前的重新整理速度、表格和任何自訂 Widget 。
 
-image:Summary_Section_Example.png[""]
+image:Summary_Section_Example.png["登陸頁摘要區段範例"]
 
 附註：「摘要」區段中顯示的資訊會因您檢視的資產類型而有所不同。
 
@@ -56,4 +56,4 @@ NOTE: 您可能會注意到、部分儲存資產的Volume容量可能顯示超�
 * Volume
 
 
-image:TopologyExample.png[""]
+image:TopologyExample.png["登陸頁拓撲區段範例"]

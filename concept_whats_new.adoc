@@ -15,6 +15,7 @@ keywords: features
 :imagesdir: ./media/
 
 
+[role="lead"]
 NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。
 
 
@@ -1418,8 +1419,8 @@ _新增屬性變數、以及在widgets中使用變數的能力_。
 
 儀表板現在比以往更強大、更靈活。建置具有屬性變數的調適性儀表板、以便快速即時篩選儀表板。使用這些和其他既有的 link:concept_dashboard_features.html#variables["變數"] 您現在可以建立一個高層級儀表板來查看整個環境的度量、並依資源名稱、類型、位置等項目無縫篩選。使用小工具中的數字變數、將原始度量與成本建立關聯、例如儲存即服務的每GB成本。
 
-image:Variables_Drop_Down_Showing_Annotations.png[""]
-image:Variables_Attribute_Filtering.png[""]
+image:Variables_Drop_Down_Showing_Annotations.png["變數中的下拉式附註"]
+image:Variables_Attribute_Filtering.png["變數中的屬性篩選"]
 
 
 
@@ -1594,19 +1595,19 @@ image:Type-Ahead-Example-ingest.png["萬用字元篩選器"]
 | API類別 | 基本 | 標準 | 優質 
 
 
-| 擷取單位 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 擷取單位 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資料收集 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 警示 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 警示 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資產 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資產 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資料擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 |===
 
 
@@ -1688,19 +1689,19 @@ API存取功能現已在Cloud Insights 所有版本的不受影響的地方提�
 | API類別 | 基本 | 標準 | 優質 
 
 
-| 擷取單位 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 擷取單位 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資料收集 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資產 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資產 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料擷取 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 資料擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 
 
-| 資料倉儲 |  |  | image:SmallCheckMark.png[""] 
+| 資料倉儲 |  |  | image:SmallCheckMark.png["勾選標記"] 
 |===
 如需API使用方式的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API文件"]。
 

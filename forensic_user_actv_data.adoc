@@ -18,6 +18,7 @@ summary: 鑑識使用者活動資料
 :toc-position: content
 
 
+[role="lead"]
 「使用者活動」頁面可協助您瞭解使用者在實體上執行的動作。
 
 本頁提供的資料說明：

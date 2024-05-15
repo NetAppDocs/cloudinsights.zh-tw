@@ -19,6 +19,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 :toc-position: content
 
 
+[role="lead"]
 使用效益只需三個簡單步驟、即可輕鬆開始使用Cloud Insights ：
 
 * 請在上註冊帳戶 link:https://https://bluexp.netapp.com//["* NetApp BlueXP*"] 以存取所有NetApp雲端產品。

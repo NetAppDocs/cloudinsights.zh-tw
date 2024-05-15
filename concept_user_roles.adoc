@@ -291,4 +291,4 @@ image:Restrict_Domains_Modal.png["將網域限制為只有預設網域、預設�
 * 將存取限制為預設值加上您指定的網域。列出您想要存取 Cloud Insights 環境的任何網域、以及預設網域。
 
 
-image:Restrict_Domains_Tooltip.png[""]
+image:Restrict_Domains_Tooltip.png["限制網域工具提示"]

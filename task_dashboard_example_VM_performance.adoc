@@ -47,7 +47,7 @@ keywords: dashboard, widget, custom, example, virtual machine, vm, performance
 
 
 
-image:VMDashboard-TableWidget1.png[""]
+image:VMDashboard-TableWidget1.png["編輯表格 Widget 對話方塊"]
 
 . 我們可以自訂此小工具。在頂端的「Name（名稱）」欄位中、刪除「Widget 1」、然後輸入「Virtual Machine Performance Table（虛擬機器效能表）」。
 . 按一下資產類型下拉式清單、然後將_Storage_變更為_Virtual Machine。
@@ -68,7 +68,7 @@ image:VMDashboard-TableWidget1.png[""]
 
 
 
-image:VMDashboard-TableWidgetGroup.png[""]
+image:VMDashboard-TableWidgetGroup.png["表格 Widget 群組範例"]
 
 . 當您已自訂表格小工具以達到滿意度時、請按一下「*（儲存）」*按鈕。
 +
@@ -88,7 +88,7 @@ image:VMDashboard-TableWidgetGroup.png[""]
 . 按一下「*」「Save」（儲存）*、將此小工具新增至儀表板。
 
 
-image:VMDashboard-LineChartVMLatency.png[""]
+image:VMDashboard-LineChartVMLatency.png["顯示延遲資料的折線圖"]
 
 接下來、我們將在單一圖表中新增顯示VM讀取、寫入和IOPS總計的圖表。
 
@@ -100,7 +100,7 @@ image:VMDashboard-LineChartVMLatency.png[""]
 . 按一下*顯示圖例*、即可在儀表板上顯示此Widget的圖例。
 
 
-image:VMDashboard-AreaChartVMIOPS.png[""]
+image:VMDashboard-AreaChartVMIOPS.png["顯示 VM IOPS 的區域圖"]
 
 . 按一下「*」「Save」（儲存）*、將此小工具新增至儀表板。
 
@@ -121,4 +121,4 @@ image:VMDashboard-AreaChartVMIOPS.png[""]
 
 您的最終VM效能儀表板如下所示：
 
-image:VMDashExample1.png[""]
+image:VMDashExample1.png["VM 儀表板完整範例、顯示所有已就緒的 Widget"]

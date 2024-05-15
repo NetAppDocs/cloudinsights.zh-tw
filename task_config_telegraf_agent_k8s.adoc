@@ -30,8 +30,8 @@ toc::[]
 
 == 安裝 Kubernetes Monitoring Operator
 
-image:NKMO-Instructions-1.png[""]
-image:NKMO-Instructions-2.png[""]
+image:NKMO-Instructions-1.png["監控操作員指示"]
+image:NKMO-Instructions-2.png["監控操作員指示"]
 
 .在 Kubernetes 上安裝 Kubernetes Monitoring Operator Agent 的步驟：
 . 輸入唯一的叢集名稱和命名空間。如果您是 <<升級,升級>> 從先前的 Kubernetes 運算子中、使用相同的叢集名稱和命名空間。
@@ -532,7 +532,7 @@ Telegraf ：
 
 | 我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
 
- 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 已超過內容期限（等待標頭時超過 Client.Timeout ） | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  link:telegraf_agent_k8s_config_options.html["組態選項"]。 
+ 好！[ 代理程式 ] 寫入 outputs.http ： POST 「 \https ： //les/rest/v1/lake <tenant_url> / 擷取 / 影響 xdb 」時發生錯誤：內容已超過期限（用戶端。 等待標頭時超過逾時） | 編輯 _AgentConfiguration_ 中的 Telegraf 區段、並將 _outputTimeout_ 增加至 10s 。如需詳細資訊、請參閱操作員的 link:telegraf_agent_k8s_config_options.html["組態選項"]。 
 
 
 | 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循中的步驟 link:pre-requisites_for_k8s_operator.html["權限"] 上一節。 

@@ -32,23 +32,21 @@ Kubernetes Monitoring Operator 會自動安裝 kube-state 度量、不需要使�
 
 
 
-=== Kube-state指標計數器
+=== Kube-state 度量計數器
 
-請使用下列連結來存取這些kube狀態度量計數器的資訊：
+NetApp Kubernetes 監控營運者會擷取下列 kube-state 度量計數器。如需每個計數器的詳細資訊、請參閱： https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[]。
 
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["示範設定指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["部署指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["入口指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["命名空間度量"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["節點度量"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["持續Volume指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["持續Volume報銷標準"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Pod指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet度量"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["機密數據"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["服務指標"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatefulSet指標"]
+. ConfigMap指標
+. 示範設定指標
+. 部署指標
+. 入口指標
+. 命名空間度量
+. 節點度量
+. 持續Volume指標
+. 持續 Volume Claim Metrics
+. Pod指標
+. ReplicaSet度量
+. 機密數據
+. 服務指標
+. StatefulSet指標
 
-
-'''
