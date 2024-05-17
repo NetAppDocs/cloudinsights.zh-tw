@@ -46,7 +46,7 @@ security login role create -role csrole -cmddirname "vserver cifs session" -acce
 security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
 security login role create -role csrole -cmddirname "vserver name-mapping" -access all
 ....
-請務必檢閱的「權限」區段 link:/cloudinsights/task_add_collector_svm.html["設定ONTAP SVM Data Collector"] 頁面。
+請務必檢閱的「權限」區段 link:task_add_collector_svm.html["設定ONTAP SVM Data Collector"] 頁面。
 
 
 

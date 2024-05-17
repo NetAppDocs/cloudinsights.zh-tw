@@ -276,7 +276,7 @@ image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<versi
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name
@@ -434,7 +434,7 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
 
 
 | 在 Kubernetes 上、我的 Telegraf Pod 回報下列錯誤：
-" 處理 mountstats 時發生錯誤資訊：無法開啟 mountstats 檔案： /hostfs/proc/1/mountstats 、錯誤：開啟 /hostfs/proc/1/mountstats ：權限遭拒 " | 如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱： https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]。 
+" 處理 mountstats 時發生錯誤資訊：無法開啟 mountstats 檔案： /hostfs/proc/1/mountstats 、錯誤：開啟 /hostfs/proc/1/mountstats ：權限遭拒 " | 如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱 link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift指示"]。 
 
 
 | 在 Kubernetes 上、我的 Telegraf ReplicicaSet Pod 回報下列錯誤：

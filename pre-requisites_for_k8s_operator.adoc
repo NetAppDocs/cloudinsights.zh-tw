@@ -52,12 +52,12 @@ Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux
 
 | 連線能力 | Kubectl CLI 已設定為與目標 K8s 叢集通訊、並可與 Cloud Insights 環境進行網際網路連線。
 
-如果您在安裝期間位於 Proxy 後方、請遵循中的指示 link:/task_config_telegraf_agent_k8s.html#configuring-proxy-support["設定Proxy支援"] 操作員安裝部分。
+如果您在安裝期間位於 Proxy 後方、請遵循中的指示 link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["設定Proxy支援"] 操作員安裝部分。
 
 若要準確地進行稽核和資料報告、請使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）來同步代理機器上的時間。 
 
 
-| 其他 | 如果您是在 OpenShift 4.6 或更新版本上執行、則必須遵循連結： task_config_telegraf_agent_k8s.html#openshift-instructions [OpenShift Instructions 、同時確保符合這些先決條件。 
+| 其他 | 如果您是在 OpenShift 4.6 或更新版本上執行、則必須遵循 link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift指示"] 除了確保符合這些先決條件之外、 
 
 
 | API Token | 如果您要重新部署操作員（亦即您正在更新或取代它）、則不需要建立新的 API 權杖；您可以重新使用先前的權杖。 
@@ -169,7 +169,7 @@ image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<versi
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation for link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository[using a custom or private docker repository].
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name

@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, API
 利用功能強大的API、使用者無需經過Cognos報告環境、即可直接查詢功能強大的功能。Cloud Insights Cloud Insights
 
 
-NOTE: 本文件是指Cloud Insights 《不收集資料》功能、可在中取得 link:/concept_subscribing_to_cloud_insights.html#editions["Premium Edition"]。
+NOTE: 本文件是指 Cloud Insights 報告功能、可在 Cloud Insights Premium Edition 中取得。
 
 
 

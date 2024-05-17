@@ -124,7 +124,8 @@ IBM DS（CLI）資料收集器支援DS6xxx和DS8xxx裝置的庫存和效能資�
 | 問題： | 試用： 
 
 
-| 錯誤包含：CMUC00192E、CMUC00191E或CMUC00190E | *驗證輸入的認證資料和IP位址。*嘗試透過網路管理主控台與陣列通訊 https://${ip}:8452/DS8000/Console[]。使用已設定的資料收集器IP來取代$｛IP｝。 
+| 錯誤包含：CMUC00192E、CMUC00191E或CMUC00190E | *驗證輸入的認證資料和IP位址。
+* 嘗試透過網路管理主控台 \https ： <ip> ： 8452/DS8000/Console 與陣列通訊。  以資料收集器設定的 IP 取代 <ip> 。 
 
 
 | 錯誤：*無法執行程式*執行命令時發生錯誤 | * Cloud Insights 從「收購單元」中、在CLI的主目錄/Lib中開啟CMD * Open CLI/CFX檔案、然後檢查屬性Java_install、編輯值以符合您的環境*顯示此機器上安裝的Java版本、輸入： 「Java -version」* Ping發出CLI命令中指定的IBM Storage裝置IP位址。*如果以上皆正常運作、請手動執行CLI命令 

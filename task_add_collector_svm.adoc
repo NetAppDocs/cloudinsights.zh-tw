@@ -49,7 +49,7 @@ summary: 新增工作負載安全資料收集器
 
 
 ** 使用SVM Vserver Management IP、使用者名稱和密碼
-** 如果您無法或不願意使用完整的管理員叢集/ SVM管理使用者名稱和密碼、您可以建立具有較低權限的自訂使用者、如中所述 link:#a-note-about-permissions["「權限注意事項」"] 部分。您可以為SVM或叢集存取建立此自訂使用者。
+** 如果您無法或不願意使用完整的管理員叢集/ SVM管理使用者名稱和密碼、您可以建立具有較低權限的自訂使用者、如中所述 <<a-note-about-permissions,「權限注意事項」>> 部分。您可以為SVM或叢集存取建立此自訂使用者。
 +
 *** o您也可以使用具有至少具有csrole權限的AD使用者、如以下「權限注意事項」一節所述。另請參閱 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["本文檔 ONTAP"]。
 
@@ -124,33 +124,9 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
-<<<<<<<<標題
 
-[]
-====
-ONTAP ARP 整合權限：
 
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-拒絕 ONTAP 存取的權限：
-
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-....
-附註：如果已新增一個 REST 角色（ _arwrole_ 或 _csrestrole_ ）、則不需要新增第二個 REST 角色。您只需新增 API 權限、如下例所示。
-
-範例： _csrestrole_ 已經存在、因此我們只需啟用反勒索軟體保護、並將 API 權限授予現有的 _csrestrole_ ：
-
-....
-security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-....
->>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== 透過 * 虛擬伺服器管理 IP* 新增時的權限：
+=== 透過* vserver管理IP*新增權限：
 
 如果您無法使用叢集管理管理員使用者來允許工作負載安全性存取ONTAP 《SVM資料收集器》、您可以建立一個名為「CsUser」的新使用者、其角色如下所示。將工作負載安全資料收集器設定為使用Vserver Management IP時、請使用「CsUser」的使用者名稱和密碼。
 
@@ -168,16 +144,8 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-<<<<<<<<標題
 
-====
-拒絕 ONTAP 存取的權限：
 
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-....
->>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
 === ONTAP 自主勒索軟體保護的權限
 
 如果您使用叢集管理認證、則不需要新的權限。
@@ -384,7 +352,7 @@ g ）在 ONTAP 中開啟防火牆、讓 ONTAP 能夠連線到代理程式方塊�
 
 8. 確認連接埠 7 已開啟。
 
-9. 如果上述任何一項都無法解決問題、請使用開啟案例 link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["NetApp支援"] 以取得進一步協助。 
+9. 如果上述任何一項都無法解決問題、請使用開啟案例 link:concept_requesting_support.html["NetApp支援"] 以取得進一步協助。 
 
 
 | 訊息：「無法判斷ONTAP [hostname:<IP Address>的資訊類型。原因：連線錯誤至儲存系統<IP位址>：主機無法連線（主機無法連線）" | 1.確認已提供正確的SVM IP管理位址或叢集管理IP。2. SSH連線至您要連線的SVM或叢集。連線後、請確認SVM或叢集名稱正確無誤。 
@@ -420,6 +388,15 @@ g ）在 ONTAP 中開啟防火牆、讓 ONTAP 能夠連線到代理程式方塊�
 | 資料收集器發生錯誤、顯示此錯誤訊息。「錯誤：連接器處於錯誤狀態。服務名稱：稽核。失敗原因：無法在SVM SVM_TEST上設定原則。原因：缺少ZAPI欄位值：事件。「 | 從只設定NFS服務的新SVM開始著手。在ONTAP 工作負載安全性中新增一個功能不全的SVM資料收集器。CIFS被設定為SVM允許的傳輸協定、同時在ONTAP 工作負載安全性中加入SVM Data Collector。等到工作負載安全性中的資料收集器顯示錯誤。由於未在SVM上設定CIFS伺服器、因此工作負載安全性會顯示左圖所示的錯誤。編輯ONTAP 《SVM資料收集器》、並視允許的傳輸協定取消CIFS檢查。儲存資料收集器。它會在僅啟用NFS傳輸協定的情況下開始執行。 
 
 
-| 資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。 | 1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。再次輸入資料收集器的密碼。按下「_Sav__」按鈕以儲存資料收集器。資料收集器會重新啟動、錯誤應該會解決。2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。請檢查新增至機器代理程式的資料收集器數量。如果超過20個、請增加代理機器的CPU和RAM容量。CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。請參閱上的規模調整指南 link:https://docs.netapp.com/us-en/cloudinsights/concept_cs_event_rate_checker.html["本頁"]。 
+| 資料收集器會顯示錯誤訊息：「錯誤：無法在2次重試中判斷收集器的健全狀況、請再次嘗試重新啟動收集器（錯誤代碼：AGENT008）」。 | 1.在「資料收集器」頁面上、捲動至資料收集器右側、顯示錯誤訊息、然後按一下「3點」功能表。選取_編輯_。
+再次輸入資料收集器的密碼。
+按下「_Sav__」按鈕以儲存資料收集器。
+資料收集器會重新啟動、錯誤應該會解決。
+
+2.代理機器的CPU或RAM保留空間可能不足、這就是DSC故障的原因。
+請檢查新增至機器代理程式的資料收集器數量。
+如果超過20個、請增加代理機器的CPU和RAM容量。
+CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。
+請參閱上的規模調整指南 link:concept_cs_event_rate_checker.html["本頁"]。 
 |===
 如果您仍遇到問題、請聯絡*「說明」>「支援*」頁面中提及的支援連結。

@@ -31,7 +31,7 @@ image:SupportPageWithLearningCenter.png["支援頁面"]
 
 == 正在啟動支援權利
 
-以試用模式執行時、可提供自助服務和電子郵件支援。Cloud Insights訂閱服務後、強烈建議您啟動支援服務權利。啟用支援權利可讓您透過線上聊天室、網路票證系統和電話存取技術支援。在完成註冊之前、預設的支援模式為自助服務。請參閱 link:#obtaining-support-information["詳細資料"] 以下。
+以試用模式執行時、可提供自助服務和電子郵件支援。Cloud Insights訂閱服務後、強烈建議您啟動支援服務權利。啟用支援權利可讓您透過線上聊天室、網路票證系統和電話存取技術支援。在完成註冊之前、預設的支援模式為自助服務。請參閱 <<obtaining-support-information,詳細資料>> 以下。
 
 在初始訂購程序期間Cloud Insights 、您的執行個體將會產生20位數的NetApp序號、開頭為「950」。此NetApp序號代表Cloud Insights 與您的帳戶相關的訂閱資訊。您必須註冊NetApp序號、才能啟動支援權益。我們提供兩種支援登錄選項：
 

@@ -92,7 +92,7 @@ image:Webhook_Default_Parameters.png["預設Webhook參數Cloud Insights"]
 
 == 在監視器中選擇Webhook通知
 
-可選擇中的Webhook通知 link:task_create_monitor.html#creating-a-monitor["監控"]、前往*警示>管理監視器*、然後選取所需的監視器、或新增監視器。在「設定團隊通知」區段中、選擇「_Webhack__」作為交付方法。選取警示層級（嚴重、警告、已解決）、然後選擇所需的網路連結。
+可選擇中的Webhook通知 link:task_create_monitor.html["監控"]、前往*警示>管理監視器*、然後選取所需的監視器、或新增監視器。在「設定團隊通知」區段中、選擇「_Webhack__」作為交付方法。選取警示層級（嚴重、警告、已解決）、然後選擇所需的網路連結。
 
 image:Webhook_Monitor_Notify.png["Webhook監控通知"]
 
