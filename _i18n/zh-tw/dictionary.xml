@@ -1830,7 +1830,6 @@
   <block id="53b0472808dabea62502439bc14f2c4d" category="list-text">必須為CIMDServer提供使用者登入資訊。登入必須具有陣列組態和內容的完整讀取權限。</block>
   <block id="389e3a971065b48ffc3a05981fa6df88" category="list-text">SMI-S命名空間。預設為root/IBM。這可在CIMServer中設定。</block>
   <block id="3fb43ae0166a0c7258bca2e98a24ca2b" category="list-text">連接埠需求：HTTP為5988、HTTPS為5989。</block>
-  <block id="11c301b2ca2b5c8e4b4520a428503821" category="list-text">請參閱下列連結、瞭解如何建立SMI-S效能集合的帳戶：<block ref="449b9c51502ef7d0a14d677d1d606dd7" category="inline-link-rx"></block></block>
   <block id="341a4bf00fff7bb62ad3ac648c6ac9d4" category="cell">XIV IP位址</block>
   <block id="474b42a95b200cc5860646bb3c3691b2" category="cell">XIV儲存設備的IP位址或完整網域名稱</block>
   <block id="ae2b712c4dd6aa98dc14069f97abb853" category="cell">XIV儲存設備的使用者名稱</block>
@@ -5006,7 +5005,6 @@
   <block id="7cef246d709d34533b9dea3e15d3f5a2" category="list-text">*<block ref="2ecfa39652ed0f06ca436cc3b19d2bbb" category="inline-link-macro-rx"></block>*</block>
   <block id="15d10c3fd39c9846221b3ea9c93b55e0" category="paragraph">按一下「說明文件」連結即可前往此說明文件中心。</block>
   <block id="7d61983c34edc2a8cabbea71c4732f62" category="inline-link-macro">社群</block>
-  <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
   <block id="a7a9e9720c642358ce4d75836f0323d7" category="paragraph">按一下社群連結即可前往NetApp Cloud Insights 支援社群、您可在此與同儕和專家交流。</block>
   <block id="c48730cb532534ed8ded87a7e1e63743" category="inline-link-macro">*意見反應*</block>
   <block id="1ee12c9d2a4f0460caa4b5f609d4b32e" category="paragraph">也有一個連結可提供 <block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block> 協助我們改善Cloud Insights</block>
@@ -5014,7 +5012,6 @@
   <block id="8af88bdd2f4549eb670a6c4568c51014" category="paragraph">除了上述的自我支援選項之外、如果您訂閱Cloud Insights 或付費支援受監控的NetApp產品或服務、您也可以與NetApp支援工程師合作解決您的問題。</block>
   <block id="8e2e894a8f2d0c798eda10b04a6aae2c" category="inline-link-macro">雲端資料服務支援註冊</block>
   <block id="960807b3a38d77ca1916570b1732dda1" category="inline-xref">啟動支援</block>
-  <block id="cad626d3146515dadd70f1b0383e0eb2" category="admonition">您必須先註冊才能登錄 <block ref="508882d56a37a1ac140f8523d62ed3d4" category="inline-xref-macro-rx"></block> 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
   <block id="59ec599572265c11af88366fc10b5d22" category="paragraph">強烈建議您勾選此方塊、以便NetApp支援工程師Cloud Insights 在您的支援工作階段期間存取您的支援環境。這可讓工程師疑難排解問題、並協助您迅速解決問題。當問題解決或支援工作階段結束時、您可以取消核取方塊。</block>
   <block id="1178d064739e36d66d617e550b890b3c" category="paragraph">您可以透過下列任一方法申請支援。您必須擁有有效Cloud Insights 的支援功能才能使用這些支援選項：</block>
   <block id="e145a699aa519b4431527a84030fe1fd" category="inline-link-macro">*電話*</block>
@@ -5139,7 +5136,6 @@
   <block id="080a50fd42890f08f122c21be3187e4b" category="cell">錯誤：4.29 emc235848 emc241018 getall無法剖析主機別名資訊</block>
   <block id="a6037a5a8dc19085b823e803eeb236da" category="cell">這可能是因為陣列本身的主機啟動器資料庫發生Flare 29毀損問題所致。請參閱EMC知識庫文章：emc235848、emc241018。您也可以檢查<block ref="fcbe74266ffebefc607cd58d1002be58" category="inline-link-rx"></block></block>
   <block id="2846bc6366ffc91aee2075a2d5607161" category="cell">錯誤：無法擷取中繼LUN。執行Java -Jar navicli.jar時發生錯誤</block>
-  <block id="048af5a91eb86b88a58c85caf252b7f2" category="cell">•修改資料收集器組態以使用安全用戶端（建議）•在navicli.exe或naviseccli.exe的CLI路徑中安裝navicli.jar•注意：navicli.jar已於EMC Navisphere 6.26版中過時•navicli.jar可於取得<block ref="52ccc160ee6ad92eb3a129205f83a3c5" category="inline-link-rx"></block></block>
   <block id="aabf05c4f0e7b6d67364c9c3287c3f76" category="cell">錯誤：儲存資源池不會在服務處理器上回報已設定IP位址的磁碟</block>
   <block id="5c794ce4033cc9a38588fdf417c99b4c" category="cell">使用兩個服務處理器IP來設定資料收集器、並以逗號分隔</block>
   <block id="eec4a8f5738e0ab13381d33020ad0b24" category="cell">錯誤：修訂版不符錯誤</block>
@@ -5865,8 +5861,6 @@
   <block id="8aa90565fb34d8b0aeab74ab74ffdf4a" category="section-title">2021年2月</block>
   <block id="2a266bc5a8b07b0f2457a4df0aadfb6c" category="paragraph">擷取遠距網路雜訊整合資料的代理程式已更新至1.17.0版、其中包含弱點與錯誤修復。</block>
   <block id="dc50895267bc4dee6b58ad70b85a96b9" category="section-title">雲端成本分析工具</block>
-  <block id="11b5e8f0c975c40cd6464e682e336f13" category="inline-link-macro">成本分析</block>
-  <block id="bcc80a36bebd03f3264a4aaa13d8a82b" category="paragraph">透過雲端成本體驗NetApp的即點功能、提供詳細資料 <block ref="7b1d0f4c403bdc72ee0dc9975922d090" category="inline-link-macro-rx"></block> 過去、現在及預估的支出、可清楚掌握環境中的雲端使用狀況。雲端成本儀表板可清楚檢視雲端支出、並深入瞭解個別工作負載、帳戶和服務。</block>
   <block id="690e46a66b86b18e0053b85ffa67f4d8" category="paragraph">雲端成本有助於解決下列重大挑戰：</block>
   <block id="eb67bbd04d0744ceaeb4a1ecb49afecc" category="paragraph">雲端成本著重於監控。透過NetApp帳戶升級至完整位置、以實現自動成本節約與環境最佳化。</block>
   <block id="f0a05082925a4e52ff224fde55a6d481" category="section-title">使用篩選器查詢具有null值的物件</block>
@@ -5982,7 +5976,6 @@
   <block id="a5667679a016ee66ef9bc45c1a173b3b" category="section-title">2020年12月</block>
   <block id="2b615a7f2e90071943cf38af444bddc3" category="section-title">更簡單的Kubernetes安裝</block>
   <block id="fad2f286b8862fcd3a947310f05dc816" category="inline-link-macro">安裝Kubernetes代理程式</block>
-  <block id="67e488807bb09964f73d2e7fdb021f7a" category="paragraph">Kubernetes代理程式的安裝作業已經過簡化、需要較少的使用者互動。 <block ref="3777bc6c1722cb1c6ddba242b3b94c15" category="inline-link-macro-rx"></block> 現在包括Kubernetes資料收集。</block>
   <block id="0e347c50a0d60b8f46cb8c37cd3b5088" category="section-title">2020年11月</block>
   <block id="d9947aaf7f49e22f3949677e3c0a6a23" category="section-title">其他儀表板</block>
   <block id="2b7f89335a36359ed3085691d2f5cd6d" category="paragraph">下列以ONTAP為主的新儀表板已新增至圖庫、可供匯入：</block>
@@ -6186,7 +6179,6 @@
   <block id="08c8691f6d02bf3d991e67f0cfbf6a14" category="section-title">更輕鬆地複製小工具</block>
   <block id="76c3a3713f87f2eb502911d43547ba5f" category="paragraph">在儀表板或登陸頁面上建立小工具複本比以往更容易。在儀表板編輯模式中、按一下小工具上的功能表、然後選取*複製*。Widget編輯器隨即啟動、並預先填入原始Widget的組態、並在Widget名稱中加上「copy」字尾。您可以輕鬆進行任何必要的變更、並儲存新的小工具。小工具會放置在儀表板底部、您可以視需要加以定位。請記得在完成所有變更時儲存儀表板。</block>
   <block id="48bddfb993c982287aecbed4fe284efe" category="inline-link-macro">單一登入</block>
-  <block id="a3516ed3470691df24f62296c61b5a09" category="paragraph">有了支援功能的支援版、系統管理員就能啟用* Cloud Insights<block ref="f2c5efb9cc6ea11069356a919f3b9d88" category="inline-link-macro-rx"></block>*（SSO）存取Cloud Insights 公司網域中的所有使用者、無需個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。</block>
   <block id="0d34e9c21a13cf4c27d88185c745fbfa" category="admonition">SSO僅在Cloud Insights 支援Cloud Insights 功能不支援的版本中提供、必須先設定SSO、才能啟用以供使用。SSO組態包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 透過NetApp Cloud Central：聯盟可讓單一登入使用者使用公司目錄中的認證資料來存取您的NetApp Cloud Central帳戶。</block>
   <block id="d835981d77534f5f20446d4648ad7e5b" category="section-title">2020年1月</block>
   <block id="2cc7e858ba807100ff4baef8dd609c4c" category="section-title">REST API的Swagger文件</block>
@@ -6223,7 +6215,6 @@
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="section-title">2019年11月</block>
   <block id="01c11021cc38b74d02dfdb2ef5e77fca" category="section-title">版本功能比較表</block>
   <block id="f9acaf912b63febf0bcf7a9e4d298e9f" category="inline-link-macro">比較表</block>
-  <block id="3dd10079e95ba50871a5ab5215dce86e" category="paragraph">「*管理&gt;訂閱*」頁面 <block ref="0d2c63a7998c59da36d6389e14580db4" category="inline-link-macro-rx"></block> 已更新以列出Cloud Insights 適用於基本版、標準版和優質版的功能集。NetApp不斷改善雲端服務、因此請經常查看本頁、找出最適合您不斷演進的業務需求的版本。</block>
   <block id="e10986a4d8d7c27e4a9031d551cb15f3" category="section-title">2019年10月</block>
   <block id="4d581ab73b477b0058e9a556a352a77a" category="inline-link-macro">*《報告》* Cloud Insights</block>
   <block id="bf477952b52b01fceb367c01be571adb" category="paragraph"><block ref="b7cfc719aea5efd14bf49a060e3d8bab" category="inline-link-macro-rx"></block> 是商業智慧工具、可讓您檢視預先定義的報告或建立自訂報告。有了「報告」、您可以執行下列工作：</block>
@@ -6305,7 +6296,6 @@
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link-macro">Azure</block>
   <block id="0258c52d81b28196d9cbe098b4856a2f" category="list-text"><block ref="0258c52d81b28196d9cbe098b4856a2f" category="inline-link-macro-rx"></block></block>
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="inline-link-macro">Google Cloud Platform</block>
-  <block id="72c552fb4cd87641ab3c9f8cf214eb84" category="list-text"><block ref="72c552fb4cd87641ab3c9f8cf214eb84" category="inline-link-macro-rx"></block></block>
   <block id="692664770412ddd705b7f413cee7d6fb" category="section-title">2019年3月</block>
   <block id="3601f99e8d21385b2b03f7fab345b666" category="section-title">訂閱相關事件的電子郵件通知</block>
   <block id="f37bd2f66651e7d46f6d38440f2bc5dd" category="inline-link-macro">通知</block>
@@ -6318,7 +6308,6 @@
   <block id="faae77443f7a8406deaf55c3795ace10" category="section-title">2019年2月</block>
   <block id="4328b1333f0cf276fbaa892d958b3d23" category="section-title">從AWS子帳戶收集</block>
   <block id="433984394960c952a78e6fd7daed6948" category="inline-link-macro">從AWS子帳戶收集</block>
-  <block id="594a73585fb2101d0cd4e1fe43e9ce13" category="list-text">支援Cloud Insights <block ref="226fd2eb507f3c50c07835ace6fcdf92" category="inline-link-macro-rx"></block> 在單一資料收集器內。您的AWS環境必須設定為允許Cloud Insights 從子帳戶收集資訊。</block>
   <block id="d6d43bf1a9a7a5440ae98da79a4d974f" category="section-title">資料收集器命名</block>
   <block id="26d7394791900bc730455fc0d475c6ea" category="list-text">Data Collector名稱現在除了可以包含字母、數字和下劃線之外、也可以包含句點（.）、連字號（-）和空格（）。名稱不得以空格、句點或連字號開頭或結尾。</block>
   <block id="9d82d310bac0f9ae47be63a87775a97d" category="section-title">Windows採購單位</block>
@@ -7199,7 +7188,6 @@
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 以取得更多詳細資料。</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">預估您的訂閱成本</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">如何訂閱？</block>
-  <block id="29778014c6460acd3ebe88e1e1f1652b" category="paragraph">如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 <block ref="c7602cfa7469b32fb39d8de19e42676e" category="inline-xref-macro-rx"></block> 透過AWS Marketplace。</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">透過NetApp銷售直接訂閱</block>
   <block id="e3b70cffc25d522a4137f9cafd0f3c50" category="paragraph">如果您預期的託管單元數為1、000或更高、請按一下 <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> 按鈕、透過NetApp銷售團隊訂閱。</block>
   <block id="1cf7fd422699345d54e2c23df79ac3a2" category="paragraph">您必須提供Cloud Insights 您的資料*序號*給NetApp銷售代表、以便將付費訂閱套用Cloud Insights 至您的不實環境。序號可在Cloud Insights *管理&gt;訂閱*頁面上找到您獨特的嘗試環境。</block>
@@ -8899,11 +8887,6 @@
   <block id="9a2fea05fffd9db96b4c1b56a8565c0f" category="list-text">我已註冊。現在該怎麼辦？<block ref="cbfa9b616716f21245fe15dc5f968c06" category="inline-link-macro-rx"></block>
 <block ref="781d4ec8a1ed10dd5e5e73381919382f" category="inline-link-macro-rx"></block></block>
   <block id="1f3aee47e5a067de1cdceffdeaa16afa" category="inline-link-macro">保護資料安全</block>
-  <block id="b3686203dff26adb25b86088bb90a8a9" category="list-text">太棒了！接下來呢？<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
-<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
-<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
-<block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block>
-<block ref="736f96cf0a6accc6598879f4794392e1" category="inline-link-macro-rx"></block></block>
   <block id="f22fe88435293fe687ec1e801a002593" category="list-text">這是一件很棒的事！我準備好了 <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>。</block>
   <block id="1bad96ad9051405457c7ba247f0febab" category="admonition">此資料收集器就是 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block>。</block>
   <block id="069a2016d54bf7b98ce327edac1bcc77" category="section-title">額外的電源、活動訊號和其他系統監視器</block>
@@ -8979,7 +8962,6 @@
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">請注意、這些監視器中有部分預設為啟用_；如果您不想對它們發出警示、則必須暫停_。另外請注意、這些監視器並未設定為傳送通知；如果您想要透過電子郵件或網路勾點傳送警示、則必須在這些監視器上設定通知收件者。</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">所有儀表板表格小工具的.CSV匯出</block>
   <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">CSV匯出圖示</block>
-  <block id="44d9011c39c37e8f6a446942bc615548" category="paragraph">確保資料存取是不可或缺的要素、因此我們已匯出.CSV <block ref="c41d9af9fc2647da102c1cb100d033ea" category="inline-image-macro-rx" type="image"></block> 無論您查詢的資料類型（資產或整合）為何、均可用於所有的度量查詢、儀表板表格小工具和物件登陸頁面。</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">欄選取、重新命名欄及單位轉換等資料自訂功能現在也包含在新的匯出功能中。</block>
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登入Cloud Insights 到</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">儀表板表格小工具的「三點」功能表、以及大部分的登陸頁表、也提供匯出至.CSV。</block>
@@ -9710,7 +9692,6 @@
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知電子郵件是從 NetApp Cloud Insights 網域傳送、例如從 _accounts@service.cloudinsights.netapp.com_ 傳送。有些公司會封鎖來自外部網域的傳入電子郵件。確認 NetApp Cloud Insights 網域的外部通知已列入白名單。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以在特定裝置或所有裝置上設定原則。若要設定回應原則、請選取 * 管理 &gt; 自動回應原則 * 、然後按一下適當的 *+Policy* 按鈕。您可以建立攻擊或警告的原則。</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f54630a238a2ce40ac5742f2df04227" category="list-text">請在上註冊帳戶 <block ref="b7d0b9f9f12fc76a51e1b13d72622a5b" category="inline-link-macro-rx"></block> 以存取所有NetApp雲端產品。</block>
   <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">*訂閱Cloud Insights *不中斷地透過存取您的資料 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接或 <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
   <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insights 定價</block>
@@ -11896,15 +11877,12 @@ v9.2.4.2</block>
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">返回 <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration ：</block>
-  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 現有運算子的最新運算子。</block>
   <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">擷取最新的容器映像</block>
   <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確保您是 <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> 如果您使用的是自訂儲存庫。</block>
   <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">如果 AgentConfiguration 不存在：</block>
   <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：</block>
   <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">解除安裝</block>
-  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> 現有的運算子。</block>
-  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新的運算子。</block>
   <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">請使用相同的叢集名稱。</block>
   <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。</block>
   <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">正在解除安裝</block>
@@ -12043,11 +12021,9 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="5e77ada1a807785ef1b03c3f1b96779c" category="cell">為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 &lt;pod&gt; 、另一個名為 monitoring 、 &lt;pod&gt; ？</block>
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">移除舊的運算子</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">安裝新的</block>
-  <block id="e7d6cf6485500824df0535ac307eb301" category="cell">截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>。</block>
   <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">Agent 最多可支援 50 個資料收集器。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
   <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a ）使用此表格做為一般尺寸指南。您可以增加核心和 / 或記憶體的數量、以增加支援的資料收集器數量、最多可增加 50 個資料收集器：</block>
-  <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理員和帳戶擁有者現在有能力 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以電子郵件傳送他們指定的網域。移至 * 管理 &gt; 使用者管理 * 、然後選取 _ 限制網域 _ 按鈕。</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和規則</block>
   <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">說明資料保留時間和縮減取樣</block>
@@ -12327,7 +12303,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以視需要定義應用程式、然後套用至環境中的資產。</block>
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">擷取事件導出者 Pod 的名稱：</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」</block>
-  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">關於機密的備註</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
@@ -12338,7 +12313,6 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">資料網域識別</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Data Domain 收集器已經過改良、可更好地識別 HA 系統、以確保容錯移轉事件之間的耐用性。此變更將導致重新識別 HA 系統中的 Data Domain 應用裝置 * 一次 * 、進而移除這些資產上的任何註釋（因為這些陣列將重新識別）。您需要重新附加附註至 Data Domain 物件。</block>
-  <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
   <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作負載安全性與 ONTAP 整合、可接收拒絕存取的事件、並提供額外的分析和自動回應層。</block>
   <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">與 ONTAP 存取整合遭拒</block>
   <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAP 存取遭拒功能會在 NAS 環境（ NFS 和 SMB ）中使用工作負載分析、主動偵測並警告檔案作業失敗的情況（例如、使用者嘗試執行他們沒有權限的作業）。這些失敗的檔案作業通知（特別是在安全性相關失敗的情況下）將有助於在早期階段進一步封鎖內部攻擊。</block>
@@ -12518,7 +12492,6 @@ Telegraf ：
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">使用者存取封鎖</block>
-  <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">請謹記下列事項 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">移轉</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">若要從先前的 ONTAP （ ontapi ）資料收集器移轉至較新的 ONTAP REST 收集器、請執行下列步驟：</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">儲存虛擬機器 /Vserver</block>
@@ -12703,7 +12676,6 @@ Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux</
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">連線能力</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">API Token</block>
   <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">如果您要重新部署操作員（亦即您正在更新或取代它）、則不需要建立新的 API 權杖；您可以重新使用先前的權杖。</block>
-  <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
   <block id="6a2947f7e89b5053f53a29320e46a462" category="paragraph">Kubernetes Monitoring Operator 會自動安裝 kube-state 度量、不需要使用者互動。</block>
   <block id="9c2506e67ece46fad96ea50d91339c89" category="paragraph">Cloud Insights 提供 Kubernetes Monitoring Operator* for Kubernetes 系列。瀏覽至 * Kubernetes &gt; Collectores &gt; +Kubernetes Collector* 以部署新的運算子。</block>
   <block id="ef9cae2862d53687ca6c708bce978631" category="section-title">安裝 Kubernetes Monitoring Operator 之前</block>
@@ -12744,17 +12716,6 @@ Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux</
   <block id="1f1cd41335301b707232462ccfe6641a" category="paragraph">根據預設、 Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定 Kubernetes Monitoring Operator 所需的容器存取權。</block>
   <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">若要移除 Kubernetes Monitoring Operator 檢視整個叢集機密的權限、請在安裝之前、從 _operer-setup.yaml_ 檔案中刪除下列資源：</block>
   <block id="5961d0092306c169d325c3e662030e8e" category="paragraph">如果您在設定 Kubernetes 監控操作員時遇到問題、請嘗試下列事項：</block>
-  <block id="909f5f4ab6355c685c77bc41c8507d3c" category="cell">如果您的 Kubernetes 叢集正在執行 Pod 安全政策（ PSP ）或 Pod 安全許可（ PSA ）、則您必須升級至最新的 Kubernetes 監控營運者。請依照下列步驟升級至目前支援 PP/PSA 的營運商：
-
-1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控業者：
-
- kubectl delete agent agent-monitoring （ kubectl 刪除代理代理監視） -netapp -n netapp 監控
- kubectl delete ns netapp 監控
- kubectl delete crd agents.monitoring.netapp.com
- kubectl delete clusterrole agent-manager-role agent-proxy-role agent-eterms-reader
- kebectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
-
-2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
   <block id="b10669273dd57c8fd5d2fe2a3b97e299" category="cell">我在嘗試部署操作員時遇到問題、而且我使用 PP/PSA 。</block>
   <block id="f005ad36a865e60c2f589a58c0daafa5" category="cell">1. 使用下列命令編輯代理程式：
 
@@ -12874,7 +12835,6 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用執行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、請提供 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>請仔細閱讀以下各節。</block>
   <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">另請參閱 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
-  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">如果您是從先前的安裝升級、請閱讀 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 資訊：</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。例如、從您想要安裝操作員的伺服器 / 虛擬機器、您必須能夠存取 Cloud Insights 、並能從 Cloud Insights 下載二進位檔。</block>
   <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</block>
@@ -13036,7 +12996,6 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
     - 執行命令「 set=STONAVM_home= 」。
     - 執行命令「 auunitaddauto -IP &lt;ip&gt; 」。使用正確的 IP 取代 &lt;ip&gt; 。</block>
   <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">*量表小工具*：以傳統（實體）量表或項目符號量表顯示單值資料、並根據您的「警告」或「重大」值顯示色彩 <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>。</block>
-  <block id="31ec8abc1c2fff3171b9e6ba5d038ad8" category="list-text">存取實體並連結至的使用者 <block ref="168fc69c3032b784e96b74cdbf6c371b" category="inline-link-macro-rx"></block>。</block>
   <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">具有連結的實體路徑 <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
   <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">以試用模式執行時、可提供自助服務和電子郵件支援。Cloud Insights訂閱服務後、強烈建議您啟動支援服務權利。啟用支援權利可讓您透過線上聊天室、網路票證系統和電話存取技術支援。在完成註冊之前、預設的支援模式為自助服務。請參閱 <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> 以下。</block>
   <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">*驗證輸入的認證資料和IP位址。
@@ -13105,4 +13064,47 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
 
 請參閱 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="f1a3b56f57a450a14c2cf03113d0ffcf" category="list-text">在多租戶 Kubernetes 環境中、可能會因為設定不當而導致停機。變更分析可提供單一窗格來檢視及關聯工作負載和組態變更的健全狀況、藉此協助解決此問題。這有助於疑難排解動態 Kubernetes 環境。</block>
+  <block id="44b44ec49661da05e81e9deacf4859c9" category="list-text">太棒了！接下來呢？
+<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
+<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
+<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
+<block ref="4a83477a1c1cd11a9cc88c7f83441cbd" category="inline-link-macro-rx"></block>
+<block ref="0a7046f023aad7ac467f1bc6bd4c7520" category="inline-link-macro-rx"></block></block>
+  <block id="8f14dd0b95751e262de2483f4584b301" category="list-text">請參閱下列連結、瞭解如何建立SMI-S效能集合的帳戶：<block ref="2f1321aada2838c155155111cf14faf5" category="inline-link-rx"></block></block>
+  <block id="ca1a7da31fc2fe7999e74f8aa736345c" category="cell">•修改資料收集器組態以使用安全用戶端（建議）
+•將 navicli.jar 安裝在 navicli.exe 或 naviseccli.exe 的 CLI 路徑中
+•附註：從 EMC Navisphere6 ． 26 版開始、 navicli.jar 已被淘汰
+• navicli.jar 可能在 \http://powerlink.emc.com 上提供</block>
+  <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 現有運算子的最新運算子。</block>
+  <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block> 現有的運算子。</block>
+  <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 最新的運算子。</block>
+  <block id="55b27691d4a3ba1d0f59fb6a06ac2e22" category="cell">如果您的 Kubernetes 叢集正在執行 Pod 安全政策（ PSP ）或 Pod 安全許可（ PSA ）、則您必須升級至最新的 Kubernetes 監控營運者。請依照下列步驟升級至目前支援 PP/PSA 的營運商：
+
+1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控業者：
+
+ kubectl delete agent agent-monitoring （ kubectl 刪除代理代理監視） -netapp -n netapp 監控
+ kubectl delete ns netapp 監控
+ kubectl delete crd agents.monitoring.netapp.com
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-eterms-reader
+ kebectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
+  <block id="24f2b5ad86e12ea4b5db8fe4e651ad48" category="cell">截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block> 代理程式。</block>
+  <block id="a6310e9ccedf4149dc3c1ac0eac9b701" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
+  <block id="51ad37bbaedf65e990986c7c45cecf6b" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
+  <block id="7db8a9734f4a7b5feca7a8af308c36d8" category="paragraph">確保資料存取是不可或缺的要素、因此我們已匯出.CSV <block ref="b3235708a4be37e405526094c229e25f" category="inline-image-macro-rx" type="image"></block> 無論您查詢的資料類型（資產或整合）為何、均可用於所有的度量查詢、儀表板表格小工具和物件登陸頁面。</block>
+  <block id="7daeb1e9ffa3386f002669f9634f6b0d" category="paragraph">體驗 Spot by NetApp 與雲端成本的強大功能、提供過去、現在和預估支出的詳細成本分析、讓您清楚掌握環境中的雲端使用情形。雲端成本儀表板可清楚檢視雲端支出、並深入瞭解個別工作負載、帳戶和服務。</block>
+  <block id="e0364f4b0da4fc898b2bf6ba9b559d80" category="paragraph">Kubernetes代理程式的安裝作業已經過簡化、需要較少的使用者互動。 <block ref="a001394c8ad50807ceb51bed4f9925c0" category="inline-link-macro-rx"></block> 現在包括Kubernetes資料收集。</block>
+  <block id="b4caded524c5b960f2078625c9674837" category="paragraph">有了支援功能的支援版、系統管理員就能啟用* Cloud Insights<block ref="5c8d95133de190c8d2aa29b2263f0a3f" category="inline-link-macro-rx"></block>*（SSO）存取Cloud Insights 公司網域中的所有使用者、無需個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。</block>
+  <block id="55dc3e9ac4ea7deea6bba8489b3a7ebb" category="paragraph">「*管理&gt;訂閱*」頁面 <block ref="40b8c748cb211bbeb30a24d831f9ddd4" category="inline-link-macro-rx"></block> 已更新以列出Cloud Insights 適用於基本版、標準版和優質版的功能集。NetApp不斷改善雲端服務、因此請經常查看本頁、找出最適合您不斷演進的業務需求的版本。</block>
+  <block id="641d04ada5e7fc82332bfdbadb6f2873" category="list-text"><block ref="641d04ada5e7fc82332bfdbadb6f2873" category="inline-link-macro-rx"></block></block>
+  <block id="ed5e0acf9669f57fff84572a31621d1b" category="list-text">支援Cloud Insights <block ref="97c4c7cd3efb536ad349bb18a2afdd73" category="inline-link-macro-rx"></block> 在單一資料收集器內。您的AWS環境必須設定為允許Cloud Insights 從子帳戶收集資訊。</block>
+  <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">請在上註冊帳戶 <block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block> 以存取所有NetApp雲端產品。</block>
+  <block id="ab5e9545afec38b9d4cc8cb1f64b1a59" category="paragraph">如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 <block ref="5ef09ccc45a6e1ddce52b5a69393ce8f" category="inline-xref-macro-rx"></block> 透過AWS Marketplace。</block>
+  <block id="c74bfaee9dd9d6bc97968a50b9386641" category="cell"><block ref="c74bfaee9dd9d6bc97968a50b9386641" category="inline-link-macro-rx"></block></block>
+  <block id="936c9a2cee3c5dc4479213c8279d9a02" category="list-text">存取實體並連結至的使用者 <block ref="82b8f427f7bb55fa43068f2e0e5af588" category="inline-link-macro-rx"></block>。</block>
+  <block id="c5f846375be5434ca084ef54324ae76b" category="list-text">*<block ref="e8f6304d27d1ce95657a904423bb24f0" category="inline-link-macro-rx"></block>*</block>
+  <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">您必須先註冊才能登錄 <block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block> 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
+  <block id="3307ea9b101dea248dbf60bf6f93ed75" category="paragraph">請謹記下列事項 <block ref="e513c094cbe732163e31cf30e277e8bc" category="inline-link-macro-rx"></block>：</block>
 </blocks>

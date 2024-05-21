@@ -202,7 +202,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_config_telegraf_kibana.html["Kibana"] | 服務 
 
 
-| link:https:task_config_telegraf_agent_k8s.html["Kubernetes"] | 服務 
+| link:task_config_telegraf_agent_k8s.html["Kubernetes"] | 服務 
 
 
 | link:task_dc_lenovo.html["Lenovo HX系列"] | 基礎架構 

@@ -81,7 +81,7 @@ summary: 新增工作負載安全資料收集器
 
 == 使用者存取封鎖的先決條件
 
-請謹記下列事項 link:/cloudinsights/cs_restrict_user_access.html["使用者存取封鎖"]：
+請謹記下列事項 link:cs_restrict_user_access.html["使用者存取封鎖"]：
 
 此功能需要叢集層級認證、才能正常運作。
 

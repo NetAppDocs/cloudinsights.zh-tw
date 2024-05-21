@@ -95,13 +95,11 @@ NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無�
 +
 按一下本節中的連結即可前往NetApp知識庫、您可在其中搜尋相關文章、操作方法等。
 
-
-
 * *link:https://docs.netapp.com/us-en/cloudinsights/["文件"]*
 +
 按一下「說明文件」連結即可前往此說明文件中心。
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["社群"]*
+* *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["社群"]*
 +
 按一下社群連結即可前往NetApp Cloud Insights 支援社群、您可在此與同儕和專家交流。
 
@@ -116,7 +114,7 @@ NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無�
 除了上述的自我支援選項之外、如果您訂閱Cloud Insights 或付費支援受監控的NetApp產品或服務、您也可以與NetApp支援工程師合作解決您的問題。
 
 
-NOTE: 您必須先註冊才能登錄 <<Activating support entitlement and accessing support,啟動支援>> 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 link:https://register.netapp.com["雲端資料服務支援註冊"]。
+NOTE: 您必須先註冊才能登錄 <<activating-support-entitlement,啟動支援>> 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 link:https://register.netapp.com["雲端資料服務支援註冊"]。
 
 強烈建議您勾選此方塊、以便NetApp支援工程師Cloud Insights 在您的支援工作階段期間存取您的支援環境。這可讓工程師疑難排解問題、並協助您迅速解決問題。當問題解決或支援工作階段結束時、您可以取消核取方塊。
 

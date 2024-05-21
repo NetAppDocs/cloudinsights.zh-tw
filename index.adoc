@@ -46,10 +46,11 @@ NetApp Cloud Insights 解決方案是一套雲端基礎架構監控工具、可�
 * 我要如何做到 link:task_cloud_insights_onboarding_1.html["*入門*"] 使用支援嗎Cloud Insights ？
 * 我已註冊。現在該怎麼辦？link:task_getting_started_with_cloud_insights.html["取得資料"]
 link:concept_user_roles.html["設定使用者"]
-* 太棒了！接下來呢？link:task_defining_annotations.html["準備資產：註釋"]
+* 太棒了！接下來呢？
+link:task_defining_annotations.html["準備資產：註釋"]
 link:concept_querying_assets.html["尋找您想要的資產：查詢"]
 link:concept_dashboards_overview.html["查看您想要的資料：儀表板"]
-link:https:task_create_monitor.html["監控與警示"]
-link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["保護資料安全"]
+link:task_create_monitor.html["監控與警示"]
+link:task_cs_getting_started.html["保護資料安全"]
 * 這是一件很棒的事！我準備好了 link:concept_subscribing_to_cloud_insights.html["*訂閱*"]。
 

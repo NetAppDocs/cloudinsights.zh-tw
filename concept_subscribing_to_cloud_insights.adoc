@@ -22,7 +22,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 [role="lead"]
 使用效益只需三個簡單步驟、即可輕鬆開始使用Cloud Insights ：
 
-* 請在上註冊帳戶 link:https://https://bluexp.netapp.com//["* NetApp BlueXP*"] 以存取所有NetApp雲端產品。
+* 請在上註冊帳戶 link:https://bluexp.netapp.com//["* NetApp BlueXP*"] 以存取所有NetApp雲端產品。
 * 註冊以取得 link:https://cloud.netapp.com/cloud-insights["*免費試用*"] 以探索可用的功能。Cloud Insights
 * *訂閱Cloud Insights *不中斷地透過存取您的資料 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp銷售"] 直接或 link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]。
 
@@ -133,7 +133,7 @@ image:Subscription_Cost_Calculators.png["訂閱頁面顯示基礎架構和 Kuber
 
 == 如何訂閱？
 
-如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 <<self-subscribe-via-aws-marketplace,自行訂閱>> 透過AWS Marketplace。
+如果您的託管單位數少於1、000、您可以透過NetApp銷售或訂閱 <<self-subscribe-through-aws-marketplace,自行訂閱>> 透過AWS Marketplace。
 
 
 

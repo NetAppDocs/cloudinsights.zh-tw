@@ -70,8 +70,6 @@ Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux
 
 另請參閱 <<權限,權限>>。
 
-如果您是從先前的安裝升級、請閱讀 <<升級,升級>> 資訊：
-
 
 
 === 設定Proxy支援

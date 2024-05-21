@@ -81,7 +81,7 @@ image:KubernetesModifyDeploymentScreen.png["Mody 部署選項、 700"]
  kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
 如果存在 AgentConfiguration ：
 
-* <<installing-the-netapp-kubernetes-monitoring-operator,安裝>> 現有運算子的最新運算子。
+* <<installing-the-kubernetes-monitoring-operator,安裝>> 現有運算子的最新運算子。
 +
 ** 確保您是 <<using-a-custom-or-private-docker-repository,擷取最新的容器映像>> 如果您使用的是自訂儲存庫。
 
@@ -96,8 +96,8 @@ image:KubernetesModifyDeploymentScreen.png["Mody 部署選項、 700"]
 * 建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：
 +
  kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
-* <<to-remove-the-netapp-kubernetes-monitoring-operator,解除安裝>> 現有的運算子。
-* <<installing-the-netapp-kubernetes-monitoring-operator,安裝>> 最新的運算子。
+* <<to-remove-the-kubernetes-monitoring-operator,解除安裝>> 現有的運算子。
+* <<installing-the-kubernetes-monitoring-operator,安裝>> 最新的運算子。
 +
 ** 請使用相同的叢集名稱。
 ** 下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。
@@ -458,7 +458,7 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
  kubectl delete clusterrole agent-manager-role agent-proxy-role agent-eterms-reader
  kebectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
 
-2. <<installing-the-netapp-kubernetes-monitoring-operator,安裝>> 監控操作員的最新版本。 
+2. <<installing-the-kubernetes-monitoring-operator,安裝>> 監控操作員的最新版本。 
 
 
 | 我在嘗試部署操作員時遇到問題、而且我使用 PP/PSA 。 | 1. 使用下列命令編輯代理程式：
@@ -538,7 +538,7 @@ Telegraf ：
 | 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循中的步驟 link:pre-requisites_for_k8s_operator.html["權限"] 上一節。 
 
 
-| 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <<uninstalling,移除舊的運算子>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,安裝新的>>。 
+| 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <<uninstalling,移除舊的運算子>> 和 <<installing-the-kubernetes-monitoring-operator,安裝新的>>。 
 
 
 | 我的 Kubernetes 事件意外停止回報 Cloud Insights 。  a| 
@@ -557,7 +557,7 @@ fluent-bit:
     - /var/log/containers/netapp-ci-event-exporter*.log
 ...
 ....
-或者、您也可以 <<uninstalling,解除安裝>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安裝>> 代理程式。
+或者、您也可以 <<uninstalling,解除安裝>> 和 <<installing-the-kubernetes-monitoring-operator,重新安裝>> 代理程式。
 
 
 
