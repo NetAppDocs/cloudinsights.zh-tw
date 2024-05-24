@@ -19,18 +19,27 @@ keywords: features
 NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。
 
 
-NOTE: Cloud Insights 聯邦版可能不提供這些功能、或是功能較少。在可能的情況下、文件中會記錄這些差異。
 
+== 2024 年 5 月
+
+
+
+=== 根據時間自動解決警示
+
+現在可以根據時間來解決記錄警示；如果警示條件停止發生、 Cloud Insights 可以在指定時間過後自動解決警示。您可以選擇在幾分鐘、幾小時或幾天內解決警示。
+
+image:alerts_resolve_based_on_time.png["根據所經過的時間來解決警示"]
+
+'''
 
 
 == 2024 年 4 月
 
 
 
-=== Kubernetes 網路地圖的 iSCSI SAN 支援
+=== Kubernetes 的 iSCSI 支援
 
-識別 Kubernetes 基礎的 NFS 儲存相依性、現在是 iSCSI 。
-深入瞭解 Kubernetes 應用程式的儲存網路活動和未界定的儲存指標、以加速解決問題。瞭解 Kubernetes 應用程式如何使用儲存基礎架構來進行計費和回報報告。
+Cloud Insights 現在已支援對應與 Kubernetes 相關的 iSCSI 儲存設備、可利用 Kubernetes 網路地圖更快進行疑難排解、並可透過報告提供計費或回報報告。
 
 image:pod-to-storage.png["Pod 對儲存裝置的範例"]
 
@@ -305,7 +314,7 @@ image:StorageNodeSupportData.png["儲存節點支援資訊"]
 
 === 模組試用
 
-除了 Cloud Insights 的初始試用版之外、您也可以利用 link:concept_subscribing_to_cloud_insights.html#module-evaluation["模組評估"]。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。
+除了 Cloud Insights 的初始試用版之外、您也可以利用 link:concept_subscribing_to_cloud_insights.html#module-evaluation["模組評估"]。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。
 
 
 
@@ -767,7 +776,7 @@ Cloud Connection ONTAP for Re9.9+資料收集器已過時。從2023年4月4日�
 
 === 所有儀表板表格小工具的.CSV匯出
 
-確保資料存取是不可或缺的要素、因此我們已匯出.CSV image:csv_export_icon.png["CSV匯出圖示"] 無論您查詢的資料類型（資產或整合）為何、均可用於所有的度量查詢、儀表板表格小工具和物件登陸頁面。
+確保您的資料可存取性是不可或缺的、因此我們已做好準備。 無論您查詢的資料類型為何（資產或整合）、所有度量查詢、儀表板表格 Widget 和物件登陸頁面都可使用 CSV 匯出。
 
 欄選取、重新命名欄及單位轉換等資料自訂功能現在也包含在新的匯出功能中。
 
@@ -1133,7 +1142,7 @@ image:ChatIcon.png["聊天圖示會在笑容上方顯示藍色NetApp「N」"]
 
 我們利用先進的Kubernetes監控和叢集資源管理器、讓您更容易上手。Cloud Insights
 
-。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes監控操作員"] （NKMO）是安裝Kubernetes for Cloud Insights the SesnInsights的首選方法、能以更少的步驟靈活設定監控功能、並增加監控K8s叢集中其他軟體的機會。
+。 link:task_config_telegraf_agent_k8s.html["Kubernetes 監控營運者"] （NKMO）是安裝Kubernetes for Cloud Insights the SesnInsights的首選方法、能以更少的步驟靈活設定監控功能、並增加監控K8s叢集中其他軟體的機會。
 
 按一下上方連結以取得更多資訊和先決條件
 
@@ -1149,7 +1158,8 @@ image:ChatIcon.png["聊天圖示會在笑容上方顯示藍色NetApp「N」"]
 
 請勿因為收集器故障而錯過關鍵指標！
 
-使用新的資料收集器來追蹤您的資料收集器、比以往更容易 link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["警示"] 用於資料收集器和擷取單元故障。請注意、這些監視器預設為「暫停」。若要啟用、請瀏覽至您的「監視器」頁面、找出並恢復「擷取裝置關機」和「收集器故障」
+使用新的資料收集器來追蹤您的資料收集器、比以往更容易 link:task_system_monitors.html#data-collection-monitors["警示"] 用於資料收集器和擷取單元故障。
+請注意、這些監視器預設為「暫停」。若要啟用、請瀏覽至您的「監視器」頁面、找出並恢復「擷取裝置關機」和「收集器故障」
 
 
 
@@ -1703,7 +1713,7 @@ API存取功能現已在Cloud Insights 所有版本的不受影響的地方提�
 
 | 資料倉儲 |  |  | image:SmallCheckMark.png["勾選標記"] 
 |===
-如需API使用方式的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API文件"]。
+如需API使用方式的詳細資訊、請參閱 link:API_Overview.html#api-documentation-swagger["API文件"]。
 
 '''
 
@@ -1714,7 +1724,7 @@ API存取功能現已在Cloud Insights 所有版本的不受影響的地方提�
 
 === 更輕鬆地管理監控器
 
-link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html#monitor-grouping["監控群組"] 簡化環境中的監控管理。現在可以將多個監視器群組在一起、並將其暫停為一個監視器。例如、如果您在基礎架構堆疊上進行更新、只要按一下滑鼠、就能暫停來自所有裝置的警示。
+link:task_create_monitor.html#monitor-groups["監控群組"] 簡化環境中的監控管理。現在可以將多個監視器群組在一起、並將其暫停為一個監視器。例如、如果您在基礎架構堆疊上進行更新、只要按一下滑鼠、就能暫停來自所有裝置的警示。
 
 監控群組是令人興奮的全新功能的第一部分、可改善ONTAP 對各種顯示器的管理Cloud Insights 。
 
@@ -2492,7 +2502,7 @@ image:DuplicateWidget.png["複製小工具"]
 
 === 單一登入（SSO）
 
-有了支援功能的支援版、系統管理員就能啟用* Cloud Insightslink:concept_user_roles.html["單一登入"]*（SSO）存取Cloud Insights 公司網域中的所有使用者、無需個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。
+有了支援功能的支援版、系統管理員就能啟用* Cloud Insightslink:concept_user_roles.html#what-is-identity-federation["單一登入"]*（SSO）存取Cloud Insights 公司網域中的所有使用者、無需個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。
 
 
 NOTE: SSO僅在Cloud Insights 支援Cloud Insights 功能不支援的版本中提供、必須先設定SSO、才能啟用以供使用。SSO組態包括 link:https://services.cloud.netapp.com/misc/federation-support["身分識別聯盟"] 透過NetApp Cloud Central：聯盟可讓單一登入使用者使用公司目錄中的認證資料來存取您的NetApp Cloud Central帳戶。
@@ -2586,13 +2596,6 @@ image:Onboarding_Progress.png["進度列"]
 
 == 2019年11月
 
-
-
-=== 版本功能比較表
-
-「*管理>訂閱*」頁面 link:concept_subscribing_to_cloud_insights.html["比較表"] 已更新以列出Cloud Insights 適用於基本版、標準版和優質版的功能集。NetApp不斷改善雲端服務、因此請經常查看本頁、找出最適合您不斷演進的業務需求的版本。
-
-'''
 
 
 == 2019年10月

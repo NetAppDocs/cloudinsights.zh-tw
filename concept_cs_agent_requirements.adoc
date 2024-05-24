@@ -51,7 +51,7 @@ SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 
 
 
 | 可用磁碟空間 | 應以下列方式分配磁碟空間：
-/opt/NetApp 35 GB （最低）
+/opt/NetApp 36 GB （檔案系統建立後、至少有 35 GB 可用空間）
 
 附註：建議您分配額外的磁碟空間、以便建立檔案系統。確定檔案系統中至少有 35 GB 可用空間。
 

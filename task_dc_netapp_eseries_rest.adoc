@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task_dc_na_eseries.html 
-keywords: data collector, ontap, clustered ontap, e-series, santricity 
-summary: 設定NetApp E系列資料收集器。 
+permalink: task_dc_na_eseries_rest.html 
+keywords: data collector, ontap, clustered ontap, REST 
+summary: 設定 NetApp E 系列 REST 資料收集器。 
 ---
-= NetApp E 系列舊式 SANtricity API 資料收集器
+= NetApp E 系列 REST 資料收集器
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ summary: 設定NetApp E系列資料收集器。
 
 
 [role="lead"]
-NetApp E 系列舊版 SANtricity API 資料收集器會收集庫存和效能資料。收集器支援使用相同組態的韌體7.x以上、並回報相同的資料。
+NetApp E 系列 REST 資料收集器會收集庫存和效能資料。收集器支援使用相同組態的韌體7.x以上、並回報相同的資料。REST 收集器會監控儲存資源池的加密狀態、以及相關磁碟和磁碟區的加密狀態、並提供儲存節點 CPU 使用率作為效能計數器、這是舊版 SANtricity E 系列收集器中未提供的功能。
 
 
 
 == 術語
 
-Cloud Insight可從NetApp E系列資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Cloud Insight 使用 REST 從 NetApp E 系列取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
@@ -51,6 +51,41 @@ Cloud Insight可從NetApp E系列資料收集器取得下列庫存資訊。對�
 |===
 附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
 
+
+
+== 需求
+
+* 陣列上每個控制器的IP位址
+* 此收集器僅支援具有 * 原生 REST API 功能 * 的 E 系列型號陣列。E 系列組織為較舊的 E 系列陣列提供可安裝的非陣列 REST API 發佈：此收集器不支援該案例。擁有較舊陣列的使用者應繼續使用 Cloud Insights link:task_dc_na_eseries.html["E 系列 SANtricity API"] 收集器。
+* 「 E 系列控制器 IP 位址」欄位支援以逗號分隔的 2 個 IP/ 主機名稱字串；如果無法存取第一個 IP/ 主機名稱、收集器將會智慧地嘗試第二個 IP/ 主機名稱。
+* HTTPS 連接埠：預設為 8443 。
+
+
+
+
+== 組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| E 系列控制器 IP 位址 | 陣列控制器的以逗號分隔的 IP 位址和 / 或完整網域名稱 
+|===
+
+
+== 進階組態
+
+[cols="2*"]
+|===
+| 欄位 | 說明 
+
+
+| 庫存輪詢時間間隔（分鐘） | 預設為30分鐘 
+
+
+| 效能意見調查間隔長達3、600秒 | 預設值為300秒 
+|===
 
 
 == E系列術語（登陸頁面）
@@ -107,39 +142,6 @@ Cloud Insight可從NetApp E系列資料收集器取得下列庫存資訊。對�
 * 處理器–CPU數
 
 
-
-
-== 需求
-
-* 陣列上每個控制器的IP位址
-* 連接埠需求2463
-
-
-
-
-== 組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| 以逗號分隔的陣列SANtricity 資訊控制器IP清單 | 陣列控制器的IP位址和/或完整網域名稱 
-|===
-
-
-== 進階組態
-
-[cols="2*"]
-|===
-| 欄位 | 說明 
-
-
-| 庫存輪詢時間間隔（分鐘） | 預設為30分鐘 
-
-
-| 效能意見調查間隔長達3、600秒 | 預設值為300秒 
-|===
 
 
 == 疑難排解

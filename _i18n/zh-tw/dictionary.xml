@@ -1008,7 +1008,6 @@
   <block id="0cd03688153f4ffe004d9d8f7c7d0749" category="paragraph"><block ref="baedb25cd14eedbfab69ec840397f01f" category="inline-image-macro-rx" type="image"></block>
 <block ref="f613f180946b5ae85670bc0dcf86f8da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4f64e4d2d0b40a09df727cdb00378860" category="summary">設定NetApp E系列資料收集器。</block>
-  <block id="99f7508fc77f6415a72debd8f680d7cf" category="paragraph">NetApp E系列資料收集器會收集庫存與效能資料。收集器支援使用相同組態的韌體7.x以上、並回報相同的資料。</block>
   <block id="20d1b58bf59d1451203fb42bdc412ad3" category="paragraph">Cloud Insight可從NetApp E系列資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="0951a6690e5dc87411346792c9f941c7" category="cell">Volume群組</block>
   <block id="c1ebc925cf4e0a09ee827da58d2b58c5" category="cell">磁碟群組</block>
@@ -5834,10 +5833,8 @@
   <block id="9639a8d17623d8208d1bfa965acfd83f" category="paragraph">API存取功能現已在Cloud Insights 所有版本的不受影響的地方提供。Basic版本的使用者現在可以自動化擷取單元和資料收集器的動作、而Standard Edition的使用者可以查詢指標和擷取自訂指標。Premium版本持續允許完整使用所有API類別。</block>
   <block id="e7394567670b4276802996b88134c0a5" category="cell">資料倉儲</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">API文件</block>
-  <block id="838c002eb118e710e5d61b71fc780f8f" category="paragraph">如需API使用方式的詳細資訊、請參閱 <block ref="e9ed95f163178f5ba2f40600e4067842" category="inline-link-macro-rx"></block>。</block>
   <block id="9a4bface9098ff4cd4b35cca641c0042" category="section-title">2021年4月</block>
   <block id="36366a2669f22ce91b34ad6b41571aae" category="section-title">更輕鬆地管理監控器</block>
-  <block id="13b7f54c5b81552a88e3fcdf41c1053b" category="paragraph"><block ref="44c67d721560e8a84c351ce2405bfdf7" category="inline-link-macro-rx"></block> 簡化環境中的監控管理。現在可以將多個監視器群組在一起、並將其暫停為一個監視器。例如、如果您在基礎架構堆疊上進行更新、只要按一下滑鼠、就能暫停來自所有裝置的警示。</block>
   <block id="973ec05886dc84294d5bb00f09eed546" category="paragraph">監控群組是令人興奮的全新功能的第一部分、可改善ONTAP 對各種顯示器的管理Cloud Insights 。</block>
   <block id="562e0f00195363fb03d04ff04ed49b74" category="section-title">使用Webhooks增強警示選項</block>
   <block id="221d2a347ebfc15d48665188f639d1cb" category="inline-link-macro">Webhooks</block>
@@ -6213,8 +6210,6 @@
   <block id="347d1bfe383416d66c880f50a77cb60f" category="list-text">1受管理單元= 4 TB未格式化的實體或虛擬磁碟容量</block>
   <block id="0e46275de0a113142f9932c6b8964924" category="paragraph">這項變更可有效增加使用現有Cloud Insights 的版本資訊訂閱監控環境容量的兩倍。</block>
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="section-title">2019年11月</block>
-  <block id="01c11021cc38b74d02dfdb2ef5e77fca" category="section-title">版本功能比較表</block>
-  <block id="f9acaf912b63febf0bcf7a9e4d298e9f" category="inline-link-macro">比較表</block>
   <block id="e10986a4d8d7c27e4a9031d551cb15f3" category="section-title">2019年10月</block>
   <block id="4d581ab73b477b0058e9a556a352a77a" category="inline-link-macro">*《報告》* Cloud Insights</block>
   <block id="bf477952b52b01fceb367c01be571adb" category="paragraph"><block ref="b7cfc719aea5efd14bf49a060e3d8bab" category="inline-link-macro-rx"></block> 是商業智慧工具、可讓您檢視預先定義的報告或建立自訂報告。有了「報告」、您可以執行下列工作：</block>
@@ -7565,11 +7560,9 @@
   <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">資料收集監視器</block>
   <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">檢查資料收集器或目標系統的組態。請注意、收集器警告的監視器傳送的警示數量可能比其他監視器類型多、因此除非您正在疑難排解、否則建議您不要設定任何警示收件者。</block>
   <block id="3f2608784f855ab79eaabba7e20db8cd" category="paragraph">我們利用先進的Kubernetes監控和叢集資源管理器、讓您更容易上手。Cloud Insights</block>
-  <block id="c99dc7f44e492bb96fd08368b4a3ddbc" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> （NKMO）是安裝Kubernetes for Cloud Insights the SesnInsights的首選方法、能以更少的步驟靈活設定監控功能、並增加監控K8s叢集中其他軟體的機會。</block>
   <block id="d957cd4e3ae2f67fec227c3e2c78ab16" category="paragraph">按一下上方連結以取得更多資訊和先決條件</block>
   <block id="58943c1999eff55c3f818d8cd9208708" category="paragraph">請勿因為收集器故障而錯過關鍵指標！</block>
   <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-link-macro">警示</block>
-  <block id="b07c25215a61dbc162c04ac4e8cf464f" category="paragraph">使用新的資料收集器來追蹤您的資料收集器、比以往更容易 <block ref="465d95cf415e2e3bb54b69142e1e3a2d" category="inline-link-macro-rx"></block> 用於資料收集器和擷取單元故障。請注意、這些監視器預設為「暫停」。若要啟用、請瀏覽至您的「監視器」頁面、找出並恢復「擷取裝置關機」和「收集器故障」</block>
   <block id="d79ca0965e13425b418413735c2f77b4" category="section-title">關於更新的資訊ONTAP</block>
   <block id="3093b62af2aca236846ea1b6c223c129" category="paragraph">不要讓非預期的儲存變更導致停機！</block>
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">您現在可以設定Cloud Insights 當在ONTAP 支援系統上偵測到FlexVols、節點和SVM的修改或移除時發出警示。</block>
@@ -8961,7 +8954,6 @@
   <block id="028a813ab7ca0ec1e490e58e353d0782" category="paragraph">我們新增了將近二十個 <block ref="21d27926b20de95eb7fd4474ce156c92" category="inline-link-macro-rx"></block> 以警示中斷的互連連結、活動訊號問題等。此外、我們也新增三個資料保護記錄監控器、以警示SnapMirror自動重新同步、MetroCluster 鏡射和FabricPool 鏡射鏡射重新同步變更。</block>
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">請注意、這些監視器中有部分預設為啟用_；如果您不想對它們發出警示、則必須暫停_。另外請注意、這些監視器並未設定為傳送通知；如果您想要透過電子郵件或網路勾點傳送警示、則必須在這些監視器上設定通知收件者。</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">所有儀表板表格小工具的.CSV匯出</block>
-  <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">CSV匯出圖示</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">欄選取、重新命名欄及單位轉換等資料自訂功能現在也包含在新的匯出功能中。</block>
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登入Cloud Insights 到</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">儀表板表格小工具的「三點」功能表、以及大部分的登陸頁表、也提供匯出至.CSV。</block>
@@ -9316,7 +9308,6 @@
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">佇列</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">卡夫卡</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。</block>
-  <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">Cloud Insights 聯邦版可能不提供這些功能、或是功能較少。在可能的情況下、文件中會記錄這些差異。</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023 年 4 月</block>
   <block id="ff13f3d2e68843ff68c076f0df232858" category="inline-link-macro">_Kubernetes 網路效能與地圖 _</block>
   <block id="c7e0f6549ee8e023d19670a2bd355d16" category="paragraph">主要功能：•工作負載對應表呈現 Kubernetes 工作負載相依性和流程、並強調網路和效能問題。•監控 Kubernetes Pod 、工作負載和節點之間的網路流量、找出流量和延遲問題的來源。•分析入口、出口、跨區域和跨區域網路流量、藉此降低整體成本。</block>
@@ -12482,13 +12473,6 @@ Telegraf ：
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">選取以報告 WWN 別名</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI- 對 REST 的對應</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST 收集器可用來取代先前的 ONTAPI 型收集器。因此、收集或報告的計量可能會有所差異。如需關於 ONTAPI 與 REST 之間差異的詳細資訊、請參閱 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文件。</block>
-  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">應以下列方式分配磁碟空間：
-/opt/NetApp 35 GB （最低）
-
-附註：建議您分配額外的磁碟空間、以便建立檔案系統。確定檔案系統中至少有 35 GB 可用空間。
-
-
-如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">使用者存取封鎖</block>
@@ -12622,9 +12606,6 @@ Proxy ：
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes 的資料收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器： Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes 監控營運商的安裝與組態</block>
-  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">Kubernetes 網路地圖的 iSCSI SAN 支援</block>
-  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">識別 Kubernetes 基礎的 NFS 儲存相依性、現在是 iSCSI 。
-深入瞭解 Kubernetes 應用程式的儲存網路活動和未界定的儲存指標、以加速解決問題。瞭解 Kubernetes 應用程式如何使用儲存基礎架構來進行計費和回報報告。</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Pod 對儲存裝置的範例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
@@ -13091,13 +13072,8 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
 2. <block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
   <block id="24f2b5ad86e12ea4b5db8fe4e651ad48" category="cell">截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>。</block>
   <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block> 代理程式。</block>
-  <block id="a6310e9ccedf4149dc3c1ac0eac9b701" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
-  <block id="51ad37bbaedf65e990986c7c45cecf6b" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在試用期結束時、您只需支付 Kubernetes Observ易 受管理單元的使用費用。</block>
-  <block id="7db8a9734f4a7b5feca7a8af308c36d8" category="paragraph">確保資料存取是不可或缺的要素、因此我們已匯出.CSV <block ref="b3235708a4be37e405526094c229e25f" category="inline-image-macro-rx" type="image"></block> 無論您查詢的資料類型（資產或整合）為何、均可用於所有的度量查詢、儀表板表格小工具和物件登陸頁面。</block>
   <block id="7daeb1e9ffa3386f002669f9634f6b0d" category="paragraph">體驗 Spot by NetApp 與雲端成本的強大功能、提供過去、現在和預估支出的詳細成本分析、讓您清楚掌握環境中的雲端使用情形。雲端成本儀表板可清楚檢視雲端支出、並深入瞭解個別工作負載、帳戶和服務。</block>
   <block id="e0364f4b0da4fc898b2bf6ba9b559d80" category="paragraph">Kubernetes代理程式的安裝作業已經過簡化、需要較少的使用者互動。 <block ref="a001394c8ad50807ceb51bed4f9925c0" category="inline-link-macro-rx"></block> 現在包括Kubernetes資料收集。</block>
-  <block id="b4caded524c5b960f2078625c9674837" category="paragraph">有了支援功能的支援版、系統管理員就能啟用* Cloud Insights<block ref="5c8d95133de190c8d2aa29b2263f0a3f" category="inline-link-macro-rx"></block>*（SSO）存取Cloud Insights 公司網域中的所有使用者、無需個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。</block>
-  <block id="55dc3e9ac4ea7deea6bba8489b3a7ebb" category="paragraph">「*管理&gt;訂閱*」頁面 <block ref="40b8c748cb211bbeb30a24d831f9ddd4" category="inline-link-macro-rx"></block> 已更新以列出Cloud Insights 適用於基本版、標準版和優質版的功能集。NetApp不斷改善雲端服務、因此請經常查看本頁、找出最適合您不斷演進的業務需求的版本。</block>
   <block id="641d04ada5e7fc82332bfdbadb6f2873" category="list-text"><block ref="641d04ada5e7fc82332bfdbadb6f2873" category="inline-link-macro-rx"></block></block>
   <block id="ed5e0acf9669f57fff84572a31621d1b" category="list-text">支援Cloud Insights <block ref="97c4c7cd3efb536ad349bb18a2afdd73" category="inline-link-macro-rx"></block> 在單一資料收集器內。您的AWS環境必須設定為允許Cloud Insights 從子帳戶收集資訊。</block>
   <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">請在上註冊帳戶 <block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block> 以存取所有NetApp雲端產品。</block>
@@ -13107,4 +13083,40 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="c5f846375be5434ca084ef54324ae76b" category="list-text">*<block ref="e8f6304d27d1ce95657a904423bb24f0" category="inline-link-macro-rx"></block>*</block>
   <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">您必須先註冊才能登錄 <block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block> 適用於NetApp Cloud產品。若要註冊、請前往NetApp的 <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
   <block id="3307ea9b101dea248dbf60bf6f93ed75" category="paragraph">請謹記下列事項 <block ref="e513c094cbe732163e31cf30e277e8bc" category="inline-link-macro-rx"></block>：</block>
+  <block id="caab88a7f89273838ab79f84c1c8a49d" category="summary">設定 NetApp E 系列 REST 資料收集器。</block>
+  <block id="7d9a2bf43caef4a2c2ccab31b58ad1fb" category="doc">NetApp E 系列 REST 資料收集器</block>
+  <block id="02bbac9de1d6cf62350e13b0ebc66279" category="paragraph">NetApp E 系列 REST 資料收集器會收集庫存和效能資料。收集器支援使用相同組態的韌體7.x以上、並回報相同的資料。REST 收集器會監控儲存資源池的加密狀態、以及相關磁碟和磁碟區的加密狀態、並提供儲存節點 CPU 使用率作為效能計數器、這是舊版 SANtricity E 系列收集器中未提供的功能。</block>
+  <block id="06026757f9dde1467a9d040a8e0ca5e8" category="paragraph">Cloud Insight 使用 REST 從 NetApp E 系列取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
+  <block id="199cdaad4b2e2da65f3c12904a570c15" category="inline-link-macro">E 系列 SANtricity API</block>
+  <block id="637b0100ed897846e49020047a7a69f0" category="list-text">此收集器僅支援具有 * 原生 REST API 功能 * 的 E 系列型號陣列。E 系列組織為較舊的 E 系列陣列提供可安裝的非陣列 REST API 發佈：此收集器不支援該案例。擁有較舊陣列的使用者應繼續使用 Cloud Insights <block ref="1e9e2e04984e423436b9d1423e41c8ce" category="inline-link-macro-rx"></block> 收集器。</block>
+  <block id="1dec37be48852b1e80d1d4ddd48a1698" category="list-text">「 E 系列控制器 IP 位址」欄位支援以逗號分隔的 2 個 IP/ 主機名稱字串；如果無法存取第一個 IP/ 主機名稱、收集器將會智慧地嘗試第二個 IP/ 主機名稱。</block>
+  <block id="483afc2b0c89bbcbc08179996afd1bd3" category="list-text">HTTPS 連接埠：預設為 8443 。</block>
+  <block id="9ae1165f709f672a335b55af672fcede" category="cell">E 系列控制器 IP 位址</block>
+  <block id="0e8766b280f750325a542b5489199d1e" category="cell">陣列控制器的以逗號分隔的 IP 位址和 / 或完整網域名稱</block>
+  <block id="92484fec13cdc76ac141bbc4fa556717" category="doc">NetApp E 系列舊式 SANtricity API 資料收集器</block>
+  <block id="8e9fa018c5fbfdcbcf5f7eb6c96db8ca" category="paragraph">NetApp E 系列舊版 SANtricity API 資料收集器會收集庫存和效能資料。收集器支援使用相同組態的韌體7.x以上、並回報相同的資料。</block>
+  <block id="5b44aad20fbc2491f38bc99fd2eb8086" category="section-title">2024 年 5 月</block>
+  <block id="cc0bc6461a822caeea316a8f3210d21f" category="section-title">根據時間自動解決警示</block>
+  <block id="2741e130f2ac71e99ac0cbafbb9723e0" category="paragraph">現在可以根據時間來解決記錄警示；如果警示條件停止發生、 Cloud Insights 可以在指定時間過後自動解決警示。您可以選擇在幾分鐘、幾小時或幾天內解決警示。</block>
+  <block id="6a16c8c6db694c5bd9f5d2b182956c8b" category="inline-image-macro">根據所經過的時間來解決警示</block>
+  <block id="e77cf5300b07c5139b04469146e62ab7" category="paragraph"><block ref="e77cf5300b07c5139b04469146e62ab7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a48ce2d2ead926908bf3e2f5d7de56b8" category="section-title">Kubernetes 的 iSCSI 支援</block>
+  <block id="f16e629d6abf8685ee4d974de80f76a2" category="paragraph">Cloud Insights 現在已支援對應與 Kubernetes 相關的 iSCSI 儲存設備、可利用 Kubernetes 網路地圖更快進行疑難排解、並可透過報告提供計費或回報報告。</block>
+  <block id="31a81d987a44cbfb0c2a597eabf114c6" category="inline-link-macro">模組評估</block>
+  <block id="92f61f316ed304aa59fc2f9b20e73b00" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="4bd4692292d9f732bb0caf31164d4a95" category="inline-link-macro-rx"></block>。例如、如果您已訂閱 Cloud Insights 、並且一直在監控儲存設備和虛擬機器、當您將 Kubernetes 新增至環境時、系統會自動試用 Kubernetes Observ易 觀察性 30 天。Kubernetes Observ易 受管設備使用量將不會計入您訂閱的權利、直到試用期結束為止。</block>
+  <block id="99b27c504f0c3fcdb98f75b276b0c15a" category="paragraph">除了 Cloud Insights 的初始試用版之外、您也可以利用 <block ref="4bd4692292d9f732bb0caf31164d4a95" category="inline-link-macro-rx"></block>。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則您將自動參加 Kubernetes Observ易 服務性的 30 天試用。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。</block>
+  <block id="2e4d31af0f73e73316d16040c201d754" category="paragraph">確保您的資料可存取性是不可或缺的、因此我們已做好準備。 無論您查詢的資料類型為何（資產或整合）、所有度量查詢、儀表板表格 Widget 和物件登陸頁面都可使用 CSV 匯出。</block>
+  <block id="14fd8d5705fd5b8176b77dfebb7d13e4" category="paragraph">。 <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> （NKMO）是安裝Kubernetes for Cloud Insights the SesnInsights的首選方法、能以更少的步驟靈活設定監控功能、並增加監控K8s叢集中其他軟體的機會。</block>
+  <block id="49980d8cbfcf467e48dd828ddb798a3e" category="paragraph">使用新的資料收集器來追蹤您的資料收集器、比以往更容易 <block ref="e932cbc2a5cd1eae0c0f9f3536a1f66d" category="inline-link-macro-rx"></block> 用於資料收集器和擷取單元故障。
+請注意、這些監視器預設為「暫停」。若要啟用、請瀏覽至您的「監視器」頁面、找出並恢復「擷取裝置關機」和「收集器故障」</block>
+  <block id="bc27a46c4d07716aed4c7e1c5668263e" category="paragraph">如需API使用方式的詳細資訊、請參閱 <block ref="84dd77938b21867afe38f6d659bbcd26" category="inline-link-macro-rx"></block>。</block>
+  <block id="b646c2538957d172cf56722332fc0c64" category="paragraph"><block ref="c1a6f5b95fc09a1273de65d4f5176a14" category="inline-link-macro-rx"></block> 簡化環境中的監控管理。現在可以將多個監視器群組在一起、並將其暫停為一個監視器。例如、如果您在基礎架構堆疊上進行更新、只要按一下滑鼠、就能暫停來自所有裝置的警示。</block>
+  <block id="47615e5adf328078e0feeaf4f57b3085" category="paragraph">有了支援功能的支援版、系統管理員就能啟用* Cloud Insights<block ref="45710841bd1398dde71fdeae8706a5eb" category="inline-link-macro-rx"></block>*（SSO）存取Cloud Insights 公司網域中的所有使用者、無需個別邀請他們。啟用SSO後、任何具有相同網域電子郵件地址的使用者都能Cloud Insights 使用公司認證登入。</block>
+  <block id="ff6c00b335fc80bde3d634aaad097f47" category="cell">應以下列方式分配磁碟空間：
+/opt/NetApp 36 GB （檔案系統建立後、至少有 35 GB 可用空間）
+
+附註：建議您分配額外的磁碟空間、以便建立檔案系統。確定檔案系統中至少有 35 GB 可用空間。
+
+
+如果 /opt 是 NAS 儲存設備的掛載資料夾、請確定本機使用者可以存取此資料夾。如果本機使用者沒有此資料夾的權限、代理程式或資料收集器可能無法安裝。請參閱 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 一節以取得更多詳細資料。</block>
 </blocks>
