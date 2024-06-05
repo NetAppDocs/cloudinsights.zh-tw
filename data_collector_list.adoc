@@ -238,6 +238,9 @@ keywords: data collector, vendor, infrastructure, integration, service
 | link:task_dc_na_eseries.html["NetApp E系列"] | 基礎架構 
 
 
+| link:task_dc_netapp_eseries_rest.html["NetApp E 系列 REST "] | 基礎架構 
+
+
 | link:task_dc_na_amazon_fsx.html["Amazon FSX for NetApp ONTAP 產品"] | 基礎架構 
 
 
