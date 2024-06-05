@@ -565,5 +565,8 @@ fluent-bit:
 
 
 | 遺失影像或組態無效、導致 NetApp-CI-kube 狀態指標 Pod 無法啟動或準備就緒。目前狀況集已停滯、組態變更並未套用至 NetApp-CI-kube 狀態指標群。 | StatefulSet 位於 A 中 link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["毀損"] 州/省。在修正任何組態問題之後、 NetApp-CI-kube 狀態指標 Pod 就會恢復運作。 
+
+
+| NetApp-CI-kube-state 指標 Pod 在執行 Kubernetes 操作員升級後無法啟動、造成勘誤影像資料（無法擷取影像）。 | 請嘗試手動重設 Pod 。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

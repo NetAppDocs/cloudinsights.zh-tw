@@ -13122,4 +13122,6 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp E 系列 REST </block>
   <block id="015094a403d71d47872c1d0819be899a" category="cell"><block ref="015094a403d71d47872c1d0819be899a" category="inline-link-macro-rx"></block></block>
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E 系列 REST</block>
+  <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">NetApp-CI-kube-state 指標 Pod 在執行 Kubernetes 操作員升級後無法啟動、造成勘誤影像資料（無法擷取影像）。</block>
+  <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">請嘗試手動重設 Pod 。</block>
 </blocks>
