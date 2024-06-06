@@ -13124,4 +13124,6 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E 系列 REST</block>
   <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">NetApp-CI-kube-state 指標 Pod 在執行 Kubernetes 操作員升級後無法啟動、造成勘誤影像資料（無法擷取影像）。</block>
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">請嘗試手動重設 Pod 。</block>
+  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">我的 Kubernetes 叢集在記錄分析下會觀察到「事件已捨棄為較舊、然後是 maxEventAgeSeconds 」的訊息。</block>
+  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">修改運算子 _agentconfigurated_ 、並增加 _event-aler-maxEventAgeSeconds_ （即增加至 60s ）、 _event-kaler-kubeQPS_ （即增加至 100 ）、以及 _event-kaler-kubebBurst （即增加至 500 ）。如需這些組態選項的詳細資訊、請參閱 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 頁面。</block>
 </blocks>
