@@ -571,8 +571,5 @@ fluent-bit:
 
 
 | 我的 Kubernetes 叢集在記錄分析下會觀察到「事件已捨棄為較舊、然後是 maxEventAgeSeconds 」的訊息。 | 修改運算子 _agentconfigurated_ 、並增加 _event-aler-maxEventAgeSeconds_ （即增加至 60s ）、 _event-kaler-kubeQPS_ （即增加至 100 ）、以及 _event-kaler-kubebBurst （即增加至 500 ）。如需這些組態選項的詳細資訊、請參閱 link:telegraf_agent_k8s_config_options.html["組態選項"] 頁面。 
-
-
-| Telegraf 想要（或是因為）可鎖定記憶體不足而當機。 | 嘗試增加基礎作業系統 / 節點中 Telegraf 可鎖定記憶體的限制。如果增加限制並非選項、請修改 NKMO 代理組態、並將 _skipLockedMemory_ 設為 _true_ 。  這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會造成安全風險、因為解密的機密資料可能會被換出到磁碟、但它允許在無法保留鎖定記憶體的環境中執行。如需 _skipLockedMemory_ 組態選項的詳細資訊、請參閱 link:telegraf_agent_k8s_config_options.html["組態選項"] 頁面。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。
