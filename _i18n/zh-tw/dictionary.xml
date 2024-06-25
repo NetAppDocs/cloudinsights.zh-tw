@@ -12576,24 +12576,6 @@ Proxy ：
   <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-觀察者 water-DS 額外容忍度。僅限精簡單行格式。
 範例： ' ｛ key ： tint1 、 operator ： Exists 、 effect ： NoSchedule ｝ 、 ｛ key ： tint2 、 operator ： Exists 、 effect ： NoExecute ｝ '</block>
   <block id="ab8e405c19b7905ee11081815f3188e8" category="summary">作為採購單位的伺服器或 VM 必須符合最低需求。</block>
-  <block id="a09b5775576e1f992d4b31384ff11e67" category="cell">執行下列其中一項授權版本的電腦：
-
-* CentOS （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.4 、 Stream 8 、 Stream 9
-* Debian （ 64 位元）： 9 和 10
-* openSUSE Leap 15.1 到 15.5
-* Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 、 8.1 至 8.8
-* Red Hat Enterprise Linux （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.8 、 9.1 、 9.2
-* Rocky 9.0 、 9.1 、 9.3
-* SUSE Enterprise Linux Server 15 、 15 SP2 至 15 SP5
-* Ubuntu 伺服器： 18.04 、 20.04 、 22.04 LTS
-* 上述平台上的 SELinux
-
-此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
-
-如果您使用 SELinux 執行、建議您在擷取單元系統上執行下列命令：
-
- Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
- Sudo restorecon -R /opt/NetApp/cloudsights</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024 年 4 月</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
@@ -13126,9 +13108,27 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">請嘗試手動重設 Pod 。</block>
   <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">我的 Kubernetes 叢集在記錄分析下會觀察到「事件已捨棄為較舊、然後是 maxEventAgeSeconds 」的訊息。</block>
   <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">修改運算子 _agentconfigurated_ 、並增加 _event-aler-maxEventAgeSeconds_ （即增加至 60s ）、 _event-kaler-kubeQPS_ （即增加至 100 ）、以及 _event-kaler-kubebBurst （即增加至 500 ）。如需這些組態選項的詳細資訊、請參閱 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 頁面。</block>
-  <block id="ab504a720d67f8b1d6fb93a2e0fd41aa" category="cell">Telegraf 想要（或是因為）可鎖定記憶體不足而當機。</block>
-  <block id="26ac9b3550be2e8570d1d9e6f0eec62a" category="cell">嘗試增加基礎作業系統 / 節點中 Telegraf 可鎖定記憶體的限制。如果增加限制並非選項、請修改 NKMO 代理組態、並將 _skipLockedMemory_ 設為 _true_ 。  這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會造成安全風險、因為解密的機密資料可能會被換出到磁碟、但它允許在無法保留鎖定記憶體的環境中執行。如需 _skipLockedMemory_ 組態選項的詳細資訊、請參閱 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 頁面。</block>
-  <block id="20670de5c205eea8e371d467d2711cb1" category="cell">skipLockedMemory</block>
-  <block id="9091b3fb9f4d43844af8dc0a973c67e0" category="inline-link-macro">已知的 Telegraf 問題</block>
-  <block id="8478d994e083e4a9e16764020a471cbb" category="cell">請參閱 <block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。  設定 skipLockedMemory 會指示 Kubernetes 監控操作員使用執行 Telegraf<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block> 旗標。</block>
+  <block id="7975ccf765218c74eaf3a92b3576dc18" category="section-title">2024 年 6 月</block>
+  <block id="cfc09d614d05263d4ddcce0fc088bd5b" category="list-text">Red Hat Enterprise Linux 8.9 、 8.10 、 9.4</block>
+  <block id="bd3e351db6ed7ef74787b737e516d4d4" category="list-text">岩石 9.4.</block>
+  <block id="2e6231a6f2626b3e23a448e9c9af1acf" category="list-text">AlmaLinux 9.3 和 9.4</block>
+  <block id="0b9ef6f03f11262f4246aad76e7320f2" category="cell">執行下列其中一項授權版本的電腦：
+
+* CentOS （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.4 、 Stream 8 、 Stream 9
+* AlmaLinux 9.3 和 9.4
+* Debian （ 64 位元）： 9 和 10
+* openSUSE Leap 15.1 到 15.5
+* Oracle Enterprise Linux （ 64 位元）： 7.5 至 7.9 、 8.1 至 8.8
+* Red Hat Enterprise Linux （ 64 位元）： 7.2 至 7.9 、 8.1 至 8.10 、 9.1 至 9.4
+* Rocky 9.0 至 9.4
+* SUSE Enterprise Linux Server 15 、 15 SP2 至 15 SP5
+* Ubuntu 伺服器： 18.04 、 20.04 、 22.04 LTS
+* 上述平台上的 SELinux
+
+此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。
+
+如果您使用 SELinux 執行、建議您在擷取單元系統上執行下列命令：
+
+ Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
+ Sudo restorecon -R /opt/NetApp/cloudsights</block>
 </blocks>

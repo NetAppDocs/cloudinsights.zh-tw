@@ -20,6 +20,21 @@ NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業�
 
 
 
+== 2024 年 6 月
+
+
+
+=== 作業系統支援
+
+下列作業系統除了支援Cloud Insights 其他作業系統之外、還支援使用「景點擷取單元」 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支援"]：
+
+* Red Hat Enterprise Linux 8.9 、 8.10 、 9.4
+* 岩石 9.4.
+* AlmaLinux 9.3 和 9.4
+
+
+
+
 == 2024 年 5 月
 
 
