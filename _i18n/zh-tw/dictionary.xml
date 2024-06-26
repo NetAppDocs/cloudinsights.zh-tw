@@ -13131,4 +13131,10 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
 
  Sudo sanage fcontext -a -t usr_t "/opt/NetApp/cloudimses//.*)"
  Sudo restorecon -R /opt/NetApp/cloudsights</block>
+  <block id="6b0d087c4bacdd4357f49c495293bdde" category="cell">skipProcessorsAfterAggreaters</block>
+  <block id="412ea2434c00799606f268b4aa2b35dc" category="cell">未受保護</block>
+  <block id="9091b3fb9f4d43844af8dc0a973c67e0" category="inline-link-macro">已知的 Telegraf 問題</block>
+  <block id="d466d69e5a5f62e5d6773f7d399fe086" category="cell">請參閱 <block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>。設定 _ 無保護 _ 會指示 Kubernetes 監控營運者與一起執行 Telegraf<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block> 旗標。</block>
+  <block id="ab504a720d67f8b1d6fb93a2e0fd41aa" category="cell">Telegraf 想要（或是因為）可鎖定記憶體不足而當機。</block>
+  <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">嘗試增加基礎作業系統 / 節點中 Telegraf 可鎖定記憶體的限制。如果增加限制並非選項、請修改 NKMO 代理組態、並將 _NOISS_ 設為 _true_ 。  這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會造成安全風險、因為解密的機密資料可能會被換出到磁碟、但它允許在無法保留鎖定記憶體的環境中執行。如需 _inbizon_ 組態選項的詳細資訊、請參閱 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 頁面。</block>
 </blocks>
