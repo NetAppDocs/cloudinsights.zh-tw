@@ -24,7 +24,7 @@ summary: 工作負載安全性代理程式可以手動安裝或更新、讓您�
 
 . 在 swagger 中驗證名稱為「 cloudsecure_installer.agent 」和「 cloudsecure_installs.collector 」的 API 類別是否可用。如果沒有、則不會啟用手動安裝代理程式的支援。請聯絡 NetApp 支援部門、以啟用此功能。
 +
-image:ws_manual_install_APIs.png[""]
+image:ws_manual_install_APIs.png["手動安裝 API"]
 
 . 以「 root 」使用者的身分執行本文所述的所有命令、或者、如果是以其他使用者執行、則以「身份」執行命令。
 
@@ -45,16 +45,16 @@ image:ws_manual_install_APIs.png[""]
 .. 按一下儲存 _ 。
 .. 複製產生的 API 存取權杖。請注意、一旦關閉視窗、就無法再擷取 Token 。在這種情況下、您需要產生新的權杖。
 +
-image:ws_create_and_save_token.png[""]
+image:ws_create_and_save_token.png["建立並儲存 API 權杖"]
 
 +
-image:ws_create_and_save_token_confirm.png[""]
+image:ws_create_and_save_token_confirm.png["確認建立權杖"]
 
 
 
 . 瀏覽至 * 管理 > API 存取 > API 文件 * （頁面右上角）、然後選取 _Workload Security_ 圖示。這會開啟工作負載安全 API 的 Swagger 文件。
 +
-image:ws_swagger_documentation_link.png[""]
+image:ws_swagger_documentation_link.png["適用於工作負載安全性的 swagger 文件"]
 
 . 授權存取 _Workload Security_ API 。
 +
@@ -62,7 +62,7 @@ image:ws_swagger_documentation_link.png[""]
 .. 在 _ 客戶 ApiKey （ apiKey ） _ 文字欄位中、貼上先前從步驟 1c 複製的 API Token 。
 .. 按一下授權 _ 並關閉視窗。
 +
-image:ws_API_authorization.png[""]
+image:ws_API_authorization.png["授權 API"]
 
 
 
@@ -71,8 +71,8 @@ image:ws_API_authorization.png[""]
 .. 在 Swagger 中、選取 _cloudsecure_installer.agent_ > //v1/cloudsecurity/agents/installer/｛ platform ｝ / latest （ Get ） API 。按一下「試用 _ 」。
 .. 在 _ 平台 _ 欄位中、輸入 _Linux_ 。按一下「執行 _ 」。
 +
-image:ws_installers_agent_api_swagger.png[""]
-image:ws_installers_agent_api_swagger-2.png[""]
+image:ws_installers_agent_api_swagger.png["代理程式安裝程式 API 的 Swagger - top"]
+image:ws_installers_agent_api_swagger-2.png["代理程式安裝程式 API 的 swagger - 回應"]
 
 .. 按一下「下載檔案」下載安裝程式。
 .. 如果安裝程式檔案是從外部下載到要安裝代理程式的系統以外的其他機器、請將安裝程式檔案複製到該系統。
@@ -80,7 +80,7 @@ image:ws_installers_agent_api_swagger-2.png[""]
 +
 *** 將「 -o ｛ file_name ｝ ｝ 」引數附加至 cURL 命令、以所需名稱儲存安裝程式檔案。安裝程式檔案的實際名稱可在 swagger 回應標頭區段中找到。也可以使用該名稱。
 +
-image:ws_installers_agent_api_swagger_installer_file.png[""]
+image:ws_installers_agent_api_swagger_installer_file.png["透過 API - Swagger 選擇最新的代理程式"]
 
 *** 雖然檔案可以下載到任何位置、但建議您將其下載到可解壓縮安裝程式 .zip 的空白資料夾。
 
@@ -188,7 +188,7 @@ sudo /bin/bash -c "TOKEN=<<one time token generated in step 7>> HTTPS_PROXY=<<pr
 ----
 .. 值機員應可在「值機員」頁面中看到、且應處於「已連線」狀態。
 +
-image:ws_agentsPageShowingConnected.png[""]
+image:ws_agentsPageShowingConnected.png["顯示連線代理程式的 UI"]
 
 
 
@@ -225,13 +225,13 @@ drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 . 前往 swagger ：「 cloudsecure_config.collector 類型 > /v1/cloudsecure/collector 類型」（ GET ） API 。在「 collectorCategory 」下拉式清單中、選取收集器類型為「 data 」。選取「 All 」以擷取所有收集器類型的詳細資料。
 . 複製所需收集器類型的 UUID 。
 +
-image:ws_collectorAPIShowingUUID.png[""]
+image:ws_collectorAPIShowingUUID.png["收集器 API 回應顯示 UUID"]
 
 . 下載收集器安裝程式。
 +
 .. 瀏覽至「 cloudsecure_installer.collector > /v1/cloudsecure/collector-types/installer/｛ collectorTypeUUID ｝ 」（ GET ） API 。輸入從先前步驟複製的 UUID 、然後下載安裝程式檔案。
 +
-image:ws_downloadCollectorByUUID.png[""]
+image:ws_downloadCollectorByUUID.png["以 UUID 下載收集器的 API"]
 
 .. 如果安裝程式檔案是從外部下載到不同的機器、請將安裝程式檔案複製到執行代理程式的系統、並放在目錄「 /tmp/cers 」中。
 .. 或者、您也可以從同一個 API 複製 cURL 命令、然後直接在要安裝收集器的系統上執行。
@@ -239,7 +239,7 @@ image:ws_downloadCollectorByUUID.png[""]
 請注意、檔案名稱應與下載收集器 API 的回應標頭相同。請參閱下方螢幕擷取畫面。
 
 +
-image:ws_curl_command.png[""]
+image:ws_curl_command.png["顯示模糊權杖的 Curl 命令範例"]
 
 +
 [listing]
@@ -264,13 +264,13 @@ total 49716
 .. 瀏覽至「 cloudsecure_config.s收集 器」 > 「 /v1/cloudsecure/c收集 器」（ POST ） API 。
 .. 在範例下拉式清單中、選取「 ONTAP SVM 資料收集器 json 範例」、更新收集器組態詳細資料和執行。
 +
-image:ws_API_add_collector.png[""]
+image:ws_API_add_collector.png["要新增收集器的 API"]
 
 
 
 . 收集器現在應該可以在「資料收集器」區段中看到。
 +
-image:ws_collectorPageList.png[""]
+image:ws_collectorPageList.png["顯示收集器的 UI 清單頁面"]
 
 . 安裝後清理。
 +
@@ -297,17 +297,17 @@ drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 ----
 . 現在我們需要擷取收集器版本和收集器 UUID 。瀏覽至「 cloudsecure_config.coller-Types 」 API 。在 collectorCategory 下拉式清單中、選取收集器類型為「 user 」。選取「 All 」以擷取單一要求中的所有收集器類型詳細資料。
 +
-image:ws_API_collector_all.png[""]
+image:ws_API_collector_all.png["取得所有收集器的 API"]
 
 . 複製 LDAP 收集器的 UUID 。
 +
-image:ws_LDAP_collector_UUID.png[""]
+image:ws_LDAP_collector_UUID.png["顯示 LDAP 收集器 UUID 的 API 回應"]
 
 . 下載收集器安裝程式。
 +
 .. 瀏覽至「 cloudsecure_installer.collector 」 > 「 /v1/cloudsecure/collector-types/installer/{collectorTypeUUID} 」（ GET ） API 。輸入從先前步驟複製的 UUID 、然後下載安裝程式檔案。
 +
-image:ws_LDAP_collector_UUID_download.png[""]
+image:ws_LDAP_collector_UUID_download.png["下載收集器的 API 和 repoonse"]
 
 .. 如果安裝程式檔案是從外部下載到另一台機器、請將安裝程式檔案複製到執行代理程式的系統、以及目錄「 /tmp/cers 」。
 .. 或者、您也可以從相同的 API 複製 cURL 命令、然後直接在應安裝收集器的系統中執行。
@@ -318,7 +318,7 @@ image:ws_LDAP_collector_UUID_download.png[""]
 
 +
 +
-image:ws_curl_command.png[""]
+image:ws_curl_command.png["Curl 命令 API"]
 
 +
 +
@@ -345,15 +345,15 @@ total 37156
 ----
 . 瀏覽至「使用者目錄收集器」頁面、然後按一下「 + 使用者目錄收集器」。
 +
-image:ws_user_directory_collector.png[""]
+image:ws_user_directory_collector.png["新增使用者目錄收集器"]
 
 . 選取「 LDAP 目錄伺服器」。
 +
-image:ws_LDAP_user_select.png[""]
+image:ws_LDAP_user_select.png["用於選擇 LDAP 使用者的 UI 視窗"]
 
 . 輸入 LDAP Directory Server 詳細資料、然後按一下「儲存」
 +
-image:ws_LDAP_user_Details.png[""]
+image:ws_LDAP_user_Details.png["顯示 LDAP 使用者詳細資料的 UI"]
 
 . 按一下「 Save 」（儲存）、代理程式服務會在「 /tmp/collers/ 」目錄中找到收集器安裝程式、然後安裝收集器。
 . 另一個選項是透過 UI 新增收集器、而非透過 UI 新增收集器、也可以透過 API 新增。
@@ -361,13 +361,13 @@ image:ws_LDAP_user_Details.png[""]
 .. 瀏覽至「 cloudsecure_config.s收集 器」 > 「 /v1/cloudsecure/c收集 器」（ POST ） API 。
 .. 在範例下拉式清單中、選取「 LDAP Directory Server 使用者收集器 json 範例」、更新收集器組態詳細資料、然後按一下「執行」。
 +
-image:ws_API_LDAP_Collector.png[""]
+image:ws_API_LDAP_Collector.png["用於 LDAP 收集器的 API"]
 
 
 
 . 收集器現在應該可以在「使用者目錄收集器」區段中看到。
 +
-image:ws_LDAP_collector_list.png[""]
+image:ws_LDAP_collector_list.png["UI 中的 LDAP 收集器清單"]
 
 . 安裝後清理。
 +
@@ -451,7 +451,7 @@ drwx------  2 root  root  4096 Apr 26 17:38 tmp
 ----
 .. 值機員應可在「值機員」頁面中看到、且應處於「已連線」狀態。
 +
-image:ws_agentsPageShowingConnected.png[""]
+image:ws_agentsPageShowingConnected.png["顯示連線代理程式的 UI"]
 
 
 
@@ -490,14 +490,14 @@ drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 
 
 
-image:ws_collector_UUID_and_version.png[""]
+image:ws_collector_uuid_and_version.png["顯示收集器 UUID 和版本的 API 回應已反白顯示"]
 
 . 下載最新的收集器安裝程式檔案。
 +
 .. 瀏覽至「 cloudsecure_installer.collector 」 > 「 /v1/cloudsecure/collector-types/installer/{collectorTypeUUID} 」 API 。輸入從上一步複製的「 collectorTypeUUID 」。將安裝程式下載至「 /tmp/cers 」目錄。
 .. 或者、也可以使用相同 API 的 Curl 命令。
 +
-image:ws_curl_command_only.png[""]
+image:ws_curl_command_only.png["Curl 命令範例"]
 
 
 
@@ -524,7 +524,7 @@ total 55024
 .. 在「範例」下拉式清單中、選取「 ONTAP SVM 資料收集器升級 json 範例」以填入範例有效負載。
 .. 以從步驟 3 複製的版本取代版本、然後按一下「執行」。
 +
-image:ws_svm_ontap_collector_upgrade_example_json.png[""]
+image:ws_svm_ontap_collector_upgrade_example_json.png["Swagger UI 中的 SVM 升級範例"]
 
 
 
@@ -554,7 +554,7 @@ image:ws_svm_ontap_collector_upgrade_example_json.png[""]
 如果收集器安裝程式檔案未出現在「 /tmp/collector 」目錄中、或無法存取、就會發生此錯誤。確定已下載安裝程式檔案、目錄「收集器」和安裝程式 zip 檔案歸 cssys ： cssys 所有、然後重新啟動代理程式服務–「 systemctl restart cloudsecure-agent.service” 」
 
 +
-image:ws_agent014_error.png[""]
+image:ws_agent014_error.png["UI 畫面顯示「 Agent 014 」錯誤暫留提示"]
 
 . 2. 未獲授權的錯誤
 +

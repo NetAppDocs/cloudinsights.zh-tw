@@ -13141,7 +13141,6 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">手動安裝 Workload Security Agent 和 Collector</block>
   <block id="b18da8c028e8898757dd43e098d29586" category="paragraph">根據預設、當工作負載安全性代理程式或收集器有新版本可用時、系統會傳送升級前通知、並在您的環境中自動更新代理程式和收集器。不過、在安全的受控環境中、可能不需要自動升級。在這種情況下、可將工作負載安全性設定為手動安裝 / 升級代理程式和收集器、以更有效地控制系統上安裝的軟體。</block>
   <block id="1d7c0bdfd6486be2ad7378309185dd8d" category="list-text">在 swagger 中驗證名稱為「 cloudsecure_installer.agent 」和「 cloudsecure_installs.collector 」的 API 類別是否可用。如果沒有、則不會啟用手動安裝代理程式的支援。請聯絡 NetApp 支援部門、以啟用此功能。</block>
-  <block id="b6ce3d2e8bbf578cfdcdeb74825d0609" category="paragraph"><block ref="b6ce3d2e8bbf578cfdcdeb74825d0609" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b47cdf24f25c792e7f7bee977b59785f" category="list-text">以「 root 」使用者的身分執行本文所述的所有命令、或者、如果是以其他使用者執行、則以「身份」執行命令。</block>
   <block id="24b69749dd40594efb1f2e9cafb0ba86" category="section-title">安裝新代理程式</block>
   <block id="24d17e357f806ec1c8a435b7688427df" category="list-text">建立新的工作負載安全 API 存取權杖。</block>
@@ -13151,25 +13150,18 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="1f13ce10e05713b09a5710af0b9f5f40" category="list-text">選擇所需的到期時間。</block>
   <block id="73507ba211863509e00da520eff7099c" category="list-text">按一下儲存 _ 。</block>
   <block id="cc7aef4ed3668a652853c8be5873aa33" category="list-text">複製產生的 API 存取權杖。請注意、一旦關閉視窗、就無法再擷取 Token 。在這種情況下、您需要產生新的權杖。</block>
-  <block id="45bbef09c47259a6fcfbd1f25b63ac9c" category="paragraph"><block ref="45bbef09c47259a6fcfbd1f25b63ac9c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="256176a4f9b26608ca563ee3f1ef34ec" category="paragraph"><block ref="256176a4f9b26608ca563ee3f1ef34ec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="180648243db0d9593e75e0a7dcc9e70c" category="list-text">瀏覽至 * 管理 &gt; API 存取 &gt; API 文件 * （頁面右上角）、然後選取 _Workload Security_ 圖示。這會開啟工作負載安全 API 的 Swagger 文件。</block>
-  <block id="2034e411b416bb8a1700564433d3cd96" category="paragraph"><block ref="2034e411b416bb8a1700564433d3cd96" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c6e324f498c45c040c62a6fa6c3ee605" category="list-text">授權存取 _Workload Security_ API 。</block>
   <block id="2fb830e83b717250d3913a3a0b88988e" category="list-text">按一下頁面右上方的 _ 授權 _ 按鈕。</block>
   <block id="1742f0a5fd9e84cc6abbac0f91f20145" category="list-text">在 _ 客戶 ApiKey （ apiKey ） _ 文字欄位中、貼上先前從步驟 1c 複製的 API Token 。</block>
   <block id="4d72ae66caf6c8d221f1265fef5074a4" category="list-text">按一下授權 _ 並關閉視窗。</block>
-  <block id="be10b4573e48113fb1ac5c23054ebf52" category="paragraph"><block ref="be10b4573e48113fb1ac5c23054ebf52" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92d059abe745a2f9412e7e28cf8d4b7a" category="list-text">下載 Agent 安裝程式。</block>
   <block id="9bfb10dfddb775b19e5382b100f3b95c" category="list-text">在 Swagger 中、選取 _cloudsecure_installer.agent_ &gt; //v1/cloudsecurity/agents/installer/｛ platform ｝ / latest （ Get ） API 。按一下「試用 _ 」。</block>
   <block id="9a9218c558d48a113241255b493ebce4" category="list-text">在 _ 平台 _ 欄位中、輸入 _Linux_ 。按一下「執行 _ 」。</block>
-  <block id="81fa97985e807c92a56b0503fbb64e90" category="paragraph"><block ref="00f688012d021ff7555f49c98fcaa137" category="inline-image-macro-rx" type="image"></block>
-<block ref="01005f9d47b011c1212f7bf5ad6f9024" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee6a52b13fbddb62016bcb2805c17702" category="list-text">按一下「下載檔案」下載安裝程式。</block>
   <block id="0f8979c47074a8474a7b68f6b5041333" category="list-text">如果安裝程式檔案是從外部下載到要安裝代理程式的系統以外的其他機器、請將安裝程式檔案複製到該系統。</block>
   <block id="2ca042fd80784e45a082b48e420ab342" category="list-text">或者、您也可以複製 cURL 命令、然後直接在應安裝代理程式的系統中執行。</block>
   <block id="c63360f268fe9cedccae33ff3677374e" category="list-text">將「 -o ｛ file_name ｝ ｝ 」引數附加至 cURL 命令、以所需名稱儲存安裝程式檔案。安裝程式檔案的實際名稱可在 swagger 回應標頭區段中找到。也可以使用該名稱。</block>
-  <block id="187e0a2ad583571b3a862394f5de152d" category="paragraph"><block ref="187e0a2ad583571b3a862394f5de152d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="916cf5f1dfa408f84ad15ac58fb178b7" category="list-text">雖然檔案可以下載到任何位置、但建議您將其下載到可解壓縮安裝程式 .zip 的空白資料夾。</block>
   <block id="ff324aae593d3293768656baf930a788" category="list-text">建立新資料夾（建議使用）、將安裝程式檔案複製到此資料夾、然後解壓縮：</block>
   <block id="6ce9d80723d57729143449d1cd127853" category="list-text">為「 cloudsecure-agent-install.sh 」檔案設定 _executive_ 權限。</block>
@@ -13186,7 +13178,6 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="eacf181f15af1f0579e56a30c60711dc" category="list-text">代理程式安裝的健全性檢查：</block>
   <block id="b8d752e2b793a20d3b97803fa8bd137f" category="list-text">執行「 systemctl status cloudsecure-agent.service” 」、並確認代理程式服務處於 _Running 狀態。</block>
   <block id="a85cd1b0bb395d30fe2d656af8c45241" category="list-text">值機員應可在「值機員」頁面中看到、且應處於「已連線」狀態。</block>
-  <block id="5d5d717f52e6d8847a7780754fc0fb2c" category="paragraph"><block ref="5d5d717f52e6d8847a7780754fc0fb2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfbadd34e39758c3ba5d6aa09a579b79" category="list-text">安裝後清理。</block>
   <block id="140b66a6d0a9e50bee73565be1467b63" category="list-text">如果代理程式安裝成功、則可刪除下載的代理程式安裝程式檔案。</block>
   <block id="58130a8aadcaf720b42fcca8adaae36c" category="section-title">安裝新的資料收集器。</block>
@@ -13196,51 +13187,36 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="f88df495978aea1949fd994d1bd434f5" category="list-text">現在我們需要擷取收集器版本和收集器 UUID 。瀏覽至「 cloudsecure_config.coller-Types 」 API 。</block>
   <block id="d01630b920021fdbcfded91d28c943bb" category="list-text">前往 swagger ：「 cloudsecure_config.collector 類型 &gt; /v1/cloudsecure/collector 類型」（ GET ） API 。在「 collectorCategory 」下拉式清單中、選取收集器類型為「 data 」。選取「 All 」以擷取所有收集器類型的詳細資料。</block>
   <block id="f48b5207fe43ebc5402b9c278bd7fcce" category="list-text">複製所需收集器類型的 UUID 。</block>
-  <block id="eea6c85e871ed7d5ae81ca5d661e78d5" category="paragraph"><block ref="eea6c85e871ed7d5ae81ca5d661e78d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddfde501612f68f80a91fec5fc0f07c7" category="list-text">下載收集器安裝程式。</block>
   <block id="c1c6a754702a1c4ab63fc9982a6ce591" category="list-text">瀏覽至「 cloudsecure_installer.collector &gt; /v1/cloudsecure/collector-types/installer/｛ collectorTypeUUID ｝ 」（ GET ） API 。輸入從先前步驟複製的 UUID 、然後下載安裝程式檔案。</block>
-  <block id="8180e782ffbaa5d5ac127d240a765e10" category="paragraph"><block ref="8180e782ffbaa5d5ac127d240a765e10" category="inline-image-macro-rx" type="image"></block></block>
   <block id="960963d0b016c92eaeccc263ef52fdba" category="list-text">如果安裝程式檔案是從外部下載到不同的機器、請將安裝程式檔案複製到執行代理程式的系統、並放在目錄「 /tmp/cers 」中。</block>
   <block id="55a4c61aa7efda1711d77921e1a92a8d" category="list-text">或者、您也可以從同一個 API 複製 cURL 命令、然後直接在要安裝收集器的系統上執行。</block>
   <block id="1fee2c4ec45fbe47ced2acd43c9d4447" category="paragraph">請注意、檔案名稱應與下載收集器 API 的回應標頭相同。請參閱下方螢幕擷取畫面。</block>
-  <block id="5ed4fdc46422ad7a3d943bfb0a365487" category="paragraph"><block ref="5ed4fdc46422ad7a3d943bfb0a365487" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45212f4567fd41d5e2982cda11096e58" category="list-text">瀏覽至 * 工作負載安全性 &gt; 收集器 * 、然後選取 *+Collector* 。選擇 ONTAP SVM_ 收集器。</block>
   <block id="615d69b66e616d31e597f5daab30304d" category="list-text">設定收集器詳細資料和收集器。</block>
   <block id="86ecf670dbd931937d00a5378aa07840" category="list-text">按一下「儲存」後、代理程式程序會在「 /tmp/collers/ 」目錄中找到收集器安裝程式、然後安裝收集器。</block>
   <block id="6787ef48e0f1a2e3871017f73c1104d0" category="list-text">另一個選項是透過 UI 新增收集器、而非透過 UI 新增收集器、也可以透過 API 新增。</block>
   <block id="b27df93d8844fa78c07fad879a901800" category="list-text">瀏覽至「 cloudsecure_config.s收集 器」 &gt; 「 /v1/cloudsecure/c收集 器」（ POST ） API 。</block>
   <block id="d91a6e2ddbc6f9b866b28804de7d2ea2" category="list-text">在範例下拉式清單中、選取「 ONTAP SVM 資料收集器 json 範例」、更新收集器組態詳細資料和執行。</block>
-  <block id="e17d71bf716fbe0dbfb5f044e69abd47" category="paragraph"><block ref="e17d71bf716fbe0dbfb5f044e69abd47" category="inline-image-macro-rx" type="image"></block></block>
   <block id="65430216dd6e04aeb4ec77900543d9c0" category="list-text">收集器現在應該可以在「資料收集器」區段中看到。</block>
-  <block id="8505d18bd42482fac2134d562f4f0951" category="paragraph"><block ref="8505d18bd42482fac2134d562f4f0951" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2dcb3aa661588b80bf624cee20a4d9a" category="list-text">如果收集器安裝成功、則可刪除目錄「 /tmp/collector 」中的所有檔案。</block>
   <block id="5c988949b33fdff8d1cb685edd772a78" category="section-title">安裝新的使用者目錄收集器</block>
   <block id="c1d3d73ef2be97edc6318c8b9e1be652" category="paragraph">附註：在本文件中、我們已提及安裝 LDAP 收集器的步驟。相同的步驟也適用於安裝 AD 收集器。</block>
   <block id="2ab3b812979b03e6897a80c035d884e3" category="list-text">現在我們需要擷取收集器版本和收集器 UUID 。瀏覽至「 cloudsecure_config.coller-Types 」 API 。在 collectorCategory 下拉式清單中、選取收集器類型為「 user 」。選取「 All 」以擷取單一要求中的所有收集器類型詳細資料。</block>
-  <block id="2851cf59c3b636d2286e3601c840bf0b" category="paragraph"><block ref="2851cf59c3b636d2286e3601c840bf0b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa26819573f8d5de196d75c2940b9140" category="list-text">複製 LDAP 收集器的 UUID 。</block>
-  <block id="b49c1096ebc6903e47a29c40f0574f0c" category="paragraph"><block ref="b49c1096ebc6903e47a29c40f0574f0c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="28a727e9a70db036cc6e4b1381a93f66" category="list-text">下載收集器安裝程式。</block>
   <block id="cac3390b8d7c3963dd149f531a17b42d" category="list-text">瀏覽至「 cloudsecure_installer.collector 」 &gt; 「 /v1/cloudsecure/collector-types/installer/{collectorTypeUUID} 」（ GET ） API 。輸入從先前步驟複製的 UUID 、然後下載安裝程式檔案。</block>
-  <block id="63707277cd58c76baa5fcedb992ac5b8" category="paragraph"><block ref="63707277cd58c76baa5fcedb992ac5b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c57cd0ffcecf9cea5cc8cd058524581" category="list-text">如果安裝程式檔案是從外部下載到另一台機器、請將安裝程式檔案複製到執行代理程式的系統、以及目錄「 /tmp/cers 」。</block>
   <block id="58237ddf4e8c451c3f1c93e5c96bf452" category="list-text">或者、您也可以從相同的 API 複製 cURL 命令、然後直接在應安裝收集器的系統中執行。</block>
-  <block id="88ad8720d8a141ccd2cb753bd4e97afb" category="paragraph">+
-<block ref="5ed4fdc46422ad7a3d943bfb0a365487" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="5709666caa5256a262f0055350a1c41f" category="list-text">將收集器安裝程式 zip 檔案的擁有權變更為 cssys ： cssys 。</block>
   <block id="841d5bf0ac1c3f88a052517da8b24155" category="list-text">瀏覽至「使用者目錄收集器」頁面、然後按一下「 + 使用者目錄收集器」。</block>
-  <block id="cd78c76e5ad6c0b400cbcf623f92e49a" category="paragraph"><block ref="cd78c76e5ad6c0b400cbcf623f92e49a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e9198d5902f64b3cae6ac3671c1677e" category="list-text">選取「 LDAP 目錄伺服器」。</block>
-  <block id="bc924648c1cee8ab0ee13d42575d59c5" category="paragraph"><block ref="bc924648c1cee8ab0ee13d42575d59c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe0c0f9a77be12447da802b62442e67e" category="list-text">輸入 LDAP Directory Server 詳細資料、然後按一下「儲存」</block>
-  <block id="c11b04b153e3ae99f621725197405334" category="paragraph"><block ref="c11b04b153e3ae99f621725197405334" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e632d5518578306a762a61b755d4c5be" category="list-text">按一下「 Save 」（儲存）、代理程式服務會在「 /tmp/collers/ 」目錄中找到收集器安裝程式、然後安裝收集器。</block>
   <block id="63a6b3c8c2e58ddc47bddb7e0e1765c6" category="list-text">另一個選項是透過 UI 新增收集器、而非透過 UI 新增收集器、也可以透過 API 新增。</block>
   <block id="a0a7d3e7a6cb2e91beed5114cc067cce" category="list-text">在範例下拉式清單中、選取「 LDAP Directory Server 使用者收集器 json 範例」、更新收集器組態詳細資料、然後按一下「執行」。</block>
-  <block id="7ed2e2c584b8462cda0058266b65f5df" category="paragraph"><block ref="7ed2e2c584b8462cda0058266b65f5df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b3f5c445c4bc966c8652199ceb82762c" category="list-text">收集器現在應該可以在「使用者目錄收集器」區段中看到。</block>
-  <block id="abc9edb3d074e13fa39590e1b8e1592e" category="paragraph"><block ref="abc9edb3d074e13fa39590e1b8e1592e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="62c9ab325204f66c9fca63c88b31f244" category="section-title">升級代理程式</block>
   <block id="d6d45cdaacc8f0955983f7639a303c90" category="paragraph">當有新版本的代理程式 / 收集器可供使用時、將會傳送電子郵件通知。</block>
   <block id="e1484285201e25aff4afdd10c3789c4e" category="list-text">下載最新的代理程式安裝程式。</block>
@@ -13258,17 +13234,14 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="84409f99ba6f01bcc3c8c3cfe5f4edab" category="list-text">確保目錄「收集器」歸 cssys ： cssys 所有。</block>
   <block id="30cb8ff7690cb51e2ba4a45fa1fec47b" category="list-text">在 swagger 中、瀏覽至「 cloudsecure_config.coller-Types 」 Get API 。在「 collectorCategory 」（ collectorCategory ）下拉式清單中、選取「 data 」（資料）（針對使用者目錄收集器選取「 user 」（使用者）或「 all 」（全部）））。</block>
   <block id="b63f1156c2b0b306d2c21686c4671290" category="paragraph">從回應本文複製 UUID 和版本。</block>
-  <block id="be2931485319fe61c020322a40893d98" category="paragraph"><block ref="be2931485319fe61c020322a40893d98" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26f085ec96f326a83a2cd1c9a101547a" category="list-text">下載最新的收集器安裝程式檔案。</block>
   <block id="38836b79dd635a5e513204082f0d059b" category="list-text">瀏覽至「 cloudsecure_installer.collector 」 &gt; 「 /v1/cloudsecure/collector-types/installer/{collectorTypeUUID} 」 API 。輸入從上一步複製的「 collectorTypeUUID 」。將安裝程式下載至「 /tmp/cers 」目錄。</block>
   <block id="4aca3370873bcc20704038a3b449349c" category="list-text">或者、也可以使用相同 API 的 Curl 命令。</block>
-  <block id="942215776ab4c9b3ecd9304dcbd6b397" category="paragraph"><block ref="942215776ab4c9b3ecd9304dcbd6b397" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87aac0bd54f48e3ea018cdbf4c49240f" category="paragraph">注意：檔案名稱應與下載收集器 API 的回應標頭相同。</block>
   <block id="1e161bf723a8e1aeb010097d8893525c" category="list-text">觸發升級收集器 API 。</block>
   <block id="4e8e4b67b8a4e686cd0697d1631ba57f" category="list-text">在 swagger 中、瀏覽至「 cloudsecure_installer.collector 」 &gt; 「 /v1/cloudsecure/collector types/upgrade 」（ Put ） API 。</block>
   <block id="c702d61016e786540c3423a56068d5fa" category="list-text">在「範例」下拉式清單中、選取「 ONTAP SVM 資料收集器升級 json 範例」以填入範例有效負載。</block>
   <block id="1658e77190c6002b3789ca2dd5bbdc65" category="list-text">以從步驟 3 複製的版本取代版本、然後按一下「執行」。</block>
-  <block id="8815603aed46dcf87c07c5d729099d74" category="paragraph"><block ref="8815603aed46dcf87c07c5d729099d74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ac934065e06072ceec86257a2f72087d" category="paragraph">等待幾秒鐘、收集器將會自動升級。</block>
   <block id="59e00ac512bd959d2a3ded4209823e6f" category="list-text">健全度檢查。</block>
   <block id="eac5a780e5ba342d31bf3d406ab502ca" category="paragraph">收集器應在 UI 中處於執行中狀態。</block>
@@ -13278,7 +13251,6 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="9d72500e8a5c053eafcdfe4056754eb8" category="section-title">Commons 問題與修正。</block>
   <block id="b69ea6725a0b6525e6cf544da1adc773" category="list-text">AGENT014 錯誤。</block>
   <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">如果收集器安裝程式檔案未出現在「 /tmp/collector 」目錄中、或無法存取、就會發生此錯誤。確定已下載安裝程式檔案、目錄「收集器」和安裝程式 zip 檔案歸 cssys ： cssys 所有、然後重新啟動代理程式服務–「 systemctl restart cloudsecure-agent.service” 」</block>
-  <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. 未獲授權的錯誤</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">如果產生 API 存取權杖而不選取所有必要的 API 類別、就會顯示此錯誤。選取所有必要的 API 類別、以產生新的 API 存取權杖。</block>
   <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">透過 API 擷取鑑識資料的範例指令碼位於： //opt/NetApp/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
@@ -13301,4 +13273,61 @@ AAA/BBB/CCC/ *
   <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會再次啟用。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">選取 SVM 模式時、 Data Collector 會發生錯誤。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">以 SVM 模式連線時、如果使用叢集管理 IP 來連線、而非 SVM 管理 IP 、則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
+  <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手動安裝 API</block>
+  <block id="3cb349981b0c3fbdfec63bb8939d7d04" category="paragraph"><block ref="3cb349981b0c3fbdfec63bb8939d7d04" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b0b610b8724eb077521c5c13157458a" category="inline-image-macro">建立並儲存 API 權杖</block>
+  <block id="6b38552c80002012b2adb89043ad684a" category="paragraph"><block ref="6b38552c80002012b2adb89043ad684a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47968eb432dc036db74ba1312831f397" category="inline-image-macro">確認建立權杖</block>
+  <block id="76deec689143c4fdb480f503fe99d442" category="paragraph"><block ref="76deec689143c4fdb480f503fe99d442" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b21104b7f80fb6bbb2790885a3b7b6e" category="inline-image-macro">適用於工作負載安全性的 swagger 文件</block>
+  <block id="1ed503708ee75a227c1e0f762072a172" category="paragraph"><block ref="1ed503708ee75a227c1e0f762072a172" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a288614dc1d54280bfe6576ce6e1098" category="inline-image-macro">授權 API</block>
+  <block id="8adece6726c022d40aa95b10a8cd0ad5" category="paragraph"><block ref="8adece6726c022d40aa95b10a8cd0ad5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a90da8f751fe0ca744f630f08729b894" category="inline-image-macro">代理程式安裝程式 API 的 Swagger - top</block>
+  <block id="2bb2f34de3ff5a70b1b3e5e18eea8642" category="inline-image-macro">代理程式安裝程式 API 的 swagger - 回應</block>
+  <block id="4c11b484666827702b88be2a69517ef6" category="paragraph"><block ref="ae471bdc9fa554de4996f11b46cbded9" category="inline-image-macro-rx" type="image"></block>
+<block ref="0c70644a9b526d85a099629fa869fe4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a8ef4302ed4ab3948634312b8b9832e" category="inline-image-macro">透過 API - Swagger 選擇最新的代理程式</block>
+  <block id="7c46be8c7ba1e8c21cc05acf0a0cad1f" category="paragraph"><block ref="7c46be8c7ba1e8c21cc05acf0a0cad1f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cee66c20846361a7fc962e88e9e5768c" category="inline-image-macro">顯示連線代理程式的 UI</block>
+  <block id="315f589f96e307775f7324ab49a54c06" category="paragraph"><block ref="315f589f96e307775f7324ab49a54c06" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbeaa359ee333083a2179745bb2e6358" category="inline-image-macro">收集器 API 回應顯示 UUID</block>
+  <block id="524be844becec351b37b6af5ac100760" category="paragraph"><block ref="524be844becec351b37b6af5ac100760" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="58210a3367e2b67875991e5b52c1c1b3" category="inline-image-macro">以 UUID 下載收集器的 API</block>
+  <block id="77cc9fd7ee910c50aad73ab2803c0802" category="paragraph"><block ref="77cc9fd7ee910c50aad73ab2803c0802" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f97ed5d4ec9a9f6892a5bd58c8d7f8d1" category="inline-image-macro">顯示模糊權杖的 Curl 命令範例</block>
+  <block id="56c50c17d4584aa507435906081eea90" category="paragraph"><block ref="56c50c17d4584aa507435906081eea90" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="02c48cf7017cbf985634f5b7ea8632ba" category="inline-image-macro">要新增收集器的 API</block>
+  <block id="de2b19ee2287f2612878060c87ee2e69" category="paragraph"><block ref="de2b19ee2287f2612878060c87ee2e69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94d2a0ff1886282d7a22d96e6a125118" category="inline-image-macro">顯示收集器的 UI 清單頁面</block>
+  <block id="865fce37c12842e5291be9b402a14d00" category="paragraph"><block ref="865fce37c12842e5291be9b402a14d00" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b518bff2e7ab7b786e29222cf1481019" category="inline-image-macro">取得所有收集器的 API</block>
+  <block id="e9218de6b059dbe3d0a4b2254272060b" category="paragraph"><block ref="e9218de6b059dbe3d0a4b2254272060b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="64b7e0b2c44effc1f95d5d234d97115e" category="inline-image-macro">顯示 LDAP 收集器 UUID 的 API 回應</block>
+  <block id="4d86ae17564f5e192a9f10e1696cafc6" category="paragraph"><block ref="4d86ae17564f5e192a9f10e1696cafc6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f3406bb8f978777c1724d6e8ca96adf4" category="inline-image-macro">下載收集器的 API 和 repoonse</block>
+  <block id="91601075b46dcf50d3b1909d0a4bbceb" category="paragraph"><block ref="91601075b46dcf50d3b1909d0a4bbceb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1408f74b7a92dffe6114bf5f799f0f8a" category="inline-image-macro">Curl 命令 API</block>
+  <block id="d37182c813875a19f3816d91aff11fbb" category="paragraph">+
+<block ref="1eecc7532bc0ff49c5414691e450bb66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b01eb85bee8dd2ac8125b4e646707f45" category="inline-image-macro">新增使用者目錄收集器</block>
+  <block id="1c4b72f32b1ec160176f3d57f7519993" category="paragraph"><block ref="1c4b72f32b1ec160176f3d57f7519993" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="29c5aece735f28f4fe582851e174f98a" category="inline-image-macro">用於選擇 LDAP 使用者的 UI 視窗</block>
+  <block id="ef4dc8163d2f0525c32fe9d4d8568e34" category="paragraph"><block ref="ef4dc8163d2f0525c32fe9d4d8568e34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7138e06d350a6ac3024a0be6b832038e" category="inline-image-macro">顯示 LDAP 使用者詳細資料的 UI</block>
+  <block id="e395013e4e274cc2911f786ff10b3457" category="paragraph"><block ref="e395013e4e274cc2911f786ff10b3457" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a721b8d54227b40387265009bce8ac5" category="inline-image-macro">用於 LDAP 收集器的 API</block>
+  <block id="44cc9d4d8a3072c6876182e3770762e8" category="paragraph"><block ref="44cc9d4d8a3072c6876182e3770762e8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="858de91a4a0357f5c26e926d81f7d16b" category="inline-image-macro">UI 中的 LDAP 收集器清單</block>
+  <block id="2ce75611ffb804f2d833aa78611b9079" category="paragraph"><block ref="2ce75611ffb804f2d833aa78611b9079" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="611350f05043edcec5efed76ce14a9d0" category="inline-image-macro">顯示連線代理程式的 UI</block>
+  <block id="73c28ff5675693eddcb79999e10da4d0" category="paragraph"><block ref="73c28ff5675693eddcb79999e10da4d0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bdb4d7354cc8a41b106b9c9d369890b9" category="inline-image-macro">顯示收集器 UUID 和版本的 API 回應已反白顯示</block>
+  <block id="983e33a17fd037d75d7911eb30c9e4dd" category="paragraph"><block ref="983e33a17fd037d75d7911eb30c9e4dd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fb627a04ed10e35b8c6fd5fdca19b796" category="inline-image-macro">Curl 命令範例</block>
+  <block id="bc8d31643a32bf3e4e8aa0ce44aece11" category="paragraph"><block ref="bc8d31643a32bf3e4e8aa0ce44aece11" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28cac232142e7c46b6b9f25d2ac0699e" category="inline-image-macro">Swagger UI 中的 SVM 升級範例</block>
+  <block id="4f46e6105a9637d03f131c48ff2dbcc3" category="paragraph"><block ref="4f46e6105a9637d03f131c48ff2dbcc3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8490c9089d989bf468613ea9b946f89" category="inline-image-macro">UI 畫面顯示「 Agent 014 」錯誤暫留提示</block>
+  <block id="275f1fc2756027a2e9293774dfb2629e" category="paragraph"><block ref="275f1fc2756027a2e9293774dfb2629e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
