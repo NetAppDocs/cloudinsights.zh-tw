@@ -38,6 +38,7 @@ summary: 新增工作負載安全資料收集器
 * SVM有多種子類型。其中僅支援_default_、_sync來源_和_sync目的地_。
 * 代理程式 link:task_cs_add_agent.html["必須設定"] 然後再設定資料收集器。
 * 請確定您已正確設定使用者目錄連接器、否則事件會在「活動鑑識」頁面中顯示編碼的使用者名稱、而非使用者的實際名稱（儲存在Active Directory中）。
+* • ONTAP Persistent Store 可從 9.15.1 獲得支援。
 * 為獲得最佳效能、您應將FPolicy伺服器設定為與儲存系統位於同一子網路上。
 
 
@@ -297,6 +298,8 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 * 在代理程式或收集器升級、代理程式 VM 重新啟動 / 重新開機、或代理程式服務重新啟動時、暫停的收集器會保持在 _Paused 狀態。
 * 如果資料收集器處於 _ 錯誤 _ 狀態、則無法將收集器變更為 _ 已暫停 _ 狀態。只有在收集器的狀態為 _Running 時、才會啟用「暫停」按鈕。
 * 如果代理程式中斷連線、則無法將收集器變更為 _ 已暫停 _ 狀態。收集器將進入 _Stopped_ 狀態、並停用暫停按鈕。
+* 無法刪除暫停的資料收集器。
+* 暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會再次啟用。
 
 
 
@@ -398,5 +401,8 @@ g ）在 ONTAP 中開啟防火牆、讓 ONTAP 能夠連線到代理程式方塊�
 如果超過20個、請增加代理機器的CPU和RAM容量。
 CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀態。
 請參閱上的規模調整指南 link:concept_cs_event_rate_checker.html["本頁"]。 
+
+
+| 選取 SVM 模式時、 Data Collector 會發生錯誤。 | 以 SVM 模式連線時、如果使用叢集管理 IP 來連線、而非 SVM 管理 IP 、則連線將會錯誤。請確定使用正確的 SVM IP 。 
 |===
 如果您仍遇到問題、請聯絡*「說明」>「支援*」頁面中提及的支援連結。

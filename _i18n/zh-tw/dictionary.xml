@@ -13281,4 +13281,24 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. 未獲授權的錯誤</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">如果產生 API 存取權杖而不選取所有必要的 API 類別、就會顯示此錯誤。選取所有必要的 API 類別、以產生新的 API 存取權杖。</block>
+  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">透過 API 擷取鑑識資料的範例指令碼位於： //opt/NetApp/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
+  <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">取證使用者介面使用 _path_ 篩選器時、資料載入速度緩慢。</block>
+  <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">如果路徑為 __/aaa/BBB/CCC/DDD_ 、則不需搜尋：
+
+AAA/BBB/CCI*
+
+或
+
+AAA/BBB/C*
+
+嘗試搜尋：
+
+AAA/BBB/CCC/ *
+
+此搜尋應可加快資料載入速度。</block>
+  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">• ONTAP Persistent Store 可從 9.15.1 獲得支援。</block>
+  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">無法刪除暫停的資料收集器。</block>
+  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會再次啟用。</block>
+  <block id="f4635255d83c947a8f5c0873878fce73" category="cell">選取 SVM 模式時、 Data Collector 會發生錯誤。</block>
+  <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">以 SVM 模式連線時、如果使用叢集管理 IP 來連線、而非 SVM 管理 IP 、則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
 </blocks>
