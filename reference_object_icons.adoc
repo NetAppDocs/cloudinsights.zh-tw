@@ -5,36 +5,10 @@ summary: 物件圖示參考。Cloud Insights
 keywords: icons, assets, objects, reference, map 
 ---
 = 物件圖示參考
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-物件圖示的快速參考Cloud Insights 資料。
+Cloud Insights 中使用的物件圖示。
 
-
-
-== 基礎架構圖示：
-
-image:Icon_Glossary.png["基礎架構圖示參考"]
-
-
-
-== Kubernetes 圖示：
-
-image:K8sIconsWithLabels.png["Kubernetes 圖示參考、寬度 = 180"]
-
-
-
-== Kubernetes 網路效能監控與地圖圖示：
-
-image:ServiceMap_Icons.png["Kubernetes 網路效能監控與地圖、寬度 =640"]
+image:Icons_2024.png["「影像顯示 Cloud Insights 中使用的所有物件圖示、群組在儲存、網路、運算和整合（包括 Kubernetes ）及其他項目下」"]

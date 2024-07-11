@@ -5619,7 +5619,6 @@
   <block id="2d701fb03765a16a337855076299c890" category="cell">這很可能是因為Active Directory的屬性對應問題所致。1.編輯從Active Directory擷取使用者資訊的特定Active Directory收集器。2.注意在選用屬性下、會有一個欄位名稱「電話號碼」對應至Active Directory屬性「電話號碼」。4.現在、請依照上述說明使用Active Directory Explorer工具來瀏覽Active Directory、並查看正確的屬性名稱。3.確定Active Directory中有一個名為「電話號碼」的屬性、其中確實有使用者的電話號碼。5、讓我們在Active Directory中說、它已改為「電話網路電話」。6.然後編輯CloudSecure User Directory收集器。在選用屬性區段中、將「電話號碼」取代為「電話號碼」。7.儲存Active Directory收集器、收集器將重新啟動、取得使用者的電話號碼、並在使用者設定檔頁面中顯示相同的號碼。</block>
   <block id="8b91cb352f837187391eccc1bbd95135" category="summary">物件圖示參考。Cloud Insights</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">物件圖示參考</block>
-  <block id="9c760c96232338b3451e1d7fde6ce957" category="paragraph">物件圖示的快速參考Cloud Insights 資料。</block>
   <block id="b6867104f109b9761bb4fdcefc9edf5a" category="summary">設定Microsoft Hyper-V資料收集器。</block>
   <block id="28c1db509b1fc8c0d107a05488d8a089" category="doc">Microsoft Hyper-V資料收集器</block>
   <block id="a1b54670019f9b3f58a4114b79324145" category="paragraph">從Microsoft Hyper-V（WMI）取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
@@ -9778,15 +9777,6 @@
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">監控話務員選項</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
-  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基礎架構圖示：</block>
-  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">基礎架構圖示參考</block>
-  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetes 圖示：</block>
-  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetes 圖示參考、寬度 = 180</block>
-  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetes 網路效能監控與地圖圖示：</block>
-  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes 網路效能監控與地圖、寬度 =640</block>
-  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU</block>
@@ -13330,4 +13320,16 @@ AAA/BBB/CCC/ *
   <block id="4f46e6105a9637d03f131c48ff2dbcc3" category="paragraph"><block ref="4f46e6105a9637d03f131c48ff2dbcc3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8490c9089d989bf468613ea9b946f89" category="inline-image-macro">UI 畫面顯示「 Agent 014 」錯誤暫留提示</block>
   <block id="275f1fc2756027a2e9293774dfb2629e" category="paragraph"><block ref="275f1fc2756027a2e9293774dfb2629e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f66bc2df80ac37f354b591907be92e18" category="section-title">2024 年 7 月</block>
+  <block id="c95d60ebb4d51c931dcb044c429e5471" category="section-title">更輕鬆的儀表板導覽</block>
+  <block id="0bff35c7b383b6acafd81522392282b8" category="paragraph">這項功能的重點在於簡化營運工作流程、讓團隊之間的協同作業變得更輕鬆。</block>
+  <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">將儀表板分組可讓您更輕鬆地快速取得所需的可見度、現在有了新的導覽功能表、您可以在不同的儀表板之間切換、而不會失去位置、讓您輕鬆探索及管理基礎架構。將儀表板群組與您的作業執行手冊對齊、以進一步提升您的體驗。</block>
+  <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">下拉式清單可選取與目前儀表板位於相同群組中的另一個儀表板</block>
+  <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">全新物件圖示</block>
+  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insights 現在已有更新的物件圖示影像、可減少各種 Cloud Insights 頁面上使用的圖示整體差異、並將類似物件分組在一起（例如、與 Volume 相關的物件）。先前的「以字母為基礎」圖示會取代為以影像為基礎的圖形、讓 Cloud Insights 畫面更容易使用且更容易存取。</block>
+  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">不確定圖示的意義為何？下表（也可在頁面上找 <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> 到）說明所有內容。</block>
+  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">「影像顯示 Cloud Insights 中使用的所有物件圖示、群組在儲存、網路、運算和整合（包括 Kubernetes ）及其他項目下」</block>
+  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insights 中使用的物件圖示。</block>
 </blocks>
