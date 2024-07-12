@@ -32,16 +32,6 @@ NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業�
 
 image:Dashboard_Nav_Group_Dropdown.png["下拉式清單可選取與目前儀表板位於相同群組中的另一個儀表板"]
 
-
-
-=== 全新物件圖示
-
-Cloud Insights 現在已有更新的物件圖示影像、可減少各種 Cloud Insights 頁面上使用的圖示整體差異、並將類似物件分組在一起（例如、與 Volume 相關的物件）。先前的「以字母為基礎」圖示會取代為以影像為基礎的圖形、讓 Cloud Insights 畫面更容易使用且更容易存取。
-
-不確定圖示的意義為何？下表（也可在頁面上找 link:reference_object_icons.html["物件圖示參考"] 到）說明所有內容。
-
-image:Icons_2024.png["「影像顯示 Cloud Insights 中使用的所有物件圖示、群組在儲存、網路、運算和整合（包括 Kubernetes ）及其他項目下」"]
-
 '''
 
 

@@ -787,15 +787,11 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">關於本產品的注意事項Cloud Insights</block>
@@ -944,8 +940,6 @@
   <block id="4125a58e803edf0640246188fee28f26" category="list-text">按一下「*儲存*」</block>
   <block id="216cccf9a11330381ead4d645bc105a9" category="section-title">建立註釋規則、將特定Aggregate排除在I/O密度報告之外、予以自動化</block>
   <block id="e4731b310642ca51f9042d77c31a36cc" category="paragraph">您可以使用註釋規則、自動將註釋套用至多個資產、作為手動套用註釋至個別資產的替代方法。附註規則是根據您建立的查詢而定、當在系統上執行時、會將新資產新增至現有的資產集。當這些資產集合從報告中排除時、新資產也會自動排除在外。</block>
-  <block id="066dd3116632d178996fcf4d32b30c70" category="paragraph">您必須建立並儲存查詢、以識別您在環境中識別的NetApp根集合體。。步驟。在「功能表」工具列中、按一下Cloud Insights 「*管理&gt;註釋規則*」。按一下「*新增*」</block>
-  <block id="5a4064cefa68bcf6be0e69870c969e3d" category="paragraph">+「新增規則」對話方塊會顯示：...在名稱方塊中、輸入描述規則的唯一名稱：*「RootAggrExclude*」。按一下查詢、然後選取Insight應使用的查詢、將註釋規則套用至：*「Aggregate0*」。按一下註釋、然後選取：*「root agg exclude」*。按一下*值*並輸入*真*</block>
   <block id="daf1b6038bea0692e127e11dca72bdcd" category="summary">設定NetApp SolidFire 資料收集器</block>
   <block id="59c335089218173f80a306dc106da043" category="doc">NetApp SolidFire 《全快閃陣列資料收集器》（All Flash Array Data Collector）</block>
   <block id="97adfb44d0b1a277090c2c39034d1cc3" category="paragraph">NetApp SolidFire 推出的「全快閃全快閃陣列資料收集器」可同時支援從iSCSI SolidFire 和Fibre Channel之間收集庫存與效能。</block>
@@ -2320,7 +2314,6 @@
   <block id="ac2ddb56e922acac513828fc77bc85f6" category="cell">「組態錯誤」、並顯示錯誤訊息「停用REST服務」</block>
   <block id="8c2e7ed091a4f8575b17f8af2bb59449" category="cell">確認此裝置已啟用REST服務。</block>
   <block id="8bf875173a6afe9bba37e4713c91c421" category="cell">「組態錯誤」、並顯示錯誤訊息「使用者未獲授權執行命令」</block>
-  <block id="be63a0599db0a9d29e7d2b328c74dc03" category="cell">可能是因為某些角色（例如「進階分析」）並未包含在已設定使用者的&lt;使用者名稱&gt;中。可能的解決方案：*使用唯讀角色修正使用者$｛user｝的分析（統計）範圍：-從「組態」-&gt;「使用者」畫面、將滑鼠移到角色上、然後按兩下以允許編輯-從「範圍」下拉式功能表中選取「分析」。可能的內容清單隨即出現。-按一下「最上層」核取方塊、即可選取所有三個屬性。按一下右側的「Add（新增）」按鈕。-按一下快顯視窗右上角的「Apply（套用）」按鈕。快顯視窗隨即關閉。</block>
   <block id="3dc395f34d5747fa5d58e08302ab67fd" category="summary">Nginx資料收集器組態</block>
   <block id="21a6c8824057335f8e9dc232584c6ea0" category="doc">Nginx資料收集器</block>
   <block id="a04ac927bc32d4712f954795733890da" category="paragraph">此資料收集器可用來收集來自於Ngin像 的數據。Cloud Insights</block>
@@ -9426,8 +9419,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 聯邦版不提供儲存工作負載安全功能。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">根據預設、許多系統監視器都處於 _ 暫停 _ 狀態。您可以選取監視器的 _Resum_( 恢復 ) 選項來啟用系統監視器。確保在資料收集器中啟用 _Advanced Counter 資料收集 _ 和啟用 ONTAP EMS 記錄收集 _ 。這些選項可在ONTAP 「_Advanced Configuration」（_進階組態_）下的「The SUREData Collector」中找到：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以按一下「活動記錄」表格上方的「_Export」（匯出）按鈕、將活動記錄匯出至.CSV檔案。請注意、只會匯出前 100 、 000 筆記錄。視資料量而定、匯出作業可能需要幾秒鐘到幾分鐘的時間才能完成。</block>
   <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">您要求我們在安裝 Windows 和 Linux 的代理程式時、提供檢查值、我們認為這是個好主意。以下是：</block>
   <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。</block>
@@ -13326,10 +13317,24 @@ AAA/BBB/CCC/ *
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">將儀表板分組可讓您更輕鬆地快速取得所需的可見度、現在有了新的導覽功能表、您可以在不同的儀表板之間切換、而不會失去位置、讓您輕鬆探索及管理基礎架構。將儀表板群組與您的作業執行手冊對齊、以進一步提升您的體驗。</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">下拉式清單可選取與目前儀表板位於相同群組中的另一個儀表板</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">全新物件圖示</block>
-  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insights 現在已有更新的物件圖示影像、可減少各種 Cloud Insights 頁面上使用的圖示整體差異、並將類似物件分組在一起（例如、與 Volume 相關的物件）。先前的「以字母為基礎」圖示會取代為以影像為基礎的圖形、讓 Cloud Insights 畫面更容易使用且更容易存取。</block>
-  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">不確定圖示的意義為何？下表（也可在頁面上找 <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> 到）說明所有內容。</block>
-  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">「影像顯示 Cloud Insights 中使用的所有物件圖示、群組在儲存、網路、運算和整合（包括 Kubernetes ）及其他項目下」</block>
-  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insights 中使用的物件圖示。</block>
+  <block id="f1d16f360380bc347a5a9e8768937aa7" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block></block>
+  <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基礎架構圖示：</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">基礎架構圖示參考</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetes 圖示：</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetes 圖示參考、寬度 = 180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubernetes 網路效能監控與地圖圖示：</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes 網路效能監控與地圖、寬度 =640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f206f600866607637821c713ae2b63cc" category="cell">此錯誤可能是因為某些角色（例如、「 advanced_Analytics 」）未包含在設定的使用者中。為具有唯讀角色的使用者套用分析範圍可能會移除錯誤。請遵循下列步驟：1.在 ZFS 系統上、從「組態」 -&gt; 「使用者」畫面、將滑鼠移到角色上、然後按兩下以允許編輯 2.從範圍下拉式功能表中選取「分析」。可能的內容清單隨即出現。3.按一下最上方的核取方塊、它會選取所有三個屬性。4.按一下右側的「新增」按鈕。5.按一下快顯視窗右上角的「Apply（套用）」按鈕。快顯視窗隨即關閉。</block>
+  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">您必須建立並儲存查詢、以識別您在環境中識別的NetApp根集合體。</block>
+  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">在 Cloud Insights 工具列中、按一下 * 管理 &gt; 註釋規則 * 。</block>
+  <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">按一下「 * 新增 * 」。此時將顯示 Add Rule （添加規則）對話框。</block>
+  <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">在 [ 名稱 ] 方塊中，輸入描述規則的唯一名稱： * "RootAggrExclude" *</block>
+  <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">按一下查詢、然後選取 Insight 應用來將附註規則套用至： * 「 Aggregate0 」 * 的查詢</block>
+  <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">按一下「註釋」、然後選取： * 「根 Agg exclae" *</block>
+  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">按一下*值*並輸入*真*</block>
 </blocks>
