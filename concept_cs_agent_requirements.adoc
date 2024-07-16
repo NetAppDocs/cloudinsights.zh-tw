@@ -29,16 +29,7 @@ NOTE: Cloud Insights 聯邦版不提供儲存工作負載安全功能。
 | 元件 | Linux需求 
 
 
-| 作業系統 | 執行下列其中一項授權版本的電腦：
-
-Red Hat Enterprise Linux 7.x 、 8.x 64 位元、 SELinux
-CentOS 7.x 64 位元、 SELinux
-CentOS 8 Stream 、 SELinux
-Ubuntu 20 至 22 64 位元
-Rocky 8.x 64 位元、 Rocky 9.x 64 位元、 SELinux
-SUSE Linux Enterprise Server 15 SP3 、 SUSE Linux Enterprise Server 15 SP4 、 SUSE 15 SP3 上的 SELinux
-
-此電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。 
+| 作業系統 | 執行下列其中一項授權版本的電腦： * CentOS 8 Stream （ 64 位元）、 SELinux * openSUSE Leap 15.3 至 15.5 （ 64 位元） * Oracle Linux 8.6 - 8.8 、 9.1 至 9.2 （ 64 位元） * Red Hat Enterprise Linux 8.6 至 8.8 、 9.1 至 9.2 （ 64 位元）、 SELinux * Rocky 9.2 （ 64 位元）、 SELinux * SUSE Linux Enterprise Server 15 SP3 到 15 SP3 （ 64 位元） * Ubuntu 20.04 LTS 和 22.04 LTS （ 64 位元）這部電腦不應執行其他應用程式層級的軟體。建議使用專屬伺服器。 
 
 
 | 命令 | 安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。 
