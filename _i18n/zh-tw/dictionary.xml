@@ -13350,4 +13350,7 @@ AAA/BBB/CCC/ *
   <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">必須以字母或底線開頭（_）。</block>
   <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">它只能包含字母、數字和底線。</block>
   <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">可以少於250個字元。在大多數情況下、Agggr0、aggr_0或類似名稱。可能需要迭代程序來識別環境中的所有NetApp根集合體。</block>
+  <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBlade 資料收集器</block>
+  <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insights 使用 Pure Storage FlashBlade 資料收集器來收集庫存和效能資料。</block>
+  <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBlade 主機 IP 位址</block>
 </blocks>
