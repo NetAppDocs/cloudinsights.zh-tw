@@ -2410,7 +2410,6 @@
   <block id="aca759ec023e2e4c6156b1c2ced1b16b" category="summary">新增資料收集器</block>
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">設定ONTAP SVM Data Collector</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">下列項目支援此資料收集器：</block>
-  <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS傳輸協定4.0版及更早版本</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">支援從支援的更新版本為支援FlexGroup ONTAP</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">僅支援資料類型SVM。不支援具有無限磁碟區的SVM。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">必須設定</block>
@@ -7156,21 +7155,17 @@
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">在登錄過程中、您可以選擇全球區域來裝載Cloud Insights 您的支援環境。如需詳細資訊、請參閱Cloud Insights 關於資訊 <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>。</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">資料保留</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">掛鎖</block>
-  <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">使用Cloud Insights 時、如果看到掛鎖圖示 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>、表示您目前的版本無法使用此功能、或是以有限形式提供。升級以完整存取此功能。</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">*產品支援*</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> 選項：</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">如果您需要更多時間來評估Cloud Insights VMware、而且您的試用期設定為4天或更短、您可以將試用期延長30天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的試用期已到期、該怎麼辦？</block>
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">如果您的免費試用期已過期、但尚未訂閱Cloud Insights 、則在您訂閱之前、您的功能將受限。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">訂購選項</block>
-  <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定價</block>
-  <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">根據*管理單元*定價。Cloud Insights管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi內容平台</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleverafe</block>
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">以下</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> 以取得更多詳細資料。</block>
-  <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">預估您的訂閱成本</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">如何訂閱？</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">透過NetApp銷售直接訂閱</block>
   <block id="e3b70cffc25d522a4137f9cafd0f3c50" category="paragraph">如果您預期的託管單元數為1、000或更高、請按一下 <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> 按鈕、透過NetApp銷售團隊訂閱。</block>
@@ -7196,10 +7191,6 @@
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100%*</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接訂閱並跳過試用版</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
-  <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">新增權益ID</block>
-  <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">若要新增權利ID至Cloud Insights 您的訂閱、請在*管理&gt;訂閱*頁面上、按一下_+權利ID _。</block>
-  <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">新增權利ID至您的訂閱</block>
-  <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7136d23b0fd79f1bfd83b357b92d160" category="summary">修改或刪除查詢</block>
   <block id="e7c09d456b9277f7cac0ab083d8e5272" category="doc">修改或刪除查詢</block>
   <block id="5943bffb29d3b91de57cf4e3be5f6a9d" category="section-title">修改查詢</block>
@@ -7861,7 +7852,6 @@
   <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基礎架置</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">設定Proxy支援</block>
-  <block id="860cea525f63406af55925d01de59c97" category="paragraph">如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您已購買NetApp Astra Control Center、則Astra Control Center授權序號可用於識別Cloud Insights 在《》中的訂閱內容。此為_權利ID _。Cloud Insights</block>
   <block id="5c42bfffed923b7136ae5aee981826dd" category="list-text">選取*儀表板&gt;儀表板*</block>
   <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有「系統管理員」或「帳戶擁有者」角色的使用者可以從儀表板庫匯入。</block>
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全性最佳實務做法</block>
@@ -9671,26 +9661,16 @@
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以在特定裝置或所有裝置上設定原則。若要設定回應原則、請選取 * 管理 &gt; 自動回應原則 * 、然後按一下適當的 *+Policy* 按鈕。您可以建立攻擊或警告的原則。</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">*訂閱Cloud Insights *不中斷地透過存取您的資料 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接或 <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
-  <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insights 定價</block>
   <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">如需 Cloud Insights Basic 與 Premium 版本所提供功能的完整比較、請參閱 <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">試用版</block>
   <block id="011273891e0a49f42abc1a209e58868a" category="paragraph">當您的免費試用即將結束時、系統會顯示橫幅Cloud Insights該橫幅中有一個 _View Subscription_ 連結、可開啟 * 管理 -&gt; Subscription* 頁面。非管理員使用者會看到橫幅、但無法前往「訂閱」頁面。</block>
-  <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> （MU）。</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplace免費試用版無法延長。您可以在試用期間隨時降級至 Cloud Insights Basic Edition 訂閱、或造訪 * 管理 -&gt; 訂閱 * 頁面、變更為付費 Cloud Insights 訂閱。</block>
-  <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">若要訂閱、請前往 * 管理 -&gt; 訂閱 * 。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。</block>
-  <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">您的預估標價成本將根據訂閱期限而有所變動。
-附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。</block>
-  <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機</block>
-  <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">AWS訂購程序完成後、您將會被帶回Cloud Insights 您的作業系統環境。或者、如果環境不再處於作用中狀態（例如、您已登出）、您將會進入 NetApp BlueXP 登入頁面。當您再次登入Cloud Insights 時、您的訂閱將會啟用。</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">目前版本</block>
   <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">訂閱序號</block>
   <block id="d3d856c02816952b24a5110171a09834" category="paragraph">使用管理索引標籤會顯示受管理單元使用率的概觀、以及依收集器或 Kubernetes 叢集區分受管理單元使用量的索引標籤。</block>
   <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">如果您的使用量接近或超過您訂閱的數量、您可以刪除資料收集器或停止監控 Kubernetes 叢集、以減少使用量。按一下「三點」功能表並選取「刪除」、即可刪除此清單中的項目。</block>
-  <block id="718a66b23c9ea5a577883d447f892296" category="cell">系統會顯示錯誤橫幅、您的功能有限、直到您執行下列其中一項操作為止：
-* 移除資料收集器、讓您的受管理單元使用量等於或低於您的訂閱量
-* 修改您的訂閱以增加訂閱的託管單元數</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">2023 年 6 月</block>
   <block id="291a655a304c4b76742b53402a12bbc9" category="section-title">查看您的使用情況</block>
   <block id="0086a587e865c983a5de9f9b4d992e51" category="paragraph">自 2023 年 6 月起、 Cloud Insights 根據功能集提供受管理單元使用量的明細。現在您可以快速檢視及監控基礎架構的管理單元（ MU ）使用量、以及 Kubernetes 的 MU 使用量。</block>
@@ -9767,8 +9747,6 @@
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在資料保留期間之後進行清除（請參閱版本頁面以取得詳細資料）。請注意、根據定義、監視器沒有解析度條件、因此警示會保持啟用狀態、並以此監視器產生的相符 _group_by__ 來隱藏所有後續警示、直到資料保留期間結束為止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根據記錄項目解決：請依照下列定義中所述、在發現記錄行時解決警示、或在資料保留期間之後清除。</block>
-  <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU</block>
-  <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">訂閱計算機可協助您根據所需的託管單元數量來估計 Cloud Insights 訂閱成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">編輯現有報告</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">請注意、在其預設位置編輯檔案時、這些報告可能會在下次報告目錄重新整理時遭到覆寫。建議您以新名稱儲存已編輯的報告、或將其儲存在非預設位置。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在 Forensics _All Activity_ 或 _Entity_ 頁面的篩選器中輸入一些包含如星號（ * ）等萬用字元的字母後、頁面載入速度會非常緩慢。</block>
@@ -11860,16 +11838,13 @@ v9.2.4.2</block>
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">如果先前已建立安全性內容限制：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
-  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap指標</block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">示範設定指標</block>
   <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">部署指標</block>
-  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入口指標</block>
   <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">命名空間度量</block>
   <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">節點度量</block>
   <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">持續Volume指標</block>
   <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">Pod指標</block>
   <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet度量</block>
-  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">機密數據</block>
   <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">服務指標</block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatefulSet指標</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
@@ -12370,10 +12345,8 @@ Telegraf ：
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">顯示圖表圖示</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">權限ONTAP</block>
-  <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP 存取權限遭拒</block>
   <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">深入瞭解如何設定其他 <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>。</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">更新版本。Data ONTAP為獲得最佳效能、請使用高於 9.13.1 的 Data ONTAP 版本。</block>
-  <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">如需詳細資訊、請參閱 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">如需詳細資訊、請參閱 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST Data Collector</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST 資料收集器</block>
@@ -12452,7 +12425,6 @@ Telegraf ：
   <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">NetApp 叢集的 IP 位址或完整網域名稱。必須是叢集管理 IP/FQDN 。</block>
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">擷取類型為 _admin_ 的虛擬伺服器名稱。您將在後續命令中使用此名稱。</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">我看到 ONTAP ontapi 收集器顯示資料的空白或「 0 」指標。</block>
-  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。  這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">從 Agent 回應至 SVM Data 生命</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">_NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察者 -L4-DS_ 示範必須在叢集中的每個節點上排程一個 Pod 、以便正確收集所有節點上的資料。已將操作員配置爲允許某些已知的 * 污點 * 。如果在節點上配置了任何自定義污點，從而阻止 Pod 在每個節點上運行，則可以爲這些污點創建一個 *公差 * <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果您已將自訂污點套用至叢集中的所有節點、您也必須在操作員部署中新增必要的容錯功能、以便排程及執行操作員 Pod 。</block>
   <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">CI-KRBA-Proxy</block>
@@ -12752,7 +12724,6 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">模組評估</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">您也可以利用 * 模組評估 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進行 Kubernetes 可服務性的 30 天評估。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。</block>
   <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">請記住、評估後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當模組評估結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。</block>
-  <block id="9c420799ef765483eddc7865804e6371" category="admonition">_ 模組評估 _ 並非 _ 試用 _ - 當我們提供客戶免費試用期、以確認是否符合並啟用購買時、我們會使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。</block>
   <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模組評估期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看評估後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">請注意、每次訂閱只能進行一次模組評估。</block>
   <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
@@ -12921,7 +12892,6 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">請務必檢閱的「權限」區段 <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">如果您無法或不願意使用完整的管理員叢集/ SVM管理使用者名稱和密碼、您可以建立具有較低權限的自訂使用者、如中所述 <block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block> 部分。您可以為SVM或叢集存取建立此自訂使用者。</block>
   <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">透過* vserver管理IP*新增權限：</block>
-  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP 自主勒索軟體保護的權限</block>
   <block id="ce2c442b24aec5c08788260869132fdd" category="cell">這很可能是ONTAP 因為位在邊上的網路問題。請遵循下列步驟：
 
 1. 確保 SVM 資料 LIF 或管理 LIF 上沒有防火牆、而這些防火牆會封鎖 SVM 的連線。
@@ -13204,7 +13174,6 @@ root@qualisitionunit# curl -s -H Accept:application/json -H "Content-type: appli
   <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">如果收集器安裝程式檔案未出現在「 /tmp/collector 」目錄中、或無法存取、就會發生此錯誤。確定已下載安裝程式檔案、目錄「收集器」和安裝程式 zip 檔案歸 cssys ： cssys 所有、然後重新啟動代理程式服務–「 systemctl restart cloudsecure-agent.service” 」</block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. 未獲授權的錯誤</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">如果產生 API 存取權杖而不選取所有必要的 API 類別、就會顯示此錯誤。選取所有必要的 API 類別、以產生新的 API 存取權杖。</block>
-  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">透過 API 擷取鑑識資料的範例指令碼位於： //opt/NetApp/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
   <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">取證使用者介面使用 _path_ 篩選器時、資料載入速度緩慢。</block>
   <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">如果路徑為 __/aaa/BBB/CCC/DDD_ 、則不需搜尋：
 
@@ -13221,7 +13190,6 @@ AAA/BBB/CCC/ *
 此搜尋應可加快資料載入速度。</block>
   <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">• ONTAP Persistent Store 可從 9.15.1 獲得支援。</block>
   <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">無法刪除暫停的資料收集器。</block>
-  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會再次啟用。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">選取 SVM 模式時、 Data Collector 會發生錯誤。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">以 SVM 模式連線時、如果使用叢集管理 IP 來連線、而非 SVM 管理 IP 、則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手動安裝 API</block>
@@ -13353,4 +13321,50 @@ AAA/BBB/CCC/ *
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBlade 資料收集器</block>
   <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insights 使用 Pure Storage FlashBlade 資料收集器來收集庫存和效能資料。</block>
   <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBlade 主機 IP 位址</block>
+  <block id="5ba53e5a2add537346e5d283255d419a" category="cell">從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。請注意、您不需要保留 * 所有 * 這些連接埠、但您為此保留的連接埠必須在此範圍內。建議您先保留約 100 個連接埠、必要時增加。</block>
+  <block id="fd6114e047225ac69533d6082b3f731b" category="admonition">如果呼叫鑑識活動 API 、請使用 cloudsecure_forensics 。 * v2* API 。如果您要對此 API 進行多個呼叫、請確定呼叫是依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。</block>
+  <block id="5649187108c4f32ee74dd6b5543c6f73" category="paragraph">使用 Cloud Insights 時、如果您看到掛鎖圖示 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>、表示您目前的訂閱中無法使用此功能、或是以有限的形式提供。訂閱該功能以取得完整存取權。部分功能可在訂閱前提供 <block ref="7f89ca2c071a1700db286ba62f9d3c95" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="09b74e911376515159253ee372fe044b" category="paragraph">您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 <block ref="74100db5c6c154a5b13e17b29feeccc3" category="inline-xref-macro-rx"></block> （ MU ）。</block>
+  <block id="b8af84dbd472dd10145b90235b35bb6b" category="admonition">_ 模組評估 _ 並非 _ 試用 _ - 我們提供客戶免費試用期、 Cloud Insights 以確認是否適合並啟用購買、因此我們使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。</block>
+  <block id="b5ddfc508b0b9510d47c505df23b6a45" category="paragraph">若要訂閱、請前往 * 管理 -&gt; 訂閱 * 。除了 * 訂閱 * 按鈕之外、您還可以查看已安裝的資料收集器、並計算預估的計量。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。</block>
+  <block id="b5c16ff734c99fe07b51b9c660dfc912" category="section-title">可觀察的計量</block>
+  <block id="92cab4ee09c983b6dbf1ec4c00c04076" category="paragraph">Cloud Insights 基礎架構可服務性和 Kubernetes 可服務性是根據 * 受管理單元 * 來計量。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
+  <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU 。</block>
+  <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 受管理單元 K8s 調整 = 2 個節點、或同時受基礎架構監控的主機。</block>
+  <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">工作負載安全性計量</block>
+  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">工作負載安全性是根據所使用的節點是高階、中階或入門級、以下列管理單元（ MU ）計數來計量：</block>
+  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">節點類型：</block>
+  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">範例模型：</block>
+  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">計量時間：</block>
+  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">1 個高階節點</block>
+  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700 、 800 、 900 、 9xxx</block>
+  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80 個託管單元</block>
+  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1 個中階節點</block>
+  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300 、 400 、 500 、 8x00</block>
+  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40 個託管單元</block>
+  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">1 個入門級節點</block>
+  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx 、 2xx 、 2xxx</block>
+  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">20 個託管單元</block>
+  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">1 軟體 ONTAP</block>
+  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO 、 FSX</block>
+  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">10 個託管單元</block>
+  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1 個未知節點</block>
+  <block id="3943920606f23b23925f15408e26cae2" category="paragraph">您可以在 * 工作負載安全性 * 標籤的 * 管理 &gt; 訂閱 * 頁面中檢視工作負載安全性使用情況。</block>
+  <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">'Admin&amp;gt; Subscription &amp;gt; Workload Security 標籤顯示高階、中階和入門級節點數 '</block>
+  <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="019ede2125ee965dbf8adb0346c58f55" category="admonition">現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使用率不會佔用託管單位。Cloud Insights 計量器使用量、確保符合授權使用的法規。</block>
+  <block id="48eb2e3cd501957838ba5a76d243edf2" category="paragraph">除非您執行下列其中一項操作、否則會顯示錯誤橫幅：</block>
+  <block id="eaeeb5a6079506171dcd917d7b71a8a3" category="list-text">移除資料收集器、讓您的受管理單元使用量等於或低於您的訂閱量</block>
+  <block id="92ba817bcf69387f3ad0bdb24161ab8e" category="list-text">修改您的訂閱以增加訂閱的託管單元數</block>
+  <block id="667677d8bd1877e973ea57e00d3810db" category="section-title">工作負載安全性改善</block>
+  <block id="5918f5af03cf64b439fa77e65a5e7850" category="paragraph">* NFS 4.1 支援 *</block>
+  <block id="ccecb67a3f8de46bc8414046f6069d3d" category="paragraph">SVM Data Collector 現在支援 NFS 版本、包括 * NFS 4.1* 。</block>
+  <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">* 新的鑑識活動 API*</block>
+  <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">鑑識活動 <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> 有新版本。當呼叫 API 進行鑑識活動時、請使用 * cloudsecure_forensics 。 Activities 。 _v2_* API 。</block>
+  <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">請注意、如果您要對此 API 進行多次呼叫、為了獲得最佳結果、請確保呼叫會依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。</block>
+  <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">透過 API 擷取鑑識資料的範例指令碼位於： //opt/NetApp/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
+  <block id="e440db99ab8972afb639115c16f2426c" category="list-text">NFS傳輸協定4.1版及更早版本</block>
+  <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP 自主勒索軟體保護和 ONTAP 存取權限遭拒</block>
+  <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">和 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
+  <block id="243b99ee952c73f66e7461d943f01834" category="list-text">暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會重新啟用。</block>
 </blocks>

@@ -24,6 +24,20 @@ NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業�
 
 
 
+=== 工作負載安全性改善
+
+* NFS 4.1 支援 *
+
+SVM Data Collector 現在支援 NFS 版本、包括 * NFS 4.1* 。
+
+* 新的鑑識活動 API*
+
+鑑識活動 link:concept_cs_api.html["API"] 有新版本。當呼叫 API 進行鑑識活動時、請使用 * cloudsecure_forensics 。 Activities 。 _v2_* API 。
+
+請注意、如果您要對此 API 進行多次呼叫、為了獲得最佳結果、請確保呼叫會依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。
+
+
+
 === 更輕鬆的儀表板導覽
 
 這項功能的重點在於簡化營運工作流程、讓團隊之間的協同作業變得更輕鬆。

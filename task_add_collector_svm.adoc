@@ -29,7 +29,7 @@ summary: 新增工作負載安全資料收集器
 +
 ** 更新版本。Data ONTAP為獲得最佳效能、請使用高於 9.13.1 的 Data ONTAP 版本。
 ** SMB傳輸協定3.1版及更早版本。
-** NFS傳輸協定4.0版及更早版本
+** NFS傳輸協定4.1版及更早版本
 ** 支援從支援的更新版本為支援FlexGroup ONTAP
 ** 支援的支援ONTAP Select
 
@@ -147,44 +147,15 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 
 
-=== ONTAP 自主勒索軟體保護的權限
+=== ONTAP 自主勒索軟體保護和 ONTAP 存取權限遭拒
 
 如果您使用叢集管理認證、則不需要新的權限。
 
 如果您使用的自訂使用者（例如、_CsUser_）具有授予使用者的權限、請依照下列步驟授予工作負載安全性權限、以便從ONTAP Sfor收集與Arp相關的資訊。
 
-對於具有叢集認證的_CsUser_、請從ONTAP 下列指令行執行下列動作：
-
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-如需詳細資訊、請參閱 link:concept_cs_integration_with_ontap_arp.html["整合ONTAP 了功能完善的勒索軟體保護功能"]
-
-
-
-=== ONTAP 存取權限遭拒
-
-如果使用叢集管理認證新增 Data Collector 、則不需要新的權限。
-
-如果是使用已授予使用者權限的自訂使用者（例如、 _CsUser_ ）來新增收集器、請依照下列步驟、將必要權限授予工作負載安全性、以便向 ONTAP 註冊存取遭拒事件。
-
-若為具有 _CLERY_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令。請注意、 _csrestrole_ 是自訂角色、而 _csUser_ 是 ONTAP 自訂使用者。
-
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-----
-對於具有 _SVM_ 認證的 CsUser 、請從 ONTAP 命令列執行下列命令：
-
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-----
 如需詳細資訊、請參閱 link:concept_ws_integration_with_ontap_access_denied.html["與 ONTAP 存取整合遭拒"]
+
+和 link:concept_cs_integration_with_ontap_arp.html["整合ONTAP 了功能完善的勒索軟體保護功能"]
 
 
 
@@ -299,7 +270,7 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 * 如果資料收集器處於 _ 錯誤 _ 狀態、則無法將收集器變更為 _ 已暫停 _ 狀態。只有在收集器的狀態為 _Running 時、才會啟用「暫停」按鈕。
 * 如果代理程式中斷連線、則無法將收集器變更為 _ 已暫停 _ 狀態。收集器將進入 _Stopped_ 狀態、並停用暫停按鈕。
 * 無法刪除暫停的資料收集器。
-* 暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會再次啟用。
+* 暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會重新啟用。
 
 
 

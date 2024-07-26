@@ -16,9 +16,6 @@ summary: 工作負載安全性包含功能強大的API、可與其他應用程�
 [role="lead"]
 工作負載安全性API可讓NetApp客戶和獨立軟體廠商（ISV）將工作負載安全性與其他應用程式（例如CMDB或其他票證系統）整合。
 
-
-NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
-
 API存取需求：
 
 * API存取權杖模式用於授予存取權。
@@ -30,6 +27,9 @@ API存取需求：
 == API文件（Swagger）
 
 登入工作負載安全性並瀏覽至*管理> API存取*、即可找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。
+
+
+NOTE: 如果呼叫鑑識活動 API 、請使用 cloudsecure_forensics 。 * v2* API 。如果您要對此 API 進行多個呼叫、請確定呼叫是依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。
 
 
 

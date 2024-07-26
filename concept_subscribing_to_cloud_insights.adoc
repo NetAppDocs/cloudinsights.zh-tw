@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: 在免費試用期間、您可以隨時訂閱Cloud Insights 。 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation, pricing, meter, metering 
 ---
 = 訂閱Cloud Insights 此功能
 :toc: macro
@@ -29,15 +29,12 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 
 在登錄過程中、您可以選擇全球區域來裝載Cloud Insights 您的支援環境。如需詳細資訊、請參閱Cloud Insights 關於資訊 link:security_information_and_region.html["資訊與地區"]。
 
-
-NOTE: 除非另有說明、否則本頁面上的資訊通常適用於 Cloud Insights 商業版。Cloud Insights 聯邦版可能不包含本頁所述的部分功能。
-
 如需 Cloud Insights Basic 與 Premium 版本所提供功能的完整比較、請參閱 link:https://bluexp.netapp.com/cloud-insights-pricing["Cloud Insights 定價"] 頁面。
 
 
 WARNING: 不活動Cloud Insights 的不活動版環境會被刪除、資源也會回收。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。在刪除環境之前、將會傳送通知並提供四天的寬限期。Cloud Insights
 
-使用Cloud Insights 時、如果看到掛鎖圖示 image:padlock.png["掛鎖"]、表示您目前的版本無法使用此功能、或是以有限形式提供。升級以完整存取此功能。
+使用 Cloud Insights 時、如果您看到掛鎖圖示 image:padlock.png["掛鎖"]、表示您目前的訂閱中無法使用此功能、或是以有限的形式提供。訂閱該功能以取得完整存取權。部分功能可在訂閱前提供 <<module-evaluation,模組評估>> 。
 
 
 
@@ -56,7 +53,7 @@ NOTE: 如果您需要更多時間來評估Cloud Insights VMware、而且您的�
 
 === 透過AWS Marketplace試用
 
-您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 天 <<pricing,託管單位>> （MU）。
+您也可以透過AWS Marketplace註冊免費試用。AWS Marketplace 免費試用版可讓您存取 Cloud Insights 、試用期為 33 天、最多允許 499 <<observability-metering,託管單位>> （ MU ）。
 
 附註：如果您設定的MU超過499 MU、您將會進入「違反」狀態。當您的試用處於「外洩」狀態時、您將無法使用Cloud Insights 某些功能、直到資料外洩問題解決為止、無論是減少設定的MU數、或是訂閱Cloud Insights 了「不安全」。
 
@@ -82,7 +79,7 @@ NOTE: 請記住、評估後、您將會被收取新的管理單元（ MU ）使�
 image:Module_Trials_UsageTab.png["MU 使用量畫面"]
 
 
-NOTE: _ 模組評估 _ 並非 _ 試用 _ - 當我們提供客戶免費試用期、以確認是否符合並啟用購買時、我們會使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。
+NOTE: _ 模組評估 _ 並非 _ 試用 _ - 我們提供客戶免費試用期、 Cloud Insights 以確認是否適合並啟用購買、因此我們使用試用期。模組評估不同、這是我們允許付費客戶試用 Cloud Insights 模組、而這些模組在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。
 
 
 
@@ -102,32 +99,58 @@ image:Module_Trials_Estimator.png["評估者"]
 
 == 訂購選項
 
-若要訂閱、請前往 * 管理 -> 訂閱 * 。除了*訂閱*按鈕之外、您還能查看已安裝的資料收集器、並計算預估價格。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。
+若要訂閱、請前往 * 管理 -> 訂閱 * 。除了 * 訂閱 * 按鈕之外、您還可以查看已安裝的資料收集器、並計算預估的計量。對於典型環境、您可以按一下自助式 AWS Marketplace 按鈕。如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格參加Volume Pricing。
 
 
 
-=== 定價
+=== 可觀察的計量
 
-根據*管理單元*定價。Cloud Insights管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。
+Cloud Insights 基礎架構可服務性和 Kubernetes 可服務性是根據 * 受管理單元 * 來計量。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。
 
 * 1個受管理單元= 2個主機（任何虛擬或實體機器）
 * 1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量
 * 1 託管單元 = 40 TiB 的非格式化容量、適用於特定次要儲存設備： AWS S3 、 Cohesity SmartFiles 、 Dell EMC Data Domain 、 Dell EMC ECS 、 Hitachi Content Platform 、 IBM Cleversafe 、 NetApp StorageGRID 、 Rukrik 。
-* 1 個託管單元 = 4 個 Kuberentes vCPU
+* 1 個託管單元 = 4 個 Kuberentes vCPU 。
++
+** 1 受管理單元 K8s 調整 = 2 個節點、或同時受基礎架構監控的主機。
+
+
 
 
 如果您的環境包含或預期包含1、000個以上的託管單位、您就有資格享有* Volume Pricing *、系統將會提示您聯絡NetApp銷售人員以訂閱。請參閱 <<how-do-i-subscribe,以下>> 以取得更多詳細資料。
 
 
 
-=== 預估您的訂閱成本
+=== 工作負載安全性計量
 
-訂閱計算機可協助您根據所需的託管單元數量來估計 Cloud Insights 訂閱成本。目前的值會預先填入、您可以調整這些值、以協助您規劃未來的預估成長。您可以調整基礎架構、 Kubernetes 或兩者的值。
+工作負載安全性是根據所使用的節點是高階、中階或入門級、以下列管理單元（ MU ）計數來計量：
 
-您的預估標價成本將根據訂閱期限而有所變動。
-附註：計算器僅供評估之用。您的確切價格將在訂閱時設定。
+|===
 
-image:Subscription_Cost_Calculators.png["訂閱頁面顯示基礎架構和 Kubernetes 成本估算計算機"]
+
+| 節點類型： | 範例模型： | 計量時間： 
+
+
+| 1 個高階節點 | 700 、 800 、 900 、 9xxx | 80 個託管單元 
+
+
+| 1 個中階節點 | 300 、 400 、 500 、 8x00 | 40 個託管單元 
+
+
+| 1 個入門級節點 | 1xx 、 2xx 、 2xxx | 20 個託管單元 
+
+
+| 1 軟體 ONTAP | CVO 、 FSX | 10 個託管單元 
+
+
+| 1 個未知節點 |  | 80 個託管單元 
+|===
+您可以在 * 工作負載安全性 * 標籤的 * 管理 > 訂閱 * 頁面中檢視工作負載安全性使用情況。
+
+image:ws_metering_example_page.png["'Admin> Subscription > Workload Security 標籤顯示高階、中階和入門級節點數 '"]
+
+
+NOTE: 現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使用率不會佔用託管單位。Cloud Insights 計量器使用量、確保符合授權使用的法規。
 
 
 
@@ -202,34 +225,37 @@ NOTE: 受管理單元的總和可能與摘要區段中的資料收集器數略�
 
 當您的託管設備使用量超過80%、90%及100%的訂購總金額時、系統會顯示警告：
 
+[cols="2*a"]
 |===
-
-
 | *使用量超過：* | *這種情況發生/建議採取的行動：* 
 
 
-| * 80%* | 隨即顯示資訊橫幅。無需採取任何行動。 
+ a| 
+* 80%*
+ a| 
+隨即顯示資訊橫幅。無需採取任何行動。
 
 
-| * 90%* | 隨即顯示警告橫幅。您可能想要增加訂閱的託管單元數。 
+
+ a| 
+* 90%*
+ a| 
+隨即顯示警告橫幅。您可能想要增加訂閱的託管單元數。
 
 
-| * 100%* | 系統會顯示錯誤橫幅、您的功能有限、直到您執行下列其中一項操作為止：
+
+ a| 
+* 100%*
+ a| 
+除非您執行下列其中一項操作、否則會顯示錯誤橫幅：
+
 * 移除資料收集器、讓您的受管理單元使用量等於或低於您的訂閱量
-* 修改您的訂閱以增加訂閱的託管單元數 
+* 修改您的訂閱以增加訂閱的託管單元數
+
+
 |===
 
 
 == 直接訂閱並跳過試用版
 
 您也Cloud Insights 可以直接從訂閱 https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]，而無需先建立試用環境。一旦您的訂閱完成並設定環境、您就會立即訂閱。
-
-
-
-== 新增權益ID
-
-如果您擁有與Cloud Insights NetApp搭售的有效NetApp產品、您可以將該產品序號新增至現有Cloud Insights 的版次訂閱。例如、如果您已購買NetApp Astra Control Center、則Astra Control Center授權序號可用於識別Cloud Insights 在《》中的訂閱內容。此為_權利ID _。Cloud Insights
-
-若要新增權利ID至Cloud Insights 您的訂閱、請在*管理>訂閱*頁面上、按一下_+權利ID _。
-
-image:Subscription_AddEntitlementID.png["新增權利ID至您的訂閱"]
