@@ -13358,7 +13358,6 @@ AAA/BBB/CCC/ *
   <block id="92ba817bcf69387f3ad0bdb24161ab8e" category="list-text">修改您的訂閱以增加訂閱的託管單元數</block>
   <block id="667677d8bd1877e973ea57e00d3810db" category="section-title">工作負載安全性改善</block>
   <block id="5918f5af03cf64b439fa77e65a5e7850" category="paragraph">* NFS 4.1 支援 *</block>
-  <block id="ccecb67a3f8de46bc8414046f6069d3d" category="paragraph">SVM Data Collector 現在支援 NFS 版本、包括 * NFS 4.1* 。</block>
   <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">* 新的鑑識活動 API*</block>
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">鑑識活動 <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> 有新版本。當呼叫 API 進行鑑識活動時、請使用 * cloudsecure_forensics 。 Activities 。 _v2_* API 。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">請注意、如果您要對此 API 進行多次呼叫、為了獲得最佳結果、請確保呼叫會依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。</block>
@@ -13367,4 +13366,5 @@ AAA/BBB/CCC/ *
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP 自主勒索軟體保護和 ONTAP 存取權限遭拒</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">和 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="243b99ee952c73f66e7461d943f01834" category="list-text">暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會重新啟用。</block>
+  <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">SVM Data Collector 現在支援 NFS 版本、最高可支援 * NFS 4.1* 、含 ONTAP 9.15.1 或更新版本。</block>
 </blocks>
