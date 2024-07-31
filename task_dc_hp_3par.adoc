@@ -52,7 +52,7 @@ summary: 設定HP Enterprise Alletra 9000 / Primera（前身為3PAR）資料收�
 
 == 需求
 
-若要設定此資料分頁、必須具備下列條件：
+設定此資料收集器需要下列項目：
 
 * InServ叢集的IP位址或FQDN
 * 若為庫存、則為StoreServ伺服器的唯讀使用者名稱和密碼

@@ -691,7 +691,6 @@
   <block id="e927cd7a6b142707e9ed0c5ddfe7b243" category="cell">儲存資源池</block>
   <block id="83cac05fbb9085b4e62fdefebc04af60" category="cell">虛擬Volume</block>
   <block id="561b06d0d233f84983c474e6cd225d20" category="paragraph">附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。</block>
-  <block id="2083196b10cec6f027f8645b9e960b3c" category="paragraph">若要設定此資料分頁、必須具備下列條件：</block>
   <block id="c3deb2066e20cbed62d1bfed93943bb1" category="list-text">InServ叢集的IP位址或FQDN</block>
   <block id="1b4137d092037ad17a20e57351c33d8e" category="list-text">若為庫存、則為StoreServ伺服器的唯讀使用者名稱和密碼</block>
   <block id="7abd5032a929f340867545508d1a1933" category="list-text">若要獲得效能、請將使用者名稱和密碼讀寫至StoreServ伺服器</block>
@@ -13188,8 +13187,6 @@ AAA/BBB/C*
 AAA/BBB/CCC/ *
 
 此搜尋應可加快資料載入速度。</block>
-  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">• ONTAP Persistent Store 可從 9.15.1 獲得支援。</block>
-  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">無法刪除暫停的資料收集器。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">選取 SVM 模式時、 Data Collector 會發生錯誤。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">以 SVM 模式連線時、如果使用叢集管理 IP 來連線、而非 SVM 管理 IP 、則連線將會錯誤。請確定使用正確的 SVM IP 。</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手動安裝 API</block>
@@ -13362,9 +13359,67 @@ AAA/BBB/CCC/ *
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">鑑識活動 <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> 有新版本。當呼叫 API 進行鑑識活動時、請使用 * cloudsecure_forensics 。 Activities 。 _v2_* API 。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">請注意、如果您要對此 API 進行多次呼叫、為了獲得最佳結果、請確保呼叫會依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。</block>
   <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">透過 API 擷取鑑識資料的範例指令碼位於： //opt/NetApp/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
-  <block id="e440db99ab8972afb639115c16f2426c" category="list-text">NFS傳輸協定4.1版及更早版本</block>
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP 自主勒索軟體保護和 ONTAP 存取權限遭拒</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">和 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
-  <block id="243b99ee952c73f66e7461d943f01834" category="list-text">暫停時、 ONTAP 中的 fpolicy 設定會停用、但不會刪除。恢復時、 ONTAP 中的 fpolicy 設定會重新啟用。</block>
   <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">SVM Data Collector 現在支援 NFS 版本、最高可支援 * NFS 4.1* 、含 ONTAP 9.15.1 或更新版本。</block>
+  <block id="be2f9224b979c292cb15fb8ca6626094" category="summary">監控度量以瞭解異常狀況</block>
+  <block id="de4898eb228c5960d7add96b5bd2ad82" category="doc">異常狀況偵測監視器</block>
+  <block id="cbcb7e323368454d1aaea827422f8ab4" category="paragraph">異常狀況偵測可讓您深入瞭解環境中資料模式的非預期變化。當物件的行為模式在您的環境中發生變化時、就會發生異常、例如、如果物件在每週三的某個特定時間發生某種延遲、但延遲會在隨後的星期三的該時間高於該層級、 這種尖峰會被視為異常現象。Cloud Insights 可讓您建立監控器、以便在發生這類異常時發出警示。</block>
+  <block id="6ee4ef3e25dbca514480336d70c68b6f" category="paragraph">異常狀況偵測適用於呈現週期性、可預測模式的物件指標。當這些物件指標高出或低於預期層級時、 Cloud Insights 可能會產生警示、以提示調查。</block>
+  <block id="f9e98659236dd136d51fbe90184c9350" category="inline-image-macro">顯示偵測到異常的圖表</block>
+  <block id="6d45093f10be1c53f9db64c498f5d580" category="paragraph"><block ref="6d45093f10be1c53f9db64c498f5d580" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d2575e3b331dd7b57d604dc713e48c2" category="section-title">什麼是異常偵測？</block>
+  <block id="9191e0d6339fc5dc7a81e5a8c55ed26b" category="paragraph">當計量的平均值與前幾週的加權平均值有許多標準偏差、而最近幾週的加權平均值比前幾週的加權值更高時、就會發生異常。Cloud Insights 可在偵測到異常時監控資料和警示。您可以選擇設定偵測的「敏感度」等級。例如、當平均值與平均值的標準差較少時、敏感度會較高、因此會產生更多警示。相反地、較低的靈敏度 = 較低的平均偏差 = 較少的警示。</block>
+  <block id="833e967d7ee3cf2f23601ccdafe6306f" category="section-title">異常偵測監控與臨界值監控不同。</block>
+  <block id="707a70f8b64924d439fa4e0679dc94e9" category="list-text">* 臨界值型監控 * 可在您有特定度量的預先定義臨界值時運作。換句話說、當您清楚瞭解預期的內容時（即在正常範圍內）。</block>
+  <block id="c1045d44e2c7b706bb670c2d93126209" category="inline-image-macro">當您知道作業範圍時、「度量監視器」就適用於您</block>
+  <block id="8a651de0b445271791957a02b7f7ab12" category="paragraph"><block ref="8a651de0b445271791957a02b7f7ab12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="248d11a06c917163d4c218e182751e10" category="list-text">* 異常偵測監控 * 使用機器學習演算法來識別偏離規範的異常值、因為「正常」的定義不清楚。</block>
+  <block id="050471a8ed4b8c04c6b9d753064cc4d4" category="inline-image-macro">異常狀況偵測監視器適用於您想知道尖峰或掉落的時機</block>
+  <block id="44cf95d43f633731498e7905f9aa796f" category="paragraph"><block ref="44cf95d43f633731498e7905f9aa796f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89998a7699ba0967d4747309973670d5" category="section-title">我何時需要 Anomaly 偵測？</block>
+  <block id="cbe837020343dfcd14bef7b99f21f113" category="paragraph">異常狀況偵測監控可針對許多情況提供實用的警示、包括：</block>
+  <block id="515e7be6213cf58d48b39c170b448353" category="list-text">當 _normal_ 的定義不明確時。例如、 SAN 錯誤率可能會因連接埠而有所不同。警示某個錯誤是很吵且不必要的、但突然或大幅增加可能表示問題很普遍。</block>
+  <block id="858889ea561e10cb6de83250a829bb72" category="list-text">隨著時間的變化。工作負載呈現季節性（亦即在特定時間、工作負載忙碌或安靜）。這可能包括非預期的靜止期間、可能表示批次檔位。</block>
+  <block id="07cd3ac948fc0a9966297e9ebb6e200a" category="list-text">在手動定義和調整臨界值不切實際的情況下、處理大量資料。例如、擁有大量主機和 / 或磁碟區、工作負載各異的環境。每個 SLA 都可能有不同的 SLA 、因此瞭解超出規範的 SLA 非常重要。</block>
+  <block id="4bf3bd72ae0959df9c9f71dc2ca7782c" category="section-title">建立異常偵測監視器</block>
+  <block id="181074ffe7428fd491335b80f676903b" category="paragraph">若要警示異常狀況、請瀏覽 * 可服務性 &gt; 警示 &gt; +Monitor* 來建立監視器。選取 _ Anomaly Detection Monitor_ 作為監視器類型。</block>
+  <block id="53f0acb9650a3311851819fb2a0f49b0" category="inline-image-macro">建立監視器時選取異常偵測、寬度 =480</block>
+  <block id="e252e58b0713f9856d0a0d0b5aba870b" category="paragraph"><block ref="e252e58b0713f9856d0a0d0b5aba870b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53475b0e462d8632e63ce95786693f94" category="paragraph">選擇您要監控的物件和度量。您可以像設定其他類型的監視器一樣、設定篩選器和群組。</block>
+  <block id="a622dfc527a1cb769a9cb8f5251c5722" category="paragraph">接著、設定監視器的條件。</block>
+  <block id="a2adecda270991bbe54f4b599329e2fe" category="list-text">當所選的度量超過預測範圍 _ 時觸發警示、 _ 低於 _ 這些範圍、或同時低於兩者。</block>
+  <block id="8bc993e57aef8f829550768090da9b0d" category="list-text">將敏感度設為 _Medium 、 _Low_ （偵測到的異常狀況較少）或 _High_ （偵測到的異常狀況較多）。</block>
+  <block id="24167a985b902e0e2d7a081b6013a2c9" category="list-text">判斷警示層級是 _ 重大 _ 還是 _ 警告 _ 。</block>
+  <block id="2e8e6d4492fccf3be846da219495beea" category="list-text">您也可以選擇將異常設為 _ 忽略 _ 以下的值。這有助於降低噪音。此值會以虛線顯示在範例圖表上。</block>
+  <block id="f69a8cf61f4e95828fa362a7a3789fcc" category="inline-image-macro">設定異常偵測監視器的條件</block>
+  <block id="abf46926497e07e99587de4807a2ab2a" category="paragraph"><block ref="abf46926497e07e99587de4807a2ab2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="512aa9e270052050fd7133f7c815aba4" category="paragraph">最後、您可以設定警示的傳送方法（電子郵件、網路攔截器或兩者）、為監控器提供選擇性的說明或修正動作、並視需要將監控器新增至自訂群組。</block>
+  <block id="fab06889941e3b5c2391fd34bd7beaac" category="paragraph">以有意義的名稱儲存顯示器、就能完成。</block>
+  <block id="5b168d18500cad56ba4dfe58f2ff34a0" category="paragraph">建立之後、監視器會分析上週的資料、以建立初始基準線。異常偵測會隨著時間流逝而變得更準確、而且會發生更多歷史記錄。</block>
+  <block id="56fcf918982ae9c2b1aec4da88526a61" category="section-title">檢視異常</block>
+  <block id="1d58d2f2ca69574aba1ed5f31bde491c" category="paragraph">在警示登陸頁面上、偵測到異常時觸發的警示會在圖表中顯示反白的頻帶、從度量超出預測範圍的時間到移回這些範圍的時間。</block>
+  <block id="2ab54321d1ba259795df47fcabb17a13" category="inline-image-macro">顯示異常發生時間的圖表</block>
+  <block id="2ad61a846e7819f62ef6d6e841319792" category="paragraph"><block ref="2ad61a846e7819f62ef6d6e841319792" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5dc3af95092fd8c3105a28d3093349e2" category="paragraph">在警示登陸頁面上檢視異常圖表時、您可以選擇下列選項：</block>
+  <block id="cad64385bb1c47803c5bd69ef88cfa2a" category="list-text">每週趨勢：將值與前幾週同一時間（同一天）進行比較、最多可達前 5 週。</block>
+  <block id="9c221afc4c43a58770febf3135de5c16" category="list-text">完整異常界限：根據預設、圖表會將重點放在度量值、以便更有效地分析度量行為。選取以顯示完整的異常範圍（最大值等）</block>
+  <block id="1f8a18333ce962d420f009316db68135" category="paragraph">您也可以在登陸頁的專家檢視中選取造成異常的物件、以檢視這些物件。圖表會顯示所選物件的行為。</block>
+  <block id="7db867678d69bd78eaeb6b23565fbadb" category="inline-image-macro">記錄造成異常的物件</block>
+  <block id="7a739c7bd23951027862cb0746253d51" category="paragraph"><block ref="7a739c7bd23951027862cb0746253d51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27f579af3362e110ecd440dc8bf9e526" category="section-title">AIOps ：異常偵測</block>
+  <block id="bb488ae395c5a616e026cebeb1d22b11" category="paragraph">Cloud Insights 使用機器學習來偵測環境中資料模式的非預期變更、並提供主動式警示、協助您及早發現問題。</block>
+  <block id="ed665f31221c4a08eef181ec8d0a72db" category="paragraph">資料中心在一天中的不同時間和一週中的不同日子、會以不同的方式運作。Cloud Insights 使用每週季節性來比較每天和每個時間的歷史行為。</block>
+  <block id="bf43ac8b8257828bb0ffddb4736d081c" category="paragraph">異常狀況偵測監控可針對下列情況提供警示：「正常」定義不清楚、行為隨時間變化、或是處理大量資料時、手動定義臨界值不切實際。</block>
+  <block id="fb60a89ddc5f4c906fea295c053a5be0" category="paragraph">當您選擇的物件度量發生這類異常時、會發出新的 <block ref="d288de494ea9d7a329c8dfc0fccf699b" category="inline-link-macro-rx"></block> 警示。</block>
+  <block id="7c6a37577f49fc25a4c899cda17f9040" category="list-text">ONTAP 9.15.1 或更新版本的 NFS 4.1 版本、包括 NFS 4.1 。</block>
+  <block id="b8667da3102e0adbbd2fe25017f00394" category="list-text">• ONTAP Persistent Store 可從 9.14.1 獲得支援。</block>
+  <block id="fa10b18dd52742e5f2cd029f0249346b" category="section-title">持續儲存區</block>
+  <block id="b611ad23a0a26f050542f8157d95cb61" category="paragraph">ONTAP 9.14.1 及更新版本支援持續儲存區。請注意、 Volume 名稱指示會因 ONTAP 9.14 至 9.15 而異。</block>
+  <block id="928fe55cae4b263961426402bcf31be7" category="paragraph">您可以選取收集器編輯 / 新增頁面中的核取方塊來啟用持續儲存區。選取此核取方塊後、會顯示文字欄位以接受 Volume 名稱。Volume 名稱是啟用持續儲存區的必填欄位。</block>
+  <block id="0241f48b4ba5acc2c0fe7c5ebae0b009" category="list-text">對於 ONTAP 9.14.1 、您必須先建立磁碟區才能啟用此功能、並在 _ Volume Name_ 欄位中提供相同的名稱。建議的磁碟區大小為 16GB 。</block>
+  <block id="9ba8df77f1ed6f2669acdf983da92bd3" category="list-text">對於 ONTAP 9.15.1 、收集器會使用 _ Volume Name_ 欄位中提供的名稱、自動以 16GB 大小建立 Volume 。</block>
+  <block id="90d00ac7078d36b9a3f2093e6708b52e" category="paragraph">持續儲存區需要特定權限（其中部分或全部可能已經存在）：</block>
+  <block id="f9555b564ff818367b2bbeb217f9f4aa" category="paragraph">叢集模式：</block>
+  <block id="d21d9916425ed680af643d24ed5db91d" category="paragraph">Vserver 模式：</block>
 </blocks>
