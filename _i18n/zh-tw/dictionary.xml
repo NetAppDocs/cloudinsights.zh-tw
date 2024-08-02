@@ -7677,8 +7677,6 @@
   <block id="34ac3c3d3b008137a073199be9255e04" category="paragraph"><block ref="34ac3c3d3b008137a073199be9255e04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bc551a8dcf48d42b6ea5cf411242afd9" category="cell">執行下列其中一種授權版本的電腦： * Microsoft Windows 10 64位元* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此電腦不應執行其他應用程式層級軟體。建議使用專屬伺服器。</block>
   <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">觀察能力</block>
-  <block id="3285ea5e06d78f941361e69f7ae3e762" category="cell">可修改訂閱、檢視帳單與使用資訊、並執行所有的系統管理員功能、以利觀察、安全性及報告。擁有者也可以邀請和管理使用者、以及管理SSO驗證和身分識別聯盟設定。當您註冊Cloud Insights 以供使用時、會建立第一個帳戶擁有者。強烈建議每Cloud Insights 個環境至少有兩位帳戶擁有者。 </block>
-  <block id="84e7e19408ca9cadd7d1a9781e8afe16" category="cell">可執行所有的可觀察功能、所有使用者功能、以及資料收集器管理、可觀察API權杖和通知。管理員也可以邀請其他使用者、但只能指派可觀察角色。</block>
   <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">可執行所有的安全功能、包括警示、鑑識、資料收集器、自動回應原則、以及安全性的API權杖。管理員也可以邀請其他使用者、但只能指派安全角色。</block>
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以選擇的功能和角色取決於您在特定管理員角色中擁有存取權限的功能。例如、如果您只有「報告」的「管理員」角色、則可以將使用者指派給「報告」中的任何角色、但無法指派「可觀察性」或「安全性」的角色。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必須以帳戶擁有者的身分登入、才能將帳戶擁有者角色指派給其他使用者。</block>
@@ -9324,7 +9322,6 @@
   <block id="e497269a2941afd9840d0178bcec0d65" category="admonition">Cloud Insights 聯邦版目前不提供設定格式化的條件。</block>
   <block id="7dc3d22c559fc9f6b251de846b6d601b" category="paragraph">設定格式化的條件會針對表格中的每一欄分別設定。例如、您可以為容量欄選擇一組臨界值、而為處理量欄選擇另一組臨界值。</block>
   <block id="04e933e576c69389922d790b28b832e2" category="admonition">Cloud Insights 聯邦版不提供 ActiveIQ 。</block>
-  <block id="6a1a692b3423f858e5d6fa10a48a203d" category="admonition">Cloud Insights 聯邦版中的使用者登入僅限於已設定的身分識別供應商（使用其指定的電子郵件網域）。當新使用者被邀請進入 Cloud Insights 聯邦環境時、其電子郵件地址必須符合為該環境所設定的網域。</block>
   <block id="eb969e6aae227b477dde18795955ac2a" category="paragraph">Cloud Insights 包含安全功能、可讓您的環境以增強的安全性運作。這些功能包括增強加密、密碼雜湊、變更內部使用者密碼的能力、以及加密和解密密碼的金鑰配對。</block>
   <block id="e2eb5a26f8f8c6cd350884687bbcf0fd" category="paragraph">為保護敏感資料、 NetApp 建議您在安裝或升級後變更預設金鑰和 _Acquisition 使用者密碼。</block>
   <block id="c6105c3b082c3e22a8f735511736544b" category="paragraph">資料來源加密密碼儲存在Cloud Insights 效益管理系統中、當使用者在資料收集器組態頁面中輸入密碼時、會使用公開金鑰來加密密碼。Cloud Insights 沒有解密資料收集器密碼所需的私密金鑰；只有擷取單元（ Aus ）具有解密資料收集器密碼所需的資料收集器私密金鑰。</block>
@@ -13422,4 +13419,10 @@ AAA/BBB/CCC/ *
   <block id="90d00ac7078d36b9a3f2093e6708b52e" category="paragraph">持續儲存區需要特定權限（其中部分或全部可能已經存在）：</block>
   <block id="f9555b564ff818367b2bbeb217f9f4aa" category="paragraph">叢集模式：</block>
   <block id="d21d9916425ed680af643d24ed5db91d" category="paragraph">Vserver 模式：</block>
+  <block id="e3afed0047b08059d0fada10f400c1e5" category="cell">管理</block>
+  <block id="ab0ef3e5340f5400b9f95e43d3b79222" category="cell">與管理員相同</block>
+  <block id="631b24afac365e771fc775aeb7fec0ad" category="cell">與管理員相同、並管理 SSO 驗證和身分識別聯盟組態。也可以指派其他擁有者。</block>
+  <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">可執行所有的可視化功能、以及資料收集器的管理。</block>
+  <block id="7d86034e4b4cb78c8bb38a5020649dbd" category="cell">可以邀請其他使用者、但只能指派「可服務性」角色。可以檢視但無法修改 SSO 組態。可建立及管理 API 存取權杖。可檢視稽核資訊。可檢視訂閱資訊、使用情況和歷程記錄。可管理全域警示通知和訂閱通知收件者清單。</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">無法使用</block>
 </blocks>
