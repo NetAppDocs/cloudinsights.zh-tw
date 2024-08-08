@@ -21,6 +21,14 @@ summary: 設定 Brocade FOS REST 資料收集器。
 [role="lead"]
 Cloud Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。
 
+請注意： FOS 的預設「使用者」層級功能不足、無法讓 Cloud Insights 檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。
+
+以下範例說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以供 Cloud Insights 使用至 FOS 裝置：
+
+userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!
+
+這會建立使用者「 NetAppCIUser 」、密碼為「 Qwerty ！」。此使用者在所有 128 個可能的虛擬架構（ -l ）中都有「使用者」角色（ -r ）。此使用者還具有必要的「機箱」角色（ -c ）、並指派使用者層級存取權。
+
 根據預設、此收集器會嘗試探索屬於交換器所屬所有架構一部分的所有 FOS 裝置。
 
 
@@ -47,9 +55,6 @@ Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。�
 
 
 | 邏輯交換器 | 邏輯交換器 
-
-
-| 虛擬Volume | Volume 
 
 
 | LSAN區域 | IVR區域 
@@ -134,9 +139,6 @@ Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。�
 | 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 
 
 
-| 收到一則訊息、指出有超過1個節點登入Access Gateway連接埠 | 請檢查NPV裝置是否正常運作、以及所有連接的WWN是否正常運作。請勿直接取得NPV裝置。相反地、取得核心Fabric交換器將會收集NPV裝置資料。 
-
-
-| 效能收集失敗、並顯示「傳送 SNMP 要求時逾時」。 | 視查詢變數和交換器組態而定、某些查詢可能會超過預設逾時。  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["深入瞭解"]。 
+| 庫存失敗、並禁用 403 | 這可能只是不良認證、或是表示您嘗試使用功能不夠強大的角色、請記住、「使用者」層級的使用者沒有必要的「機箱角色」權限、或是無法檢視非預設虛擬架構的存取權限。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

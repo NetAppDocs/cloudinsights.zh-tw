@@ -13313,7 +13313,6 @@ AAA/BBB/CCC/ *
   <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">它只能包含字母、數字和底線。</block>
   <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">可以少於250個字元。在大多數情況下、Agggr0、aggr_0或類似名稱。可能需要迭代程序來識別環境中的所有NetApp根集合體。</block>
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBlade 資料收集器</block>
-  <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insights 使用 Pure Storage FlashBlade 資料收集器來收集庫存和效能資料。</block>
   <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBlade 主機 IP 位址</block>
   <block id="5ba53e5a2add537346e5d283255d419a" category="cell">從 ONTAP 到工作負載安全代理程式的 Fpolicy 事件通訊。這些連接埠必須向工作負載安全性代理程式開啟、 ONTAP 才能傳送事件給它、包括工作負載安全性代理程式本身的任何防火牆（若有）。請注意、您不需要保留 * 所有 * 這些連接埠、但您為此保留的連接埠必須在此範圍內。建議您先保留約 100 個連接埠、必要時增加。</block>
   <block id="fd6114e047225ac69533d6082b3f731b" category="admonition">如果呼叫鑑識活動 API 、請使用 cloudsecure_forensics 。 * v2* API 。如果您要對此 API 進行多個呼叫、請確定呼叫是依序進行、而非平行進行。多個平行呼叫可能會導致 API 逾時。</block>
@@ -13425,4 +13424,16 @@ AAA/BBB/CCC/ *
   <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">可執行所有的可視化功能、以及資料收集器的管理。</block>
   <block id="7d86034e4b4cb78c8bb38a5020649dbd" category="cell">可以邀請其他使用者、但只能指派「可服務性」角色。可以檢視但無法修改 SSO 組態。可建立及管理 API 存取權杖。可檢視稽核資訊。可檢視訂閱資訊、使用情況和歷程記錄。可管理全域警示通知和訂閱通知收件者清單。</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">無法使用</block>
+  <block id="a8724e88fefdacdec22b256079efbc3b" category="paragraph">請注意： FOS 的預設「使用者」層級功能不足、無法讓 Cloud Insights 檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。</block>
+  <block id="c98bbcb8f16f41d79d40524732f5085a" category="paragraph">以下範例說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以供 Cloud Insights 使用至 FOS 裝置：</block>
+  <block id="87acb0f928436de44c10589e7dfad434" category="paragraph">userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!</block>
+  <block id="13a225ee351dfd6def3fc0db9ef2c5d0" category="paragraph">這會建立使用者「 NetAppCIUser 」、密碼為「 Qwerty ！」。此使用者在所有 128 個可能的虛擬架構（ -l ）中都有「使用者」角色（ -r ）。此使用者還具有必要的「機箱」角色（ -c ）、並指派使用者層級存取權。</block>
+  <block id="9269037f4e86b08be75df1f65affd8d8" category="cell">庫存失敗、並禁用 403</block>
+  <block id="5300b225712833815322a70076b43af1" category="cell">這可能只是不良認證、或是表示您嘗試使用功能不夠強大的角色、請記住、「使用者」層級的使用者沒有必要的「機箱角色」權限、或是無法檢視非預設虛擬架構的存取權限。</block>
+  <block id="a5acdd594b390d17ff4ed98ab41acb5f" category="paragraph">Cloud Insights 使用 Pure Storage FlashBlade 資料收集器、從揭露其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能資料</block>
+  <block id="26c7e129f928f6ba8485b8308659b929" category="cell">物件儲存貯體</block>
+  <block id="c307e1b8edd2b5d784d81d211f67c2e5" category="list-text">儲存系統 IP 位址或完整網域名稱</block>
+  <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">API 權杖、最理想的方式是擁有無限的生命週期。唯讀層級的使用者應該已經足夠了。</block>
+  <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">協助 Cloud Insights 管理員記住其 API 權杖所屬的使用者名稱</block>
+  <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API權杖</block>
 </blocks>
