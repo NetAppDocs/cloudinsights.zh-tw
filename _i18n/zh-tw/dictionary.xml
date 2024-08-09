@@ -7158,7 +7158,6 @@
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">您可以在試用期間隨時訂閱Cloud Insights 。訂閱Cloud Insights 此功能可確保不中斷地存取您的資料、並延長資料存取時間 <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> 選項：</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">如果您需要更多時間來評估Cloud Insights VMware、而且您的試用期設定為4天或更短、您可以將試用期延長30天。您只能延長試用期一次。如果試用期已到期、您將無法延長試用期。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的試用期已到期、該怎麼辦？</block>
-  <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">如果您的免費試用期已過期、但尚未訂閱Cloud Insights 、則在您訂閱之前、您的功能將受限。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">訂購選項</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1受管理單元= 4 TiB的實體或虛擬磁碟未格式化容量</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi內容平台</block>
@@ -13325,23 +13324,6 @@ AAA/BBB/CCC/ *
   <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 個託管單元 = 4 個 Kuberentes vCPU 。</block>
   <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 受管理單元 K8s 調整 = 2 個節點、或同時受基礎架構監控的主機。</block>
   <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">工作負載安全性計量</block>
-  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">工作負載安全性是根據所使用的節點是高階、中階或入門級、以下列管理單元（ MU ）計數來計量：</block>
-  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">節點類型：</block>
-  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">範例模型：</block>
-  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">計量時間：</block>
-  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">1 個高階節點</block>
-  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700 、 800 、 900 、 9xxx</block>
-  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80 個託管單元</block>
-  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1 個中階節點</block>
-  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300 、 400 、 500 、 8x00</block>
-  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40 個託管單元</block>
-  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">1 個入門級節點</block>
-  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx 、 2xx 、 2xxx</block>
-  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">20 個託管單元</block>
-  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">1 軟體 ONTAP</block>
-  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO 、 FSX</block>
-  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">10 個託管單元</block>
-  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1 個未知節點</block>
   <block id="3943920606f23b23925f15408e26cae2" category="paragraph">您可以在 * 工作負載安全性 * 標籤的 * 管理 &gt; 訂閱 * 頁面中檢視工作負載安全性使用情況。</block>
   <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">'Admin&amp;gt; Subscription &amp;gt; Workload Security 標籤顯示高階、中階和入門級節點數 '</block>
   <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
@@ -13436,4 +13418,10 @@ AAA/BBB/CCC/ *
   <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">API 權杖、最理想的方式是擁有無限的生命週期。唯讀層級的使用者應該已經足夠了。</block>
   <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">協助 Cloud Insights 管理員記住其 API 權杖所屬的使用者名稱</block>
   <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API權杖</block>
+  <block id="72fb59b13b553d470d4daf5fafe5e2ea" category="paragraph">如果您的免費試用期已過期、但尚未訂閱Cloud Insights 、則在您訂閱之前、您的功能將受限。資料擷取可能會停止、幾週後、您的資料將會根據我們的資料保留政策刪除。</block>
+  <block id="b3aa21e2b7855df7d2d86e0bcb7a55d9" category="section-title">如果我的訂閱已過期怎麼辦？</block>
+  <block id="be739afed3708aea5b887ed48586b187" category="paragraph">如果您有 Cloud Insights 訂閱、但該訂閱已過期、您將有五天的寬限期、以便續約。在此寬限期內、所有 Cloud Insights 功能都將保持作用中。</block>
+  <block id="1f679308dcaa1cf09288bcb2c3cdaabc" category="paragraph">寬限期結束後、 Cloud Insights 功能會暫停、直到您續約為止。若要續約、請參閱 * 管理 &gt; 訂閱 * 頁面、或聯絡 NetApp 銷售人員。</block>
+  <block id="0a20fc316ac6795053a9cfbf1a2cdb5b" category="admonition">在寬限期結束之前所收集的 Cloud Insights 資料、在寬限期結束後 30 天內仍保持不變。如果您在此期間內續約、則直到寬限期結束為止的所有資料都可供您使用。</block>
+  <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">工作負載安全性是透過叢集來計量、方法與「可觀察性」計量相同。</block>
 </blocks>
