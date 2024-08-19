@@ -43,13 +43,9 @@ summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源
 
 === 高使用需求的工作負載
 
-若要開始深入瞭解共享資源中有影響力且受影響的工作負載、請按Cloud Insights 一下「BIOS」功能表中的*「儀表板」>「高消耗工作負載」*。
+Cloud Insights 偵測到的任何消耗性工作負載、都會顯示在 Stress / Insight 下的 _Shared Resources 中。瀏覽至 * 可視性 > 基礎架構洞見 * 以檢視這些洞見。
 
-image:Impacts_Workloads_Menu.png["高使用度工作負載功能表"]
-
-顯示已偵測到飽和的任何工作負載清單。Cloud Insights按一下工作負載以開啟工作負載儀表板。
-
-image:Impacts_High_Consuming_Workloads.png["工作負載清單"]
+image:Impacts_Workloads_Menu.png["共享資源"]
 
 按一下工作負載即可檢視其詳細資料頁面。上圖顯示發生爭用的共用資源（例如儲存資源池）上的活動。
 
