@@ -13422,4 +13422,23 @@ AAA/BBB/CCC/ *
   <block id="aefca8640c6f7317db4ede982986441e" category="list-text">升級後清理：</block>
   <block id="0b2c01fe038efdc8f7b27285140c4a04" category="list-text">AGENT014 錯誤</block>
   <block id="80c03754030e95a93e8d8526693ae86d" category="list-text">未獲授權的錯誤</block>
+  <block id="9765c3765694fadf98843a154096fbc8" category="section-title">2024 年 8 月</block>
+  <block id="1e6efa140bfb7e4679629d8194b62518" category="section-title">檢視特定於您時間範圍的資料</block>
+  <block id="63466a1339697704533771c662e97a95" category="paragraph">正在調查警示？放大圖表？這些動作會變更這些頁面的時間範圍。現在您可以鎖定該時間範圍、瀏覽至其他 Cloud Insights 頁面、並查看該鎖定時間範圍的特定資料。調查與疑難排解變得更簡單！</block>
+  <block id="b4d4f3a9a060bb1e2ec83e69b952584b" category="inline-image-macro">提示按一下圖示以鎖定其他頁面所使用的時間範圍</block>
+  <block id="380958dc02dd73e95eaa4a082063f871" category="paragraph"><block ref="380958dc02dd73e95eaa4a082063f871" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b2b019dcd0bf47e844870e8113a09653" category="section-title">變更與變更比率（ % ）分析</block>
+  <block id="a683fea3c6e8375ed9b41bdc7ffe4a52" category="paragraph">變更比率時間集合有助於識別隨時間而來的度量值重大變更和趨勢。這些洞見是瞭解變更內容的關鍵、例如在特定時間內大幅增加容量、或是在單一連接埠效能上發生變化。</block>
+  <block id="615b3d3d31be175d0b1eee89348e65ab" category="list-text">* 變更 * ：觀察所選期間內兩點之間的指標變化。</block>
+  <block id="74809a036bca54139a2d261d2626d034" category="list-text">*Change Ratio* - 觀察在選定期間內、在兩點之間的度量指標、相對於起始點的比例變化。</block>
+  <block id="476dc2fbda7f575b4fa5a12c84315d97" category="inline-image-macro">長條圖範例顯示變更和變更定量集合選項</block>
+  <block id="7babf63048a268c171c9a35946c31542" category="paragraph"><block ref="7babf63048a268c171c9a35946c31542" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b422b4687d8e61310c31588c0f40502a" category="section-title">將記錄查詢結果匯出至 .CSV</block>
+  <block id="9cea24be2464c00b86b714b65366d6f7" category="paragraph">檢視記錄查詢結果時、按一下新的「匯出」按鈕、即可輕鬆將最多 10 、 000 列匯出至 .CSV 。如此可增強資料存取能力、簡化資料分析與報告作業、並協助與其他 Data Processing 工具無縫整合。</block>
+  <block id="7a2e6dfd3424cc782f8ace3835b61f07" category="inline-image-macro">記錄查詢頁面上的「匯出至 CSV 」按鈕</block>
+  <block id="0477f9f6d00aae30603158474a92755a" category="paragraph"><block ref="0477f9f6d00aae30603158474a92755a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97ee1f978fba9c94fb5be3fd10c7458f" category="section-title">依時間解決警示</block>
+  <block id="b0d5063317400902cd605d3e001cdfe3" category="paragraph">Cloud Insights 現在可讓您選擇在監控的度量在指定期間內保持在可接受範圍內時、解決警示。這可讓您專注於真正的問題、將多個警示整合到一個警示、以減少與指標重複跨越定義臨界值相關的雜訊。</block>
+  <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根據時間解決警示</block>
+  <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
