@@ -15,7 +15,6 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:keywords: OnCommand, Insight, documentation, help, onboarding, getting started
 :toc-position: content
 
 

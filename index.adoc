@@ -15,7 +15,6 @@ keywords:
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:keywords: OnCommand, Insight, documentation, help
 :toc-position: content
 
 

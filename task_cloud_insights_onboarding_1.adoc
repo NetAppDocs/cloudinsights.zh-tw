@@ -13,7 +13,6 @@ keywords: onboarding, new user
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:keywords: Cloud Insights, documentation, help, onboarding, getting started,
 
 
 [role="lead"]
