@@ -2164,7 +2164,6 @@
   <block id="04d99d40563d55904f96d7cf5a364c93" category="paragraph">在建立或修改監視器時、您可以隨時覆寫個別監視器的全域收件者清單。</block>
   <block id="aa7bcff87c480aa90d0e5d1001e89590" category="summary">設定VMware資料收集器。</block>
   <block id="3642158841a114e36a8c869b919b1091" category="doc">設定VMware vSphere資料收集器</block>
-  <block id="954ef6f49e5d8376c237f5d66acaff1f" category="paragraph">VMware vSphere的資料收集器會收集ESX主機資訊、並要求虛擬中心內所有物件的唯讀權限。</block>
   <block id="575e07e277bc9b78e55e69d062be7785" category="paragraph">從VMware vSphere資料收集器取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
   <block id="f686f10e90744245b3af81001faaf7ad" category="cell">虛擬磁碟</block>
   <block id="76c3fe1d90eec0f4dbe5dd8bf85ff05b" category="cell">虛擬機器</block>
@@ -13441,4 +13440,5 @@ AAA/BBB/CCC/ *
   <block id="b0d5063317400902cd605d3e001cdfe3" category="paragraph">Cloud Insights 現在可讓您選擇在監控的度量在指定期間內保持在可接受範圍內時、解決警示。這可讓您專注於真正的問題、將多個警示整合到一個警示、以減少與指標重複跨越定義臨界值相關的雜訊。</block>
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根據時間解決警示</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6eca91256cc474aa6b595cae920d2b6a" category="paragraph">VMware vSphere 的資料收集器會收集 VM 來賓作業系統和 ESXi 主機效能和組態資訊、並要求 vSphere 中所有物件上的唯讀 Privileges 。截至 2024 年 8 月為止、 vSphere 收集器還會從 vSphere 環境中另外加入記錄訊息、以及某些 VMware 特定的度量。請注意、 Cloud Insights 只能從 vSphere 8.0.1 或更高版本的環境擷取 VMware 記錄資訊。同樣地、廠商專屬指標僅支援 vSphere 7+ 環境。因此、如果指定的收集器指向較舊的 vSphere 執行個體、您可能會想要停用該收集器上的記錄和 / 或廠商特定度量核取方塊。</block>
 </blocks>
