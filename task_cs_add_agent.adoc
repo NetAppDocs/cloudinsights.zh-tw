@@ -95,6 +95,24 @@ image::new-agent-detect.png[成功安裝代理程式的訊息]
  35000-55000/tcp
 
 
+== 「固定」目前版本的值機員
+
+根據預設、 Cloud Insights 工作負載安全性會自動更新代理程式。有些客戶可能想要暫停自動更新、這會讓值機員保持目前版本、直到發生下列其中一種情況：
+
+* 客戶會繼續自動更新值機員。
+* 30 天過去了。請注意、 30 天從最近一次代理程式更新的當天開始、而非代理程式暫停的當天開始。
+
+
+在上述每種情況下、代理程式都會在下次工作負載安全性重新整理時更新。若要暫停或恢復自動代理程式更新、請使用 _cloudsecure_config.agents API_ ：
+
+image:ws_pin_agent_apis.png["WS Pin Agent API"]
+
+請注意、暫停或恢復動作可能需要五分鐘才能生效。您可以在「工作負載安全性」 > 「收集器」頁面的「代理程式」標籤中檢視目前的代理程式版本。
+
+image:ws_agent_version.png["WS Agent 版本"]
+
+
+
 == 疑難排解代理程式錯誤
 
 下表說明已知問題及其解決方法。
@@ -104,7 +122,7 @@ image::new-agent-detect.png[成功安裝代理程式的訊息]
 | 問題： | 解決方法： 
 
 
-| 代理程式安裝無法建立/opp/NetApp/cloudsec/agent/logs/agent.log資料夾、且install.log檔案未提供相關資訊。 | 此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。錯誤會重新導向至標準輸出、並使用「journalctl -u cloudsecure-agent.service`」命令顯示在服務記錄中。此命令可用於進一步疑難排解問題。 
+| 代理程式安裝無法建立/opp/NetApp/cloudsec/agent/logs/agent.log資料夾、且install.log檔案未提供相關資訊。 | 此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。此錯誤會重新導向至標準輸出、並可在服務記錄中使用 `journalctl -u cloudsecure-agent.service`命令查看。此命令可用於進一步疑難排解問題。 EST 
 
 
 | 代理程式安裝失敗、無法使用「不支援此Linux套裝作業系統。結束安裝」。 | 當您嘗試在不受支援的系統上安裝代理程式時、就會出現此錯誤。請參閱 link:concept_cs_agent_requirements.html["代理程式需求"]。 

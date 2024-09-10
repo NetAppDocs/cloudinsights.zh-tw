@@ -1306,7 +1306,6 @@
   <block id="04d265de0148836a00102bb171aa6456" category="section-title">疑難排解代理程式錯誤</block>
   <block id="1f8b585533464977d763d893abd63588" category="paragraph">下表說明已知問題及其解決方法。</block>
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">代理程式安裝無法建立/opp/NetApp/cloudsec/agent/logs/agent.log資料夾、且install.log檔案未提供相關資訊。</block>
-  <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。錯誤會重新導向至標準輸出、並使用「journalctl -u cloudsecure-agent.service`」命令顯示在服務記錄中。此命令可用於進一步疑難排解問題。</block>
   <block id="0a21e5a6656a19032e65faf86ec69c83" category="cell">代理程式安裝失敗、無法使用「不支援此Linux套裝作業系統。結束安裝」。</block>
   <block id="3a7e14f279ad4988e72d190c932c04e4" category="cell">代理程式安裝失敗、並顯示錯誤：「-bash: unZip：command not found"</block>
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">安裝unzip、然後再次執行安裝命令。如果機器上安裝了Yum、請嘗試「yum install unzip」來安裝unzip軟體。之後、從代理程式安裝UI重新複製命令、然後貼到CLI中、以再次執行安裝。</block>
@@ -13441,5 +13440,15 @@ AAA/BBB/CCC/ *
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根據時間解決警示</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6eca91256cc474aa6b595cae920d2b6a" category="paragraph">VMware vSphere 的資料收集器會收集 VM 來賓作業系統和 ESXi 主機效能和組態資訊、並要求 vSphere 中所有物件上的唯讀 Privileges 。截至 2024 年 8 月為止、 vSphere 收集器還會從 vSphere 環境中另外加入記錄訊息、以及某些 VMware 特定的度量。請注意、 Cloud Insights 只能從 vSphere 8.0.1 或更高版本的環境擷取 VMware 記錄資訊。同樣地、廠商專屬指標僅支援 vSphere 7+ 環境。因此、如果指定的收集器指向較舊的 vSphere 執行個體、您可能會想要停用該收集器上的記錄和 / 或廠商特定度量核取方塊。</block>
-  <block id="88a839c0b82eee34733678fcc5ffb8bd" category="cell">如果 Fluent 位元無法啟動、嘗試開啟 / 建立資料庫、請將 RunPrivileged 設為 true 。</block>
+  <block id="aacf7c114a34df5c220f4e375bcd0f6c" category="section-title">「固定」目前版本的值機員</block>
+  <block id="a9c7e2aeb7f9f9d656ca872f21bc9a3a" category="paragraph">根據預設、 Cloud Insights 工作負載安全性會自動更新代理程式。有些客戶可能想要暫停自動更新、這會讓值機員保持目前版本、直到發生下列其中一種情況：</block>
+  <block id="dea8f428de371d2483508970ea18bd9c" category="list-text">客戶會繼續自動更新值機員。</block>
+  <block id="7a82a4df03996c48bae61a1b40043abe" category="list-text">30 天過去了。請注意、 30 天從最近一次代理程式更新的當天開始、而非代理程式暫停的當天開始。</block>
+  <block id="772bc0b6f8f9cb094b4c25a1cdebdd38" category="paragraph">在上述每種情況下、代理程式都會在下次工作負載安全性重新整理時更新。若要暫停或恢復自動代理程式更新、請使用 _cloudsecure_config.agents API_ ：</block>
+  <block id="3de76c45f03acf84c51fdc95c48547c8" category="inline-image-macro">WS Pin Agent API</block>
+  <block id="d3cea9cb845d99f575c1c78a6cbcbfeb" category="paragraph"><block ref="d3cea9cb845d99f575c1c78a6cbcbfeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="43bc274fafd4f24a6e53e70d34b7d027" category="paragraph">請注意、暫停或恢復動作可能需要五分鐘才能生效。您可以在「工作負載安全性」 &gt; 「收集器」頁面的「代理程式」標籤中檢視目前的代理程式版本。</block>
+  <block id="1979148f99c797a36ae97c5382f95179" category="inline-image-macro">WS Agent 版本</block>
+  <block id="1958af1f939092e25b5d78caf2a1b150" category="paragraph"><block ref="1958af1f939092e25b5d78caf2a1b150" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。此錯誤會重新導向至標準輸出、並可在服務記錄中使用<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>命令查看。此命令可用於進一步疑難排解問題。 EST</block>
 </blocks>
