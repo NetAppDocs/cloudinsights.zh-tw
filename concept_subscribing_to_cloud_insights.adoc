@@ -28,7 +28,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 
 在登錄過程中、您可以選擇全球區域來裝載Cloud Insights 您的支援環境。如需詳細資訊、請參閱Cloud Insights 關於資訊 link:security_information_and_region.html["資訊與地區"]。
 
-如需 Cloud Insights Basic 與 Premium 版本所提供功能的完整比較、請參閱 link:https://bluexp.netapp.com/cloud-insights-pricing["Cloud Insights 定價"] 頁面。
+如需 Cloud Insights Basic 與 Premium Edition 所提供功能的完整比較、請參閱link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Cloud Insights 定價"]頁面。
 
 
 WARNING: 不活動Cloud Insights 的不活動版環境會被刪除、資源也會回收。如果連續30天沒有使用者活動、環境將視為非作用中、如果連續7天沒有擷取資料。在刪除環境之前、將會傳送通知並提供四天的寬限期。Cloud Insights
