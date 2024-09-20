@@ -62,3 +62,19 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 其中、_<API_Access_Token >>是您在API存取金鑰建立期間所儲存的權杖。
 
 如需詳細資訊、請參閱「*管理> API存取*」下的「_API文件_」連結。
+
+
+
+== 透過 API 擷取資料的指令碼
+
+工作負載安全代理程式包含匯出指令碼、可將要求的時間範圍分成較小的批次、以利平行呼叫 v2 API 。
+
+指令碼位於： __/opt/oracle/cloudsecure/agent/export NetApp -script_ 。同一目錄中的 README 檔案提供使用說明。
+
+以下是呼叫指令碼的範例命令：
+
+[source]
+----
+python3 data-export.py --tenant_url <tenant id>.cs01.cloudinsights.netapp.com --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
+----
+主要參數： - `--iteration_interval 12`：將所要求的時間範圍分成 12 小時的間隔。- `--num_workers 3`：使用 3 個執行緒平行擷取這些時間間隔。

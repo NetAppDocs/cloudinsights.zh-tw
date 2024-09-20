@@ -141,6 +141,7 @@ Amazon EC2資料收集器包含一個選項、可讓您使用Cloud Insights EC2�
 * 您必須將每個子帳戶設定為使用AWS角色、讓主帳戶ID從子帳戶存取EC2詳細資料。
 * 每個子帳戶都必須將角色名稱設定為相同字串。
 * 在Cloud Insights 「*跨帳戶角色*」欄位的「AWS Data Collector * Advanced Configuration *」區段中、輸入此角色名稱字串。
+* 安裝收集器的帳戶需要 _ 委派存取管理員 _ Privileges 。如link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["資訊文件AWS"]需詳細資訊、請參閱。
 
 
 最佳實務做法：強烈建議將AWS預先定義的_Amazon EC2ReadOnlyAccess_原則指派給EC2主帳戶。此外、在資料來源中設定的使用者應至少指派預先定義的_AWSOrganizationsReadOnlyAccess_原則、以便查詢AWS。

@@ -13454,4 +13454,11 @@ AAA/BBB/CCC/ *
   <block id="f3798d278d520536cd288461ba2c1858" category="list-text">如果 SVM-1 受到工作負載安全性的監控、而 SVM 的根使用者則會將該共用裝載在 IP 位址為 10.197.12.40 的用戶端上、取證活動頁面中顯示的使用者名稱將為 _root@10.197.12.40_ 。</block>
   <block id="b9d319d8c871cc037bbb64830c075261" category="list-text">如果將同一個 SVM-1 裝載到另一個 IP 位址為 10.197.12.41 的用戶端、取證活動頁面中顯示的使用者名稱將為 _root@10.197.12.41_ 。</block>
   <block id="e3c2786769604634cbe42574b350b28f" category="list-text">這是為了依照 IP 位址來分隔 NFS 根使用者活動。以前、所有活動都只由 _root_ 使用者執行、沒有 IP 區分。</block>
+  <block id="ce86a5aaf36b8b44516c9a3d547bc544" category="section-title">透過 API 擷取資料的指令碼</block>
+  <block id="abd1c518dbb73a973f62bdeac0383a1f" category="paragraph">工作負載安全代理程式包含匯出指令碼、可將要求的時間範圍分成較小的批次、以利平行呼叫 v2 API 。</block>
+  <block id="9691b74510440e767ebe140708556d4a" category="paragraph">指令碼位於： __/opt/oracle/cloudsecure/agent/export NetApp -script_ 。同一目錄中的 README 檔案提供使用說明。</block>
+  <block id="b33ce51cf90f2cebc1848ee9bdd86a73" category="paragraph">以下是呼叫指令碼的範例命令：</block>
+  <block id="4cee2cbc95e55efcd827954ec63679ef" category="paragraph">主要參數： -<block ref="86768c9197497f61803d2cccda886c2b" prefix=" " category="inline-code"></block>：將所要求的時間範圍分成 12 小時的間隔。-<block ref="90bf4ae9a260a1dab39cf85f9b78e62f" prefix=" " category="inline-code"></block>：使用 3 個執行緒平行擷取這些時間間隔。</block>
+  <block id="6bcfb21e09554dca2e39878feec63052" category="inline-link-macro">資訊文件AWS</block>
+  <block id="27bd1734310b9ef60e677eeb8578ef51" category="list-text">安裝收集器的帳戶需要 _ 委派存取管理員 _ Privileges 。如<block ref="c2b17d165b23584303b797053451136e" category="inline-link-macro-rx"></block>需詳細資訊、請參閱。</block>
 </blocks>
