@@ -19,13 +19,13 @@ summary: 設定Dell EMC VMAX和PowerMax系列裝置資料收集器。
 
 
 [role="lead"]
-利用Solutions Enabler SYMCLI命令搭配您環境中現有的Solutions Enabler伺服器、即可探索EMC VMAX和PowerMax儲存陣列。Cloud Insights現有的Solutions Enabler伺服器可透過存取關守磁碟區、連線至VMAX-PowerMax儲存陣列。
+Data Infrastructure Insights 會使用 Solutions Enabler SYMCLI 命令搭配您環境中現有的 Solutions Enabler 伺服器、來探索 EMC VMAX 和 PowerMax 儲存陣列。現有的Solutions Enabler伺服器可透過存取關守磁碟區、連線至VMAX-PowerMax儲存陣列。
 
 
 
 == 需求
 
-在設定此資料收集器之前、您應確保Cloud Insights 將TCP連線至現有Solutions Enabler伺服器上的連接埠2707。如伺服器的「symcfg清單」輸出所示、可探索此伺服器的所有「本機」Symmetrix陣列。Cloud Insights
+在設定此資料收集器之前、您應確保 Data Infrastructure Insights 已連接至現有 Solutions Enabler 伺服器上的連接埠 2707 。Data Infrastructure Insights 會探索此伺服器的所有「本機」 Symmetrix 陣列、如該伺服器的「 symcfg 清單」輸出所示。
 
 * 具備SMI-S供應商應用程式的EMC Solutions Enabler（CLI）必須安裝在擷取單元伺服器上、且版本必須與Solutions Enabler Server上執行的版本相符或早於該版本。
 * 需要正確設定的｛installdir｝\emc\symapi\config\netcnfg-file。此檔案定義Solutions Enabler伺服器的服務名稱、以及存取方法（安全/ NOSEECURE /any）。
@@ -58,11 +58,11 @@ cisys storapid <all>
 
 == 術語
 
-從EMC VMAX-PowerMax資料來源取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 EMC VMAE/PowerMax 資料來源取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟 | 磁碟 
@@ -88,7 +88,7 @@ cisys storapid <all>
 
 == 組態
 
-*附註：*如果SMI-S使用者驗證未啟用、Cloud Insights 則會忽略不支援的資料收集器中的預設值。
+* 注意： * 如果未啟用 SMI-S 使用者驗證、則會忽略 Data Infrastructure Insights 資料收集器中的預設值。
 
 [cols="2*"]
 |===
@@ -121,7 +121,7 @@ cisys storapid <all>
 | 庫存篩選器裝置清單 | 要包含或排除的裝置ID清單、以逗號分隔 
 
 
-| 連線快取 | 選擇連線快取方法：*本機表示Cloud Insights 正在Solutions Enabler伺服器上執行《The》（《Solutions Enabler》）擷取服務、該伺服器具備光纖通道連線功能、可連線至您要探索的Symmetrix陣列、並可存取關守磁碟區。部分遠端擷取設備（Rau）組態可能會出現此情形。* remide_lapped是預設值、在大多數情況下都應使用。這會使用NETCNFG檔案設定、使用IP連線至Solutions Enabler伺服器、該伺服器必須具備光纖通道連線至您要探索的Symmetrix陣列、並可存取Gatekeeper磁碟區。*如果reme_clapped選項使CLI命令失敗、請使用遠端選項。請記住、這會拖慢擷取程序（在極端情況下可能會減至數小時甚至數天）。NETCNFG檔案設定仍可用於連接至Solutions Enabler伺服器的IP連線、該伺服器的Fibre Channel可連線至正在探索的Symmetrix陣列。*附註：*此設定不會變更Cloud Insights 「symcfg清單」輸出所列為遠端陣列的不完整行為。僅在本命令顯示為本機的裝置上收集資料。Cloud Insights 
+| 連線快取 | 選擇連線快取方法：*本機表示Cloud Insights 正在Solutions Enabler伺服器上執行《The》（《Solutions Enabler》）擷取服務、該伺服器具備光纖通道連線功能、可連線至您要探索的Symmetrix陣列、並可存取關守磁碟區。部分遠端擷取設備（Rau）組態可能會出現此情形。* remide_lapped是預設值、在大多數情況下都應使用。這會使用NETCNFG檔案設定、使用IP連線至Solutions Enabler伺服器、該伺服器必須具備光纖通道連線至您要探索的Symmetrix陣列、並可存取Gatekeeper磁碟區。*如果reme_clapped選項使CLI命令失敗、請使用遠端選項。請記住、這會拖慢擷取程序（在極端情況下可能會減至數小時甚至數天）。NETCNFG檔案設定仍可用於連接至Solutions Enabler伺服器的IP連線、該伺服器的Fibre Channel可連線至正在探索的Symmetrix陣列。* 注意： * 此設定不會變更「 symcfg 清單」輸出所列遠端陣列的 Data Infrastructure Insights 行為。Data Infrastructure Insights 只會在此命令顯示為本機的裝置上收集資料。 
 
 
 | SMI-S傳輸協定 | 用於連線至SMI-S供應商的傳輸協定。也會顯示使用的預設連接埠。 

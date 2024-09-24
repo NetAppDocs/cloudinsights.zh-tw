@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Insights
+  name: Data Infrastructure Insights
   harmony_integration: maestro
   rss_page: concept_whats_new.html
   internal:
@@ -11,11 +11,11 @@ settings:
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 本文檔 Cloud Insights
+  - title: Data Infrastructure Insights 文件
     url: "/index.html"
   - title: 新增功能
     url: "/concept_whats_new.html"
-  - title: 註冊Cloud Insights 以供使用
+  - title: 報名參加 Data Infrastructure Insights
     url: "/task_cloud_insights_onboarding_1.html"
   - title: 安全性
     entries:
@@ -53,7 +53,7 @@ sidebar:
       url: "/concept_user_roles.html"
   - title: 資料收集器清單
     url: "/data_collector_list.html"
-  - title: 訂閱Cloud Insights 此功能
+  - title: 訂閱 Data Infrastructure Insights
     url: "/concept_subscribing_to_cloud_insights.html"
   - title: 觀察能力
     entries:

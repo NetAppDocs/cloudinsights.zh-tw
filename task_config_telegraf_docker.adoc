@@ -19,7 +19,7 @@ summary: Docker資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從Docker收集指標。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 Docker 收集指標。
 
 
 
@@ -80,7 +80,7 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-請注意Cloud Insights 、Kubernetes平台所提供的支援程序會自動處理此對應作業。
+請注意、 Kubernetes 平台提供的 Data Infrastructure Insights 安裝程式會自動處理此對應。
 
 
 
@@ -122,6 +122,6 @@ mountPath: /var/run/docker.sock
 | 問題： | 試用： 
 
 
-| 依照組態頁面上的指示、我看不到Cloud Insights Docker指標。 | 檢查Telegraf代理程式記錄、查看是否報告下列錯誤：e! 外掛程式[inports.dDocker中發生錯誤：嘗試連線至Docker精靈套接字時、取得權限遭拒（若有）、請採取必要步驟、提供Telegraf代理程式存取上述Docker Unix套接字。 
+| 我遵循組態頁面上的指示、在 Data Infrastructure Insights 中看不到 Docker 指標。 | 檢查Telegraf代理程式記錄、查看是否報告下列錯誤：e! 外掛程式[inports.dDocker中發生錯誤：嘗試連線至Docker精靈套接字時、取得權限遭拒（若有）、請採取必要步驟、提供Telegraf代理程式存取上述Docker Unix套接字。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面。

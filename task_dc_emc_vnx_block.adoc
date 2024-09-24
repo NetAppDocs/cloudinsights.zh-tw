@@ -19,17 +19,17 @@ summary: 設定Dell EMC VNX區塊儲存設備（前身為CLARiiON）。
 
 
 [role="lead"]
-使用Dell EMC VNX區塊儲存設備（niSec)資料收集器（前身為CLARiiON）來取得庫存和效能資料。Cloud Insights
+Data Infrastructure Insights 使用 Dell EMC VNX 區塊儲存（ NaviSec ）資料收集器（前身為 CLARiiON ）來取得庫存和效能資料。
 
 
 
 == 術語
 
-從EMC VNX區塊儲存資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 EMC VNX Block Storage 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟 | 磁碟 
@@ -56,8 +56,8 @@ summary: 設定Dell EMC VNX區塊儲存設備（前身為CLARiiON）。
 
 * 每個VNX區塊儲存處理器的IP位址
 * VNX區塊儲存陣列的唯讀式Navisphere使用者名稱和密碼
-* 必須將NaviSecCli安裝在Cloud Insights SectionAU上
-* 存取驗證：Cloud Insights 使用使用者名稱和密碼、從EAU執行NaviSecCLI至每個陣列。
+* NaviSecCli 必須安裝在 Data Infrastructure Insights AU 上
+* 存取驗證：使用使用者名稱和密碼、從 Data Infrastructure Insights AU 對每個陣列執行 NaviSecCLI 。
 * 連接埠需求：80、443
 * NaviSecCLI版本應與陣列上最新的Flare程式碼相對應
 * 為了達到效能、必須啟用統計資料記錄。
@@ -133,7 +133,7 @@ naviseccli.exe -h <IP位址>-user <user>-password <password>-scield <scoe.use 0 
 * 您尚未在資料收集器組態精靈中選取「使用安全用戶端」選項、也未安裝不安全的版本 Naviphere CLI 。
 * 確認資料收集器組態中的 Navisphere CLI 安裝目錄是否正確
 * 確認 VNX 區塊儲存設備的 IP 在資料收集器組態中是否正確：
-* 從 Cloud Insights 擷取單元：
+* 從 Data Infrastructure Insights 擷取單元：
 +
 ** 開啟 CMD 。
 ** 將目錄變更為設定的安裝目錄
@@ -175,7 +175,7 @@ naviseccli.exe -h <IP位址>-user <user>-password <password>-scield <scoe.use 0 
 * 這通常是因為更新 VNX 區塊儲存裝置上的韌體、而非更新 NaviCLI.exe 的安裝。這也可能是因為不同裝置的韌體不同、但只安裝一個CLI（使用不同的韌體版本）。
 * 確認裝置和主機執行的軟體版本相同：
 +
-** 從 Cloud Insights 擷取單元開啟命令列視窗
+** 從 Data Infrastructure Insights Acquisition Unit 開啟命令列視窗
 ** 將目錄變更為設定的安裝目錄
 ** 輸入「 navicli -h <ip> gettagent 」以與 CLARiiON 裝置建立連線
 ** 在前幾行中查找版本號。範例：「 Agent Rev: 6.16.2 （ 0.1 ）」

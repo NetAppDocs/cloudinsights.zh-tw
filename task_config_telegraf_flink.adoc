@@ -19,7 +19,7 @@ summary: Flink資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從Flink收集指標。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 Flink 收集指標。
 
 
 

@@ -19,7 +19,7 @@ summary: Flink資料收集器組態
 
 
 [role="lead"]
-從安裝代理程式的節點收集度量。Cloud Insights
+Data Infrastructure Insights 會從您安裝代理程式的節點收集度量。
 
 
 

@@ -19,17 +19,17 @@ summary: 設定Brocade FC交換器資料收集器。
 
 
 [role="lead"]
-支援使用Brocade FC交換器（SSH）資料來源來探索執行因素作業系統（FOS）韌體4.2及更新版本之Brocade或重新品牌交換器裝置的庫存。Cloud Insights同時支援FC交換器和存取閘道模式的裝置。
+Data Infrastructure Insights 使用 Brocade FC 交換器（ SSH ）資料來源來探索 Brocade 或執行 Rebred 作業系統（ FOS ）韌體 4.2 及更新版本之交換器裝置的庫存。同時支援FC交換器和存取閘道模式的裝置。
 
 
 
 == 術語
 
-從Brocade FC交換器資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 Brocade FC 交換器資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 交換器 | 交換器 
@@ -58,8 +58,8 @@ summary: 設定Brocade FC交換器資料收集器。
 
 == 需求
 
-* 此功能將會啟動與Brocade交換器TCP連接埠22的連線、以收集庫存資料。Cloud InsightsAU也會啟動連接至udp連接埠161的連線、以收集效能資料。
-* 網路中的所有交換器都必須具備IP連線能力。如果您選取「Discover all switches in the fabric（探索網路中的所有交換器）」核取方塊、Cloud Insights 則會識別網路中的所有交換器；不過、它需要IP連線到這些額外交換器才能發現這些交換器。
+* Data Infrastructure Insights Acquisition Unit （ AU ）將啟動連線至 Brocade 交換器上的 TCP 連接埠 22 、以收集庫存資料。AU也會啟動連接至udp連接埠161的連線、以收集效能資料。
+* 網路中的所有交換器都必須有 IP 連線。如果您選取「探索架構中的所有交換器」核取方塊、 Data Infrastructure Insights 會識別架構中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。
 * 網路中的所有交換器都需要相同的帳戶。您可以使用Putty（開放原始碼終端機模擬器）來確認存取。
 * 光纖網路中的所有交換器都必須開啟連接埠161和162、才能進行SNMP效能輪詢。
 * SNMP唯讀社群字串
@@ -156,10 +156,10 @@ summary: 設定Brocade FC交換器資料收集器。
 | 問題： | 試用： 
 
 
-| Brocade資料來源的庫存擷取失敗、並顯示錯誤：<date><time>錯誤[com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource]錯誤2、共2：<資料來源名稱>[內部錯誤]-無法產生裝置<IP>的機型。偵測提示時發生錯誤（[Device name <name>：無法產生裝置<IP>的機型。偵測提示時發生錯誤） | 此問題可能是因為Brocade交換器需要太長時間才會以提示字元傳回、超過預設的逾時時間5秒。在資料收集器Cloud Insights 的「Advanced Configuration」（進階組態）設定中、嘗試將_SSH橫幅等待逾時（秒）_增加至更高的值。 
+| Brocade資料來源的庫存擷取失敗、並顯示錯誤：<date><time>錯誤[com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource]錯誤2、共2：<資料來源名稱>[內部錯誤]-無法產生裝置<IP>的機型。偵測提示時發生錯誤（[Device name <name>：無法產生裝置<IP>的機型。偵測提示時發生錯誤） | 此問題可能是因為Brocade交換器需要太長時間才會以提示字元傳回、超過預設的逾時時間5秒。在 Data Infrastructure Insights 的資料收集器進階組態設定中、嘗試將 _SSH Banner Wait Timeout （ sec ） _ 提高至更高的值。 
 
 
-| 錯誤：Cloud Insights 「收到無效的機箱角色」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
+| 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
 
 
 | 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 

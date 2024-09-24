@@ -68,35 +68,35 @@ image:TableWidgetPerformanceData.png["表格小工具"]
 
 * *折線圖、不規則曲線圖、區域圖、堆疊區域圖*：這些是時間序列圖小工具、您可以在其中顯示效能和其他資料。
 +
-image:Time-Series Charts.png["區域、堆疊區域、直線、不規則曲線圖表"]
+image:Time-SeriesCharts.png["區域、堆疊區域、直線、不規則曲線圖表"]
 
 * *單一值小工具*：小工具、可讓您顯示單一值、此值可直接從計數器衍生、或是使用查詢或運算式計算。您可以定義色彩格式臨界值、以顯示該值是否在預期、警告或臨界範圍內。
 +
-image:Single-Value Widgets.png["單值小工具、含格式設定和不含格式設定"]
+image:Single-ValueWidgets.png["單值小工具、含格式設定和不含格式設定"]
 
 * *量表小工具*：以傳統（實體）量表或項目符號量表顯示單值資料、並根據您的「警告」或「重大」值顯示色彩 link:concept_dashboard_features.html#formatting-gauge-widgets["自訂"]。
 +
-image:Gauge Widgets.png["採用格式化、傳統量表、項目符號表的單一值"]
+image:GaugeWidgets.png["採用格式化、傳統量表、項目符號表的單一值"]
 
 * *長條圖、柱狀圖*：顯示前N個或後N個值、例如依容量顯示前10個儲存區、或依IOPS顯示後5個磁碟區。
 +
-image:Bar and Column Charts.png["橫條圖和直條圖"]
+image:BarandColumnCharts.png["橫條圖和直條圖"]
 
 * *方塊繪圖圖*：單一圖表中資料的最小、最大、中間值、以及上下四分位數之間的範圍繪圖。
 +
-image:Box Plot.png["方塊繪圖"]
+image:BoxPlot.png["方塊繪圖"]
 
 * *散點繪圖圖*：將相關資料繪製成點、例如IOPS和延遲。在此範例中、您可以快速找到高處理量和低IOPS的資產。
 +
-image:Scatter Plot.png["散佈繪圖"]
+image:ScatterPlot.png["散佈繪圖"]
 
 * *餅圖*：傳統的餅圖、可將資料顯示為總和的一部分。
 +
-image:Pie Chart.png["圓形圖"]
+image:PieChart.png["圓形圖"]
 
 * *附註小工具*：最多1000個字元的自由文字。
 +
-image:Note Widget.png["附註小工具"]
+image:NoteWidget.png["附註小工具"]
 
 * *警示表*：最多顯示最近1、000個警示。
 

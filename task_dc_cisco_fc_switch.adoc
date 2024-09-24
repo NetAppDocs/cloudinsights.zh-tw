@@ -19,7 +19,7 @@ summary: 設定Cisco MDS Fablic交換器資料收集器。
 
 
 [role="lead"]
-利用Cisco MDS Fabric交換器資料收集器來探索Cisco MDS Fabric交換器的庫存、以及啟用FC服務的各種Cisco Nexus FCoE交換器。Cloud Insights
+Data Infrastructure Insights 使用 Cisco MDS Fabric 交換器資料收集器來探索 Cisco MDS Fabric 交換器的庫存、以及各種啟用 FC 服務的 Cisco Nexus FCoE 交換器。
 
 此外、您也可以使用此資料收集器、探索以NPV模式執行的許多Cisco裝置機型。
 
@@ -27,11 +27,11 @@ summary: 設定Cisco MDS Fablic交換器資料收集器。
 
 == 術語
 
-從Cisco FC交換器資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 Cisco FC 交換器資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 交換器 | 交換器 
@@ -169,7 +169,7 @@ summary: 設定Cisco MDS Fablic交換器資料收集器。
 | 錯誤：裝置不是Cisco MDS交換器 | •確定為裝置設定的資料來源IP正確•使用Cisco Device Manager GUI登入裝置•使用CLI登入裝置 
 
 
-| 錯誤：Cloud Insights 無法取得交換器的WWN。 | 這可能不是FC或FCoE交換器、因此可能不受支援。確定資料來源中設定的IP/FQDN確實是FC/FCoE交換器。 
+| 錯誤： Data Infrastructure Insights 無法取得交換器的 WWN 。 | 這可能不是FC或FCoE交換器、因此可能不受支援。確定資料來源中設定的IP/FQDN確實是FC/FCoE交換器。 
 
 
 | 錯誤：發現多個節點已登入NPV交換器連接埠 | 停用NPV交換器的直接擷取 

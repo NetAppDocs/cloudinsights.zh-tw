@@ -19,7 +19,7 @@ summary: 彈性搜尋資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從Elasticsearch收集指標。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器、從 Elasticsearch 收集指標。
 
 . 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇彈性搜尋。
 +

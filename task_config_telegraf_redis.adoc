@@ -19,7 +19,7 @@ summary: Redis資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從Redis收集數據。Cloud InsightsRedis是一種開放原始碼的記憶體內建資料結構存放區、可做為資料庫、快取和訊息代理程式、支援下列資料結構：字串、雜湊、清單、集等等。
+Data Infrastructure Insights 使用此資料收集器從 Redis 收集指標。Redis是一種開放原始碼的記憶體內建資料結構存放區、可做為資料庫、快取和訊息代理程式、支援下列資料結構：字串、雜湊、清單、集等等。
 
 
 

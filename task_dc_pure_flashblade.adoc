@@ -19,17 +19,17 @@ summary: 設定Pure Storage資料收集器。
 
 
 [role="lead"]
-Cloud Insights 使用 Pure Storage FlashBlade 資料收集器、從揭露其 REST API 版本 2 的 FlashBlade 叢集收集庫存和效能資料
+Data Infrastructure Insights 使用 Pure Storage FlashBlade 資料收集器、從 FlashBlade 叢集收集庫存和效能資料、這些叢集揭露其 REST API 的第 2 版
 
 
 
 == 術語
 
-針對由Singfis取得的每種資產類型Cloud Insights 、會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示最常用的資產術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟機（SSD） | 磁碟 
@@ -72,7 +72,7 @@ Cloud Insights 使用 Pure Storage FlashBlade 資料收集器、從揭露其 RES
 | FlashBlade 主機 IP 位址 | 儲存系統的IP位址 
 
 
-| 使用者名稱 | 協助 Cloud Insights 管理員記住其 API 權杖所屬的使用者名稱 
+| 使用者名稱 | 協助 Data Infrastructure Insights 管理員記住其 API Token 所屬使用者的使用者名稱 
 
 
 | API權杖 | API權杖 

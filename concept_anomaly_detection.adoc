@@ -62,7 +62,7 @@ image:ADMonitor_blurb.png["異常狀況偵測監視器適用於您想知道尖�
 
 若要警示異常狀況、請瀏覽 * 可服務性 > 警示 > +Monitor* 來建立監視器。選取 _ Anomaly Detection Monitor_ 作為監視器類型。
 
-image:Anomaly Detection Monitor Choice.png["建立監視器時選取異常偵測、寬度 =480"]
+image:AnomalyDetectionMonitorChoice.png["建立監視器時選取異常偵測、寬度 =480"]
 
 選擇您要監控的物件和度量。您可以像設定其他類型的監視器一樣、設定篩選器和群組。
 
@@ -74,7 +74,7 @@ image:Anomaly Detection Monitor Choice.png["建立監視器時選取異常偵測
 * 您也可以選擇將異常設為 _ 忽略 _ 以下的值。這有助於降低噪音。此值會以虛線顯示在範例圖表上。
 
 
-image:Anomaly Detection Monitor Conditions.png["設定異常偵測監視器的條件"]
+image:AnomalyDetectionMonitorConditions.png["設定異常偵測監視器的條件"]
 
 最後、您可以設定警示的傳送方法（電子郵件、網路攔截器或兩者）、為監控器提供選擇性的說明或修正動作、並視需要將監控器新增至自訂群組。
 

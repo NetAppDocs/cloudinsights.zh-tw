@@ -80,7 +80,7 @@ keywords: data collector, NetApp, Cloud, ONTAP
 | 效能並行執行緒計數 | 並行執行緒數。 
 
 
-| 進階計數器資料收集 | 請勾選此選項Cloud Insights 、以便從下列清單中收集進階指標。 
+| 進階計數器資料收集 | 請勾選此選項、讓 Data Infrastructure Insights 從下列清單中收集進階指標。 
 |===
 
 

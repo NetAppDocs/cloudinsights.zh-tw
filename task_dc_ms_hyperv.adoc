@@ -25,11 +25,11 @@ Microsoft Hyper-V資料收集器會從虛擬化伺服器運算環境取得庫存
 
 == 術語
 
-從Microsoft Hyper-V（WMI）取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 Microsoft Hyper-V （ WMI ）取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 虛擬硬碟 | 虛擬磁碟 
@@ -63,7 +63,7 @@ Microsoft Hyper-V資料收集器會從虛擬化伺服器運算環境取得庫存
 * 必須啟用 WinRM 、並在所有 Hypervisor 上聆聽
 * 連接埠需求：連接埠135透過Windows 2003與舊版的指派1024-65535與Windows 2008的指派49152-65535的WMI&動態TCP連接埠。
 * 即使資料收集器只指向IP位址、DNS解析也必須成功
-* 每個Hyper-V Hypervisor都必須為每個主機上的每個VM開啟「資源計量」。如此一來、每Cloud Insights 個Hypervisor都能在每個來賓作業系統上提供更多資料以供其使用。如果未設定、則會為每個來賓取得較少的效能指標。如需資源計量的詳細資訊、請參閱 Microsoft 文件：
+* 每個Hyper-V Hypervisor都必須為每個主機上的每個VM開啟「資源計量」。如此一來、每個 Hypervisor 就能在每個客體上擁有更多資料以供 Data Infrastructure Insights 使用。如果未設定、則會為每個來賓取得較少的效能指標。如需資源計量的詳細資訊、請參閱 Microsoft 文件：
 +
 link:https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831661(v=ws.11)["Hyper-V資源計量概觀"]
 

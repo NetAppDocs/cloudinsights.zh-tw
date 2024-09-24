@@ -19,17 +19,17 @@ summary: 設定HDS Command Suite Device Manager資料收集器。
 
 
 [role="lead"]
-Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Device Manager伺服器。使用標準的HiCommand API與HiCommand Device Manager伺服器通訊。Cloud Insights
+Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Device Manager伺服器。Data Infrastructure Insights 使用標準的 HiCommand API 與 HiCommand Device Manager 伺服器通訊。
 
 
 
 == 術語
 
-從Hitachi Vantara Command Suite資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 Hitachi Vantara Command Suite 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | PDEV | 磁碟 
@@ -77,10 +77,10 @@ Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Devic
 ** 精簡配置：如果這是HDP資源池
 ** RAID群組–您可能不會因為下列幾個原因而看到這些項目：
 +
-不需要重複計算容量、不需付出任何代價。Cloud Insights在HDS上、通常需要從磁碟建立RAID群組、在這些RAID群組上建立集區磁碟區、以及從這些集區磁碟區建構集區（通常是HDP、但可能是特殊用途）。如果Cloud Insights 不報告基礎RAID群組及集區、則原始容量總和將會大幅超過磁碟總和。
+Data Infrastructure Insights 採取堅定立場、避免以任何成本重複計算容量。在HDS上、通常需要從磁碟建立RAID群組、在這些RAID群組上建立集區磁碟區、以及從這些集區磁碟區建構集區（通常是HDP、但可能是特殊用途）。如果 Data Infrastructure Insights 同時回報基礎 RAID 群組和集區、則其原始容量的總和將會大幅超過磁碟的總和。
 
 +
-相反地Cloud Insights 、由於資源池磁碟區的容量、所以由其所組成的支援中心HDS Command Suite資料收集器會任意縮減RAID群組的大小。這可能導致Cloud Insights 無法回報RAID群組。此外、任何產生的RAID群組都會以旗標標示、使Cloud Insights 其無法在SHUWebUI中看到、但它們確實會流入Cloud Insights 到流程資料倉儲（DWH）中。這些決策的目的是為了避免大部分使用者不關心的問題、因為如果您的HDS陣列有可用容量為50MB的RAID群組、您可能無法將可用空間用於任何有意義的結果。
+相反地、 Data Infrastructure Insights 的 HDS Command Suite 資料收集器會根據集區磁碟區的容量、任意縮減 RAID 群組的大小。這可能導致 Data Infrastructure Insights 根本不回報 RAID 群組。此外、任何產生的 RAID 群組都會以旗標標示、使其不會顯示在 Data Infrastructure Insights WebUI 中、但會流入 Data Infrastructure Insights Data Warehouse （ DWH ）。這些決策的目的是為了避免大部分使用者不關心的問題、因為如果您的HDS陣列有可用容量為50MB的RAID群組、您可能無法將可用空間用於任何有意義的結果。
 
 
 
@@ -124,15 +124,15 @@ Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Devic
 +
 ** 效能監視器必須獲得授權。
 ** 必須啟用監控交換器。
-** 匯出工具（export/exe）必須複製到Cloud Insights 該區。
+** 匯出工具（ Export.exe ）必須複製到 Data Infrastructure Insights AU 。
 ** 匯出工具版本必須符合目標陣列的微碼版本。
 
 
 * AMS效能：
 +
-** NetApp強烈建議在AMS陣列上建立專屬的服務帳戶Cloud Insights 、以便用來擷取效能資料。儲存導覽器僅允許使用者帳戶同時登入陣列一次。使用與管理指令碼相同的使用者帳戶、或使用1TB、可能會導致由於單一並行使用者帳戶登入限制、導致無法與陣列通訊、進而導致無法與之通訊Cloud Insights Cloud Insights
+** NetApp 強烈建議您在 AMS 陣列上建立專屬服務帳戶、以利資料基礎架構洞見、以用於擷取效能資料。儲存導覽器僅允許使用者帳戶同時登入陣列一次。讓 Data Infrastructure Insights 使用與管理指令碼相同的使用者帳戶、否則資料基礎架構 Insights 、管理指令碼或由於單一使用者帳戶登入限制、因此 HiCommand 無法與陣列通訊
 ** 效能監視器必須獲得授權。
-** 儲存導覽器模組2（SNM2）CLI公用程式需要安裝在Cloud Insights SAU上。
+** Storage Navigator Modular 2 （ SNM2 ） CLI 公用程式必須安裝在 Data Infrastructure Insights AU 上。
 
 
 
@@ -239,13 +239,13 @@ Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Devic
 | 問題： | 試用： 
 
 
-| 錯誤：*執行匯出公用程式時發生錯誤*執行外部命令時發生錯誤 | *確認匯出公用程式已安裝在Cloud Insights RUS採購 單元*確認資料收集器組態中的匯出公用程式位置正確*確認USP/R600陣列的IP在資料收集器組態中正確*確認使用者名稱 而且在資料收集器組態中密碼正確*確認匯出公用程式版本與Cloud Insights 來自「更新擷取單元」的儲存陣列微碼版本*相容、開啟CMD提示字元並執行下列動作： -將目錄變更為已設定的安裝目錄-請執行批次檔runWin.bat、嘗試與已設定的儲存陣列建立連線 
+| 錯誤：*執行匯出公用程式時發生錯誤*執行外部命令時發生錯誤 | 確認 Data Infrastructure Insights Acquisition Unit * 上已安裝 Export Utility * 確認 Data Collector 組態中的 Export Utility 位置正確 * 確認 Data Collector 組態中的 USP/R600 陣列 IP 正確 * 確認使用者名稱和密碼在資料收集器組態中正確 * 確認 Export Utility 版本與儲存陣列微碼版本相容、並透過 Data Infrastructure 建立批次連線以開啟「 Data Acquisition 」目錄、然後執行「 Insights 」命令、建立一個名為「 Change Unit 」的指令、執行「 Data Infrastructure runWin.bat 」 
 
 
 | 錯誤：目標IP的匯出工具登入失敗 | *確認使用者名稱/密碼正確*主要為此HDS資料收集器建立使用者ID *確認未設定其他資料收集器來取得此陣列 
 
 
-| 錯誤：匯出工具記錄為「無法取得監控時間範圍」。 | *確認陣列已啟用效能監控。*嘗試在Cloud Insights 不屬於VMware的地方叫用匯出工具、以確認問題不在Cloud Insights VMware解決方案範圍內。 
+| 錯誤：匯出工具記錄為「無法取得監控時間範圍」。 | *確認陣列已啟用效能監控。* 嘗試在 Data Infrastructure Insights 之外使用匯出工具、以確認問題不在 Data Infrastructure Insights 的範圍內。 
 
 
 | 錯誤：*組態錯誤：匯出公用程式不支援儲存陣列*組態錯誤：儲存設備導覽器模組化CLI不支援儲存陣列 | *僅設定支援的儲存陣列。*使用「篩選裝置清單」排除不受支援的儲存陣列。 
@@ -254,7 +254,7 @@ Hitachi Vantara Command Suite資料收集器可支援該公司的HiCommand Devic
 | 錯誤：*執行外部命令時發生錯誤*組態錯誤：未由庫存報告儲存陣列*組態錯誤：匯出資料夾不含Jar檔案 | *檢查匯出公用程式位置。*檢查相關的儲存陣列是否設定為採用1TB伺服器*、將效能輪詢時間間隔設為60秒的倍數。 
 
 
-| 錯誤：*錯誤儲存瀏覽器CLI *執行自動執行命令時發生錯誤*執行外部命令時發生錯誤 | *確認Cloud Insights 儲存導覽器模組化CLI已安裝在Sors採集 單元*確認資料收集器組態中的儲存導覽器模組化CLI位置正確*確認WMS/SMS/SMS陣列的IP在資料收集器組態中正確*確認 該儲存導覽器模組化CLI版本相容Cloud Insights 於資料收集器*中所設定的儲存陣列微碼版本、可從該資料收集器*開啟CMD提示字元、然後執行下列動作： -將目錄變更為已設定的安裝目錄-請執行下列命令「auunitref.exe」、嘗試與已設定的儲存陣列建立連線。 
+| 錯誤：*錯誤儲存瀏覽器CLI *執行自動執行命令時發生錯誤*執行外部命令時發生錯誤 | 確認 Storage Navigator 模組化 CLI 已安裝在 Data Infrastructure Insights Acquisition Unit * 中確認 Storage Navigator 模組化 CLI 位置在資料收集器組態中正確 * 確認 WMS/SMS/SMS 陣列的 IP 在資料收集器組態中正確 * 確認 Storage Navigator 模組化 CLI 版本與 Data Infrastructure Acquisition Unit 中設定的微碼版本儲存陣列相容、並透過以下命令開啟 Insights 模型組、以執行命令： 
 
 
 | 錯誤：組態錯誤：庫存未報告儲存陣列 | 檢查是否已在1TB伺服器中設定有問題的儲存陣列 

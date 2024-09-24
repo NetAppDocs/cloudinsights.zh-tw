@@ -19,7 +19,7 @@ summary: Dcos組態
 
 
 [role="lead"]
-支援此資料收集器、可從資料中心/作業系統收集數據。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 DC/DC / 作業系統收集指標。
 
 
 

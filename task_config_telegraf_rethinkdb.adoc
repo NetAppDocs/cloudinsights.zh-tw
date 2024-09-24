@@ -19,7 +19,7 @@ summary: Redis資料收集器組態
 
 
 [role="lead"]
-此資料收集器可用來從RethinkDB收集指標。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 RethinkDB 收集指標。
 
 
 

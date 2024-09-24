@@ -19,7 +19,7 @@ summary: PostgreSQL資料收集器組態
 
 
 [role="lead"]
-此資料收集器可用來收集PostgreSQL的數據。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 PostgreSQL 收集指標。
 
 
 

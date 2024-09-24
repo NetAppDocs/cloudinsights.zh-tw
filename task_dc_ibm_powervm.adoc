@@ -25,11 +25,11 @@ IBM PowerVM（SSH）資料收集器用於收集有關在由硬體管理主控台
 
 == 術語
 
-從IBM Power硬體執行個體上執行的虛擬分割區取得庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 IBM Power 硬體執行個體上執行的虛擬分割區取得庫存資訊。對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | hdisk | 虛擬磁碟 

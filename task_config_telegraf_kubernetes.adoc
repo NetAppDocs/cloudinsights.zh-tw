@@ -16,7 +16,7 @@ summary: Kubernetes 的資料收集器
 
 
 [role="lead"]
-使用此資料收集器來收集Kubernetes Pod、Node和Container指標。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器來收集 Kubernetes Pod 、節點和 Container 指標。
 
 
 

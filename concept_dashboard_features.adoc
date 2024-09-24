@@ -47,8 +47,6 @@ image:WidgetNamingExample-C.png["Widget命名範例"]
 
 在儀表板編輯模式中、按一下小工具上的功能表、然後選取*複製*。Widget編輯器隨即啟動、並預先填入原始Widget的組態、並在Widget名稱中加上「copy」字尾。您可以輕鬆進行任何必要的變更、並儲存新的小工具。小工具會放置在儀表板底部、您可以視需要加以定位。請記得在完成所有變更時儲存儀表板。
 
-image:DuplicateWidget.png["複製小工具"]
-
 
 
 == 顯示Widget圖例
@@ -471,7 +469,7 @@ image::SecondaryAxisExplained.png[次要軸範例]
 +
 圖表會顯示一行、顯示IOPS總計總和。
 
-. 按一下_複製此查詢_圖示 image:DuplicateQueryIcon.png["Duplicat查詢"] 建立查詢複本。
+. 按一下「複製此查詢」圖示、建立查詢複本。
 +
 查詢的複本會新增至原始資料下方。
 
@@ -505,7 +503,7 @@ image::SecondaryAxisExplained.png[次要軸範例]
 
 表格 Widget 處理運算式的方式略有不同。單一表格 Widget 最多可包含五個運算式、每個運算式都會新增為表格的新欄。每個運算式最多可包含五個值、用於執行其計算。您可以輕鬆地將欄命名為有意義的項目。
 
-image:Expression Example.png["表格 Widget 中的運算式"]
+image:ExpressionExample.png["表格 Widget 中的運算式"]
 
 
 
@@ -612,7 +610,7 @@ image:Variables_Automatic_Filter_Button.png["自動篩選"]
 
 「實體與項目符號量表」小工具可讓您設定_Warning_和/或_Critical等級的臨界值、清楚呈現您所指定的資料。
 
-image:Gauge Widget Formatting.png["Gauge Widget的格式設定"]
+image:GaugeWidgetFormatting.png["Gauge Widget的格式設定"]
 
 若要設定這些小工具的格式、請依照下列步驟操作：
 
@@ -632,7 +630,7 @@ image:Gauge-Bullet.png["項目符號表、寬=374."]
 
 在單值小工具中、除了設定警告（橘色）和嚴重（紅色）臨界值之外、您也可以選擇以綠色或白色背景顯示「範圍內」值（低於警告層級的值）。
 
-image:Single-Value Widgets.png["單值Widget、含格式設定和不含格式設定"]
+image:Single-ValueWidgets.png["單值Widget、含格式設定和不含格式設定"]
 
 按一下單一值小工具或儀表板小工具中的連結、會顯示對應於小工具中第一個查詢的查詢頁面。
 
@@ -692,7 +690,7 @@ NOTE: 使用美國英文號碼命名標準。Cloud Insights美國的「十億」
 
 如果您有時間序列小工具（例如折線、不規則曲線、區域、堆疊區域）、其中有兩個查詢會繪製主要的Y軸、則基本單位不會顯示在Y軸的頂端。不過、如果您的小工具在主要Y軸上有查詢、而在次要Y軸上有查詢、則會顯示每個小工具的基本單位。
 
-image:UnitsOnPrimaryAnd SecondaryYAxis.png["兩個Y軸上的單位"]
+image:UnitsOnPrimaryAndSecondaryYAxis.png["兩個Y軸上的單位"]
 
 如果您的Widget有三個以上的查詢、則基礎單位不會顯示在Y軸上。
 
@@ -802,8 +800,8 @@ image:UnitsOnPrimaryAnd SecondaryYAxis.png["兩個Y軸上的單位"]
 
 NOTE: 由於 NetApp BlueXP 本身的使用者登入逾時時間為 7 天、因此 Cloud Insights 也必須使用該事件登出。您只要重新登入、儀表板就會繼續顯示。
 
-* 若要啟動電視模式、請按一下 image:ActivateTVMode.png["電視模式"] 按鈕。
-* 若要停用電視模式、請按一下畫面左上角的* Exit（結束）*按鈕。 image:ExitTVMode.png["結束按鈕"]
+* 若要啟動電視模式、請按一下電視模式按鈕。
+* 若要停用電視模式、請按一下畫面左上角的* Exit（結束）*按鈕。
 
 
 您可以按一下右上角的「暫停」按鈕、暫時暫停自動重新整理。暫停時、儀表板時間範圍欄位會顯示暫停資料的作用中時間範圍。自動重新整理暫停時、您的資料仍在擷取和更新中。按一下「恢復」按鈕以繼續自動重新整理資料。

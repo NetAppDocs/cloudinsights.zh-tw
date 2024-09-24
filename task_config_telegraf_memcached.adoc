@@ -19,7 +19,7 @@ summary: memcached資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從Memcached收集度量資料。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 Memcached 收集度量。
 
 
 

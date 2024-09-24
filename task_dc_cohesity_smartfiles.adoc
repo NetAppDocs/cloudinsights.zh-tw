@@ -19,7 +19,7 @@ summary: 設定「Colesity SmartFiles資料收集器」。
 
 
 [role="lead"]
-此REST API型收集器將會擷取「Co猶豫不決」叢集、探索「視圖」（如Cloud Insights 「內部磁碟區」）、各種節點、以及收集效能指標。
+此 REST API 型收集器將會取得 Coesity 叢集、探索「檢視」（即「 Data Infrastructure Insights Internal Volumes 」（資料基礎架構洞見內部磁碟區）、各種節點、並收集效能指標。
 
 
 

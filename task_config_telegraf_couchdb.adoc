@@ -19,7 +19,7 @@ summary: CouchDB資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從CouchDB收集數據。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 CouchDB 收集指標。
 
 
 

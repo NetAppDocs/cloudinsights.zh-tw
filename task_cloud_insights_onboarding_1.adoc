@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task_cloud_insights_onboarding_1.html 
-summary: 註冊Cloud Insights 以利執行功能、並創造您的環境。 
+summary: 註冊 Data Infrastructure Insights 並建立您的環境。 
 keywords: onboarding, new user 
 ---
-= NetApp新進人員Cloud Insights
+= 資料基礎架構洞見入門
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
@@ -16,7 +16,7 @@ keywords: onboarding, new user
 
 
 [role="lead"]
-在開始使用 Cloud Insights 之前、您必須先註冊 * NetApp BlueXP* 入口網站。如果您已經登入 NetApp BlueXP 、您可以透過幾個快速步驟、開始免費試用 Cloud Insights 。
+在開始使用資料基礎架構洞見之前、您必須先註冊 * NetApp BlueXP  入口網站。如果您已經登入 NetApp BlueXP  、您可以透過幾個快速步驟、開始免費試用 Data Infrastructure Insights 。
 
 
 toc::[]
@@ -41,29 +41,29 @@ toc::[]
 
 輸入您的電子郵件地址和密碼。接著您將前往NetApp的雲端產品頁面。
 
-選取Cloud Insights 「
+選取 Data Infrastructure Insights 。
 
-image:BlueXP_CloudInsights.png["BlueXP 上的 Cloud Insights 免費試用版"]
+image:BlueXP_CloudInsights.png["BlueXP  上的 Data Infrastructure Insights 免費試用版"]
 
 
 
-== 開始Cloud Insights 免費試用
+== 開始免費試用 Data Infrastructure Insights
 
-如果這是您第一次登入Cloud Insights 到此解決方案、請Cloud Insights 在「供應項目」下、按一下「*開始免費試用*」。Cloud Insights 將引導您建立公司環境、包括選擇您希望環境所在的地區。
+如果這是您第一次登入 Data Infrastructure Insights 、請在 Data Infrastructure Insights 產品下、按一下 * 開始免費試用 * 。Data Infrastructure Insights 將引導您建立公司的環境、包括選擇環境所在的區域。
 
-image:trial_region_selector.png["選取要裝載 Cloud Insights 環境的區域"]
+image:trial_region_selector.png["選取您要在哪個區域中主控 Data Infrastructure Insights 環境"]
 
-一旦您的環境建立完成、您就可以使用 BlueXP 認證登入並開始免費的 30 天 Cloud Insights 試用版。在此試用期間、您可以探索 Cloud Insights 提供的功能。
+建立環境完成後、您可以使用 BlueXP  認證登入並開始免費的 30 天資料基礎架構深入分析試用版。在此試用期間、您可以探索 Data Infrastructure Insights 所提供的功能。
 
-在免費試用期間、您可以 link:concept_subscribing_to_cloud_insights.html["開始訂購"] 隨時都能Cloud Insights 實現。訂閱後、Cloud Insights 您可以根據目前的訂閱內容來使用功能不完整的功能。
+在免費試用期間、您可以link:concept_subscribing_to_cloud_insights.html["開始訂購"]隨時取得 Data Infrastructure Insights 。訂閱後、您可以根據目前的訂閱內容、使用 Data Infrastructure Insights 功能。
 
 
 
 == 登入後立即使用
 
-一旦您的環境建立完成、您可以隨時登入 NetApp BlueXP 入口網站、然後按一下 * 前往 Cloud Insights * 。您將被直接帶到Cloud Insights 您的自然環境中。
+建立環境之後、您隨時都可以登入 NetApp BlueXP  入口網站、然後按一下 * 移至資料基礎架構 Insights * 。您將直接進入 Data Infrastructure Insights 環境。
 
-您也可以直接開啟瀏覽器至Cloud Insights 您的URL環境、例如：
+您也可以直接開啟瀏覽器來存取 Data Infrastructure Insights 環境 URL 、例如：
 
  \https://<environment-prefix>.c01.cloudinsights.netapp.com/
 每位使用者的邀請電子郵件中也會包含此URL、方便您輕鬆存取及加入書籤。如果使用者尚未登入 BlueXP 、系統會提示使用者登入。
@@ -77,10 +77,10 @@ NOTE: 新使用者必須先註冊以存取 BlueXP 、才能存取其環境 URL �
 
 == 登出
 
-若要登出Cloud Insights 此功能、請按一下您的*使用者名稱*、然後選取*登出*。您將返回 BlueXP 登入畫面。
+若要登出 Data Infrastructure Insights 、請按一下您的 * 使用者名稱 * 、然後選取 * 登出 * 。您將返回 BlueXP 登入畫面。
 
 
-NOTE: 登出 Cloud Insights 會將您登出 BlueXP 。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。
+NOTE: 登出 Data Infrastructure Insights 會將您登出 BlueXP  。您也會登出其他使用 BlueXP 登入的 NetApp 雲端服務。
 
 
 

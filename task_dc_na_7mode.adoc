@@ -25,14 +25,14 @@ summary: 設定NetApp 7-mode資料收集器。
 
 == 術語
 
-從NetApp 7-mode資料收集器取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 NetApp 7-mode 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 
 NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.html#useful-definitions["已過時"]。
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟 | 磁碟 
@@ -138,12 +138,12 @@ NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.htm
 
 * 下列命令定義使用者角色功能：
 +
-** 「API-*」：使用此選項可Cloud Insights 讓效益管理程式執行所有NetApp儲存API命令。
+** 「 API-* 」：使用此選項可讓 Data Infrastructure Insights 執行所有 NetApp 儲存 API 命令。
 +
 使用ZAPI時需要使用此命令。
 
-** 「login-http-admin」：使用此選項可透過Cloud Insights HTTP連線至NetApp儲存設備。使用ZAPI時需要使用此命令。
-** 「安全性-API-vFilerTM」：使用此功能可Cloud Insights 讓效益管理系統執行NetApp儲存API命令、以擷取vFiler單元資訊。
+** 「 login-http-admin 」：使用此選項可讓 Data Infrastructure Insights 透過 HTTP 連線至 NetApp 儲存設備。使用ZAPI時需要使用此命令。
+** 「 security-API-vFiler 」：使用此選項可讓 Data Infrastructure Insights 執行 NetApp 儲存 API 命令、以擷取 vFiler 單元資訊。
 ** 「CLI選項」：用於「選項」命令、用於合作夥伴IP和啟用的授權。
 ** 「CLI/LUN」：存取以下命令以管理LUN。顯示特定LUN或LUN類別的狀態（LUN路徑、大小、線上/離線狀態及共用狀態）。
 ** "CLI/df"：適用於"df -s"、"df -r"、"df -A -r"命令、用於顯示可用空間。
@@ -181,7 +181,7 @@ NOTE: 此資料收集器就是 link:task_getting_started_with_cloud_insights.htm
 | 接收401 HTTP回應或13003 ZAPI錯誤代碼、且ZAPI傳回「權限不足」或「未授權使用此命令」 | 檢查使用者名稱和密碼、以及使用者權限/權限。 
 
 
-| 「無法執行命令」錯誤 | 檢查使用者是否擁有下列裝置權限： •API-*•CLI-日期•CLI- df•CLICLI - ifconfig•CLI- LUN•CLI作業•CLI- rdfile•CLI- snap•login-http-admin•安全API - vFilerTM也會檢查ONTAP 是否支援此版本、Cloud Insights 並確認所使用的認證資料是否與裝置認證相符 
+| 「無法執行命令」錯誤 | 檢查使用者是否具有下列裝置權限：• API* • CLI- 日期• CLI- df • CLI- ifconfig • CLI- LUN • CLI 操作• CLI - rdfile • CLI- SNAP • login-http-admin • security-API-vFiler 也會檢查資料基礎架構 Insights 是否支援 ONTAP 版本、並確認使用的認證是否符合裝置認證 
 
 
 | 叢集版本低於8.1 | 叢集支援的最低版本為8.1。升級至支援的最低版本。 

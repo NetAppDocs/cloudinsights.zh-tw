@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_admin_tool.html 
-summary: 整個發行生命週期中、均遵循安全最佳實務做法。Cloud Insights 
+summary: Data Infrastructure Insights 在整個版本生命週期中遵循安全性最佳實務做法。 
 keywords: security, risk, protection 
 ---
 = 安全性管理工具
@@ -19,11 +19,11 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-Cloud Insights 包含安全功能、可讓您的環境以增強的安全性運作。這些功能包括增強加密、密碼雜湊、變更內部使用者密碼的能力、以及加密和解密密碼的金鑰配對。
+Data Infrastructure Insights 包含安全功能、可讓您的環境以增強的安全性運作。這些功能包括增強加密、密碼雜湊、變更內部使用者密碼的能力、以及加密和解密密碼的金鑰配對。
 
 為保護敏感資料、 NetApp 建議您在安裝或升級後變更預設金鑰和 _Acquisition 使用者密碼。
 
-資料來源加密密碼儲存在Cloud Insights 效益管理系統中、當使用者在資料收集器組態頁面中輸入密碼時、會使用公開金鑰來加密密碼。Cloud Insights 沒有解密資料收集器密碼所需的私密金鑰；只有擷取單元（ Aus ）具有解密資料收集器密碼所需的資料收集器私密金鑰。
+資料來源加密密碼儲存在 Data Infrastructure Insights 中、當使用者在資料收集器組態頁面中輸入密碼時、會使用公開金鑰來加密密碼。Data Infrastructure Insights 沒有解密資料收集器密碼所需的私密金鑰；只有擷取單元（ Aus ）具有解密資料收集器密碼所需的資料收集器私密金鑰。
 
 
 
@@ -35,7 +35,7 @@ Cloud Insights 包含安全功能、可讓您的環境以增強的安全性運�
 
 == 管理採購單位的安全性
 
-安全性管理工具可讓您管理Cloud Insights 適用於此功能的安全性選項、並可在採購單位系統上執行。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。
+安全管理工具可讓您管理 Data Infrastructure Insights 的安全選項、並可在採購單元系統上執行。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。
 
 
 
@@ -168,7 +168,7 @@ usage: securityadmin -pr -ap <arg> | -h | -rp | -upr <arg>
 
 The purpose of this tool is to enable reconfiguration of security aspects
 of the Acquisition Unit such as encryption keys, and proxy configuration,
-etc. For more information about this tool, please check the Cloud Insights
+etc. For more information about this tool, please check the Data Infrastructure Insights
 Documentation.
 
 -ap,--add-proxy <arg>       add a proxy server.  Arguments: ip=ip
@@ -207,7 +207,7 @@ Documentation.
 
 如果您提供 UNIX Shell 指令碼、擷取單元可以執行該指令碼、從金鑰管理系統擷取 * 私密金鑰 * 和 * 公開金鑰 * 。
 
-為了擷取金鑰、 Cloud Insights 會執行指令碼、傳入兩個參數： _key id_ 和 _key type_ 。_Key ID_ 可用於識別金鑰管理系統中的金鑰。_Key 類型 _ 為「公開」或「私人」。當金鑰類型為「公開」時、指令碼必須傳回公開金鑰。當金鑰類型為「私密」時、必須傳回私密金鑰。
+為了擷取關鍵資料、 Data Infrastructure Insights 將會執行指令碼、傳入兩個參數： _key id_ 和 _key type_ 。_Key ID_ 可用於識別金鑰管理系統中的金鑰。_Key 類型 _ 為「公開」或「私人」。當金鑰類型為「公開」時、指令碼必須傳回公開金鑰。當金鑰類型為「私密」時、必須傳回私密金鑰。
 
 若要將金鑰傳回擷取單元、指令碼必須將金鑰列印至標準輸出。指令碼必須列印 _ 僅 _ 標準輸出金鑰；不得將其他文字列印至標準輸出。一旦要求的金鑰列印至標準輸出、指令碼必須以 0 結束代碼結束、任何其他傳回代碼都會被視為錯誤。
 

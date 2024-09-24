@@ -19,7 +19,7 @@ summary: OpenZFS資料收集器組態
 
 
 [role="lead"]
-此資料收集器可用來收集OpenZFS的度量資料。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 OpenZFS 收集指標。
 
 
 

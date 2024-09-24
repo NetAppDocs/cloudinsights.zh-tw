@@ -23,7 +23,7 @@ EMC RecoverPoint資料收集器的主要使用案例是探索RecoverPoint儲存�
 
 對於組態、資料收集器需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。
 
-EMC RecoverPoint資料收集器會收集RecoverPoint在其他儲存陣列之間協調的磁碟區對磁碟區複寫關係。顯示每個RecoverPoint叢集的儲存陣列、並收集該叢集上節點和儲存連接埠的庫存資料。Cloud Insights不會收集儲存資源池或Volume資料。
+EMC RecoverPoint資料收集器會收集RecoverPoint在其他儲存陣列之間協調的磁碟區對磁碟區複寫關係。Data Infrastructure Insights 會顯示每個 RecoverPoint 叢集的儲存陣列、並收集該叢集上節點和儲存連接埠的庫存資料。不會收集儲存資源池或Volume資料。
 
 
 

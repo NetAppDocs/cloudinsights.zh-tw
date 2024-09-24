@@ -27,11 +27,11 @@ summary: 設定NetApp HCI 功能：功能：
 
 == 術語
 
-從這個資料收集器取得下列庫存資訊。Cloud Insights對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從這個資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示該資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 虛擬磁碟 | 磁碟 

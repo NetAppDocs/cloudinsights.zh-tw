@@ -19,17 +19,17 @@ summary: 設定Dell EMC Isilon / PowerScale REST資料收集器。
 
 
 [role="lead"]
-VMware使用Dell EMC Isilon / PowerScale REST資料收集器、從Dell EMC Isilon或PowerScale儲存設備取得庫存和效能資料Cloud Insights 。此收集器支援執行 OneFS 8.0.0+ 的陣列。
+Data Infrastructure Insights 使用 Dell EMC Isilon / PowerScale REST 資料收集器、從 Dell EMC Isilon 或 PowerScale 儲存設備取得庫存和效能資料。此收集器支援執行 OneFS 8.0.0+ 的陣列。
 
 
 
 == 術語
 
-從這個資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從這個資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟機 | 磁碟 

@@ -91,9 +91,10 @@ NetApp以Cloud Insights 多種方式提供對功能的支援。我們全年無�
 
 這些支援選項以試用模式提供、全年無休免費提供：
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Suppport_KB&filter=%28content_type%3D%3D%22knowledgebase%22;product%3D%3D%22Cloud%20Insights%22%29["知識庫"]*
-+
-按一下本節中的連結即可前往NetApp知識庫、您可在其中搜尋相關文章、操作方法等。
+* * https://kb 。 NetApp 。 com/Special ： Search ？ query=Cloud + Insights [ 知識庫 ]*
+
+
++ 按一下本節中的連結、即可前往 NetApp 知識庫、在其中搜尋相關文章、操作方法等。
 
 * *link:https://docs.netapp.com/us-en/cloudinsights/["文件"]*
 +

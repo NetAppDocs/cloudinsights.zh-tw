@@ -21,17 +21,17 @@ summary: 設定系統儲存設備DS8000系列資料收集器。
 [role="lead"]
 IBM DS（CLI）資料收集器支援DS6xxx和DS8xxx裝置的庫存和效能資料擷取。
 
-支援DS3xxx、DS4xxx和DS5xxx裝置 link:task_dc_na_eseries.html["NetApp E系列資料收集器"]。如需支援的機型和韌體版本、請參閱Cloud Insights 《支援參考表》。
+支援 DS3xxx 、 DS4xxx 和 DS5xxx 裝置link:task_dc_na_eseries.html["NetApp E系列資料收集器"]。如需支援的機型和韌體版本、請參閱 Data Infrastructure Insights 支援對照表。
 
 
 
 == 術語
 
-從IBM DS資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 IBM DS 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟機模組 | 磁碟 
@@ -58,7 +58,7 @@ IBM DS（CLI）資料收集器支援DS6xxx和DS8xxx裝置的庫存和效能資�
 
 * 每個DS陣列的IP位址
 * 每個DS陣列上的唯讀使用者名稱和密碼
-* 安裝在Cloud Insights SUREAU上的第三方軟體：IBM _dscli
+* 安裝在 Data Infrastructure Insights AU 上的第三方軟體： IBM _dscli_
 * 存取驗證：使用使用者名稱和密碼執行_dscl__命令
 * 連接埠需求：80、443和750
 
@@ -128,6 +128,6 @@ IBM DS（CLI）資料收集器支援DS6xxx和DS8xxx裝置的庫存和效能資�
 * 嘗試透過網路管理主控台 \https ： <ip> ： 8452/DS8000/Console 與陣列通訊。  以資料收集器設定的 IP 取代 <ip> 。 
 
 
-| 錯誤：*無法執行程式*執行命令時發生錯誤 | * Cloud Insights 從「收購單元」中、在CLI的主目錄/Lib中開啟CMD * Open CLI/CFX檔案、然後檢查屬性Java_install、編輯值以符合您的環境*顯示此機器上安裝的Java版本、輸入： 「Java -version」* Ping發出CLI命令中指定的IBM Storage裝置IP位址。*如果以上皆正常運作、請手動執行CLI命令 
+| 錯誤：*無法執行程式*執行命令時發生錯誤 | * 從 Data Infrastructure Insights 擷取單元、在 CLI 主目錄 /lib 中開啟 CMD * Open CLI.CFG 檔案、並檢查屬性 JAVa_install 、編輯值以符合您的環境 * 顯示安裝在此機器上的 Java 版本、輸入：「 Java 版本」 * Ping 命令中指定的 IBM Storage 裝置 IP 位址。*如果以上皆正常運作、請手動執行CLI命令 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

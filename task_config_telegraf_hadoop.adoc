@@ -19,7 +19,7 @@ summary: Hadoop資料收集器組態
 
 
 [role="lead"]
-使用此資料收集器從Hadoop收集指標。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 Hadoop 收集指標。
 
 
 

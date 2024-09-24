@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, agent, telegraf agent 
-summary: Cloud Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。 
+summary: Data Infrastructure Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。 
 ---
 = 設定代理程式以收集資料（ Windows/Linux ）
 :toc: macro
@@ -19,9 +19,9 @@ summary: Cloud Insights 支援 Telegraf 做為其收集整合資料的代理程�
 
 
 [role="lead"]
-使用Cloud Insights link:https://docs.influxdata.com/telegraf["Telegraf"] 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights
+Data Infrastructure Insights 使用link:https://docs.influxdata.com/telegraf["Telegraf"]其代理程式來收集整合資料。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式用於將收集的度量、事件和記錄從代理程式傳送至 Data Infrastructure Insights 。
 
-目前的Telegraf版本Cloud Insights 是* 1.24.0*。
+Data Infrastructure Insights 目前的 Telegraf 版本是 *1.24.0* 。
 
 如需在 Kubernetes 上安裝的相關資訊、請參閱 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes監控操作員"] 頁面。
 
@@ -45,7 +45,7 @@ NOTE: 如果您想在安裝代理程式之前驗證安裝檔案、請參閱以�
 若要安裝代理程式、無論您使用的平台為何、都必須先執行下列動作：
 
 . 登入您要用於代理程式的主機。
-. 登入您的 Cloud Insights 環境、然後瀏覽至 * 可服務性 > 收集器 * 。
+. 登入您的 Data Infrastructure Insights 環境、然後瀏覽至 * 「可服務性」 > 「收集器」 * 。
 . 按一下「*+資料收集器*」、然後選擇要安裝的資料收集器。
 . 為您的主機選擇適當的平台（ Windows 、 Linux ）
 . 請針對每個平台執行其餘步驟。
@@ -55,7 +55,7 @@ NOTE: 如果您想在安裝代理程式之前驗證安裝檔案、請參閱以�
 NOTE: 在主機上安裝代理程式之後、您就不需要在該主機上重新安裝代理程式。
 
 
-TIP: 在伺服器/ VM上安裝代理程式之後Cloud Insights 、除了從您設定的任何資料收集器收集資料、還會從該系統收集度量資料。這些指標的收集方式如下 link:task_config_telegraf_node.html["「節點」度量"]。
+TIP: 一旦您在伺服器 / 虛擬機器上安裝代理程式、 Data Infrastructure Insights 除了從您設定的任何資料收集器收集資料外、還會從該系統收集度量。這些指標會收集為link:task_config_telegraf_node.html["「節點」度量"]。
 
 
 NOTE: 如果您使用的是Proxy、請先閱讀平台的Proxy指示、再安裝Telegraf代理程式。
@@ -366,7 +366,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 == 驗證Checksum
 
-雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。
+Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、但有些使用者可能會想要在安裝或套用下載的成品之前執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。
 
 
 
@@ -403,7 +403,7 @@ Windows：
  !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
-純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。這些成品包括但不限於：
+下載專用命令會將 Data Infrastructure Insights 中所有必要的成品下載到工作目錄中。這些成品包括但不限於：
 
 * 安裝指令碼
 * 環境檔案
@@ -470,9 +470,9 @@ Windows：
 | 我在舊安裝上執行安裝程式指令碼、現在代理程式並未傳送資料 | 解除安裝Telewraf代理程式、然後重新執行安裝指令碼。請依照本頁上的*升級代理程式*步驟、以取得適當的平台。 
 
 
-| 我已經用Cloud Insights 了這個功能來安裝代理程式 | 如果您已在主機/ VM上安裝代理程式、則不需要重新安裝代理程式。在這種情況下、只要在「代理程式安裝」畫面中選擇適當的平台和金鑰、然後按一下*繼續*或*完成*即可。 
+| 我已使用 Data Infrastructure Insights 安裝代理程式 | 如果您已在主機/ VM上安裝代理程式、則不需要重新安裝代理程式。在這種情況下、只要在「代理程式安裝」畫面中選擇適當的平台和金鑰、然後按一下*繼續*或*完成*即可。 
 
 
-| 我已經安裝了代理程式、但沒有使用Cloud Insights 這個安裝程式 | 移除先前的代理程式並執行Cloud Insights 安裝程序、以確保預設的組態檔設定正確無誤。完成後、按一下*繼續*或*完成*。 
+| 我已安裝代理程式、但未使用 Data Infrastructure Insights 安裝程式 | 移除先前的代理程式並執行 Data Infrastructure Insights Agent 安裝、以確保正確的預設組態檔案設定。完成後、按一下*繼續*或*完成*。 
 |===
 如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面或中的 link:reference_data_collector_support_matrix.html["資料收集器支援對照表"]。

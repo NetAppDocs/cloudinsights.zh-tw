@@ -25,11 +25,11 @@ HP Enterprise Alletra 6000（先前稱為Nimble）資料收集器可支援Alletr
 
 == 術語
 
-從收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從這個收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 陣列 | 儲存設備 
@@ -69,7 +69,7 @@ HP Enterprise Alletra 6000（先前稱為Nimble）資料收集器可支援Alletr
 您必須具備下列條件、才能從儲存陣列收集效能資料：
 
 * 陣列必須執行NimibleOS 4.0.0或更新版本
-* 陣列必須設定磁碟區。唯一的效能API NimbledOS是針對Volume、而任何統計Cloud Insights 資料的報告都是從Volume統計資料中衍生出來的
+* 陣列必須設定磁碟區。唯一的效能 API NimblibleOS 是針對 Volume 、而任何統計資料基礎架構洞見報告都是從 Volume 的統計資料中衍生而來
 
 
 

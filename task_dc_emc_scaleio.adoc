@@ -25,11 +25,11 @@ ScaleIO/PowerFlex 資料收集器會從 ScaleIO 與 PowerFlex 儲存設備收集
 
 == 術語
 
-Cloud Insights 從 ScaleIO/PowerFlex 資料收集器取得下列庫存資訊。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 ScaleIO/PowerFlex 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | MDM（中繼資料管理程式）叢集 | 儲存設備 

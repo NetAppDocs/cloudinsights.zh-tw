@@ -19,7 +19,7 @@ summary: 設定Lenovo資料收集器：
 
 
 [role="lead"]
-使用Lenovo資料收集器來探索Lenovo HX儲存系統的庫存和效能資料。Cloud Insights
+Data Infrastructure Insights 使用 Lenovo 資料收集器來探索 Lenovo HX 儲存系統的庫存和效能資料。
 
 附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_information_and_region.html 
-summary: 整個發行生命週期中、均遵循安全最佳實務做法。Cloud Insights 
+summary: Data Infrastructure Insights 在整個版本生命週期中遵循安全性最佳實務做法。 
 keywords: security, risk, protection 
 ---
 = 資訊與地區
@@ -19,13 +19,13 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-NetApp非常重視客戶資訊的安全性。以下是Cloud Insights 介紹如何以及在哪裡儲存您的資訊。
+NetApp非常重視客戶資訊的安全性。以下是 Data Infrastructure Insights 儲存您資訊的方式和位置。
 
 
 
-== 哪些資訊Cloud Insights 需要儲存？
+== Data Infrastructure Insights 儲存哪些資訊？
 
-包含下列資訊：Cloud Insights
+Data Infrastructure Insights 儲存下列資訊：
 
 * 效能資料
 +
@@ -41,7 +41,7 @@ NetApp非常重視客戶資訊的安全性。以下是Cloud Insights 介紹如�
 
 * 機密
 +
-機密資料包含Cloud Insights 由「資訊擷取單元」用來存取客戶裝置和服務的認證資料。這些認證會使用強式非對稱式加密來加密、私密金鑰只會儲存在擷取單元上、絕不會離開客戶環境。即使是權限Cloud Insights 僅有的部分SRE、也因為這項設計而無法以純文字存取客戶機密。
+機密包含 Data Infrastructure Insights Acquisition Unit 用來存取客戶裝置和服務的認證資料。這些認證會使用強式非對稱式加密來加密、私密金鑰只會儲存在擷取單元上、絕不會離開客戶環境。即使是特權資料基礎架構 Insights SRE 也無法以純文字存取客戶機密資料、因為這項設計。
 
 * 功能資料
 +
@@ -49,7 +49,7 @@ NetApp非常重視客戶資訊的安全性。以下是Cloud Insights 介紹如�
 
 * 使用者存取資料
 +
-驗證與存取資訊、可讓 NetApp BlueXP 與區域 Cloud Insights 站台通訊、包括與使用者授權相關的資料。
+驗證與存取資訊、可讓 NetApp BlueXP  與區域資料基礎架構洞見網站通訊、包括與使用者授權相關的資料。
 
 * 儲存工作負載安全性使用者目錄資料
 +
@@ -58,35 +58,35 @@ NetApp非常重視客戶資訊的安全性。以下是Cloud Insights 介紹如�
 
 
 
-NOTE: 使用者目錄資料是指工作負載安全性使用者目錄資料收集器所收集的使用者目錄資訊、而非Cloud Insights /工作負載安全性本身的使用者相關資料。
+NOTE: 使用者目錄資料是指由工作負載安全性使用者目錄資料收集器所收集的使用者目錄資訊、而非資料基礎架構 Insights / 工作負載安全性本身的使用者相關資料。
 
 *不會從基礎架構和服務資源收集明確的個人資料*。收集的資訊僅包含效能指標、組態資訊和基礎架構中繼資料、與許多廠商的電話公司（包括NetApp自動支援和ActiveIQ）非常相似。不過、視客戶的命名慣例而定、共享區、磁碟區、VM、qtree、 應用程式等可能包含個人識別資訊。
 
-如果啟用「工作負載安全性」、系統會額外查看SMB或其他共用區上的檔案和目錄名稱、這些檔案和目錄名稱可能包含個人識別資訊。當客戶啟用工作負載安全性使用者目錄收集器（基本上是透過Active Directory將Windows Ss對應至使用者名稱）時、Cloud Insights 系統會收集顯示名稱、公司電子郵件地址及任何選取的其他屬性、並由Sectorate加以儲存。
+如果啟用「工作負載安全性」、系統會額外查看SMB或其他共用區上的檔案和目錄名稱、這些檔案和目錄名稱可能包含個人識別資訊。當客戶啟用工作負載安全性使用者目錄收集器（主要透過 Active Directory 將 Windows SID 對應至使用者名稱）時、「 Data Infrastructure Insights 」會收集並儲存顯示名稱、公司電子郵件地址和任何其他選取的屬性。
 
-此外Cloud Insights 、系統也會維護對功能不完整的存取記錄、並包含使用者用來登入服務的IP和電子郵件地址。
+此外、也會維護 Data Infrastructure Insights 的存取記錄、其中包含使用者用來登入服務的 IP 和電子郵件地址。
 
 
 
 == 我的資訊儲存在何處？
 
-根據環境的建立區域來儲存資訊。Cloud Insights
+Data Infrastructure Insights 會根據建立環境的區域來儲存資訊。
 
 下列資訊儲存在主機區域中：
 
 * 遙測與資產/物件資訊、包括計數器和效能指標
 * 擷取單位資訊
 * 功能資料
-* 稽核Cloud Insights 有關使用者活動的資訊
+* 資料基礎架構洞見內的使用者活動稽核資訊
 * 工作負載安全性Active Directory資訊
 * 工作負載安全稽核資訊
 
 
-下列資訊位於美國、無論您Cloud Insights 的VMware環境所在的地區為何：
+無論資料基礎架構 Insights 環境所在的地區為何、下列資訊都位於美國境內：
 
 * 環境網站（有時稱為「租戶」）資訊、例如網站/帳戶擁有者。
-* 可讓 NetApp BlueXP 與地區 Cloud Insights 網站通訊的資訊、包括與使用者授權相關的任何資訊。
-* 關於使用者與租戶之間關係的資訊Cloud Insights 。
+* 可讓 NetApp BlueXP  與區域資料基礎架構洞見網站通訊的資訊、包括與使用者授權相關的任何資訊。
+* 與 Data Infrastructure Insights 使用者與租戶之間關係相關的資訊。
 
 
 

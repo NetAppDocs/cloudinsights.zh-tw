@@ -22,17 +22,17 @@ summary: 設定VPLEX資料收集器。
 此資料收集器會從EMC VPLEX儲存系統取得庫存和效能資料。對於組態、資料收集器需要VPLEX伺服器的IP位址和管理層級網域帳戶。
 
 
-NOTE: 從Vplex叢集收集的效能需要能夠運作效能歸檔服務、才能填入.CSV檔案和記錄、以便透過基於scp的檔案複本擷取。Cloud Insights Cloud InsightsNetApp發現許多Vplex韌體升級/管理站更新會使此功能無法運作。規劃此類升級的客戶可能想主動詢問Dell/EMC、他們的計畫性升級是否會使此功能無法運作、如果是、他們該如何重新啟用IT、以將效能可見度的落差降至最低？Cloud Insight的Vplex效能程式碼會在每次輪詢時評估所有預期檔案是否存在、以及是否正確更新；Cloud Insights 如果遺失或過時、則會記錄效能收集失敗。
+NOTE: Data Infrastructure Insights 從 Vplex 叢集收集效能時、必須讓效能歸檔服務正常運作、才能填入 Data Infrastructure Insights 透過以 SCP 為基礎的檔案複本所擷取的 .CSV 檔案和記錄。NetApp發現許多Vplex韌體升級/管理站更新會使此功能無法運作。規劃此類升級的客戶可能想主動詢問Dell/EMC、他們的計畫性升級是否會使此功能無法運作、如果是、他們該如何重新啟用IT、以將效能可見度的落差降至最低？Cloud Insight 的 Vplex 效能程式碼會在每次輪詢時評估所有預期檔案是否存在、以及是否已正確更新；如果檔案遺失或過時、 Data Infrastructure Insights 會記錄效能收集失敗。
 
 
 
 == 術語
 
-Cloud Insightst向VPLEX資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insightst 從 VPLEX 資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 叢集 | 儲存設備 

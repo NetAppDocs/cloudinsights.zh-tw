@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
 keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
-summary: Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud Insights 中使用。 
+summary: Kubernetes Monitoring Operator 會收集 Kubernetes 資料、以供 Data Infrastructure Insights 使用。 
 ---
 = Kubernetes 監控營運商的安裝與組態
 :hardbreaks:
@@ -16,7 +16,7 @@ summary: Kubernetes 監控營運者會收集 Kubernetes 資料、以便在 Cloud
 
 
 [role="lead"]
-Cloud Insights 提供 Kubernetes Monitoring Operator* for Kubernetes 系列。瀏覽至 * Kubernetes > Collectores > +Kubernetes Collector* 以部署新的運算子。
+Data Infrastructure Insights 為 Kubernetes 集合提供 * Kubernetes Monitoring Operator* 。瀏覽至 * Kubernetes > Collectores > +Kubernetes Collector* 以部署新的運算子。
 
 
 toc::[]
@@ -52,7 +52,7 @@ image:NKMO-Instructions-2.png["監控操作員指示"]
 
 == Kubernetes 監控元件
 
-Cloud Insights Kubernetes 監控由四個監控元件組成：
+資料基礎架構 Insights Kubernetes 監控由四個監控元件組成：
 
 * 叢集度量
 * 網路效能與地圖（選用）
@@ -90,7 +90,7 @@ image:KubernetesModifyDeploymentScreen.png["Mody 部署選項、 700"]
 
 如果 AgentConfiguration 不存在：
 
-* 請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：
+* 請記下資料基礎架構洞見所識別的叢集名稱（如果您的命名空間不是預設的 NetApp 監控、請改用適當的命名空間）：
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
 * 建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：
@@ -185,11 +185,11 @@ NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與
 
 您可以在兩個地方使用環境中的 Proxy 來安裝 Kubernetes Monitoring Operator 。這些可能是相同或獨立的Proxy系統：
 
-* 在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境
-* 目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊
+* 執行安裝程式碼片段（使用「 cURL 」）時需要 Proxy 、以將執行程式碼片段的系統連線至您的 Data Infrastructure Insights 環境
+* 目標 Kubernetes 叢集與您的 Data Infrastructure Insights 環境通訊所需的 Proxy
 
 
-如果您使用任一或兩個代理程式、為了安裝 Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。如果您有Proxy、而且可以Cloud Insights 從要安裝該運算子的伺服器/ VM存取功能、則您的Proxy可能設定正確。
+如果您使用上述任一種或兩者的 Proxy 、為了安裝 Kubernetes Operating Monitor 、您必須先確定您的 Proxy 已設定為允許與 Data Infrastructure Insights 環境進行良好的通訊。如果您有代理伺服器、而且可以從想要安裝運算子的伺服器 / VM 存取 Data Infrastructure Insights 、則您的 Proxy 可能已正確設定。
 
 對於用於安裝 Kubernetes 作業系統的 Proxy 、在安裝運算子之前、請先設定 _http 代理伺服器 /https 代理伺服器 _ 環境變數。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。
 
@@ -207,7 +207,7 @@ NetApp Kubernetes監控操作員會安裝自己的Kube-態 指標、以避免與
 
 
 
-對於 Kubernetes 叢集用來與 Cloud Insights 環境通訊的 Proxy 、請在閱讀完所有指示之後、安裝 Kubernetes Monitoring Operator 。
+對於 Kubernetes 叢集用來與 Data Infrastructure Insights 環境通訊的 Proxy 、請在閱讀完所有指示之後、安裝 Kubernetes Monitoring Operator 。
 
 在部署 Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。
 
@@ -237,9 +237,9 @@ agent:
 
 === 使用自訂或私有泊塢視窗儲存庫
 
-根據預設、 Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定 Kubernetes Monitoring Operator 所需的容器存取權。
+根據預設、 Kubernetes Monitoring Operator 會從 Data Infrastructure Insights 儲存庫中擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定 Kubernetes Monitoring Operator 所需的容器存取權。
 
-從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。
+從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Data Infrastructure Insights 儲存庫、拉出操作員的所有影像相依性、然後登出 Data Infrastructure Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。
 
 核心營運者功能與 Kubernetes 監控
 
@@ -261,7 +261,7 @@ agent:
 * CI-net-觀察者
 
 
-根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。
+根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Data Infrastructure Insights 儲存庫中的映像標記和目錄路徑一致。
 
 在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。
 
@@ -326,7 +326,7 @@ OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元�
 
 == 正在驗證Kubernetes Checksum
 
-雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。
+Data Infrastructure Insights 代理程式安裝程式會執行完整性檢查、但有些使用者可能會想要在安裝或套用下載的成品之前執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。
 
 請遵循下列步驟：
 
@@ -346,7 +346,7 @@ OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元�
 
 
 
-純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。  這些成品包括但不限於：
+下載專用命令會將 Data Infrastructure Insights 中所有必要的成品下載到工作目錄中。這些成品包括但不限於：
 
 * 安裝指令碼
 * 環境檔案
@@ -390,7 +390,7 @@ _NetApp-CI-telegraf-DS_ 、 _NetApp-CI-Fluent-bit-DS_ 和 _NetApp-CI-net-觀察�
 | 問題： | 試用： 
 
 
-| 我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。 | 請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。 
+| 我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。 | 請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用 Telegraf 2.0 版或更新版本、且必須主動監控您的 Kubernetes 叢集儲存設備、以獲得 Data Infrastructure Insights 。 
 
 
 | 我在記錄中看到類似下列內容的訊息：
@@ -511,23 +511,7 @@ kubectl Get all -n <namespace> | grep -i PSP （應顯示找不到任何項目�
 | 我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。 | 驗證 Kubernetes 版本（即 `kubectl version`）。  如果是 v1.2.x 或更低版本、這是預期的限制。  Kubernetes Monitoring Operator 部署的 kube-state 度量版本僅支援 v1.cronjob 。  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。 
 
 
-| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的  link:telegraf_agent_k8s_config_options.html["組態選項"]。
-
-附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
-
-...
-規格：
-...
-Telegraf ：
-    ...
-     - 名稱： Docker
-            執行模式：
-              –示範
-            替代：
-              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder
-                值： UNIX ： //RUN / Docker 。 sock
-    ...
-... 
+| 安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。 | 編輯 _AgentConfiguration_ 中的 Teledraf 區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。有關詳細信息，請參閱操作員的link:telegraf_agent_k8s_config_options.html["組態選項"]。附註：如果您使用 Data Infrastructure Insights Federal Edition 、則限制使用 _su_ 的使用者將無法收集泊塢視窗度量、因為存取泊塢視窗套接字需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 Telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目： ... 規格： ... Teledraf.. ...           - 名稱：泊塢視窗      執行模式：                     - 示範設定替代項目： - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder         值： UNIX ： ///run/泊 塢視窗 .sock ...... 
 
 
 | 我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
@@ -538,10 +522,10 @@ Telegraf ：
 | 我遺失某些事件記錄的 _ 參與物件 _ 資料。 | 請務必遵循中的步驟 link:pre-requisites_for_k8s_operator.html["權限"] 上一節。 
 
 
-| 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <<uninstalling,移除舊的運算子>> 和 <<installing-the-kubernetes-monitoring-operator,安裝新的>>。 
+| 為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 <pod> 、另一個名為 monitoring 、 <pod> ？ | 截至 2023 年 10 月 12 日、 Data Infrastructure Insights 已重新考慮營運商、以更好地為使用者提供服務；若要充分採用這些變更<<uninstalling,移除舊的運算子>><<installing-the-kubernetes-monitoring-operator,安裝新的>>、您必須和。 
 
 
-| 我的 Kubernetes 事件意外停止回報 Cloud Insights 。  a| 
+| 我的 Kubernetes 事件意外停止回報 Data Infrastructure Insights 。  a| 
 擷取事件導出者 Pod 的名稱：
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/'`

@@ -22,7 +22,7 @@ summary: 一般 DB 主機解析程式收集器
 
 == 術語
 
-Cloud Insights 從這個收集器取得庫存。
+Data Infrastructure Insights 從這個收集器取得庫存。
 
 
 

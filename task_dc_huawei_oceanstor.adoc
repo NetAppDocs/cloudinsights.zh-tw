@@ -19,17 +19,17 @@ summary: 設定Huawei OceanStor（REST / HTTPS）資料收集器。
 
 
 [role="lead"]
-本產品使用Huawei OceanStor（REST / HTTPS）資料收集器來探索Huawei OceanStor和OceanStor DORado儲存設備的庫存與效能。Cloud Insights
+Data Infrastructure Insights 使用 Huawei OceanStor （ RS/HTTPS ）資料收集器來探索 Huawei OceanStor 和 OceanStor Dorado 儲存設備的庫存與效能。
 
 
 
 == 術語
 
-他向Huawei OceanStor取得下列庫存與效能資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 從 Huawei OceanStor 取得下列庫存與效能資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 儲存資源池 | 儲存資源池 

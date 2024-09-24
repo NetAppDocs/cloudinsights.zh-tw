@@ -19,17 +19,17 @@ summary: 設定Oracle ZFS資料收集器。
 
 
 [role="lead"]
-支援Oracle ZFS Storage Appliance資料收集器、可收集庫存與效能資料。Cloud Insights
+Data Infrastructure Insights 使用 Oracle ZFS Storage Appliance 資料收集器來收集庫存和效能資料。
 
 
 
 == 術語
 
-使用Oracle ZFS資料收集器取得庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 透過 Oracle ZFS 資料收集器取得庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟（SSD） | 磁碟 
@@ -67,7 +67,7 @@ summary: 設定Oracle ZFS資料收集器。
 
 == 必要的效能指標
 
-Oracle ZFS設備可讓儲存管理員靈活擷取效能統計資料。此功能可讓您在高可用度配對中設定_each控制器、以擷取下列指標：Cloud Insights
+Oracle ZFS設備可讓儲存管理員靈活擷取效能統計資料。Data Infrastructure Insights 期望您在高可用度配對中設定 _each 控制器、以擷取下列指標：
 
 * SMB2.ops [共享]
 * nfs3.ops[share]
@@ -75,7 +75,7 @@ Oracle ZFS設備可讓儲存管理員靈活擷取效能統計資料。此功能�
 * nfs4-1.ops[share]
 
 
-如果控制器無法擷取任何或全部這些內容、可能導致Cloud Insights 「內部磁碟區」上的工作負載沒有或報告不足。
+如果控制器無法擷取任何或全部資料、可能會導致 Data Infrastructure Insights 沒有或報告不足的「內部磁碟區」工作負載。
 
 
 

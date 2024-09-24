@@ -19,7 +19,7 @@ summary: Kibana資料收集器組態
 
 
 [role="lead"]
-此資料收集器可用來收集Kibana的數據。Cloud Insights
+Data Infrastructure Insights 使用此資料收集器從 Kibana 收集指標。
 
 
 

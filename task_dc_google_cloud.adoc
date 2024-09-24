@@ -19,7 +19,7 @@ keywords: data collector, queries, create
 
 
 [role="lead"]
-此資料收集器可支援從Google Compute Cloud平台組態收集庫存和效能。此收集器會在一個Google組織內探索所有專案中的所有運算資源。如果Cloud Insights 您有多家Google組織想要透過支援功能來探索、Cloud Insights 您將會想要為每個組織部署一個收集器。
+此資料收集器可支援從Google Compute Cloud平台組態收集庫存和效能。此收集器會在一個Google組織內探索所有專案中的所有運算資源。如果您想透過 Data Infrastructure Insights 探索多個 Google 組織、您將想要為每個組織部署一個 Data Infrastructure Insights 收集器。
 
 
 
@@ -33,7 +33,7 @@ keywords: data collector, queries, create
 | 組織ID | 您要使用此收集器探索的組織ID。如果您的服務帳戶能夠查看多個組織、則此欄位為必填欄位 
 
 
-| 選擇「排除」或「包含」、即可依ID篩選GCP專案 | 如果您想要限制專案的資源會被帶入Cloud Insights 到什麼地方、 
+| 選擇「排除」或「包含」、即可依ID篩選GCP專案 | 如果您想限制將哪些專案資源納入 Data Infrastructure Insights 、 
 
 
 | 專案ID | 根據「選擇「排除」...值的值、您要在探索中或從探索中篩選的專案ID清單。預設清單為空白 

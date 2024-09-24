@@ -21,17 +21,17 @@ summary: 設定IBM SAN Volume Controller資料收集器。
 [role="lead"]
 IBM SAN Volume Controller（SVC）資料收集器會使用SSH收集庫存與效能資料、支援執行SVC作業系統的各種裝置。
 
-支援的裝置清單包括SVC、v7000、v5000和v3700等機型。如Cloud Insights 需支援的機型和韌體版本、請參閱支援表。
+支援的裝置清單包括SVC、v7000、v5000和v3700等機型。如需支援的機型和韌體版本、請參閱 Data Infrastructure Insights 支援對照表。
 
 
 
 == 術語
 
-從IBM SVC資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 從 IBM SVC 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟機 | 磁碟 

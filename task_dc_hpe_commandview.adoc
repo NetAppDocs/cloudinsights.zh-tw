@@ -19,17 +19,17 @@ summary: 設定HP Enterprise Command View資料收集器。
 
 
 [role="lead"]
-HP Enterprise Command View Advanced Edition資料收集器支援透過Command View Advanced Edition（CVAE）伺服器探索XP和P9500陣列。使用標準Command View API與CVAE通訊、以收集庫存和效能資料。Cloud Insights
+HP Enterprise Command View Advanced Edition資料收集器支援透過Command View Advanced Edition（CVAE）伺服器探索XP和P9500陣列。Data Infrastructure Insights 使用標準 Command View API 與 CVAE 通訊、以收集庫存和效能資料。
 
 
 
 == 術語
 
-從HP Enterprise Command View資料收集器取得下列庫存資訊。Cloud Insights對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 HP Enterprise Command View 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | PDEV | 磁碟 
@@ -72,14 +72,14 @@ HP Enterprise Command View Advanced Edition資料收集器支援透過Command Vi
 +
 ** 效能監視器必須獲得授權。
 ** 必須啟用監控交換器。
-** 匯出工具（export/exe）必須複製到Cloud Insights 該地區並擷取到該地區。在CI Linux Aus上、確保「cisys」具有讀取和執行權限。
+** 匯出工具（ export/exe. exe ）必須複製到 Data Infrastructure Insights AU 、並解壓縮到某個位置。在CI Linux Aus上、確保「cisys」具有讀取和執行權限。
 ** 匯出工具版本必須符合目標陣列的微碼版本。
 
 
 * AMS效能：
 +
 ** 效能監視器必須獲得授權。
-** 儲存導覽器模組2（SNM2）CLI公用程式安裝在Cloud Insights SAU上。
+** Storage Navigator Modular 2 （ SNM2 ） CLI 公用程式應安裝在 Data Infrastructure Insights AU 上。
 
 
 * 網路需求
@@ -191,13 +191,13 @@ HP Enterprise Command View Advanced Edition資料收集器支援透過Command Vi
 | 問題： | 試用： 
 
 
-| 錯誤：*執行匯出公用程式時發生錯誤*執行外部命令時發生錯誤 | *確認匯出公用程式已安裝在Cloud Insights RUS採購 單元*確認資料收集器組態中的匯出公用程式位置正確*確認USP/R600陣列的IP在資料收集器組態中正確*確認使用者名稱 而且在資料收集器組態中密碼正確*確認匯出公用程式版本與Cloud Insights 來自「更新擷取單元」的儲存陣列微碼版本*相容、開啟CMD提示字元並執行下列動作： -將目錄變更為已設定的安裝目錄-請執行批次檔runWin.bat、嘗試與已設定的儲存陣列建立連線 
+| 錯誤：*執行匯出公用程式時發生錯誤*執行外部命令時發生錯誤 | 確認 Data Infrastructure Insights Acquisition Unit * 上已安裝 Export Utility * 確認 Data Collector 組態中的 Export Utility 位置正確 * 確認 Data Collector 組態中的 USP/R600 陣列 IP 正確 * 確認使用者名稱和密碼在資料收集器組態中正確 * 確認 Export Utility 版本與儲存陣列微碼版本相容、並透過 Data Infrastructure 建立批次連線以開啟「 Data Acquisition 」目錄、然後執行「 Insights 」命令、建立一個名為「 Change Unit 」的指令、執行「 Data Infrastructure runWin.bat 」 
 
 
 | 錯誤：目標IP的匯出工具登入失敗 | *確認使用者名稱/密碼正確*主要為此HDS資料收集器建立使用者ID *確認未設定其他資料收集器來取得此陣列 
 
 
-| 錯誤：匯出工具記錄為「無法取得監控時間範圍」。 | *確認陣列已啟用效能監控。*嘗試在Cloud Insights 不屬於VMware的地方叫用匯出工具、以確認問題不在Cloud Insights VMware解決方案範圍內。 
+| 錯誤：匯出工具記錄為「無法取得監控時間範圍」。 | *確認陣列已啟用效能監控。* 嘗試在 Data Infrastructure Insights 之外使用匯出工具、以確認問題不在 Data Infrastructure Insights 的範圍內。 
 
 
 | 錯誤：*組態錯誤：匯出公用程式不支援儲存陣列*組態錯誤：儲存設備導覽器模組化CLI不支援儲存陣列 | *僅設定支援的儲存陣列。*使用「篩選裝置清單」排除不受支援的儲存陣列。 
@@ -206,7 +206,7 @@ HP Enterprise Command View Advanced Edition資料收集器支援透過Command Vi
 | 錯誤：*執行外部命令時發生錯誤*組態錯誤：未由庫存報告儲存陣列*組態錯誤：匯出資料夾不含Jar檔案 | *檢查匯出公用程式位置。*在Command View伺服器*中檢查有問題的儲存陣列是否已設定效能輪詢時間間隔為60秒的倍數。 
 
 
-| 錯誤：*錯誤儲存瀏覽器CLI *執行自動執行命令時發生錯誤*執行外部命令時發生錯誤 | *確認Cloud Insights 儲存導覽器模組化CLI已安裝在Sors採集 單元*確認資料收集器組態中的儲存導覽器模組化CLI位置正確*確認WMS/SMS/SMS陣列的IP在資料收集器組態中正確*確認 該儲存導覽器模組化CLI版本相容Cloud Insights 於資料收集器*中所設定的儲存陣列微碼版本、可從該資料收集器*開啟CMD提示字元、然後執行下列動作： -將目錄變更為已設定的安裝目錄-請執行下列命令「auunitref.exe」、嘗試與已設定的儲存陣列建立連線。 
+| 錯誤：*錯誤儲存瀏覽器CLI *執行自動執行命令時發生錯誤*執行外部命令時發生錯誤 | 確認 Storage Navigator 模組化 CLI 已安裝在 Data Infrastructure Insights Acquisition Unit * 中確認 Storage Navigator 模組化 CLI 位置在資料收集器組態中正確 * 確認 WMS/SMS/SMS 陣列的 IP 在資料收集器組態中正確 * 確認 Storage Navigator 模組化 CLI 版本與 Data Infrastructure Acquisition Unit 中設定的微碼版本儲存陣列相容、並透過以下命令開啟 Insights 模型組、以執行命令： 
 
 
 | 錯誤：組態錯誤：庫存未報告儲存陣列 | 檢查是否在Command View伺服器中設定有問題的儲存陣列 

@@ -19,7 +19,7 @@ summary: 設定Amazon EC2資料收集器。
 
 
 [role="lead"]
-使用Amazon EC2資料收集器從EC2執行個體取得庫存和效能資料。Cloud Insights
+Data Infrastructure Insights 使用 Amazon EC2 資料收集器從 EC2 執行個體取得庫存和效能資料。
 
 
 
@@ -63,7 +63,7 @@ summary: 設定Amazon EC2資料收集器。
 | AWS IAM秘密存取金鑰 | 輸入AWS IAM秘密存取金鑰。如果您不使用IAM角色、則為必要項目。 
 
 
-| 我瞭解AWS會向我索取API要求 | 請勾選此選項、確認您瞭解AWS會向您索取Cloud Insights 由中繼輪詢所提出的API要求。 
+| 我瞭解AWS會向我索取API要求 | 請勾選此選項、確認您瞭解 AWS 會為 Data Infrastructure Insights 輪詢所提出的 API 要求支付帳單。 
 |===
 
 
@@ -92,7 +92,7 @@ summary: 設定Amazon EC2資料收集器。
 | 效能意見調查時間間隔（秒） | 預設值為1800 
 
 
-| CloudWatch代理程式指標命名空間 | EC2/EBS中用來收集資料的命名空間。請注意、如果變更此命名空間中預設度量的名稱、Cloud Insights 則可能無法收集重新命名的資料。建議保留預設的度量名稱。 
+| CloudWatch代理程式指標命名空間 | EC2/EBS中用來收集資料的命名空間。請注意、如果變更此命名空間中的預設度量名稱、 Data Infrastructure Insights 可能無法收集該重新命名的資料。建議保留預設的度量名稱。 
 |===
 
 
@@ -120,11 +120,11 @@ summary: 設定Amazon EC2資料收集器。
 
 
 
-== 將Amazon標籤對應Cloud Insights 至不易顯示的附註
+== 將 Amazon 標記對應至 Data Infrastructure Insights 註釋
 
-Amazon EC2資料收集器包含一個選項、可讓您使用Cloud Insights EC2上設定的標記來填入各個項目的註釋。註釋的名稱必須與EC2標籤完全相同。將一律填入相同名稱的文字類型註釋、並「最佳」嘗試填入其他類型（數字、布林等）的註釋。Cloud Insights如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。
+Amazon EC2 資料收集器包含一個選項、可讓您在 EC2 上設定標籤、以填入 Data Infrastructure Insights 標籤。註釋的名稱必須與EC2標籤完全相同。Data Infrastructure Insights 一律會填入相同名稱的文字類型註解、並會「盡力」填入其他類型（數字、布林等）的註釋。如果您的註釋類型不同、而且資料收集器無法填入註釋、則可能需要移除註釋、然後重新建立為文字類型。
 
-請注意、AWS區分大小寫、Cloud Insights 而不區分大小寫。因此、如果您在Cloud Insights E-2中建立名為「Owner"的附註、並在EC2中建立名為「Owner"、「Owner"和「Owner"的標籤、則所有EC2變體的「Owner"（擁有者）附註都會對應至Cloud Insight的「擁有者」附註。
+請注意、 AWS 區分大小寫、而 Data Infrastructure Insights 則不區分大小寫。因此、如果您在 Data Infrastructure Insights 中建立名為「擁有者」的註釋、並在 EC2 中建立名為「擁有者」、「擁有者」和「擁有者」的標記、則所有的 EC2 版本「擁有者」都會對應至 Cloud Insight 的「擁有者」註釋。
 
 
 
@@ -136,17 +136,17 @@ Amazon EC2資料收集器包含一個選項、可讓您使用Cloud Insights EC2�
 
 == 從AWS子帳戶收集
 
-支援在單一AWS資料收集器中收集AWS的子帳戶。Cloud Insights此集合的組態會在AWS環境中執行：
+Data Infrastructure Insights 支援在單一 AWS 資料收集器中收集 AWS 的子帳戶。此集合的組態會在AWS環境中執行：
 
 * 您必須將每個子帳戶設定為使用AWS角色、讓主帳戶ID從子帳戶存取EC2詳細資料。
 * 每個子帳戶都必須將角色名稱設定為相同字串。
-* 在Cloud Insights 「*跨帳戶角色*」欄位的「AWS Data Collector * Advanced Configuration *」區段中、輸入此角色名稱字串。
+* 在 * 跨帳戶角色 * 欄位的 Data Infrastructure Insights AWS Data Collector * Advanced Configuration* 區段中、輸入此角色名稱字串。
 * 安裝收集器的帳戶需要 _ 委派存取管理員 _ Privileges 。如link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["資訊文件AWS"]需詳細資訊、請參閱。
 
 
 最佳實務做法：強烈建議將AWS預先定義的_Amazon EC2ReadOnlyAccess_原則指派給EC2主帳戶。此外、在資料來源中設定的使用者應至少指派預先定義的_AWSOrganizationsReadOnlyAccess_原則、以便查詢AWS。
 
-如需設定環境以允許Cloud Insights 從AWS子帳戶收集資訊、請參閱下列資訊：
+如需設定環境以允許 Data Infrastructure Insights 從 AWS 子帳戶收集的資訊、請參閱下列內容：
 
 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html["教學課程：使用IAM角色委派整個AWS帳戶的存取權"]
 

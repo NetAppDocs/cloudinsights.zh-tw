@@ -19,17 +19,17 @@ summary: 設定Rubrik CDM資料收集器。
 
 
 [role="lead"]
-使用RRubrik資料收集器從RRubrik儲存設備取得庫存和效能資料Cloud Insights 。
+Data Infrastructure Insights 使用 Rubrik 資料收集器從 Rubrik 儲存設備取得庫存和效能資料。
 
 
 
 == 術語
 
-從RRubrik資料收集器取得下列庫存資訊Cloud Insights 。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 Rubrik 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 叢集 | 儲存設備、儲存資源池 
@@ -48,7 +48,7 @@ summary: 設定Rubrik CDM資料收集器。
 
 設定此資料收集器需要下列項目：
 
-* 這個收購單元會啟動TCP連接埠443與RRubrik叢集的連線Cloud Insights 。每個叢集一個收集器。
+* Data Infrastructure Insights 擷取單元將啟動 TCP 連接埠 443 與 Rubrik 叢集的連線。每個叢集一個收集器。
 * Rubrik叢集IP位址。
 * 叢集的使用者名稱和密碼。
 * Rubrik 叢集 IP 位址或主機名稱。

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: 歡迎使用Cloud Insights 適用於此的文件入口網站。 
+summary: 歡迎使用 Data Infrastructure Insights 文件入口網站。 
 keywords:  
 ---
-= 本文檔 Cloud Insights
+= Data Infrastructure Insights 文件
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ keywords:
 
 
 [role="lead"]
-NetApp Cloud Insights 解決方案是一套雲端基礎架構監控工具、可讓您清楚掌握完整的基礎架構。利用VMware、您可以監控、疑難排解及最佳化所有資源、包括公有雲和私有資料中心。Cloud Insights
+NetApp 資料基礎架構洞見（前身為 Cloud Insights ）是一種雲端基礎架構監控工具、可讓您清楚掌握完整的基礎架構。透過 Data Infrastructure Insights 、您可以監控、疑難排解及最佳化所有資源、包括公有雲和私有資料中心。
 
 
 
-== 我該怎麼辦Cloud Insights ？
+== Data Infrastructure Insights 對我有何幫助？
 
-支援混合式多雲端監控功能、讓您能夠完整觀察基礎架構和工作負載Cloud Insights 。
+Data Infrastructure Insights 提供混合式多雲端監控功能、讓您能夠完整觀察基礎架構和工作負載。
 
 * 適用於異質基礎架構和工作負載的資料收集器、包括Kubernetes
 * 開放式Telegraf收集器和開放式API、可輕鬆整合
@@ -42,7 +42,7 @@ NetApp Cloud Insights 解決方案是一套雲端基礎架構監控工具、可�
 
 == 快速入門
 
-* 我要如何做到 link:task_cloud_insights_onboarding_1.html["*入門*"] 使用支援嗎Cloud Insights ？
+* 如何link:task_cloud_insights_onboarding_1.html["*入門*"]運用 Data Infrastructure Insights ？
 * 我已註冊。現在該怎麼辦？link:task_getting_started_with_cloud_insights.html["取得資料"]
 link:concept_user_roles.html["設定使用者"]
 * 太棒了！接下來呢？

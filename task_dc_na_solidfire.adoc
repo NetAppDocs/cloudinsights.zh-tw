@@ -27,11 +27,11 @@ NetApp SolidFire 推出的「全快閃全快閃陣列資料收集器」可同時
 
 == 術語
 
-從NetApp《All Flash Array》資料收集器取得下列庫存資訊。Cloud Insights SolidFire對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 NetApp SolidFire All Flash Array 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟機 | 磁碟 
@@ -108,7 +108,7 @@ NetApp SolidFire 推出的「全快閃全快閃陣列資料收集器」可同時
 
 == 疑難排解
 
-當系統不報告錯誤時SolidFire 、會以Cloud Insights 下列方式顯示在功能表中：
+當 SolidFire 回報錯誤時、資料基礎架構洞見會顯示如下：
 
 _ SolidFire 在嘗試擷取資料時、收到來自於某個不檢設備的錯誤訊息。此呼叫是<method>（<參數 字串>）。裝置的錯誤訊息為（請參閱裝置手冊）：_
 

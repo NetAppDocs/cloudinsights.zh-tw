@@ -19,7 +19,7 @@ summary: kapacitor.組態
 
 
 [role="lead"]
-本資料收集器可用來收集來自Influxdata Kapacitor. Cloud Insights
+Data Infrastructure Insights 使用這項資料收集器、從 Influxdata Kapacitor 收集指標。
 
 
 

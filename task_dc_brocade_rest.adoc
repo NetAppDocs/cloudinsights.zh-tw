@@ -19,11 +19,11 @@ summary: 設定 Brocade FOS REST 資料收集器。
 
 
 [role="lead"]
-Cloud Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。
+Data Infrastructure Insights 使用 Brocade FOS REST 收集器來探索執行 FabricOS （ FOS ）韌體 8.2 及更新版本之 Brocade 交換器裝置的庫存與效能。
 
-請注意： FOS 的預設「使用者」層級功能不足、無法讓 Cloud Insights 檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。
+請注意： FOS 的預設「使用者」層級對於 Data Infrastructure Insights 來說功能不夠強大、無法檢視裝置的所有邏輯層面、我們需要啟用「機箱角色」的使用者帳戶、以及在交換器上設定的所有虛擬架構上的權限。
 
-以下範例說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以供 Cloud Insights 使用至 FOS 裝置：
+以下是一個範例、說明如何在 SSH 工作階段中建立「最低權限」使用者帳戶、以利資料基礎架構 Insights 使用 FOS 裝置：
 
 userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!
 
@@ -35,11 +35,11 @@ userconfig --add NetAppCIUser -r user -l 1-128 -c user -p qwide!
 
 == 術語
 
-Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。對於由SfeS庫 取得的每種資產類型Cloud Insights 、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 Brocade FOS REST 資料收集器取得下列庫存資訊。對於 Data Infrastructure Insights 所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 交換器 | 交換器 
@@ -65,7 +65,7 @@ Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。�
 
 == 需求
 
-* 網路中的所有交換器都必須有 TCP 連線。這種資料收集器類型將無縫試用光纖網路中每個裝置的 HTTP 和 HTTPS 。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Cloud Insights 會識別 Fabric 中的所有交換器；不過、它需要 TCP 連線才能連線到這些額外的交換器來探索它們。
+* 網路中的所有交換器都必須有 TCP 連線。這種資料收集器類型將無縫試用光纖網路中每個裝置的 HTTP 和 HTTPS 。如果您選取 _ 探索 Fabric 中的所有交換器 _ 核取方塊、 Data Infrastructure Insights 會識別 Fabric 中的所有交換器；不過、它需要 TCP 連線才能連線到這些額外的交換器來探索它們。
 * 網路中的所有交換器都需要相同的帳戶。您可以使用裝置的 Web 介面來確認存取。
 
 
@@ -133,7 +133,7 @@ Cloud Insights 從 Brocade FOS REST 資料收集器取得下列清查資訊。�
 | 測試功能會警告我無法存取通訊協定 | 指定的 Brocade FOS 8.2+ 裝置只想在 HTTP 或 HTTPS 上說話 - 如果交換器已安裝數位憑證、當交換器嘗試與未加密的 HTTP 與 HTTPS 進行通訊時、交換器就會拋出 HTTP 錯誤。測試功能會嘗試與 HTTP 和 HTTPS 進行通訊 - 如果測試告訴您某個傳輸協定通過、您可以安全地儲存收集器、而不必擔心另一個傳輸協定失敗 - 收集器會在收集期間嘗試這兩個傳輸協定、而且只有在兩者都無法運作時才會失敗。 
 
 
-| 錯誤：Cloud Insights 「收到無效的機箱角色」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
+| 錯誤：「 Data Infrastructure Insights Received Invalid Chassis Role 」 | 檢查在此資料來源中設定的使用者是否已獲得機箱角色權限。 
 
 
 | 錯誤：「不相符的機箱IP位址」 | 變更資料來源組態以使用機箱IP位址。 

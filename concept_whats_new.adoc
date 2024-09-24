@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_whats_new.html 
-summary: 更新功能Cloud Insights 。 
+summary: Data Infrastructure Insights 提供的新功能與功能。 
 keywords: features 
 ---
-= Cloud Insights 的新功能
+= Data Infrastructure Insights 的新功能
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
@@ -16,7 +16,19 @@ keywords: features
 
 
 [role="lead"]
-NetApp持續改善及強化其產品與服務。以下是 Cloud Insights 商業版中的一些最新功能。
+NetApp持續改善及強化其產品與服務。以下是 Data Infrastructure Insights （前身為 Cloud Insights ）提供的一些最新功能。
+
+
+
+== 2024 年 9 月
+
+
+
+=== 介紹資料基礎架構洞見、前身為 Cloud Insights
+
+2024 年 9 月 24 日星期二、 NetApp 正式將 Cloud Insights 的名稱改為 * 資料基礎架構 Insights * （ DII ）。這是海豔宋在主要階段主題演講和 Insight 會議產品新聞稿中、在 Insight 使用者會議期間發表的。
+
+DII 服務維持不變；沒有功能變更或修改。這是一個名稱變更、可更有效地將服務名稱與其所有 IT 基礎架構的功能保持一致。
 
 
 

@@ -29,7 +29,7 @@ Cloud Insight 使用 REST 從 NetApp E 系列取得下列庫存資訊。對於�
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟 | 磁碟 
@@ -56,7 +56,7 @@ Cloud Insight 使用 REST 從 NetApp E 系列取得下列庫存資訊。對於�
 == 需求
 
 * 陣列上每個控制器的IP位址
-* 此收集器僅支援具有 * 原生 REST API 功能 * 的 E 系列型號陣列。E 系列組織為較舊的 E 系列陣列提供可安裝的非陣列 REST API 發佈：此收集器不支援該案例。擁有較舊陣列的使用者應繼續使用 Cloud Insights link:task_dc_na_eseries.html["E 系列 SANtricity API"] 收集器。
+* 此收集器僅支援具有 * 原生 REST API 功能 * 的 E 系列型號陣列。E 系列組織為較舊的 E 系列陣列提供可安裝的非陣列 REST API 發佈：此收集器不支援該案例。擁有較舊陣列的使用者應繼續使用 Data Infrastructure Insights link:task_dc_na_eseries.html["E 系列 SANtricity API"]的收集器。
 * 「 E 系列控制器 IP 位址」欄位支援以逗號分隔的 2 個 IP/ 主機名稱字串；如果無法存取第一個 IP/ 主機名稱、收集器將會智慧地嘗試第二個 IP/ 主機名稱。
 * HTTPS 連接埠：預設為 8443 。
 
@@ -102,9 +102,9 @@ Cloud Insight 使用 REST 從 NetApp E 系列取得下列庫存資訊。對於�
 * IP–通常是在資料來源中設定的IP或主機名稱
 * 微碼版本–韌體
 * 原始容量：系統中所有實體磁碟的基礎2總和、無論其角色為何
-* 延遲：代表主機面對的工作負載在讀取和寫入過程中所經歷的情況。理想的情況Cloud Insights 是、這個價值是直接來源於此、但這種情況通常並非如此。代替陣列提供此功能、Cloud Insights 往往會執行IOP加權計算、以個別磁碟區的統計資料為基礎。
-* 處理量：陣列面對主機的總處理量。理想情況下、Cloud Insights 若無法取得、則由直接從陣列取得的資源、即可將磁碟區的處理量加總、以得出此值
-* 管理：這可能包含裝置管理介面的超連結。以程式設計方式由Cloud Insights 來源資料來源建立、做為庫存報告的一部分
+* 延遲：代表主機面對的工作負載在讀取和寫入過程中所經歷的情況。在理想情況下、 Data Infrastructure Insights 會直接取得這項價值、但通常情況並非如此。Data Infrastructure Insights 通常會執行從個別磁碟區統計資料衍生的 IOPs 加權計算、而不是提供這項功能的陣列。
+* 處理量：陣列面對主機的總處理量。理想情況下、資料基礎架構 Insights 會直接從陣列取得資料、以加總磁碟區的處理量來獲得此值
+* 管理：這可能包含裝置管理介面的超連結。由 Data Infrastructure Insights 資料來源以程式設計方式建立、作為庫存報告的一部分  
 
 
 

@@ -28,11 +28,11 @@ NOTE: 將以不同的原始TB與託管單位速率進行計量。StorageGRID每4
 
 == 術語
 
-從NetApp資料收集器取得下列庫存資訊。Cloud Insights StorageGRID對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+Data Infrastructure Insights 會從 NetApp StorageGRID 收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | StorageGRID | 儲存設備 

@@ -27,7 +27,7 @@ IBM XIV和A9000（CLI）資料收集器會使用XIV命令列介面來收集庫�
 
 [cols="2*"]
 |===
-| 廠商/模型術語 | 詞彙Cloud Insights 
+| 廠商/模型術語 | Data Infrastructure Insights 術語 
 
 
 | 磁碟 | 磁碟 

@@ -19,7 +19,7 @@ summary: 設定Brocade Sphereon / Intrepid交換器資料收集器
 
 
 [role="lead"]
-利用Brocade Sphereon / Intrepid交換器（SNMP）資料收集器來探索Brocade Sphereon或Intrepid交換器的庫存。Cloud Insights
+資料基礎架構洞見使用 Brocade Sphereon / Intrepid 交換器（ SNMP ）資料收集器來探索 Brocade Sphereon 或 Intrepid 交換器的庫存。
 
 
 
@@ -27,7 +27,7 @@ summary: 設定Brocade Sphereon / Intrepid交換器資料收集器
 
 若要設定此資料收集器、必須符合下列需求：
 
-* 網路中的所有交換器都必須具備IP連線能力。如果您選取「Discover all switches in the fabric（探索網路中的所有交換器）」核取方塊、Cloud Insights 則會識別網路中的所有交換器；不過、它需要IP連線到這些額外交換器才能發現這些交換器。
+* 網路中的所有交換器都必須有 IP 連線。如果您選取「探索架構中的所有交換器」核取方塊、 Data Infrastructure Insights 會識別架構中的所有交換器；不過、它需要 IP 連線才能連線到這些額外的交換器來探索它們。
 * 如果使用SNMP V1或SNMP V2、則為唯讀社群字串。
 * 以HTTP存取交換器以取得分區資訊。
 * 透過執行到交換器的snmpwalkUtility來存取驗證（請參閱_<install_path>\bin\_）。
