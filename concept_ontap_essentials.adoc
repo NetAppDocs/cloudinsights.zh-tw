@@ -34,7 +34,7 @@ keywords: dashboard, widget, ontap, overview, insight
 
 == 總覽
 
-若要開始探索、請從ONTAP 主功能表中選取*《SEssentials》* Cloud Insights 。
+若要開始探索、請從主要的「資料基礎架構洞見」功能表中選取 * ONTAP Essentials * 。
 
 image:OE_Overview.png["適用於Essentials的概述儀表板ONTAP"]
 
@@ -152,7 +152,7 @@ image:OE_Cluster_Compliance_Example.png["叢集法規遵循狀態"]
 
 儲存 VM 詳細資料顯示稽核和 SSH 資訊：image:OE_Storage_Slideout.png["儲存索引標籤"]
 
-反勒索軟體詳細資料顯示儲存 VM 是否受到 ONTAP 的反勒索軟體保護或 Cloud Insights 工作負載安全保護。請注意、 ONTAP ARP 欄會顯示 ONTAP 內建的防勒索軟體保護目前的狀態、該保護是在 ONTAP 系統上設定的。您可以選取該欄中的「保護」來啟用 Cloud Insights 工作負載安全性。image:OE_Anti-Ransomware_Slideout.png["防勒索軟體標籤"]
+反勒索軟體詳細資料顯示儲存 VM 是否受到 ONTAP 的反勒索軟體保護或資料基礎架構洞見工作負載安全性的保護。請注意、 ONTAP ARP 欄會顯示 ONTAP 內建的防勒索軟體保護目前的狀態、該保護是在 ONTAP 系統上設定的。資料基礎架構 Insights 工作負載安全性可透過選取該欄中的「保護」來啟用。image:OE_Anti-Ransomware_Slideout.png["防勒索軟體標籤"]
 
 
 

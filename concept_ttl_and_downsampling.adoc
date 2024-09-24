@@ -19,13 +19,13 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 
 
 [role="lead"]
-由於將資料保留一段設定期間（每版）、因此有可能處理數千個資料點。Cloud Insights因此、在圖表和表格中顯示資料之前、資料可能會先縮減取樣。
+由於 Data Infrastructure Insights 保留資料一段時間（每個版本）、因此有可能處理數千個資料點。因此、在圖表和表格中顯示資料之前、資料可能會先縮減取樣。
 
 
 
 == 資料保留
 
-由作用中訂閱版本決定的資料保留時間。Cloud Insights
+Data Infrastructure Insights 會保留資料一段時間、由作用中訂閱的版本決定。
 
 |===
 | 版本 | 資料保留 
@@ -36,7 +36,7 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 
 | 優質 | 13個月 
 |===
-Cloud Insights 提供每個版本可用功能的完整清單 link:https://bluexp.netapp.com/cloud-insights-pricing["版本和定價"] 頁面。
+Data Infrastructure Insights link:https://bluexp.netapp.com/cloud-insights-pricing["版本和定價"] 頁面上提供每個版本可用功能的完整清單。
 
 
 
@@ -69,7 +69,7 @@ Cloud Insights 提供每個版本可用功能的完整清單 link:https://bluexp
 
 image:Charts_NoDownsample.png["無減取樣"]
 
-不過、如果您要檢視資料、請在資產頁面時間選取器上選擇30d、 或是將自訂時間範圍設定為7天以上（或Cloud Insights 是在選定時間段內、若有超過1、000個資料樣本可供使用）、則資料會在顯示之前先進行縮減取樣。當您放大縮小取樣的圖表時、畫面會繼續顯示近似的資料。
+不過、如果您在資產頁面時間選取器上選擇 30 天、或是設定超過 7 天的自訂時間範圍（或是在 Data Infrastructure Insights 在所選時間範圍內收集超過 1 、 000 個資料樣本時）來檢視資料、則會先將資料縮減取樣後再顯示。當您放大縮小取樣的圖表時、畫面會繼續顯示近似的資料。
 
 
 NOTE: 當您放大縮小取樣的圖表時、縮放是數位縮放。螢幕會繼續顯示近似資料。

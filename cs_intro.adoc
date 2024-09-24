@@ -19,10 +19,10 @@ summary: 總覽
 
 
 [role="lead"]
-利用可據以行動的內部威脅情報、協助保護資料Cloud Secure Cloud Insights 。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。
+資料基礎架構洞見儲存工作負載安全性（前身為 Cloud Secure ）可針對內部威脅提供可據以行動的情報、協助保護您的資料。它可集中監控所有企業資料在混合雲環境中的存取、確保達成安全性與法規遵循目標。
 
 
-NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
+NOTE: Data Infrastructure Insights Federal Edition 不提供工作負載安全功能。
 
 
 

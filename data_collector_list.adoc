@@ -4,7 +4,7 @@ permalink: data_collector_list.html
 summary: 支援的資料收集器清單。 
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
-= 資料收集器清單Cloud Insights
+= Data Infrastructure Insights 資料收集器清單
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,7 +19,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 
 
 [role="lead"]
-支援許多廠商與服務的各種資料收集器。Cloud Insights
+Data Infrastructure Insights 支援許多廠商和服務的各種資料收集器。
 
 資料收集器可依下列類型分類：
 
@@ -27,7 +27,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 * 服務：從Kubernetes或Docker等服務中取得。也稱為_Integrity_。
 
 
-以字母順序排列Cloud Insights 支援的資料收集器清單：
+Data Infrastructure Insights 支援的依字母順序排列的資料收集器清單：
 
 [cols="<,<"]
 |===

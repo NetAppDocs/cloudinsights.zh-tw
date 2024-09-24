@@ -19,7 +19,7 @@ keywords: collector, acquisition, status
 
 
 [role="lead"]
-由於資料收集器是Cloud Insights 資訊的主要來源、因此您必須確保它們保持在執行中狀態。
+由於資料收集器是 Data Infrastructure Insights 的主要資訊來源、因此您必須確保它們保持在執行中狀態。
 
 資料收集器狀態會顯示在任何資產頁面的右上角、顯示為訊息「已於N分鐘前取得」、其中N表示資產資料收集器的最近擷取時間。也會顯示擷取時間/日期。
 

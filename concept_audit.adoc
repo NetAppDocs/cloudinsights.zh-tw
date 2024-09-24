@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_audit.html 
 keywords: audit, users, activities 
-summary: 稽核可讓您檢視Cloud Insights 整個系統及使用者在這個系統中的活動。 
+summary: 稽核可讓您檢視 Data Infrastructure Insights 系統中的系統和使用者活動。 
 ---
 = 稽核
 :toc: macro
@@ -19,7 +19,7 @@ summary: 稽核可讓您檢視Cloud Insights 整個系統及使用者在這個�
 
 
 [role="lead"]
-若要識別預期（追蹤）或非預期（疑難排解）的變更、您可以檢視Cloud Insights 有關「非更新」系統事件和使用者活動的稽核記錄。
+若要識別預期（用於追蹤）或非預期（用於疑難排解）的變更、您可以檢視 Data Infrastructure Insights 系統事件和使用者活動的稽核記錄。
 
 
 
@@ -29,7 +29,7 @@ summary: 稽核可讓您檢視Cloud Insights 整個系統及使用者在這個�
 
 * *時間*：事件或活動的日期和時間
 * *使用者*：啟動活動的使用者
-* *角色*-使用者在Cloud Insights 功能方面的角色（來賓、使用者、系統管理員）
+* * 角色 * ：使用者在 Data Infrastructure Insights 中的角色（來賓、使用者、管理員）
 * * IP*：與事件相關的IP位址
 * *行動*：活動類型、例如登入、建立、更新
 * *類別*：活動類別
@@ -91,7 +91,7 @@ image:Audit_Filters.png["稽核篩選器"]
 
 == 稽核事件與行動
 
-由NetApp稽核的事件和行動Cloud Insights 可分為下列幾大類：
+資料基礎架構 Insights 稽核的活動和行動可分為下列廣泛領域：
 
 * *使用者帳戶*：登入、登出、角色變更等
 +
@@ -134,7 +134,7 @@ image:Audit_Filters.png["稽核篩選器"]
 您可以將稽核顯示結果匯出至.CSV檔案、以便分析資料或將其匯入其他應用程式。
 
 .步驟
-. 在「稽核」頁面上、設定所需的時間範圍和任何您想要的篩選條件。僅匯出符合您所設定篩選和時間範圍的稽核項目。Cloud Insights
+. 在「稽核」頁面上、設定所需的時間範圍和任何您想要的篩選條件。Data Infrastructure Insights 只會匯出符合您設定的篩選和時間範圍的稽核項目。
 . 按一下「_Export」（匯出）按鈕 image:ExportButton.png["匯出按鈕"] 在表格右上角。
 
 
@@ -144,7 +144,7 @@ image:Audit_Filters.png["稽核篩選器"]
 
 == 保留稽核資料
 
-不保留稽核資料的時間長短Cloud Insights 取決於您的版本：
+資料基礎架構 Insights 保留稽核資料的時間量是根據您的版本而定：
 
 * Basic Edition：稽核資料保留30天
 * 標準版和高級版：稽核資料保留1年以上、再加1天

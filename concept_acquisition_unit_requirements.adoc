@@ -65,13 +65,7 @@ keywords: AU, acquisition unit, requirements, sizing
 /tmp 在安裝期間至少有 1 GB 可用空間 | 50 GB 
 
 
-| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 的連線能力、從擷取單元連線至 * .cloudinsights.netapp.com 或您的 Cloud Insights 環境（例如： https ： <environment_id>.c01.cloudinsights.netapp.com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明 link:data_collector_list.html["資料收集器"]。
-
-如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：
-
-* .cloudinsights.netapp.com
-
-如需詳細資訊、請參閱關於代理 link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Linux ）"] 或 link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Windows ）"]。 | 相同 
+| 網路 | 需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 的連線能力、從擷取單元連線至 * NetApp 。 cloudentses.com 或您的資料基礎架構 Insights 環境（例如： https ： <environment_id> 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明link:data_collector_list.html["資料收集器"]。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Linux ）"]或link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["這裡（ Windows ）"]。 | 相同 
 
 
 | 權限 | 擷取單元伺服器上的Sudo權限。/tmp必須以執行功能掛載。 | 取得單位伺服器的系統管理員權限 
@@ -90,7 +84,7 @@ keywords: AU, acquisition unit, requirements, sizing
 
 == 關於規模調整
 
-您可以開始使用Cloud Insights 僅有8GB記憶體和50GB磁碟空間的支援中心、不過對於較大型的環境、您應該自問下列問題：
+您可以開始使用只有 8GB 記憶體和 50GB 磁碟空間的 Data Infrastructure Insights 擷取單元、但是對於較大型的環境、您應該自問下列問題：
 
 您是否期望：
 
@@ -106,5 +100,5 @@ keywords: AU, acquisition unit, requirements, sizing
 
 == 聯邦版的額外要求
 
-* 在 Cloud Insights 聯邦版叢集中安裝採購單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。
+* 在 Data Infrastructure Insights Federal Edition 叢集中安裝擷取單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。
 

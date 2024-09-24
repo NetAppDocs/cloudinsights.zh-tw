@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_activeiq.html 
 keywords: Active IQ, risks, svm, AIQ, risk 
-summary: 本產品可從NetApp收集風險資料Cloud Insights Active IQ 
+summary: Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料 
 ---
 = Active IQ
 :toc: macro
@@ -22,13 +22,13 @@ summary: 本產品可從NetApp收集風險資料Cloud Insights Active IQ
 NetApp link:https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ"] 為NetApp客戶的硬體/軟體系統提供一系列視覺化、分析及其他支援相關服務。由NetApp回報的資料Active IQ 可加強系統問題的疑難排解、並提供與您的裝置相關的最佳化與預測分析。
 
 
-NOTE: Cloud Insights 聯邦版不提供 ActiveIQ 。
+NOTE: Data Infrastructure Insights Federal Edition 不提供 ActiveIQ 。
 
-針對任何由NetApp監控和回報的NetApp叢集式不知所面臨的*風險*。Cloud Insights Data ONTAP Active IQ針對儲存系統所回報的風險、Cloud Insights 會由效益管理系統自動收集、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增Cloud Insights 至功能不實、才能收集Active IQ 功能不實的風險資訊。
+Data Infrastructure Insights 會針對 Active IQ 監控及回報的任何 NetApp 叢集式 Data ONTAP 儲存系統、收集 * 風險 * 。Data Infrastructure Insights 會自動收集儲存系統回報的風險、作為從這些裝置收集資料的一部分。您必須將適當的資料收集器新增至 Data Infrastructure Insights 、以收集 Active IQ 風險資訊。
 
-不顯示不受監控且未經由效益分析報告的不適用的系統風險資料。Cloud Insights ONTAP Active IQ
+資料基礎架構洞見不會顯示 Active IQ 未監控及報告的 ONTAP 系統風險資料。
 
-報告的風險顯示Cloud Insights 於「風險」表的「_storage」和「_storage nod節點_」資產登陸頁上。下表顯示風險詳細資料、風險類別及風險的潛在影響、並提供Active IQ 指向「介紹儲存節點所有風險的資訊」頁面的連結（需要NetApp支援帳戶登入）。
+報告的風險會顯示在「風險」表的資料基礎架構洞見（位於 _storage _ 和 _ 儲存節點 _ 資產登陸頁面）中。下表顯示風險詳細資料、風險類別及風險的潛在影響、並提供Active IQ 指向「介紹儲存節點所有風險的資訊」頁面的連結（需要NetApp支援帳戶登入）。
 
 image:AIQ_Risks_Table_Example.png["風險表Active IQ"]
 
@@ -42,7 +42,7 @@ image:AIQ_Summary_Example.png["儲存頁面摘要"]
 
 按一下Active IQ 指向某個資訊頁的連結時、如果您目前尚未登入Active IQ 您的資訊區帳戶、則必須執行下列步驟、才能檢視Active IQ 儲存節點的資訊區頁面。
 
-. 在「更新摘要」小工具或風險表中、按一下「恢復」連結。Cloud Insights Active IQ
+. 在資料基礎架構洞見摘要 Widget 或風險表中、按一下「 Active IQ 」連結。
 . 登入您的NetApp支援帳戶。您將直接進入Active IQ 資訊區的儲存節點頁面。
 
 
@@ -50,7 +50,7 @@ image:AIQ_Summary_Example.png["儲存頁面摘要"]
 
 == 查詢風險
 
-在這個功能中、您可以將*監控.count*欄新增至儲存設備或儲存節點查詢。Cloud Insights如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。
+在 Data Infrastructure Insights 中、您可以將 * monitoring.count* 欄新增至儲存或儲存節點查詢。如果傳回的結果包含Active IQ監控的儲存系統、則監控.count欄會顯示儲存系統或節點的風險數量。
 
 
 

@@ -19,7 +19,7 @@ summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源
 
 
 [role="lead"]
-高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。支援各種工具、協助您調查環境中的資源飽和及影響。Cloud Insights
+高影響力的工作負載可能會降低共享資源中其他工作負載的效能。這會使共享資源承受壓力。Data Infrastructure Insights 提供的工具可協助您調查環境中的資源飽和度和影響。
 
 
 
@@ -31,7 +31,7 @@ summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源
 
 *受影響的工作負載*是受共享儲存資源池中高消耗工作負載影響的工作負載。這些工作負載因為嚴苛的工作負載而面臨IOPS降低和/或更高的延遲。
 
-請注意Cloud Insights 、如果未發現效能領先的運算工作負載、則磁碟區或內部磁碟區本身將被視為工作負載。這適用於嚴苛和受影響的工作負載。
+請注意、如果 Data Infrastructure Insights 尚未發現領先業界的運算工作負載、則該 Volume 或內部 Volume 本身就會被視為工作負載。這適用於嚴苛和受影響的工作負載。
 
 *共享資源飽和*是影響IOPS與_baselity_的比率。
 
@@ -47,7 +47,7 @@ summary: Insights可讓您深入瞭解資源如何影響環境中的其他資源
 
 image:InsightsMenu.png["Insights 功能表"]
 
-顯示已偵測到飽和的任何工作負載清單。Cloud Insights請注意、 Cloud Insights 會顯示至少偵測到一項要求嚴苛的資源 * 或 * 受影響資源 _ 的工作負載。
+Data Infrastructure Insights 會顯示已偵測到飽和的任何工作負載清單。請注意、 Data Infrastructure Insights 會顯示至少偵測到一項要求嚴苛的資源 * 或 * 受影響資源 _ 的工作負載。
 
 按一下工作負載即可檢視其詳細資料頁面。上圖顯示發生爭用/飽和的共用資源（例如儲存資源池）活動。
 

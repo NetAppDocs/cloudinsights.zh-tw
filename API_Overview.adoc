@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: API_Overview.html 
 keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
-summary: 利用此解決方法、即可與監控和報告系統等其他應用程式整合。Cloud Insights 
+summary: Data Infrastructure Insights API 可與其他應用程式整合、例如監控和報告系統。 
 ---
-= 部分API Cloud Insights
+= Data Infrastructure Insights API
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,9 +19,9 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 
 
 [role="lead"]
-利用此解決方案、NetApp客戶和獨立軟體廠商（ISV）可以將支援功能與其他應用程式（例如CMDB或其他票務系統）整合。Cloud Insights Cloud Insights
+資料基礎架構洞見 API 可讓 NetApp 客戶和獨立軟體廠商（ ISV ）將資料基礎架構洞見與其他應用程式（例如 CMDB 或其他票證系統）整合。
 
-請注意Cloud Insights 、我們會根據您目前的版本提供下列功能：
+請注意、 Data Infrastructure Insights API 是根據您目前的版本提供：
 
 [cols="<,^s,^s,^s"]
 |===
@@ -45,25 +45,25 @@ summary: 利用此解決方法、即可與監控和報告系統等其他應用�
 
 | 記錄擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
 |===
-此外Cloud Insights 、您的技術也很出色 link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 將決定您可以存取哪些API。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
+此外、您的 Data Infrastructure Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 也會決定您可以存取哪些 API 。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
 
 
 
 == API存取需求
 
 * API存取權杖模式用於授予存取權。
-* API Token管理是Cloud Insights 由具備管理員角色的使用者執行。
+* API Token 管理由 Data Infrastructure Insights 使用者執行、其角色為管理員。
 
 
 
 
 == API文件（Swagger）
 
-您可以登入Cloud Insights 到「介紹」並瀏覽至「*管理> API存取*」、以找到最新的API資訊。按一下「* API Documentation *（* API文件*）」連結。
+登入 Data Infrastructure Insights 並瀏覽至 * 管理 > API Access * 即可找到最新的 API 資訊。按一下「* API Documentation *（* API文件*）」連結。
 
 image:API_Swagger_Types.png["API類型"]
 
-API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。根據您的使用者角色和/或Cloud Insights 版本的資訊、可用的API類型可能有所不同。
+API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。視您的使用者角色和 / 或 Data Infrastructure Insights 版本而定、您可使用的 API 類型可能會有所不同。
 
 image:API_Swagger_Example.png["API Swagger範例"]
 
@@ -71,7 +71,7 @@ image:API_Swagger_Example.png["API Swagger範例"]
 
 == API存取權杖
 
-在使用Cloud Insights 此功能之前、您必須先建立一個或多個* API存取權杖*。存取權杖用於指定的API類型、並可授予讀取和/或寫入權限。您也可以設定每個存取權杖的到期日。指定類型下的所有API都對存取權杖有效。每個權杖的使用者名稱或密碼都無效。
+在使用 Data Infrastructure Insights API 之前、您必須先建立一個或多個 * API Access Tokens* 。存取權杖用於指定的API類型、並可授予讀取和/或寫入權限。您也可以設定每個存取權杖的到期日。指定類型下的所有API都對存取權杖有效。每個權杖的使用者名稱或密碼都無效。
 
 若要建立存取權杖：
 
@@ -91,7 +91,7 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 您可以停用、啟用及撤銷權杖。停用的權杖可以啟用。
 
-權杖可從客戶的角度授予API一般用途存取權限、並管理其租戶範圍內的API存取權限。客戶管理員可在Cloud Insights 不直接涉及到背後的人員的情況下、授予及撤銷這些權杖。
+權杖可從客戶的角度授予API一般用途存取權限、並管理其租戶範圍內的API存取權限。客戶管理員可在沒有 Data Infrastructure Insights 後端人員直接參與的情況下、授予及撤銷這些權杖。
 
 應用程式會在使用者成功驗證及授權存取後、收到存取權杖、然後在呼叫目標API時、將存取權杖作為認證。傳遞的權杖會通知API、該權杖的承載已獲授權存取API、並執行授權期間所授予範圍所指定的特定動作。
 
@@ -108,12 +108,12 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 == API類型
 
-此產品為類別型、目前包含下列類型：Cloud Insights
+Data Infrastructure Insights API 是以類別為基礎、目前包含下列類型：
 
 * 資產類型包含資產、查詢及搜尋API。
 +
 ** 資產：列舉頂層物件、並擷取特定物件或物件階層。
-** 查詢：擷取Cloud Insights 及管理各種查詢。
+** 查詢：擷取及管理 Data Infrastructure Insights 查詢。
 ** 匯入：匯入註釋或應用程式、並將其指派給物件
 ** 搜尋：找出特定物件而不知道物件的唯一ID或完整名稱。
 
@@ -125,13 +125,13 @@ NOTE: 您的權杖只能在建立程序期間複製到剪貼簿並儲存。建�
 
 其他類型和/或API可能會隨時間提供。您可以在中找到最新的API資訊 link:#api-documentation-swagger["API Swagger文件"]。
 
-請注意、使用者可存取的API類型也取決於 link:concept_user_roles.html["使用者角色"] 每Cloud Insights 個功能集（監控、工作負載安全、報告）都有。
+請注意、使用者可存取的 API 類型也取決於link:concept_user_roles.html["使用者角色"]每個 Data Infrastructure Insights 功能集（監控、工作負載安全、報告）中的 API 類型。
 
 
 
 == 庫存遍歷
 
-本節說明如何橫越Cloud Insights 階層架構的各種物件。
+本節說明如何周遊 Data Infrastructure Insights 物件的階層。
 
 
 
@@ -178,7 +178,7 @@ image:expands.gif["展開範例"]
 
 == 效能資料
 
-效能資料會在多個裝置之間收集、做為個別的範例。每小時（預設值）Cloud Insights 、將效能範例集合在一起並加以總結。
+效能資料會在多個裝置之間收集、做為個別的範例。資料基礎架構 Insights 每小時（預設）彙總並彙總效能範例。
 
 API可讓您存取範例和摘要資料。對於具有效能資料的物件、效能摘要可提供為_expand =效能_。效能歷程記錄時間系列可透過巢狀_expansion =效能.history _取得。
 
@@ -203,7 +203,7 @@ image:API_Performance.png["API效能範例"]
 * 每個其他的字典金鑰（「磁碟處理量」等）都是效能指標的名稱。
 
 
-每種效能資料物件類型都有一組獨特的效能指標。例如、虛擬機器效能物件支援「磁碟處理量」作為效能指標。每個支援的效能指標都是指標字典中所顯示的特定「效能類別」。支援本文稍後列出的多種效能指標類型。Cloud Insights每個效能指標字典也會有「說明」欄位、此欄位是人類可讀取的效能指標說明、以及一組效能摘要計數器項目。
+每種效能資料物件類型都有一組獨特的效能指標。例如、虛擬機器效能物件支援「磁碟處理量」作為效能指標。每個支援的效能指標都是指標字典中所顯示的特定「效能類別」。Data Infrastructure Insights 支援本文件稍後所列的數種效能指標類型。每個效能指標字典也會有「說明」欄位、此欄位是人類可讀取的效能指標說明、以及一組效能摘要計數器項目。
 
 「效能摘要」計數器是效能計數器的摘要。它會顯示典型的彙總值、例如計數器的最小值、最大值和平均值、以及最新觀察值、彙總資料的時間範圍、計數器的單位類型和資料臨界值。只有臨界值為選用項目、其餘屬性為必填項目。
 
@@ -269,7 +269,7 @@ image:StoragePoolCapacity.png["儲存資源池容量範例"]
 
 搜尋API是系統的簡單入口點。API的唯一輸入參數是自由格式字串、而產生的Json則包含分類結果清單。類型與庫存不同、例如儲存設備、主機、資料存放區等。每種類型都會包含符合搜尋條件的物件類型清單。
 
-支援可延伸（廣泛開放）的解決方案、可與協力廠商協調、業務管理、變更控制和票證系統、以及自訂的CMDB整合功能整合。Cloud Insights
+Data Infrastructure Insights 是可延伸的（開放式）解決方案、可整合協力廠商協調、業務管理、變更控制和票證系統、以及自訂 CMDB 整合功能。
 
 Cloud Insight的RESTful API是整合的主要點、可讓使用者輕鬆有效地移動資料、並讓使用者無縫存取資料。
 

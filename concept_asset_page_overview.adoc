@@ -25,7 +25,7 @@ keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtua
 
 == 資產頁類型
 
-提供下列資產的資產頁面：Cloud Insights
+Data Infrastructure Insights 提供下列資產的資產頁面：
 
 * 虛擬機器
 * 儲存虛擬機器（SVM）

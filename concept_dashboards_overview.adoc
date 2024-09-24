@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboards_overview.html 
-summary: 儀表板概述Cloud Insights 。 
+summary: Data Infrastructure Insights 中的儀表板總覽。 
 keywords: dashboard, widget, custom, view, data 
 ---
 = 儀表板總覽
@@ -19,7 +19,7 @@ keywords: dashboard, widget, custom, view, data
 
 
 [role="lead"]
-支援使用者靈活建立基礎架構資料的作業檢視、可讓您使用各種小工具建立自訂儀表板、每個小工具都能提供廣泛的資料顯示與製表彈性。Cloud Insights
+Data Infrastructure Insights 可讓使用者靈活地建立基礎架構資料的營運檢視、讓您使用各種 Widget 來建立自訂儀表板、每個 Widget 都能在顯示和製作資料時提供廣泛的彈性。
 
 
 IMPORTANT: 本節中的範例僅供說明之用、並未涵蓋所有可能的情境。此處的概念與步驟可用來建立您自己的儀表板、以強調您特定需求的特定資料。

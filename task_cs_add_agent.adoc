@@ -22,9 +22,6 @@ summary: 新增工作負載安全性代理程式
 「工作負載安全性」（前身Cloud Secure 為「功能」）會使用一或多個代理程式來收集使用者活動資料。代理程式會連線至您環境中的裝置、並收集傳送至工作負載安全SaaS層進行分析的資料。請參閱 link:concept_cs_agent_requirements.html["代理程式需求"] 設定代理VM。
 
 
-NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
-
-
 
 == 開始之前
 

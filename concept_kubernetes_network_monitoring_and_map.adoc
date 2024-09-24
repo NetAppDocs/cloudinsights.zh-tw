@@ -38,9 +38,9 @@ image:ServiceMap_NKMO_Deployment_Options.png["在 NKMO STUP 期間選取地圖�
 
 == 監控
 
-工作負載對應使用 link:task_create_monitor.html["監控"] 以取得資訊。Cloud Insights 提供許多預設的 Kubernetes 監視器（請注意、這些監視器預設可能為 _Paused （暫停））。您可以 _ 恢復 _ （即啟用）您想要的監視器）、或是為 Kubernetes 物件建立自訂監視器、工作負載對應也會使用這些監視器。
+工作負載對應會使用link:task_create_monitor.html["監控"]來衍生資訊。Data Infrastructure Insights 提供許多預設的 Kubernetes 監視器（請注意、這些監視器預設可能為 _Paused （暫停））。您可以 _ 恢復 _ （即啟用）您想要的監視器）、或是為 Kubernetes 物件建立自訂監視器、工作負載對應也會使用這些監視器。
 
-您可以針對下列任何物件類型建立 Cloud Insights 度量警示。請確定資料已依預設物件類型分組。
+您可以針對下列任何物件類型建立 Data Infrastructure Insights 度量警示。請確定資料已依預設物件類型分組。
 
 * Kubernetes.Workload
 * Kubernetes.daemonset
@@ -83,7 +83,7 @@ image:Workload_Map_Slideout_with_Alert.png["工作負載使用警示來整合詳
 
 == 尋找及篩選
 
-如同其他 Cloud Insights 功能、您可以輕鬆設定篩選條件、將焦點放在您想要的特定物件或工作負載屬性上。
+如同其他 Data Infrastructure Insights 功能、您可以輕鬆設定篩選條件、將重點放在您想要的特定物件或工作負載屬性上。
 
 image:Workload_Map_Filtering.png["工作負載對應篩選"]
 
@@ -117,7 +117,7 @@ image:Workload_Map_Find_Highlighting.png["在「尋找」方塊中鍵入會強�
 
 * 如果來源位於 Kubernetes 叢集外部：
 +
-** Cloud Insights 會嘗試剖析 DNS 解析名稱、以擷取服務類型。
+** Data Infrastructure Insights 會嘗試剖析 DNS 解析名稱、以擷取服務類型。
 +
 例如、使用 DNS 解析名稱 _s3.eu-north-1.amazonaws.com 、解析解析名稱以取得 _S__ 作為服務類型。
 

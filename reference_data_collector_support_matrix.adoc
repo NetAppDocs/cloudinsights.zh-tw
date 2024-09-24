@@ -4,7 +4,7 @@ permalink: reference_data_collector_support_matrix.html
 summary: 資料收集器支援對照表包含有關支援的資料收集器的詳細資訊。 
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
-= 資料收集器支援對照表Cloud Insights
+= Data Infrastructure Insights 資料收集器支援對照表
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -22,7 +22,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 :toc-position: content
 
 
-資料收集器支援對照表提供Cloud Insights 支援的資料收集器參考資料、包括廠商與機型資訊。
+資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料、包括廠商和模型資訊。
 
 
 toc::[]

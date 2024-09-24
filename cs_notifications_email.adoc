@@ -22,9 +22,6 @@ keywords: email, notifications, alerts, warnings, attacks
 若要設定工作負載安全警示收件者、請按一下*管理>通知*、然後在每個收件者的適當區段中輸入電子郵件地址。
 
 
-NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
-
-
 
 == 潛在攻擊警示與警告
 
@@ -66,5 +63,5 @@ NOTE: Cloud Insights 聯邦版不提供工作負載安全功能。
 | *問題：* | *試用：* 
 
 
-| 電子郵件 ID 出現在「資料收集器健全狀況警示」中、但我沒有收到通知。 | 通知電子郵件是從 NetApp Cloud Insights 網域傳送、例如從 _accounts@service.cloudinsights.netapp.com_ 傳送。有些公司會封鎖來自外部網域的傳入電子郵件。確認 NetApp Cloud Insights 網域的外部通知已列入白名單。 
+| 電子郵件 ID 出現在「資料收集器健全狀況警示」中、但我沒有收到通知。 | 通知電子郵件會從 NetApp 資料基礎架構 Insights 網域傳送、例如、來自 NetApp .com 。有些公司會封鎖來自外部網域的傳入電子郵件。確保 NetApp Data Infrastructure Insights 網域的外部通知已列入白名單。 
 |===

@@ -162,7 +162,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
 == 設定資料收集器
 
 .組態步驟
-. 以系統管理員或帳戶擁有者身分登入Cloud Insights 您的支援環境。
+. 以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。
 . 按一下 * 工作負載安全性 > 收集器 > + 資料收集器 *
 +
 系統會顯示可用的資料收集器。
@@ -256,14 +256,14 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 
 2 個新作業現在顯示在收集器的 kebab 功能表上（暫停和繼續）。
 
-如果資料收集器處於 _Running 狀態、您可以暫停收集。開啟收集器的「三點」功能表、然後選取暫停。當收集器暫停時、不會從 ONTAP 收集任何資料、也不會將資料從收集器傳送至 ONTAP 。這表示任何 Fpolicy 事件都不會從 ONTAP 流向資料收集器、也不會從那裡流向 Cloud Insights 。
+如果資料收集器處於 _Running 狀態、您可以暫停收集。開啟收集器的「三點」功能表、然後選取暫停。當收集器暫停時、不會從 ONTAP 收集任何資料、也不會將資料從收集器傳送至 ONTAP 。這表示任何 Fpolicy 事件都不會從 ONTAP 流向資料收集器、也不會從資料基礎架構深入分析。
 
 請注意、如果在 ONTAP 上建立任何新的磁碟區等、而收集器處於暫停狀態、工作負載安全性就不會收集資料、這些磁碟區等資料也不會反映在儀表板或表格中。
 
 請謹記下列事項：
 
 * 根據暫停收集器上設定的設定、不會執行快照清除。
-* EMS 事件（例如 ONTAP ARP ）不會在暫停的收集器上處理。這表示如果 ONTAP 發現勒索軟體攻擊、 Cloud Insights 工作負載安全性就無法取得該事件。
+* EMS 事件（例如 ONTAP ARP ）不會在暫停的收集器上處理。這表示如果 ONTAP 發現勒索軟體攻擊、資料基礎架構洞見工作負載安全性將無法取得該事件。
 * 系統不會傳送已暫停收集器的健全狀況通知電子郵件。
 * 暫停的收集器不支援手動或自動動作（例如 Snapshot 或使用者封鎖）。
 * 在代理程式或收集器升級、代理程式 VM 重新啟動 / 重新開機、或代理程式服務重新啟動時、暫停的收集器會保持在 _Paused 狀態。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
-summary: 概述功能概述中的資產頁面摘要區段Cloud Insights 。 
+summary: Data Infrastructure Insights 中資產頁面摘要區段的總覽。 
 keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = 資產頁摘要區段
