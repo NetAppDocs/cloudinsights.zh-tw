@@ -4,7 +4,7 @@ permalink: reporting_schema_diagrams.html
 keywords: Schema, DB Schema, premium, dwh, data warehouse 
 summary: 報告架構圖表 
 ---
-= 回報架構圖表Cloud Insights
+= 資料基礎架構洞見報告架構圖表
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -21,7 +21,7 @@ summary: 報告架構圖表
 本文件提供報告資料庫的架構圖表。您也可以下載包含的檔案 link:ci_reporting_database_schema.pdf["架構表格"]。
 
 
-NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:concept_subscribing_to_cloud_insights.html["Premium Edition"]。
+NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
 
 
 

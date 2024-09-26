@@ -22,7 +22,7 @@ keywords: query, queries, export, csv
 您可以將任何查詢的結果匯出至.CSV檔案、以便分析資料或將其匯入其他應用程式。
 
 .步驟
-. 登入Cloud Insights 到
+. 登入 Data Infrastructure Insights 。
 . 按一下*查詢*、然後選取*顯示所有查詢*。
 +
 隨即顯示「查詢」頁面。

@@ -12,7 +12,6 @@
   <block id="efb10f5a307574138e00f348ca720e50" category="list-text">建立EC2執行個體。</block>
   <block id="e24a1d497706260167f8a13cf71db79a" category="list-text">使用YUM套件管理程式安裝所需的Linux套件：</block>
   <block id="76857222b6ed7c427dc152c9014fa1db" category="list-text">安裝_wGet_和_unzip _原生Linux套件。</block>
-  <block id="af3e8f1c899e4154e0ef2755c159cbf4" category="list-text">以系統管理員或帳戶擁有者身分登入Cloud Insights 您的支援環境。</block>
   <block id="154f1ab497a09601cd1fb9b781495c52" category="list-text">按一下「*+代理程式*」、並將RHEL指定為目標平台。</block>
   <block id="1958a7c94a832d37f7a96957c47d39f9" category="list-text">複製代理程式安裝命令。</block>
   <block id="6b40ad8e187509b794c6e9b5ead388c5" category="inline-link-macro">代理程式先決條件</block>
@@ -172,8 +171,6 @@
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">NetApp Cloud Connection for ONTAP NetApp 9.9以上資料收集器</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此資料收集器可建立雲端連線、以支援ONTAP 從下列AFF 系統收集資料：FAS</block>
   <block id="74e0a2e3755eeebe63a75f28fcd4310c" category="doc">匯入附註</block>
-  <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">包含API、可從CSV檔案匯入註釋或應用程式、並將其指派給您指定的物件。Cloud Insights</block>
-  <block id="6ea19b77fdbbe887a195870f5398f21f" category="admonition">此功能可在*《*》《*》《*》《*》《*》《*》《* Cloud Insights Cloud Insights</block>
   <block id="cd804333d16ac675a7605cf03f787ec6" category="section-title">匯入</block>
   <block id="55876228853abf632dec9346a4f372ec" category="inline-link-macro">文件</block>
   <block id="b623fda16b48571007a60f6e83884335" category="paragraph">包含*管理&gt; API存取*連結 <block ref="7ca2fbd7e8058fe79351af73cabdb729" category="inline-link-macro-rx"></block> *資產/匯入* API。本文件包含.CSV檔案格式的相關資訊。</block>
@@ -611,11 +608,9 @@
   <block id="dad1f8d794ee0dd7753fe75e73b78f31" category="list-text">區域</block>
   <block id="e6701626042f4cdbbf1f1c07c89b1577" category="list-text">使用者定義</block>
   <block id="7b987fc6b52ecc9f781af4a92c464c0a" category="section-title">手動新增Fibre Channel裝置</block>
-  <block id="f72ccbf2540b53d0663992d8c260aaf9" category="paragraph">您可以Cloud Insights 使用「裝置解析度Fibre Channel identify」（光纖通道識別）索引標籤中的「_Manual Add_」（手動新增_）功能、手動將光纖通道裝置新增至支援功能。此程序可用於預先識別預期未來會探索的裝置。</block>
   <block id="0304d2acc1856c0570677f6f1211d036" category="paragraph">若要成功將裝置識別新增至系統、您必須知道WWN或IP位址和裝置名稱。</block>
   <block id="c2760977611d73e73d5fadf661851083" category="paragraph">您可以手動新增主機、儲存設備、磁帶或未知的光纖通道裝置。</block>
   <block id="8c4271e6faf2cea4cfc8e5b7108d8ee9" category="list-title">程序</block>
-  <block id="e3106c5632694af76539eecf4c0c14d0" category="list-text">登入Cloud Insights 到Webto UI</block>
   <block id="862d3e3709a4c4c605f14b8e2364e2bd" category="list-text">按一下「*管理&gt;裝置解析度*」</block>
   <block id="3bdda4101b77ea3179807e0d80165c9d" category="list-text">單擊* Fibre Channel identi*（光纖通道識別*）選項卡。</block>
   <block id="b703441185bbc8f9edbbe92cffff457f" category="list-text">按一下「*新增*」按鈕。</block>
@@ -623,7 +618,6 @@
   <block id="de78b7c4d12954faa4a777214bc95a67" category="list-text">輸入WWN或IP位址、裝置名稱、然後選取裝置類型。</block>
   <block id="d45a448601de236c101d9139128549fe" category="paragraph">您輸入的裝置會新增至「Fibre Channel identify」（光纖通道識別）索引標籤中的裝置清單。此規則被識別為_Manu__。</block>
   <block id="8270fd152228faf9926074f629f0b1ef" category="section-title">從.CSV檔案匯入Fibre Channel裝置識別</block>
-  <block id="c54be16d9b6f3590f43c0d4d63ac456e" category="paragraph">您可以使用Cloud Insights .CSV檔案中的裝置清單、將光纖通道裝置識別碼手動匯入到無法辨識的裝置解析度中。</block>
   <block id="fd1ae388d2854f7357f46b3cd5d1de57" category="paragraph">您必須擁有正確格式的.CSV檔案、才能將裝置識別碼直接匯入裝置解析度。光纖通道裝置的.CSV檔案需要下列資訊：</block>
   <block id="22bb75b17c257e3403e89aa51a170ac3" category="cell">WWN</block>
   <block id="a12a3079e14ced46e69ba52b8a90b21a" category="cell">IP</block>
@@ -631,13 +625,11 @@
   <block id="bb26d2a52501e96da7234e7a1681ef37" category="paragraph">資料欄位必須以引號括住、如下例所示。</block>
   <block id="23daea2345cff1ef2d70005318ec6cc3" category="admonition">最佳實務做法是先將Fibre Channel識別資訊匯出至.CSV檔案、在該檔案中進行所需的變更、然後將檔案匯入Fibre Channel識別。如此可確保預期的欄位以適當的順序出現。</block>
   <block id="d13fe53b0d3ad7ab123d9c7f26706683" category="paragraph">若要匯入Fibre Channel識別資訊：</block>
-  <block id="4244e4390dde5d14ae81d1e2f0df74fb" category="list-text">登入Cloud Insights 到這個Web UI。</block>
   <block id="1328f96e56e13c8f78d05e72bc85ca29" category="list-text">選擇* Fibre Channel identi*（光纖通道識別）選項卡。</block>
   <block id="d96354195d332bb7e9b2dec8e29ba6e8" category="list-text">按一下「*識別&gt;從檔案識別*」按鈕。</block>
   <block id="63b910ede4415a393f88530c601633f4" category="list-text">瀏覽至包含您要匯入之.CSV檔案的資料夾、然後選取所需的檔案。</block>
   <block id="0c17f01689433d061a314c6df013e6f0" category="paragraph">您輸入的裝置會新增至「Fibre Channel identify」（光纖通道識別）索引標籤中的裝置清單。「規則」被識別為「手動」。</block>
   <block id="e75b0aa40e133ca1c44995aa9a074aeb" category="section-title">將Fibre Channel裝置識別碼匯出至.CSV檔案</block>
-  <block id="66f79162a6412fc8a675f71f28db4173" category="paragraph">您可以從Cloud Insights 「無法分辨」功能、將現有的光纖通道裝置識別碼匯出至.CSV檔案。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Cloud Insights 到用來識別與原先匯出識別碼類似的裝置的地方。</block>
   <block id="a9bf74b26ee4b38e5dbb74fb19c8abef" category="paragraph">當裝置具有類似屬性、可在.CSV檔案中輕鬆編輯、然後匯入系統時、可能會使用此案例。</block>
   <block id="20bf5c31616eac18746c551892188b95" category="paragraph">當您將光纖通道裝置識別碼匯出至.CSV檔案時、檔案會依照所示順序包含下列資訊：</block>
   <block id="fc5482f286ef5daafd6a8d85c7885c03" category="list-text">選取您要匯出其識別碼的光纖通道裝置。</block>
@@ -763,7 +755,6 @@
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新增使用者時、只要選擇所需的角色（通常是使用者或訪客）即可。</block>
   <block id="faac345f3f122d78da73c0bf89c5d9f3" category="paragraph">如需使用者帳戶和角色的詳細資訊、請參閱Cloud Insights 《關於使用者帳戶和角色的資訊 <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文件。</block>
   <block id="591d64253ebae6d71d70584704dad38d" category="doc">設定LDAP目錄伺服器收集器</block>
-  <block id="0fc244ec65c5541551b1c439ffac1ee7" category="list-text">您必須是Cloud Insights 管理員或帳戶擁有者才能執行此工作。</block>
   <block id="547676b7a40f4e24015e9cd282e24aa1" category="list-text">您必須擁有裝載LDAP目錄伺服器的伺服器IP位址。</block>
   <block id="3c35a2e7fd03ecf1d70e3ccbb970491a" category="list-text">在設定LDAP目錄連接器之前、必須先設定代理程式。</block>
   <block id="b9674de27144ea13a735da22fe1380a9" category="list-title">設定使用者目錄收集器的步驟</block>
@@ -884,7 +875,6 @@
   <block id="783606c01e3c46054cfad5b469434086" category="section-title">為查詢傳回的根磁碟區建立附註</block>
   <block id="c888462b6bfcb7d60ef70f30c22e0c51" category="paragraph">附註是您指派給資產的專屬附註、可讓您根據資產附註來篩選資產。您所建立的註釋將用於識別您環境中的NetApp根集合體、並確保它們不會包含在特定報告中。</block>
   <block id="42551f0bbf0137c002ae83a65e5ca80e" category="paragraph">您必須已識別出要從「高I/O密度」報告中排除的所有根Aggregate。</block>
-  <block id="8d9c681869c01295953453519607171e" category="list-text">在功能表中、按一下*管理&gt;註釋* Cloud Insights</block>
   <block id="cd55bfd42602b8f720a9d41caf148f78" category="list-text">按一下「*新增*」</block>
   <block id="e63d06501304a9c184018eb58a729103" category="list-text">輸入註釋名稱：* RootAggr*</block>
   <block id="f65b484d944bbb5696490852b2d2c6d0" category="list-text">輸入註釋說明：*從「高I/O密度」報告中移除根Aggregate *</block>
@@ -935,8 +925,6 @@
   <block id="e767946157d182cf237f259a3b6478c4" category="paragraph">在Kubernetes Explorer中、您可以按一下「節點」圖示、開啟該節點的詳細資訊頁面。在此頁面上、您可以檢視節點的相關資訊、以及瀏覽VM、Pod和Container資訊。</block>
   <block id="4f29fd9657915b51e00ee112dd495873" category="inline-image-macro">Kubernetes節點詳細資料頁面顯示篩選</block>
   <block id="ff9dcb7868c4ad1ee30492b12c57b9d3" category="paragraph"><block ref="ff9dcb7868c4ad1ee30492b12c57b9d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">支援VMware View、可讓您清楚掌握Kubernetes環境的後端儲存設備、深入瞭解Kubernetes Pod和持續磁碟區（PV）Cloud Insights 。您可以追蹤PV計數器、例如IOPS、延遲和處理量、從單一Pod的使用量、透過PV計數器、直到PV、再到後端儲存設備。</block>
-  <block id="4f199152407556f59fa94af499f084e0" category="paragraph">在PV層級、Cloud Insights 由NetApp收集後端（內部磁碟區或磁碟區、視PV類型而定）容量資訊（總計、使用量、使用百分比）、以及內部磁碟區快照數。從Pod到儲存層級、它會收集後端容量和內部Volume Snapshot數。</block>
   <block id="aae3edef1483f0838d4754d553d09e68" category="paragraph">在Volume或內部Volume登陸頁面上、會顯示兩個表格：</block>
   <block id="284075285dd76711665ac6ae13149b3a" category="inline-image-macro">Kubernetes PV表</block>
   <block id="64241ba8e504ff6664efe0d6ae70ba72" category="inline-image-macro">Kubernetes Pod表格</block>
@@ -995,7 +983,6 @@
   <block id="de8c15fa89e8678b9bf3103b3af983de" category="summary">如何將查詢結果匯出至.csv檔案</block>
   <block id="d33a32a045d2f8fd982e5d3bf3425615" category="doc">將查詢結果匯出至.CSV檔案</block>
   <block id="a28f8ea31869026f095819f05219285b" category="paragraph">您可以將任何查詢的結果匯出至.CSV檔案、以便分析資料或將其匯入其他應用程式。</block>
-  <block id="84cc49941f2160736a9dccb1be858a03" category="list-text">登入Cloud Insights 您的身分。</block>
   <block id="6bf988d25784231143b4418f8b3276c3" category="list-text">按一下*查詢*、然後選取*顯示所有查詢*。</block>
   <block id="7b0f16b1eaee6aaf03ec5ce23ac38204" category="paragraph">隨即顯示「查詢」頁面。</block>
   <block id="5c60159997a43283a73239576226151a" category="list-text">按一下查詢。</block>
@@ -1022,10 +1009,8 @@
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">需求</block>
   <block id="da332091bd88d039b97a281cf8c545c1" category="cell">確保您的採購單位伺服器或VM符合要求 <block ref="e5b1973153b9956f66244f44dc226837" category="inline-link-macro-rx"></block></block>
   <block id="ec520aa097684a7ef9fbc8e5932bce5b" category="cell">未符合網路需求</block>
-  <block id="e8260fddde00adfa272f3bc4a2799c40" category="cell">確保您的採購單位伺服器/VM可Cloud Insights 透過連接埠443透過SSL連線存取您的支援環境（&lt;環境名稱&gt;.c01.cloudinsights.netapp.com）。請嘗試下列命令：_ping &lt;ENRONE-name&gt;.c01.cloudinsights.netapp.com__traceroute &lt;ENNEA-name&gt;.c01.cloudinsights.netapp.com__curl \https://&lt;environment-name&gt;.c01.cloudinsights.netapp.com__wGet \https://&lt;environment-name&gt;.c01.cloudinsights.netapp.com_</block>
   <block id="0598f9e3c81145f1690df5b4ae51dafe" category="cell">Proxy伺服器設定不正確</block>
   <block id="fdc0bbea67649674651e9ebb0cbfa3f3" category="cell">驗證您的Proxy設定、並視需要解除安裝/重新安裝接收裝置軟體、以輸入正確的Proxy設定。1.嘗試「捲曲」。請參閱「man curl」代理伺服器相關資訊/文件：--preproxy,--proxy-*（這是萬用字元「*」、因為cURL支援許多代理伺服器設定）。2.嘗試「wGet」。請參閱文件以取得Proxy選項。</block>
-  <block id="afe8a88f99c05a0a5baf48c34d5a39ce" category="cell">擷取單元安裝失敗Cloud Insights 、在啟動擷取服務時出現認證錯誤（可在acq.log中看到）。</block>
   <block id="a290bda041e4dee345a20a39b11eaaef" category="cell">這可能是因為在Proxy認證中加入特殊字元所致。解除安裝AU（_Sudo cloudinsose-uninstall.sh_）、然後重新安裝、不需使用特殊字元。</block>
   <block id="d9b7b613ccbafa22115fdadb257189d5" category="cell">權限問題</block>
   <block id="92a3422e5997b3b7ed860b7d01f51063" category="cell">請確定您以具有系統管理員權限的使用者身分登入</block>
@@ -1034,21 +1019,15 @@
   <block id="53b3bedf13d3e807ef34008234bae7e3" category="cell">資料收集問題</block>
   <block id="23d2b614165a02dae994ad1dee7de394" category="cell">按一下「傳送錯誤報告」按鈕、從資料收集器登陸頁傳送錯誤報告</block>
   <block id="8e67452398a9be9d5950b42f336fb8e5" category="cell">狀態：活動訊號失敗</block>
-  <block id="0fe795cbd34bb3dbf98b6171a8effb44" category="cell">擷取單元（AU）Cloud Insights 每60秒會傳送一次活動訊號至更新租約。如果因網路問題或Cloud Insights 不回應的故障而導致活動訊號呼叫失敗、則不會更新AU的租用時間。當AU的租用時間到期時Cloud Insights 、功能表會顯示「活動訊號故障」狀態。疑難排解步驟：*檢查擷取單元伺服器與CloudInsights之間的網路連線。*檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。*檢查擷取單元記錄（&lt;Install dir&gt;:\Program Files\Cloud Insights \擷 取單元\log\acq.log）、查看是否有任何錯誤。</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">我看到「活動訊號錯誤：訊息</block>
-  <block id="e2284f166fb986bff4a211a1598659c8" category="cell">如果網路中斷導致擷取裝置與Cloud Insights 該環境之間的通訊中斷超過一分鐘、就可能發生此錯誤。驗證AU與Cloud Insights 恆速鏈之間的連線是否穩定且有效。</block>
   <block id="502a82b638ebddf48572103e556b289c" category="section-title">有關代理和防火牆的考量</block>
-  <block id="c2b48d9abfe2f21fdabae7853b104c9b" category="paragraph">如果您的組織需要使用Proxy才能存取網際網路、您可能需要瞭解組織的Proxy行為、並尋求Cloud Insights 某些例外情況、才能讓無法運作。請謹記下列事項：</block>
   <block id="6e90dd5dac99151aee13bc1464af1a6c" category="list-text">首先、貴組織是否預設會封鎖存取、而且只允許例外存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：</block>
-  <block id="f34ad9827119fbc0e1d60a2cd58bf152" category="paragraph">您的購併部、以及您在包含此功能的網頁瀏覽器中互動的內容、都會移至具有該網域名稱的主機。Cloud Insights Cloud Insights</block>
-  <block id="379569df69e56e52fbf21bb6f81ae744" category="list-text">第二、有些Proxy會利用Cloud Insights 非NetApp產生的數位憑證來模擬執行TLS/SSL檢查。此解決方案Cloud Insights 的安全模式與這些技術根本不相容。您也需要上述網域名稱（此功能除外）、Cloud Insights 才能讓畫面擷取單元成功登入Cloud Insights 到畫面、並協助探索資料。</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">檢視Proxy端點</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">Proxy端點表格</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="section-title">資源</block>
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">NetApp知識庫</block>
   <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">如需其他疑難排解秘訣、請參閱 <block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block> （需要支援登入）。</block>
-  <block id="aae5f077ba03e56d1d16eaba111b41fa" category="paragraph">如需其他支援資訊、請參閱Cloud Insights 《支援資訊 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="f68bfcaa8f466fab04e83d0324cf5ddb" category="summary">自動裝置解決方案可協助您準確追蹤環境中的效能與庫存。</block>
   <block id="652c7f9f62814b7bef155e603c66cf80" category="doc">自動裝置解決方案總覽</block>
   <block id="886acc65f9d8a83db54bcb8c080e5bd3" category="paragraph">設定資料收集器之後、系統會識別環境中的裝置、包括交換器、儲存陣列、以及Hypervisor和VM的虛擬基礎架構。不過、這通常無法識別環境中100%的裝置。</block>
@@ -1259,11 +1238,8 @@
   <block id="231ea4a17f0b46cee074d79ff9eb3089" category="cell">重新啟動代理程式的步驟。1.向代理機器SSH。2.執行下列命令、在之後重新啟動代理程式服務：「Udo systemctl restart cloudsecure-agent.service` 3.透過「傳送系統狀態cloudsecure-agent.service`」檢查代理程式服務的狀態。4.代理程式應進入連線狀態。</block>
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">安裝代理程式時、解壓縮後安裝會暫停。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">「chmod 755 -RF」命令失敗。當代理程式安裝命令是由工作目錄中有檔案、屬於其他使用者、且這些檔案的權限無法變更的非root Sudo使用者執行時、命令就會失敗。由於chmod命令失敗、安裝的其餘部分將不會執行。1.建立名為「cloudSecure」的新目錄。2.移至該目錄。3.複製並貼上完整的「tokent=……」 … ．/cloudseced-agent-install.sh」安裝命令、然後按Enter鍵。4.安裝應可繼續進行。</block>
-  <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">如果代理程式仍無法連線至SaaS、請透過NetApp支援開啟案例。提供Cloud Insights 「不完整」序號以開啟案例、並將記錄附加到案例中、如前所述。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">若要將記錄附加至案例：1.以root權限執行下列指令碼、並共用輸出檔案（cloudseced-agent-症狀。zip）。答/opp/NetApp/cloudsec/agent/bin/cloudsecure-agent-symptom-collector.sh 2.以root權限逐一執行下列命令、並共用輸出。答ID cssys b.群組cssys c.Cat /etc/os-release</block>
-  <block id="72d6283da69c57ead27d8e06fc12710c" category="summary">功能入門Cloud Insights</block>
   <block id="5f519de4ae11d5d3a6674c85a3029a81" category="doc">開始收集資料</block>
-  <block id="059cc7c7dfcad8104bd312a68d9e0c4d" category="paragraph">在您首次註冊Cloud Insights 使用VMware技術並登入您的環境之後、系統會引導您完成下列步驟、以便開始收集及管理資料。</block>
   <block id="b6070479612983d59fa5a6e72f7051b4" category="paragraph">資料收集器會從您的資料來源探索資訊、例如儲存裝置、網路交換器和虛擬機器。收集到的資訊用於分析、驗證、監控及疑難排解。</block>
   <block id="06795a6787cf0dba942c7227d6c27d2d" category="paragraph">從支援的廠商和機型中選取您的第一個資料收集器。您可以稍後輕鬆新增其他資料收集器。</block>
   <block id="5774c882dad1ebd6e046b3a9fdfae618" category="section-title">安裝擷取單元</block>
@@ -1292,7 +1268,6 @@
   <block id="d32473e42c46d22acc41317860a18c66" category="list-text">請依照指示設定資料收集器。</block>
   <block id="b8902c68dd65721bc4d101971940d8eb" category="list-text">組態完成後、按一下*完整設定*。</block>
   <block id="3ca7dcc67a0a5082a6d55b440d8a48ca" category="section-title">新增儀表板</block>
-  <block id="ef484ddf1fa70f0f7e6e12c5ec398fd0" category="paragraph">視您選擇要設定的初始資料收集器類型（儲存設備、交換器等）而定、將會匯入一或多個相關儀表板。例如、如果您設定儲存資料收集器、將會匯入一組儲存相關儀表板、其中一組儀表板將設為Cloud Insights 您的「首頁」。您可以從*儀表板&gt;顯示所有儀表板*清單變更首頁。</block>
   <block id="884c68aa76be99399251cf49057f5089" category="inline-link-macro">建立您自己的</block>
   <block id="30ac9f66beb1edda1ef095e871e96e65" category="paragraph">您可以稍後匯入其他儀表板、或 <block ref="d9f1bed19a893c2599f38f8ee38e7f25" category="inline-link-macro-rx"></block>。</block>
   <block id="dced233464479bab905d4f3c73af377e" category="paragraph">完成初始設定程序之後、您的環境將開始收集資料。</block>
@@ -1373,10 +1348,6 @@
   <block id="f0d8c216c3a9aaa527ee9abd2f5a5f9a" category="cell">•確定裝置已啟動•檢查IP位址和接聽連接埠•Ping裝置•使用Cisco Device Manager GUI登入裝置•使用CLI登入裝置•執行SNMP步階</block>
   <block id="79deb14b609e20ab4254e44371a31dd1" category="cell">錯誤：SNMP v1不支援效能擷取</block>
   <block id="61cf21f87693dd829edeec21b6b04d9f" category="cell">•編輯資料來源並停用交換器效能•修改資料來源和交換器組態以使用SNMP v2或更新版本</block>
-  <block id="744c2e5e8de0fb5e62601edf855530ea" category="summary">使用「效益報告」的功能Cloud Insights 取決於您的使用者角色。</block>
-  <block id="5744208be0ebea9c32cfe68a9d9fc35f" category="doc">《報告使用者角色Cloud Insights</block>
-  <block id="495b7380d463ce01575913a6ea6968e5" category="paragraph">如果您使用Cloud Insights 含報告功能的支援版、Cloud Insights 您環境中的每位支援者也都會有單一登入（SSO）登入報告應用程式（即 Cognos）。只要按一下功能表中的「*報告*」連結、您就會自動登入「報告」。</block>
-  <block id="0b6413006c2d6207ef366743605b0759" category="paragraph">您在Cloud Insights 功能方面的使用者角色決定您的報告使用者角色：</block>
   <block id="210c0b904b6b1f746ab7f14f0e0fdd6c" category="cell">職務Cloud Insights</block>
   <block id="c906dae70d1c1dad249f312ca9792346" category="cell">報告角色</block>
   <block id="25db8815b630aaafb84ec33f9c0ddcaa" category="cell">報告權限</block>
@@ -1397,7 +1368,6 @@
   <block id="0cf16c50da4ec1de81a1a97d53996606" category="cell">建立套件與資料模組</block>
   <block id="e38bf2476e8d2e225da1a053aacfd12c" category="cell">執行管理工作</block>
   <block id="654a32ee33803fd11261b8d650858744" category="section-title">設定報告（Cognos）電子郵件偏好設定</block>
-  <block id="17ea205c242f02ff29a6c35d09220094" category="admonition">如果您變更Cloud Insights 使用者在《不同步報告》（亦即Cognos應用程式）中的電子郵件偏好設定、則這些偏好設定僅會在目前工作階段中啟用_。登出Cognos後再重新登入、將會重設您的電子郵件偏好設定。</block>
   <block id="64e8aee8ab5bbf42a82844d113285456" category="section-title">我應該採取哪些步驟來準備現有環境以啟用SSO？</block>
   <block id="30cf09810334fcbe4d4ece63c4a34c1f" category="paragraph">若要確保報告得以保留、請使用下列步驟、將所有報告從「我的內容」移轉至「團隊內容」。在您的環境中啟用SSO之前、您必須先執行此動作：</block>
   <block id="380c82a01daf44bff25a9fba8565a8fc" category="list-text">如果已建立多位使用者、請為每位使用者建立個別的資料夾、以避免覆寫名稱重複的報告</block>
@@ -1406,7 +1376,6 @@
   <block id="78b7fdcf94cd0a9b4abc26fa93d01881" category="list-text">在功能表右上角、選取「複製或移動」</block>
   <block id="971d8b720bc397978b6c7c380d73071a" category="list-text">瀏覽至_Team Content_中新建立的資料夾</block>
   <block id="988def7e9ecdc3ce4afd14c8ab0318e2" category="list-text">使用「複製到」或「移到」按鈕、將報告貼到新建立的資料夾</block>
-  <block id="dd8a0eed4294a931eb1aea4dbf2d479d" category="list-text">啟用Cognos的SSO後、Cloud Insights 請使用用來建立帳戶的電子郵件地址登入支援中心。</block>
   <block id="e67b4314bdf84e8fa0c01d2a41ab7449" category="list-text">瀏覽至Cognos內的_Team Content_資料夾、然後將先前儲存的報告複製或移回「我的內容」。</block>
   <block id="4bc8c89b2626fb7af2fa8a9f7d87a219" category="summary">設定Brocade BNA收集器。</block>
   <block id="4724a729090380148c90188b1eb985ed" category="doc">Brocade Network Advisor資料收集器</block>
@@ -1569,7 +1538,6 @@
   <block id="1ca8bb723c638279d7c5ddb2b353ea54" category="paragraph">顯示圖例時、如果可以瀏覽圖例所示資產的登陸頁面、則圖例會顯示為該資產頁面的連結。</block>
   <block id="16418fb6362362bf39641dbe5e3e3d86" category="summary">使用註釋追蹤資料。</block>
   <block id="9dc3af007802cbac94fe854e8f0c4117" category="doc">定義註釋</block>
-  <block id="a4fc68910b46a271a6cd312a5c66e1bb" category="paragraph">自訂Cloud Insights 功能時、若要根據公司需求追蹤資料、您可以定義專業的附註、稱為附註、並將其指派給您的資產。</block>
   <block id="407dc792025a10c7ad65e372a7704eb6" category="paragraph">您可以使用資產生命週期結束、資料中心、建置位置、儲存層或Volume服務層級等資訊、為資產指派附註。</block>
   <block id="f6eb613205b7046179443e69f786e6cf" category="paragraph">使用註釋來協助監控環境、包括下列高層級工作：</block>
   <block id="4be7c0a355ff7c759d71d14912b19e43" category="list-text">建立或編輯所有註釋類型的定義。</block>
@@ -1578,13 +1546,11 @@
   <block id="7c50bfbfec88094b0c41ddcffe11d14e" category="list-text">建立規則以自動將註釋套用至同一類型的多個資產。</block>
   <block id="52362c79490256900d2feb9634e7ac2f" category="list-text">依資產附註篩選資產。</block>
   <block id="79a3a2ee4b3da0303e320f07bf5f5342" category="section-title">預設註釋類型</block>
-  <block id="7f542c2e8ebc57461622cd3e29202ccd" category="paragraph">提供一些預設的註釋類型。Cloud Insights這些附註可用來篩選或分組資料。</block>
   <block id="e85bf4eccb3fbc3b4be60a32951bbb3f" category="paragraph">您可以將資產與預設註釋類型建立關聯、例如：</block>
   <block id="17e3ba5665482119b302fbb2edcb9a0f" category="list-text">資產生命週期、例如生日、日出或生命週期結束</block>
   <block id="c3be6f202a2052ae03477927c477becb" category="list-text">裝置的位置資訊、例如資料中心、建築物或樓層</block>
   <block id="e846669395bb9de98e3d06b417a23b14" category="list-text">資產分類、例如依品質（階層）、依連線裝置（交換器層級）或依服務層級分類</block>
   <block id="1239f94772abec81a3de981223170236" category="list-text">狀態、例如Hot（高使用率）</block>
-  <block id="2e8cafbc0e649cf2e9666cc8afa750af" category="paragraph">下表列出Cloud Insights提供的註釋類型。</block>
   <block id="f177b25109656150504412ea2b5d3121" category="cell">註釋類型</block>
   <block id="effdb9ce6c5d44df31b89d7069c8e0fb" category="cell">別名</block>
   <block id="1a2d8443cca37bf2555e9c76a2b09342" category="cell">資源的使用者易記名稱</block>
@@ -1612,8 +1578,6 @@
   <block id="34c0c2c5a3a24bf63af1919806d5cc0d" category="cell">在最高至最低重要性的階層中、排列違規（例如遺失主機連接埠或缺少備援）的等級（例如MAJOR）。</block>
   <block id="b87860ab0dc061b503ef8df718421f44" category="admonition">別名、資料中心、Hot、服務層級、 交換器層級、層級和違規嚴重性是系統層級的附註、您無法刪除或重新命名；您只能變更其指派的值。</block>
   <block id="5f1e3307a64cd09f6f6b66948ee50fa2" category="section-title">建立自訂註釋</block>
-  <block id="c297094789fc5d11c8bf3bf3b759ede2" category="paragraph">使用註釋、您可以新增符合業務需求的自訂業務專屬資料至資產。雖然提供一組預設附註、但您可能會發現您想要以其他方式檢視資料。Cloud Insights自訂附註中的資料可補充已收集的裝置資料、例如儲存設備製造商、磁碟區數和效能統計資料。您使用註釋新增的資料Cloud Insights 不會被任何資訊所發現。</block>
-  <block id="a16b947dcd816055d4b841ab554f90c3" category="list-text">在功能表中、按一下*管理&gt;註釋*。Cloud Insights</block>
   <block id="f01810502aa8f2235ddc84956231d8b8" category="paragraph">「附註」頁面會顯示附註清單。</block>
   <block id="e3beb7476a6fa72962d535fe82ed0c9d" category="list-text">按一下「*+附加*」</block>
   <block id="49dac8e94cf3a894a33bf2ff0051828c" category="list-text">輸入註釋的*名稱*和*說明*。</block>
@@ -1846,8 +1810,6 @@
   <block id="94c40ee234b0010adb864fb9bf373a5b" category="paragraph">IP識別畫面會顯示所有已透過自動裝置解析或手動裝置解析識別的iSCSI和CIFS或NFS共用。也會顯示未識別的裝置。此畫面包含裝置的IP位址、名稱、狀態、iSCSI節點和共用名稱。也會顯示已成功識別的裝置百分比。</block>
   <block id="e63b461ab7abed846867f3bfde06b84e" category="paragraph"><block ref="e63b461ab7abed846867f3bfde06b84e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddfea7655f217319cf066be88a21647b" category="section-title">手動新增IP裝置</block>
-  <block id="340358d7a1c5a91c395409e357cf3ae9" category="paragraph">您可以Cloud Insights 使用IP識別畫面中的手動新增功能、將IP裝置手動新增至功能表。</block>
-  <block id="3a6f9027c953859234ecbdb77a61d92a" category="list-text">登入Cloud Insights 到Webto UI。</block>
   <block id="34836837453ae6c915e6ea1bacf0ecf0" category="list-text">按一下「*管理&gt;裝置解析度*」</block>
   <block id="e3026ab2905c6a7e620d929bc0ba2972" category="list-text">按一下「* IP位址識別*」索引標籤。</block>
   <block id="5d7a0f50bad2d7a4210e151120bbcc85" category="paragraph">隨即顯示Add Device（新增裝置）對話方塊</block>
@@ -1859,7 +1821,6 @@
   <block id="dd7bf230fde8d4836917806aff6a6b27" category="cell">地址</block>
   <block id="4ba34f8864262ff0b0fb1bf67a651a6f" category="admonition">最佳實務做法是先將IP位址識別資訊匯出至.CSV檔案、在該檔案中進行所需的變更、然後將檔案匯入IP位址識別。如此可確保預期的欄位以適當的順序出現。</block>
   <block id="97cc3e013b9e4fd3cc0daafd35ed86c6" category="section-title">將IP裝置識別碼匯出至.CSV檔案</block>
-  <block id="3bcee228c72ceec200f0cc2403bf260a" category="paragraph">您可以從Cloud Insights 「無法分辨」功能、將現有的IP裝置識別碼匯出至.CSV檔案。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Cloud Insights 到用來識別與原先匯出識別碼類似的裝置的地方。</block>
   <block id="43366dfe5d3eefd1cb24a74384bc5dba" category="paragraph">。當裝置具有類似屬性、可在.CSV檔案中輕鬆編輯、然後匯入系統時、可能會使用此案例。</block>
   <block id="d208bc48ca9e6fe4b4936dce12add557" category="paragraph">當您將IP裝置識別碼匯出至.CSV檔案時、檔案會依照所示順序包含下列資訊：</block>
   <block id="47e5e39b3cac687a3b73edfe98c861de" category="list-text">選取「* IP位址識別*」索引標籤。</block>
@@ -1938,11 +1899,7 @@
   <block id="bbf9108098eca4c7ff208f7d2d411ed9" category="cell">擷取未執行：</block>
   <block id="ecefe7e91f1e9114514898fe968f408a" category="cell">從/opt/NetApp/cloudinses/acq/logs（Linux）收集acq.log重新啟動擷取服務：Sudo cloudinsights-service.sh重新啟動擷取</block>
   <block id="4bd0e92479e9098e707d736717b11911" category="cell">資料收集問題：</block>
-  <block id="6e4c29de7b0692c9da0969f477a1456a" category="cell">擷取單元（AU）Cloud Insights 每60秒會傳送一次活動訊號至更新租約。如果因網路問題或Cloud Insights 不回應的故障而導致活動訊號呼叫失敗、則不會更新AU的租用時間。當AU的租用時間到期時Cloud Insights 、功能表會顯示「活動訊號故障」狀態。疑難排解步驟：檢查擷取單元伺服器與CloudInsights之間的網路連線。檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。查看擷取設備記錄（/var/log/NetApp/cloudinss/acq/acq.log）、查看是否有任何錯誤。</block>
   <block id="4c53b2b4dd616949881fa030804a1f3e" category="list-text">首先、貴組織是否預設會封鎖存取、而且只允許例外存取特定網站/網域？如果是、您需要將下列網域新增至例外清單：</block>
-  <block id="1b7a599da7c6e7218ebb1a79ae00905e" category="paragraph">如果將Proxy設定為用於流量檢查、Cloud Insights 則必須在Proxy組態的例外清單中新增該環境。此例外清單的格式和設定會因您的Proxy環境和工具而異、但一般而言Cloud Insights 、您必須將VMware伺服器的URL新增至此例外清單、以便AU能與這些伺服器正確通訊。</block>
-  <block id="e7fe695987fdade550f1dbee18c561f8" category="paragraph">最簡單的方法是將Cloud Insights 這個功能網域本身新增至例外清單：</block>
-  <block id="6332753e57d451d8b39622c30281027b" category="paragraph">若未設定Proxy進行流量檢查、則可能需要例外清單、也可能不需要例外清單。如果您不確定是否需要在Cloud Insights 例外清單中新增功能、或是Cloud Insights 因為Proxy和/或防火牆組態而在安裝或執行功能上遇到困難、請洽詢您的Proxy管理團隊、以設定Proxy處理SSL攔截的方式。</block>
   <block id="6dd8ee72ccf8a331a802250c0bcb10a5" category="summary">設定Brocade Sphereon / Intrepid交換器資料收集器</block>
   <block id="5d1930cdfe5bb59530a9a4681d02190e" category="paragraph">若要設定此資料收集器、必須符合下列需求：</block>
   <block id="37f82cd9715f814b8b75b467641e8d9b" category="list-text">如果使用SNMP V1或SNMP V2、則為唯讀社群字串。</block>
@@ -2114,20 +2071,13 @@
   <block id="5524dce2cc559e48c0ba9028c4623cb3" category="cell">Data Domain儲存陣列的密碼</block>
   <block id="46fa23378796f63a46314bfec6013e9c" category="cell">庫存輪詢之間的時間間隔。預設值為20。</block>
   <block id="7f9b6bd4c92112ebcffd9e849212b05a" category="cell">SSH服務連接埠</block>
-  <block id="0899fcc28c04aa81ead738e68e460060" category="summary">使用REST API直接查詢報告資料庫。Cloud Insights</block>
   <block id="a6df26890e0a18d3e3ae4d3fdbfc8b83" category="doc">透過API存取報告資料庫</block>
-  <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">利用功能強大的API、使用者無需經過Cognos報告環境、即可直接查詢功能強大的功能。Cloud Insights Cloud Insights</block>
   <block id="1e2b97b9f5693b80ed092b9f3c74335d" category="inline-link-macro">Premium Edition</block>
   <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">本教學課程</block>
-  <block id="b82b439fceeed91eb6cf1e17ac845ee4" category="paragraph">以下是《需求報告API Cloud Insights <block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block> （開放式資料傳輸協定）標準、用於查詢報告資料庫。如需詳細資訊或深入瞭解、請參閱 <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block> 在OData上。</block>
-  <block id="3577e510a3f1c74a7bb3874de14515b5" category="paragraph">所有申請都會從URL _https://&lt;Cloud Insights URL&gt;/REST / v1/dwh-management / OData_開始</block>
   <block id="125afb495c1f31ea312e38a98946b3a3" category="section-title">產生APIKey</block>
-  <block id="75fecb4e276dfa405fa92b53630b1a6c" category="inline-link-macro">資訊API Cloud Insights</block>
-  <block id="f35f47be5754883ff13c19633478e116" category="paragraph">深入瞭解 <block ref="b08969031f7130627c2547d43f65cf8d" category="inline-link-macro-rx"></block>。</block>
   <block id="3033424387de8a8ff6a929d95d0520cf" category="paragraph">若要產生API金鑰、請執行下列動作：</block>
-  <block id="daac61be276185790d79d2f7a9326d42" category="list-text">登入Cloud Insights 您的不完整環境、然後選取*管理&gt; API存取*。</block>
   <block id="1af9f192377d89a75177427725293c59" category="list-text">按一下「+ API存取權杖」。</block>
   <block id="e7db5ae96f31544fc1ce8098ba62749d" category="list-text">輸入名稱與說明。</block>
   <block id="2376f0f686e8de0393e5e1ddaeb4f7b6" category="list-text">針對類型、選擇_Data倉儲。</block>
@@ -2135,16 +2085,9 @@
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">設定期望到期日。</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">按一下「Save（儲存）」、然後*複製金鑰並將其儲存*到安全的地方。您稍後將無法存取完整金鑰。</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">直接查詢資料表</block>
-  <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">有了API金鑰、現在就能直接查詢報告資料庫。長URL可簡化為\https://.../odata/以供顯示、而非完整的\https://&lt;Cloud Insights url&gt;/rest / v1/dwh管理/OData/</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">請嘗試類似的簡單查詢</block>
-  <block id="a46f2ca5771aa079cc7e5856afeaa757" category="list-text">https://&lt;Cloud Insights URL&gt;&gt;/ REST / v1/dwh-management / OData/dwh_custom</block>
-  <block id="0d34a983260a100641ecd9e249496394" category="list-text">https://&lt;Cloud Insights URL&gt;&gt;/ REST / v1/dwh-management / OData/dwh_inventory</block>
-  <block id="03ebeceea5ea916ef7b51a3a95a49d11" category="list-text">https://&lt;Cloud Insights URL&gt;&gt;/ REST / v1/dwh管理/ OData/dwh庫存/儲存設備</block>
-  <block id="2ab0f9fbf7fd8c1c02b31fa8c169136a" category="list-text">https://&lt;Cloud Insights URL&gt;&gt;/ REST / v1/dwh管理/OData/dwh目錄/磁碟</block>
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">REST API範例</block>
-  <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">所有通話的URL都是：_\https://&lt;Cloud Insights url&gt;/rest / v1/dwh-management / OData_。</block>
-  <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">格式：_\https://&lt;Cloud Insights url&gt;/rest / v1/dwh管理/OData/&lt;schema_name&gt;//&lt;query&gt;_</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">範例：</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">結果：</block>
   <block id="9d0a9858786cdf7480d0249e4c00b68b" category="section-title">實用秘訣</block>
@@ -2159,7 +2102,6 @@
   <block id="0d6642fdc7f58abaa6abe00db247d66a" category="list-text">需要2個標頭：</block>
   <block id="a06751273618aaa2a3136426034f3331" category="list-text">名稱「X-CloudInsights - ApikKey」</block>
   <block id="f07ffec998a0d91a573274ae4a20cba9" category="list-text">屬性值「&lt;apikey&gt;」</block>
-  <block id="5455308b1c7692a68b58d6059d1af0fe" category="paragraph">您的API金鑰將專屬於Cloud Insights 您的整個環境。</block>
   <block id="b3301fb7130a6bbc4af7167c2377b3ef" category="summary">設定Dell EMC PowerStore資料收集器。</block>
   <block id="8e3e500eda102e9446daaf528871a669" category="doc">Dell EMC PowerStore資料收集器</block>
   <block id="7c8a8d30f135f80e019165a90b441add" category="paragraph">EMC PowerStore資料收集器會從EMC PowerStore儲存設備收集庫存資訊。對於組態、資料收集器需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。</block>
@@ -2216,7 +2158,6 @@
   <block id="a0d1f1cd90b97eb951e193ad01d6679d" category="list-text">您可以按一下欄標題中的箭號、將查詢表中欄的排序順序變更為遞增（向上箭頭）或遞減（向下箭頭）。</block>
   <block id="fa2a3440e30dd958c3218bca7dd89b7f" category="list-text">若要調整欄位大小、請將滑鼠游標暫留在欄標題上、直到出現藍色列為止。將滑鼠放在長條上、然後左右拖曳。</block>
   <block id="98ec2214f277d84c29261f104a024f01" category="list-text">若要移動欄、請按一下欄標題、然後向右或左拖曳。</block>
-  <block id="db34aef9a8c0b8612fe136bf81640834" category="paragraph">捲動查詢結果時、請注意、隨著Cloud Insights 自動輪詢資料收集器、結果可能會改變。這可能會導致某些項目遺失、或是某些項目出現順序不正常、視其排序方式而定。</block>
   <block id="d500a402a0f4d5ab2dedb2c5a7ec2eaf" category="summary">memcached資料收集器組態</block>
   <block id="0f5c57f0abc7ee69be3379cf9f5ede78" category="doc">memcached資料收集器</block>
   <block id="198cd654ded33685760b4676e579ff66" category="inline-image-macro">memcached組態</block>
@@ -2226,25 +2167,18 @@
   <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">memcached</block>
   <block id="f3149829d80f1010c9764cf219626e96" category="cell">節點IP節點名稱</block>
   <block id="05345376e590de98cc623cdd4392065e" category="cell">接受連線已處理驗證要求失敗驗證已使用位元組已讀取（每秒）寫入位元組（每秒）CAS Badval CAS命中數CAs未清空要求（每秒）取得要求（每秒）設定要求（每秒）觸控要求（每秒）連線產生量（每秒） 連線結構開啟連線目前儲存的項目取消要求命中次數（每秒）取消要求未命中次數（每秒）刪除要求命中次數（每秒）刪除要求未命中次數（每秒）項目已逐出有效遷離過期項目取得命中次數（每秒）獲取未命中次數（每秒） 使用的雜湊位元組雜湊正在擴充雜湊電力層級、其中包含要求命中次數（每秒）、包含要求未命中次數（每秒）伺服器最大位元組偵聽已停用的已回收工作執行緒數總計已開啟的連線總數已儲存的項目接觸命中次數接觸未達到伺服器正常運作</block>
-  <block id="a5dfaed67b2749f907deb26db5abcb10" category="summary">一般Cloud Insights 故障排除秘訣。</block>
-  <block id="38bbcd866205b5ab858be293ea3a1f1f" category="doc">疑難排解一般Cloud Insights 的問題</block>
-  <block id="ac9d70899fcbb0d147ded44ff92e7ce8" category="paragraph">您可在此找到疑難排解Cloud Insights 功能的建議。</block>
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">疑難排解Linux擷取單元問題</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">疑難排解Windows接收單元問題</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">另請參閱 <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> 和 <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp支援</block>
-  <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀參加Cloud Insights 這個項目、但我收到「未經授權」的訊息。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">我在數天後自動登出。</block>
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">我收到錯誤訊息「不再授權登入」。</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">其他登入錯誤</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">請在Chrome中嘗試無痕式模式、或清除瀏覽器記錄、Cookie和快取。嘗試使用不同的瀏覽器設定檔（例如 Chrome -新增人員）。</block>
-  <block id="8e4250e46b39cafa83925c4406214353" category="paragraph">如果您使用Cloud Insights 的是動態的支援功能、您可以使用下列支援選項：</block>
   <block id="bcc254b55c4a1babdf1dcb82c207506b" category="inline-link-macro">電話</block>
   <block id="0af89698bf5d1150026d4fcbbcf784a6" category="inline-link-macro">支援服務單</block>
   <block id="b0441ab0b89b994706e83faa77bbe107" category="paragraph"><block ref="5924baf98227cb4c4a870a2369035bbd" category="inline-link-macro-rx"></block>
 <block ref="de1cde84399fb2a6056b099cf302293f" category="inline-link-macro-rx"></block></block>
-  <block id="b1dcce069d63ced71a6dcf2e76c2ac23" category="inline-link">支援文件Cloud Insights</block>
-  <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">如需詳細資訊、請參閱<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="0507fa02ffd6a1be1f4496a833b194eb" category="summary">設定Red Hat虛擬化資料收集器。</block>
   <block id="6609776175436f74c8fb3530cfff6f27" category="doc">Red Hat虛擬化資料收集器</block>
   <block id="14624ad5bdba4235e34ec2a5c4ba9ac4" category="cell">虛擬磁碟</block>
@@ -2471,13 +2405,10 @@
   <block id="620f85b913de46972f8dc2d9791d0335" category="inline-link-macro">設定代理程式</block>
   <block id="11e9a60bae5c09e0b15ee77e596f4b30" category="paragraph">如需設定與疑難排解資訊、請參閱 <block ref="253f1bddd94d888bccb7868889c4eaa6" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="ef3aa6b9d2f782f33da5b73b27fa7356" category="summary">用於報告的資料倉儲架構圖表和表格</block>
-  <block id="813a56890a4533afc3bcfe8afcb993b9" category="doc">適用於報告的架構Cloud Insights</block>
-  <block id="37027f0e1c5a6324ee414a6d53995364" category="paragraph">此處提供這些架構表格和圖表、作為Cloud Insights 有關「促進報告」的參考資料。</block>
   <block id="68c06a3aaa437cbc889730a84299608a" category="inline-link-macro">*架構表*</block>
   <block id="b87490ec259e802346f5e7df5b91062a" category="paragraph"><block ref="73132d77bb27426db0a42572dd9db4fb" category="inline-link-macro-rx"></block> PDF格式。按一下連結以開啟、或按一下滑鼠右鍵並選擇「_另存新檔...」進行下載。</block>
   <block id="4d96a583eb48d3637742ec104f386477" category="inline-link-macro">*架構圖*</block>
   <block id="4d54eb69a3854b602bfb9614a2088d55" category="paragraph"><block ref="4d54eb69a3854b602bfb9614a2088d55" category="inline-link-macro-rx"></block></block>
-  <block id="bfba88cab5fe0c8e05d19989f8032cfa" category="admonition">「報告」功能可在Cloud Insights 《資訊時報」中找到 <block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>。</block>
   <block id="3b31c3fb3c507b79d3f86f2b1e3392f5" category="paragraph">所學專業：電子</block>
   <block id="70087224b93e8179deda7438fae8e843" category="list-text">叢集IP</block>
   <block id="baf16fe3173b840f1197987b16b3a8fc" category="list-text">叢集管理使用者名稱和密碼</block>
@@ -2522,9 +2453,6 @@
   <block id="6d850c1b8745f8f15a5216d868cd9cd7" category="inline-image-macro">建立Slack Webhook</block>
   <block id="1718403f08c32585848d7d3c2dcf311b" category="paragraph"><block ref="1718403f08c32585848d7d3c2dcf311b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad8a37e07ad3b700a99d9565d7a44843" category="list-text">移至傳入的Webhooks、按一下「啟動傳入的Webhooks_」、「Request to _Add New Webhook_」（要求新增Webhook_）、然後選取要張貼的通路。</block>
-  <block id="0013ae9f410fbeff3ff135b116ef8a3d" category="list-text">複製Webhook URL。您必須將此項目貼到Cloud Insights 「Webhook」組態中。</block>
-  <block id="f6125c8823d9c9db8cca6dd37d20404c" category="section-title">建立Cloud Insights Webhook：</block>
-  <block id="38aae62e48756f1502c56440fabd6129" category="list-text">在「還原」中、瀏覽至*管理&gt;通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。</block>
   <block id="703a2fff4ffc0a10f86335937d4af331" category="list-text">為網路勾提供有意義的名稱、例如「Slack Webhook」。</block>
   <block id="82097f3f5575ce3befccf2d55fab468d" category="list-text">在_範本類型_下拉式清單中、選取*寬限*。</block>
   <block id="aa82dcce6448dc6d4ac62cf4c783aab6" category="list-text">將上方的URL貼到_url_欄位。</block>
@@ -2532,7 +2460,6 @@
   <block id="fe6005c6002dea0e6c92d46d29a433af" category="paragraph"><block ref="fe6005c6002dea0e6c92d46d29a433af" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b5980ac41b3f66758bcd5a2f32e2726" category="section-title">透過Webhook通知</block>
   <block id="08b5411f848a2581a41672a759c87380" category="inline-link-macro">監控</block>
-  <block id="0736bd7cc7d3492f8e90719c5118b979" category="paragraph">若要透過Webhook通知事件、請Cloud Insights 瀏覽至*警示&gt;監控器*、然後按一下*+監控*以建立新的 <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>。</block>
   <block id="2ff2419ae6f1f87f71f3a728a52ed205" category="list-text">選取度量並定義監視器的條件。</block>
   <block id="aa56e9ef744dcb116cc7b3de9afd9c69" category="list-text">在「設定團隊通知」下、選擇* Webhook *交付方法。</block>
   <block id="6cee8aa4933820b4ebb4909831b4592e" category="list-text">針對所需的事件（嚴重、警告、已解決）、選擇「Slack」（寬限）網路連結。</block>
@@ -2562,7 +2489,6 @@
   <block id="c20486306db87eb1d3d5c2b2cd82c96a" category="cell">預設值為300秒。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系統監視器</block>
-  <block id="556db0fcb03373ffd4b535662a23642d" category="paragraph">包含多個系統定義的監控器、可同時用於測量數據和記錄。Cloud Insights可用的系統監視器取決於環境中的資料收集器。因此Cloud Insights 、當資料收集器新增或其組態變更時、可在功能性更新中使用的監視器可能會有所變更。</block>
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">啟用ONTAP 進階計數器和EMS記錄收集功能以利執行功能</block>
   <block id="a126bfb1fdb6bbbe10997dfc35ed2144" category="section-title">監控說明</block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系統定義的監控器由預先定義的指標和條件、以及無法修改的預設說明和修正行動所組成。您可以_修改系統定義監視器的通知收件者清單。若要檢視度量、條件、說明及修正行動、或是修改收件者清單、請開啟系統定義的監控群組、然後按一下清單中的監控名稱。</block>
@@ -2571,7 +2497,6 @@
   <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">*《基礎架構》*包含監控器、可解決有關基礎架構的問題。ONTAP ONTAP</block>
   <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">*《不適用工作負載範例》*包含與工作負載相關問題的監視器。ONTAP</block>
   <block id="141e31818558b2f9c106f51987380a29" category="list-text">兩個群組中的監控器預設為「暫停」狀態。</block>
-  <block id="1d383faadaa1e0469de5520853eab991" category="paragraph">以下是Cloud Insights 目前隨附的系統顯示器：</block>
   <block id="8ee82de7c36b7a2ab1b954c4886db271" category="section-title">度量監控器</block>
   <block id="91cb0becd6d3ec53b05c232712434a19" category="cell">監控名稱</block>
   <block id="1f02baca34f10faff352ce74764f512b" category="cell">CI嚴重性</block>
@@ -2848,8 +2773,6 @@
   <block id="2e846daa38d7e7ac9350b703448d2886" category="summary">檢視已由監視器觸發的警示</block>
   <block id="f00316e5ead98cd18800712fd32c80d3" category="doc">從監控器檢視及管理警示</block>
   <block id="599031b826edb36138668c214857c5ee" category="inline-link-macro">監控臨界值</block>
-  <block id="7175b0a435baf1ba17f00b97c6cf5d14" category="paragraph">顯示警示時間Cloud Insights <block ref="6237c321048ea1332593fdb4bbfce320" category="inline-link-macro-rx"></block> 已超過。</block>
-  <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">顯示器和警示功能可在Cloud Insights 不更新版本的地方使用。</block>
   <block id="66c4a1617e80afeb2335f5c047465edb" category="section-title">檢視及管理警示</block>
   <block id="c2c8a0c7eb9ee3eecc0a42c64bcb2046" category="paragraph">若要檢視及管理警示、請執行下列步驟。</block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">瀏覽至*警示&gt;所有警示*頁面。</block>
@@ -2875,7 +2798,6 @@
   <block id="1b489429111564ed0ac0109b22575d28" category="paragraph"><block ref="1b489429111564ed0ac0109b22575d28" category="inline-image-macro-rx" type="image"></block></block>
   <block id="910ba96085a400a51981e26de1f1777c" category="section-title">「永久作用中」警示</block>
   <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">您可以設定監視器、使受監控物件上的條件*永遠*存在、例如IOPS &gt;1或延遲&gt;0。這些通常會建立為「測試」監視器、然後被遺忘。此類監控器會建立警示、使其在物件上保持永久開啟、這可能會導致系統壓力和長期穩定性問題。</block>
-  <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">為了避免發生這種情況Cloud Insights 、當7天後、任何「永久性啟用」警示都會自動關閉。請注意、基礎監控條件可能（可能會）持續存在、導致幾乎立即發出新警示、但關閉「永遠作用中」警示可減輕原本可能發生的系統壓力。</block>
   <block id="9a6f1c698cc1e100926a6444a2a7f560" category="summary">設定Lenovo資料收集器：</block>
   <block id="b8e7dba3eebb606afc2cdea5e550fae8" category="doc">聯想資料收集器</block>
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP連接埠需求：9440</block>
@@ -2908,12 +2830,9 @@
   <block id="b6c0784d00f5d3d0e444e9159b8d54ff" category="list-text">請記下時間範圍、並在違規儀表板中找到違規。</block>
   <block id="73a9192b6872be0497b0ba9032e8a3ad" category="summary">預先定義的報告總覽</block>
   <block id="3a0db2fa371f31d3fdf2d89981a1afcb" category="doc">預先定義的報告變得簡單易用</block>
-  <block id="64feabb5605878d5638d9117e8c71d0f" category="paragraph">包含預先定義的報告、可因應多項常見的報告需求、提供重要的洞察力、讓利益相關者能夠針對其儲存基礎架構做出明智決策。Cloud Insights</block>
-  <block id="7763c9fa2859f8488ecf4ca4e1d308f8" category="paragraph">您可以從Cloud Insights 「更新報告入口網站」產生預先定義的報告、將報告以電子郵件傳送給其他使用者、甚至進行修改。多份報告可讓您依裝置、企業實體或階層篩選。報告工具使用IBM Cognos做為基礎、並提供許多資料呈現選項。</block>
   <block id="f13a0434c5849a238ccd2c5e877c77d1" category="paragraph">預先定義的報告會顯示您的庫存、儲存容量、計費、效能、儲存效率、 以及雲端成本資料。您可以修改這些預先定義的報告、並儲存您的修改。</block>
   <block id="4dac91112aeb8c34052a1e9c79e6cdf4" category="paragraph">您可以產生各種格式的報告、包括HTML、PDF、CSV、XML、 和Excel。</block>
   <block id="88c37d058635eec215d68739ac39dc69" category="section-title">瀏覽至預先定義的報告</block>
-  <block id="bf88a0d937dfcacb00859fb5c0c922bd" category="paragraph">當您開啟報告入口網站時、「團隊內容」資料夾是您在Cloud Insights 「團隊報告」中選擇所需資訊類型的起點。</block>
   <block id="a75b8fc33414d692d111110189a35f09" category="section-title">使用預先定義的報告來回答常見問題</block>
   <block id="e89ec6ed2e5ec193067c2a247878a526" category="paragraph">下列預先定義的報告可在*團隊內容&gt;報告*中找到。</block>
   <block id="1c3be015eacffb807e30cff683e0ab59" category="section-title">應用程式服務層級的容量與效能</block>
@@ -2940,7 +2859,6 @@
   <block id="daf3ce05098a091b8229c9cc464deca8" category="section-title">NetApp容量與效能</block>
   <block id="8d0eab5c05649c9cd03653b85f3ccf85" category="paragraph">NetApp容量與效能報告提供已分配、已使用及已承諾容量的全球資料、並提供NetApp容量的趨勢與效能資料。</block>
   <block id="788a99842290310a17b1339348951c8b" category="section-title">計分卡</block>
-  <block id="a3abb41f95d7890c5f419c48c25b7abd" category="paragraph">Scorecard報告提供Cloud Insights 所有透過本公司取得之資產的摘要和一般狀態。狀態會以綠色、黃色和紅色旗標表示：</block>
   <block id="5deca4e6a48246d50758245d91fc8585" category="list-text">綠色表示正常情況</block>
   <block id="64f1f39267f68160e0286668550d456c" category="list-text">黃色表示環境中可能有問題</block>
   <block id="c0b4e892f2286311bd9c4ecd2d3e3b1a" category="list-text">紅色表示需要注意的問題</block>
@@ -2964,23 +2882,7 @@
   <block id="0b4d8c251e2dfb1eead179c1134336fd" category="section-title">XIV資源池容量</block>
   <block id="dff813d382afd170b121f4a3001876f2" category="paragraph">XIV容量（依資源池）報告顯示儲存資源池的已用容量和未使用容量。</block>
   <block id="b33554a1697b5000df418d400a57bdd1" category="doc">組態與支援的裝置</block>
-  <block id="572067bb227ce5c78f69ce716a35af5e" category="paragraph">本常見問題集可解答Cloud Insights 有關支援的組態和裝置的常見問題。</block>
-  <block id="2e43d8ffe77f394a83fdbdd6269eeb96" category="section-title">這個問題是否Cloud Insights 會改變我的環境？</block>
-  <block id="b89b64d6d7021ce49e3d67925b3eb3f4" category="paragraph">不可以NetApp是一種唯讀工具、可收集您環境的相關資訊。Cloud Insights從不變更您的資產或組態。Cloud Insights</block>
-  <block id="2557561fb1daad259d69a2eff7767f9a" category="section-title">我的裝置需要哪些權限層級的存取Cloud Insights 權限？</block>
   <block id="b74af5a9ece7cdf67ec6e4e272d7c116" category="paragraph">在大多數情況下、只讀存取是裝置所需的全部功能。有些解決方案不允許唯讀存取、因此需要適當的提高權限。</block>
-  <block id="b6e4757a4fed24ae14490ad102cfc2d8" category="section-title">此功能多久收集一次資訊？Cloud Insights</block>
-  <block id="ff6f4b330e92d1228f84fcb98d25274c" category="paragraph">通常每隔5分鐘收集一次效能資料、每隔0.5小時就會發現邏輯和實體架構。Cloud Insights根據建議的最佳實務做法和擴充性來設定預設輪詢時間間隔、但確實允許使用者完全控制這些時間間隔。Cloud Insights</block>
-  <block id="c21b8a2a80e57ca923413b1aa8daa2d0" category="paragraph">Cloud Insights的無代理程式、頻外和被動IP通訊、有助於將資料中心生態系統的設定、維護和影響降至最低。Cloud Insights的效能開發團隊會採取重大措施、將監控效能本身活動對資料中心效能的任何影響降至最低。在正常的作業環境中、影響可視為微不足道、而且在高使用率或效能不佳的技術平台中、也可予以緩和或加強。如Cloud Insights 需詳細資訊、請參閱《更新安裝指南》。</block>
-  <block id="cf1e9c3fd6c6dda4ce691bf7e1cfbaef" category="section-title">我該如何列出Cloud Insights 所有的主機/虛擬機器在不完整版中？</block>
-  <block id="c63925f7ddebcf8bf216776c93dc34ab" category="paragraph">Cloud Insights的小工具和查詢清單功能、可用來提供資料中心資產的庫存樣式清單。可將虛擬機器清單放入磁碟中、並在其中建立許多架構、以便查詢、小工具、儀表板和資料倉儲報告、並可透過RESTful API存取。</block>
-  <block id="7e98d66dfbd4c45775ba23fbd7012694" category="section-title">針對相關的非Hypervisor主機（例如實體伺服器）、支援的種類是否Cloud Insights 相同？</block>
-  <block id="007f1aeb22ce240cda7a086fbebadca5" category="paragraph">VMware等Hypervisor提供ESXi主機及其虛擬機器（VM）的詳細資訊。對於實體伺Cloud Insights 服器、此功能會收集到主機HBA的數據。利用獨特的方法、利用專利申請中的技術探索實體伺服器。Cloud Insights一旦發現儲存設備和（或）交換器、實體伺服器的主機名稱就會包含在Fabric別名資訊中。選擇這些主機名稱、在DNS中與它們相符、並自動將主機帶入到位元組中。Cloud Insights Cloud Insights這項技術可大幅減少手動輸入更新和工具庫存維護的需求。</block>
-  <block id="bb70ba9aae987c31ba17072142dd69e7" category="section-title">在異質環境中、供應相同的裝置度量深度（同位元檢查）嗎Cloud Insights ？</block>
-  <block id="b994d75c0a79a39d9acb5a498320c41e" category="paragraph">第三方平台和廠商技術之間的標準化、通用性和命名方式各有不同。將容量與效能資訊標準化為一致的架構。Cloud Insights部分容量和效能指標是從裝置的計數器原生提供、例如IOPs、延遲和原始容量。若未提供計數器、Cloud Insights 則可能會嘗試彙總值（例如、將IOPs或底層Volume的容量總計）、Cloud Insights 若兩者皆不可用、則會嘗試透過各種運算演算法來衍生度量值。支援通用SNMP整合功能、可整合目前尚未收集到的其他指標。Cloud Insights Cloud Insights</block>
-  <block id="e885abb4ab92f6610661428455d3f5e7" category="section-title">此功能是否支援Fibre Channel交換器？Cloud Insights</block>
-  <block id="425ecea49bf7aad828d3bf87e9318ea2" category="paragraph">是的、Cloud Insights 除了從您的儲存資產收集資料外、還能從您環境中的Cisco、Brocade和QLogic交換器取得庫存和效能資料。</block>
-  <block id="82976cdea05b7eb7fbe896786a79f35b" category="paragraph">是的Cloud Insights 、此功能可動態探索及對應邏輯和實體架構、提供運算、架構、虛擬化程式和後端儲存設備的互動式端點對端點拓撲檢視。拓撲圖示可快速導覽受影響的資源、並協助識別共享儲存環境中的工作負載和違規情形。</block>
   <block id="7e59305c585ffd6c40dfc23da8c99b10" category="summary">企業實體附註可用於監控及報告企業階層中的資產</block>
   <block id="feeb52be3f50cf19c972dbe8bca2b5fd" category="doc">企業實體附註</block>
   <block id="cc5bee20a21c1239fd0c62986099a877" category="paragraph">使用*商業實體*註釋類型、為您的企業環境建立及管理商業實體。</block>
@@ -3116,7 +3018,6 @@
   <block id="c516c3bd048a72acd34572d6cfae0477" category="summary">使用報告撰寫工具來建立自訂（「ad -hoc」）報告</block>
   <block id="aa41ad191e6340c80490ee23b9051f65" category="doc">建立自訂報告</block>
   <block id="e807d7ecb04956a12f412e95bc2629ec" category="paragraph">您可以使用報告撰寫工具來建立自訂報告。建立報告之後、您可以儲存報告並定期執行。報告結果可透過電子郵件自動傳送給您自己和其他人。</block>
-  <block id="20939bc3b866b0c10542314c489e2cc9" category="paragraph">本節的範例說明下列程序、可用於Cloud Insights 任何一種「更新報告」資料模型：</block>
   <block id="37980d6bf105278fa11a69dd84f9d337" category="list-text">找出要用報告回答的問題</block>
   <block id="0605b010dbf07d2fcd7632d7dde8fefd" category="list-text">判斷支援結果所需的資料</block>
   <block id="2055f8e291a98a48e02cd162c80cddcd" category="list-text">選取報告的資料元素</block>
@@ -3125,7 +3026,6 @@
   <block id="7faab9011298e33397155b0e5021232e" category="paragraph">在您設計報告之前、請先完成下列工作：</block>
   <block id="a757b06cbcf40569f4970cd41ee13a89" category="inline-link-macro">資料收集器</block>
   <block id="59a0f541e2cb0ed4c6451d586dfed66e" category="list-text">全部設定 <block ref="0cc749161eff54dbabd5ae7d48f6e988" category="inline-link-macro-rx"></block> 正確。</block>
-  <block id="05c61fe4b339c446f7e2667fa42d42cb" category="list-text">在環境中的裝置和資源上輸入附註（例如階層、資料中心和業務單位）。在產生報告之前、讓註釋保持穩定是有益的、因為Cloud Insights 「消息報告」會收集歷史資訊。</block>
   <block id="edefef767d4520c1143d327c0101bb86" category="section-title">報告建立程序</block>
   <block id="ae0324c6fe8c43f6538de50c1305fcc8" category="paragraph">建立自訂（也稱為「ad hoc」）報告的程序涉及數項工作：</block>
   <block id="47cc9306e616c552a7fd3d3af3690a52" category="list-text">規劃報告的結果。</block>
@@ -3152,12 +3052,9 @@
   <block id="ce7c7690e8c4c9587790e235bb672ace" category="section-title">設計報告的秘訣</block>
   <block id="32a93c6368c97106645d404b40f25ce7" category="paragraph">設計報告時、幾個秘訣可能會很有幫助。</block>
   <block id="69182ea2bf1ddafbe0d6816b2cd30a08" category="list-text">判斷您是否需要使用目前或歷史資料。</block>
-  <block id="cb15686a7bb93cbffdf7f940881ba600" category="paragraph">大多數報告只需要回報Cloud Insights 有關更新資料的資訊。</block>
-  <block id="4cb1d05f29754931c9301d9378b29f39" category="list-text">提供容量與效能的歷史資訊、但不包括在庫存中。Cloud Insights</block>
   <block id="8fa72dc28e358eb51194c8c007150d80" category="list-text">每個人都能看到所有資料、但您可能需要將資料限制在特定對象。</block>
   <block id="754f81e32542951bf093d0cdb32c3f7b" category="paragraph">若要區隔不同使用者的資訊、您可以建立報告並設定其存取權限。</block>
   <block id="1a8a67814bc9972fe58b5f3314c9d00f" category="section-title">報告資料模型</block>
-  <block id="04e577cbbf130a8ab128acbccd425391" category="paragraph">包含數種資料模型、您可以從中選取預先定義的報告、或建立自己的自訂報告。Cloud Insights</block>
   <block id="efc8210eb11247f37fcf2897dc53263a" category="paragraph">每個資料模型都包含一個簡單的資料倉儲和一個進階的資料倉儲：</block>
   <block id="a5aa36c6fb09127a07213f5b381bbdb2" category="list-text">簡單的資料倉儲可讓您快速存取最常用的資料元素、並僅包含資料倉儲資料的最後一張快照、不含歷史資料。</block>
   <block id="407f210e68fe30cea4ef4dea554d0fd0" category="list-text">進階資料倉儲可從簡單的資料倉儲中提供所有可用的值和詳細資料、並可存取歷史資料值。</block>
@@ -3200,7 +3097,6 @@
   <block id="8523adfe9d84b8f0c5cead785b646877" category="list-text">哪些容量未被VM使用、哪些部分未使用是可用的、孤立的或其他的？</block>
   <block id="4f033638284bdc65427ff0720e386152" category="list-text">根據消費趨勢、我們需要購買哪些產品？</block>
   <block id="584e7d2a7be54ed12a208870c6467bc6" category="list-text">我使用儲存精簡配置和重複資料刪除技術、可省下多少儲存效率？</block>
-  <block id="de511d9ab61d6a65896049b3f332558a" category="paragraph">VM容量資料模型中的容量是從虛擬磁碟（VMDK）取得。這表示使用VM容量資料模型的虛擬機器已配置大小是其虛擬磁碟的大小。這與Cloud Insights 在VMware View中的虛擬機器已配置容量不同、後者會顯示VM本身的已配置容量。</block>
   <block id="912faacd906314c217ff0489c23cf738" category="section-title">Volume容量資料模型</block>
   <block id="f4460f90b2881fb180e0abbc851010ab" category="paragraph">可讓您分析環境中磁碟區的所有層面、並依廠商、模型、層級、服務層級和資料中心來組織資料。</block>
   <block id="c3a378fc543313d37550bcc8bcc2660a" category="paragraph">您可以檢視與孤立磁碟區、未使用的磁碟區和保護磁碟區（用於複寫）相關的容量。您也可以看到不同的Volume技術（iSCSI或FC）、並針對陣列虛擬化問題、將虛擬磁碟區與非虛擬磁碟區進行比較。</block>
@@ -3265,7 +3161,6 @@
   <block id="fa190610b8f76820a6b6e115ed614e33" category="list-text">如何使用對應至不同資料存放區之VMD回報的效能、來做出重新分層的決策。</block>
   <block id="7bb67d7cac958172b0a1f84a2484325b" category="paragraph">效能資料模型包含的資訊可協助您判斷層級的適當性、應用程式的儲存設備組態錯誤、以及磁碟區和內部磁碟區的最後存取時間。此資料模型可提供回應時間、IOPs、處理量、待處理寫入次數及存取狀態等資料。</block>
   <block id="34a85b274df0ba2a7b21cb67b74e64ed" category="section-title">儲存效率資料模型</block>
-  <block id="d8516f21f7132265ce3594e3d13a0c1c" category="paragraph">可讓您追蹤一段時間內的儲存效率分數和潛力。此資料模型不僅會儲存已配置容量的測量值、也會儲存已使用或已使用的容量（實體測量值）。例如、啟用精簡配置時Cloud Insights 、功能表功能表會顯示從裝置取得的容量。啟用重複資料刪除功能時、您也可以使用此模式來判斷效率。您可以使用儲存效率資料倉儲來回答各種問題：</block>
   <block id="4ecc18a7bb515a117578d6175c08e9f4" category="list-text">因為實作精簡配置和重複資料刪除技術、我們的儲存效率可節省多少成本？</block>
   <block id="b12ee56745ae4a1efb7a3e89ebaf1a8c" category="list-text">資料中心的儲存節約效益為何？</block>
   <block id="388fc5e67ad22c4a51f83be7224fa51d" category="list-text">根據過去的容量趨勢、我們何時需要購買額外的儲存設備？</block>
@@ -3301,22 +3196,17 @@
   <block id="439a42becfa04393106d447776fadfe0" category="cell">可能的解決方案：暫停資料收集器、等待DART升級完成、再嘗試另一個擷取要求。</block>
   <block id="0f5492284173d31c1ded406c4349113a" category="summary">您可以建立附註規則、自動將附註套用至多個資產。</block>
   <block id="8447ce78b2828f5afe95b0662ae31bda" category="doc">建立註釋規則</block>
-  <block id="c892f3821b67f474b3303e3e931aee18" category="paragraph">您可以使用註釋規則、根據您定義的準則、自動將註釋套用至多個資產。根據這些規則、將註釋指派給資產。Cloud InsightsCloud Insight評估附註規則時、在個別資產頁面上手動設定的附註優先於規則型附註。</block>
   <block id="f49369ccd397836d0ae7da95e0676314" category="paragraph">您必須已建立註釋規則的查詢。</block>
-  <block id="331078c822aba58cecbe90d52f83043f" category="list-text">在「功能表」中、按一下「*管理&gt;註釋規則*」Cloud Insights 。</block>
   <block id="1384d05c5b2f49754a143afa35e964c0" category="list-text">按一下「*+規則*」以新增註釋規則。</block>
   <block id="70192b2ae4313f0ebcccd624b70dbf32" category="paragraph">此時會顯示「新增規則」對話方塊。</block>
   <block id="66a5e05ff39a08841b2b88043919979e" category="list-text">在*名稱*方塊中、輸入描述規則的唯一名稱。</block>
   <block id="810a96701d4418e132e260585dd2738a" category="paragraph">名稱會出現在「附註規則」頁面中。</block>
-  <block id="2eaf46778660e7d2b4d5f1f1bd09a57c" category="list-text">按一下「*查詢*」、然後選取Cloud Insights 查詢以識別註釋所適用的資產。</block>
   <block id="15008420e6dce111a858e5d5c6afa401" category="list-text">按一下*註釋*、然後選取您要套用的註釋。</block>
   <block id="3bd25817a801d5a06fa6207a2e35a8b1" category="list-text">按一下*值*、然後選取註釋的值。</block>
   <block id="584ceb18098c95ece45bf340ad3fb854" category="paragraph">例如、如果您選擇「Birthday」做為註釋、則需指定值的日期。</block>
   <block id="fd8965ac1c972e0f11d522c6fab28aef" category="list-text">如果您要立即執行所有規則、請按一下*執行所有規則*；否則、規則會以定期排程的時間間隔執行。</block>
-  <block id="c0d3b231c163713327796ae7de8286ac" category="admonition">在大型Cloud Insights 的不完整環境中、您可能會注意到執行註釋規則似乎需要一段時間才能完成。這是因為索引程式會先執行、而且必須在執行規則之前完成。索引器是Cloud Insights 讓人能夠搜尋或篩選資料中新的或更新的物件和計數器的功能。規則引擎會等到索引程式完成更新後再套用規則。</block>
   <block id="c5bda9cb58b1bb0e70cd02e4a6e2b16a" category="section-title">修改註釋規則</block>
   <block id="c5daaafb7e903bc1954d900fd3e0e4be" category="paragraph">您可以修改附註規則、以變更規則名稱、其附註、附註值或與規則相關的查詢。</block>
-  <block id="578fb7e63366cebbe5c7cb9d699191e9" category="list-text">在功能表中、按一下*管理&gt;註釋規則*。Cloud Insights</block>
   <block id="256a2533507697894b204c83c74bd724" category="paragraph">「附註規則」頁面會顯示現有附註規則的清單。</block>
   <block id="a788a59807525d1bd70eb6d9b14854a9" category="list-text">找出您要修改的註釋規則。</block>
   <block id="ca08f0e34ea8f7c9ff5b715fcfff9ea5" category="paragraph">您可以在篩選方塊中輸入值來篩選註釋規則、或按一下頁碼來逐頁瀏覽註釋規則。</block>
@@ -3400,7 +3290,6 @@
   <block id="25c90ccdccf440be40d0382cdd38edf8" category="doc">使用Webhooks通知</block>
   <block id="9c4196469ee8f7193233b70aa5a0dc44" category="paragraph">Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。</block>
   <block id="b9f902dfe89e09f64a027250c7e50936" category="inline-link-macro">這份實用指南</block>
-  <block id="ec700280fe7a8bda0dd4a2b50dbfbfca" category="paragraph">許多商業應用程式都支援Webhooks做為標準輸入介面、例如：可寬延、PagerDuty、Team、和和等都支援Webhooks。藉由支援通用、可自訂的Webhook通路、Cloud Insights 許多此類交付通路均可獲得支援。您可以在這些應用程式網站上找到Webhooks上的資訊。例如、Slack提供 <block ref="467ef0b7b93a9b44aaca1d16165eef1f" category="inline-link-macro-rx"></block>。</block>
   <block id="553794115ee060778357aac0683824c9" category="paragraph">您可以建立多個Webhook通道、每個通道的目標是不同的用途、獨立的應用程式、不同的收件者等</block>
   <block id="41ed3e981c410d59707000ffa598f01b" category="paragraph">Webhook通路執行個體由下列元素組成：</block>
   <block id="76aeab63a36298ab54940aa1b9114b6a" category="cell">唯一名稱</block>
@@ -3417,13 +3306,9 @@
   <block id="522bdbeef72a248eea58f9b2ea372d3a" category="cell">自訂參數與機密</block>
   <block id="a8b35bb0698c4c3c6aaa64f69a9044e8" category="cell">自訂參數和機密可讓您新增獨特參數和安全元素、例如密碼</block>
   <block id="7e41b44b2e53358e55862406c09c9e8e" category="section-title">建立Webhook</block>
-  <block id="bf128dde6feec035470fe18ad560de45" category="paragraph">若要建立Cloud Insights 一個鏈接、請前往*管理&gt;通知*、然後選取* Webhook*索引標籤。</block>
   <block id="1cd20922aa7fdc300decc5f2d241ce78" category="paragraph">下圖顯示為Slack設定的Webhook範例：</block>
   <block id="e134e42c43873dec9a5eb26e91ead132" category="inline-image-macro">Webhook範例</block>
   <block id="9de0108c717ae7dc36b9f6a326c48778" category="paragraph"><block ref="9de0108c717ae7dc36b9f6a326c48778" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="682c4fa22b4013cbc7b23ccf6ce7dd27" category="paragraph">由許多預設參數組成的Webhooks。Cloud Insights此外、您也可以建立自己的自訂參數或機密。</block>
-  <block id="1d70765e2894fddba3487f839b8b7b30" category="inline-image-macro">預設Webhook參數Cloud Insights</block>
-  <block id="0f85580ce6e6d044094ef0c2641ecb3a" category="paragraph"><block ref="0f85580ce6e6d044094ef0c2641ecb3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148ae64fb8adbd43176cf285dcc8110f" category="section-title">參數：這些參數是什麼？我該如何使用？</block>
   <block id="f5733c88893536362c2727d1d77f6f0b" category="paragraph">警示參數是根據警示填入的動態值。例如、-%%TrigeredOn%_參數將被觸發警示的物件取代。</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">在本節中、您可以新增任何您想要的自訂參數和/或機密。基於安全考量、如果只定義了秘密、Webhook建立者就能修改此Webhook通道。其他人則為唯讀。您可以將URL/標頭中的機密作為_%&lt;secret名稱&gt;%%__使用。</block>
@@ -3632,7 +3517,6 @@
   <block id="0c4a0e9a569be65e94908f9222457694" category="inline-link-macro">使用者目錄收集器疑難排解</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">UI中未顯示某些NFS事件。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">請檢查下列項目：1.具有POSIX屬性集的AD伺服器之使用者目錄收集器應以從UI啟用的unixid屬性執行。2.在UI 3的使用者頁面中搜尋時、應該會看到執行NFS存取的任何使用者。NFS不支援原始事件（尚未探索使用者的事件）4。不會監控匿名存取NFS匯出。5.確定NFS版本的使用版本低於NFS4.1。</block>
-  <block id="e15fca67cd8338997729ad4099343915" category="summary">請使用此程序、使用預先定義Cloud Insights 的功能表建立報告。</block>
   <block id="8dff98a51b599d1388a5c2eaff15bfbd" category="doc">建立報告（範例）</block>
   <block id="d4bcce6f1018e3844c63df7e66d7890d" category="paragraph">請使用本範例中的步驟、針對多個資料中心的儲存設備和儲存資源池實體容量、產生簡單的報告。</block>
   <block id="f124bc31c83c04aa60264d612339edbb" category="paragraph">隨即顯示來源和資料索引標籤</block>
@@ -4130,10 +4014,6 @@
   <block id="bc742a3b20c159bc11ea844e4d798e34" category="cell">預設為HTTPS（連接埠443）</block>
   <block id="d394f4a37cee9ff0a48907bfdacc4a9f" category="cell">置換TCP連接埠</block>
   <block id="cd5f584259d833ff583a4824164dfbc3" category="cell">如果不是預設、請指定要使用的連接埠</block>
-  <block id="29b0e1bb2381801d4265a78527e6ea22" category="summary">利用NetApp預先定義及自訂資料報告Cloud Insights 功能。</block>
-  <block id="e597f313c194b3080587aaf8e1fbb2c8" category="doc">報告總覽Cloud Insights</block>
-  <block id="e6c80af8f4cc9c714980fc1bb28ff631" category="paragraph">利用此商業智慧工具、您可以檢視預先定義的報告或建立自訂報告。Cloud Insights</block>
-  <block id="27276e52e42f7dabd54f8098186a0c88" category="paragraph">利用此功能、您可以執行下列工作：Cloud Insights</block>
   <block id="46c119deee400677d83efdda7a502905" category="list-text">執行預先定義的報告</block>
   <block id="4724f07f20c32906fddb6ab420741e75" category="list-text">建立自訂報告</block>
   <block id="bab0e2556d5acdaa28e033e088a861b3" category="list-text">自訂報告的格式和交付方法</block>
@@ -4148,13 +4028,8 @@
   <block id="d5694f70ecf08b29fc2e062ff4ce8330" category="list-text">需要多長時間才能取得額外的儲存容量？</block>
   <block id="25cb6e4885c957993c1791c7422eade2" category="list-text">業務單位是否與適當的儲存層一致？</block>
   <block id="5002e2008b3c8a840362d49af15ecfca" category="list-text">儲存設備配置如何在一個月、一季或一年內改變？</block>
-  <block id="3714e6d6cf8b80c9988ff389105e543c" category="section-title">存取Cloud Insights 本報告</block>
-  <block id="b1c6484956adbf6f06fcde9ba959816a" category="paragraph">您可以按一下功能表中的* Reports*連結來存取Cloud Insights 《S菜 色報告》。</block>
   <block id="ae5c20191cb62f32246efcf9d57ec771" category="section-title">什麼是ETL？</block>
-  <block id="ed3737df147bb5e0883ec9917bb6de42" category="paragraph">使用「報告」時、您會聽到「資料倉儲」和「ETL」等詞彙。ETL代表「擷取、轉換及載入」。ETL程序會擷取Cloud Insights 以EFlash收集的資料、並將資料轉換成用於「報告」的格式。「資料倉儲」是指可用於報告的收集資料。</block>
   <block id="59cfd65b8b6dc724aca0f9d1c7d41298" category="paragraph">ETL程序包括下列個別程序：</block>
-  <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">*擷取*：從Cloud Insights 資料來源擷取資料。</block>
-  <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* Transform*：將商業邏輯規則或功能套用至從Cloud Insights 效益擷取的資料。</block>
   <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">*負載*：將轉換後的資料儲存至資料倉儲、以供報告使用。</block>
   <block id="ccbd604baf2f1984132ebb1bbeb588fc" category="list-text">使用者位置</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">讀取</block>
@@ -4191,7 +4066,6 @@
   <block id="4feea054535349a31f7c12b7dcbc4d2b" category="section-title">新增自訂小工具</block>
   <block id="2c6503d76e77d1cf4b2836c66fb29d6e" category="paragraph">您可以將自己的小工具新增至任何資產頁面。您新增的小工具會顯示在該類型所有物件的資產頁面上。例如、將自訂小工具新增至儲存資產頁面、會在所有儲存資產的資產頁面上顯示該小工具。</block>
   <block id="28c0e15f579689e243a880b6944ddfb5" category="doc">設定擷取單位</block>
-  <block id="b720107699679aedfb92e18f61b7cd45" category="paragraph">使用安裝在本機伺服器上的一或多個擷取單元收集裝置資料。Cloud Insights每個擷取單元都能裝載多個資料收集器、將裝置指標傳送Cloud Insights 到以供分析。</block>
   <block id="e548e3ee764a7dc701df28014b0530f7" category="paragraph">本主題說明如何新增擷取單位、並說明當您的環境使用Proxy時所需的其他步驟。</block>
   <block id="8f9a80957e46a2c52cf578d55702f7bf" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步擷取裝置機器上的時間。</block>
   <block id="95daeb54f7a6f1925add5849715872ad" category="section-title">新增Linux擷取單元</block>
@@ -4215,15 +4089,12 @@
   <block id="52226506bf1b4a5452e672e84cbf0104" category="list-text">使用Bash Shell在終端機中執行編輯後的命令。</block>
   <block id="ba9f9aaef47dd85056af2cb7cd6951a1" category="list-text">安裝擷取單元軟體。</block>
   <block id="51ef8dfe8b9bebdc12ed8da57cb6ef1e" category="section-title">Proxy組態</block>
-  <block id="68e1bece4463d16fdc69a636c53b3be3" category="paragraph">擷取單元使用雙向 / 相互驗證來連線 Cloud Insights 至該伺服器。用戶端憑證必須傳遞至 Cloud Insights 驗證伺服器。為達成此目的、必須設定Proxy、將https要求轉送到Cloud Insights 該伺服器、而不需解密資料。</block>
-  <block id="dc12da455058889e6c0847cd6818f17c" category="paragraph">最簡單的方法是在Proxy /防火牆中指定萬用字元組態、以便與Cloud Insights 下列項目進行通訊：</block>
   <block id="7011d12128c7027c0a5ef0db2c274300" category="admonition">通配符通常使用星號（*）、但您的Proxy /防火牆組態可能使用不同的格式。請參閱您的Proxy文件、以確保環境中的萬用字元規格正確無誤。</block>
   <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">檢視Proxy URL</block>
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以在就職期間選擇資料收集器時、按一下「* Proxy Settings*」（*代理設定*）連結、或按一下「* Help &gt; Support*」（*說明&gt;支援*）頁面上「_Proxy Settings_」（_代理設定_）下的連結、來檢視Proxy端隨即顯示如下表格。</block>
   <block id="0d31b3a0d757ebb26d553352a08cb4e5" category="section-title">新增Windows接收單元</block>
   <block id="7bb8dc49e894513db639873cb06911d4" category="list-title">Windows擷取單元安裝步驟</block>
   <block id="d859eb4ae30b9eae60ffbcb09db52be6" category="list-text">以具有管理員權限的使用者身分登入擷取單元伺服器/ VM。</block>
-  <block id="3cf3030bbe5a24323447cf60440415e7" category="list-text">在該伺服器上、開啟瀏覽器視窗、Cloud Insights 並以系統管理員或帳戶擁有者身分登入您的支援環境。</block>
   <block id="0c3a3bd2ed0dc5c611332312485e427f" category="paragraph">系統會顯示_安裝擷取單元_對話方塊。選擇Windows。</block>
   <block id="ec97136c856287bb07ca7148194c98e6" category="image-alt">Windows AU安裝</block>
   <block id="0ddeb8dc3872cd6d88bd4c549ed99742" category="list-text">確認伺服器執行的是受支援的Windows版本。按一下「_OS versions Supported（i）_（作業系統支援版本（i）_）」以取得支援版本的清單。</block>
@@ -4237,7 +4108,6 @@
   <block id="fe0aa10b93758615134470ce37d1a946" category="section-title">解除安裝擷取單元</block>
   <block id="13ab672acb3e71f05c0d486286dd0ed0" category="paragraph">若要解除安裝擷取單元軟體、請執行下列步驟：</block>
   <block id="f5a70d474e688b68084d86124d0be01a" category="paragraph">* Windows：*</block>
-  <block id="4b929bbd6fcc37c08ab4612028287ca3" category="list-text">在擷取裝置伺服器/VM上、開啟「控制台」、然後選擇「*解除安裝程式*」。選取Cloud Insights 要移除的「更新擷取單元」程式。</block>
   <block id="cb7b4826c08bc306e5cff077dfba5dd7" category="list-text">按一下「解除安裝」、然後依照提示進行。</block>
   <block id="abf0b3ef23b5557422e33977a6ac3fbf" category="paragraph">* Linux：*</block>
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">在擷取裝置伺服器/VM上、執行下列命令：</block>
@@ -4386,7 +4256,6 @@
   <block id="505a160b62bc31c8ffa7c7dd25cbf213" category="paragraph"><block ref="505a160b62bc31c8ffa7c7dd25cbf213" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5c4f798b6d55f2a89cb97884f0d548" category="section-title">量表注意事項</block>
   <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">報告架構圖表</block>
-  <block id="6674395fa1826fa5008d38849347faea" category="doc">回報架構圖表Cloud Insights</block>
   <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">架構表格</block>
   <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">本文件提供報告資料庫的架構圖表。您也可以下載包含的檔案 <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">庫存資料</block>
@@ -4477,7 +4346,6 @@
   <block id="ac62625b23d0635d3eaed0e05c830d36" category="paragraph">最後、您可以按一下* Copy Insight Link*、將網頁URL複製到剪貼簿、以便更輕鬆地與同事分享。</block>
   <block id="5865d512ef44ce9af5c898e3838da358" category="summary">Kubernetes登陸頁面說明</block>
   <block id="e069a872dd6153588f1350dd2d1c2289" category="doc">Kubernetes叢集概觀</block>
-  <block id="d9ade118c1e64b59921edda821b7e351" category="paragraph">功能強大的《支援資源管理程式》Cloud Insights 工具可顯示Kubernetes叢集的整體健全狀況和使用狀況、讓您輕鬆深入調查領域。</block>
   <block id="84a93a66c16a4163eea2b414b601e0ce" category="inline-link-macro">*詳細資料頁*</block>
   <block id="13d28e8dfc702e3456e0767dff9a128a" category="section-title">命名空間</block>
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">精簡篩選條件</block>
@@ -4556,7 +4424,6 @@
   <block id="b476f138570162c042a088beeeccec15" category="list-text">輸入_Name_、然後選取_直接使用我們的API _。按一下「新增服務」。</block>
   <block id="87f2841c34802570db42ed259a72659f" category="inline-image-macro">PagerDuty畫面</block>
   <block id="db788963e43859ced84fd2d54c4a1826" category="paragraph"><block ref="db788963e43859ced84fd2d54c4a1826" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="59e1175daa8d01582631928c502e92a8" category="list-text">按一下「整合」索引標籤以查看*整合金鑰*。當您在下Cloud Insights 方建立「鏈接」時、您將需要此金鑰。</block>
   <block id="14b1b977a367efc00b3c3c2a27dd9df6" category="list-text">請前往*「事件」*或*「服務」*檢視「警示」。</block>
   <block id="38cd2297d6a0d6ebf34eba2cd7a08ed5" category="inline-image-macro">PagerDuty畫面</block>
   <block id="583d30680a45f7d79eafed1816002071" category="paragraph"><block ref="583d30680a45f7d79eafed1816002071" category="inline-image-macro-rx" type="image"></block></block>
@@ -4566,8 +4433,6 @@
   <block id="04e4dd6181e90fa263943b8e61bb499d" category="inline-image-macro">設定路由金鑰</block>
   <block id="5a013c53b72c2edc0446ec52e8f4cec1" category="paragraph"><block ref="5a013c53b72c2edc0446ec52e8f4cec1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1a9d0f94095cef87bc886d12fbea8395" category="paragraph">重複這些步驟、為已解決的事件建立「PagerDuty Resolve」網路連結。</block>
-  <block id="44d009af6b9380d0b37fb797cd7e56d5" category="section-title">PagerDuty to Cloud Insights Fingfield Mapping</block>
-  <block id="f2a882088431bfa33a90643a9340a9e8" category="paragraph">下表和影像顯示PagerDuty和Cloud Insights Image2之間的欄位對應：</block>
   <block id="b4f83b03956523a39e8bbbd0895f0f29" category="cell">Cloud Insights</block>
   <block id="93bf0778f1ee03829356ae4553d91947" category="cell">警示金鑰</block>
   <block id="d52ec35b5e512df6a2ae980b72783d2a" category="cell">警示ID</block>
@@ -4607,15 +4472,12 @@
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">磁帶的裝置解決規則僅適用於WWN、其中該WWN的廠商設定為_僅隨附於磁帶_（廠商偏好設定）。</block>
   <block id="48efe9ecb0bd1de1d09e3291068bd38a" category="inline-link-macro">規則運算式範例</block>
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">另請參閱： <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
-  <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights</block>
   <block id="b1268076894d71bd79285945ea54cad5" category="doc">使用監視器警示</block>
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">您可以建立監控器來設定觸發警示的臨界值、以通知您有關網路資源的問題。例如、您可以建立一個監控器、針對任何多種傳輸協定發出_節點寫入延遲_警示。</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">監控功能可讓您針對儲存設備、VM、EC2和連接埠等「基礎架構」物件所產生的度量、以及針對Kubernetes、ONTAP 支援各種進階指標和Telegraf外掛程式所收集的「整合」資料、設定臨界值。當超過警告層級或臨界層級臨界值時、這些_metric _監控器會發出警示。</block>
   <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">您也可以建立監視器、在偵測到指定的_log events時觸發警告、嚴重或資訊層級的警示。</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系統定義的監視器</block>
-  <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">提供多種功能Cloud Insights <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 此外、也會根據您的環境而決定。</block>
   <block id="4712a61ef2a234a93ba9db41c631d5b8" category="section-title">度量或記錄監控？</block>
-  <block id="4dacc229b0bc4d687a0aceeaa94b8095" category="list-text">在「支援」功能表中、按一下Cloud Insights 「*警示」&gt;「管理監視器*」</block>
   <block id="7a4d7843cd0dfc634c2485f99960f485" category="paragraph">隨即顯示「監視器」清單頁面、顯示目前設定的監視器。</block>
   <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">若要修改現有的監視器、請按一下清單中的監視器名稱。</block>
   <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">若要新增監視器、請按一下*+ Monitor *。</block>
@@ -4680,13 +4542,9 @@
   <block id="f9014555d08521285ca544350f9dc25a" category="paragraph">畫面會顯示下列監視器群組。群組名稱旁會顯示群組中包含的監視器數量。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">*所有顯示器*會列出所有顯示器。</block>
   <block id="d9e85911262ba37a5d999e863491d888" category="list-text">*自訂監視器*會列出所有使用者建立的監視器。</block>
-  <block id="70d96c6a41afb254c16b7b9540d18895" category="list-text">*暫停的監視器*會列出Cloud Insights 任何遭停止的系統監視器。</block>
   <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">系統定義的監視器</block>
-  <block id="69a8fd4125eb679015842f32069fd971" category="list-text">此外、還會顯示許多*系統監視器群組*、其中會列出一或多個群組Cloud Insights <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>、包括ONTAP 功能不全的基礎架構和工作負載監控。</block>
   <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">自訂監視器可以暫停、恢復、刪除或移至其他群組。系統定義的監視器可以暫停和恢復、但無法刪除或移動。</block>
   <block id="c3c2ba86297c67abf1cd56f0d77e8cac" category="section-title">暫停的監視器</block>
-  <block id="1f4408604ff975de8817060ea3a7330a" category="paragraph">只有在停止一台或多台監視器時、Cloud Insights 才會顯示此群組。如果監視器產生過多或持續的警示、則可能會暫停。如果監視器是自訂監視器、請修改條件以防止持續警示、然後恢復監視器。當導致暫停的問題解決時、監視器會從「暫停的監視器」群組中移除。</block>
-  <block id="5f8a706a9be7411e7b652c8139cb2a37" category="paragraph">只Cloud Insights 要您的環境包含顯示器所需的裝置和/或記錄可用度、這些群組就會顯示由NetApp提供的監視器。</block>
   <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">無法修改、移至其他群組或刪除系統定義的監視器。不過、您可以複製系統監視器、並修改或移動複本。</block>
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">系統監控器可能包括ONTAP 顯示器、以監控基礎架構（儲存設備、Volume等）或工作負載（例如記錄監控器）或其他群組。NetApp持續評估客戶需求和產品功能、並視需要更新或新增至系統監控器和群組。</block>
   <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">自訂監控群組</block>
@@ -4698,14 +4556,11 @@
   <block id="850550000a544306e2d25d5b4ee17d9e" category="inline-image-macro">與群組建立關聯</block>
   <block id="e2bc4bcf0670da96e21e208bf6bcc766" category="paragraph"><block ref="e2bc4bcf0670da96e21e208bf6bcc766" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">按一下群組、然後從功能表中選取「從群組移除」、即可移除監控器。您無法從「_All Monitors_」或「_Custom Monitors_」群組中移除監視器。若要從這些群組中刪除監視器、您必須刪除監視器本身。</block>
-  <block id="e30c931a1dd5474d9e4ca4e7c88580c7" category="admonition">從群組中移除監視器並不會刪除Cloud Insights 顯示器。若要完全移除監視器、請選取監視器、然後按一下「刪除」。這也會將其從所屬群組中移除、不再提供給任何使用者。</block>
   <block id="cdd3916c98efbf8a767744185462ffec" category="paragraph">您也可以用相同的方式將監視器移至不同的群組、選取_移至群組_。</block>
   <block id="9f69190cb4874f8723dbc78ca0008d65" category="paragraph">若要一次暫停或恢復群組中的所有監視器、請選取群組的功能表、然後按一下「暫停」或「恢復」。</block>
-  <block id="c5cc340934b797d2f0bbc7777b820964" category="paragraph">使用相同的功能表重新命名或刪除群組。刪除群組並不會刪除Cloud Insights 顯示器的功能、但仍可在_All Monitors_中使用。</block>
   <block id="6af18ae8f301c79fa391e8e18308336c" category="inline-image-macro">暫停群組</block>
   <block id="da61284a90b4338613015a46e7ac0c53" category="paragraph"><block ref="da61284a90b4338613015a46e7ac0c53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b45ed04a71b5c6121028894bed24bfe0" category="paragraph">預設會顯示兩個群組：</block>
-  <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">檢視 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 頁面、以取得Cloud Insights 有關顯示器的說明。</block>
   <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy資料收集器組態</block>
   <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy資料收集器</block>
   <block id="6c1dacdba2adca5cfa22ff19b2d327fe" category="inline-image-macro">HAProxy組態</block>
@@ -5326,7 +5181,6 @@
   <block id="5fde926e8d061d7f8c5e68887e3b3c19" category="cell">使用者資料會從AD同步至CloudSecure。資料何時會刪除？</block>
   <block id="9f8e06d60caf6407f4ff3791713a664f" category="cell">使用者目錄連接器會導致「錯誤」狀態。"連接器處於錯誤狀態。服務名稱：usersLdap。失敗原因：無法擷取LDAP使用者。失敗原因：80090308: LdapErr：DSID-0C90453、註解：AcceptSecurityConttext錯誤、資料52e、v3839</block>
   <block id="2d701fb03765a16a337855076299c890" category="cell">這很可能是因為Active Directory的屬性對應問題所致。1.編輯從Active Directory擷取使用者資訊的特定Active Directory收集器。2.注意在選用屬性下、會有一個欄位名稱「電話號碼」對應至Active Directory屬性「電話號碼」。4.現在、請依照上述說明使用Active Directory Explorer工具來瀏覽Active Directory、並查看正確的屬性名稱。3.確定Active Directory中有一個名為「電話號碼」的屬性、其中確實有使用者的電話號碼。5、讓我們在Active Directory中說、它已改為「電話網路電話」。6.然後編輯CloudSecure User Directory收集器。在選用屬性區段中、將「電話號碼」取代為「電話號碼」。7.儲存Active Directory收集器、收集器將重新啟動、取得使用者的電話號碼、並在使用者設定檔頁面中顯示相同的號碼。</block>
-  <block id="8b91cb352f837187391eccc1bbd95135" category="summary">物件圖示參考。Cloud Insights</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">物件圖示參考</block>
   <block id="b6867104f109b9761bb4fdcefc9edf5a" category="summary">設定Microsoft Hyper-V資料收集器。</block>
   <block id="28c1db509b1fc8c0d107a05488d8a089" category="doc">Microsoft Hyper-V資料收集器</block>
@@ -6156,7 +6010,6 @@
   <block id="339a0d5f5de9ad68efe72e2673504fd9" category="list-text">選取一或多個應用程式。</block>
   <block id="8323eca50bbbc655e4759d5181ed27cf" category="paragraph">您可以為主機、內部磁碟區、qtree和虛擬機器選取多個應用程式、不過、 您只能為一個磁碟區或共享區選取一個應用程式。</block>
   <block id="c7ddb198b304e6105825a061afe57109" category="list-text">選取您要移除的應用程式。</block>
-  <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">在大量新增或移除動作上按一下「_Save_ Cloud Insights 」之後、將會通知您此動作需要一些時間。您可以關閉此訊息、此動作將在背景中繼續。</block>
   <block id="f03c797101edb46ecd6d2c9846c389fa" category="summary">建立Webhook、針對Microsoft團隊的效能或庫存臨界值發出警示</block>
   <block id="55fea06d7da733c48fe60e575f7364ae" category="doc">Microsoft團隊的Webhook範例</block>
   <block id="4a566388ab998f7ad82049fcca153e95" category="paragraph">Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。本頁提供設定團隊Webhooks的範例。</block>
@@ -6357,8 +6210,6 @@
   <block id="e793f33e22dc68617d81d95ccdb1bab3" category="summary">如何建立附註。</block>
   <block id="edd98807c01d4ddff35c7ee77abafc4b" category="doc">使用註釋</block>
   <block id="3d0643c815127de3318400aed36e518e" category="paragraph">您可以建立附註、並將其指派給監控的資產。附註是提供資產相關資訊的附註、例如實體位置、生命週期結束、儲存層級或Volume服務層級。</block>
-  <block id="8588f2251c92b7b2199a57ed05315da0" category="paragraph">使用註釋、您可以新增符合業務需求的自訂業務專屬資料至資產。雖然提供一組預設註釋、例如資產生命週期（生日或生命週期結束）、建築物或資料中心位置及層級、但Cloud Insights 您可能會發現想要以其他方式檢視資料。</block>
-  <block id="4fb410d11105f6876e135054407064be" category="paragraph">自訂附註中的資料可補充已收集的裝置資料、例如交換器製造商、連接埠數量和效能統計資料。您使用註釋新增的資料Cloud Insights 不會被任何資訊所發現。</block>
   <block id="8d84228028613aa40d29263036d4812f" category="list-text">列出環境資料必須關聯的任何產業術語。</block>
   <block id="1c1c16b59c04d83c1d011069ab1af1a2" category="list-text">列出環境資料必須關聯的企業術語。</block>
   <block id="5bc4d7747292890d65b6219e6d50ab2c" category="list-text">找出您可以使用的任何預設註釋類型。</block>
@@ -6373,14 +6224,12 @@
   <block id="3a3a0bbbd46aee8c1de13c716dec0a87" category="section-title">手動指派資產附註</block>
   <block id="17432f8f5e0722d4d1ea44f040917cc1" category="paragraph">指派資產附註有助於您以與業務相關的方式來排序、分組及報告資產。雖然您可以使用註釋規則、自動將註釋指派給特定類型的資產、但您可以使用資產頁面、將註釋指派給個別資產。</block>
   <block id="bfe926bd2c64c9ad496bbca9a4a786f5" category="list-text">您必須已建立要指派的附註。</block>
-  <block id="693c7981a83d47e6d94b61d6cec856a1" category="list-text">登入Cloud Insights 您的不執行功能環境。</block>
   <block id="b68523b004e8cdbbb23ea12bb69a9932" category="list-text">找出您要套用註釋的資產。</block>
   <block id="48f70cd5c81d1867d12144bf33d2414e" category="list-text">您可以透過查詢、從dashoard小工具中選擇或搜尋來尋找資產。找到您想要的資產後、按一下連結即可開啟資產的登陸頁面。</block>
   <block id="63f4026fad5aab1373988d282ff074f2" category="list-text">在資產頁面的「使用者資料」區段中、按一下「*+註釋*」。</block>
   <block id="815d3c4f5463a1b58c8217798e9714fa" category="list-text">此時會顯示「新增附註」對話方塊。</block>
   <block id="7b41ba856422d0e1256509588b698bfc" category="paragraph">如果您要在指派註釋後變更其值、請按一下註釋欄位、然後選取不同的值。如果註釋屬於清單類型、且已選取「在flly_上新增值」選項、則除了選取現有值之外、您還可以輸入新值。</block>
   <block id="7035ae0718ec28aa3b80eb15a7b23c00" category="section-title">使用註釋規則指派註釋</block>
-  <block id="15b225e998c8330236a38d1593961f9c" category="paragraph">若要根據您定義的準則自動指派資產附註、請設定附註規則。根據這些規則、將註釋指派給資產。Cloud Insights此外、也提供兩種預設註釋規則、您可以根據需求進行修改、或是在不想使用時加以移除。Cloud Insights</block>
   <block id="953ce98a8e686f7367bc456b242d829f" category="paragraph">您可以使用註釋規則、自動將註釋套用至多個資產、作為手動套用註釋至個別資產的替代方法。Insight評估註釋規則時、在個別資產頁面上手動設定的註釋優先於規則型註釋。</block>
   <block id="55d5f0c4013c7dc9784e5bddc1789533" category="paragraph">雖然您可以在建立規則時編輯註釋類型、但應該事先定義類型。</block>
   <block id="30d8711ebf066bab1e933e19bd65e196" category="list-text">按一下*管理&gt;註釋規則*</block>
@@ -6703,9 +6552,7 @@
   <block id="7622055b26116e77e0829f3b72e6fd74" category="cell">包含_uemcli.exe_執行檔的資料夾完整路徑</block>
   <block id="d1af7a4fcab5a7aaf8e28e83cbbd35d9" category="cell">Unity CLI連接埠</block>
   <block id="5d72a02b2ac24b90a1b9ba11e8b552fe" category="cell">用於Unity CLI的連接埠</block>
-  <block id="46efc414194691d6d05bcfff35e65c5d" category="summary">資料保留以供報告Cloud Insights</block>
   <block id="d0453d6ddb7253123e56e1ba49d51ea3" category="doc">如何保留歷史資料以供報告</block>
-  <block id="b42726067594c081ca1c1e9790ef5aee" category="paragraph">根據資料市場和資料精細度、將歷史資料保留以供報告使用、如下表所示。Cloud Insights</block>
   <block id="e810ef0d38aadd1a4adb0e61cd5d9532" category="cell">資料倉儲</block>
   <block id="22ccc755b98e449e061dba9da3ea7671" category="cell">量測的物件</block>
   <block id="5cb5a6f3a6c30a6c8da73145904919bb" category="cell">精細度</block>
@@ -6877,7 +6724,6 @@
   <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">如需相關資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="86afb40fc9bbcc4cc0e8479077f8544f" category="summary">裝置解決方案可協助您準確追蹤環境中的效能與庫存。</block>
   <block id="8123ff51cbfc7a2239546029a7501579" category="doc">裝置解決規則</block>
-  <block id="55f00e3a5c97bfc6881b5ab7d0599c78" category="paragraph">您可以建立裝置解析規則、以識別Cloud Insights 目前無法自動識別的主機、儲存設備和磁帶。您所建立的規則可識別環境中目前的裝置、並可識別新增至環境中的類似裝置。</block>
   <block id="9148697ee5b5960ccb3b3f75bc164fff" category="paragraph">當您建立規則時、首先要識別規則執行的資訊來源、擷取資訊的方法、以及是否將DNS查詢套用至規則的結果。</block>
   <block id="f7c91d9723fa01311e72a7dfb9d9f509" category="cell">用於識別裝置的來源</block>
   <block id="211f4e76adbba26745898142d6cb444b" category="cell">*主機的SRM別名*包含內嵌主機或磁帶名稱的儲存別名*包含內嵌主機或磁帶名稱的交換器別名*包含內嵌主機名稱的區域名稱</block>
@@ -6892,16 +6738,10 @@
   <block id="855f2226dfcee82d4271ec6fbb53c8df" category="list-text">在*類型*清單中、選取您要識別的裝置。</block>
   <block id="80a615ce8fab0fb80b3b82f83fe8f061" category="paragraph">您可以選取_Host_或_磁帶_。</block>
   <block id="cd9215b1fe4cac2ca101604d111e20e2" category="list-text">在*來源*清單中、選取您要用來識別主機的來源。</block>
-  <block id="83e794253b9e049a8bcf101f95e15b56" category="paragraph">根據您選擇的來源Cloud Insights 、畫面上會顯示下列回應：</block>
-  <block id="367e46d1b7635ba8ebfba10293781c7c" category="list-text">*區域*列出Cloud Insights 了需要由下列項目識別的區域和WWN。</block>
-  <block id="54163e5af92a1a604470188e9af4c02a" category="list-text">* SRM *列出Cloud Insights 需要由VMware識別的不明別名</block>
-  <block id="6f1c44139289209cda4a00b2dd892114" category="list-text">*儲存別名*列出Cloud Insights 需要由功能介紹的儲存別名和WWN</block>
-  <block id="f7eec9ffbfca58801bdb533f553f416b" category="list-text">*交換器別名*會列出Cloud Insights 需要由下列項目識別的交換器別名</block>
   <block id="25f925a75096967a52ae9902aa1908ac" category="list-text">在「*方法*」清單中、選取您要用來識別主機的方法。</block>
   <block id="56d43ad1a280ada5e16fd2960ae44b32" category="cell">SRM</block>
   <block id="4074ce662d287f3e41dfefb7c2d4098f" category="cell">也就是分隔符號、規則運算式</block>
   <block id="09a3caa30ebff1e54599f2aad82a55a1" category="cell">分隔符號、規則運算式</block>
-  <block id="a0926b1623d5a866ee38b5fc4adbb937" category="list-text">使用分隔符號的規則需要分隔符號和主機名稱的最小長度。主機名稱的最小長度為Cloud Insights 用來識別主機的字元數。僅針對這麼長或更長的主機名稱執行DNS查詢。Cloud Insights</block>
   <block id="0084c33ae0ff893ab69b573ecb9ac68e" category="paragraph">對於使用分隔符號的規則、輸入字串會以分隔符號標記、並會建立多個鄰近標記組合的主機名稱候選清單。然後將清單排序、從最大到最小。例如、對於_vipsnq03_hba3_emc3_12ep0_的輸入環、清單會產生下列結果：</block>
   <block id="d4bb7421cba1adf9cad0ad58bb0aff54" category="list-text">vipsnq03_hba3_emc3_12ep0</block>
   <block id="7c60ca20090d1e0c171fd996ff88689b" category="list-text">vipsnq03_hba3_emc3</block>
@@ -6931,7 +6771,6 @@
   <block id="156188a7e93cbfebbc784963fbd79ec1" category="list-text">將規則順序變更為符合您需求的訂單。</block>
   <block id="7aef684ed3b8256ac0eb77c22e5de55b" category="paragraph">規則順序會在識別畫面中變更、但不會全域變更。</block>
   <block id="3e6a6e204935e5560fba5d2fbe05a425" category="list-text">選取符合您需求的方法。</block>
-  <block id="1c32d3f40cb344f9734f6fc50f5a37d4" category="paragraph">從最上層開始、執行主機解析程序的順序。Cloud Insights</block>
   <block id="ef134b9e133b3a5eb7b3017bb03532e8" category="paragraph">遇到適用的規則時、規則名稱會顯示在規則欄中、並標示為手動。</block>
   <block id="ea4f37cdc61f22bab06bd53f38731b48" category="paragraph">相關：<block ref="9606d230686b3a54ef0c843c6a8d06ee" category="inline-link-macro-rx"></block>
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
@@ -7120,11 +6959,9 @@
   <block id="cbe58c07baaa017f926c6594715fa74d" category="cell">儲存虛擬機器已修改</block>
   <block id="7177a13bcf2c1f14bff3599bdff189af" category="cell">修改儲存虛擬機器時會出現此訊息。</block>
   <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">擷取單位關機</block>
-  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">隨著升級、購併單位會定期重新啟動、以引進新功能。Cloud Insights這種情況在典型環境中每月發生一次或更少。一項警告警示：擷取裝置已關機、應在解決方案後盡快執行、指出新重新啟動的擷取裝置已完成Cloud Insights 使用還原的登錄。此關機對登錄週期通常需要5至15分鐘。</block>
   <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警示頻繁發生或持續超過15分鐘、請檢查主控擷取設備的系統運作情況、網路、以及連接AU與網際網路的任何Proxy。</block>
   <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">收集器失敗</block>
   <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">資料收集器輪詢遇到非預期的故障情況。</block>
-  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">如需Cloud Insights 深入瞭解相關情況、請參閱《資料收集器》頁面。</block>
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">此警示通常是因為資料收集器或目標系統的組態錯誤而產生。重新檢視組態以防止未來出現警示。這也可能是因為資料收集器擷取的資料不完整、因此收集器會收集所有可能的資料。當資料收集期間發生變更時（例如、資料收集開始時的虛擬機器會在資料收集期間及擷取資料之前刪除）、就會發生這種情況。</block>
   <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">Insights可讓您深入瞭解資源使用量和趨勢。</block>
@@ -7270,9 +7107,7 @@
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">請檢查是否使用CsUser、是否會如上所述授予使用者權限。</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">雙向</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
-  <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">您可以使用Cloud Insights 物件開發API匯入註釋和應用程式。</block>
   <block id="0dc88092036f29d0c951123c9b9f932e" category="section-title">資料遺失時發出警示</block>
-  <block id="525a57ad5c1f150ce2c13c4797278523" category="paragraph">在像是靜止的即時系統中Cloud Insights 、為了觸發監視器的分析、以決定是否要產生警示、我們仰賴以下兩種方法之一：</block>
   <block id="9f76cab36d38af05dce74499497c7b3b" category="list-text">下一次抵達日期</block>
   <block id="7b007d3b8d88462a6ae312862d2e1a99" category="list-text">當沒有資料點且等待時間已足夠長時、定時器就會啟動</block>
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">如同資料到達速度緩慢（或沒有資料到達）的情況、由於資料到達率不足以「即時」觸發警示、因此需要接管定時器機制。 因此問題通常會變成「我需要等多久才能關閉分析視窗、看看我的現況？」 如果等待時間過長、就表示您產生警示的速度不夠快、無法使用。</block>
@@ -7411,7 +7246,6 @@
   <block id="15a43b8a93156e727b3b81dc25fd6d32" category="section-title">安全監控器</block>
   <block id="38eb03d447ddc98ff3687aa8f4aeaa70" category="cell">FIPS模式已停用</block>
   <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">啟用FIPS 140-2規範時、會停用TLSv1和SSLv3、而且只有TLSv1.1和TLSv1.2會維持啟用狀態。啟用FIPS 140-2規範時、無法啟用TLSv1和SSLv3。ONTAP</block>
-  <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">所有Cloud Insights 的版本均提供監控器和警示功能、但Basic版本必須符合下列條件：*您一次最多只能啟用五個自訂監控器。超過五個的任何監視器都會建立或移至_暫停_狀態。*不支援VMDK、虛擬機器、主機和資料存放區度量監控。如果您已針對這些指標建立監控、則這些指標將會暫停、降級至Basic Edition時將無法恢復。</block>
   <block id="1b70ac0a972fddf1e1a33e6ed9df49c7" category="section-title">2022年9月</block>
   <block id="6e117bf7254c45b1f7fd76d22b07b5a8" category="section-title">基本版提供監視器</block>
   <block id="e2104fe7ced7db178ee68ac6def4a787" category="inline-link-macro">預設監視器</block>
@@ -7464,7 +7298,6 @@
   <block id="5c42bfffed923b7136ae5aee981826dd" category="list-text">選取*儀表板&gt;儀表板*</block>
   <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有「系統管理員」或「帳戶擁有者」角色的使用者可以從儀表板庫匯入。</block>
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全性最佳實務做法</block>
-  <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">利用支援功能、您可在環境中突顯資料點和趨勢、並可輸入任何有效的電子郵件地址作為警示收件者。Cloud Insights Cloud Insights如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安裝代理程式時、會在機器上建立本機使用者_cssy__和本機群組_cssy__。如果權限設定不允許建立本機使用者、而需要Active Directory、則必須在Active Directory伺服器中建立使用者名稱為_cssy__的使用者。</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">請參閱本指南</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">效能的存取驗證：在擷取裝置的網頁瀏覽器中、前往_\https：//fors5989/ecomconfig_&lt;SMI-S Hostname or IP&gt; 、其中「SMI-S主機名稱或IP」是SMI-S伺服器的IP位址或主機名稱。此URL適用於EMC SMI-S（又稱為「ECOM」）服務的管理入口網站、您將會收到登入快顯視窗。</block>
@@ -7502,12 +7335,9 @@
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">託管單位</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">Proxy</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">升級</block>
-  <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境</block>
-  <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊</block>
   <block id="ba5a4399ff89e39d6d73b55b320d32dc" category="section-title">使用自訂或私有泊塢視窗儲存庫</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。</block>
   <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">升級</block>
-  <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整個基礎架構的拓撲檢視是否可用？此功能是否顯示「端點對端點可見度」Cloud Insights ？</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安裝時需要「解壓縮」。此外、安裝、執行指令碼及解除安裝時、還需要使用「su–」命令。</block>
   <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">返回頁首</block>
   <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
@@ -7631,7 +7461,6 @@
   <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">必須安裝HDS Ops Center「分析器」模組、儲存陣列必須提供Ops Center「分析器」模組</block>
   <block id="5c658c709f3241ce7e2e2db76e849621" category="paragraph">請參閱 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 頁面以瞭解其他先決條件和要求。</block>
   <block id="b4c2efa32144f8c7f6fa5513ac1c7e55" category="section-title">自訂報告的輸出格式和交付</block>
-  <block id="7f3fae8bcffd39410a8caca4210f5f21" category="section-title">Cloud Insights對我的環境有何影響？</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
   <block id="c4902856573b47497259fa66ba244535" category="section-title">屬性變數</block>
   <block id="2c8315992b66ae0480f26fe69cea1579" category="section-title">這就是一切</block>
@@ -8321,7 +8150,6 @@
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Un禁 用環境</block>
   <block id="7bb1c93f44835a04f1a5d46dd4f4b400" category="cell"><block ref="7bb1c93f44835a04f1a5d46dd4f4b400" category="inline-link-macro-rx"></block></block>
   <block id="6b290024189e0c4e1b4dfcdf7383e010" category="section-title">實用定義</block>
-  <block id="684e976accba59790f5593505086fd7a" category="paragraph">下列定義在談論Cloud Insights 有關資料蒐集器或功能時可能很有用：</block>
   <block id="5e4f18167064639e23a7d876eabb697a" category="inline-link-macro">預覽功能</block>
   <block id="d9501a665dbf4f495431fcca37973166" category="list-text">*預覽*：僅限有限容量或受限對象使用。 <block ref="1e732bee0ba13f7cae2a07a19dd93ab4" category="inline-link-macro-rx"></block> 而且資料收集器預期會在預覽期間之後成為GA。預覽期間會因對象或功能而異。</block>
   <block id="dd94823438f14366dcf7fca1f9e36942" category="list-text">* GA*：一種功能或資料收集器、根據版本或功能集、一般可供所有客戶使用。</block>
@@ -8364,10 +8192,8 @@
   <block id="5913820121a0441bda6301d54adb6f18" category="paragraph">以下兩張圖表顯示嚴苛的工作負載、以及受嚴苛工作負載影響的工作負載。</block>
   <block id="89ddd7746bd74dd5bc0f8ecebb9b8a48" category="paragraph">您可以採取許多步驟來降低或消除環境中的飽和機率。以下是您可以嘗試的幾項功能。</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已過時</block>
-  <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">支援下列三種資料收集器Cloud Insights ：</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基礎架構（儲存設備、網路交換器、運算基礎架構）</block>
   <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">服務（例如Kafka）</block>
-  <block id="3e3d1f4256fe73b88a0ea758b3951eb9" category="paragraph">如果您選擇_Infrastructure_資料收集器、則需要擷取單元才能將資料注入Cloud Insights 到SURO。您必須在要從中收集資料的伺服器或VM上下載並安裝擷取設備軟體。單一擷取單元可用於多個資料收集器。</block>
   <block id="344ab1c74a04a4daec201f19f0c5e693" category="list-text">視需要輸入認證（使用者名稱和密碼）以連線至裝置。</block>
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">收集器生命週期：收集器在生命週期中屬於下列其中一種狀態：</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">採購單位：專為託管資料收集器而設的電腦、通常是虛擬機器。此電腦通常與受監控項目位於相同的資料中心/ VPC。</block>
@@ -8521,12 +8347,10 @@
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">請注意、這些監視器中有部分預設為啟用_；如果您不想對它們發出警示、則必須暫停_。另外請注意、這些監視器並未設定為傳送通知；如果您想要透過電子郵件或網路勾點傳送警示、則必須在這些監視器上設定通知收件者。</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">所有儀表板表格小工具的.CSV匯出</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">欄選取、重新命名欄及單位轉換等資料自訂功能現在也包含在新的匯出功能中。</block>
-  <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登入Cloud Insights 到</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">儀表板表格小工具的「三點」功能表、以及大部分的登陸頁表、也提供匯出至.CSV。</block>
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">匯出的資料會反映目前顯示的篩選、欄和欄名稱。</block>
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*本頁*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">本頁是一個小作品。如需最新的Un禁 用環境文件、請參閱 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
-  <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">在「功能表」中、按一下「*管理&gt;應用程式*」Cloud Insights 。</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">此時會顯示「新增應用程式」對話方塊。</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">如果您要解除安裝* Windows *擷取單元：</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">如果您要解除安裝* Linux *擷取單元：</block>
@@ -8778,7 +8602,6 @@
   <block id="171f897b82746fe136ca00d1742ea44a" category="paragraph">可讓您回答有關磁碟區、應用程式磁碟區、內部磁碟區、交換器、應用程式、 VM、VMDK、ESX與VM、主機和應用程式節點的比較。其中許多報告 _ 每小時 _ 資料、 _ 每日 _ 資料、或兩者皆是。使用此資料模型、您可以建立報告來回答幾種效能管理問題：</block>
   <block id="d972e288b86634fdb9a758828b4d511a" category="cell">回收 ONTAP Cold Storage</block>
   <block id="e1f1a8af4cedab3466112b828b25b73f" category="cell">以冷容量和其他相關指標來提供 ONTAP Volume 工作負載的視覺化效果。</block>
-  <block id="e47829d1e83392ea564ddf977764e821" category="list-text">在 Cloud Insights 報告入口網站中、前往 * 功能表 &gt; 內容 &gt; 我的內容 / 團隊內容 * 。將滑鼠移至您要自訂的報告上方、然後開啟「三點」功能表。</block>
   <block id="56b45e214ba24df2bd22f30c8daa395b" category="inline-image-macro">報告輸出與交付</block>
   <block id="9ec7fe14283d298932f96b5a7faecee5" category="paragraph"><block ref="9ec7fe14283d298932f96b5a7faecee5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="533e5ac7d2c7b3534f833a38adea2af7" category="list-text">*排程*您想要執行報告的時間。</block>
@@ -8884,7 +8707,6 @@
   <block id="81a9f8ce382fd16358d56245a66220a4" category="inline-image-macro">顯示報告的團隊內容已反白顯示</block>
   <block id="48bcae107d50992efecf85a6c4736dba" category="paragraph"><block ref="042d6428eca469dceeec3a1b4202ab56" category="inline-image-macro-rx" type="image"></block>
 <block ref="9aede4345f2bc9132f2c99c71d833e20" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5ad69c2277563fc580296910106cfd2f" category="paragraph">您將會進入報告介面。本報告引擎採用IBM Cognos分析技術。Cloud Insights</block>
   <block id="7dc3d22c559fc9f6b251de846b6d601b" category="paragraph">設定格式化的條件會針對表格中的每一欄分別設定。例如、您可以為容量欄選擇一組臨界值、而為處理量欄選擇另一組臨界值。</block>
   <block id="e2eb5a26f8f8c6cd350884687bbcf0fd" category="paragraph">為保護敏感資料、 NetApp 建議您在安裝或升級後變更預設金鑰和 _Acquisition 使用者密碼。</block>
   <block id="d39add7e6bc84e58e3541f2c6e6019d4" category="list-text">您必須在 AU 系統上擁有管理權限、才能安裝擷取單元軟體（包括安全管理工具）。</block>
@@ -8965,7 +8787,6 @@
   <block id="2ddc4416c197500bc7619829b98c8b77" category="doc">設定代理程式以收集資料（ Windows/Linux ）</block>
   <block id="72213a3f462eab56462e1fd1892f6fc0" category="list-text">為您的主機選擇適當的平台（ Windows 、 Linux ）</block>
   <block id="98cd1da81daac82fdd86ce7412e50a24" category="list-text">從命令中刪除結尾的 "--install" （ Linux ）或 "-install" （ Windows ）。</block>
-  <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">對於 _ 作業系統 _ 資料收集器、請選擇一個平台（ Linux 、 Windows ）來安裝 Cloud Insights 代理程式。您必須至少有一個代理程式、才能從服務收集資料。代理程式也會從主機本身收集資料、以供Cloud Insights 在支援中使用。此資料在小工具等中歸類為「節點」資料</block>
   <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">在 Windows/Linux 上設定代理程式</block>
   <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023 年 5 月</block>
   <block id="6b091071a7d33b506abd7a64e9f0795d" category="inline-image-macro">資料保護儀表板 Widget 顯示本機和遠端概觀</block>
@@ -8978,11 +8799,9 @@
   <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">代理程式</block>
   <block id="4e49d105e5ecfd95da78eb980f698488" category="cell">操作員可以安裝的所有元件通用的組態選項。這些選項可視為「整體」選項。</block>
   <block id="286bec770910c4da609323e21222e283" category="cell">dockerRepo</block>
-  <block id="73a46ab7157abd31c3ea3ef600cb7798" category="cell">相較於 Cloud Insights 泊塢視窗 repo 、 dockerRepo 會置換以從客戶的「私有」泊塢視窗資源中拉出影像。預設為 Cloud Insights 泊塢視窗 repo</block>
   <block id="994be3a18bf7e0a16ab2be2d5c1643ae" category="cell">dockerImagePullSecret</block>
   <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">選用：客戶的秘密私人回購</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">叢集名稱</block>
-  <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Cloud Insights 租戶中應該是唯一的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">Telegraf</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">可自訂電信業者安裝的組態選項</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">CollectionInterval</block>
@@ -9045,14 +8864,12 @@
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用的設定</block>
   <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。</block>
-  <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。</block>
   <block id="e353fb1c241718a57c3f1ebea2f2eda2" category="paragraph">核心營運者功能與 Kubernetes 監控</block>
   <block id="aadb900c6eaeed8ade58660fe972acec" category="list-text">NetApp 監控</block>
   <block id="7b1808ad616c2f87f5c28aa1d89f75f7" category="list-text">無 distrouse-root 使用者</block>
   <block id="f8dcd7540ab5947fed469158330013cc" category="paragraph">事件記錄</block>
   <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">網路效能與地圖</block>
   <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">CI-net-觀察者</block>
-  <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：</block>
   <block id="14acb12fc5baee38469b462494a56a68" category="list-text">一旦輸入這些指令碼、您就可以將 Download Command 片段複製到剪貼簿。</block>
@@ -9235,19 +9052,14 @@
   <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu / Debian ： /var/log/telegraf/telegraf.log</block>
   <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows ： C:\Program Files\telegraf\telegraf.log</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">度量收集時間間隔（以秒為單位）（最大 = 60 秒）</block>
-  <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">Cloud Insights 可設定為手動更新 AU 軟體、讓您更能掌控環境中安裝的軟體。</block>
   <block id="a7c522a068ca75556dee476101135cc4" category="doc">手動安裝擷取單元軟體</block>
-  <block id="8b01a0d5e9fc950e10c5789185b76fab" category="paragraph">根據預設、 Cloud Insights 會在部署更新時自動更新擷取單元（ AU ）軟體。不過、在安全的控制環境中、可能無法或不需要自動更新。  在這種情況下、 Cloud Insights 可設定為手動更新 AU 軟體、讓您更能掌控環境中安裝的軟體。</block>
-  <block id="7fa388dd2c2240646539be23019e8d18" category="paragraph">若要手動下載並安裝 AU 軟體、請執行下列步驟。Cloud Insights 提供實用的 Swagger 文件頁面、您可以在其中許多步驟中使用、也可以使用自己的 API 指令碼 / 命令。移至「管理」 &gt; 「 API 存取」、然後按一下「 API 文件」連結。</block>
   <block id="39d5d5a9880f1ad19fe6d2c1a8b95da4" category="paragraph">此程序與 Linux 和 Windows 類似。</block>
   <block id="f7c4249be54645abe9d6bbb85ffd95e3" category="section-title">在 Linux 上執行新的 AU 安裝：</block>
-  <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">在 Cloud Insights 中、建立 API Token 。</block>
   <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">瀏覽至 * 管理 &gt; API 存取 * 、然後選取 *+API 存取權杖 * 。</block>
   <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">設定容易識別的 * 名稱 * 和 * 描述 *</block>
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">權限： * 讀取 / 寫入 *</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">選擇所需的 * 到期 * 和 * 自動續訂 * 值</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">複製產生的 API 存取權杖。您必須先執行此步驟、才能關閉視窗。</block>
-  <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">在 Swagger （管理 &gt; API 存取 &gt; API 文件）中、使用 Token 授權 Cloud Insights API</block>
   <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">按一下 Swagger 畫面右上角的 _Authority_</block>
   <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">將上述複製的權杖貼到「客戶 APIKey 」欄位</block>
   <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">按一下 * 授權 *</block>
@@ -9262,7 +9074,6 @@
   <block id="07b7a71211b83fdb6affc9516bd8c884" category="list-text">或者、您也可以在 AU 系統上執行產生的 Curl Command ：</block>
   <block id="1786f7c932f739c573815e056569419d" category="list-text">此時、 AU 系統上應該會出現安裝程式檔案。</block>
   <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">接下來的步驟需要使用暫存權杖。請勿使用您在上述建立的 API 存取權杖。</block>
-  <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">在 Cloud Insights API Swagger 中、使用調出 / 調出 / 一次性時間 Token _ API 建立一次性 Token 。</block>
   <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">複製產生的一次性權杖。</block>
   <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">在要安裝 AU 的機器上、瀏覽至包含下載安裝程式檔案的資料夾。下列命令要求使用者擁有 root 權限。</block>
   <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">解壓縮安裝程式檔案</block>
@@ -11486,8 +11297,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">按一下 * 「可服務性」 &gt; 「收集器」 &gt; 「擷取單位」 * 來檢查擷取單位的狀態。</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">單擊 *Observe （可觀察） &gt; Collectors （收集器） &gt; Acquisition Units （採集單元） &gt;+Acquisition Unit* （採集單元）。</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">按一下 * &gt; 可服務性 &gt; 收集器 &gt; 擷取單位 * 來檢查擷取單位的狀態。</block>
-  <block id="b61c07e7a0fb367b275d84c4f406ea62" category="list-text">在 Cloud Insights 中、移至 * 可服務性 &gt; 收集器、然後選取 * 擷取單位 * 標籤。</block>
-  <block id="3fca9907aed6b150137f898d0280fff6" category="list-text">登入您的 Cloud Insights 環境、前往 * 可服務性 &gt; 收集器 * 。</block>
   <block id="be73cc0144104fdc76d1908fc25c13b8" category="list-text">將所有資料收集器移至暫存擷取單元之後、請移至 * 可服務性 &gt; 收集器 * 、然後選取 * 擷取單元 * 標籤。</block>
   <block id="fa754fd7176d2dbf75086e702bb8e0ba" category="cell">可能的原因可能是：
 1. 尚未設定使用者目錄收集器。若要新增一個、請前往 * 工作負載安全性 &gt; 收集器 &gt; 使用者目錄收集器 * 、然後按一下 *+ 使用者目錄收集器 * 。選擇_Active Directory或_LDAP Directory Server_。
@@ -11555,7 +11364,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="5edf51309b0e54b161dde9f3f2dbe815" category="paragraph">瀏覽至 datasources.war 的 /var/lib/NetApp/cloudimses/acq/download 目錄、並驗證該處的 zip 檔案：</block>
   <block id="ed7dc5789cb36687315d95140bf88b49" category="list-text">請執行下列步驟：</block>
   <block id="60b0ec4bd2a387eb3da948b9a799f786" category="paragraph">附註：如果您打算使用不同的自訂使用者進行安裝、請確定已將擁有者和群組的群組權限設定為讀取和寫入（ chmod 660 …）</block>
-  <block id="9acc35fb262bf83f278335070c7ea2f2" category="list-text">重新啟動 AU 。在 Cloud Insights 中、瀏覽至「可服務性」 &gt; 「收集器」、然後選取「擷取單元」索引標籤。從 AU 右側的「三點」功能表中選擇「重新啟動」。</block>
   <block id="57858de47985c55285f0cbb5890decfc" category="section-title">下載修補程式</block>
   <block id="fc5e990e77fa1bad66c2b07f217c85ab" category="paragraph">使用 /collector / 修補程式 / 檔案 / ｛ version ｝ API 下載修補程式：</block>
   <block id="be2277f73c347adaa72509bcb1829517" category="inline-image-macro">擷取修補程式的 API</block>
@@ -11587,7 +11395,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">如果代理程式中斷連線、則無法將收集器變更為 _ 已暫停 _ 狀態。收集器將進入 _Stopped_ 狀態、並停用暫停按鈕。</block>
   <block id="cd5c932f5b2fa2206673bc29c081fa55" category="section-title">外部金鑰擷取</block>
   <block id="7e344aed2e1990843db0c81944cc6f38" category="paragraph">如果您提供 UNIX Shell 指令碼、擷取單元可以執行該指令碼、從金鑰管理系統擷取 * 私密金鑰 * 和 * 公開金鑰 * 。</block>
-  <block id="76a8209497c46ce429a432b8cd7aba35" category="paragraph">為了擷取金鑰、 Cloud Insights 會執行指令碼、傳入兩個參數： _key id_ 和 _key type_ 。_Key ID_ 可用於識別金鑰管理系統中的金鑰。_Key 類型 _ 為「公開」或「私人」。當金鑰類型為「公開」時、指令碼必須傳回公開金鑰。當金鑰類型為「私密」時、必須傳回私密金鑰。</block>
   <block id="09ca0fd15a1c6d7b2fe73ff5dea10c81" category="paragraph">若要將金鑰傳回擷取單元、指令碼必須將金鑰列印至標準輸出。指令碼必須列印 _ 僅 _ 標準輸出金鑰；不得將其他文字列印至標準輸出。一旦要求的金鑰列印至標準輸出、指令碼必須以 0 結束代碼結束、任何其他傳回代碼都會被視為錯誤。</block>
   <block id="33290e9f863a844a70f389349e2d213c" category="paragraph">指令碼必須使用 securityadmin 工具在擷取單元中登錄、該工具會執行指令碼和擷取單元。指令碼必須具有 root 和「 cisys 」使用者的 _read_ 和 _executive_ 權限。如果在登錄後修改 Shell 指令碼、則必須重新在擷取單元中登錄修改後的 Shell 指令碼。</block>
   <block id="c88fd792d889fe7e2f25a6da9c770e73" category="cell">輸入參數：金鑰 ID</block>
@@ -11700,8 +11507,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">若要檢視 Kubernetes 變更分析、請瀏覽至 * Kubernetes &gt; 變更分析 * 。</block>
   <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubernetes Change Analytics 主畫面顯示警告和關鍵警示、成功和失敗的部署、以及觸發警示的前 3 大工作負載</block>
   <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="a9ac2dc1ccf01db5959d4e16563a6bba" category="paragraph">頁面會根據目前選取的 Cloud Insights 時間範圍自動重新整理。  時間範圍越短、畫面更新就越頻繁。</block>
-  <block id="11dc88e059709832ab0f8280cc54eecf" category="paragraph">如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、輸入或選取 Kubernetes 叢集、命名空間或工作負載的值、或是選取「 ｛ + 」按鈕來新增自己的篩選器。</block>
   <block id="3dec7ee4035d7384095c6f5a0454b2a8" category="paragraph">當您篩選到特定叢集、命名空間和工作負載（以及您設定的任何其他篩選器）時、會在該叢集的該命名空間中顯示該工作負載的部署和警示時間表。在圖表中按一下並拖曳、即可進一步放大、以專注於更特定的時間範圍。</block>
   <block id="aa8e7ddd32230c18cfcb5371423cb0d3" category="inline-image-macro">工作負載時間表範例</block>
   <block id="b7cab2994bcbd4be950a067ce498791c" category="paragraph"><block ref="b7cab2994bcbd4be950a067ce498791c" category="inline-image-macro-rx" type="image"></block></block>
@@ -11723,8 +11528,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Webhooks 清單頁面</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在 Webhooks 清單頁面上、顯示的是名稱、建立者、建立日期、狀態、安全、 和上次報告的欄位。</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB傳輸協定3.1版及更早版本。</block>
-  <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">您可以閱讀 Cloud Insights 安全性的相關資訊 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
-  <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">瞭解 Cloud Insights 安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp 安全性摘要報告</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以檢視 NetApp 的可用安全性摘要報告 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以視需要定義應用程式、然後套用至環境中的資產。</block>
@@ -12022,14 +11825,7 @@ Red Hat OpenShift
 Rancher Kubernetes引擎（RKE）
 VMware Tanzu</block>
   <block id="793d284bad68b41cca09ce8e8b200352" category="cell">Linux 作業系統</block>
-  <block id="798e5a5c88d188ba67f7f5a17b2ce32b" category="cell">Cloud Insights 不支援以 Arm64 架構執行的節點。
-
-網路監控：必須執行 Linux 核心版本 4.18.0 或更新版本。不支援光子作業系統。</block>
   <block id="3ad6cb6100190c8f81e99fd52debf7ef" category="cell">標籤</block>
-  <block id="5fb045ef41992286f9d611596ce27dfe" category="cell">支援監控執行Linux的Kubernetes節點、方法是指定Kubernetes節點選取器、在這些平台上尋找下列Kubernetes標籤：Cloud Insights
-
-Kubernetes v1.20 及更高版本： Kubernetes.IO/OS = Linux
-Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux</block>
   <block id="b0c7368729c7094129da2a9003691e56" category="cell">curl 和 kubectl 命令必須可用；若要獲得最佳結果、請將這些命令新增至路徑。</block>
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">連線能力</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">API Token</block>
@@ -12125,31 +11921,9 @@ Aggregate ： REST 不再報告 aggr0 。
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">回應的格式如下：</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有 BlueXP 帳戶、但無法登入 BlueXP 。</block>
-  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">從開啟問題單<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。選擇類別「 blueXP.netapp.com &gt; 帳戶 / 登入問題」或「 bluexp.netapp.com &gt; 聯盟問題」。  這些是專為 BlueXP 問題所設計。
-如Cloud Insights 需所有其他的支援問題、請聯絡 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
-  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。
-
-確認 BlueXP 設定檔電子郵件地址與 Cloud Insights 歡迎電子郵件中顯示的電子郵件地址相符。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
-  <block id="1b58998adf7a89d496bd43804045852f" category="cell">我已從 BlueXP 登出、並自動從 Cloud Insights 登出。</block>
-  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有 Cloud Insights 工作階段。如果您有多Cloud Insights 個支援帳戶的存取權限、請從任何一個帳戶登出、登出所有使用中的工作階段。重新登入以存取您的帳戶。</block>
   <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp Cloud 帳戶每隔幾天就需要重新驗證（目前的 BlueXP 設定是 7 天）。重新登入以存取您的帳戶。</block>
-  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">請聯絡您的帳戶管理員、確認是否有權限存取Cloud Insights 功能。
-確認 BlueXP 設定檔電子郵件地址與 Cloud Insights 歡迎電子郵件中顯示的電子郵件地址相符</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">範例： _ 使用者 * Tony Lavoi* 從 * 10.1.120.15* 登入、使用者代理程式 * Mozilla / 5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML 、例如 Gecko ） Chrome / 85.0.4183.121 Safari/537.36* 、登入方法 * BlueXP PortPortal 登入 *</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理和其他工作</block>
-  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insights 每 6 小時自動登出一次</block>
-  <block id="125d2f260a38158435c7e7d5900894da" category="cell">這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定其瀏覽器以啟用所有第三方 Cookie 、或使用較窄的例外清單來僅啟用 Cloud Insights 的例外清單。
-
-範例：
-開啟瀏覽器的設定
-
-選取「允許所有Cookie」選項。
-*或*
-選取「封鎖第三方 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 __[*.]netapp.com 。
-
-Microsoft Edge 提供與 Chrome 相同的例外格式。
-
-在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。</block>
   <block id="8bfda936be946f758536df68a230dfab" category="paragraph">Subscription * Summary* （訂閱 * 摘要 * ）選項卡顯示如下內容：</block>
   <block id="9b7f10f52064c80bcec17905afd00559" category="list-text">目前的 MU 權益</block>
   <block id="f02a81449f4e8c1806fe657044887b30" category="paragraph">「 * 使用量 * 」標籤會顯示您目前的 MU 使用量、以及資料收集器如何分解使用量。</block>
@@ -12175,12 +11949,9 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用執行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、請提供 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>請仔細閱讀以下各節。</block>
   <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">另請參閱 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</block>
-  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統監視器、您必須先確定您的 Proxy 已設定為允許與 Cloud Insights 環境進行良好的通訊。例如、從您想要安裝操作員的伺服器 / 虛擬機器、您必須能夠存取 Cloud Insights 、並能從 Cloud Insights 下載二進位檔。</block>
   <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</block>
   <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：</block>
-  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。</block>
   <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。</block>
-  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。</block>
   <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">Kube-RBAC 代理程式</block>
   <block id="bb84790255aac66744320e4417143dd8" category="list-text">Fluent 位元</block>
   <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">Kubernetes-event-Exporter</block>
@@ -12300,16 +12071,10 @@ Microsoft Edge 提供與 Chrome 相同的例外格式。
   <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">一次性使用 API 權杖範例的回應</block>
   <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
 <block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88624c8c7afb5c98f1c473e14dcbf963" category="cell">Kubectl CLI 已設定為與目標 K8s 叢集通訊、並可與 Cloud Insights 環境進行網際網路連線。
-
-如果您在安裝期間位於 Proxy 後方、請遵循中的指示 <block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block> 操作員安裝部分。
-
-若要準確地進行稽核和資料報告、請使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）來同步代理機器上的時間。</block>
   <block id="7c32e6404e015057fc5db282b24077f0" category="cell">如果您是在 OpenShift 4.6 或更新版本上執行、則必須遵循 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> 除了確保符合這些先決條件之外、</block>
   <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">僅在AWS的AU上取得時使用。如需詳細資訊、請參閱下方 <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>。</block>
   <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">可選擇中的Webhook通知 <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>、前往*警示&gt;管理監視器*、然後選取所需的監視器、或新增監視器。在「設定團隊通知」區段中、選擇「_Webhack__」作為交付方法。選取警示層級（嚴重、警告、已解決）、然後選擇所需的網路連結。</block>
   <block id="4123cf4f6521073cef46192908207644" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>。</block>
-  <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">本文件是指 Cloud Insights 報告功能、可在 Cloud Insights Premium Edition 中取得。</block>
   <block id="f09f88f2a0cd4d59d1c5dc91fdce034b" category="cell">* 開啟命令提示字元、並將目錄變更為設定的路徑
 * 執行命令「 set=STONAVM_home= 」。
 * 執行命令 "auunitref"
@@ -12645,7 +12410,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">將儀表板分組可讓您更輕鬆地快速取得所需的可見度、現在有了新的導覽功能表、您可以在不同的儀表板之間切換、而不會失去位置、讓您輕鬆探索及管理基礎架構。將儀表板群組與您的作業執行手冊對齊、以進一步提升您的體驗。</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">下拉式清單可選取與目前儀表板位於相同群組中的另一個儀表板</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insights 中使用的物件圖示。</block>
   <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基礎架構圖示：</block>
   <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">基礎架構圖示參考</block>
@@ -12657,7 +12421,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes 網路效能監控與地圖、寬度 =640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">您必須建立並儲存查詢、以識別您在環境中識別的NetApp根集合體。</block>
-  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">在 Cloud Insights 工具列中、按一下 * 管理 &gt; 註釋規則 * 。</block>
   <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">按一下「 * 新增 * 」。此時將顯示 Add Rule （添加規則）對話框。</block>
   <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">在 [ 名稱 ] 方塊中，輸入描述規則的唯一名稱： * "RootAggrExclude" *</block>
   <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">按一下查詢、然後選取 Insight 應用來將附註規則套用至： * 「 Aggregate0 」 * 的查詢</block>
@@ -12836,7 +12599,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根據時間解決警示</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aacf7c114a34df5c220f4e375bcd0f6c" category="section-title">「固定」目前版本的值機員</block>
-  <block id="a9c7e2aeb7f9f9d656ca872f21bc9a3a" category="paragraph">根據預設、 Cloud Insights 工作負載安全性會自動更新代理程式。有些客戶可能想要暫停自動更新、這會讓值機員保持目前版本、直到發生下列其中一種情況：</block>
   <block id="dea8f428de371d2483508970ea18bd9c" category="list-text">客戶會繼續自動更新值機員。</block>
   <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">此錯誤發生於代理程式的開機期間。錯誤並未記錄在記錄檔中、因為它發生在記錄程式初始化之前。此錯誤會重新導向至標準輸出、並可在服務記錄中使用<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>命令查看。此命令可用於進一步疑難排解問題。 EST</block>
   <block id="6170d8ef618bd7f0badc437283eafda2" category="section-title">本機根 SVM 使用者活動變更</block>
@@ -13465,4 +13227,215 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="0d97b222b080d69a549c4eb4a4bfe399" category="list-text">* 執行活動的使用者 * ：最好在報價中指定確切的使用者。例如、 _ 「管理員」 _ 。</block>
   <block id="95389b3cb82b7172ea6147fa876a9ffa" category="paragraph">您可以依 _ 時間、使用者、來源 IP 、活動 _ 和 _ 實體類型 _ 來排序活動歷程記錄資料。根據預設、表格會依遞減的_Timed_順序排序、表示最新的資料會先顯示。「_Device」和「_Protocol」欄位的排序功能已停用。</block>
   <block id="f61af81d2b9edda67ad225742bd8e959" category="paragraph">透過 API 擷取取鑑識資料的範例指令碼位於 NetApp 代理程式上的 /opt/oracle/cloudsecure/agent/Export 指令碼 // 。如需指令碼的詳細資訊、請參閱此位置的讀我檔案。</block>
+  <block id="c20c853d46783b4e2e2c99d4f7100988" category="paragraph">本常見問題集解答有關 Data Infrastructure Insights 組態和支援裝置的常見問題。</block>
+  <block id="afeb548cda0a56b9f61559376e4c221d" category="section-title">Data Infrastructure Insights 是否會對我的環境進行變更？</block>
+  <block id="2cbbd4d79a9a939fe04fc8047ec749f7" category="paragraph">否。 Data Infrastructure Insights 是一種唯讀工具、可收集您環境的相關資訊。Data Infrastructure Insights 絕不會對您的資產或組態進行任何變更。</block>
+  <block id="b0c9cb130482ca3ab3846baa39611164" category="section-title">Data Infrastructure Insights 需要對我的裝置進行哪些權限層級存取？</block>
+  <block id="ada0c07ffbb24e7b5483d2e1c71b4b6b" category="section-title">Data Infrastructure Insights 收集資訊的頻率為何？</block>
+  <block id="c785c609c57af0849d28d46261a09c43" category="paragraph">Data Infrastructure Insights 通常每 5 分鐘收集一次效能資料、並每半小時探索一次邏輯和實體結構。Data Infrastructure Insights 會根據建議的最佳實務做法和擴充性來設定預設的輪詢間隔、但確實允許使用者完全控制這些間隔。</block>
+  <block id="5bb7272f4faec1be783887c0eceaea7b" category="section-title">Data Infrastructure Insights 對我的環境有何影響？</block>
+  <block id="4d4c38e6a19737e597afc3448bf54284" category="paragraph">Data Infrastructure Insights 的無代理程式、頻外和被動式 IP 通訊、有助於將資料中心生態系統的設定、維護和影響降至最低。資料基礎架構 Insights 的效能開發團隊會採取絕佳措施、將監控效能本身活動對資料中心效能的任何影響降至最低。在正常的作業環境中、影響可視為微不足道、而且在高使用率或效能不佳的技術平台中、也可予以緩和或加強。如需詳細資訊、請參閱《資料基礎架構洞見安裝指南》。</block>
+  <block id="73544d67a5aff73d0084ec4f5d3c4125" category="section-title">如何在 Data Infrastructure Insights 中列出所有主機 / 虛擬機器？</block>
+  <block id="1263c8eb77f3328b130c07d1db3edc08" category="paragraph">資料基礎架構 Insights 對 Widget 的讚美和查詢清單的可能性、可用於提供資料中心資產的庫存樣式清單。可將虛擬機器清單放入磁碟中、並在其中建立許多架構、以便查詢、小工具、儀表板和資料倉儲報告、並可透過RESTful API存取。</block>
+  <block id="32b48cab2a41b63e6148ac2adb1807d7" category="section-title">Data Infrastructure Insights 是否為相關的非 Hypervisor 主機（例如實體伺服器）提供相同類型的支援？</block>
+  <block id="ad391273474f988435eeacd01790d960" category="paragraph">VMware等Hypervisor提供ESXi主機及其虛擬機器（VM）的詳細資訊。對於實體伺服器、 Data Infrastructure Insights 會收集到主機 HBA 的度量。Data Infrastructure Insights 採用獨特的方法、利用專利申請中的技術來探索實體伺服器。一旦發現儲存設備和（或）交換器、實體伺服器的主機名稱就會包含在Fabric別名資訊中。Data Infrastructure Insights 會選取這些主機名稱、在 DNS 中進行比對、並自動將主機帶入 Data Infrastructure Insights 。這項技術可大幅減少手動輸入更新和工具庫存維護的需求。</block>
+  <block id="93b5eaf8149f32f98a26bfb3f32ae441" category="section-title">Data Infrastructure Insights 是否在異質環境中提供相同的裝置度量深度（同位元）？</block>
+  <block id="9ee33708a7a177f5160078e8b57daf5a" category="paragraph">第三方平台和廠商技術之間的標準化、通用性和命名方式各有不同。Data Infrastructure Insights 會嘗試將容量和效能資訊正規化為一致的架構。部分容量和效能指標是從裝置的計數器原生提供、例如IOPs、延遲和原始容量。如果不提供計數器、 Data Infrastructure Insights 可以嘗試摘要這些值（例如、將 IOP 或底層磁碟區的容量總計）、而在兩者皆不可用的情況下、 Data Infrastructure Insights 會嘗試透過各種運算演算法來衍生度量值。Data Infrastructure Insights 提供一般的 SNMP 整合功能、可整合目前 Data Infrastructure Insights 未收集的其他指標。</block>
+  <block id="0d90100157679f2a726d3eddc56c1d9e" category="section-title">Data Infrastructure Insights 是否支援光纖通道交換器？</block>
+  <block id="bfb70ffac4b42a0aae27604bd9dc57a7" category="paragraph">是的、除了從您的儲存資產收集資料外、資料基礎架構洞見也會從您環境中的 Cisco 、 Brocade 和 QLogic 交換器取得庫存和效能資料。</block>
+  <block id="6a7e0326a24d65d0e286d9e3cb8a66d0" category="section-title">整個基礎架構的拓撲檢視是否可用？Data Infrastructure Insights 是否顯示「端對端可見度」？</block>
+  <block id="c6248d859952e1d2efa24f81140407a3" category="paragraph">是的、 Data Infrastructure Insights 可動態探索及對應邏輯和實體架構、提供運算、架構、虛擬化器和後端儲存設備的互動式端對端拓撲視圖。拓撲圖示可快速導覽受影響的資源、並協助識別共享儲存環境中的工作負載和違規情形。</block>
+  <block id="d6958d8d6d148fcb3b8bd4c6df947acf" category="paragraph">頁面會根據目前選取的 Data Infrastructure Insights 時間範圍自動重新整理。時間範圍越短、畫面更新就越頻繁。</block>
+  <block id="9c5978cac8d08eb3c8b5b7d03ed9b082" category="paragraph">與 Data Infrastructure Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、輸入或選取 Kubernetes 叢集、命名空間或工作負載的值、或是選取 ｛ + ）按鈕來新增自己的篩選器。</block>
+  <block id="a5dfb8ae3c2cad871042ab987d30639c" category="paragraph">資料基礎架構 Insights Kubernetes Explorer 是一個強大的工具、可顯示 Kubernetes 叢集的整體健全狀況和使用情形、並可讓您輕鬆深入調查調查領域。</block>
+  <block id="68c7a855281b3c6ca14219c6e40b7af3" category="paragraph">Data Infrastructure Insights 可讓您清楚掌握 Kubernetes 環境的後端儲存設備、讓您深入瞭解 Kubernetes Pod 和持續磁碟區（ PV ）。您可以追蹤PV計數器、例如IOPS、延遲和處理量、從單一Pod的使用量、透過PV計數器、直到PV、再到後端儲存設備。</block>
+  <block id="7222decec6c98afc3b3afda47d9bae31" category="paragraph">在 PV 層級、 Data Infrastructure Insights 會收集後端（內部磁碟區或磁碟區、視 PV 類型而定）容量資訊（總計、已使用、已使用百分比）、以及內部磁碟區快照數。從Pod到儲存層級、它會收集後端容量和內部Volume Snapshot數。</block>
+  <block id="22b8195d3fe355c08b9615502988d05a" category="summary">Data Infrastructure Insights 支援 Telegraf 做為其代理程式、可在 Kubernetes 上收集整合資料。</block>
+  <block id="641ef33eed16744abbfa95e1f8fafd4b" category="cell">Data Infrastructure Insights 不支援以 Arm64 架構執行的節點。網路監控：必須執行 Linux 核心版本 4.18.0 或更新版本。不支援光子作業系統。</block>
+  <block id="e75a57b8345f70b1a0cd663056e9ffcb" category="cell">Data Infrastructure Insights 可指定 Kubernetes 節點選取器、在這些平台上尋找下列 Kubernetes 標籤、以支援對執行 Linux 的 Kubernetes 節點進行監控： Kubernetes v1.20 及更高版本： Kubernetes.IO/OS = Linux Rancher + Cattle .IO 做為協調 / Kubernetes 平台： Cattle .IO/OS = Linux</block>
+  <block id="698629847acfa00a372b3a3663f1763f" category="cell">Kubectl CLI 已設定為與目標 K8s 叢集通訊、並可與您的 Data Infrastructure Insights 環境進行網際網路連線。如果您在安裝期間位於 Proxy 後方、請依照「操作員安裝」一節中的指示<block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block>進行。若要準確地進行稽核和資料報告、請使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）來同步代理機器上的時間。</block>
+  <block id="919e755c8b94c3ca8b589d3ed232cc9c" category="paragraph">如果您使用上述任一或兩者的 Proxy 、若要安裝 NetApp Kubernetes 作業系統、您必須先確定您的 Proxy 已設定為允許與您的 Data Infrastructure Insights 環境進行良好通訊。例如、從您想要安裝操作員的伺服器 / VM 、您必須能夠存取 Data Infrastructure Insights 、並從 Data Infrastructure Insights 下載二進位檔。</block>
+  <block id="34506193d0ecf6adac97e6003ad5dcd7" category="paragraph">對於 Kubernetes 叢集用來與資料基礎架構 Insights 環境通訊的 Proxy 、請在閱讀完所有指示之後、安裝 NetApp Kubernetes Monitoring Operator 。</block>
+  <block id="8c86d59406363508c597285e9a7389bd" category="paragraph">根據預設、 NetApp Kubernetes Monitoring Operator 會從 Data Infrastructure Insights 儲存庫擷取容器映像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。</block>
+  <block id="24c6e4919dff2cb10e3846052329bd9e" category="summary">Data Infrastructure Insights 物件圖示參考。</block>
+  <block id="2be34822e35afdce904c5fafed6cf826" category="paragraph">Data Infrastructure Insights 中使用的物件圖示。</block>
+  <block id="868ca7ff0a3ea94cc065e46e777bd1fe" category="doc">資料基礎架構洞見報告架構</block>
+  <block id="985a16c17a2f18f7ef3d4d062e921104" category="paragraph">此處提供這些架構表格和圖表、作為 Data Infrastructure Insights Reporting 的參考資料。</block>
+  <block id="064b9bf9161e77d5021baa839568d72f" category="admonition">報告功能可在 Data Infrastructure Insights <block ref="e53fcfe2d8e430963458770e616738bd" category="inline-link-macro-rx"></block>中找到。</block>
+  <block id="0b9304249ee74bce06fd227d0491e15c" category="summary">使用此程序、使用預先定義的 Data Infrastructure Insights 報告建立報告。</block>
+  <block id="ca0d41d58bb67ec29a5c7e716e8bbc28" category="paragraph">本節的範例顯示下列程序、可用於任何 Data Infrastructure Insights Reporting 資料模型：</block>
+  <block id="eee9198f85a10bd9aaa2e7f425fd50dc" category="list-text">在環境中的裝置和資源上輸入附註（例如階層、資料中心和業務單位）。在產生報告之前、請先讓附註保持穩定、因為 Data Infrastructure Insights Reporting 會收集歷史資訊。</block>
+  <block id="250000ca19e0e712a53098439ca8b111" category="paragraph">大多數報告只需要報告 Data Infrastructure Insights 中的最新資料。</block>
+  <block id="fcb54a6c1994dcdc6348ac3815ba3752" category="list-text">資料基礎架構洞見報告提供容量和效能的歷史資訊、但不提供庫存資訊。</block>
+  <block id="6faebb373a83d43ab22e47438f3d1982" category="paragraph">Data Infrastructure Insights 包含多種資料模型、您可以從中選取預先定義的報告或建立自己的自訂報告。</block>
+  <block id="7537259fa11092f7e72a1bab3b2fd0c8" category="paragraph">VM容量資料模型中的容量是從虛擬磁碟（VMDK）取得。這表示使用VM容量資料模型的虛擬機器已配置大小是其虛擬磁碟的大小。這與 Data Infrastructure Insights 中「虛擬機器」檢視中的已配置容量不同、其中顯示了 VM 本身的已配置大小。</block>
+  <block id="34aab023a0ab3d9b2295201317c9b5af" category="paragraph">可讓您追蹤一段時間內的儲存效率分數和潛力。此資料模型不僅會儲存已配置容量的測量值、也會儲存已使用或已使用的容量（實體測量值）。例如、啟用自動精簡配置時、 Data Infrastructure Insights 會指出從裝置取得的容量。啟用重複資料刪除功能時、您也可以使用此模式來判斷效率。您可以使用儲存效率資料倉儲來回答各種問題：</block>
+  <block id="e1495134ca48de52bb3c81e09980c66f" category="summary">資料基礎架構洞見報告資料保留</block>
+  <block id="7a6ac1c94cd81a9d191bcc896314ea80" category="paragraph">Data Infrastructure Insights 會保留歷史資料、以便根據資料的資料特性和精細度、在報告中使用、如下表所示。</block>
+  <block id="cd732311f740440758a6bfe8572cb42b" category="list-text">在 Data Infrastructure Insights Reporting Portal 中、前往 * 功能表 &gt; 內容 &gt; 我的內容 / 團隊內容 * 。將滑鼠移至您要自訂的報告上方、然後開啟「三點」功能表。</block>
+  <block id="3bb236712dbe63452c495629e7a8ff66" category="summary">利用 Data Infrastructure Insights 預先定義及自訂資料報告。</block>
+  <block id="47608d629a1f0832a3b47c68e88bfbab" category="doc">資料基礎架構洞見報告總覽</block>
+  <block id="730aa400f49ccecaf31a285f8c351df9" category="paragraph">Data Infrastructure Insights 報告是一種商業智慧工具、可讓您檢視預先定義的報告或建立自訂報告。</block>
+  <block id="37f1f4df47a4764ec44c63f0d1b98f59" category="paragraph">透過 Data Infrastructure Insights 報告、您可以執行下列工作：</block>
+  <block id="e9a1d960dce625e88deb5cd974c49d97" category="paragraph">Data Infrastructure Insights Reporting 可針對計費、消費分析和預測等領域產生自訂報告、並可協助回答下列問題：</block>
+  <block id="5c7dc73b3b0bdc7057c35fedf57e670d" category="section-title">存取 Data Infrastructure Insights 報告</block>
+  <block id="ba88d7c4bda7e904877086c3650d93f2" category="paragraph">您可以按一下功能表中的 * 報告 * 連結來存取 Data Infrastructure Insights Reporting 。</block>
+  <block id="cf8a157a7b0c29471b767059e29da356" category="paragraph">您將會進入報告介面。Data Infrastructure Insights 使用 IBM Cognos Analytics 來提供報告引擎。</block>
+  <block id="86fff14a2c70b3162c2f415134664d85" category="paragraph">使用「報告」時、您會聽到「資料倉儲」和「ETL」等詞彙。ETL代表「擷取、轉換及載入」。ETL 程序會擷取在 Data Infrastructure Insights 中收集的資料、並將資料轉換成用於報告的格式。「資料倉儲」是指可用於報告的收集資料。</block>
+  <block id="610651a6e0857a0a0e39fa544c2cc542" category="list-text">* 擷取 * ：從 Data Infrastructure Insights 取得資料。</block>
+  <block id="c71c83f3e6508e840b0d42f052a17db1" category="list-text">* 轉換 * ：從 Data Infrastructure Insights 擷取資料時、將商業邏輯規則或功能套用至資料。</block>
+  <block id="10d22fd372b38a1331c01cba0b0b659b" category="paragraph">資料基礎架構洞見報告包含預先定義的報告、可因應多項常見的報告需求、提供重要的洞見、讓相關人員能夠根據充分資訊做出儲存基礎架構的決策。</block>
+  <block id="7fbd554221861c2ca35f7c6c76776d57" category="paragraph">您可以從 Data Infrastructure Insights 報告入口網站產生預先定義的報告、以電子郵件寄送給其他使用者、甚至修改報告。多份報告可讓您依裝置、企業實體或階層篩選。報告工具使用IBM Cognos做為基礎、並提供許多資料呈現選項。</block>
+  <block id="1895d14378cce9b7ee1ef54781153a76" category="paragraph">當您開啟報告入口網站時、 _ 團隊內容 _ 資料夾是您在 Data Infrastructure Insights 報告中選擇所需資訊類型的起點。</block>
+  <block id="b14d282751399e519c9aa2c10c4caacc" category="paragraph">Scorecard 報告提供 Data Infrastructure Insights 所取得之所有資產的摘要和一般狀態。狀態會以綠色、黃色和紅色旗標表示：</block>
+  <block id="1da2f66b50b1308792b663513a421880" category="summary">使用 Data Infrastructure Insights API 直接查詢報告資料庫。</block>
+  <block id="266675e88801512a731359823fa8e305" category="paragraph">Data Infrastructure Insights 強大的 API 可讓使用者直接查詢 Data Infrastructure Insights Reporting 資料庫、而無需瀏覽 Cognos Reporting 環境。</block>
+  <block id="a34e29a0686800d882e09161ffc71235" category="admonition">本文件是指 Data Infrastructure Insights Premium Edition 中提供的 Data Infrastructure Insights Reporting 功能。</block>
+  <block id="ba7d10bf45b2219942c55c6b6ffbd3d4" category="paragraph">Data Infrastructure Insights Reporting API 遵循<block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block>（開放式資料傳輸協定）標準來查詢報告資料庫。如需更多資訊或深入瞭解、請參閱 <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block>OData 。</block>
+  <block id="6346ef36a30feacef7c837238fa5e2ce" category="paragraph">所有申請都將以 URL \https://&lt;Data 基礎架構洞見 URL&gt;/rest/v1/dwh-management / oData_ 開始</block>
+  <block id="79077b8c217f63ad257dd00c00fd1223" category="inline-link-macro">Data Infrastructure Insights API</block>
+  <block id="686f74d4286b7f69969bf89852c66563" category="paragraph">瞭解更多關於<block ref="7c22ad77b3a65c520b1a6747074ab8d5" category="inline-link-macro-rx"></block>的資訊。</block>
+  <block id="9cc0b9495b07998ec406eabcf17528de" category="list-text">登入您的 Data Infrastructure Insights 環境、然後選取 * 管理 &gt; API 存取 * 。</block>
+  <block id="0d46078f0efb08d53f3ab1780f67e0b3" category="paragraph">有了API金鑰、現在就能直接查詢報告資料庫。長 URL 可簡化為 \https://.../odata/ 以供顯示、而非完整的 \https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / OData/</block>
+  <block id="13da55453cef5959a05d2e185ff8c857" category="list-text">\https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / oData/dwh_cCustom</block>
+  <block id="64fe34c4ffee853c441c0885b5f610f3" category="list-text">\https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / oData/dwh_inventory</block>
+  <block id="eaaceda8293b044be5e7cb9b09967498" category="list-text">\https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / oData/dwh_inventory/storage</block>
+  <block id="b4fc2221859c99959bcd75d4bd2f932d" category="list-text">\https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / oData/dwh_inventory/disk</block>
+  <block id="b01a6829652cdd2c6fcbe5e47c16f698" category="paragraph">所有通話的 URL 為 \https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / oData_ 。</block>
+  <block id="29ed3828a02e5dd0797598a14a0f63a9" category="paragraph">格式： \https://&lt;Data 基礎架構洞見 URL&gt;/rest / v1/dwh-management / &lt;schema_name&gt; / &lt;query&gt; _</block>
+  <block id="453b047100278d0cb55ea191c8e3fef3" category="paragraph">您的 API 金鑰將專屬於您的 Data Infrastructure Insights 環境。</block>
+  <block id="d1faf51eb9187865439a19b56e1f0f35" category="doc">資料基礎架構洞見報告架構圖表</block>
+  <block id="86a5f96c8b65c81ac37422a6777619a3" category="summary">資料基礎架構洞見報告的功能取決於您的使用者角色。</block>
+  <block id="1c576a953caa77247b606ffba38db484" category="doc">Data Infrastructure Insights 報告使用者角色</block>
+  <block id="296917b8fa808798eedaf6f784e3d436" category="paragraph">如果您有 Data Infrastructure Insights Premium Edition 搭配 Reporting 、則環境中的每位 Data Infrastructure Insights 使用者也都可以登入「報告」應用程式（即 Cognos ）、登入單一登入（ SSO ）。只要按一下功能表中的「*報告*」連結、您就會自動登入「報告」。</block>
+  <block id="8dae4251e88795189abf6e15ae2454a0" category="paragraph">您在 Data Infrastructure Insights 中的使用者角色決定了您的報告使用者角色：</block>
+  <block id="57d5623b4f43a74cce00c65bcda0be51" category="cell">Data Infrastructure Insights 角色</block>
+  <block id="85765729958b6c9f995f2143d5af4417" category="admonition">如果您在 Data Infrastructure Insights Reporting （即 Cognos 應用程式）中變更使用者電子郵件偏好設定、則這些偏好設定僅適用於目前的工作階段。登出Cognos後再重新登入、將會重設您的電子郵件偏好設定。</block>
+  <block id="9bfdfa883642ad7b8e5eecc1c748cb08" category="list-text">一旦 Cognos 啟用 SSO 、請使用用來建立帳戶的電子郵件地址登入 Data Infrastructure Insights 。</block>
+  <block id="943ad74a0fd793229b9e03b31583927b" category="summary">您可以使用 Data Infrastructure Insights API 匯入註釋和應用程式。</block>
+  <block id="5b78efec071d0544b297fe57d9b6a0e5" category="paragraph">Data Infrastructure Insights 包含一個 API 、可從 CSV 檔案匯入註釋或應用程式、並將其指派給您指定的物件。</block>
+  <block id="c0724b194b6a3186935a85af014c39e0" category="admonition">Data Infrastructure Insights API 可在 * Data Infrastructure Insights Premium Edition * 中取得。</block>
+  <block id="c186f80cd765682d22369bf19bf653d2" category="list-text">您必須是 Data Infrastructure Insights 管理員或帳戶擁有者、才能執行此工作。</block>
+  <block id="d6f772b4da65633c1dcba6e1cccf18a0" category="paragraph">Data Infrastructure Insights 會使用安裝在本機伺服器上的一或多個擷取單元來收集裝置資料。每個採購單位都可以裝載多個資料收集器、將裝置計量傳送至 Data Infrastructure Insights 以供分析。</block>
+  <block id="3c3ff06a5b224118074215ef96c62682" category="paragraph">瞭解 Data Infrastructure Insights 安全性<block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="911d7bf1b4a6a6ae5c7053f84b824df3" category="paragraph">擷取單元使用雙向 / 相互驗證來連線至 Data Infrastructure Insights 伺服器。用戶端憑證必須傳送至 Data Infrastructure Insights 伺服器、才能進行驗證。若要達成此目的、必須設定 Proxy 將 https 要求轉寄至 Data Infrastructure Insights 伺服器、而無需解密資料。</block>
+  <block id="3fde2c923d9dcbf8f73ec0e80dc74d75" category="paragraph">最簡單的方法是在 Proxy / 防火牆中指定萬用字元組態、以便與 Data Infrastructure Insights 通訊、例如：</block>
+  <block id="2b3de7104d3f2ae443b66d1f6ffd79b0" category="list-text">在該伺服器上、開啟瀏覽器視窗、以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。</block>
+  <block id="660e2b29c081e6a83bd499b570adbe24" category="list-text">在擷取裝置伺服器/VM上、開啟「控制台」、然後選擇「*解除安裝程式*」。選取要移除的 Data Infrastructure Insights Acquisition Unit 方案。</block>
+  <block id="917a1f34353f71aec7044c54befff0e0" category="list-text">在 Data Infrastructure Insights 中、前往 * 可服務性 &gt; 收集器、然後選取 * 擷取單位 * 索引標籤。</block>
+  <block id="4926cd0f8c768e36d9e2b5841be78f04" category="list-text">登入您的 Data Infrastructure Insights 環境、前往 * 可服務性 &gt; 收集器 * 。</block>
+  <block id="9f9ecd713cb9cd6766aff38da4b58190" category="paragraph">使用註釋、您可以新增符合業務需求的自訂業務專屬資料至資產。雖然 Data Infrastructure Insights 提供一組預設註釋、例如資產生命週期（生日或生命週期結束）、建置或資料中心位置和階層、但您可能會發現想要以其他方式檢視資料。</block>
+  <block id="e6e22110e3d25fc52606f57ffc55e58f" category="paragraph">自訂附註中的資料可補充已收集的裝置資料、例如交換器製造商、連接埠數量和效能統計資料。Data Infrastructure Insights 不會探索您使用註釋新增的資料。</block>
+  <block id="93a8717a22d46017d35d105b54e89a92" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 可觀察性 &gt; 豐富性 &gt; 註釋 *</block>
+  <block id="4a10b0dfdb0d7666a24649ef65f2d756" category="list-text">登入您的 Data Infrastructure Insights 環境。</block>
+  <block id="4f0e63e9d127e8f3e465a9e3f35bcf5f" category="paragraph">若要根據您定義的準則自動指派資產附註、請設定附註規則。Data Infrastructure Insights 會根據這些規則將註釋指派給資產。Data Infrastructure Insights 也提供兩個預設註釋規則、您可以根據自己的需求進行修改、或是在不想使用時加以移除。</block>
+  <block id="a9ac45d46390c434574d0092c1a11483" category="paragraph">您可以使用註釋規則、根據您定義的準則、自動將註釋套用至多個資產。Data Infrastructure Insights 會根據這些規則將註釋指派給資產。Cloud Insight評估附註規則時、在個別資產頁面上手動設定的附註優先於規則型附註。</block>
+  <block id="4f4df7311a5c009339d057b316a5c877" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 管理 &gt; 附註規則 * 。</block>
+  <block id="429e5ff0d154ea9f0d8b69e75866a8b4" category="list-text">按一下 * 查詢 * 、然後選取 Data Infrastructure Insights 用來識別註釋所套用資產的查詢。</block>
+  <block id="a1301e0af88fd655ae64d39d2d7a0e93" category="admonition">在大型 Data Infrastructure Insights 環境中、您可能會發現執行註釋規則似乎需要一段時間才能完成。這是因為索引程式會先執行、而且必須在執行規則之前完成。索引器可讓 Data Infrastructure Insights 在資料中搜尋或篩選新的或更新的物件和計數器。規則引擎會等到索引程式完成更新後再套用規則。</block>
+  <block id="df92eb52ff49723465239116d2f4aed4" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 管理 &gt; 附註規則 * 。</block>
+  <block id="0809c964b790df4295890dec5b75e498" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 豐富 &gt; 應用程式 * 。選取</block>
+  <block id="bd49848e16630c106919628a09948a9c" category="admonition">所有 Data Infrastructure Insights 版本均提供監控和警示功能、但 Basic Edition 必須遵守下列條件： * 您一次最多只能有五個自訂監控器處於作用中狀態。超過五個的任何監視器都會建立或移至_暫停_狀態。*不支援VMDK、虛擬機器、主機和資料存放區度量監控。如果您已針對這些指標建立監控、則這些指標將會暫停、降級至Basic Edition時將無法恢復。</block>
+  <block id="80645013d90d9d1449dffdd829fc24a4" category="paragraph">Data Infrastructure Insights 也會根據您的環境提供許多<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>功能。</block>
+  <block id="a46093383ff280c45e2e0a8cf945ef64" category="paragraph">Data Infrastructure Insights 警示旨在強調您環境中的資料點和趨勢、而 Data Infrastructure Insights 可讓您以警示接收者的身份輸入任何有效的電子郵件地址。如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
+  <block id="708ed1fbe5fde0184ee1b8685b622687" category="list-text">從 Data Infrastructure Insights 功能表中、按一下 * 警示 &gt; 管理監視器 *</block>
+  <block id="5ade8d0bf5a3ee54fb9a278a493d3df1" category="list-text">* 暫停監視器 * 會列出資料基礎架構 Insights 暫停的任何系統監視器。</block>
+  <block id="b7d1d1c26220af5f1a6a0ea2ecbc6685" category="list-text">資料基礎架構洞見也會顯示許多 * 系統監控群組 * 、其中會列出一或多個群組<block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>、包括 ONTAP 基礎架構和工作負載監控器。</block>
+  <block id="a10322ddb12a9cefc1049b4e438337e7" category="paragraph">只有在 Data Infrastructure Insights 暫停一或多部監視器時、才會顯示此群組。如果監視器產生過多或持續的警示、則可能會暫停。如果監視器是自訂監視器、請修改條件以防止持續警示、然後恢復監視器。當導致暫停的問題解決時、監視器會從「暫停的監視器」群組中移除。</block>
+  <block id="3147ae68bc8e688f6ffbffc9f33366ef" category="paragraph">只要您的環境包含監視器所需的裝置和 / 或記錄可用度、這些群組就會顯示 Data Infrastructure Insights 所提供的監視器。</block>
+  <block id="66e1ee842e3ece3d374ca365bb086128" category="admonition">從群組中移除顯示器並不會從 Data Infrastructure Insights 中刪除顯示器。若要完全移除監視器、請選取監視器、然後按一下「刪除」。這也會將其從所屬群組中移除、不再提供給任何使用者。</block>
+  <block id="7e6c94357f78302055159d73f5574c21" category="paragraph">使用相同的功能表重新命名或刪除群組。刪除群組並不會從 Data Infrastructure Insights 中刪除顯示器、這些顯示器仍可在 _All Monitors_ 中使用。</block>
+  <block id="9f105fc05a9d269ab004b7fcb204ce40" category="paragraph">Data Infrastructure Insights 包含多個系統定義的監控器、可同時用於度量和記錄。可用的系統監視器取決於環境中的資料收集器。因此、 Data Infrastructure Insights 中可用的監視器可能會隨著新增資料收集器或變更其組態而變更。</block>
+  <block id="81620819ff61f392cb05937161de6a10" category="paragraph">請檢視<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>頁面、以取得 Data Infrastructure Insights 隨附的顯示器說明。</block>
+  <block id="9e7d5e0642bda2f21ba3d6ceca8bb4c2" category="paragraph">許多商業應用程式都支援Webhooks做為標準輸入介面、例如：可寬延、PagerDuty、Team、和和等都支援Webhooks。Data Infrastructure Insights 支援一般的客製化網路攔截管道、可支援許多這些交付管道。您可以在這些應用程式網站上找到Webhooks上的資訊。例如， Slack 提供<block ref="467ef0b7b93a9b44aaca1d16165eef1f" category="inline-link-macro-rx"></block>。</block>
+  <block id="0a97104e642d8eff7e924020b632ad1c" category="paragraph">若要建立 Data Infrastructure Insights Webhook 、請前往 * 管理 &gt; 通知 * 、然後選取 * Webhooks* 標籤。</block>
+  <block id="ca45ae1d38c18fde42b8e63a51dc8c41" category="paragraph">Data Infrastructure Insights Webhooks 包含許多預設參數。此外、您也可以建立自己的自訂參數或機密。</block>
+  <block id="426f409719daf9b12e51ea7620dd65cc" category="inline-image-macro">Data Infrastructure Insights 預設 Webhook 參數</block>
+  <block id="a413deb78a976ef85a92449013d13acd" category="paragraph"><block ref="a413deb78a976ef85a92449013d13acd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bac72f43adf1b3cc10ff0028305b93cf" category="list-text">您可以閱讀 Data Infrastructure Insights 安全性<block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="00732ddd2197605977d4595c13a4420d" category="paragraph">根據預設、 Data Infrastructure Insights Workload Security 會自動更新代理程式。有些客戶可能想要暫停自動更新、這會讓值機員保持目前版本、直到發生下列其中一種情況：</block>
+  <block id="b5d6f9f2acdf79398c17700d62b103ea" category="cell">如果代理程式仍無法連線至SaaS、請透過NetApp支援開啟案例。提供 Data Infrastructure Insights 序號以開啟案例、並依所述將記錄附加至案例。</block>
+  <block id="25d7e5698aba7e130a2b0da07a8635ed" category="paragraph">自訂資料基礎架構 Insights 以追蹤符合企業需求的資料時、您可以定義特殊附註（稱為附註）、並將其指派給您的資產。</block>
+  <block id="98e1d8f28dd7852b18ad13e4d9d0127c" category="paragraph">Data Infrastructure Insights 提供一些預設評註類型。這些附註可用來篩選或分組資料。</block>
+  <block id="35312bc76c7408a11b876f51238b9e40" category="paragraph">下表列出 Data Infrastructure Insights 提供的註釋類型。</block>
+  <block id="adc16f9bee699a3b015a38321d0c9cee" category="paragraph">使用註釋、您可以新增符合業務需求的自訂業務專屬資料至資產。雖然 Data Infrastructure Insights 提供一組預設註釋、但您可能會發現想要以其他方式檢視資料。自訂附註中的資料可補充已收集的裝置資料、例如儲存設備製造商、磁碟區數和效能統計資料。Data Infrastructure Insights 不會探索您使用註釋新增的資料。</block>
+  <block id="84ec1a20b4e3f52996fa59ae944a6700" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 管理 &gt; 註釋 * 。</block>
+  <block id="c554249defbcbcdc5fc731cb35168b60" category="paragraph">您可以使用裝置解析度 Fibre Channel Identify 標籤中的 _Manual Add_ 功能、將光纖通道裝置手動新增至 Data Infrastructure Insights 。此程序可用於預先識別預期未來會探索的裝置。</block>
+  <block id="7522a8967a791fea5a45cc4781654a23" category="list-text">登入 Data Infrastructure Insights Web UI</block>
+  <block id="468b9f0aefa7e48b08779c2699753574" category="paragraph">您可以使用 .CSV 檔案中的裝置清單、將光纖通道裝置識別資料手動匯入 Data Infrastructure Insights 裝置解析度。</block>
+  <block id="263bede5848bcfdbb38e652271dec041" category="list-text">登入 Data Infrastructure Insights Web UI 。</block>
+  <block id="cccb6ec9262e66159001a08528cc0695" category="paragraph">您可以從 Data Infrastructure Insights 裝置解析功能、將現有的光纖通道裝置識別資料匯出至 .CSV 檔案。您可能會想匯出裝置識別碼、以便修改、然後將其匯入 Data Infrastructure Insights 、以便識別與原本符合匯出識別碼的裝置相似的裝置。</block>
+  <block id="3bb91786c2296254a1fbad8c87c88b0f" category="paragraph">您可以使用 IP Identify 畫面中的手動新增功能、將 IP 裝置手動新增至 Data Infrastructure Insights 。</block>
+  <block id="ac8840e1b516f4ddd258e842fa90a6dd" category="list-text">登入 Data Infrastructure Insights Web UI 。</block>
+  <block id="d86f5ac6dcdc30e749eac92d1fab2aca" category="paragraph">您可以從 Data Infrastructure Insights 裝置解析功能、將現有的 IP 裝置識別碼匯出至 .CSV 檔案。您可能會想匯出裝置識別碼、以便修改、然後將其匯入 Data Infrastructure Insights 、以便識別與原本符合匯出識別碼的裝置相似的裝置。</block>
+  <block id="0efa6f7d5b47b24b7845d82ccd990e93" category="paragraph">您可以建立裝置解析規則、以識別目前未由 Data Infrastructure Insights 自動識別的主機、儲存設備和磁帶。您所建立的規則可識別環境中目前的裝置、並可識別新增至環境中的類似裝置。</block>
+  <block id="dd20c09466cd2021cfd6399fb3c75ddd" category="paragraph">視您選擇的來源而定、 Data Infrastructure Insights 會顯示下列回應：</block>
+  <block id="b6f4fc57f50e862f2ca2dda3226208aa" category="list-text">* 分區 * 列出資料基礎架構洞見所需識別的分區和 WWN 。</block>
+  <block id="358b401c5dae22f464d8dea0084cf5f0" category="list-text">* SRM * 列出需要由 Data Infrastructure Insights 識別的不明別名</block>
+  <block id="1082db4ccb1ae077157f0f7803f2eea8" category="list-text">* 儲存別名 * 列出需要由 Data Infrastructure Insights 識別的儲存別名和 WWN</block>
+  <block id="90b78671040dce8160821c90767f284c" category="list-text">* 交換器別名 * 列出需要由 Data Infrastructure Insights 識別的交換器別名</block>
+  <block id="52e078a264a75cd12a6c902cdd7849a4" category="list-text">使用分隔符號的規則需要分隔符號和主機名稱的最小長度。主機名稱的最小長度是 Data Infrastructure Insights 用來識別主機的字元數。Data Infrastructure Insights 只會針對長或長的主機名稱執行 DNS 查詢。</block>
+  <block id="d58aecd7040e7d513c5340e479099d22" category="paragraph">Data Infrastructure Insights 會依照出現方法的順序執行主機解析程序、從頂端開始。</block>
+  <block id="cfd855569d59b48c5e78ad3ea5b91555" category="list-text">登入 Data Infrastructure Insights 。</block>
+  <block id="88289b3eaad67bb429653fdbbbb57553" category="summary">Data Infrastructure Insights 快速入門。</block>
+  <block id="fea527b093407870cdb8d4b91d0555c3" category="paragraph">註冊 Data Infrastructure Insights 並初次登入環境之後、系統會引導您完成下列步驟、以便開始收集和管理資料。</block>
+  <block id="c9fa6cc61ed6982cb8f0a44a57d1c70a" category="paragraph">Data Infrastructure Insights 提供三種類型的資料收集器：</block>
+  <block id="b484e0d9e79b19240c5e3e82c1b05cad" category="paragraph">如果您選擇 _Infrastructure_ 資料收集器、則需要一個擷取單元將資料注入 Data Infrastructure Insights 。您必須在要從中收集資料的伺服器或VM上下載並安裝擷取設備軟體。單一擷取單元可用於多個資料收集器。</block>
+  <block id="0eda65e0fd92af1dcd2c0cb93618cc43" category="paragraph">對於 _ 作業系統 _ 資料收集器、請選擇一個平台（ Linux 、 Windows ）來安裝 Data Infrastructure Insights Agent 。您必須至少有一個代理程式、才能從服務收集資料。代理程式也會從主機本身收集資料、以供 Data Infrastructure Insights 使用。此資料在小工具等中歸類為「節點」資料</block>
+  <block id="f007654ef2b9e94534efc8fa3cd4df38" category="paragraph">視您選擇要設定的初始資料收集器類型（儲存設備、交換器等）而定、將會匯入一或多個相關儀表板。例如、如果您設定了儲存資料收集器、則會匯入一組與儲存相關的儀表板、並將其中一個儀表板設為您的 Data Infrastructure Insights 首頁。您可以從*儀表板&gt;顯示所有儀表板*清單變更首頁。</block>
+  <block id="8f6ef79621b6e18c6769f235a6366db4" category="paragraph">下列定義在談論 Data Infrastructure Insights 資料收集器或功能時可能很有用：</block>
+  <block id="92b9e8a46330658a1b72284905d7d1a4" category="summary">資料基礎架構 Insights 可設定為手動更新 AU 軟體、讓您更能掌控環境中安裝的軟體。</block>
+  <block id="81bc38d5cc49916906929be0dafd8980" category="paragraph">根據預設、 Data Infrastructure Insights 會在部署更新時自動更新 Acquisition Unit （ AU ）軟體。不過、在安全的控制環境中、可能無法或不需要自動更新。在這些案例中、您可以設定 Data Infrastructure Insights 、讓 AU 軟體手動更新、讓您更能掌控環境中安裝的軟體。</block>
+  <block id="261649481dbf9a5fd9765a5240244344" category="paragraph">若要手動下載並安裝 AU 軟體、請執行下列步驟。Data Infrastructure Insights 提供實用的 Swagger 文件頁面、您可以在其中許多步驟中使用、也可以使用自己的 API 指令碼 / 命令。移至「管理」 &gt; 「 API 存取」、然後按一下「 API 文件」連結。</block>
+  <block id="7f6548579b1ae394861943440b9beab0" category="list-text">在 Data Infrastructure Insights 中、建立 API Token 。</block>
+  <block id="fad8a96ac6878526c57740aca3e6222e" category="list-text">在 Swagger （ Admin &gt; API Access &gt; API Documentation ）中、使用 Token 授權 Data Infrastructure Insights API</block>
+  <block id="88adfaa220eda68cf65400388d6180d6" category="list-text">在 Data Infrastructure Insights API Swagger 中、使用調出 / 調出 / 設定時間 Token _ API 建立一次性權杖。</block>
+  <block id="7d5751de11a52f1697f899c405327b9d" category="list-text">重新啟動 AU 。在 Data Infrastructure Insights 中、瀏覽至「可服務性」 &gt; 「收集器」、然後選取「擷取單元」索引標籤。從 AU 右側的「三點」功能表中選擇「重新啟動」。</block>
+  <block id="9d6e645b9e44ed405eea48819c323d14" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 管理 &gt; 註釋 *</block>
+  <block id="0624722beef3254720337beec932c9a7" category="list-text">在 Data Infrastructure Insights 工具列中、按一下 * 管理 &gt; 附註規則 * 。</block>
+  <block id="2c022c29b5e95da3740220bcbdc30296" category="paragraph">在大量新增或移除行動上按一下「 _Save_ 」之後、 Data Infrastructure Insights 會通知您該行動需要一些時間。您可以關閉此訊息、此動作將在背景中繼續。</block>
+  <block id="b69fb0739dff5542fa058e258ebc7fb7" category="paragraph">以下是資料基礎架構洞見目前包含的系統監視器：</block>
+  <block id="199af9ce8ab16e33e98a26add2f43fda" category="cell">資料基礎架構 Insights 擷取單位會定期重新啟動、以加入新功能。這種情況在典型環境中每月發生一次或更少。在解決方案指出新重新啟動的擷取單元已完成 Data Infrastructure Insights 登錄之後、應立即發出警告、指出擷取單元已關閉。此關機對登錄週期通常需要5至15分鐘。</block>
+  <block id="b76f1f2b697d772825753e542f17de1d" category="cell">請造訪 Data Infrastructure Insights 中的資料收集器頁面、深入瞭解情況。</block>
+  <block id="69a63098ed91fbe0cfcab6202296a804" category="summary">一般資料基礎架構洞見疑難排解秘訣。</block>
+  <block id="c97a47674c3fd0dd5a9c720ee9f41f48" category="doc">疑難排解一般資料基礎架構洞見問題</block>
+  <block id="e3d8c673fea34a21f2e56ce7c9b5aabe" category="paragraph">您可在此找到疑難排解 Data Infrastructure Insights 的建議。</block>
+  <block id="8f85ee65b3485bb4199931404085584c" category="cell">Data Infrastructure Insights 會每 6 小時自動登出一次</block>
+  <block id="39595915536b739d06f4c02735749d51" category="cell">這是因為瀏覽器的第三方 Cookie 已停用。使用者可以設定瀏覽器來啟用所有第三方 Cookie 、或使用較窄的例外清單來啟用 Data Infrastructure Insights 。範例：開啟瀏覽器的設定選取「允許所有 Cookie 」選項。* 或 * 選取「區塊協力廠商 Cookie 」、並新增例外情況至： __[\*.]auth0.com 和 NetApp .com_ 。Microsoft Edge 提供與 Chrome 相同的例外格式。在 Firefox 中、 Cookie 例外會指定為 Simply _auth0.com 和 _netapp.com 。</block>
+  <block id="6fbdc7276d4f79696070dabc0205c452" category="cell">從開啟 Ticket<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> 。選擇類別「 blueXP.netapp.com &gt; 帳戶 / 登入問題」或「 bluexp.netapp.com &gt; 聯盟問題」。這些是專為 BlueXP 問題所設計。如需瞭解所有其他 Data Infrastructure Insights 技術支援問題<block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>、請聯絡。</block>
+  <block id="7bb58e74fa35bd90237db949c52cec82" category="cell">我受邀參加 Data Infrastructure Insights 、但卻收到「未經授權」的訊息。</block>
+  <block id="ab1561bb6c52df24635b2b2ff6194a94" category="cell">確認您已註冊 BlueXP 帳戶、或貴組織使用 SSO 登入 BlueXP 。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址。如果電子郵件不符、請以正確的電子郵件地址申請新的邀請函。</block>
+  <block id="3a1e8ff9b6dee2eb5f1881fa4a0710e7" category="cell">我已從 BlueXP  登出、並自動從 Data Infrastructure Insights 登出。</block>
+  <block id="b6497315eac7548893fe9df9a3a4e133" category="cell">跨 NetApp 雲端服務的單一登入（ SSO ）會登出所有資料基礎架構洞見課程。如果您可以存取多個 Data Infrastructure Insights 帳戶、請從任何一個帳戶登出、以登出所有作用中的工作階段。重新登入以存取您的帳戶。</block>
+  <block id="1b51f17425f84d494f4007c3f9ae163b" category="cell">請聯絡您的帳戶管理員、以驗證對 Data Infrastructure Insights 的存取權限。驗證您的 BlueXP  設定檔電子郵件地址是否符合「資料基礎架構深入分析」歡迎電子郵件中顯示的電子郵件地址</block>
+  <block id="5b54c3b04831265b1d859da4050ad35f" category="paragraph">如需其他支援資訊、請參閱 Data Infrastructure Insights <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="90c8925e0cc3bad3ddb84b5af67af65a" category="paragraph">如果您訂閱了有效的 Data Infrastructure Insights 、您可以使用下列支援選項：</block>
+  <block id="d51985e049703c2b8608d2bdcb0a3479" category="inline-link">Data Infrastructure Insights 支援文件</block>
+  <block id="e7611d76087ecbbfabb3ffdc7d9b6c93" category="paragraph">如需詳細資訊，請參閱<block ref="e02ff98dd704948b513a359b140be8d8" category="inline-link-rx"></block>。</block>
+  <block id="8c4bd711b7fe143e6ba54e95872f1c4f" category="cell">確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ &lt;environment-name&gt; 。 NetApp .com ）。請嘗試下列命令： _ping &lt;environment-name&gt; &lt;environment-name&gt; 。 c01. cloudinsations.com_ _traceroute &lt;environment-name&gt; NetApp 。 c01. cloudsations.com_ _curl \https ： NetApp &lt;environment-name&gt; NetApp 。 c01. cloudamses.com_ _wGET \https ： NetApp 。 c01. cloudinsations.com_</block>
+  <block id="f0ab3792dda9e2a3fae5b0129cc207ac" category="cell">在 Data Infrastructure Insights 中、擷取單元安裝失敗、並在啟動擷取服務時出現認證錯誤（可在 acq.log 中看到）。</block>
+  <block id="e467d9b04f6bf31dc4004028603c87c7" category="cell">採購單位（ AU ）每 60 秒向 Data Infrastructure Insights 傳送一次活動訊號、以續約。如果活動訊號通話因網路問題或 Data Infrastructure Insights 無回應而失敗、 AU 的租用時間將不會更新。當 AU 的租用時間到期時、 Data Infrastructure Insights 會顯示「心跳失敗」狀態。疑難排解步驟：檢查擷取單元伺服器與CloudInsights之間的網路連線。檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。查看擷取設備記錄（/var/log/NetApp/cloudinss/acq/acq.log）、查看是否有任何錯誤。</block>
+  <block id="b1260e2bc601bf885eaa981883335e26" category="cell">如果網路中斷導致擷取單元和 Data Infrastructure Insights 環境之間的通訊中斷超過一分鐘、就可能發生此錯誤。確認 AU 與 Data Infrastructure Insights 之間的連線穩定且有效。</block>
+  <block id="894d604192ab58e12d0ea71847fa1a56" category="paragraph">如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。請謹記下列事項：</block>
+  <block id="4f0373fcf0dc18b5fa439fffaa7e1a4c" category="paragraph">您的 Data Infrastructure Insights 擷取單元、以及您在網頁瀏覽器中與 Data Infrastructure Insights 的互動、都會移至具有該網域名稱的主機。</block>
+  <block id="5dee7c81bca2a10fa3e100f4c6bbfe98" category="list-text">其次、有些 Proxy 會嘗試以非由 NetApp 產生的數位憑證來模擬 Data Infrastructure Insights 網站、以執行 TLS/SSL 檢查。Data Infrastructure Insights Acquisition Unit 的安全模式與這些技術完全不相容。您也需要上述網域名稱（此功能除外）、才能讓 Data Infrastructure Insights Acquisition Unit 成功登入 Data Infrastructure Insights 並協助進行資料探索。</block>
+  <block id="f755527ee3baf9129b51d65b128caa93" category="paragraph">如果將 Proxy 設定為用於流量檢查、則必須將 Data Infrastructure Insights 環境新增至 Proxy 組態的例外清單。此例外清單的格式和設定會因您的 Proxy 環境和工具而異、但一般而言、您必須將 Data Infrastructure Insights 伺服器的 URL 新增至此例外清單、以便讓 AU 能夠與這些伺服器正確通訊。</block>
+  <block id="a43cc84e7ebd92afd50bb8df5abbf439" category="paragraph">最簡單的方法是將 Data Infrastructure Insights 網域本身新增至例外清單：</block>
+  <block id="ad41a8b6a64bd565d4da11ec15f80d03" category="paragraph">若未設定Proxy進行流量檢查、則可能需要例外清單、也可能不需要例外清單。如果您不確定是否需要將 Data Infrastructure Insights 新增至例外清單、或是因為 Proxy 和 / 或防火牆組態而在安裝或執行 Data Infrastructure Insights 時遇到困難、請洽詢您的 Proxy 管理團隊、以設定 Proxy 處理 SSL 攔截的方式。</block>
+  <block id="77a4a027afad6284613622be97013f92" category="cell">採購單位（ AU ）每 60 秒向 Data Infrastructure Insights 傳送一次活動訊號、以續約。如果活動訊號通話因網路問題或 Data Infrastructure Insights 無回應而失敗、 AU 的租用時間將不會更新。當 AU 的租用時間到期時、 Data Infrastructure Insights 會顯示「心跳失敗」狀態。疑難排解步驟：*檢查擷取單元伺服器與CloudInsights之間的網路連線。*檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。*檢查擷取單元記錄（&lt;Install dir&gt;:\Program Files\Cloud Insights \擷 取單元\log\acq.log）、查看是否有任何錯誤。</block>
+  <block id="4bc54e27677238cd1e39c4bdda865d7f" category="paragraph">資料基礎架構洞見會在超過時顯示警示<block ref="6237c321048ea1332593fdb4bbfce320" category="inline-link-macro-rx"></block>。</block>
+  <block id="fe7eee9a8f76b65098fb97bbadfb999a" category="admonition">在 Data Infrastructure Insights Standard Edition 及更新版本中提供監控和警示功能。</block>
+  <block id="ffbb059fbd1b72fd858ad1db288acd16" category="paragraph">在資料基礎架構洞見等即時系統中、為了觸發監視器的分析以判斷是否應產生警示、我們仰賴以下兩項之一：</block>
+  <block id="4ab8aaf86bc2a850fc1d9deb5157240b" category="paragraph">為了避免這種情況發生、 Data Infrastructure Insights 會在 7 天後自動關閉任何「永久啟用」警示。請注意、基礎監控條件可能（可能會）持續存在、導致幾乎立即發出新警示、但關閉「永遠作用中」警示可減輕原本可能發生的系統壓力。</block>
+  <block id="dfd32f627ae209fae0647c664a4c742a" category="list-text">登入您的 Data Infrastructure Insights 租戶。</block>
+  <block id="7ff77bf6f123aa17e08bbc89c8477c9e" category="paragraph">捲動查詢結果時、請注意、資料基礎架構 Insights 會自動輪詢您的資料收集器、因此結果可能會變更。這可能會導致某些項目遺失、或是某些項目出現順序不正常、視其排序方式而定。</block>
+  <block id="0ee4a305dd2347838f35598e16c97c78" category="list-text">複製Webhook URL。您必須將此內容貼到 Data Infrastructure Insights 網路攔截組態中。</block>
+  <block id="4d0fecf8d03c2d4c7411b9f6f2355d59" category="section-title">Create Data Infrastructure Insights Webhook ：</block>
+  <block id="5568d321987f45b590964c423dbd5874" category="list-text">在 Data Infrastructure Insights 中、瀏覽至 * 管理 &gt; 通知 * 、然後選取 * Webhooks* 標籤。按一下「*+ Webhing*」建立新的網路連結。</block>
+  <block id="2fbc7e19fa765e792924946b883c7d7c" category="paragraph">要通過 Webhook 通知事件，請在 Data Infrastructure Insights 中導航至 *Alerts &gt; Monitors* ，然後單擊 *+Monitor* 以創建新的<block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>。</block>
+  <block id="b59bb2be40103d441711440903e77391" category="list-text">按一下「整合」索引標籤以查看*整合金鑰*。當您建立下方的 Data Infrastructure Insights 網路連結時、您將需要這個關鍵。</block>
+  <block id="50a2ccfea77457258a47f8f7608e5924" category="section-title">PagerDuty to Data Infrastructure Insights Field Mapping</block>
+  <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">下表和影像顯示 PagerDuty 和 Data Infrastructure Insights 之間的欄位對應：</block>
+  <block id="55f37f5127b4085cc0881e89df336196" category="cell">相較於 Data Infrastructure Insights 泊塢視窗 repo 、 dockerRepo 會置換以從「客戶」的「私有」泊塢視窗中提取影像。預設為 Data Infrastructure Insights 泊塢視窗 repo</block>
+  <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Data Infrastructure Insights 租戶中應該是獨一無二的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
 </blocks>

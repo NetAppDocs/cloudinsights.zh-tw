@@ -31,13 +31,13 @@ summary: NetApp Kubernetes 監控營運者有許多可設定的選項。
 | 代理程式 |  | 操作員可以安裝的所有元件通用的組態選項。這些選項可視為「整體」選項。 
 
 
-|  | dockerRepo | 相較於 Cloud Insights 泊塢視窗 repo 、 dockerRepo 會置換以從客戶的「私有」泊塢視窗資源中拉出影像。預設為 Cloud Insights 泊塢視窗 repo 
+|  | dockerRepo | 相較於 Data Infrastructure Insights 泊塢視窗 repo 、 dockerRepo 會置換以從「客戶」的「私有」泊塢視窗中提取影像。預設為 Data Infrastructure Insights 泊塢視窗 repo 
 
 
 |  | dockerImagePullSecret | 選用：客戶的秘密私人回購 
 
 
-|  | 叢集名稱 | 可唯一識別所有客戶叢集的任意文字欄位。這在 Cloud Insights 租戶中應該是唯一的。預設是客戶在 UI 中輸入的「叢集名稱」欄位 
+|  | 叢集名稱 | 可唯一識別所有客戶叢集的任意文字欄位。這在 Data Infrastructure Insights 租戶中應該是獨一無二的。預設是客戶在 UI 中輸入的「叢集名稱」欄位 
 
 
 |  | Proxy
@@ -271,10 +271,10 @@ spec:
   # #   To update them, uncomment the line, change the value, and apply the updated AgentConfiguration.
   agent:
     # # [Required Field] A uniquely identifiable user-friendly clustername.
-    # # clusterName must be unique across all clusters in your Cloud Insights environment.
+    # # clusterName must be unique across all clusters in your Data Infrastructure Insights environment.
     clusterName: "my_cluster"
 
-    # # Proxy settings. The proxy that the operator should use to send metrics to Cloud Insights.
+    # # Proxy settings. The proxy that the operator should use to send metrics to Data Infrastructure Insights.
     # # Please see documentation here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#configuring-proxy-support
     # proxy:
     #   server:

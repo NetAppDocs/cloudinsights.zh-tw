@@ -19,12 +19,12 @@ keywords: reporting, cognos, data warehouse, dwh, pre-defined
 
 
 [role="lead"]
-包含預先定義的報告、可因應多項常見的報告需求、提供重要的洞察力、讓利益相關者能夠針對其儲存基礎架構做出明智決策。Cloud Insights
+資料基礎架構洞見報告包含預先定義的報告、可因應多項常見的報告需求、提供重要的洞見、讓相關人員能夠根據充分資訊做出儲存基礎架構的決策。
 
 
-NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:concept_subscribing_to_cloud_insights.html["Premium Edition"]。
+NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
 
-您可以從Cloud Insights 「更新報告入口網站」產生預先定義的報告、將報告以電子郵件傳送給其他使用者、甚至進行修改。多份報告可讓您依裝置、企業實體或階層篩選。報告工具使用IBM Cognos做為基礎、並提供許多資料呈現選項。
+您可以從 Data Infrastructure Insights 報告入口網站產生預先定義的報告、以電子郵件寄送給其他使用者、甚至修改報告。多份報告可讓您依裝置、企業實體或階層篩選。報告工具使用IBM Cognos做為基礎、並提供許多資料呈現選項。
 
 預先定義的報告會顯示您的庫存、儲存容量、計費、效能、儲存效率、 以及雲端成本資料。您可以修改這些預先定義的報告、並儲存您的修改。
 
@@ -34,7 +34,7 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 
 == 瀏覽至預先定義的報告
 
-當您開啟報告入口網站時、「團隊內容」資料夾是您在Cloud Insights 「團隊報告」中選擇所需資訊類型的起點。
+當您開啟報告入口網站時、 _ 團隊內容 _ 資料夾是您在 Data Infrastructure Insights 報告中選擇所需資訊類型的起點。
 
 . 在左導覽窗格中、選取 * 內容 > 團隊內容 * 。
 . 選取 * 報告 * 以存取預先定義的報告。
@@ -121,7 +121,7 @@ NetApp容量與效能報告提供已分配、已使用及已承諾容量的全�
 
 === 計分卡
 
-Scorecard報告提供Cloud Insights 所有透過本公司取得之資產的摘要和一般狀態。狀態會以綠色、黃色和紅色旗標表示：
+Scorecard 報告提供 Data Infrastructure Insights 所取得之所有資產的摘要和一般狀態。狀態會以綠色、黃色和紅色旗標表示：
 
 * 綠色表示正常情況
 * 黃色表示環境中可能有問題

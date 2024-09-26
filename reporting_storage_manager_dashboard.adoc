@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, smd, storage manager dashboard
 Storage Manager儀表板提供集中化的視覺化功能、可讓您根據可接受的範圍和前幾天的活動、比較及對照一段時間內的資源使用量。只顯示儲存服務的關鍵效能指標、您就能決定如何維護資料中心。
 
 
-NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:concept_subscribing_to_cloud_insights.html["Premium Edition"]。
+NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
 
 
 

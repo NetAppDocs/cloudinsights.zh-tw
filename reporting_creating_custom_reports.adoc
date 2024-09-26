@@ -22,9 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, ad-hoc, custom
 您可以使用報告撰寫工具來建立自訂報告。建立報告之後、您可以儲存報告並定期執行。報告結果可透過電子郵件自動傳送給您自己和其他人。
 
 
-NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:concept_subscribing_to_cloud_insights.html["Premium Edition"]。
+NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
 
-本節的範例說明下列程序、可用於Cloud Insights 任何一種「更新報告」資料模型：
+本節的範例顯示下列程序、可用於任何 Data Infrastructure Insights Reporting 資料模型：
 
 * 找出要用報告回答的問題
 * 判斷支援結果所需的資料
@@ -38,7 +38,7 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 在您設計報告之前、請先完成下列工作：
 
 * 全部設定 link:task_configure_data_collectors.html["資料收集器"] 正確。
-* 在環境中的裝置和資源上輸入附註（例如階層、資料中心和業務單位）。在產生報告之前、讓註釋保持穩定是有益的、因為Cloud Insights 「消息報告」會收集歷史資訊。
+* 在環境中的裝置和資源上輸入附註（例如階層、資料中心和業務單位）。在產生報告之前、請先讓附註保持穩定、因為 Data Infrastructure Insights Reporting 會收集歷史資訊。
 
 
 
@@ -87,9 +87,9 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 
 * 判斷您是否需要使用目前或歷史資料。
 +
-大多數報告只需要回報Cloud Insights 有關更新資料的資訊。
+大多數報告只需要報告 Data Infrastructure Insights 中的最新資料。
 
-* 提供容量與效能的歷史資訊、但不包括在庫存中。Cloud Insights
+* 資料基礎架構洞見報告提供容量和效能的歷史資訊、但不提供庫存資訊。
 * 每個人都能看到所有資料、但您可能需要將資料限制在特定對象。
 +
 若要區隔不同使用者的資訊、您可以建立報告並設定其存取權限。
@@ -100,7 +100,7 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 
 == 報告資料模型
 
-包含數種資料模型、您可以從中選取預先定義的報告、或建立自己的自訂報告。Cloud Insights
+Data Infrastructure Insights 包含多種資料模型、您可以從中選取預先定義的報告或建立自己的自訂報告。
 
 每個資料模型都包含一個簡單的資料倉儲和一個進階的資料倉儲：
 
@@ -188,7 +188,7 @@ NOTE: 「報告」功能可在Cloud Insights 《資訊時報」中找到 link:co
 * 我使用儲存精簡配置和重複資料刪除技術、可省下多少儲存效率？
 
 
-VM容量資料模型中的容量是從虛擬磁碟（VMDK）取得。這表示使用VM容量資料模型的虛擬機器已配置大小是其虛擬磁碟的大小。這與Cloud Insights 在VMware View中的虛擬機器已配置容量不同、後者會顯示VM本身的已配置容量。
+VM容量資料模型中的容量是從虛擬磁碟（VMDK）取得。這表示使用VM容量資料模型的虛擬機器已配置大小是其虛擬磁碟的大小。這與 Data Infrastructure Insights 中「虛擬機器」檢視中的已配置容量不同、其中顯示了 VM 本身的已配置大小。
 
 
 
@@ -302,7 +302,7 @@ VM容量資料模型中的容量是從虛擬磁碟（VMDK）取得。這表示�
 
 === 儲存效率資料模型
 
-可讓您追蹤一段時間內的儲存效率分數和潛力。此資料模型不僅會儲存已配置容量的測量值、也會儲存已使用或已使用的容量（實體測量值）。例如、啟用精簡配置時Cloud Insights 、功能表功能表會顯示從裝置取得的容量。啟用重複資料刪除功能時、您也可以使用此模式來判斷效率。您可以使用儲存效率資料倉儲來回答各種問題：
+可讓您追蹤一段時間內的儲存效率分數和潛力。此資料模型不僅會儲存已配置容量的測量值、也會儲存已使用或已使用的容量（實體測量值）。例如、啟用自動精簡配置時、 Data Infrastructure Insights 會指出從裝置取得的容量。啟用重複資料刪除功能時、您也可以使用此模式來判斷效率。您可以使用儲存效率資料倉儲來回答各種問題：
 
 * 因為實作精簡配置和重複資料刪除技術、我們的儲存效率可節省多少成本？
 * 資料中心的儲存節約效益為何？

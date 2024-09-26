@@ -30,13 +30,13 @@ Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視�
 
 image:ChangeAnalytitcs_Main_Screen.png["Kubernetes Change Analytics 主畫面顯示警告和關鍵警示、成功和失敗的部署、以及觸發警示的前 3 大工作負載"]。
 
-頁面會根據目前選取的 Cloud Insights 時間範圍自動重新整理。  時間範圍越短、畫面更新就越頻繁。
+頁面會根據目前選取的 Data Infrastructure Insights 時間範圍自動重新整理。時間範圍越短、畫面更新就越頻繁。
 
 
 
 == 篩選
 
-如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、輸入或選取 Kubernetes 叢集、命名空間或工作負載的值、或是選取「 ｛ + 」按鈕來新增自己的篩選器。
+與 Data Infrastructure Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、輸入或選取 Kubernetes 叢集、命名空間或工作負載的值、或是選取 ｛ + ）按鈕來新增自己的篩選器。
 
 當您篩選到特定叢集、命名空間和工作負載（以及您設定的任何其他篩選器）時、會在該叢集的該命名空間中顯示該工作負載的部署和警示時間表。在圖表中按一下並拖曳、即可進一步放大、以專注於更特定的時間範圍。
 

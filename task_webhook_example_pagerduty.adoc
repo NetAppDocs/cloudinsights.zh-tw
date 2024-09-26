@@ -33,7 +33,7 @@ NOTE: 本頁是指可能會變更的第三方指示。請參閱 link:https://sup
 +
 image:Webhooks_PagerDutyScreen1.png["PagerDuty畫面"]
 
-. 按一下「整合」索引標籤以查看*整合金鑰*。當您在下Cloud Insights 方建立「鏈接」時、您將需要此金鑰。
+. 按一下「整合」索引標籤以查看*整合金鑰*。當您建立下方的 Data Infrastructure Insights 網路連結時、您將需要這個關鍵。
 
 
 . 請前往*「事件」*或*「服務」*檢視「警示」。
@@ -44,9 +44,9 @@ image:Webhooks_PagerDutyScreen2.png["PagerDuty畫面"]
 
 
 
-== 建立Cloud Insights Webhook：
+== Create Data Infrastructure Insights Webhook ：
 
-. 在「還原」中、瀏覽至*管理>通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。
+. 在 Data Infrastructure Insights 中、瀏覽至 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。按一下「*+ Webhing*」建立新的網路連結。
 . 為網路勾提供有意義的名稱、例如「PagerDuty Trigger」。您將使用此Webhook進行重大和警告層級的事件。
 . 在_範本類型_下拉式清單中、選取* PagerDut*。
 
@@ -61,13 +61,13 @@ image:Webhooks_Custom_Secret_Routing_Key.png["設定路由金鑰"]
 
 
 
-== PagerDuty to Cloud Insights Fingfield Mapping
+== PagerDuty to Data Infrastructure Insights Field Mapping
 
-下表和影像顯示PagerDuty和Cloud Insights Image2之間的欄位對應：
+下表和影像顯示 PagerDuty 和 Data Infrastructure Insights 之間的欄位對應：
 
 [cols="<,<"]
 |===
-| PagerDuty | Cloud Insights 
+| PagerDuty | 資料基礎架構洞見 
 
 
 | 警示金鑰 | 警示ID 
@@ -90,7 +90,7 @@ image:Webhooks-PagerDuty_Fields.png["CI中的PagerDuty欄位"]
 
 == 透過Webhook通知
 
-若要透過Webhook通知事件、請Cloud Insights 瀏覽至*警示>監控器*、然後按一下*+監控*以建立新的 link:task_create_monitor.html["監控"]。
+要通過 Webhook 通知事件，請在 Data Infrastructure Insights 中導航至 *Alerts > Monitors* ，然後單擊 *+Monitor* 以創建新的link:task_create_monitor.html["監控"]。
 
 * 選取度量並定義監視器的條件。
 * 在「設定團隊通知」下、選擇* Webhook *交付方法。

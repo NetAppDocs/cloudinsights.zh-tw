@@ -27,7 +27,7 @@ summary: 新增工作負載安全性代理程式
 
 * 安裝、執行指令碼及解除安裝時、都需要使用Sudo權限。
 * 安裝代理程式時、會在機器上建立本機使用者_cssy__和本機群組_cssy__。如果權限設定不允許建立本機使用者、而需要Active Directory、則必須在Active Directory伺服器中建立使用者名稱為_cssy__的使用者。
-* 您可以閱讀 Cloud Insights 安全性的相關資訊 link:security_overview.html["請按這裡"]。
+* 您可以閱讀 Data Infrastructure Insights 安全性link:security_overview.html["請按這裡"]。
 
 
 
@@ -94,7 +94,7 @@ image::new-agent-detect.png[成功安裝代理程式的訊息]
 
 == 「固定」目前版本的值機員
 
-根據預設、 Cloud Insights 工作負載安全性會自動更新代理程式。有些客戶可能想要暫停自動更新、這會讓值機員保持目前版本、直到發生下列其中一種情況：
+根據預設、 Data Infrastructure Insights Workload Security 會自動更新代理程式。有些客戶可能想要暫停自動更新、這會讓值機員保持目前版本、直到發生下列其中一種情況：
 
 * 客戶會繼續自動更新值機員。
 * 30 天過去了。請注意、 30 天從最新值機員更新的當天開始、而非從值機員暫停的當天開始。
@@ -152,7 +152,7 @@ image:ws_agent_version.png["「代理程式」表中顯示的 WS 代理程式版
 | 安裝代理程式時、解壓縮後安裝會暫停。 | 「chmod 755 -RF」命令失敗。當代理程式安裝命令是由工作目錄中有檔案、屬於其他使用者、且這些檔案的權限無法變更的非root Sudo使用者執行時、命令就會失敗。由於chmod命令失敗、安裝的其餘部分將不會執行。1.建立名為「cloudSecure」的新目錄。2.移至該目錄。3.複製並貼上完整的「tokent=……」 … ．/cloudseced-agent-install.sh」安裝命令、然後按Enter鍵。4.安裝應可繼續進行。 
 
 
-| 如果代理程式仍無法連線至SaaS、請透過NetApp支援開啟案例。提供Cloud Insights 「不完整」序號以開啟案例、並將記錄附加到案例中、如前所述。 | 若要將記錄附加至案例：1.以root權限執行下列指令碼、並共用輸出檔案（cloudseced-agent-症狀。zip）。答/opp/NetApp/cloudsec/agent/bin/cloudsecure-agent-symptom-collector.sh 2.以root權限逐一執行下列命令、並共用輸出。答ID cssys b.群組cssys c.Cat /etc/os-release 
+| 如果代理程式仍無法連線至SaaS、請透過NetApp支援開啟案例。提供 Data Infrastructure Insights 序號以開啟案例、並依所述將記錄附加至案例。 | 若要將記錄附加至案例：1.以root權限執行下列指令碼、並共用輸出檔案（cloudseced-agent-症狀。zip）。答/opp/NetApp/cloudsec/agent/bin/cloudsecure-agent-symptom-collector.sh 2.以root權限逐一執行下列命令、並共用輸出。答ID cssys b.群組cssys c.Cat /etc/os-release 
 
 
 | cloudsecure-agent-symptom-collector.sh指令碼失敗、並出現下列錯誤。[root@machine tmp]#/opt/NetApp/cloudecure/agent/bin/cloudsecure-agent-symptom-collector.sh收集服務記錄收集應用程式記錄收集代理程式組態擷取服務狀態快照擷取代理程式目錄結構快照………………………………………………………………… 。……………………………… 。/opt/NetApp/cloudecure/agent/bin/cloudecure-agent-症狀 收集器.sh：第52行：郵遞區號：找不到命令錯誤：無法建立/tmp/cloudsecure-agent-symptoms.zip | 未安裝Zip工具...執行命令「yum install zip」來安裝壓縮工具。然後再次執行cloudsecure-agent-symptom-collector.sh。 

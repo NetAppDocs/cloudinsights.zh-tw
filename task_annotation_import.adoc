@@ -2,27 +2,24 @@
 sidebar: sidebar 
 permalink: task_annotation_import.html 
 keywords: annotations, import, api 
-summary: 您可以使用Cloud Insights 物件開發API匯入註釋和應用程式。 
+summary: 您可以使用 Data Infrastructure Insights API 匯入註釋和應用程式。 
 ---
 = 匯入附註
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-包含API、可從CSV檔案匯入註釋或應用程式、並將其指派給您指定的物件。Cloud Insights
+Data Infrastructure Insights 包含一個 API 、可從 CSV 檔案匯入註釋或應用程式、並將其指派給您指定的物件。
 
 
-NOTE: 此功能可在*《*》《*》《*》《*》《*》《*》《* Cloud Insights Cloud Insights
+NOTE: Data Infrastructure Insights API 可在 * Data Infrastructure Insights Premium Edition * 中取得。
 
 
 

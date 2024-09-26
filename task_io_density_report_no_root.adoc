@@ -67,7 +67,7 @@ NetApp根Volume包含用於管理儲存系統的目錄和組態檔案。查詢�
 您必須已識別出要從「高I/O密度」報告中排除的所有根Aggregate。
 
 .步驟
-. 在功能表中、按一下*管理>註釋* Cloud Insights
+. 在 Data Infrastructure Insights 功能表中、按一下 * 管理 > 註釋 *
 . 按一下「*新增*」
 +
 .. 輸入註釋名稱：* RootAggr*
@@ -88,7 +88,7 @@ NetApp根Volume包含用於管理儲存系統的目錄和組態檔案。查詢�
 您必須建立並儲存查詢、以識別您在環境中識別的NetApp根集合體。
 
 .步驟
-. 在 Cloud Insights 工具列中、按一下 * 管理 > 註釋規則 * 。
+. 在 Data Infrastructure Insights 工具列中、按一下 * 管理 > 附註規則 * 。
 . 按一下「 * 新增 * 」。此時將顯示 Add Rule （添加規則）對話框。
 +
 .. 在 [ 名稱 ] 方塊中，輸入描述規則的唯一名稱： * "RootAggrExclude" *

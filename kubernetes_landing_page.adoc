@@ -19,7 +19,7 @@ summary: Kubernetes登陸頁面說明
 
 
 [role="lead"]
-功能強大的《支援資源管理程式》Cloud Insights 工具可顯示Kubernetes叢集的整體健全狀況和使用狀況、讓您輕鬆深入調查領域。
+資料基礎架構 Insights Kubernetes Explorer 是一個強大的工具、可顯示 Kubernetes 叢集的整體健全狀況和使用情形、並可讓您輕鬆深入調查調查領域。
 
 按一下*儀表板> Kubernetes Explorer*即可開啟Kubernetes叢集清單頁面。本總覽頁面包含環境中Kubernetes叢集的表格。
 

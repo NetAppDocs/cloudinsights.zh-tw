@@ -19,7 +19,7 @@ summary: 裝置解決方案可協助您準確追蹤環境中的效能與庫存�
 
 
 [role="lead"]
-您可以建立裝置解析規則、以識別Cloud Insights 目前無法自動識別的主機、儲存設備和磁帶。您所建立的規則可識別環境中目前的裝置、並可識別新增至環境中的類似裝置。
+您可以建立裝置解析規則、以識別目前未由 Data Infrastructure Insights 自動識別的主機、儲存設備和磁帶。您所建立的規則可識別環境中目前的裝置、並可識別新增至環境中的類似裝置。
 
 
 
@@ -57,13 +57,13 @@ NOTE: 按一下「_View matching Criteria _」連結以取得建立規則運算�
 
 . 在*來源*清單中、選取您要用來識別主機的來源。
 +
-根據您選擇的來源Cloud Insights 、畫面上會顯示下列回應：
+視您選擇的來源而定、 Data Infrastructure Insights 會顯示下列回應：
 
 +
-.. *區域*列出Cloud Insights 了需要由下列項目識別的區域和WWN。
-.. * SRM *列出Cloud Insights 需要由VMware識別的不明別名
-.. *儲存別名*列出Cloud Insights 需要由功能介紹的儲存別名和WWN
-.. *交換器別名*會列出Cloud Insights 需要由下列項目識別的交換器別名
+.. * 分區 * 列出資料基礎架構洞見所需識別的分區和 WWN 。
+.. * SRM * 列出需要由 Data Infrastructure Insights 識別的不明別名
+.. * 儲存別名 * 列出需要由 Data Infrastructure Insights 識別的儲存別名和 WWN
+.. * 交換器別名 * 列出需要由 Data Infrastructure Insights 識別的交換器別名
 
 
 . 在「*方法*」清單中、選取您要用來識別主機的方法。
@@ -86,7 +86,7 @@ NOTE: 按一下「_View matching Criteria _」連結以取得建立規則運算�
 | 區域 | 分隔符號、規則運算式 
 |===
 +
-** 使用分隔符號的規則需要分隔符號和主機名稱的最小長度。主機名稱的最小長度為Cloud Insights 用來識別主機的字元數。僅針對這麼長或更長的主機名稱執行DNS查詢。Cloud Insights
+** 使用分隔符號的規則需要分隔符號和主機名稱的最小長度。主機名稱的最小長度是 Data Infrastructure Insights 用來識別主機的字元數。Data Infrastructure Insights 只會針對長或長的主機名稱執行 DNS 查詢。
 +
 對於使用分隔符號的規則、輸入字串會以分隔符號標記、並會建立多個鄰近標記組合的主機名稱候選清單。然後將清單排序、從最大到最小。例如、對於_vipsnq03_hba3_emc3_12ep0_的輸入環、清單會產生下列結果：
 
@@ -119,7 +119,7 @@ NOTE: 按一下「_View matching Criteria _」連結以取得建立規則運算�
 裝置解析度更新會認可自上次執行全自動裝置解析以來所新增的手動變更。執行更新只能用來提交及執行新的手動項目、以供裝置解析度組態使用。不會執行完整的裝置解析度執行。
 
 .程序
-. 登入Cloud Insights 到這個Web UI。
+. 登入 Data Infrastructure Insights Web UI 。
 . 按一下「*管理>裝置解析度*」
 . 在*設備分辨率*屏幕中，單擊*運行AR*按鈕中的向下箭頭。
 . 按一下「*更新*」開始更新。
@@ -138,7 +138,7 @@ NOTE: 按一下「_View matching Criteria _」連結以取得建立規則運算�
 NOTE: 如果來源僅包含主機或裝置名稱的一部分、請使用規則運算式規則並加以格式化、以新增遺失的文字。
 
 .程序
-. 登入Cloud Insights 到這個Web UI。
+. 登入 Data Infrastructure Insights Web UI 。
 . 按一下「*管理>裝置解析度*」
 . 單擊* Fibre Channel identi*（光纖通道識別*）選項卡。
 +
@@ -156,7 +156,7 @@ NOTE: 如果來源僅包含主機或裝置名稱的一部分、請使用規則�
 . 選取符合您需求的方法。
 
 
-從最上層開始、執行主機解析程序的順序。Cloud Insights
+Data Infrastructure Insights 會依照出現方法的順序執行主機解析程序、從頂端開始。
 
 遇到適用的規則時、規則名稱會顯示在規則欄中、並標示為手動。
 

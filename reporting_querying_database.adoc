@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_querying_database.html 
-summary: 使用REST API直接查詢報告資料庫。Cloud Insights 
+summary: 使用 Data Infrastructure Insights API 直接查詢報告資料庫。 
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = 透過API存取報告資料庫
@@ -19,28 +19,28 @@ keywords: reporting, cognos, data warehouse, dwh, API
 
 
 [role="lead"]
-利用功能強大的API、使用者無需經過Cognos報告環境、即可直接查詢功能強大的功能。Cloud Insights Cloud Insights
+Data Infrastructure Insights 強大的 API 可讓使用者直接查詢 Data Infrastructure Insights Reporting 資料庫、而無需瀏覽 Cognos Reporting 環境。
 
 
-NOTE: 本文件是指 Cloud Insights 報告功能、可在 Cloud Insights Premium Edition 中取得。
+NOTE: 本文件是指 Data Infrastructure Insights Premium Edition 中提供的 Data Infrastructure Insights Reporting 功能。
 
 
 
 == OData
 
-以下是《需求報告API Cloud Insights link:https://www.odata.org/["OData v4"] （開放式資料傳輸協定）標準、用於查詢報告資料庫。如需詳細資訊或深入瞭解、請參閱 link:https://www.odata.org/getting-started/basic-tutorial/["本教學課程"] 在OData上。
+Data Infrastructure Insights Reporting API 遵循link:https://www.odata.org/["OData v4"]（開放式資料傳輸協定）標準來查詢報告資料庫。如需更多資訊或深入瞭解、請參閱 link:https://www.odata.org/getting-started/basic-tutorial/["本教學課程"]OData 。
 
-所有申請都會從URL _https://<Cloud Insights URL>/REST / v1/dwh-management / OData_開始
+所有申請都將以 URL \https://<Data 基礎架構洞見 URL>/rest/v1/dwh-management / oData_ 開始
 
 
 
 == 產生APIKey
 
-深入瞭解 link:API_Overview.html["資訊API Cloud Insights"]。
+瞭解更多關於link:API_Overview.html["Data Infrastructure Insights API"]的資訊。
 
 若要產生API金鑰、請執行下列動作：
 
-* 登入Cloud Insights 您的不完整環境、然後選取*管理> API存取*。
+* 登入您的 Data Infrastructure Insights 環境、然後選取 * 管理 > API 存取 * 。
 * 按一下「+ API存取權杖」。
 * 輸入名稱與說明。
 * 針對類型、選擇_Data倉儲。
@@ -55,14 +55,14 @@ APIkeys 很適合 <<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
 
 == 直接查詢資料表
 
-有了API金鑰、現在就能直接查詢報告資料庫。長URL可簡化為\https://.../odata/以供顯示、而非完整的\https://<Cloud Insights url>/rest / v1/dwh管理/OData/
+有了API金鑰、現在就能直接查詢報告資料庫。長 URL 可簡化為 \https://.../odata/ 以供顯示、而非完整的 \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / OData/
 
 請嘗試類似的簡單查詢
 
-* https://<Cloud Insights URL>>/ REST / v1/dwh-management / OData/dwh_custom
-* https://<Cloud Insights URL>>/ REST / v1/dwh-management / OData/dwh_inventory
-* https://<Cloud Insights URL>>/ REST / v1/dwh管理/ OData/dwh庫存/儲存設備
-* https://<Cloud Insights URL>>/ REST / v1/dwh管理/OData/dwh目錄/磁碟
+* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_cCustom
+* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_inventory
+* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_inventory/storage
+* \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData/dwh_inventory/disk
 * \https://.../odata/dwh_custom/custom_queries
 
 
@@ -70,12 +70,12 @@ APIkeys 很適合 <<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
 
 == REST API範例
 
-所有通話的URL都是：_\https://<Cloud Insights url>/rest / v1/dwh-management / OData_。
+所有通話的 URL 為 \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / oData_ 。
 
 * Get /｛schema｝/*-從報告資料庫擷取資料。
 
 
-格式：_\https://<Cloud Insights url>/rest / v1/dwh管理/OData/<schema_name>//<query>_
+格式： \https://<Data 基礎架構洞見 URL>/rest / v1/dwh-management / <schema_name> / <query> _
 
 範例：
 
@@ -134,7 +134,7 @@ APIkeys 很適合 <<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
 
 
 
-您的API金鑰將專屬於Cloud Insights 您的整個環境。
+您的 API 金鑰將專屬於您的 Data Infrastructure Insights 環境。
 
 
 
@@ -147,7 +147,7 @@ APIkeys 很適合 <<synchronous-or-asynchronous,_Sync_ 或 _AsynSync_>>。
 ....
 Status Code: 202 (which means ACCEPTED)
 preference-applied: respond-async
-location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
+location: https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
 ....
 如果回應尚未就緒、查詢位置 URL 會傳回相同的標頭、如果回應準備好、則會傳回狀態 200 。回應內容將為文字類型、包含原始查詢的 http 狀態和部分中繼資料、然後是原始查詢的結果。
 
@@ -161,15 +161,15 @@ HTTP/1.1 200 OK
 ....
 若要查看所有非同步查詢的清單、以及其中哪些查詢已就緒、請使用下列命令：
 
- GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
+ GET https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
 回應的格式如下：
 
 ....
 {
    "queries" : [
        {
-           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
-           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
+           "Query": "https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
+           "Location": "https://<Data Infrastructure Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
            "Finished": false
        }
    ]

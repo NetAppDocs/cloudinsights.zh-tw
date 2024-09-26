@@ -69,7 +69,7 @@ summary: 「工作負載安全性」使用資料收集器從裝置收集檔案�
 
 == 安裝工作負載安全代理程式
 
-. 以系統管理員或帳戶擁有者身分登入Cloud Insights 您的支援環境。
+. 以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。
 . 瀏覽至 Workload Security * Collector* 、然後按一下 * Agents* 標籤。
 . 按一下「*+代理程式*」、並將RHEL指定為目標平台。
 . 複製代理程式安裝命令。

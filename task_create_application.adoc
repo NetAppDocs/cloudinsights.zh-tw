@@ -5,17 +5,14 @@ summary: 您可以視需要定義應用程式、然後套用至環境中的資�
 keywords: application, create application, 
 ---
 = 建立應用程式
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -28,7 +25,7 @@ keywords: application, create application,
 利用此功能、您可以追蹤應用程式相關資產的資料、例如使用量或成本報告。Cloud Insights
 
 .步驟
-. 在「功能表」中、按一下「*管理>應用程式*」Cloud Insights 。
+. 在 Cloud Insights 功能表中、按一下 * 可服務性 > 豐富 > 應用程式 * 。選取
 +
 此時會顯示「新增應用程式」對話方塊。
 

@@ -27,10 +27,10 @@ image:Device_Resolution_IP.png["IP裝置解析度"]
 
 == 手動新增IP裝置
 
-您可以Cloud Insights 使用IP識別畫面中的手動新增功能、將IP裝置手動新增至功能表。
+您可以使用 IP Identify 畫面中的手動新增功能、將 IP 裝置手動新增至 Data Infrastructure Insights 。
 
 .程序
-. 登入Cloud Insights 到Webto UI。
+. 登入 Data Infrastructure Insights Web UI 。
 . 按一下「*管理>裝置解析度*」
 . 按一下「* IP位址識別*」索引標籤。
 . 按一下「*新增*」按鈕。
@@ -74,7 +74,7 @@ NOTE: 最佳實務做法是先將IP位址識別資訊匯出至.CSV檔案、在�
 
 == 將IP裝置識別碼匯出至.CSV檔案
 
-您可以從Cloud Insights 「無法分辨」功能、將現有的IP裝置識別碼匯出至.CSV檔案。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Cloud Insights 到用來識別與原先匯出識別碼類似的裝置的地方。
+您可以從 Data Infrastructure Insights 裝置解析功能、將現有的 IP 裝置識別碼匯出至 .CSV 檔案。您可能會想匯出裝置識別碼、以便修改、然後將其匯入 Data Infrastructure Insights 、以便識別與原本符合匯出識別碼的裝置相似的裝置。
 
 .關於這項工作
 。當裝置具有類似屬性、可在.CSV檔案中輕鬆編輯、然後匯入系統時、可能會使用此案例。
@@ -87,7 +87,7 @@ NOTE: 最佳實務做法是先將IP位址識別資訊匯出至.CSV檔案、在�
 | 地址 | IP | 名稱 
 |===
 .程序
-. 登入Cloud Insights 到這個Web UI。
+. 登入 Data Infrastructure Insights Web UI 。
 . 按一下「*管理>裝置解析度*」
 . 選取「* IP位址識別*」索引標籤。
 . 選取您要匯出識別碼的IP裝置。

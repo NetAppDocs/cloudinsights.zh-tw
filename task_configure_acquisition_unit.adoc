@@ -19,14 +19,14 @@ summary: 採購單位在Windows和Linux上安裝、解除安裝、設定Proxy支
 
 
 [role="lead"]
-使用安裝在本機伺服器上的一或多個擷取單元收集裝置資料。Cloud Insights每個擷取單元都能裝載多個資料收集器、將裝置指標傳送Cloud Insights 到以供分析。
+Data Infrastructure Insights 會使用安裝在本機伺服器上的一或多個擷取單元來收集裝置資料。每個採購單位都可以裝載多個資料收集器、將裝置計量傳送至 Data Infrastructure Insights 以供分析。
 
 本主題說明如何新增擷取單位、並說明當您的環境使用Proxy時所需的其他步驟。
 
 
 NOTE: 為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步擷取裝置機器上的時間。
 
-瞭解 Cloud Insights 安全性 link:security_overview.html["請按這裡"]。
+瞭解 Data Infrastructure Insights 安全性link:security_overview.html["請按這裡"]。
 
 
 
@@ -37,7 +37,7 @@ NOTE: 為確保稽核與資料報告的準確性、強烈建議您使用*網路�
 
 
 .Linux擷取單元安裝步驟
-. 以系統管理員或帳戶擁有者身分登入Cloud Insights 您的支援環境。
+. 以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。
 . 按一下 * 「可服務性」 > 「收集器」 > 「擷取單位」 > + 「擷取單位」 *
 +
 系統會顯示_安裝擷取單元_對話方塊。選擇Linux。
@@ -87,9 +87,9 @@ image:NewLinuxAUInstall.png["Linux AU說明"]
 
 === Proxy組態
 
-擷取單元使用雙向 / 相互驗證來連線 Cloud Insights 至該伺服器。用戶端憑證必須傳遞至 Cloud Insights 驗證伺服器。為達成此目的、必須設定Proxy、將https要求轉送到Cloud Insights 該伺服器、而不需解密資料。
+擷取單元使用雙向 / 相互驗證來連線至 Data Infrastructure Insights 伺服器。用戶端憑證必須傳送至 Data Infrastructure Insights 伺服器、才能進行驗證。若要達成此目的、必須設定 Proxy 將 https 要求轉寄至 Data Infrastructure Insights 伺服器、而無需解密資料。
 
-最簡單的方法是在Proxy /防火牆中指定萬用字元組態、以便與Cloud Insights 下列項目進行通訊：
+最簡單的方法是在 Proxy / 防火牆中指定萬用字元組態、以便與 Data Infrastructure Insights 通訊、例如：
 
  *.cloudinsights.netapp.com
 
@@ -113,7 +113,7 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 .Windows擷取單元安裝步驟
 . 以具有管理員權限的使用者身分登入擷取單元伺服器/ VM。
-. 在該伺服器上、開啟瀏覽器視窗、Cloud Insights 並以系統管理員或帳戶擁有者身分登入您的支援環境。
+. 在該伺服器上、開啟瀏覽器視窗、以管理員或帳戶擁有者身分登入您的 Data Infrastructure Insights 環境。
 . 單擊 *Observe （可觀察） > Collectors （收集器） > Acquisition Units （採集單元） >+Acquisition Unit* （採集單元）。
 +
 系統會顯示_安裝擷取單元_對話方塊。選擇Windows。
@@ -143,9 +143,9 @@ image::NewWindowsAUInstall.png[Windows AU安裝]
 
 === Proxy組態
 
-擷取單元使用雙向 / 相互驗證來連線 Cloud Insights 至該伺服器。用戶端憑證必須傳遞至 Cloud Insights 驗證伺服器。為達成此目的、必須設定Proxy、將https要求轉送到Cloud Insights 該伺服器、而不需解密資料。
+擷取單元使用雙向 / 相互驗證來連線至 Data Infrastructure Insights 伺服器。用戶端憑證必須傳送至 Data Infrastructure Insights 伺服器、才能進行驗證。若要達成此目的、必須設定 Proxy 將 https 要求轉寄至 Data Infrastructure Insights 伺服器、而無需解密資料。
 
-最簡單的方法是在Proxy /防火牆中指定萬用字元組態、以便與Cloud Insights 下列項目進行通訊：
+最簡單的方法是在 Proxy / 防火牆中指定萬用字元組態、以便與 Data Infrastructure Insights 通訊、例如：
 
  *.cloudinsights.netapp.com
 
@@ -174,7 +174,7 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 如果您要解除安裝* Windows *擷取單元：
 
-. 在擷取裝置伺服器/VM上、開啟「控制台」、然後選擇「*解除安裝程式*」。選取Cloud Insights 要移除的「更新擷取單元」程式。
+. 在擷取裝置伺服器/VM上、開啟「控制台」、然後選擇「*解除安裝程式*」。選取要移除的 Data Infrastructure Insights Acquisition Unit 方案。
 . 按一下「解除安裝」、然後依照提示進行。
 
 
@@ -196,7 +196,7 @@ image:ProxyEndpoints_NewTable.png["Proxy端點表格"]
 
 *在*解除安裝AU之後：
 
-. 在 Cloud Insights 中、移至 * 可服務性 > 收集器、然後選取 * 擷取單位 * 標籤。
+. 在 Data Infrastructure Insights 中、前往 * 可服務性 > 收集器、然後選取 * 擷取單位 * 索引標籤。
 . 按一下您想要解除安裝之擷取設備右側的選項按鈕、然後選取_刪除_。只有在未指派任何資料收集器時、您才能刪除擷取單元。
 
 
@@ -218,7 +218,7 @@ image:AU_for_Device_Resolution.png["AU 用於裝置解析度"]
 
 .步驟
 . 登入擷取單元伺服器/VM、然後解除安裝AU軟體。
-. 登入您的 Cloud Insights 環境、前往 * 可服務性 > 收集器 * 。
+. 登入您的 Data Infrastructure Insights 環境、前往 * 可服務性 > 收集器 * 。
 . 針對每個資料收集器、按一下右側的選項功能表、然後選取_Edit_。將資料收集器指派給暫用擷取設備、然後按一下*「Save"（儲存）*。
 +
 您也可以選取相同類型的多個資料收集器、然後按一下*大量動作*按鈕。選擇_Edit_、然後將資料收集器指派給暫用擷取單位。

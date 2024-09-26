@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reporting_user_roles.html 
-summary: 使用「效益報告」的功能Cloud Insights 取決於您的使用者角色。 
+summary: 資料基礎架構洞見報告的功能取決於您的使用者角色。 
 keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
 ---
-= 《報告使用者角色Cloud Insights
+= Data Infrastructure Insights 報告使用者角色
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,14 +19,14 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 
 
 [role="lead"]
-如果您使用Cloud Insights 含報告功能的支援版、Cloud Insights 您環境中的每位支援者也都會有單一登入（SSO）登入報告應用程式（即 Cognos）。只要按一下功能表中的「*報告*」連結、您就會自動登入「報告」。
+如果您有 Data Infrastructure Insights Premium Edition 搭配 Reporting 、則環境中的每位 Data Infrastructure Insights 使用者也都可以登入「報告」應用程式（即 Cognos ）、登入單一登入（ SSO ）。只要按一下功能表中的「*報告*」連結、您就會自動登入「報告」。
 
-您在Cloud Insights 功能方面的使用者角色決定您的報告使用者角色：
+您在 Data Infrastructure Insights 中的使用者角色決定了您的報告使用者角色：
 
 |===
 
 
-| 職務Cloud Insights | 報告角色 | 報告權限 
+| Data Infrastructure Insights 角色 | 報告角色 | 報告權限 
 
 
 | 訪客 | 消費者 | 可檢視、排程及執行報告、並設定個人偏好設定、例如語言和時區的偏好設定。使用者無法建立報告或執行管理工作。 
@@ -88,7 +88,7 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 == 設定報告（Cognos）電子郵件偏好設定
 
 
-NOTE: 如果您變更Cloud Insights 使用者在《不同步報告》（亦即Cognos應用程式）中的電子郵件偏好設定、則這些偏好設定僅會在目前工作階段中啟用_。登出Cognos後再重新登入、將會重設您的電子郵件偏好設定。
+NOTE: 如果您在 Data Infrastructure Insights Reporting （即 Cognos 應用程式）中變更使用者電子郵件偏好設定、則這些偏好設定僅適用於目前的工作階段。登出Cognos後再重新登入、將會重設您的電子郵件偏好設定。
 
 
 
@@ -111,6 +111,6 @@ image:Reporting_Menu.png["Cognos 左上角選單"]
 . 在功能表右上角、選取「複製或移動」
 . 瀏覽至_Team Content_中新建立的資料夾
 . 使用「複製到」或「移到」按鈕、將報告貼到新建立的資料夾
-. 啟用Cognos的SSO後、Cloud Insights 請使用用來建立帳戶的電子郵件地址登入支援中心。
+. 一旦 Cognos 啟用 SSO 、請使用用來建立帳戶的電子郵件地址登入 Data Infrastructure Insights 。
 . 瀏覽至Cognos內的_Team Content_資料夾、然後將先前儲存的報告複製或移回「我的內容」。
 

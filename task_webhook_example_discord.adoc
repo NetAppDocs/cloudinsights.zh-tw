@@ -30,14 +30,14 @@ NOTE: 本頁是指可能會變更的第三方指示。請參閱 link:https://sup
 
 * 在不和中、選取伺服器、在「Text Channeling（文字頻道）」下、選取「Edit Channel（齒輪圖示）」。
 * 選擇*整合>檢視Webhook*、然後按一下*新Webhook*
-* 複製Webhook URL。您必須將此項目貼到Cloud Insights 「Webhook」組態中。
+* 複製Webhook URL。您必須將此內容貼到 Data Infrastructure Insights 網路攔截組態中。
 
 
 
 
-== 建立Cloud Insights Webhook：
+== Create Data Infrastructure Insights Webhook ：
 
-. 在「還原」中、瀏覽至*管理>通知*、然後選取* Webhook*索引標籤。Cloud Insights按一下「*+ Webhing*」建立新的網路連結。
+. 在 Data Infrastructure Insights 中、瀏覽至 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。按一下「*+ Webhing*」建立新的網路連結。
 . 為Webhook命名有意義的名稱、例如「不和」。
 . 在_範本類型_下拉式清單中、選取*不和*。
 . 將上方的URL貼到_url_欄位。
@@ -52,7 +52,7 @@ NOTE: 為了測試Webhook、請暫時將郵件本文中的URL值取代為任何�
 
 == 透過Webhook通知
 
-若要透過Webhook通知事件、請Cloud Insights 瀏覽至*警示>監控器*、然後按一下*+監控*以建立新的 link:task_create_monitor.html["監控"]。
+要通過 Webhook 通知事件，請在 Data Infrastructure Insights 中導航至 *Alerts > Monitors* ，然後單擊 *+Monitor* 以創建新的link:task_create_monitor.html["監控"]。
 
 * 選取度量並定義監視器的條件。
 * 在「設定團隊通知」下、選擇* Webhook *交付方法。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_data_retention.html 
-summary: 資料保留以供報告Cloud Insights 
+summary: 資料基礎架構洞見報告資料保留 
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = 如何保留歷史資料以供報告
@@ -19,7 +19,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 
 
 [role="lead"]
-根據資料市場和資料精細度、將歷史資料保留以供報告使用、如下表所示。Cloud Insights
+Data Infrastructure Insights 會保留歷史資料、以便根據資料的資料特性和精細度、在報告中使用、如下表所示。
 
 |===
 

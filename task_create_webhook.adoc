@@ -5,23 +5,20 @@ keywords: webhook, notification, slack, integration
 summary: 建立監控器以警示效能或庫存臨界值 
 ---
 = 使用Webhooks通知
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 Webhooks可讓使用者使用自訂的Webhooks通道、將警示通知傳送至各種應用程式。
 
-許多商業應用程式都支援Webhooks做為標準輸入介面、例如：可寬延、PagerDuty、Team、和和等都支援Webhooks。藉由支援通用、可自訂的Webhook通路、Cloud Insights 許多此類交付通路均可獲得支援。您可以在這些應用程式網站上找到Webhooks上的資訊。例如、Slack提供 link:https://api.slack.com/messaging/webhooks["這份實用指南"]。
+許多商業應用程式都支援Webhooks做為標準輸入介面、例如：可寬延、PagerDuty、Team、和和等都支援Webhooks。Data Infrastructure Insights 支援一般的客製化網路攔截管道、可支援許多這些交付管道。您可以在這些應用程式網站上找到Webhooks上的資訊。例如， Slack 提供link:https://api.slack.com/messaging/webhooks["這份實用指南"]。
 
 您可以建立多個Webhook通道、每個通道的目標是不同的用途、獨立的應用程式、不同的收件者等
 
@@ -54,7 +51,7 @@ Webhook通路執行個體由下列元素組成：
 
 == 建立Webhook
 
-若要建立Cloud Insights 一個鏈接、請前往*管理>通知*、然後選取* Webhook*索引標籤。
+若要建立 Data Infrastructure Insights Webhook 、請前往 * 管理 > 通知 * 、然後選取 * Webhooks* 標籤。
 
 下圖顯示為Slack設定的Webhook範例：
 
@@ -64,9 +61,9 @@ image:Webhook_Example_Slack.png["Webhook範例"]
 
 您也可以按一下「測試Webhook」按鈕來測試連線。請注意、這會根據所選的方法、將「Message Body（訊息本文）」（不含替代）傳送至定義的URL。
 
-由許多預設參數組成的Webhooks。Cloud Insights此外、您也可以建立自己的自訂參數或機密。
+Data Infrastructure Insights Webhooks 包含許多預設參數。此外、您也可以建立自己的自訂參數或機密。
 
-image:Webhook_Default_Parameters.png["預設Webhook參數Cloud Insights"]
+image:Webhook_Default_Parameters.png["Data Infrastructure Insights 預設 Webhook 參數"]
 
 
 
