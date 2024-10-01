@@ -750,10 +750,8 @@
   <block id="adb831a7fdd83dd1e2a309ce7591dff8" category="cell">訪客</block>
   <block id="0807462d8fba61c18f849a8f66cf58d7" category="cell">可檢視警示和鑑識。來賓角色無法變更警示狀態、新增附註、手動擷取快照或限制使用者存取。</block>
   <block id="d40cbac53e949a73a04e1b3c9429ce6d" category="list-text">在功能表中、按一下*管理&gt;使用者管理*</block>
-  <block id="6ebd484a6c09e27c3b5f9d6a61ad9a6a" category="paragraph">您將會轉寄至Cloud Insights的User Management（使用者管理）頁面。</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">為每位使用者選取所需的角色。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">新增使用者時、只要選擇所需的角色（通常是使用者或訪客）即可。</block>
-  <block id="faac345f3f122d78da73c0bf89c5d9f3" category="paragraph">如需使用者帳戶和角色的詳細資訊、請參閱Cloud Insights 《關於使用者帳戶和角色的資訊 <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文件。</block>
   <block id="591d64253ebae6d71d70584704dad38d" category="doc">設定LDAP目錄伺服器收集器</block>
   <block id="547676b7a40f4e24015e9cd282e24aa1" category="list-text">您必須擁有裝載LDAP目錄伺服器的伺服器IP位址。</block>
   <block id="3c35a2e7fd03ecf1d70e3ccbb970491a" category="list-text">在設定LDAP目錄連接器之前、必須先設定代理程式。</block>
@@ -1073,9 +1071,7 @@
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">建立應用程式</block>
-  <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">若要追蹤與環境中執行的特定應用程式相關的資料、您可以在Cloud Insights 「資訊」中定義應用程式。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。</block>
-  <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">利用此功能、您可以追蹤應用程式相關資產的資料、例如使用量或成本報告。Cloud Insights</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">輸入應用程式的唯一名稱。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">選取應用程式的優先順序。</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
@@ -8407,9 +8403,6 @@
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">對於* APAC型*工作負載安全環境：</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">如果您的環境具有工作負載安全性、則已設定的端點URL也會顯示在此清單中。</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">「工作負載安全性」會根據「Snapshot清除」設定、每天自動刪除快照一次。</block>
-  <block id="1e66f3ea1e335e37bed1a50e1a8bb94c" category="summary">工作負載安全使用者帳戶是透過Cloud Insights 「不受限的使用者管理」來管理</block>
-  <block id="b6ddb5866df8e3256ac245cbce10a9a2" category="paragraph">工作負載安全性使用者帳戶是透過Cloud Insights 功能完善的程序來管理。</block>
-  <block id="c407c269e51ab79aa3aca330eca9d8ee" category="paragraph">提供四種使用者帳戶層級：帳戶擁有者、系統管理員、使用者及來賓。Cloud Insights每個帳戶都會被指派特定的權限等級。擁有系統管理員權限的使用者帳戶可以建立或修改使用者、並將下列其中一個工作負載安全角色指派給每位使用者：</block>
   <block id="b77a904f25ddc84b77fcb809d8f2f86b" category="cell">工作負載安全存取</block>
   <block id="e234e3c5cb64670391b843b3fc72500e" category="cell">可執行所有工作負載安全功能、包括警示、鑑識、資料收集器、自動回應原則、以及工作負載安全API等功能。管理員也可以邀請其他使用者、但只能指派工作負載安全性角色。</block>
   <block id="5a26acadc0fa5b833d36974bd6536459" category="list-text">登入工作負載安全性</block>
@@ -11528,7 +11521,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB傳輸協定3.1版及更早版本。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp 安全性摘要報告</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以檢視 NetApp 的可用安全性摘要報告 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
-  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以視需要定義應用程式、然後套用至環境中的資產。</block>
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">擷取事件導出者 Pod 的名稱：</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">關於機密的備註</block>
@@ -13332,7 +13324,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="429e5ff0d154ea9f0d8b69e75866a8b4" category="list-text">按一下 * 查詢 * 、然後選取 Data Infrastructure Insights 用來識別註釋所套用資產的查詢。</block>
   <block id="a1301e0af88fd655ae64d39d2d7a0e93" category="admonition">在大型 Data Infrastructure Insights 環境中、您可能會發現執行註釋規則似乎需要一段時間才能完成。這是因為索引程式會先執行、而且必須在執行規則之前完成。索引器可讓 Data Infrastructure Insights 在資料中搜尋或篩選新的或更新的物件和計數器。規則引擎會等到索引程式完成更新後再套用規則。</block>
   <block id="df92eb52ff49723465239116d2f4aed4" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 管理 &gt; 附註規則 * 。</block>
-  <block id="0809c964b790df4295890dec5b75e498" category="list-text">在 Cloud Insights 功能表中、按一下 * 可服務性 &gt; 豐富 &gt; 應用程式 * 。選取</block>
   <block id="bd49848e16630c106919628a09948a9c" category="admonition">所有 Data Infrastructure Insights 版本均提供監控和警示功能、但 Basic Edition 必須遵守下列條件： * 您一次最多只能有五個自訂監控器處於作用中狀態。超過五個的任何監視器都會建立或移至_暫停_狀態。*不支援VMDK、虛擬機器、主機和資料存放區度量監控。如果您已針對這些指標建立監控、則這些指標將會暫停、降級至Basic Edition時將無法恢復。</block>
   <block id="80645013d90d9d1449dffdd829fc24a4" category="paragraph">Data Infrastructure Insights 也會根據您的環境提供許多<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>功能。</block>
   <block id="a46093383ff280c45e2e0a8cf945ef64" category="paragraph">Data Infrastructure Insights 警示旨在強調您環境中的資料點和趨勢、而 Data Infrastructure Insights 可讓您以警示接收者的身份輸入任何有效的電子郵件地址。如果您是在安全的環境中工作、請特別留意誰收到通知、或是以其他方式有權存取警示。</block>
@@ -13438,4 +13429,13 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Data Infrastructure Insights 租戶中應該是獨一無二的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
   <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">MetroCluster 的建議組態</block>
   <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">MetroCluster 建議使用下列項目：</block>
+  <block id="f80f3d49464581261837031819491342" category="summary">您可以視需要定義應用程式、然後套用至環境中的資產。</block>
+  <block id="b13c7fc8e7d731532637ee70388e60c6" category="paragraph">若要追蹤與環境中執行的特定應用程式相關的資料、您可以在 Data Infrastructure Insights 中定義應用程式。</block>
+  <block id="ba52eab802a385ced7d6e9782614bf0b" category="paragraph">Data Infrastructure Insights 可讓您追蹤與應用程式相關的資產資料、以利使用或成本報告等工作。</block>
+  <block id="91ee28fc3faa982ecdc71598fe7ce8b9" category="list-text">在 Data Infrastructure Insights 功能表中、按一下 * 可觀察性 &gt; 豐富 &gt; 應用程式 * 。選取</block>
+  <block id="90fbffa9ff3e21a719cc9451531fc673" category="summary">工作負載安全性使用者帳戶是透過 Data Infrastructure Insights 使用者管理來管理</block>
+  <block id="6afa550edbd038252585482045e7d48e" category="paragraph">工作負載安全性使用者帳戶是透過 Data Infrastructure Insights 來管理。</block>
+  <block id="02598d7e3c811d7e921678ae0729a2a6" category="paragraph">Data Infrastructure Insights 提供四種使用者帳戶層級：帳戶擁有者、系統管理員、使用者和訪客。每個帳戶都會被指派特定的權限等級。擁有系統管理員權限的使用者帳戶可以建立或修改使用者、並將下列其中一個工作負載安全角色指派給每位使用者：</block>
+  <block id="de07c612d573c4710cb7e561e6de98b4" category="paragraph">您將被轉寄至 Data Infrastructure Insights 的「使用者管理」頁面。</block>
+  <block id="1c823102aa56424a5f80a9b5c5c2fdff" category="paragraph">如需使用者帳戶和角色的詳細資訊、請參閱 Data Infrastructure Insights <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文件。</block>
 </blocks>

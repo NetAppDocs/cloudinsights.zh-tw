@@ -16,16 +16,16 @@ keywords: application, create application,
 
 
 [role="lead"]
-若要追蹤與環境中執行的特定應用程式相關的資料、您可以在Cloud Insights 「資訊」中定義應用程式。
+若要追蹤與環境中執行的特定應用程式相關的資料、您可以在 Data Infrastructure Insights 中定義應用程式。
 
 .開始之前
 如果您想要將應用程式與企業實體建立關聯、則必須先建立企業實體、才能定義應用程式。
 
 .關於這項工作
-利用此功能、您可以追蹤應用程式相關資產的資料、例如使用量或成本報告。Cloud Insights
+Data Infrastructure Insights 可讓您追蹤與應用程式相關的資產資料、以利使用或成本報告等工作。
 
 .步驟
-. 在 Cloud Insights 功能表中、按一下 * 可服務性 > 豐富 > 應用程式 * 。選取
+. 在 Data Infrastructure Insights 功能表中、按一下 * 可觀察性 > 豐富 > 應用程式 * 。選取
 +
 此時會顯示「新增應用程式」對話方塊。
 
