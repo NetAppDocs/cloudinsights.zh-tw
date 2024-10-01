@@ -221,9 +221,9 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
 
 
 
-== Metro叢集的建議組態
+== MetroCluster 的建議組態
 
-以下是Metro叢集的建議：
+MetroCluster 建議使用下列項目：
 
 . 將兩個資料收集器連接至來源SVM、另一個連接至目的地SVM。
 . 資料收集器應由_叢集IP_連線。

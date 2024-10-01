@@ -7536,8 +7536,6 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">以下是具有適當cisys權限的範例檔案。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">我看到「不明程式碼」訊息出現資料收集錯誤</block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM有多種子類型。其中僅支援_default_、_sync來源_和_sync目的地_。</block>
-  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Metro叢集的建議組態</block>
-  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">以下是Metro叢集的建議：</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">將兩個資料收集器連接至來源SVM、另一個連接至目的地SVM。</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">資料收集器應由_叢集IP_連線。</block>
   <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">在任何時候、一個資料收集器都應該在執行中、另一個則會發生錯誤。</block>
@@ -13438,4 +13436,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">下表和影像顯示 PagerDuty 和 Data Infrastructure Insights 之間的欄位對應：</block>
   <block id="55f37f5127b4085cc0881e89df336196" category="cell">相較於 Data Infrastructure Insights 泊塢視窗 repo 、 dockerRepo 會置換以從「客戶」的「私有」泊塢視窗中提取影像。預設為 Data Infrastructure Insights 泊塢視窗 repo</block>
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Data Infrastructure Insights 租戶中應該是獨一無二的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
+  <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">MetroCluster 的建議組態</block>
+  <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">MetroCluster 建議使用下列項目：</block>
 </blocks>
