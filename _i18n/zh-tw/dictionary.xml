@@ -6778,7 +6778,6 @@
   <block id="1f8b818f4293753ecccccb3658724264" category="cell">Azure服務主要用戶端ID</block>
   <block id="0e757fe26f665bc621b03e67b77a504e" category="cell">Azure的登入ID</block>
   <block id="4c1f41eaa0af3f20d444330795485cd2" category="cell">Azure租戶ID</block>
-  <block id="2ba0bf6c3054dbad944b3c324f8dd4f6" category="list-text">您的ANF資料收集器所使用的認證資料、不得存取任何包含ANF Volume的Azure訂閱。</block>
   <block id="5813234f9a5bd764a03739c8b7797a1b" category="list-text">如果讀取器存取導致效能集合失敗、請嘗試在資源群組層級授予參與者存取權。</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="sidebar">安全性</block>
@@ -13016,7 +13015,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="e5e173192c2f69b363ad91f5ed6b33d3" category="paragraph">BlueXP可讓您從單一介面管理所有NetApp儲存設備和資料資產。在BlueXP中、您會發現許多新的儲存服務、以及先前只能以獨立服務的形式提供、並有獨立的UI。資料基礎架構洞見（前身為 Cloud Insights ）是其中一項服務。</block>
   <block id="fde977b4517b5a88b8ee2d3fcd1c0fd8" category="paragraph">在BlueXP的導覽功能表中、直覺式的新功能表會依類別來組織資料服務、並根據其功能來命名。例如、「 Data Infrastructure Insights 」功能集位於「 Observ可見 度」功能表中。當您探索 Data Infrastructure Insights 時、導覽功能表頂端會出現「可觀察性」區段。您探索時、每項BlueXP服務都是如此。</block>
   <block id="9ecae0812a01df2d2809eccbaae9fb2d" category="admonition">在本文件中、「資料基礎架構洞見」和「可觀察性」兩個詞彙可互換使用。</block>
-  <block id="fed6c86359bd4096089340c1d5328e42" category="cell">需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 的連線能力、從擷取單元連線至 * NetApp 。 cloudentses.com 或您的資料基礎架構 Insights 環境（例如： https ： &lt;environment_id&gt; 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
   <block id="c0775283da3261d158df55d820b4e47b" category="paragraph">您可以開始使用只有 8GB 記憶體和 50GB 磁碟空間的 Data Infrastructure Insights 擷取單元、但是對於較大型的環境、您應該自問下列問題：</block>
   <block id="cde8307fb591a6c3934539dcb5919f06" category="list-text">在 Data Infrastructure Insights Federal Edition 叢集中安裝擷取單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。</block>
   <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料</block>
@@ -13401,7 +13399,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="90c8925e0cc3bad3ddb84b5af67af65a" category="paragraph">如果您訂閱了有效的 Data Infrastructure Insights 、您可以使用下列支援選項：</block>
   <block id="d51985e049703c2b8608d2bdcb0a3479" category="inline-link">Data Infrastructure Insights 支援文件</block>
   <block id="e7611d76087ecbbfabb3ffdc7d9b6c93" category="paragraph">如需詳細資訊，請參閱<block ref="e02ff98dd704948b513a359b140be8d8" category="inline-link-rx"></block>。</block>
-  <block id="8c4bd711b7fe143e6ba54e95872f1c4f" category="cell">確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ &lt;environment-name&gt; 。 NetApp .com ）。請嘗試下列命令： _ping &lt;environment-name&gt; &lt;environment-name&gt; 。 c01. cloudinsations.com_ _traceroute &lt;environment-name&gt; NetApp 。 c01. cloudsations.com_ _curl \https ： NetApp &lt;environment-name&gt; NetApp 。 c01. cloudamses.com_ _wGET \https ： NetApp 。 c01. cloudinsations.com_</block>
   <block id="f0ab3792dda9e2a3fae5b0129cc207ac" category="cell">在 Data Infrastructure Insights 中、擷取單元安裝失敗、並在啟動擷取服務時出現認證錯誤（可在 acq.log 中看到）。</block>
   <block id="e467d9b04f6bf31dc4004028603c87c7" category="cell">採購單位（ AU ）每 60 秒向 Data Infrastructure Insights 傳送一次活動訊號、以續約。如果活動訊號通話因網路問題或 Data Infrastructure Insights 無回應而失敗、 AU 的租用時間將不會更新。當 AU 的租用時間到期時、 Data Infrastructure Insights 會顯示「心跳失敗」狀態。疑難排解步驟：檢查擷取單元伺服器與CloudInsights之間的網路連線。檢查擷取單元服務是否正在執行。如果服務未執行、請啟動服務。查看擷取設備記錄（/var/log/NetApp/cloudinss/acq/acq.log）、查看是否有任何錯誤。</block>
   <block id="b1260e2bc601bf885eaa981883335e26" category="cell">如果網路中斷導致擷取單元和 Data Infrastructure Insights 環境之間的通訊中斷超過一分鐘、就可能發生此錯誤。確認 AU 與 Data Infrastructure Insights 之間的連線穩定且有效。</block>
@@ -13438,4 +13435,7 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="02598d7e3c811d7e921678ae0729a2a6" category="paragraph">Data Infrastructure Insights 提供四種使用者帳戶層級：帳戶擁有者、系統管理員、使用者和訪客。每個帳戶都會被指派特定的權限等級。擁有系統管理員權限的使用者帳戶可以建立或修改使用者、並將下列其中一個工作負載安全角色指派給每位使用者：</block>
   <block id="de07c612d573c4710cb7e561e6de98b4" category="paragraph">您將被轉寄至 Data Infrastructure Insights 的「使用者管理」頁面。</block>
   <block id="1c823102aa56424a5f80a9b5c5c2fdff" category="paragraph">如需使用者帳戶和角色的詳細資訊、請參閱 Data Infrastructure Insights <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文件。</block>
+  <block id="69c52a98fd6ac1af9c029f8130d87174" category="cell">需要 100 Mbps/1 Gbps 乙太網路連線、靜態 IP 位址、以及連接埠 80 或 443 （輸出）連線、從擷取單元連線至 * 。 NetApp .com 或您的資料基礎架構 Insights 環境（例如： https ： &lt;environment_id&gt; 。 C01 。 NetApp 。 com ）。如需擷取單元與每個資料收集器之間的需求、請參閱的說明<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的組織需要使用代理伺服器來存取網際網路、您可能需要瞭解組織的代理伺服器行為、並尋求特定例外情況、才能讓 Data Infrastructure Insights 運作。例如、貴組織是否預設會封鎖存取、而且例外情況下只允許存取特定網站/網域？如果是這樣，您將需要將以下域添加到例外列表中： *.cloudinsights ． NetApp ． com 有關詳細信息，請參閱關於代理<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="bcc67dcf3160279519f285187982cfdb" category="list-text">您的 ANF 資料收集器所使用的認證資料、必須能夠存取任何包含 ANF Volume 的 Azure 訂閱。</block>
+  <block id="631118e6a302427a45c08e77b6d37e3b" category="cell">確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ &lt;environment-name&gt; 。 NetApp .com ）。請嘗試下列命令： _ping &lt;environment-name&gt; 。 C01 。 cloudinsights 。 NetApp 。 com_ _traceroute &lt;environment-name&gt; NetApp 。 C01 。 cloudsights 。 NetApp 。 com_ _curl \https ： &lt;environment-name&gt; 。 C01 。 cloudentses.com_ _wGET \https ： &lt;environment-name&gt; 。 NetApp 。注意：需要從 AU 開啟連接埠 443 、以進行輸出資料。</block>
 </blocks>

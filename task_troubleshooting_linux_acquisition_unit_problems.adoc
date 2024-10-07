@@ -36,7 +36,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | 伺服器需求未達到 | 確保您的採購單位伺服器或VM符合要求 link:concept_acquisition_unit_requirements.html["需求"] 
 
 
-| 未符合網路需求 | 確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ <environment-name> 。 NetApp .com ）。請嘗試下列命令： _ping <environment-name> <environment-name> 。 c01. cloudinsations.com_ _traceroute <environment-name> NetApp 。 c01. cloudsations.com_ _curl \https ： NetApp <environment-name> NetApp 。 c01. cloudamses.com_ _wGET \https ： NetApp 。 c01. cloudinsations.com_ 
+| 未符合網路需求 | 確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ <environment-name> 。 NetApp .com ）。請嘗試下列命令： _ping <environment-name> 。 C01 。 cloudinsights 。 NetApp 。 com_ _traceroute <environment-name> NetApp 。 C01 。 cloudsights 。 NetApp 。 com_ _curl \https ： <environment-name> 。 C01 。 cloudentses.com_ _wGET \https ： <environment-name> 。 NetApp 。注意：需要從 AU 開啟連接埠 443 、以進行輸出資料。 
 
 
 | Proxy伺服器設定不正確 | 驗證您的Proxy設定、並視需要解除安裝/重新安裝接收裝置軟體、以輸入正確的Proxy設定。1.嘗試「捲曲」。請參閱「man curl」代理伺服器相關資訊/文件：--preproxy,--proxy-*（這是萬用字元「*」、因為cURL支援許多代理伺服器設定）。2.嘗試「wGet」。請參閱文件以取得Proxy選項。 

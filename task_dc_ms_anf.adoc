@@ -76,7 +76,7 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-ser
 
 == 疑難排解
 
-* 您的ANF資料收集器所使用的認證資料、不得存取任何包含ANF Volume的Azure訂閱。
+* 您的 ANF 資料收集器所使用的認證資料、必須能夠存取任何包含 ANF Volume 的 Azure 訂閱。
 * 如果讀取器存取導致效能集合失敗、請嘗試在資源群組層級授予參與者存取權。
 
 
