@@ -11924,7 +11924,6 @@ Aggregate ： REST 不再報告 aggr0 。
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">模組評估</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">您也可以利用 * 模組評估 * 。例如、如果您已訂閱基礎架構可服務性、但正在將 Kubernetes 新增至您的環境、則從安裝 NetApp Kubernetes 監控操作員開始、您將自動進行 Kubernetes 可服務性的 30 天評估。在評估期間結束時、您的 Kubernetes Observ易 受管理單元使用量僅需支付費用。</block>
   <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">請記住、評估後、您將會被收取新的管理單元（ MU ）使用費用、因此請務必做好相應的規劃。當模組評估結束時、系統會通知您是否需要新增更多 MU 、以避免服務中斷。</block>
-  <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模組評估期間、您不會變更用於模組之資源的 MU 使用量、 但您可以開啟 * 評估者 * （在 _ 摘要 _ 索引標籤上）、查看評估後 MU 的收費方式、以及使用「假設」情境、以及未來可能需要的 MU 數量。請離開 Estimator 以重設數字。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">請注意、每次訂閱只能進行一次模組評估。</block>
   <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">* Count*：顯示已在指定時間範圍內報告資料的物件_count_。您可以選擇由儀表板時間範圍決定的 _ 整個時間範圍 _ 。</block>
@@ -12646,7 +12645,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="267ff18a74a9df19266142dc71925a29" category="section-title">如果我的 * 訂閱 * 已過期怎麼辦？</block>
   <block id="5ee83dda0a980eba56098446eee3b5e4" category="admonition">您的 Data Infrastructure Insights 資料會在寬限期後 30 天內保持不變。如果您在此期間內續約、則直到寬限期結束為止的所有資料都可供您使用。</block>
   <block id="ed1fbcb7f668aa56f9f3d98fe312ea0c" category="admonition">_ 模組評估 _ 並非試用 _ - 我們提供客戶免費試用期、以使用 Data Infrastructure Insights 服務來確認是否適合並啟用購買。模組評估不同、這是我們允許付費客戶試用資料基礎架構 Insights 單元、而這些單元在最近幾個月的付費訂閱中並未使用。當評估生效時、只會免除新設定模組的費用。工作環境的客戶仍在訂閱中、尚未恢復免費試用。訂閱尚未變更。</block>
-  <block id="8155adb227486698b8e777b82a8fc369" category="paragraph">資料基礎架構 Insights 基礎架構可服務性和 Kubernetes 可服務性是根據 * 受管理單元 * 來計量。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
   <block id="daba1c6ff8590913bcb10d43d3bfcf13" category="admonition">現有的 Workload Security 訂閱會調整其 MU 使用量、使節點使用率不會佔用託管單位。資料基礎架構 Insights 計量表的使用量、確保符合授權使用的法規要求。</block>
   <block id="0313fe3f07d732172e3b8700c1cea6f1" category="paragraph">您必須將資料基礎架構洞見 * 序號 * 提供給 NetApp 銷售代表、才能將付費訂閱套用至您的資料基礎架構洞見環境。序號可唯一識別您的 Data Infrastructure Insights 試用環境、並可在 * 管理 &gt; 訂閱 * 頁面上找到。</block>
   <block id="75df7bd83cb6391af3c2bb23c74cb72d" category="admonition">您必須是帳戶擁有者或管理員、才能將 AWS Marketplace 訂閱套用至現有的 Data Infrastructure Insights 試用帳戶。此外、您必須擁有Amazon Web Services（AWS）帳戶。</block>
@@ -13441,4 +13439,16 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到 Telegraf 發出的警告訊息類似以下內容： _W! [Inputs.DiskIO] 無法收集「 VDC 」的磁碟名稱：讀取 /dev/VDC 時發生錯誤：沒有此類檔案或目錄 _</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">駕駛員的組態選項</block>
   <block id="9de6368f45ca30e61d7d6eb11d0da5a5" category="cell">對於 Kubernetes Monitoring 操作員而言、這些警告訊息是良性的、可以安全地忽略。或者、在 AgentConfiguration 中編輯 Telegraf 區段、並將 RunPrivileged 設為 true 。如需詳細資訊、請<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="c2a794ea709fc6031fad37bbb11353ed" category="paragraph">在模組評估期間、您不會為模組所使用的資源收取 MU 使用費、但您可以開啟 * 評估工具 * （位於 _ 摘要 _ 索引標籤）、查看評估後 MU 的收費方式、以及在未來可能需要多少 MU 的情況下、使用「假設」情境。請離開 Estimator 以重設數字。</block>
+  <block id="6b3c6b1f0dcfdec2952b9d7ebe9ff11f" category="paragraph">資料基礎架構 Insights 可觀察性的計量方式有兩種：</block>
+  <block id="5e787d0212aa58a0466b454df1baca59" category="list-text">容量計量</block>
+  <block id="662fe1d2a1a3efd75d89fbc577bfbc93" category="list-text">託管單元計量（舊版）</block>
+  <block id="507a2c5714efe8c42af4cb4e8c6a1db9" category="paragraph">您的訂閱將根據您現有的訂閱或是啟動新的訂閱、以下列其中一種方式進行計量。</block>
+  <block id="45dfbbe96d29f311a340f91e2da71bef" category="paragraph">資料基礎架構 Insights 根據您環境中的儲存層來觀察計量使用量。您可能有屬於以下一或多個類別的儲存區：</block>
+  <block id="6e52566e82d306ca143ec27c3c65784e" category="list-text">主要原始</block>
+  <block id="c3a44b5ae4d0db1da47414cf32828287" category="list-text">物件原始</block>
+  <block id="49a22ea7d938494c1ed0f89b1259e69d" category="list-text">雲端已耗用</block>
+  <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">每個層都以不同的速率計量、並一起計算整個層級、以提供 _ 有效的權利 _ 。計算有效使用量的公式如下：</block>
+  <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標、 DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號、只有在有效探索到的容量大於有效權利時才會宣告違反。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
+  <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">資料基礎架構 Insights 基礎架構可服務性和 Kubernetes 可服務性計量表使用量（依 * 受管理單元 * ）。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
 </blocks>
