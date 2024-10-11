@@ -239,7 +239,7 @@ MetroCluster 建議使用下列項目：
 
 == 服務原則
 
-如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。
+如果將服務原則搭配 ONTAP * 9.9.1 版或更新版本 * 使用、則為了連線至資料來源收集器、需要 _data-fpolicy_client_ 服務、以及資料服務 _data-NFS_ 和 / 或 _data-CIFS_ 。
 
 範例：
 

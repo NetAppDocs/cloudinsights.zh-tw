@@ -7538,7 +7538,6 @@
   <block id="6d1fbd196541e759b0a79fdf2b671bcd" category="list-text">每當有切換時、資料收集器的狀態會從「執行中」變更為「錯誤」、反之亦然。</block>
   <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">資料收集器從「錯誤」狀態移至「執行中」狀態最多需要兩分鐘的時間。</block>
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">服務原則</block>
-  <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果使用ONTAP 的服務原則來自於更新版本9.9.1、為了連線至資料來源收集器、則必須提供_data-fpolice-client_服務以及資料服務_data-NFS_和/或_data-CIFS_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.9.1之前的ONTAP 版本中、不需要設定_data-fpolice-client_。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">附註：如果您已安裝最新的NetApp Kubernetes監控操作員、並使用可續約的API存取權杖、即將到期的權杖將自動由新的/重新整理的API存取權杖取代。不需要執行下列手動步驟。</block>
   <block id="3337a607cd5a33d6b8d3f27ce7da458d" category="cell">API版本</block>
@@ -13451,4 +13450,5 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">每個層都以不同的速率計量、並一起計算整個層級、以提供 _ 有效的權利 _ 。計算有效使用量的公式如下：</block>
   <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標、 DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號、只有在有效探索到的容量大於有效權利時才會宣告違反。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">資料基礎架構 Insights 基礎架構可服務性和 Kubernetes 可服務性計量表使用量（依 * 受管理單元 * ）。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
+  <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">如果將服務原則搭配 ONTAP * 9.9.1 版或更新版本 * 使用、則為了連線至資料來源收集器、需要 _data-fpolicy_client_ 服務、以及資料服務 _data-NFS_ 和 / 或 _data-CIFS_ 。</block>
 </blocks>
