@@ -5,17 +5,14 @@ summary: 您可以檢視知識庫文章、與NetApp社群連線、觀看影片�
 keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = 正在申請支援
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 

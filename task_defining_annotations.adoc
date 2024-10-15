@@ -5,17 +5,14 @@ keywords: annotations, monitor, notes, tags
 summary: 使用註釋追蹤資料。 
 ---
 = 定義註釋
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

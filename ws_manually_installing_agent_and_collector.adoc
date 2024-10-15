@@ -4,8 +4,7 @@ permalink: ws_manually_installing_agent_and_collector.html
 keywords: install, configure, agent, collector, workload, security, cloud secure 
 summary: 工作負載安全性代理程式可以手動安裝或更新、讓您更能掌控環境中安裝的軟體。 
 ---
-= 手動安裝 Workload Security Agent 和 Collector
-:hardbreaks:
+= 手動安裝工作負載安全性代理程式與收集器：硬中斷：
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

@@ -4,13 +4,12 @@ permalink: cs_alert_data.html
 keywords: alert, attack, ransomware, activity, security, abnormal 
 summary: 當使用者活動異常或可能遭受攻擊時、「工作負載安全性」會建立警示。「警示」頁面會列出這些活動、以便快速輕鬆地進行調查。 
 ---
-= 警示
-:hardbreaks:
+= 警示：硬中斷：
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

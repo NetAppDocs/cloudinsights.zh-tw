@@ -5,7 +5,12 @@ keywords: workload security, cloud secure, include list, allowed, file types, ra
 summary: 新增檔案副檔名至允許的檔案類型清單、以減少警示。 
 ---
 = 允許的檔案類型原則
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

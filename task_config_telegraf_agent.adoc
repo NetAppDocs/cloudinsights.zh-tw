@@ -5,17 +5,14 @@ keywords: telegraf, agent, telegraf agent
 summary: Data Infrastructure Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。 
 ---
 = 設定代理程式以收集資料（ Windows/Linux ）
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

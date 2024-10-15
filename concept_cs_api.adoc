@@ -4,8 +4,7 @@ permalink: concept_cs_api.html
 keywords: api, access, token, swagger 
 summary: 工作負載安全性包含功能強大的API、可與其他應用程式（例如CMDB）整合。 
 ---
-= 工作負載安全API
-:hardbreaks:
+= 工作負載安全 API ：硬中斷：
 :allow-uri-read: 
 :nofooter: 
 :icons: font

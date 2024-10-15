@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: infrastructure_change_analytics.html 
+keywords: changes, management, analysis, infra, infrastructure 
+summary: Cloud Insights 會追蹤基礎架構的變更、以便輕鬆進行分析和疑難排解。 
+---
+= 基礎架構變更分析
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+基礎架構變更分析可讓您一體化檢視環境中基礎架構（儲存設備、交換器等）最近的變更。利用變更分析、您可以追蹤組態變更、並深入瞭解預期和非預期的問題。
+
+
+
+== 基礎架構變更分析有何幫助？
+
+在任何環境中、由於設定不當、電力中斷等原因、可能會對儲存設備或裝置進行變更。變更分析可提供單一窗格來檢視裝置的健全狀況、並將其與停機或計畫性變更建立關聯、藉此協助您達成此目標。變更會隨每個庫存輪詢一起計算（在新收集器的第一次輪詢之後）。
+
+若要分析基礎架構變更、請瀏覽至 * 可服務性 > 變更分析 * 。會列出目前時間範圍的警示和組態變更。警示列會顯示目前警示狀態（作用中或已解決）。
+
+image:infraChange_list_example.png["基礎架構變更分析主畫面"]。
+
+選取清單中的項目將會開啟滑出窗格、提供警示或變更的詳細資訊。
+
+image:infraChange_config_detail.png["組態變更詳細資料窗格範例"]
+
+
+
+== 篩選
+
+如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、您可以根據特定資產類型（ _ 觸發於：類型 _ ）進行篩選、以及 / 或僅針對具有特定名稱的資產進行篩選（ _ 觸發於：名稱 _ ）、或是選取 ｛ + ）按鈕來新增您自己的篩選條件。
+
+image:infraChange_filter_dropdown.png["基礎架構變更篩選下拉式功能表"]
+
+您也可以直接前往「重要警示」或篩選設定下方的狀態區段變更、包括目前三大資源中警示最多的資源。
+
+image:Change_Analysis_filters_and_status.png["警示和變更的狀態和快速連結"]
+
+
+
+== 分析哪些物件以進行變更？
+
+下表列出基礎架構變更分析所包含的物件和屬性。
+
+|===
+
+
+| 物件類型 | 屬性 | 延伸屬性 
+
+
+| 磁碟 | disksize.total isVirtual diskGroup 速度類型位置 serialNumber 角色狀態廠商模式 storage.name storagePools.name 名稱 | 已加密 
+
+
+| 儲存設備 | datasources.name 系列 IP IsActive microcodeVersion 型號名稱傳輸協定 serialNumber 廠商 |  
+
+
+| StorageNode | 名稱 storage.name nodeVersion 模型 serialNumber OfProcessors 狀態為 partner.name 快取記憶體 | managementIpsAddresses parentSerialNumber SiteName 
+
+
+| StoragePool | 名稱類型 isAutoTiering isVirtual 備援廠商層級 usesFlashPools 儲存設備 .vendor 儲存設備 .IP 儲存設備 .model 儲存設備 .family storage.name storageNodes.name capate.total （動態屬性） | isCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer 
+
+
+| qtree | 鍵入 datasources.name securityStyle isoplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name internalVolume.virtualStorage simpleName 狀態 Text 名稱 |  
+
+
+| StorageVirtualMachine | 名稱 storage.name 狀態類型 IPSpace 通訊協定 internalVolumeLimit 註解 |  
+
+
+| Volume | 名稱 simpleName 標籤類型 storage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioneddiskGroup isMainframe Ismaeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name storagePools.usesFlashPools internalVolume.virtualStorage storageNodes.name storageNodes.partner.name storageVirtualMachine.name storagePools.minDiskSize.total storagePools.minDiskSpeed storagePools.minDiskType storagePools.name storagePools.pols.revols.apoles.storage | storageGroups 已加密的受壓已啟用 qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw 
+
+
+| 內部Volume | flashPoolEligibility 名稱 simpleName spaceguaranteer 狀態類型 virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storagePool.disks.disksize.total storage.name storage.Vendor storage.IP storage.model storage.family storagePool 。 speed storageVirtualMachine.name storagePool 。 redund冗 餘 storagePool.name storagePool 。 disks.type storagePool.usesFlashPools capacity.isThinProvisioneded | qosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS 註釋 isEncrypted adaptiveQosPolicy 輔助路徑對象 StoreTieringPolicy 分層 MinimumCoolingDays 
+
+
+| 虛擬機器 | 名稱 dnsName IP OS 記憶體處理器 guestState powernatehost.name host.clustername host.ip host.os datastore.name | instanceType publicIps 安全性群組 virtualCenterIp 
+
+
+| 資料存放區 | 名稱 virtualCenterIp | 類型 
+
+
+| 主機 | 名稱模式 IP IsActive OS 製造商 CPUCount 記憶體 isHypervisor 叢集名稱 | 虛擬化 CenterIp 
+
+
+| VMDK （虛擬機器磁碟） | 名稱類型 datastore.name isRdm virtualMachine.host.name virtualMachine.name | isSnapshot 
+
+
+| 連接埠 | 名稱 IsActive WWN 類型 portIndex 刀鋒速度 gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.WWN 控制器 device.name device.type fabrics.name Fabrics.vsanId nodeWwn | 說明 
+|===
+<<<<<<<< 資料基礎架構分析負責人會列出針對下列記錄所建立的警示和變更：
+
+[]
+====
+Data Infrastructure Insights 會列出針對下列記錄所建立的警示和變更： >>>>> 2d5e94b3615a400bce1e7a050d2d523cc06b5b8
+
+* logs.vmware.events
+* NetApp 。 EMS
+
+
+也會監控上方清單中的物件和屬性。在監控器中、必須在 _ 群組依據 _ 選項中選取這些選項、變更分析才能追蹤它們。
+
+====

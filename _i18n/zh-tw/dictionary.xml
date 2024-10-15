@@ -5891,7 +5891,6 @@
   <block id="980f5623653765df97f3aa85517e59d4" category="section-title">Cloud Central產品功能表</block>
   <block id="5e0f4fcd8e020652408a2ed8c1c6513d" category="list-text">可讓您切換至其他NetApp Cloud Central產品的功能表已移至畫面右上角。</block>
   <block id="a2c01caa68fd6219777bc4e45ae6bcf9" category="summary">鑑識使用者詳細資料</block>
-  <block id="0165cb96455a1e606acc88df8cbdf5ca" category="doc">鑑識使用者總覽</block>
   <block id="46908a81012f08e6ddb150123e078dfa" category="paragraph">每位使用者的資訊都會在「使用者總覽」中提供。使用這些檢視來瞭解使用者特性、相關實體及最近的活動。</block>
   <block id="69d45fa7ab318401ed2859781d5d2daf" category="paragraph">使用者設定檔資訊包括聯絡資訊和使用者位置。設定檔提供下列資訊：</block>
   <block id="08418257ab1b725d0b94e0a07d943fe8" category="list-text">使用者名稱</block>
@@ -11606,7 +11605,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">更新版本。Data ONTAP為獲得最佳效能、請使用高於 9.13.1 的 Data ONTAP 版本。</block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">如需詳細資訊、請參閱 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST Data Collector</block>
-  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST 資料收集器</block>
   <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS –直接衍生自節點物件上的 ONTAP REST 通話。</block>
   <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">延遲–直接衍生自節點物件上的 ONTAP REST 通話。</block>
   <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">處理量–直接衍生自節點物件上的 ONTAP REST 通話。</block>
@@ -11645,7 +11643,6 @@ Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">按一下 * 工作負載安全性 &gt; 收集器 &gt; + 資料收集器 *</block>
   <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">工作負載安全代理程式</block>
   <block id="13dc8fdf158db5a2d5b4333f157d56f1" category="summary">一般 DB 主機解析程式收集器</block>
-  <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp 通用 DB 主機解析程式</block>
   <block id="bf69c00bf7c53458f130b812692fec27" category="paragraph">此資料收集器會取得庫存</block>
   <block id="7cfb24a71b3d4346f06e58f1c56504c4" category="cell">DB 伺服器 IP 位址</block>
   <block id="fc0adf601bb47f61aeb001d2ca0fd014" category="cell">DB 伺服器的 IP 位址</block>
@@ -11773,8 +11770,6 @@ Proxy ：
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作負載健全狀況一覽 * Kubernetes &gt; Explore &gt; Workload * 頁面、讓您快速瞭解哪些工作負載效能良好、哪些工作負載可能需要一些協助。輕鬆識別健全狀況問題是否與基礎架構、網路或組態變更有關、並深入分析根本原因。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Kubernetes 的資料收集器</block>
-  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">資料收集器： Kubernetes</block>
-  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubernetes 監控營運商的安裝與組態</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Pod 對儲存裝置的範例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubernetes Change Analytics 提供您 K8s 環境最近變更的全方位檢視。警示和部署狀態盡在您的掌握之中。利用 Change Analytics 、您可以追蹤每個部署和組態變更、並將其與 K8s 服務、基礎架構和叢集的健全狀況和效能建立關聯。</block>
@@ -12231,7 +12226,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">嘗試增加基礎作業系統 / 節點中 Telegraf 可鎖定記憶體的限制。如果增加限制並非選項、請修改 NKMO 代理組態、並將 _NOISS_ 設為 _true_ 。  這將指示 Telegraf 不要嘗試保留鎖定的記憶體頁面。雖然這可能會造成安全風險、因為解密的機密資料可能會被換出到磁碟、但它允許在無法保留鎖定記憶體的環境中執行。如需 _inbizon_ 組態選項的詳細資訊、請參閱 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="7438b4e926a47d987228924d394e21fc" category="cell">Telegraf 會警告或因為可鎖定的記憶體不足而當機。</block>
   <block id="8c8a571e456c6997313d3c14bc8e2e33" category="summary">工作負載安全性代理程式可以手動安裝或更新、讓您更能掌控環境中安裝的軟體。</block>
-  <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">手動安裝 Workload Security Agent 和 Collector</block>
   <block id="b18da8c028e8898757dd43e098d29586" category="paragraph">根據預設、當工作負載安全性代理程式或收集器有新版本可用時、系統會傳送升級前通知、並在您的環境中自動更新代理程式和收集器。不過、在安全的受控環境中、可能不需要自動升級。在這種情況下、可將工作負載安全性設定為手動安裝 / 升級代理程式和收集器、以更有效地控制系統上安裝的軟體。</block>
   <block id="1d7c0bdfd6486be2ad7378309185dd8d" category="list-text">在 swagger 中驗證名稱為「 cloudsecure_installer.agent 」和「 cloudsecure_installs.collector 」的 API 類別是否可用。如果沒有、則不會啟用手動安裝代理程式的支援。請聯絡 NetApp 支援部門、以啟用此功能。</block>
   <block id="b47cdf24f25c792e7f7bee977b59785f" category="list-text">以「 root 」使用者的身分執行本文所述的所有命令、或者、如果是以其他使用者執行、則以「身份」執行命令。</block>
@@ -13451,4 +13445,68 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管理單元的總和可能與摘要區段中的資料收集器數略有不同。這是因為託管單元的數量會四捨五入到最近的託管單元。「資料收集器」清單中這些數字的總和、可能會略高於「狀態」區段中的「受管理單元總數」。摘要區段會反映您訂閱的實際託管單位數。為了協助達成此目標、 DII 會根據 _ 訂閱 _ 數量來計算單一 * 有效權利 * 編號；然後根據 _ 探索 _ 儲存設備來計算相同的編號、只有在有效探索到的容量大於有效權利時才會宣告違反。如此一來、您就能靈活地監控不同於每個層級訂閱數量的數量、只要發現的總儲存容量在訂閱的有效權利範圍內、 DII 就能提供此功能。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">資料基礎架構 Insights 基礎架構可服務性和 Kubernetes 可服務性計量表使用量（依 * 受管理單元 * ）。管理單元的使用量是根據基礎架構環境中*主機或虛擬機器*的數量、以及*未格式化容量*的管理量來計算。</block>
   <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">如果將服務原則搭配 ONTAP * 9.9.1 版或更新版本 * 使用、則為了連線至資料來源收集器、需要 _data-fpolicy_client_ 服務、以及資料服務 _data-NFS_ 和 / 或 _data-CIFS_ 。</block>
+  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">瞭解貴公司環境中所使用的應用程式、有助於追蹤資產使用量與成本。</block>
+  <block id="159323715ecc1d8fcad837d9c9c4d406" category="doc">工作負載安全 API ：硬中斷：</block>
+  <block id="48e1b88553e176ff4b0d72847caa479e" category="doc">警示：硬中斷：</block>
+  <block id="32cefbb29da0cc11665c898601ad0126" category="doc">自動化回應原則：硬中斷：</block>
+  <block id="04b7ceed12fc64983e08bfb1ca5c75c8" category="doc">封鎖使用者存取：硬中斷：</block>
+  <block id="0fbc3e2fe123644bc4fb286ec3eba14e" category="doc">鑑識使用者總覽：硬中斷：</block>
+  <block id="a6a9e422cc6712614bdeb1c7c082055f" category="summary">Cloud Insights 會追蹤基礎架構的變更、以便輕鬆進行分析和疑難排解。</block>
+  <block id="d649532ab115aad7a384e236d1028844" category="doc">基礎架構變更分析</block>
+  <block id="997466d044b252bcf172645985a47372" category="paragraph">基礎架構變更分析可讓您一體化檢視環境中基礎架構（儲存設備、交換器等）最近的變更。利用變更分析、您可以追蹤組態變更、並深入瞭解預期和非預期的問題。</block>
+  <block id="2309f522d85e82b60b3b59f8e753778b" category="section-title">基礎架構變更分析有何幫助？</block>
+  <block id="3216da7ed32569fc5fa15ade122a1b26" category="paragraph">在任何環境中、由於設定不當、電力中斷等原因、可能會對儲存設備或裝置進行變更。變更分析可提供單一窗格來檢視裝置的健全狀況、並將其與停機或計畫性變更建立關聯、藉此協助您達成此目標。變更會隨每個庫存輪詢一起計算（在新收集器的第一次輪詢之後）。</block>
+  <block id="1c6509b652f7545660bff48c66566fec" category="paragraph">若要分析基礎架構變更、請瀏覽至 * 可服務性 &gt; 變更分析 * 。會列出目前時間範圍的警示和組態變更。警示列會顯示目前警示狀態（作用中或已解決）。</block>
+  <block id="48bbecb173ed1c0caf1522961ed271c1" category="inline-image-macro">基礎架構變更分析主畫面</block>
+  <block id="06d8bb0704add4e2715c22018e610f73" category="paragraph"><block ref="197eeda000b01cb315c8b2c17a24ba41" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="f20ff884eb3f78de6a242bafa4e10807" category="paragraph">選取清單中的項目將會開啟滑出窗格、提供警示或變更的詳細資訊。</block>
+  <block id="87349240d4ace40c54355981baaf30a6" category="inline-image-macro">組態變更詳細資料窗格範例</block>
+  <block id="3e1b7ed4f9a6d715199155e12807fd85" category="paragraph"><block ref="3e1b7ed4f9a6d715199155e12807fd85" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c492a69b6ced7c7862c68bf201a27f8" category="paragraph">如同 Cloud Insights 的所有功能一樣、篩選變更清單是直覺式的：在頁面頂端、您可以根據特定資產類型（ _ 觸發於：類型 _ ）進行篩選、以及 / 或僅針對具有特定名稱的資產進行篩選（ _ 觸發於：名稱 _ ）、或是選取 ｛ + ）按鈕來新增您自己的篩選條件。</block>
+  <block id="3d18ed1b0765c3ff3a8b70a5e01f1145" category="inline-image-macro">基礎架構變更篩選下拉式功能表</block>
+  <block id="39aef14303366c760b69423a359db8c5" category="paragraph"><block ref="39aef14303366c760b69423a359db8c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c23c4d2f8805d5407d1c75a5768fb8a" category="paragraph">您也可以直接前往「重要警示」或篩選設定下方的狀態區段變更、包括目前三大資源中警示最多的資源。</block>
+  <block id="25f02ce36b100468e64ed54f3c3363ee" category="inline-image-macro">警示和變更的狀態和快速連結</block>
+  <block id="882b696f70983281eeb19bc55ebc780c" category="paragraph"><block ref="882b696f70983281eeb19bc55ebc780c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="50bcf8de16583b6a1faf9be5623c2cba" category="section-title">分析哪些物件以進行變更？</block>
+  <block id="f7ebe84da89ad9a2837d074c206d9a87" category="paragraph">下表列出基礎架構變更分析所包含的物件和屬性。</block>
+  <block id="f2eefee9325c4a73a639ac4e71a791da" category="cell">延伸屬性</block>
+  <block id="4d0789af18c097c73fcd9996c209e1e6" category="cell">disksize.total isVirtual diskGroup 速度類型位置 serialNumber 角色狀態廠商模式 storage.name storagePools.name 名稱</block>
+  <block id="a9986c0a5945531e535ac282c2a8121e" category="cell">已加密</block>
+  <block id="e391f3304128a83d3518a1c4e35d2608" category="cell">datasources.name 系列 IP IsActive microcodeVersion 型號名稱傳輸協定 serialNumber 廠商</block>
+  <block id="198133b0776d728b17d5105bbb0ac5aa" category="cell">名稱 storage.name nodeVersion 模型 serialNumber OfProcessors 狀態為 partner.name 快取記憶體</block>
+  <block id="af00b3e9fc6ed83402400634fffcef0d" category="cell">managementIpsAddresses parentSerialNumber SiteName</block>
+  <block id="e1f85d77e8208d60c3c781157f81a728" category="cell">名稱類型 isAutoTiering isVirtual 備援廠商層級 usesFlashPools 儲存設備 .vendor 儲存設備 .IP 儲存設備 .model 儲存設備 .family storage.name storageNodes.name capate.total （動態屬性）</block>
+  <block id="4e5fc0aadbf1d8d41eb0ae9e5c6f422a" category="cell">isCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer</block>
+  <block id="5eb77d34ea21d5e1cf90033426998666" category="cell">鍵入 datasources.name securityStyle isoplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name internalVolume.virtualStorage simpleName 狀態 Text 名稱</block>
+  <block id="d6aba08882d71471c2b6b52815ea184f" category="cell">StorageVirtualMachine</block>
+  <block id="5c3f6a7f7c6fdff5f1351a9949951514" category="cell">名稱 storage.name 狀態類型 IPSpace 通訊協定 internalVolumeLimit 註解</block>
+  <block id="ab85afd2efdf6ae9720b28e9649513d8" category="cell">名稱 simpleName 標籤類型 storage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioneddiskGroup isMainframe Ismaeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name storagePools.usesFlashPools internalVolume.virtualStorage storageNodes.name storageNodes.partner.name storageVirtualMachine.name storagePools.minDiskSize.total storagePools.minDiskSpeed storagePools.minDiskType storagePools.name storagePools.pols.revols.apoles.storage</block>
+  <block id="07d55762b61402e9f236688ff661747d" category="cell">storageGroups 已加密的受壓已啟用 qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw</block>
+  <block id="c756c59e28aa8e347b00a3bd0fe08bd9" category="cell">flashPoolEligibility 名稱 simpleName spaceguaranteer 狀態類型 virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storagePool.disks.disksize.total storage.name storage.Vendor storage.IP storage.model storage.family storagePool 。 speed storageVirtualMachine.name storagePool 。 redund冗 餘 storagePool.name storagePool 。 disks.type storagePool.usesFlashPools capacity.isThinProvisioneded</block>
+  <block id="1d7292d0a7e1e47f2ee3b03c79eebdf8" category="cell">qosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS 註釋 isEncrypted adaptiveQosPolicy 輔助路徑對象 StoreTieringPolicy 分層 MinimumCoolingDays</block>
+  <block id="0775662a98ec14ff846583c9cd6761a5" category="cell">名稱 dnsName IP OS 記憶體處理器 guestState powernatehost.name host.clustername host.ip host.os datastore.name</block>
+  <block id="cdae133139543d7031e5fa681b3189c6" category="cell">instanceType publicIps 安全性群組 virtualCenterIp</block>
+  <block id="825c5fc312927882b716b6c2da3b816d" category="cell">資料存放區</block>
+  <block id="26b3b9ba946886eaef175c67e9696e69" category="cell">名稱 virtualCenterIp</block>
+  <block id="599dcce2998a6b40b1e38e8c6006cb0a" category="cell">類型</block>
+  <block id="b4a606c5f87b63f4f7157dc4fb92c30b" category="cell">名稱模式 IP IsActive OS 製造商 CPUCount 記憶體 isHypervisor 叢集名稱</block>
+  <block id="b794217d3ee3c8ed6935fef3569befb9" category="cell">虛擬化 CenterIp</block>
+  <block id="8bcb15bb664a03c6a9d894c33fe5f07c" category="cell">VMDK （虛擬機器磁碟）</block>
+  <block id="12ac32cb82500ccb5cd4fac54ef6d4d8" category="cell">名稱類型 datastore.name isRdm virtualMachine.host.name virtualMachine.name</block>
+  <block id="930b37d278565ffa7ba9e1e20ed02df4" category="cell">isSnapshot</block>
+  <block id="44b32834b64ca3490fec05e69b5b0897" category="cell">名稱 IsActive WWN 類型 portIndex 刀鋒速度 gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.WWN 控制器 device.name device.type fabrics.name Fabrics.vsanId nodeWwn</block>
+  <block id="67daf92c833c41c95db874e18fcb2786" category="cell">說明</block>
+  <block id="aa4237e942403057a55c170360da8347" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 資料基礎架構分析負責人會列出針對下列記錄所建立的警示和變更：</block>
+  <block id="9d8153be52deeed49e78d2a079b21fe5" category="paragraph">Data Infrastructure Insights 會列出針對下列記錄所建立的警示和變更： &gt;&gt;&gt;&gt;&gt; 2d5e94b3615a400bce1e7a050d2d523cc06b5b8</block>
+  <block id="09a1f59ca2813556e3c9cc6b5d8ec1a1" category="list-text">logs.vmware.events</block>
+  <block id="32e5b85eb2266a4723d9c5067a92e3d0" category="list-text">NetApp 。 EMS</block>
+  <block id="a1a1048ea48921a7bd280fbc92eebf07" category="paragraph">也會監控上方清單中的物件和屬性。在監控器中、必須在 _ 群組依據 _ 選項中選取這些選項、變更分析才能追蹤它們。</block>
+  <block id="1e3299dcf38c1e3bb2a16a39942989bb" category="doc">Kubernetes 監控操作員安裝與組態：硬中斷：</block>
+  <block id="3e021c6004e444ced45e08a6ac9e1e61" category="paragraph">變更分析</block>
+  <block id="25a317566de430ddfd2c6f4b3fdea612" category="list-text">CI-k8s-change-觀察者</block>
+  <block id="a21e71e8b6b5d3e4af611be860082f95" category="doc">資料收集器： Kubernetes ：硬中斷：</block>
+  <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp 一般 DB 主機解析程式：硬中斷：</block>
+  <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP REST 資料收集器：硬中斷：</block>
+  <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">手動安裝工作負載安全性代理程式與收集器：硬中斷：</block>
 </blocks>
