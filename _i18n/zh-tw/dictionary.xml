@@ -13509,4 +13509,5 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp 一般 DB 主機解析程式：硬中斷：</block>
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP REST 資料收集器：硬中斷：</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">手動安裝工作負載安全性代理程式與收集器：硬中斷：</block>
+  <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">變更報告權限或安全性之前、您必須先將「我的內容」報告複製到「團隊內容」資料夾、以確保報告已儲存。</block>
 </blocks>

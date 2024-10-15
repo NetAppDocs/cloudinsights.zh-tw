@@ -22,6 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 NOTE: 報告功能可在 Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Premium Edition"]中找到。
 
 
+IMPORTANT: 變更報告權限或安全性之前、您必須先將「我的內容」報告複製到「團隊內容」資料夾、以確保報告已儲存。
+
+
 
 == 自訂報告的輸出格式和交付
 
