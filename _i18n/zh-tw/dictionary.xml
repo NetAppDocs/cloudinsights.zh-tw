@@ -3557,7 +3557,6 @@
   <block id="4885bebed0a488d050e9e3b9016b3fda" category="paragraph">傳遞存取權杖的HTTP標頭為* X-CloudInsights：Apikes*</block>
   <block id="b9250c46598db43daf799f07c7d996da" category="paragraph">如需詳細資訊、請參閱「*管理&gt; API存取*」下的「_API文件_」連結。</block>
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API類型</block>
-  <block id="c73695e7529146d82731a287d36e3f1d" category="cell">記錄擷取</block>
   <block id="990550983c2107ed5ccd87b4a6690b0a" category="inline-image-macro">API類型</block>
   <block id="e86bb8cbf77ec00646c7b5fe6b42e633" category="paragraph"><block ref="e86bb8cbf77ec00646c7b5fe6b42e633" category="inline-image-macro-rx" type="image"></block></block>
   <block id="815a8361cf9eb2836d28b11b65b2dc3b" category="list-text">選取「API類型」</block>
@@ -12988,8 +12987,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="30accaf6a3626f10ec929da93cbf92a5" category="summary">Data Infrastructure Insights API 可與其他應用程式整合、例如監控和報告系統。</block>
   <block id="6d6db1bb67f06328b211ea82a7f47cbd" category="doc">Data Infrastructure Insights API</block>
   <block id="eac3abc77b1aae81a7bfc1ff05078f3c" category="paragraph">資料基礎架構洞見 API 可讓 NetApp 客戶和獨立軟體廠商（ ISV ）將資料基礎架構洞見與其他應用程式（例如 CMDB 或其他票證系統）整合。</block>
-  <block id="4ca8e0cdf82e94476f54fca7c9b08a02" category="paragraph">請注意、 Data Infrastructure Insights API 是根據您目前的版本提供：</block>
-  <block id="78b105b7e2a3c96f1ef28d2a96f59830" category="paragraph">此外、您的 Data Infrastructure Insights <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 也會決定您可以存取哪些 API 。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。</block>
   <block id="da9fb37ca66951f2715562f74dd167af" category="list-text">API Token 管理由 Data Infrastructure Insights 使用者執行、其角色為管理員。</block>
   <block id="e72088ab32f20f058f4f46fe9cad2b0c" category="paragraph">登入 Data Infrastructure Insights 並瀏覽至 * 管理 &gt; API Access * 即可找到最新的 API 資訊。按一下「* API Documentation *（* API文件*）」連結。</block>
   <block id="30a47f88beaa0845897dd8164cdcdd08" category="paragraph">API文件是以Swagger為基礎、提供API的簡短說明與使用資訊、並可讓您在環境中試用。視您的使用者角色和 / 或 Data Infrastructure Insights 版本而定、您可使用的 API 類型可能會有所不同。</block>
@@ -13082,7 +13079,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="d0666b8b7ae744d105cb544ddc03d8c8" category="list-text">選擇 _ 資料基礎架構 Insights _ 做為產品系列。請選擇您的帳單供應商（ NetApp 或 AWS ）、並參考資料基礎架構 Insights 使用者介面中的「說明 &gt; 支援」功能表、提供您的序號和 NetApp 訂閱名稱或 AWS 客戶 ID ：</block>
   <block id="d41c7a89c53943f7c86e80fe6a27b4dc" category="list-text">身為 NetApp 新客戶，您也需要建立 NetApp 支援網站（NSS）使用者帳戶，以便日後登錄註冊，以及存取支援入口網站的技術支援聊天功能和網路提交問題單。此連結位於<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供最新註冊的 Data Infrastructure Insights 序號、以加速程序的執行。</block>
   <block id="3757ee6dbdcabe2780104f98224939d5" category="list-text">這是資料基礎架構 Insights NetApp 序號的一次性註冊。</block>
-  <block id="1c571e65fbdab33b85ec4c8a56603087" category="paragraph">NetApp 以多種方式提供資料基礎架構洞見支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。訂閱任何 Data Infrastructure Insights 版本（ Basic * 、 Standard 、 Premium ）的使用者、可透過電話或網路票證取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。</block>
   <block id="6d1e73b5dbcd7708fd39eecb9fec99a8" category="paragraph">按一下社群連結、即可前往 NetApp 資料基礎架構洞見社群、與同儕和專家交流。</block>
   <block id="adbe0a8623b0464eb83d4da31c8e858e" category="paragraph">此外還有一個連結可<block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block>協助我們改善資料基礎架構洞見。</block>
   <block id="24b17ddd1757d7b4e6373b656d50555a" category="paragraph">除了上述的自我支援選項之外、如果您訂閱了資料基礎架構洞見、或是付費支援受監控的 NetApp 產品或服務、您還可以與 NetApp 支援工程師合作來解決您的問題。</block>
@@ -13510,4 +13506,7 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP REST 資料收集器：硬中斷：</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">手動安裝工作負載安全性代理程式與收集器：硬中斷：</block>
   <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">變更報告權限或安全性之前、您必須先將「我的內容」報告複製到「團隊內容」資料夾、以確保報告已儲存。</block>
+  <block id="7d18259ee7e2ef822cedec281a19a33d" category="paragraph">您的 Data Infrastructure Insights <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 將決定您可以存取哪些 API 。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。</block>
+  <block id="1f3c67de4e7c07c414ec4689b1724561" category="paragraph">NetApp 以多種方式提供資料基礎架構洞見支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章或NetApp社群。對於訂閱 * Data Infrastructure Insights 的使用者、可透過電話或網路票證取得技術支援。需有 NetApp 支援網站（NSS）SSO 帳戶，才能網路提交問題單及案例管理。</block>
+  <block id="3b2314bf0168715cc6642c0246916477" category="paragraph">許多 NetApp 產品均包含資料基礎架構洞見基礎版、作為套件的一部分。如果您想要升級至 Premium Edition 、請聯絡您的銷售代表。</block>
 </blocks>

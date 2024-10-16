@@ -18,31 +18,7 @@ summary: Data Infrastructure Insights API 可與其他應用程式整合、例�
 [role="lead"]
 資料基礎架構洞見 API 可讓 NetApp 客戶和獨立軟體廠商（ ISV ）將資料基礎架構洞見與其他應用程式（例如 CMDB 或其他票證系統）整合。
 
-請注意、 Data Infrastructure Insights API 是根據您目前的版本提供：
-
-[cols="<,^s,^s,^s"]
-|===
-| API類型 | 基本 | 標準 | 優質 
-
-
-| 擷取單位 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
-
-
-| 資料收集 | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
-
-
-| 警示 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
-
-
-| 資產 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
-
-
-| 資料擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
-
-
-| 記錄擷取 |  | image:SmallCheckMark.png["勾選標記"] | image:SmallCheckMark.png["勾選標記"] 
-|===
-此外、您的 Data Infrastructure Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 也會決定您可以存取哪些 API 。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
+您的 Data Infrastructure Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 將決定您可以存取哪些 API 。使用者和來賓角色的權限比管理員角色少。例如、如果您在「監控與最佳化」中扮演「系統管理員」角色、但「報告」中的「使用者」角色、則您可以管理除「資料倉儲」以外的所有API類型。
 
 
 
