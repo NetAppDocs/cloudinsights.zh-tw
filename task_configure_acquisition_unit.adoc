@@ -5,14 +5,17 @@ keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstal
 summary: 採購單位在Windows和Linux上安裝、解除安裝、設定Proxy支援等功能。 
 ---
 = 設定擷取單位
+:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
+:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

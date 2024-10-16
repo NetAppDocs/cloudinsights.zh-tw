@@ -5,14 +5,17 @@ keywords: Automatic, AR, AHR, Host, automatic device resolution
 summary: 自動裝置解決方案可協助您準確追蹤環境中的效能與庫存。 
 ---
 = 自動裝置解決方案總覽
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

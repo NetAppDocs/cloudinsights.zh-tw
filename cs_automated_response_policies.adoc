@@ -4,12 +4,13 @@ permalink: cs_automated_response_policies.html
 keywords: alert, snapshot, ransomware, attack 
 summary: 您可以針對潛在攻擊（例如勒索軟體）和/或活動警告、設定自動回應原則 
 ---
-= 自動化回應原則：硬中斷：
+= 自動化回應原則
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ./media
 
 
 [role="lead"]

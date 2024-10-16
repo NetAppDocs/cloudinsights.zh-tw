@@ -5,14 +5,17 @@ keywords: monitors, alerts, log, metric
 summary: 建立監控器以警示效能或庫存臨界值、以及度量或記錄條件。 
 ---
 = 系統監視器
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

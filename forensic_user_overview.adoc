@@ -4,7 +4,8 @@ permalink: forensic_user_overview.html
 keywords: Forensic, user, user, activity 
 summary: 鑑識使用者詳細資料 
 ---
-= 鑑識使用者總覽：硬中斷：
+= 鑑識使用者總覽
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
