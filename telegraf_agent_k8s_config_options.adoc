@@ -87,7 +87,7 @@ Proxy ：
 |  | rsMemRequest | 對 Telegraf RS 的記憶體要求 
 
 
-|  | RunPrivileged | 以特殊權限模式執行 Telegraf 容器。如果您的 k8s 節點上已啟用 SELinux 、請將此設定為 True 
+|  | RunPrivileged | 在特權模式下運行 Telegraf demonSet 的 _telegraf-mountstats-poller-Container 。如果在 Kubernetes 節點上啟用 SELinux 、請將此設定為 True 。 
 
 
 |  | 批次大小 | 請參閱 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf 組態文件"] 
@@ -179,7 +179,10 @@ Proxy ：
 |  | RunPrivileged | 如果 Fluent 位元無法啟動、嘗試開啟 / 建立資料庫、請將 RunPrivileged 設為 true 。 
 
 
-| 工作負載對應 |  | 可自訂工作負載對應集合及安裝 Operator 的組態選項 
+|  | RunDsPrivileged | 將 RunDsPrivileged 設為 true 、以特權模式執行 Telgraf demonSet 的 Telgraf 容器。 
+
+
+| 工作負載對應 |  | 可自訂工作負載對應集合及安裝 Operator 的組態選項。 
 
 
 |  | cpuLimit | Net 觀察者 DS 的 CPU 上限 

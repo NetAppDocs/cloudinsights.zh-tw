@@ -8145,13 +8145,7 @@
   <block id="dd94823438f14366dcf7fca1f9e36942" category="list-text">* GA*：一種功能或資料收集器、根據版本或功能集、一般可供所有客戶使用。</block>
   <block id="cd0d8ade9c16e03b7c1dd37589a88960" category="list-text">*已過時*：適用於已經或預期將不再具有功能永續性的資料收集器。過時的資料收集器通常會被新的功能更新資料收集器所取代。</block>
   <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*刪除*：已移除且不再可用的資料收集器。</block>
-  <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">從單一控制面板建置、保護及管理混合式多雲端資料基礎架構。</block>
   <block id="fa0f9b91b9b3862eb566219b032aa9f6" category="inline-link-macro">_預覽_</block>
-  <block id="8a281fcc91b3d1c2a8f6a3503b98db32" category="admonition">藍圖XP導覽功能表整合被視為 <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能有所變更。</block>
-  <block id="dc2328c73b90d6c1704bed2d775bd562" category="inline-image-macro">BlueXP nav功能表、顯示可在頂端看到的能力、以及下列其他NetApp服務</block>
-  <block id="070ed5b249a03236a4b58ef440cd9a27" category="paragraph"><block ref="070ed5b249a03236a4b58ef440cd9a27" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27a7deb0ec1bdff43e3eb6bbcee65f55" category="paragraph">暫留工具提示提供更多資訊。</block>
-  <block id="03aa38861ba70a29a2ebce320835a31b" category="paragraph">您可以在BlueXP網站上深入瞭解BlueXP。</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">設定Dell EMC UnREST資料收集器。</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">設定Dell EMC Unisphere資料收集器</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">連接埠8443.</block>
@@ -8809,7 +8803,6 @@
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">對 Telegraf RS 的記憶體要求</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">RunPrivileged</block>
-  <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">以特殊權限模式執行 Telegraf 容器。如果您的 k8s 節點上已啟用 SELinux 、請將此設定為 True</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">批次大小</block>
   <block id="f73038607dbfd988c8ed06aa707b67b6" category="inline-link-macro">Telegraf 組態文件</block>
   <block id="4a686d41d5d06d7af488bce13a4b6b1c" category="cell">請參閱 <block ref="1220f98ff4e67fb30a54b092e87489e7" category="inline-link-macro-rx"></block></block>
@@ -8837,7 +8830,6 @@
   <block id="a28f540659f42fa52be34b45558bb6c6" category="cell">dnsMode</block>
   <block id="5c0864cc25dbf397d47948de9ac342f1" category="cell">TCP/UDP 、 DNS 模式</block>
   <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">工作負載對應</block>
-  <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">可自訂工作負載對應集合及安裝 Operator 的組態選項</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">MemLimit</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">CPU 要求取得 Net 觀察者 DS</block>
@@ -12999,10 +12991,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="cc3cee81cef851f2f036f9ae6b1ac477" category="paragraph">效能資料會在多個裝置之間收集、做為個別的範例。資料基礎架構 Insights 每小時（預設）彙總並彙總效能範例。</block>
   <block id="1852e85c98f9e7216ff053507e056147" category="paragraph">每種效能資料物件類型都有一組獨特的效能指標。例如、虛擬機器效能物件支援「磁碟處理量」作為效能指標。每個支援的效能指標都是指標字典中所顯示的特定「效能類別」。Data Infrastructure Insights 支援本文件稍後所列的數種效能指標類型。每個效能指標字典也會有「說明」欄位、此欄位是人類可讀取的效能指標說明、以及一組效能摘要計數器項目。</block>
   <block id="257f0ceb0672288b52ab4e080578e700" category="paragraph">Data Infrastructure Insights 是可延伸的（開放式）解決方案、可整合協力廠商協調、業務管理、變更控制和票證系統、以及自訂 CMDB 整合功能。</block>
-  <block id="c92924fbf7861a093c4349a94f8bcf0e" category="doc">資料基礎架構洞見是 BlueXP  的一部分</block>
-  <block id="e5e173192c2f69b363ad91f5ed6b33d3" category="paragraph">BlueXP可讓您從單一介面管理所有NetApp儲存設備和資料資產。在BlueXP中、您會發現許多新的儲存服務、以及先前只能以獨立服務的形式提供、並有獨立的UI。資料基礎架構洞見（前身為 Cloud Insights ）是其中一項服務。</block>
-  <block id="fde977b4517b5a88b8ee2d3fcd1c0fd8" category="paragraph">在BlueXP的導覽功能表中、直覺式的新功能表會依類別來組織資料服務、並根據其功能來命名。例如、「 Data Infrastructure Insights 」功能集位於「 Observ可見 度」功能表中。當您探索 Data Infrastructure Insights 時、導覽功能表頂端會出現「可觀察性」區段。您探索時、每項BlueXP服務都是如此。</block>
-  <block id="9ecae0812a01df2d2809eccbaae9fb2d" category="admonition">在本文件中、「資料基礎架構洞見」和「可觀察性」兩個詞彙可互換使用。</block>
   <block id="c0775283da3261d158df55d820b4e47b" category="paragraph">您可以開始使用只有 8GB 記憶體和 50GB 磁碟空間的 Data Infrastructure Insights 擷取單元、但是對於較大型的環境、您應該自問下列問題：</block>
   <block id="cde8307fb591a6c3934539dcb5919f06" category="list-text">在 Data Infrastructure Insights Federal Edition 叢集中安裝擷取單元時、基礎作業系統必須具備良好的 Entropy 來源。在 Linux 系統上、這通常是透過安裝 _rng-tools_ 或使用硬體隨機號碼產生（ RNG ）來完成。客戶有責任確保擷取單元機器符合此要求。</block>
   <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">Data Infrastructure Insights 會從 NetApp Active IQ 收集風險資料</block>
@@ -13427,7 +13415,6 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="631118e6a302427a45c08e77b6d37e3b" category="cell">確保您的採購單位伺服器 /VM 可透過連接埠 443 上的 SSL 連線、存取您的資料基礎架構洞見環境（ &lt;environment-name&gt; 。 NetApp .com ）。請嘗試下列命令： _ping &lt;environment-name&gt; 。 C01 。 cloudinsights 。 NetApp 。 com_ _traceroute &lt;environment-name&gt; NetApp 。 C01 。 cloudsights 。 NetApp 。 com_ _curl \https ： &lt;environment-name&gt; 。 C01 。 cloudentses.com_ _wGET \https ： &lt;environment-name&gt; 。 NetApp 。注意：需要從 AU 開啟連接埠 443 、以進行輸出資料。</block>
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到 Telegraf 發出的警告訊息類似以下內容： _W! [Inputs.DiskIO] 無法收集「 VDC 」的磁碟名稱：讀取 /dev/VDC 時發生錯誤：沒有此類檔案或目錄 _</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">駕駛員的組態選項</block>
-  <block id="9de6368f45ca30e61d7d6eb11d0da5a5" category="cell">對於 Kubernetes Monitoring 操作員而言、這些警告訊息是良性的、可以安全地忽略。或者、在 AgentConfiguration 中編輯 Telegraf 區段、並將 RunPrivileged 設為 true 。如需詳細資訊、請<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="c2a794ea709fc6031fad37bbb11353ed" category="paragraph">在模組評估期間、您不會為模組所使用的資源收取 MU 使用費、但您可以開啟 * 評估工具 * （位於 _ 摘要 _ 索引標籤）、查看評估後 MU 的收費方式、以及在未來可能需要多少 MU 的情況下、使用「假設」情境。請離開 Estimator 以重設數字。</block>
   <block id="6b3c6b1f0dcfdec2952b9d7ebe9ff11f" category="paragraph">資料基礎架構 Insights 可觀察性的計量方式有兩種：</block>
   <block id="5e787d0212aa58a0466b454df1baca59" category="list-text">容量計量</block>
@@ -13451,4 +13438,9 @@ CPU和RAM增加之後、DSC就會進入初始化、然後自動進入執行狀�
   <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp 通用 DB 主機解析程式</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST 資料收集器</block>
   <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">手動安裝 Workload Security Agent 和 Collector</block>
+  <block id="1f3c6b9eb496e3586cb89ac14caca626" category="cell">對於 Kubernetes Monitoring 操作員而言、這些警告訊息是良性的、可以安全地忽略。  或者、在 AgentConfiguration 中編輯 Telegraf 區段、並將 _runDsPrivileged 設為 true 。如需詳細資訊、請<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="03d93e1826c4b75f5882487510637b6a" category="cell">在特權模式下運行 Telegraf demonSet 的 _telegraf-mountstats-poller-Container 。如果在 Kubernetes 節點上啟用 SELinux 、請將此設定為 True 。</block>
+  <block id="324bdfa0e3afdc96a6b7ec1a6d383285" category="cell">RunDsPrivileged</block>
+  <block id="853d5e0ee500d0a29752a0f7c287f08d" category="cell">將 RunDsPrivileged 設為 true 、以特權模式執行 Telgraf demonSet 的 Telgraf 容器。</block>
+  <block id="f39ed19a7c5e5e2b0cff68ee1bedc0ef" category="cell">可自訂工作負載對應集合及安裝 Operator 的組態選項。</block>
 </blocks>
