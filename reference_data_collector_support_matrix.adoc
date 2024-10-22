@@ -5,27 +5,19 @@ summary: 資料收集器支援對照表包含有關支援的資料收集器的�
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
 = Data Infrastructure Insights 資料收集器支援對照表
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:toc-position: content
 
 
+[role="lead"]
 資料收集器支援對照表提供 Data Infrastructure Insights 支援的資料收集器參考資料、包括廠商和模型資訊。
 
-
-toc::[]
 
 
 == HP Enterprise 3PAR / Alletra 9000/ Primera StoreServ 儲存設備
@@ -675,20 +667,17 @@ InServ V400 | 3.1.1 （ MU1 ）
 
 | 3PAR CLI | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Amazon AWS EC2
 
 此資料收集器支援的機型和版本：
 
-|===
-| API版本 
+API 版本：
+
+* 2014 年 10 月 1 日
 
 
-| 2014 年 10 月 1 日 
-|===
 此資料收集器支援的產品：
 
 |===
@@ -960,8 +949,6 @@ InServ V400 | 3.1.1 （ MU1 ）
 
 | EC2 API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Amazon AWS S3
@@ -1119,8 +1106,6 @@ InServ V400 | 3.1.1 （ MU1 ）
 
 | S3 API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Microsoft Azure NetApp Files
@@ -1422,8 +1407,6 @@ InServ V400 | 3.1.1 （ MU1 ）
 
 | Azure NetApp Files REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Brocade光纖通道交換器
@@ -1845,8 +1828,6 @@ v9.1.1b.
 
 | 資料來源精靈組態 | 手動輸入 |  |  |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Brocade網路顧問HTTP
@@ -2118,8 +2099,6 @@ v9.0.1
 
 | Brocade網路顧問REST API | HTTP / HTTPS | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Brocade FOS REST
@@ -2447,8 +2426,6 @@ v9.1.1b.
 
 | Brocade FOS REST API | HTTPS |  | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Cisco MDS 與 Nexus Fabric 交換器
@@ -2868,8 +2845,6 @@ UCS - FI-6454 | 3.3 （ 1c ）
 
 | Cisco SNMP | SNMP | SNMPv1（僅限庫存）、SNMPv2、v3 | 161. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == 凝聚力
@@ -3182,8 +3157,6 @@ UC-C240M5H10 | 6.5.1f_release - 20210913_13f6a4bf
 
 | Coesity REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC Celerra（SSH）
@@ -3478,8 +3451,6 @@ VNX7600 | 5.5.38-1
 
 | Celerra CLI | SSH | SSH |  |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC CLARiiON（導航CLI）
@@ -4044,8 +4015,6 @@ VNX8000 | 04.28.000.5.710
 
 | 新版CLI | CLI |  | 6389、2162、2163、443（HTTPS）/80（HTTP） |  | 是的 | 是的 | 是的 | 錯 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC資料網域（SSH）
@@ -4365,8 +4334,6 @@ DD9900 | 6.1.2.051-633576
 
 | Data Domain CLI | SSH | SSH | 22 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC ECS
@@ -4650,8 +4617,6 @@ DD9900 | 6.1.2.051-633576
 
 | EMC ECS REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Dell EMC Isilon 和 PowerScale REST
@@ -5256,8 +5221,6 @@ v8.2.2.0
 
 | EMC Isilon 和 PowerScale REST API | HTTPS |  | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Dell EMC Isilon / PowerScale （ CLI ）
@@ -5781,8 +5744,6 @@ v8.2.2.0
 
 | Isilon SSH | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC PowerStore REST
@@ -6304,8 +6265,6 @@ PowerStore 9200T | 1.21.3.
 
 | EMC PowerStore REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC RecoverPoint（HTTP）
@@ -6437,8 +6396,6 @@ PowerStore 9200T | 1.21.3.
 
 | RecoverPoint REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC ScaleIO 與 PowerFlex REST
@@ -6739,8 +6696,6 @@ R3_6.700.103
 
 | EMC ScaleIO 與 PowerFlex REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC Symmetrix CLI
@@ -7504,8 +7459,6 @@ VMAX950F | 5773.198.142 （ 168D0000 ）建置 5
 
 | Symmetrix SMI-S | SMI-S | HTTP / HTTPS | 5988/5989 |  | 是的 | 錯 | 錯 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Dell Unisphere REST
@@ -7931,8 +7884,6 @@ VMAX950F | 5978.479.479 建置 350
 
 | Dell Unisphere API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC VNX（SSH）
@@ -8450,8 +8401,6 @@ VNX5800 | 05.33.009.5.231
 
 | VNX SSH 和 CLI | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC VNXe 與 Unity Unisphere （ CLI ）
@@ -9011,8 +8960,6 @@ VNXe3200 | 3.1.17.10223906
 
 | VNXe 和 UnEthisphere CLI | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC VPLEX
@@ -9331,8 +9278,6 @@ VNXe3200 | 3.1.17.10223906
 
 | EMC VPLEX API | HTTP / HTTPS | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == EMC XtremIO（HTTP）
@@ -9791,8 +9736,6 @@ VNXe3200 | 3.1.17.10223906
 
 | EMC XtremIO REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == NetApp E系列
@@ -10377,20 +10320,17 @@ VNXe3200 | 3.1.17.10223906
 
 | 部分API SANtricity | RMI | TCP |  |  | 是的 | 是的 | 錯 | 錯 
 |===
-<<top,返回頁首>>
-
 
 
 == Google Cloud Compute
 
 此資料收集器支援的機型和版本：
 
-|===
-| API版本 
+API 版本：
+
+* V1,
 
 
-| V1, 
-|===
 此資料收集器支援的產品：
 
 |===
@@ -10629,8 +10569,6 @@ VNXe3200 | 3.1.17.10223906
 
 | Google Compute Platform REST API | HTTPS |  | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == HDS HCPs（HTTPS）
@@ -10837,8 +10775,6 @@ VNXe3200 | 3.1.17.10223906
 
 | HDS HCP REST API | HTTPS | HTTPS | 9090 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Hndvice管理程式
@@ -11404,8 +11340,6 @@ SVP ： 90-08-83/00
 
 | HiCommand Device Manager XML API | HDS XML API | HTTP / HTTPS | 2001年 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Hitachi Ops Center
@@ -11848,8 +11782,6 @@ VSP G800 | 80-06-92-00/00:01-65-03/05
 
 | Hitachi Ops Center REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == HDS HNAS（CLI）
@@ -12142,8 +12074,6 @@ N800 | 13.9.6918.05
 
 | HDS HNAS CLI | SSH | SSH | 22 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == HPE Nimble / Alletra 6000儲存設備
@@ -12612,8 +12542,6 @@ Hf60 | 5.0.10.0-742719-opt
 
 | HP Nimble REST API | HTTPS | HTTPS | 5392 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Huawei海洋儲存設備（REST / HTTPS）
@@ -13132,8 +13060,6 @@ V600R005C03
 
 | Huawei OceanStor Performance REST API | HTTPS | HTTPS | 8088 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == IBM Cleverafe
@@ -13324,8 +13250,6 @@ V600R005C03
 
 | IBM Cleversafe REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == IBM DS 8K （ DSCLI ）
@@ -13721,8 +13645,6 @@ V600R005C03
 
 | IBM DS CLI | DSNI | DSNI |  |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == IBM PowerVM（SSH）
@@ -13904,8 +13826,6 @@ V600R005C03
 
 | IBM 硬體管理主控台 SSH 存取 | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == IBM SVC（CLI）
@@ -14494,8 +14414,6 @@ V600R005C03
 
 | IBM SVC CLI | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == IBM XIV 與 A9000 （ XIVCLI ）
@@ -14907,8 +14825,6 @@ V600R005C03
 
 | IBM XIV CLI | XIV CLI | TCP | 7778 |  | 是的 | 錯 | 是的 | 錯 
 |===
-<<top,返回頁首>>
-
 
 
 == Infinidat Infinidat Infinbox（HTTP）
@@ -15235,20 +15151,17 @@ F6304 | 6.0.31.0
 
 | Infinidat REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Microsoft Azure 運算
 
 此資料收集器支援的機型和版本：
 
-|===
-| API版本 
+API 版本：
+
+* 2018 年 6 月 1 日
 
 
-| 2018 年 6 月 1 日 
-|===
 此資料收集器支援的產品：
 
 |===
@@ -15484,8 +15397,6 @@ F6304 | 6.0.31.0
 
 | Microsoft Azure 運算 REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Microsoft Hyper-V
@@ -15883,8 +15794,6 @@ F6304 | 6.0.31.0
 
 | WMI | WMI | WMI | 135 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == NetApp 7 模式
@@ -16784,8 +16693,6 @@ Data ONTAP 8.2.5 版 7-Mode
 
 | NetApp 7 模式 ZAPI | ZAPI | ZAPI |  |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == NetApp Cloud Volumes Service
@@ -16973,8 +16880,6 @@ Data ONTAP 8.2.5 版 7-Mode
 
 | Cloud Volumes Service REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Amazon FSX for NetApp ONTAP 產品
@@ -17615,8 +17520,6 @@ Data ONTAP 8.2.5 版 7-Mode
 
 | NetApp ONTAP API | HTTP / HTTPS | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == NetApp叢集Data ONTAP 式NetApp 8.1.1以上
@@ -19069,8 +18972,6 @@ V6240 | 8.2.3P5
 
 | NetApp ONTAP API | HTTP / HTTPS | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == NetApp SolidFire RJ8.1以上
@@ -19666,8 +19567,6 @@ SF9605 | 11.1.0.72
 
 | SolidFire REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == NetApp StorageGRID （ HTTPS ）
@@ -19976,8 +19875,6 @@ SF9605 | 11.1.0.72
 
 | 靜態API StorageGRID | HTTPS | HTTPS | 443.. |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Nutanix儲存設備（REST）
@@ -20538,8 +20435,6 @@ NX-8150-G8 | 6.5.1.6
 
 | Nutanix REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == OpenStack （ REST API / SSH ）
@@ -20820,8 +20715,6 @@ NX-8150-G8 | 6.5.1.6
 
 | OpenStack SSH | SSH | SSH | 22 |  | 是的 | 錯 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Oracle ZFS（HTTPS）
@@ -21338,8 +21231,6 @@ Sun ZFS Storage 7450 | 1-1.1
 
 | Oracle ZFS REST API | HTTP / HTTPS | HTTP / HTTPS | 2.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Pure Storage FlashArray（HTTP）
@@ -21832,8 +21723,6 @@ FA-x70 | 4.8.8.8.4.
 
 | Pure Storage REST API | HTTP / HTTPS | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Red Hat RHV （ REST ）
@@ -22075,8 +21964,6 @@ FA-x70 | 4.8.8.8.4.
 
 | Red Hat RHEV REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == Rubrik 儲存設備
@@ -22367,8 +22254,6 @@ FA-x70 | 4.8.8.8.4.
 
 | Rubrik Storage REST API | HTTPS | HTTPS | 443.. |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == 虛擬中心NetApp HCI
@@ -22834,22 +22719,19 @@ VMware vCenter Server 8.0.1 組建編號 21815093
 
 | VMware REST API | Web服務 | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == AWS上的VMware Cloud
 
 此資料收集器支援的機型和版本：
 
-|===
-| API版本 
+API 版本：
+
+* VMware vCenter Server 7.0.3 build 20532039
+* VMware vCenter Server 7.0.3 build -20870699
+* VMware vCenter Server 8.0.0 內部版本 -21709157
 
 
-| VMware vCenter Server 7.0.3 build 20532039
-VMware vCenter Server 7.0.3 build -20870699
-VMware vCenter Server 8.0.0 內部版本 -21709157 
-|===
 此資料收集器支援的產品：
 
 |===
@@ -23226,104 +23108,101 @@ VMware vCenter Server 8.0.0 內部版本 -21709157
 
 | VMware REST API | Web服務 | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
-
 
 
 == VMware vSphere（Web服務）
 
 此資料收集器支援的機型和版本：
 
-|===
-| API版本 
+API 版本：
+
+* VMware ESXi 6.0.0 內部版本 -10719132.
+* VMware ESXi 6.0.0 組建 - 2494585
+* VMware ESXi 6.0.0 組建 - 5572656
+* VMware ESXi 6.0.0 組建 - 9313334
+* VMware ESXi 6.5.0 組建編號： 14990892
+* VMware ESXi 6.5.0 組建 - 5969303
+* VMware ESXi 7.0.0 組建 - 15843807
+* VMware ESXi 7.0.3 build -20036589
+* VMware ESXi 7.0.3 build 20328353
+* VMware ESXi 7.0.3 build 20842708
+* VMware vCenter Server 5.0.0 內部版本 -3073236
+* VMware vCenter Server 5.0.0 內部版本 -455964
+* VMware vCenter Server 5.0.0 組建 - 623373
+* VMware vCenter Server 5.1.0 組建 -3814779
+* VMware vCenter Server 5.5.0 內部版本 -1750787
+* VMware vCenter Server 5.5.0 內部版本 -2442329
+* VMware vCenter Server 5.5.0 組建編號 3000241
+* VMware vCenter Server 5.5.0 組建 - 3252642
+* VMware vCenter Server 5.5.0 建置 -372164
+* VMware vCenter Server 5.5.0 組建編號： 4180647
+* VMware vCenter Server 5.5.0 建置 -6516310
+* VMware vCenter Server 5.5.0 建置 -9911218
+* VMware vCenter Server 6.0.0 組建 - 13638472
+* VMware vCenter Server 6.0.0 內部版本 -14510545
+* VMware vCenter Server 6.0.0 內部版本 -2776511
+* VMware vCenter Server 6.0.0 內部版本 -3634793
+* VMware vCenter Server 6.0.0 內部版本 -3634794
+* VMware vCenter Server 6.0.0 內部版本 -5960847
+* VMware vCenter Server 6.0.0 內部版本 -7924803
+* VMware vCenter Server 6.0.0 組建 - 8803875
+* VMware vCenter Server 6.0.0 內部版本 -9313458
+* VMware vCenter Server 6.5.0 內部版本 -10964411
+* VMware vCenter Server 6.5.0 組建編號： 15679215
+* VMware vCenter Server 6.5.0 內部版本 -17590285
+* VMware vCenter Server 6.5.0 內部版本 -17994927
+* VMware vCenter Server 6.5.0 組建編號： 18499837
+* VMware vCenter Server 6.5.0 建置 -18711281
+* VMware vCenter Server 6.5.0 內部版本 -19261680
+* VMware vCenter Server 6.5.0 內部版本 -20510539
+* VMware vCenter Server 6.5.0 建置 -7119157
+* VMware vCenter Server 6.7.0 內部版本 -10244857
+* VMware vCenter Server 6.7.0 組建編號 11727113
+* VMware vCenter Server 6.7.0 組建版本 -13007421
+* VMware vCenter Server 6.7.0 組建 - 13639324
+* VMware vCenter Server 6.7.0 內部版本 -14368073
+* VMware vCenter Server 6.7.0 組建編號： 15129973
+* VMware vCenter Server 6.7.0 組建編號： 15679289
+* VMware vCenter Server 6.7.0 內部版本 -17137327
+* VMware vCenter Server 6.7.0 內部版本 -18010599
+* VMware vCenter Server 6.7.0 內部版本 -18485185
+* VMware vCenter Server 6.7.0 組建編號 18831049
+* VMware vCenter Server 6.7.0 內部版本 -19299595
+* VMware vCenter Server 6.7.0 內部版本 -19832247
+* VMware vCenter Server 6.7.0 內部版本 -19832280
+* VMware vCenter Server 6.7.0 組建編號 20504301
+* VMware vCenter Server 6.7.0 組建版本 -20504362
+* VMware vCenter Server 6.7.0 內部版本 -8170161
+* VMware vCenter Server 6.7.0 組建編號 9433931
+* VMware vCenter Server 7.0.0 內部版本 -16620013
+* VMware vCenter Server 7.0.0 內部版本 -16749670
+* VMware vCenter Server 7.0.1 內部版本 -17491160
+* VMware vCenter Server 7.0.2 內部版本 -17694817
+* VMware vCenter Server 7.0.2 內部版本 -17958471
+* VMware vCenter Server 7.0.2 內部版本 18356314
+* VMware vCenter Server 7.0.2 內部版本 18455184
+* VMware vCenter Server 7.0.3 組建 -18700403
+* VMware vCenter Server 7.0.3 內部版本 -18778458
+* VMware vCenter Server 7.0.3 內部版本 -19234570
+* VMware vCenter Server 7.0.3 組建 -19480866
+* VMware vCenter Server 7.0.3 內部版本 -19717403
+* VMware vCenter Server 7.0.3 build -20051473
+* VMware vCenter Server 7.0.3 build -20150588
+* VMware vCenter Server 7.0.3 build -20395099
+* VMware vCenter Server 7.0.3 組建 -20845200
+* VMware vCenter Server 7.0.3 build -20990077
+* VMware vCenter Server 7.0.3 build 21290409
+* VMware vCenter Server 7.0.3 build -2147706
+* VMware vCenter Server 7.0.3 build -21784236
+* VMware vCenter Server 7.0.3 build 21958406
+* VMware vCenter Server 8.0.0 內部版本 -20920323
+* VMware vCenter Server 8.0.0 組建 - 21216066
+* VMware vCenter Server 8.0.0 內部版本 -21457384
+* VMware vCenter Server 8.0.1 build -21560480
+* VMware vCenter Server 8.0.1 組建編號 21815093
+* VMware vCenter Server 8.0.1 組建編號 21860503
 
 
-| VMware ESXi 6.0.0 內部版本 -10719132.
-VMware ESXi 6.0.0 組建 - 2494585
-VMware ESXi 6.0.0 組建 - 5572656
-VMware ESXi 6.0.0 組建 - 9313334
-VMware ESXi 6.5.0 組建編號： 14990892
-VMware ESXi 6.5.0 組建 - 5969303
-VMware ESXi 7.0.0 組建 - 15843807
-VMware ESXi 7.0.3 build -20036589
-VMware ESXi 7.0.3 build 20328353
-VMware ESXi 7.0.3 build 20842708
-VMware vCenter Server 5.0.0 內部版本 -3073236
-VMware vCenter Server 5.0.0 內部版本 -455964
-VMware vCenter Server 5.0.0 組建 - 623373
-VMware vCenter Server 5.1.0 組建 -3814779
-VMware vCenter Server 5.5.0 內部版本 -1750787
-VMware vCenter Server 5.5.0 內部版本 -2442329
-VMware vCenter Server 5.5.0 組建編號 3000241
-VMware vCenter Server 5.5.0 組建 - 3252642
-VMware vCenter Server 5.5.0 建置 -372164
-VMware vCenter Server 5.5.0 組建編號： 4180647
-VMware vCenter Server 5.5.0 建置 -6516310
-VMware vCenter Server 5.5.0 建置 -9911218
-VMware vCenter Server 6.0.0 組建 - 13638472
-VMware vCenter Server 6.0.0 內部版本 -14510545
-VMware vCenter Server 6.0.0 內部版本 -2776511
-VMware vCenter Server 6.0.0 內部版本 -3634793
-VMware vCenter Server 6.0.0 內部版本 -3634794
-VMware vCenter Server 6.0.0 內部版本 -5960847
-VMware vCenter Server 6.0.0 內部版本 -7924803
-VMware vCenter Server 6.0.0 組建 - 8803875
-VMware vCenter Server 6.0.0 內部版本 -9313458
-VMware vCenter Server 6.5.0 內部版本 -10964411
-VMware vCenter Server 6.5.0 組建編號： 15679215
-VMware vCenter Server 6.5.0 內部版本 -17590285
-VMware vCenter Server 6.5.0 內部版本 -17994927
-VMware vCenter Server 6.5.0 組建編號： 18499837
-VMware vCenter Server 6.5.0 建置 -18711281
-VMware vCenter Server 6.5.0 內部版本 -19261680
-VMware vCenter Server 6.5.0 內部版本 -20510539
-VMware vCenter Server 6.5.0 建置 -7119157
-VMware vCenter Server 6.7.0 內部版本 -10244857
-VMware vCenter Server 6.7.0 組建編號 11727113
-VMware vCenter Server 6.7.0 組建版本 -13007421
-VMware vCenter Server 6.7.0 組建 - 13639324
-VMware vCenter Server 6.7.0 內部版本 -14368073
-VMware vCenter Server 6.7.0 組建編號： 15129973
-VMware vCenter Server 6.7.0 組建編號： 15679289
-VMware vCenter Server 6.7.0 內部版本 -17137327
-VMware vCenter Server 6.7.0 內部版本 -18010599
-VMware vCenter Server 6.7.0 內部版本 -18485185
-VMware vCenter Server 6.7.0 組建編號 18831049
-VMware vCenter Server 6.7.0 內部版本 -19299595
-VMware vCenter Server 6.7.0 內部版本 -19832247
-VMware vCenter Server 6.7.0 內部版本 -19832280
-VMware vCenter Server 6.7.0 組建編號 20504301
-VMware vCenter Server 6.7.0 組建版本 -20504362
-VMware vCenter Server 6.7.0 內部版本 -8170161
-VMware vCenter Server 6.7.0 組建編號 9433931
-VMware vCenter Server 7.0.0 內部版本 -16620013
-VMware vCenter Server 7.0.0 內部版本 -16749670
-VMware vCenter Server 7.0.1 內部版本 -17491160
-VMware vCenter Server 7.0.2 內部版本 -17694817
-VMware vCenter Server 7.0.2 內部版本 -17958471
-VMware vCenter Server 7.0.2 內部版本 18356314
-VMware vCenter Server 7.0.2 內部版本 18455184
-VMware vCenter Server 7.0.3 組建 -18700403
-VMware vCenter Server 7.0.3 內部版本 -18778458
-VMware vCenter Server 7.0.3 內部版本 -19234570
-VMware vCenter Server 7.0.3 組建 -19480866
-VMware vCenter Server 7.0.3 內部版本 -19717403
-VMware vCenter Server 7.0.3 build -20051473
-VMware vCenter Server 7.0.3 build -20150588
-VMware vCenter Server 7.0.3 build -20395099
-VMware vCenter Server 7.0.3 組建 -20845200
-VMware vCenter Server 7.0.3 build -20990077
-VMware vCenter Server 7.0.3 build 21290409
-VMware vCenter Server 7.0.3 build -2147706
-VMware vCenter Server 7.0.3 build -21784236
-VMware vCenter Server 7.0.3 build 21958406
-VMware vCenter Server 8.0.0 內部版本 -20920323
-VMware vCenter Server 8.0.0 組建 - 21216066
-VMware vCenter Server 8.0.0 內部版本 -21457384
-VMware vCenter Server 8.0.1 build -21560480
-VMware vCenter Server 8.0.1 組建編號 21815093
-VMware vCenter Server 8.0.1 組建編號 21860503 
-|===
 此資料收集器支援的產品：
 
 |===
@@ -23814,4 +23693,3 @@ VMware vCenter Server 8.0.1 組建編號 21860503
 
 | VMware REST API | Web服務 | HTTP / HTTPS | 80/443 |  | 是的 | 是的 | 是的 | 是的 
 |===
-<<top,返回頁首>>
